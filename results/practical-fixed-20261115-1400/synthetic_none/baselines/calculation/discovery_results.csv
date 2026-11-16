@@ -1,0 +1,3 @@
+engine,seed,status,native_execution_status,reason,wall_seconds,exported_candidates,summary_path
+mean,17,ok,completed,,3.8406154529948253,1,/work/results/practical-fixed-20261115-1400/synthetic_none/baselines/calculation/discover/mean/17/engine_summary.json
+linear,17,ok,completed,,3.9137132269970607,2,/work/results/practical-fixed-20261115-1400/synthetic_none/baselines/calculation/discover/linear/17/engine_summary.json

@@ -1,0 +1,1509 @@
+{
+  "compiled": {
+    "points": [
+      [
+        0.7074927323053738
+      ],
+      [
+        0.7840913857374404
+      ],
+      [
+        1.7784253015982936
+      ],
+      [
+        0.8239618237100979
+      ],
+      [
+        3.5814003493697837
+      ],
+      [
+        0.2476520901940135
+      ],
+      [
+        3.475483436476617
+      ],
+      [
+        0.305248513826072
+      ],
+      [
+        2.295276023224203
+      ],
+      [
+        2.776180484941333
+      ],
+      [
+        0.2994431105004205
+      ],
+      [
+        0.36704735172851755
+      ],
+      [
+        0.6299562312732385
+      ],
+      [
+        3.436045155813486
+      ],
+      [
+        2.9287872797571763
+      ],
+      [
+        0.9395443891072537
+      ],
+      [
+        2.05
+      ],
+      [
+        0.1
+      ],
+      [
+        4.0
+      ],
+      [
+        1.0
+      ],
+      [
+        0.10010000000000001
+      ],
+      [
+        0.3438375
+      ],
+      [
+        0.587575
+      ],
+      [
+        0.8313125
+      ],
+      [
+        1.07505
+      ],
+      [
+        1.3187875
+      ],
+      [
+        1.5625250000000002
+      ],
+      [
+        1.8062625
+      ],
+      [
+        2.2937374999999998
+      ],
+      [
+        2.5374749999999997
+      ],
+      [
+        2.7812124999999996
+      ],
+      [
+        3.02495
+      ],
+      [
+        3.2686875
+      ],
+      [
+        3.512425
+      ],
+      [
+        3.7561625
+      ],
+      [
+        3.9999
+      ],
+      [
+        0.10020000000000001
+      ],
+      [
+        0.34373750000000003
+      ],
+      [
+        0.3439375
+      ],
+      [
+        0.587475
+      ],
+      [
+        0.587675
+      ],
+      [
+        0.8312125
+      ],
+      [
+        0.8314125
+      ],
+      [
+        1.07495
+      ],
+      [
+        1.07515
+      ],
+      [
+        1.3186875
+      ],
+      [
+        1.3188875
+      ],
+      [
+        1.5624250000000002
+      ],
+      [
+        1.5626250000000002
+      ],
+      [
+        1.8061625000000001
+      ],
+      [
+        1.8063625
+      ],
+      [
+        2.0498999999999996
+      ],
+      [
+        2.0501
+      ],
+      [
+        2.2936374999999996
+      ],
+      [
+        2.2938375
+      ],
+      [
+        2.5373749999999995
+      ],
+      [
+        2.537575
+      ],
+      [
+        2.7811124999999994
+      ],
+      [
+        2.7813125
+      ],
+      [
+        3.02485
+      ],
+      [
+        3.0250500000000002
+      ],
+      [
+        3.2685874999999998
+      ],
+      [
+        3.2687875
+      ],
+      [
+        3.5123249999999997
+      ],
+      [
+        3.512525
+      ],
+      [
+        3.7560624999999996
+      ],
+      [
+        3.7562625
+      ],
+      [
+        3.9997999999999996
+      ]
+    ],
+    "terms": [
+      {
+        "indices": [
+          20
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          21
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          22
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          23
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          24
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          25
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          26
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          27
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          16
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          28
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          29
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          30
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          31
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          32
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          33
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          34
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          35
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": 0.0,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          17,
+          20,
+          36
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          37,
+          21,
+          38
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          39,
+          22,
+          40
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          41,
+          23,
+          42
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          43,
+          24,
+          44
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          45,
+          25,
+          46
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          47,
+          26,
+          48
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          49,
+          27,
+          50
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          51,
+          16,
+          52
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          53,
+          28,
+          54
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          55,
+          29,
+          56
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          57,
+          30,
+          58
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          59,
+          31,
+          60
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          61,
+          32,
+          62
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          63,
+          33,
+          64
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          65,
+          34,
+          66
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          67,
+          35,
+          18
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -1e-05,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      }
+    ],
+    "data_scale": 1.1509251612719777
+  },
+  "reduced_compiled": {
+    "points": [
+      [
+        0.7074927323053738
+      ],
+      [
+        0.7840913857374404
+      ],
+      [
+        1.7784253015982936
+      ],
+      [
+        0.8239618237100979
+      ],
+      [
+        3.5814003493697837
+      ],
+      [
+        0.2476520901940135
+      ],
+      [
+        3.475483436476617
+      ],
+      [
+        0.305248513826072
+      ],
+      [
+        2.295276023224203
+      ],
+      [
+        2.776180484941333
+      ],
+      [
+        0.2994431105004205
+      ],
+      [
+        0.36704735172851755
+      ],
+      [
+        0.6299562312732385
+      ],
+      [
+        3.436045155813486
+      ],
+      [
+        2.9287872797571763
+      ],
+      [
+        0.9395443891072537
+      ],
+      [
+        2.05
+      ],
+      [
+        0.1
+      ],
+      [
+        4.0
+      ],
+      [
+        1.0
+      ],
+      [
+        0.10010000000000001
+      ],
+      [
+        0.3438375
+      ],
+      [
+        0.587575
+      ],
+      [
+        0.8313125
+      ],
+      [
+        1.07505
+      ],
+      [
+        1.3187875
+      ],
+      [
+        1.5625250000000002
+      ],
+      [
+        1.8062625
+      ],
+      [
+        2.2937374999999998
+      ],
+      [
+        2.5374749999999997
+      ],
+      [
+        2.7812124999999996
+      ],
+      [
+        3.02495
+      ],
+      [
+        3.2686875
+      ],
+      [
+        3.512425
+      ],
+      [
+        3.7561625
+      ],
+      [
+        3.9999
+      ],
+      [
+        0.10020000000000001
+      ],
+      [
+        0.34373750000000003
+      ],
+      [
+        0.3439375
+      ],
+      [
+        0.587475
+      ],
+      [
+        0.587675
+      ],
+      [
+        0.8312125
+      ],
+      [
+        0.8314125
+      ],
+      [
+        1.07495
+      ],
+      [
+        1.07515
+      ],
+      [
+        1.3186875
+      ],
+      [
+        1.3188875
+      ],
+      [
+        1.5624250000000002
+      ],
+      [
+        1.5626250000000002
+      ],
+      [
+        1.8061625000000001
+      ],
+      [
+        1.8063625
+      ],
+      [
+        2.0498999999999996
+      ],
+      [
+        2.0501
+      ],
+      [
+        2.2936374999999996
+      ],
+      [
+        2.2938375
+      ],
+      [
+        2.5373749999999995
+      ],
+      [
+        2.537575
+      ],
+      [
+        2.7811124999999994
+      ],
+      [
+        2.7813125
+      ],
+      [
+        3.02485
+      ],
+      [
+        3.0250500000000002
+      ],
+      [
+        3.2685874999999998
+      ],
+      [
+        3.2687875
+      ],
+      [
+        3.5123249999999997
+      ],
+      [
+        3.512525
+      ],
+      [
+        3.7560624999999996
+      ],
+      [
+        3.7562625
+      ],
+      [
+        3.9997999999999996
+      ]
+    ],
+    "terms": [
+      {
+        "indices": [
+          20
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -0.075075,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          21
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -0.257878125,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          22
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -0.44068124999999997,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          23
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -0.623484375,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          24
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -0.8062875,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          25
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -0.989090625,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          26
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -1.1718937500000002,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          27
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -1.3546968750000001,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          16
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -1.5374999999999999,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          28
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -1.7203031249999998,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          29
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -1.9031062499999998,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          30
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -2.085909375,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          31
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -2.2687125,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          32
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -2.451515625,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          33
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -2.63431875,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          34
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -2.8171218749999998,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          35
+        ],
+        "coefficients": [
+          1.0
+        ],
+        "lower": -2.9999249999999997,
+        "upper": null,
+        "scale": 1.1509251612719777,
+        "name": "probe_response"
+      },
+      {
+        "indices": [
+          17,
+          20,
+          36
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.75001,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          37,
+          21,
+          38
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.75001,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          39,
+          22,
+          40
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.75001,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          41,
+          23,
+          42
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.75001,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          43,
+          24,
+          44
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.7500100000004547,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          45,
+          25,
+          46
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.75001,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          47,
+          26,
+          48
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.7500099999990905,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          49,
+          27,
+          50
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.75001,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          51,
+          16,
+          52
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.7500100000009094,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          53,
+          28,
+          54
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.7500100000018189,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          55,
+          29,
+          56
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.7500100000018189,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          57,
+          30,
+          58
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.75001,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          59,
+          31,
+          60
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.7500100000018189,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          61,
+          32,
+          62
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.75001,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          63,
+          33,
+          64
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.7500100000018189,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          65,
+          34,
+          66
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.75001,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      },
+      {
+        "indices": [
+          67,
+          35,
+          18
+        ],
+        "coefficients": [
+          -5000.0,
+          0.0,
+          5000.0
+        ],
+        "lower": -0.7500100000018189,
+        "upper": null,
+        "scale": 0.2965196711593707,
+        "name": "increasing"
+      }
+    ],
+    "data_scale": 1.1509251612719777
+  },
+  "subset_counts": {
+    "feasible": 3
+  },
+  "failure_examples": [],
+  "models": [
+    {
+      "indices": [
+        0
+      ],
+      "coefficients": [
+        0.3056197726450177
+      ],
+      "intercept": 0.6060914352361365,
+      "term_count": 1,
+      "mse": 0.019974265024013796,
+      "optimizer_converged": false,
+      "solution_origin": "feasible_seed",
+      "solver": {
+        "indices": [
+          0
+        ],
+        "status": "feasible",
+        "feasibility_solver_status": 0,
+        "solver": [
+          {
+            "success": true,
+            "status": 0,
+            "iterations": 1,
+            "accepted_original_conditions": true
+          },
+          {
+            "success": true,
+            "status": 0,
+            "iterations": 5,
+            "accepted_original_conditions": true
+          }
+        ],
+        "feasible_seed_count": 1,
+        "optimized_candidate_accepted": true,
+        "mse": 0.019974265024013796,
+        "optimizer_converged": false,
+        "solution_origin": "feasible_seed"
+      }
+    },
+    {
+      "indices": [
+        0,
+        0
+      ],
+      "coefficients": [
+        0.1528098863225089,
+        0.1528098863225089
+      ],
+      "intercept": 0.6060914352361362,
+      "term_count": 2,
+      "mse": 0.019974265024013792,
+      "optimizer_converged": false,
+      "solution_origin": "feasible_seed",
+      "solver": {
+        "indices": [
+          0,
+          0
+        ],
+        "status": "feasible",
+        "feasibility_solver_status": 0,
+        "solver": [
+          {
+            "success": true,
+            "status": 0,
+            "iterations": 1,
+            "accepted_original_conditions": true
+          },
+          {
+            "success": true,
+            "status": 0,
+            "iterations": 6,
+            "accepted_original_conditions": true
+          }
+        ],
+        "feasible_seed_count": 2,
+        "optimized_candidate_accepted": true,
+        "mse": 0.019974265024013792,
+        "optimizer_converged": false,
+        "solution_origin": "feasible_seed"
+      }
+    },
+    {
+      "indices": [
+        0,
+        0,
+        0
+      ],
+      "coefficients": [
+        -0.39813340911746103,
+        0.35187659088123946,
+        0.35187659088123935
+      ],
+      "intercept": 0.6060914352361364,
+      "term_count": 3,
+      "mse": 0.019974265024013792,
+      "optimizer_converged": true,
+      "solution_origin": "optimized",
+      "solver": {
+        "indices": [
+          0,
+          0,
+          0
+        ],
+        "status": "feasible",
+        "feasibility_solver_status": 0,
+        "solver": [
+          {
+            "success": true,
+            "status": 0,
+            "iterations": 1,
+            "accepted_original_conditions": true
+          },
+          {
+            "success": true,
+            "status": 0,
+            "iterations": 5,
+            "accepted_original_conditions": true
+          }
+        ],
+        "feasible_seed_count": 2,
+        "optimized_candidate_accepted": true,
+        "mse": 0.019974265024013792,
+        "optimizer_converged": true,
+        "solution_origin": "optimized"
+      }
+    }
+  ],
+  "scope": "finite-point hard constrained-SIS; all top-k singleton fits, native multivariate pools; not exhaustive structural search"
+}

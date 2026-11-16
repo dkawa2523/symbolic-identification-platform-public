@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-15T14:11:32.500176+00:00",
+  "mode": "internal foreground PTY; no visible desktop helper",
+  "exec_session_id": 78772,
+  "phase": "discover",
+  "source_settings": "build/pc-practical-evaluation-20261115/coordinator/settings.json",
+  "status_file": "results/practical-fixed-20261115-1400/status.json",
+  "automatic_retry": false,
+  "Final_scoring_started": false,
+  "note": "Cancellation should interrupt this owned console so existing run_linux owns Docker CID cleanup; do not stop unrelated containers."
+}

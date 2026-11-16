@@ -1,0 +1,4 @@
+sample_id,flag,partition
+abalone_1257,nonpositive_height,train
+abalone_2051,height_exceeds_length,train
+abalone_3996,nonpositive_height,final_interpolation

@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "hypothesis_groups": {},
+  "prepared": {
+    "run": "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/ordinary_on/calculation/prepare/run.json",
+    "train": "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/ordinary_on/calculation/prepare/train.npz",
+    "selection": "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/ordinary_on/calculation/prepare/selection.npz"
+  },
+  "prepared_sha256": "32ff23c99f6f062f4714684f6bfcf4ae12d94d7fd704e5d29c54b177af984633",
+  "variables": [
+    {
+      "id": "x0",
+      "column": "x",
+      "unit": "1",
+      "domain": [
+        -1.0,
+        1.0
+      ],
+      "coordinate_role": null
+    }
+  ],
+  "target": {
+    "coordinate_role": null,
+    "column": "y",
+    "unit": "1",
+    "domain": null
+  },
+  "unit_coordinates": {
+    "policy": "canonical problem; explicit CSV conversion; all domains/constraints/tolerances in problem units",
+    "columns": {
+      "x": {
+        "coordinate_role": null,
+        "source_unit": "1",
+        "problem_unit": "1",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      },
+      "y": {
+        "coordinate_role": null,
+        "source_unit": "1",
+        "problem_unit": "1",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      }
+    }
+  },
+  "display_units": {},
+  "input_geometry": {
+    "schema_version": 1,
+    "source_variables": [
+      {
+        "id": "x0",
+        "column": "x",
+        "unit": "1",
+        "domain": [
+          -1.0,
+          1.0
+        ],
+        "coordinate_role": null
+      }
+    ],
+    "domain": {
+      "columns": [
+        "x"
+      ],
+      "space_id": "source_inputs",
+      "kind": "box",
+      "units": {
+        "x": "1"
+      },
+      "coordinate_roles": {
+        "x": null
+      },
+      "bounds": [
+        [
+          -1.0,
+          1.0
+        ]
+      ]
+    },
+    "map": null
+  },
+  "config": {
+    "task": "symbolic_pipeline",
+    "_sampling_provenance": [],
+    "domain": null,
+    "input_map": null,
+    "observation_model": null,
+    "run": {
+      "stage": null,
+      "engine": null,
+      "seed": 42
+    },
+    "data": {
+      "local_path": "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/inputs/table.csv",
+      "target_column": "y",
+      "feature_columns": [
+        "x"
+      ],
+      "id_columns": [
+        "sample_id"
+      ],
+      "units": {
+        "x": "1",
+        "y": "1"
+      },
+      "source_units": {
+        "x": "1",
+        "y": "1"
+      },
+      "display_units": {},
+      "coordinate_roles": {
+        "x": null,
+        "y": null
+      },
+      "domain": {
+        "x": [
+          -1.0,
+          1.0
+        ]
+      }
+    },
+    "split": {
+      "method": "fixed",
+      "file": "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/inputs/split.csv",
+      "group_column": null,
+      "seed": 42,
+      "valid_size": 0.2,
+      "selection_size": 0.2
+    },
+    "search": {
+      "engines": [
+        "e2e"
+      ],
+      "seeds": [
+        731
+      ],
+      "max_wall_seconds": 1800,
+      "max_export_candidates": 100,
+      "candidate_pool_policy": "all",
+      "allow_partial_engines": true,
+      "response_mode": "search",
+      "engine_options": {
+        "e2e": {
+          "threads": 1,
+          "beam_size": 4,
+          "n_trees_to_refine": 4,
+          "refinement_seconds": 1.0,
+          "max_generated_output_len": 64,
+          "max_input_points": 200,
+          "max_train_rows": null,
+          "generation_batch_size": 1,
+          "operator_mask": true,
+          "response_max_nfev": 200,
+          "rational_domain_admission": {
+            "column": "x",
+            "interval": [
+              -1.0,
+              1.0
+            ],
+            "max_calls": 20000,
+            "max_total_operations": 2000000
+          }
+        }
+      },
+      "runtimes": {}
+    },
+    "evaluation": {
+      "mode": "exploratory",
+      "coefficient_fit": "none",
+      "selection_policy": "accuracy",
+      "relative_tolerance": 0.05,
+      "absolute_tolerance": 0.0,
+      "acceptable_rmse": null
+    },
+    "model": {
+      "local_model_path": null
+    },
+    "model_assets": {
+      "e2e": {
+        "manifest_file": "/work/pretrained/e2e/manifest.json"
+      }
+    },
+    "stage_inputs": {},
+    "_prepared_requirements_ref": "af49881255838008a51597c7dcfbd22810f6d62573ad708a26f1ba6b548eceab"
+  },
+  "response_point_origin": {
+    "additional_input_units": {
+      "x": "1",
+      "y": "1"
+    },
+    "additional_input_coordinates": "canonical problem coordinates before input geometry",
+    "discovery_probes": 3,
+    "discovery_checks": 0
+  },
+  "constraint_application": {
+    "kind": "postcheck only; no claim these additions were enforced in native search",
+    "discovery_constraints": {
+      "max_nodes": 64,
+      "max_free_parameters": null,
+      "require_units": false,
+      "allowed_variables": null,
+      "equation_template": null,
+      "probes": [
+        {
+          "x": -0.75
+        },
+        {
+          "x": 0.0
+        },
+        {
+          "x": 0.75
+        }
+      ],
+      "response_bounds": [
+        -10.0,
+        10.0
+      ],
+      "response_checks": [],
+      "response_enforcement": "hard"
+    },
+    "discovery_requirements_ref": {
+      "requirements_sha256": "af49881255838008a51597c7dcfbd22810f6d62573ad708a26f1ba6b548eceab",
+      "scope": "canonical common request; native settings/checks are derived evidence"
+    },
+    "additional": {},
+    "candidate_pool": "the immutable source pool, including its recorded export cap and truncation"
+  },
+  "data_sha256": "04a18487f63cc9a39054d014ce9f7d2e66e5750a8c3651a7e403753cbcb77ec6",
+  "split_sha256": "4dd1a8d1ceee2d000b36007930a721ad10991a6906b2e88ff3b145c6d9dc2920",
+  "data_roles": {
+    "evidence_fit": "train",
+    "comparison": "selection",
+    "behavior_reference": "train"
+  },
+  "observation_model": null,
+  "regions": {
+    "all": {}
+  },
+  "slices": {},
+  "derivative_steps": [
+    1.6000000000000003e-05
+  ],
+  "compute_derivatives": false,
+  "group_column": null,
+  "strata_column": null,
+  "derivative_method": "execution-coordinate finite differences; original physical direction requires a declared source path; not analytic",
+  "question": "Compare equation hypotheses",
+  "purpose": "local_prediction",
+  "parameter_target": "conditional_model",
+  "engineering_tolerance": null,
+  "response_validation": null,
+  "parameter_evidence_ids": [],
+  "required_evidence": [],
+  "quantity_tolerances": {},
+  "mode": "development",
+  "data_kind": "disclosed qualification dummy; no Final rows",
+  "final_exposure": {
+    "declared_history": "known_exposed",
+    "status": "known prior Final exposure on these data",
+    "same_data_exposed": true,
+    "evidence": [
+      {
+        "source": "explicit known-exposed history declaration",
+        "data_sha256": "04a18487f63cc9a39054d014ce9f7d2e66e5750a8c3651a7e403753cbcb77ec6",
+        "split_sha256": "4dd1a8d1ceee2d000b36007930a721ad10991a6906b2e88ff3b145c6d9dc2920"
+      }
+    ]
+  },
+  "final_history": "known_exposed",
+  "support": "marginal Train ranges only; not a joint-feasibility or safety guarantee",
+  "feature_ranges": [
+    [
+      -0.8,
+      0.8
+    ]
+  ],
+  "source_bindings": {
+    "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/ordinary_on/calculation/discover/e2e/731/engine_summary.json": "9837ff3aaa2347970da1b2920801fc104b5ed6a1fea1dc6bb157afd706cb6154",
+    "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/ordinary_on/calculation/prepare/run.json": "32ff23c99f6f062f4714684f6bfcf4ae12d94d7fd704e5d29c54b177af984633",
+    "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/ordinary_on/calculation/discover/e2e/731/candidates.jsonl": "94ceba8f7b2caa2d846626bd161cd76d667cd699c50c89ee3e3b1bd5db6e84d6"
+  },
+  "runtime": {
+    "python": "3.11.15",
+    "image": "sha256:7de7771841c14309c5fa8182614750364520390b3fb83d816a7e82277e5d4854",
+    "common_source_sha256": {
+      "equation_evaluation/api.py": "6de19297f06854d9e68d0249b25efa13147ecf5068aa84fe14f12f5994e09005",
+      "equation_evaluation/numerical.py": "3f053d9df0f8b8ab8d6c4789d840d0ec39334bc0f17a8bbeca2310b9ccf36a27",
+      "estimation.py": "c0c59e71290977cbf4c9fc57618219f3f55db5f2a51b960e9323fd618ce36049",
+      "execution_views.py": "dc194df325c6ed045bf2e25b5d237557e63deb265a6570ea13589d16fe6a7a24",
+      "question_results.py": "c9809bdd77adef52a65772bbfa083ce8c3ad0a1c2fb804a11f8224fc81725d8d",
+      "metrics.py": "0a88927d73a47da42302426328efe404aaf44d7965193d737baa95dab9a1f48a",
+      "operators.py": "416377a122a27d65d5bc51e10fc59904c1b2f2b47b0dba0459ed7ed3633183b2",
+      "hypotheses.py": "4e96cc0390c7a35edea729db232c47ca5e54c2223d9d13fed117c6c8f4f0076c",
+      "hypothesis_storage.py": "9720caca2b36e7508891dc79caf5ad7cfe2abbe5ae124e30f82e883f566e198c",
+      "evaluation.py": "8f974a45a9a5476dae10c0b92903795bd63f6537bc41728af9a1c37c237c52dc",
+      "units.py": "3b25b832b28b84732ac30ae6d63e8f56a1f8d374a8ae5a9d146a30ef11b04b82",
+      "coordinates.py": "cbb8c750b5b9ece963cd5581d10a34f001dce81ea229a24b282191f961c6d44c",
+      "numerical_fidelity.py": "11d1031b8e224b2b54af7cb7c25e6e68dd91ffac3c4ac42a5630bddaf40c9529",
+      "expressions.py": "8f209199d49570b3c793677b6bf201a5f7aa98955d031e10d4febeed91990dd8",
+      "constraints.py": "67fa8563b5727555853b26b37589de4fb37139ffa04471b00ac5adaa84dbd984",
+      "domains.py": "0537faafa3418bcfeb80102200be35c6d686a0307a61979212da97dab01cab25",
+      "parameters.py": "a4b6fedabd32691c5610632448e6beed7240aec3be551ab13666a7ffb3d32e4d"
+    }
+  },
+  "problem_schema_version": 2,
+  "requirements": {
+    "allowed_operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "fixed_constants": {},
+    "max_nodes": 64,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "required_responses": {
+      "points": [
+        {
+          "x": -0.75
+        },
+        {
+          "x": 0.0
+        },
+        {
+          "x": 0.75
+        }
+      ],
+      "bounds": [
+        -10.0,
+        10.0
+      ],
+      "checks": [],
+      "enforcement": "hard"
+    }
+  },
+  "requirements_sha256": "af49881255838008a51597c7dcfbd22810f6d62573ad708a26f1ba6b548eceab"
+}

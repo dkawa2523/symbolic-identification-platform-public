@@ -1,0 +1,2 @@
+engine,seed,status,native_execution_status,reason,wall_seconds,exported_candidates,summary_path
+physo,17,ok,completed,,7.225188595009968,3,/work/results/cleanup-normal-20261116-031218-v1/calculation/discover/physo/17/engine_summary.json

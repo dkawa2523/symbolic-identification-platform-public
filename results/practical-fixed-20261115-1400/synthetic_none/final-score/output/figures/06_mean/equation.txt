@@ -1,0 +1,8 @@
+6. mean | equation
+Candidate: mean/17/0@native
+Coordinates: public
+y [1] = coef['c0']
+
+c0 = 2.6787919685141217 [1]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)

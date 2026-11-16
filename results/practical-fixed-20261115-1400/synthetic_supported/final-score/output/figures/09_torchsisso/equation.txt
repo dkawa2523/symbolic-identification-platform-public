@@ -1,0 +1,20 @@
+9. torchsisso | equation
+Candidate: torchsisso/17/0@native
+Coordinates: public
+y [1] = ((0.75 * x) + (coef['__slot_h_intercept'] + (coef['__slot_h_c0'] * x)))
+
+__slot_h_c0 = 0.3056197726450177 [1]
+__slot_h_intercept = 0.6060914352361365 [1]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((0.75 * x) + h(x))
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Declared fixed contribution 0.75*x plus one shared unknown h(x)'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [1]) = (intercept + (c0 * x0))
+  Unit: 1
+  intercept = 0.6060914352361365; role=free; unit=1; tied_to=None
+  c0 = 0.3056197726450177; role=free; unit=1; tied_to=None
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.

@@ -1,0 +1,5 @@
+method,candidate_id,figures,eligible,reason,selection_rmse,final_rmse
+pysr,pysr/17/5@native,01_pysr,True,,0.03296973802955263,0.03220240002130408
+torchsisso,torchsisso/17/0@native,09_torchsisso,True,,0.1302110765038276,0.13689178118104098
+physo,physo/17/8@native,10_physo,True,,0.03290614771331474,0.03168956729579884
+e2e,e2e/17/125/known-affine-fit@native,11_e2e,True,,0.032319566042299804,0.031559549366604045

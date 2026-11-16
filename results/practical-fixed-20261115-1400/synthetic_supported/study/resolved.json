@@ -1,0 +1,644 @@
+{
+  "schema_version": 1,
+  "hypothesis_groups": {},
+  "prepared": {
+    "run": "/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/prepare/run.json",
+    "train": "/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/prepare/train.npz",
+    "selection": "/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/prepare/selection.npz",
+    "final": "/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/prepare/final.npz"
+  },
+  "prepared_sha256": "60d1dd8e458519cbc6a01076b03cf511caf78abe1bc4c6db512090d69c738852",
+  "variables": [
+    {
+      "id": "x0",
+      "column": "x",
+      "unit": "1",
+      "domain": [
+        0.1,
+        4.0
+      ],
+      "coordinate_role": null
+    }
+  ],
+  "target": {
+    "coordinate_role": null,
+    "column": "y",
+    "unit": "1",
+    "domain": null
+  },
+  "unit_coordinates": {
+    "policy": "canonical problem; explicit CSV conversion; all domains/constraints/tolerances in problem units",
+    "columns": {
+      "x": {
+        "coordinate_role": null,
+        "source_unit": "1",
+        "problem_unit": "1",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      },
+      "y": {
+        "coordinate_role": null,
+        "source_unit": "1",
+        "problem_unit": "1",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      }
+    }
+  },
+  "display_units": {},
+  "input_geometry": {
+    "schema_version": 1,
+    "source_variables": [
+      {
+        "id": "x0",
+        "column": "x",
+        "unit": "1",
+        "domain": [
+          0.1,
+          4.0
+        ],
+        "coordinate_role": null
+      }
+    ],
+    "domain": {
+      "columns": [
+        "x"
+      ],
+      "space_id": "source_inputs",
+      "kind": "box",
+      "units": {
+        "x": "1"
+      },
+      "coordinate_roles": {
+        "x": null
+      },
+      "bounds": [
+        [
+          0.1,
+          4.0
+        ]
+      ]
+    },
+    "map": null
+  },
+  "config": {
+    "task": "symbolic_pipeline",
+    "_sampling_provenance": [],
+    "domain": null,
+    "input_map": null,
+    "observation_model": null,
+    "run": {
+      "stage": null,
+      "engine": null,
+      "seed": 42
+    },
+    "data": {
+      "local_path": "results/practical-fixed-20261115-1400/inputs/synthetic/table.csv",
+      "target_column": "y",
+      "feature_columns": [
+        "x"
+      ],
+      "id_columns": [
+        "sample_id"
+      ],
+      "units": {
+        "x": "1",
+        "y": "1"
+      },
+      "source_units": {
+        "x": "1",
+        "y": "1"
+      },
+      "display_units": {},
+      "coordinate_roles": {
+        "x": null,
+        "y": null
+      },
+      "domain": {
+        "x": [
+          0.1,
+          4.0
+        ]
+      }
+    },
+    "split": {
+      "method": "fixed",
+      "file": "results/practical-fixed-20261115-1400/inputs/synthetic/split.csv",
+      "group_column": null,
+      "seed": 42,
+      "valid_size": 0.2,
+      "selection_size": 0.2
+    },
+    "search": {
+      "engines": [
+        "pysr"
+      ],
+      "seeds": [
+        17
+      ],
+      "max_wall_seconds": 21600,
+      "max_export_candidates": 20,
+      "candidate_pool_policy": "all",
+      "allow_partial_engines": true,
+      "response_mode": "search",
+      "engine_options": {
+        "pysr": {
+          "objective": "mse",
+          "niterations": 10000,
+          "populations": 8,
+          "population_size": 40,
+          "ncycles_per_iteration": 380,
+          "seconds": 2880,
+          "parallelism": "serial"
+        }
+      },
+      "runtimes": {}
+    },
+    "evaluation": {
+      "mode": "holdout",
+      "coefficient_fit": "none",
+      "selection_policy": "accuracy",
+      "relative_tolerance": 0.05,
+      "absolute_tolerance": 1e-06,
+      "acceptable_rmse": null
+    },
+    "model": {
+      "local_model_path": null
+    },
+    "model_assets": {},
+    "stage_inputs": {},
+    "_prepared_requirements_ref": "81b861c5d41eb8dfa97ec7343bcc193fcf2eed762452bd75a8a9cf71727f39d5"
+  },
+  "response_point_origin": {
+    "additional_input_units": {
+      "x": "1",
+      "y": "1"
+    },
+    "additional_input_coordinates": "canonical problem coordinates before input geometry",
+    "discovery_probes": 17,
+    "discovery_checks": 1
+  },
+  "constraint_application": {
+    "kind": "postcheck only; no claim these additions were enforced in native search",
+    "discovery_constraints": {
+      "max_nodes": 256,
+      "max_free_parameters": null,
+      "require_units": false,
+      "allowed_variables": null,
+      "equation_template": {
+        "coordinate_space": "working",
+        "ast": {
+          "op": "add",
+          "args": [
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "const": 0.75
+                },
+                {
+                  "var": "x0"
+                }
+              ]
+            },
+            {
+              "slot": "h",
+              "args": [
+                {
+                  "var": "x0"
+                }
+              ]
+            }
+          ]
+        },
+        "parameters": {},
+        "components": {},
+        "slots": {
+          "h": {
+            "arguments": [
+              {
+                "name": "x0",
+                "unit": "1"
+              }
+            ],
+            "unit": "1",
+            "allowed_operators": [
+              "add",
+              "sub",
+              "mul",
+              "div"
+            ],
+            "max_nodes": 252
+          }
+        },
+        "knowledge": {
+          "kind": "hypothesis",
+          "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+        }
+      },
+      "probes": [
+        {
+          "x": 0.10010000000000001
+        },
+        {
+          "x": 0.3438375
+        },
+        {
+          "x": 0.587575
+        },
+        {
+          "x": 0.8313125
+        },
+        {
+          "x": 1.07505
+        },
+        {
+          "x": 1.3187875
+        },
+        {
+          "x": 1.5625250000000002
+        },
+        {
+          "x": 1.8062625
+        },
+        {
+          "x": 2.05
+        },
+        {
+          "x": 2.2937374999999998
+        },
+        {
+          "x": 2.5374749999999997
+        },
+        {
+          "x": 2.7812124999999996
+        },
+        {
+          "x": 3.02495
+        },
+        {
+          "x": 3.2686875
+        },
+        {
+          "x": 3.512425
+        },
+        {
+          "x": 3.7561625
+        },
+        {
+          "x": 3.9999
+        }
+      ],
+      "response_bounds": [
+        0.0,
+        null
+      ],
+      "response_checks": [
+        {
+          "name": "increasing",
+          "feature": "x",
+          "order": 1,
+          "sign": 1,
+          "step": 0.0001,
+          "tolerance": 1e-05,
+          "points": [
+            {
+              "x": 0.10010000000000001
+            },
+            {
+              "x": 0.3438375
+            },
+            {
+              "x": 0.587575
+            },
+            {
+              "x": 0.8313125
+            },
+            {
+              "x": 1.07505
+            },
+            {
+              "x": 1.3187875
+            },
+            {
+              "x": 1.5625250000000002
+            },
+            {
+              "x": 1.8062625
+            },
+            {
+              "x": 2.05
+            },
+            {
+              "x": 2.2937374999999998
+            },
+            {
+              "x": 2.5374749999999997
+            },
+            {
+              "x": 2.7812124999999996
+            },
+            {
+              "x": 3.02495
+            },
+            {
+              "x": 3.2686875
+            },
+            {
+              "x": 3.512425
+            },
+            {
+              "x": 3.7561625
+            },
+            {
+              "x": 3.9999
+            }
+          ],
+          "knowledge": "Declared finite-point increasing response"
+        }
+      ],
+      "response_enforcement": "hard"
+    },
+    "discovery_requirements_ref": {
+      "requirements_sha256": "81b861c5d41eb8dfa97ec7343bcc193fcf2eed762452bd75a8a9cf71727f39d5",
+      "scope": "canonical common request; native settings/checks are derived evidence"
+    },
+    "additional": {},
+    "candidate_pool": "the immutable source pool, including its recorded export cap and truncation"
+  },
+  "data_sha256": "067d442097db6fc87d75652fc8fa760b131f2cf787464048d3468eec9c65e479",
+  "split_sha256": "f0e075db8614219a6562caf73115bceaaff5c774b63677b21b006b0b9921b923",
+  "data_roles": {
+    "evidence_fit": "train",
+    "comparison": "selection",
+    "behavior_reference": "train"
+  },
+  "observation_model": null,
+  "regions": {
+    "all": {}
+  },
+  "slices": {},
+  "derivative_steps": [
+    3.881446235158507e-05
+  ],
+  "compute_derivatives": false,
+  "group_column": null,
+  "strata_column": null,
+  "derivative_method": "execution-coordinate finite differences; original physical direction requires a declared source path; not analytic",
+  "question": "Fixed one-seed comparison; synthetic support combines known contribution and finite hard responses.",
+  "purpose": "local_prediction",
+  "parameter_target": "conditional_model",
+  "engineering_tolerance": null,
+  "response_validation": null,
+  "parameter_evidence_ids": [],
+  "required_evidence": [],
+  "quantity_tolerances": {},
+  "mode": "development",
+  "data_kind": "Fresh procedural samples of a disclosed designed synthetic law; pretraining overlap unknown",
+  "final_exposure": {
+    "declared_history": "declared_unseen",
+    "status": "prior exposure unknown",
+    "same_data_exposed": false,
+    "evidence": []
+  },
+  "final_history": "declared_unseen",
+  "support": "marginal Train ranges only; not a joint-feasibility or safety guarantee",
+  "feature_ranges": [
+    [
+      0.1098321204411013,
+      3.991278355599608
+    ]
+  ],
+  "source_bindings": {
+    "/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/discover/pysr/17/engine_summary.json": "ef28ed65abcc8ba658f82a94a39216b6ac959702663533a060a39cba2911f265",
+    "/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/prepare/run.json": "60d1dd8e458519cbc6a01076b03cf511caf78abe1bc4c6db512090d69c738852",
+    "/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/discover/pysr/17/candidates.jsonl": "1152a63b6822173ffd39eed6e3536a7d16ee7754b57512af8eb1364c3780a51a",
+    "/work/results/practical-fixed-20261115-1400/synthetic_supported/parfam/calculation/discover/parfam/17/engine_summary.json": "7d709d1c1706cdf5567ae46f9a1dd356083372991cb46b99d0d580ccb22d5b0c",
+    "/work/results/practical-fixed-20261115-1400/synthetic_supported/parfam/calculation/prepare/run.json": "9ce7019818b9e87a233a8c2cb142d736ac7cfcd12925f9fdf723bde817f243d8",
+    "/work/results/practical-fixed-20261115-1400/synthetic_supported/parfam/calculation/discover/parfam/17/candidates.jsonl": "690f810dccf1609ada7f899ef239942ed162df78d371dc2eaa7d3b177d0aab92",
+    "/work/results/practical-fixed-20261115-1400/synthetic_supported/torchsisso/calculation/discover/torchsisso/17/engine_summary.json": "00761b18dbe2f0ca3603001766bc1cfff3602aa7ade134f569f71ba302115853",
+    "/work/results/practical-fixed-20261115-1400/synthetic_supported/torchsisso/calculation/prepare/run.json": "f6e5542bc1cfc6b784bc92ca4213d4e5eeb5c0a52684acf3162560822a7aa867",
+    "/work/results/practical-fixed-20261115-1400/synthetic_supported/torchsisso/calculation/discover/torchsisso/17/candidates.jsonl": "647e36daff9e8f14f36e0c978fa5d0d671d85ff9ec5352c5d72545867d860279",
+    "/work/results/practical-fixed-20261115-1400/synthetic_supported/physo/calculation/discover/physo/17/engine_summary.json": "bf7bce1f03395b4f3cfa53ca00ff76b903424663482560fc0eb5f22530d55529",
+    "/work/results/practical-fixed-20261115-1400/synthetic_supported/physo/calculation/prepare/run.json": "25cb8f49449fe3c134c4aa5c55dcd5cfb1460632ef68fa0e91aa78f367aa1849",
+    "/work/results/practical-fixed-20261115-1400/synthetic_supported/physo/calculation/discover/physo/17/candidates.jsonl": "91399e85594b664dd96f77aa210df84d188b7e526651df59884ae3bbe2670701",
+    "/work/results/practical-fixed-20261115-1400/synthetic_supported/e2e/calculation/discover/e2e/17/engine_summary.json": "d12a45adf74d526a08af71174e56f3169473319aee0872d6add58396d2ede1ec",
+    "/work/results/practical-fixed-20261115-1400/synthetic_supported/e2e/calculation/prepare/run.json": "ca9656fee901e5ec705c5e536760aeaef0207e760b2ac53663a9daaed06de817",
+    "/work/results/practical-fixed-20261115-1400/synthetic_supported/e2e/calculation/discover/e2e/17/candidates.jsonl": "2a01f4598170f256e18b520e116421148194370af8db2458b97ebf2a8bddb89c"
+  },
+  "runtime": {
+    "python": "3.11.15",
+    "image": "sha256:bdc532d7fcb7021e1a57810de876bfa8b2ad5ef7cd29762334fda5d14689acd9",
+    "common_source_sha256": {
+      "equation_evaluation/api.py": "6de19297f06854d9e68d0249b25efa13147ecf5068aa84fe14f12f5994e09005",
+      "equation_evaluation/numerical.py": "3f053d9df0f8b8ab8d6c4789d840d0ec39334bc0f17a8bbeca2310b9ccf36a27",
+      "estimation.py": "c0c59e71290977cbf4c9fc57618219f3f55db5f2a51b960e9323fd618ce36049",
+      "execution_views.py": "dc194df325c6ed045bf2e25b5d237557e63deb265a6570ea13589d16fe6a7a24",
+      "question_results.py": "c9809bdd77adef52a65772bbfa083ce8c3ad0a1c2fb804a11f8224fc81725d8d",
+      "metrics.py": "0a88927d73a47da42302426328efe404aaf44d7965193d737baa95dab9a1f48a",
+      "operators.py": "416377a122a27d65d5bc51e10fc59904c1b2f2b47b0dba0459ed7ed3633183b2",
+      "hypotheses.py": "4e96cc0390c7a35edea729db232c47ca5e54c2223d9d13fed117c6c8f4f0076c",
+      "hypothesis_storage.py": "9720caca2b36e7508891dc79caf5ad7cfe2abbe5ae124e30f82e883f566e198c",
+      "evaluation.py": "8f974a45a9a5476dae10c0b92903795bd63f6537bc41728af9a1c37c237c52dc",
+      "units.py": "3b25b832b28b84732ac30ae6d63e8f56a1f8d374a8ae5a9d146a30ef11b04b82",
+      "coordinates.py": "cbb8c750b5b9ece963cd5581d10a34f001dce81ea229a24b282191f961c6d44c",
+      "numerical_fidelity.py": "11d1031b8e224b2b54af7cb7c25e6e68dd91ffac3c4ac42a5630bddaf40c9529",
+      "expressions.py": "8f209199d49570b3c793677b6bf201a5f7aa98955d031e10d4febeed91990dd8",
+      "constraints.py": "67fa8563b5727555853b26b37589de4fb37139ffa04471b00ac5adaa84dbd984",
+      "domains.py": "383b6514c11f8f56360d1a90301422a63d725391553b83fd20f917734c2e471d",
+      "parameters.py": "a4b6fedabd32691c5610632448e6beed7240aec3be551ab13666a7ffb3d32e4d"
+    }
+  },
+  "problem_schema_version": 2,
+  "requirements": {
+    "allowed_operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "fixed_constants": {},
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": {
+      "coordinate_space": "working",
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "const": 0.75
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "slot": "h",
+            "args": [
+              {
+                "var": "x0"
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {},
+      "components": {},
+      "slots": {
+        "h": {
+          "arguments": [
+            {
+              "name": "x0",
+              "unit": "1"
+            }
+          ],
+          "unit": "1",
+          "allowed_operators": [
+            "add",
+            "sub",
+            "mul",
+            "div"
+          ],
+          "max_nodes": 252
+        }
+      },
+      "knowledge": {
+        "kind": "hypothesis",
+        "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+      }
+    },
+    "required_responses": {
+      "points": [
+        {
+          "x": 0.10010000000000001
+        },
+        {
+          "x": 0.3438375
+        },
+        {
+          "x": 0.587575
+        },
+        {
+          "x": 0.8313125
+        },
+        {
+          "x": 1.07505
+        },
+        {
+          "x": 1.3187875
+        },
+        {
+          "x": 1.5625250000000002
+        },
+        {
+          "x": 1.8062625
+        },
+        {
+          "x": 2.05
+        },
+        {
+          "x": 2.2937374999999998
+        },
+        {
+          "x": 2.5374749999999997
+        },
+        {
+          "x": 2.7812124999999996
+        },
+        {
+          "x": 3.02495
+        },
+        {
+          "x": 3.2686875
+        },
+        {
+          "x": 3.512425
+        },
+        {
+          "x": 3.7561625
+        },
+        {
+          "x": 3.9999
+        }
+      ],
+      "bounds": [
+        0.0,
+        null
+      ],
+      "checks": [
+        {
+          "name": "increasing",
+          "feature": "x",
+          "order": 1,
+          "sign": 1,
+          "step": 0.0001,
+          "tolerance": 1e-05,
+          "points": [
+            {
+              "x": 0.10010000000000001
+            },
+            {
+              "x": 0.3438375
+            },
+            {
+              "x": 0.587575
+            },
+            {
+              "x": 0.8313125
+            },
+            {
+              "x": 1.07505
+            },
+            {
+              "x": 1.3187875
+            },
+            {
+              "x": 1.5625250000000002
+            },
+            {
+              "x": 1.8062625
+            },
+            {
+              "x": 2.05
+            },
+            {
+              "x": 2.2937374999999998
+            },
+            {
+              "x": 2.5374749999999997
+            },
+            {
+              "x": 2.7812124999999996
+            },
+            {
+              "x": 3.02495
+            },
+            {
+              "x": 3.2686875
+            },
+            {
+              "x": 3.512425
+            },
+            {
+              "x": 3.7561625
+            },
+            {
+              "x": 3.9999
+            }
+          ],
+          "knowledge": "Declared finite-point increasing response"
+        }
+      ],
+      "enforcement": "hard"
+    }
+  },
+  "requirements_sha256": "81b861c5d41eb8dfa97ec7343bcc193fcf2eed762452bd75a8a9cf71727f39d5"
+}

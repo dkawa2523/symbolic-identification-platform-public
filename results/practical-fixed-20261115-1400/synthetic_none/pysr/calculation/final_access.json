@@ -1,0 +1,7 @@
+{
+  "data_sha256": "067d442097db6fc87d75652fc8fa760b131f2cf787464048d3468eec9c65e479",
+  "split_sha256": "f0e075db8614219a6562caf73115bceaaff5c774b63677b21b006b0b9921b923",
+  "decision_sha256": null,
+  "frozen_pool_sha256": "c4158a976420374895055d8fdfda3fcfef1f4896f5e6101af543397207495231",
+  "role": "holdout under explicit user declaration"
+}

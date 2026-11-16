@@ -1,0 +1,41 @@
+Compare equations on fixed Selection rows, not independent Final evidence.
+
+physo | physo/17/0@native | prediction
+y [m^2] = x ^ 2
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((h(x)) ** 2)
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Exposed small wrapper/horizon mechanism only, not a quality benchmark'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [m]) = x0
+  Unit: m
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.
+
+physo | physo/17/1@native | prediction
+y [m^2] = (x + x) ^ 2
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((h(x)) ** 2)
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Exposed small wrapper/horizon mechanism only, not a quality benchmark'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [m]) = (x0 + x0)
+  Unit: m
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.
+
+physo | physo/17/2@native | prediction
+y [m^2] = (x * (1.0 * θ[__slot_h_a])) ^ 2
+  __slot_h_a = 2.0 [1]
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((h(x)) ** 2)
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Exposed small wrapper/horizon mechanism only, not a quality benchmark'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [m]) = (x0 * (1.0 * a))
+  Unit: m
+  a = 2.0; role=free; unit=1; tied_to=None
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.
+
+Coefficient values use the saved working coordinates. Details: metadata/equations.txt

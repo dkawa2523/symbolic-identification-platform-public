@@ -1,0 +1,347 @@
+{
+  "layout_version": 3,
+  "scope": "Presentation files from one saved readout; not a new evaluation, selection or predictor bundle.",
+  "study_sha256": "14e8ecd94233a6dd54341f9548a39ba1e06026f9c35468a0cefc12db57bdfb21",
+  "comparison_sha256": "173a4ae06be6546e8f96c779e5c98c6928d07d607f58bbff7b83fc844407a4bf",
+  "decision_sha256": "0eccc2ff6a99c3b4a947eff73988ca91e6204f78c424f569909b81bb9e4f1b7b",
+  "files": {
+    "README.txt": "b4097c2d144f97953ba58d0544d6f1c3afaea9ec7f0f47b046d5d9bccad5dd38",
+    "equations.txt": "be4fd8a36604e65e18f31aa339080dc3edd5bb23e25864f7a7929e397a752675",
+    "figures/01_accuracy.png": "7d0fbe884d86a6b5d6f7b208e03472ef78c3c94ba1e0b3a6ec166f1d3ec38268",
+    "figures/01_accuracy.svg": "14398038605aba1e2ded8f75efc79d1a2e48b094a77455fc84949cf5e08d0e62",
+    "figures/01_least-squares-fit/01_accuracy.png": "e16c0c72dbd3d786988f73cf5a2846af09daba277e67c9d0dc22479250a3acca",
+    "figures/01_least-squares-fit/01_accuracy.svg": "93abd93228b78b1dacc07e3882d03e26d18c8bc837253adc3c59f0cec08b0be8",
+    "figures/01_least-squares-fit/02_predictions.png": "b40d77d5567faea183b98949053d92bb98e242b1cb50623851b9f798a9b1e37b",
+    "figures/01_least-squares-fit/02_predictions.svg": "a392b1988e10bc1eb879829aa65eaf44b6dbc0d272b67ebdbde5c10535b5b627",
+    "figures/01_least-squares-fit/03_residuals.png": "dc1ecc2c266b43e6fbb587cb521b6a89f7cb2100f65bee87af656b9cd976be2c",
+    "figures/01_least-squares-fit/03_residuals.svg": "ce549053e6103f6ecc0d15d5e91df3ffdb520b09693ac0fd38e0f136b72b981e",
+    "figures/01_least-squares-fit/04_response.png": "8bca32a77150e0e5e39ab3ede286074e0921e3d728096b0c381ddda506b2c8d4",
+    "figures/01_least-squares-fit/04_response.svg": "360e290eda3268af6fe56c871ca8e72bf47602b1f5375aa824fa913d795340ec",
+    "figures/01_least-squares-fit/README.txt": "faa0cbcd2c37ec9678337d6fb3a18e673db6edf5793af96f95a95ac016251a6b",
+    "figures/01_least-squares-fit/equation.png": "64b65a47121a95a1a062db4375d7109ef7289a4eee97d94d01eca922b07ac7c0",
+    "figures/01_least-squares-fit/equation.svg": "e4f67d0105e2e3bcc1a49ff9730dde6007800c5eb85baf230f4e12749c2f5ea1",
+    "figures/01_least-squares-fit/equation.txt": "e64088c7e48eaa9942e572b5a165e650bc634bcfa870b0d3cccf3d9417b16f5c",
+    "figures/02_dictionary/01_accuracy.png": "3cfe2b37f690b31980ea93d8ac76d0548f45a9b022d518313516467d6a63ca12",
+    "figures/02_dictionary/01_accuracy.svg": "8152a8eefd7295bac347b1b04e063349d9399394701a298338d6cd24f741ddf5",
+    "figures/02_dictionary/02_predictions.png": "080fce5cee0be01f32ad2a5ffdb1f2787be91ed28652091c3bc405ee2d2a3f83",
+    "figures/02_dictionary/02_predictions.svg": "20cdc68c66790020ea7912a931dad587bf414fa7435679ea5ee5426f06844f41",
+    "figures/02_dictionary/03_residuals.png": "5c7f98fb8635d1dbcc4653185be5617b3288ec506fe10122a45656c3334ad820",
+    "figures/02_dictionary/03_residuals.svg": "5f22bef9075ca423c7c14f64d03dfe6d2694bb0e086951f12fb5b95d32d049d7",
+    "figures/02_dictionary/04_response.png": "9dead24ab1ab700b0a81db2a684ae4a1bf177be4bf91435f9d2d632465294a41",
+    "figures/02_dictionary/04_response.svg": "8eb1421238cafd660d0ab7036a10bbca6a8ab234aec87bd6fe5ee74dc41cf62a",
+    "figures/02_dictionary/README.txt": "3d95a260154618bdc174a194b6c0ad664b2260168cf675fc8b1d23cb0fee4753",
+    "figures/02_dictionary/equation.png": "fd501f6d1bcf885597d5012738a6f6588b60b12bc4d5932023ac501fcc92b98d",
+    "figures/02_dictionary/equation.svg": "e8230db561a4c54a0fa68f884c5234f20c4ee50ab4f2141a0bebab80508e0c8e",
+    "figures/02_dictionary/equation.txt": "3d3f72c675aa56986aab6a17c89847290f849e74df7789cdb12d8d2e21a88d4d",
+    "figures/03_dictionary/01_accuracy.png": "6de41fa2282e1e23b30395eff473f263489971f8f0b29665ee01682b4f17c648",
+    "figures/03_dictionary/01_accuracy.svg": "7da77b75a8164cf8820810473a8121bd805126c65e5e4f912393919c12bac22a",
+    "figures/03_dictionary/02_predictions.png": "edb64688f784396766f9a8a59b36e9bf66aafc34bfb9d91f64f171edea171746",
+    "figures/03_dictionary/02_predictions.svg": "cf058bf2a2dc5785dea8f4d1b8a9225f6b7becd65072c66bd87ffa9bf0e315b2",
+    "figures/03_dictionary/03_residuals.png": "3cb523fc17acfc2841a30d982e2d1775dc9b8d760a893c30ec0b9b270ca19624",
+    "figures/03_dictionary/03_residuals.svg": "7b3a60cd534ac46523497713315763fcc83f191d6134522ee774b4d8a4697907",
+    "figures/03_dictionary/04_response.png": "f6e9b48cf3841c2ba68ded0f48186a0a8d6e5475b5addb1f5e5b181b1016ad48",
+    "figures/03_dictionary/04_response.svg": "f00259af61435447c635495d8e809bf9b8ea0bc86bc2143a5f4acb3de9632dab",
+    "figures/03_dictionary/README.txt": "3546b69ad54ab5217b0f5fa7b6054a69a4441a49338f64b2a4e5d5226af7edc1",
+    "figures/03_dictionary/equation.png": "c40b001c97ad8d611171430259279819f3524f56daff0936691b02cb8432a8cf",
+    "figures/03_dictionary/equation.svg": "732f3b36d2c6da88059077db3a20008ebe69dd31f59cd9de5bf0f0f0324f15f3",
+    "figures/03_dictionary/equation.txt": "129a7b423d5323cfcef4e80bfbce8255b1a0a1fbeed47d091967099047e29bdf",
+    "figures/04_dictionary/01_accuracy.png": "04551a9918d20144a9f474a8247559b5b3c1ec7de1d8b67c298ff50005b7d573",
+    "figures/04_dictionary/01_accuracy.svg": "2884e22397a02973c8a5b390a8f2dfb35948bd9b458bd93a9153a54a8d44e504",
+    "figures/04_dictionary/02_predictions.png": "b28b635c4b7d01b08df2db5c94888de6b558adda0139a4fc0ae227a3fec317e2",
+    "figures/04_dictionary/02_predictions.svg": "772ad48d253d74b8b5c5adc5da313f66a73ea61ccb4439f623c2b0d254ab6d10",
+    "figures/04_dictionary/03_residuals.png": "3d8970d044b39e657945d620d2c37534c9cf77d65fc754e9afb453ef95fb9eb3",
+    "figures/04_dictionary/03_residuals.svg": "28de6cd174633a3835166ddb5560ad0cbbbce4e6e93e93398b87044872c77e97",
+    "figures/04_dictionary/04_response.png": "c8a4ad7601163c609c55f713a41064d311dc142153ddec56bcbef380aa3580c9",
+    "figures/04_dictionary/04_response.svg": "11826ece48aaddc5d962f34356e09b4fd89ae1095ed7b37cb68a0bf16a0f10ac",
+    "figures/04_dictionary/README.txt": "c7352a7351d5771f3babe3b9e7f566348feb29be859343df6d38b7d9a198eb09",
+    "figures/04_dictionary/equation.png": "d4d53015aba3b3bae2ae57dec3c8dbd61a6182e76c33db3d11097b3db023aa47",
+    "figures/04_dictionary/equation.svg": "257522b251df0dcdad255e7ca3a693b5e32a5385c970bedcdb7172fa62f3c650",
+    "figures/04_dictionary/equation.txt": "f86f69c4c1747f5c1ba436ef21bdab64b34fd2ee2082611a5dbe29874a58ad26",
+    "figures/06_input_distance.png": "41aa906fbd54a077f7665f0b94a24d644766ee16086327c2666d2988cbb10f5c",
+    "figures/06_input_distance.svg": "422c648ed7d5ced607c0062047965ce8b0809961ecaa4c50b3ac2d12a0a7109e",
+    "figures/README.txt": "d23aeec9cad19b69fe7cd120a69ba0e812a0da4e025c43924d3129287109697f",
+    "metadata/01_accuracy.txt": "ce496c8e45a14a78299d04a54d01ada5d39b3cf3c2b397f3b1282c395e0f4a7e",
+    "metadata/02_predictions.txt": "836de407ab0a03994971ad5037d19e6e7a73ffdf19051e6016c03dd6b3814efa",
+    "metadata/03_residuals.txt": "f4451daeb9bb366eee9816e00d989ca55b7f4ac0286f99317ca55c00cd3f1e63",
+    "metadata/04_response.txt": "d01230b0185150bb65ffefa0fbf26bbda487e7e947ca533f49e2017ec4d15665",
+    "metadata/05_difference.txt": "dccb246ca55ee1b8b2cae3ac63018258b0a29115227f9b70557f904ddecd83b6",
+    "metadata/06_input_distance.txt": "7f89d4eae676d783059fa042427ac17d026d9b4f4d822446d40840f20d28a0ff",
+    "metadata/equations.json": "8a3d30f7254c943ead5a304585629452e4d175f0026a1492fd5952f2e5c21e34",
+    "metadata/equations.tex": "db435b9b6dec424752af29e2c9e235ba5f0685760724893bcaed0960f8e37cb6",
+    "metadata/equations.txt": "27861fe3674cb879a0f3afd296b835bb428824fcbec13c623d285645cdd1b4ae",
+    "metadata/plot_data.json": "63f43b393af709484790609baec2eb009834c8b0a21b06cf14516a050aef5295",
+    "metadata/report.json": "072306ffc26f69771534e42cf8c5ccfae9265c13500c71eec0a17db5489b509e",
+    "tables/01_accuracy.csv": "f2583f59117d6991ff31a442ec16bc931f188af46e5818841d43da64c57b63b0",
+    "tables/01_least-squares-fit/01_accuracy.csv": "cf61d68151b71c333788449022fa6ab966c90d711778334f1ddb11925e565ada",
+    "tables/01_least-squares-fit/02_predictions.csv": "c8ce11dec9ac9a63ed6ddff5bd2b60e7a687213177c7be15b20bbb50e5c4b953",
+    "tables/01_least-squares-fit/03_residuals.csv": "acf6ddc4e4036da52062355b41bccd2070197b6d10d6a56f5cb2057caae86c05",
+    "tables/01_least-squares-fit/04_response.csv": "663d3e688d1717e29486ad7e87db4cb96ee22ad751d71edd5a8de003f51ae25d",
+    "tables/02_dictionary/01_accuracy.csv": "007efb5a4637a8333d4d84c83475ba67452c292aa02ab0f52c7c0a6f9016c0e6",
+    "tables/02_dictionary/02_predictions.csv": "e315b5ca2a4efd4e1b79236dcec10ff0f3eaf23976265a62bddbac1f089f1ac5",
+    "tables/02_dictionary/03_residuals.csv": "c5be4ad0d1f7810968bd49bf506995d4c6e48e3e44bfa1b094420951f1e15e34",
+    "tables/02_dictionary/04_response.csv": "8d1404effb34f223751160f6839ac11520dc3f1815f9b53ea87be3394af23867",
+    "tables/02_predictions.csv": "81c6db6563e26ae0ec4f8e39ce8f4b7e3e5cb5703a594810640178923ca50522",
+    "tables/03_dictionary/01_accuracy.csv": "007efb5a4637a8333d4d84c83475ba67452c292aa02ab0f52c7c0a6f9016c0e6",
+    "tables/03_dictionary/02_predictions.csv": "bbb8f684691978ec5241afd0dda4e172d51c340860f8fa6f215c0b264649b769",
+    "tables/03_dictionary/03_residuals.csv": "b80a1d3585fdd3d43f2b17be4460ffee28e01b008979ed807649856f3a007073",
+    "tables/03_dictionary/04_response.csv": "5e9cb2ef514495565d91fa03493262a6dc017f4d00f2584f5c9c50141e47fe2f",
+    "tables/03_residuals.csv": "d6af90f64c77c2c2c9a60f67528c9409aaf904bab571b69aeb16f62eb59cabc7",
+    "tables/04_dictionary/01_accuracy.csv": "007efb5a4637a8333d4d84c83475ba67452c292aa02ab0f52c7c0a6f9016c0e6",
+    "tables/04_dictionary/02_predictions.csv": "898b283567b3762d8dcc0773fe4bc609b15b182395bf73e757bf5a8e423e93ec",
+    "tables/04_dictionary/03_residuals.csv": "a86a4fd744c414b70993cd08686afe12ac321806e105167882445e1e6b046af8",
+    "tables/04_dictionary/04_response.csv": "b671d4f57d802291712ed3a63d19b2665043e2fcb3da577c82e366a003101849",
+    "tables/04_response.csv": "db001a2ca006239f437202c1cf526c1440a64ca16738807beea23018ebed4a58",
+    "tables/05_difference.csv": "de0e54bf5b4131fcba3350bfce39ee6010c777bd27a4b85bc0d6df774059021c",
+    "tables/06_input_distance.csv": "e6d6be728d168e2932a0dae516543216bb5dced5c8930089a6a9e4e589bbecc9",
+    "tables/candidates.csv": "3270ce13214d83560e8abdc7094a2cc740a4594810269c25f99814c7e21fa67d",
+    "tables/constraints.csv": "ce9673943ee3acf1ed6286e52b5b8f11c2e64eaa264927ffb35b03c6180680dd",
+    "tables/displayed_models.csv": "b4eb0a707091119504a9b58fca35157e464d019d784a9e1d44b0c26d186f4441",
+    "tables/equations.csv": "a27b472ad4f928511270f5352b33fdba39056a2f49e7482d8a667a841b0231e8",
+    "tables/pair_comparisons.csv": "72bd944f0046f5377c1609659f94fde05fabe97d9ae2dac7cf9579d2a9229640",
+    "tables/parameters.csv": "cecc81159f12e452218a52a904435837a2bf18002ed21d0807815da4b939a1c3"
+  },
+  "unavailable": [
+    {
+      "kind": "final_prediction",
+      "reason": "Final observations/predictions were not saved",
+      "candidate_id": "user_linear@manual/train_point_fit"
+    },
+    {
+      "kind": "final_prediction",
+      "reason": "Final observations/predictions were not saved",
+      "candidate_id": "dictionary/7/1@native"
+    },
+    {
+      "kind": "final_prediction",
+      "reason": "Final observations/predictions were not saved",
+      "candidate_id": "dictionary/7/2@native"
+    },
+    {
+      "kind": "final_prediction",
+      "reason": "Final observations/predictions were not saved",
+      "candidate_id": "dictionary/7/3@native"
+    },
+    {
+      "kind": "observed_prediction",
+      "reason": "No saved rows for this figure"
+    },
+    {
+      "kind": "residual",
+      "reason": "No saved rows for this figure"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "mean/7/0@native",
+      "right": "linear/7/0@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "mean/7/0@native",
+      "right": "linear/7/1@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "mean/7/0@native",
+      "right": "dictionary/7/0@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "mean/7/0@native",
+      "right": "dictionary/7/1@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "mean/7/0@native",
+      "right": "dictionary/7/2@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "mean/7/0@native",
+      "right": "dictionary/7/3@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "mean/7/0@native",
+      "right": "dictionary/7/4@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "mean/7/0@native",
+      "right": "user_linear@manual/train_point_fit",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "linear/7/0@native",
+      "right": "linear/7/1@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "linear/7/0@native",
+      "right": "dictionary/7/0@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "linear/7/0@native",
+      "right": "dictionary/7/1@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "linear/7/0@native",
+      "right": "dictionary/7/2@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "linear/7/0@native",
+      "right": "dictionary/7/3@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "linear/7/0@native",
+      "right": "dictionary/7/4@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "linear/7/0@native",
+      "right": "user_linear@manual/train_point_fit",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "linear/7/1@native",
+      "right": "dictionary/7/0@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "linear/7/1@native",
+      "right": "dictionary/7/1@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "linear/7/1@native",
+      "right": "dictionary/7/2@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "linear/7/1@native",
+      "right": "dictionary/7/3@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "linear/7/1@native",
+      "right": "dictionary/7/4@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "linear/7/1@native",
+      "right": "user_linear@manual/train_point_fit",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "dictionary/7/0@native",
+      "right": "dictionary/7/1@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "dictionary/7/0@native",
+      "right": "dictionary/7/2@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "dictionary/7/0@native",
+      "right": "dictionary/7/3@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "dictionary/7/0@native",
+      "right": "dictionary/7/4@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "dictionary/7/0@native",
+      "right": "user_linear@manual/train_point_fit",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "dictionary/7/1@native",
+      "right": "dictionary/7/4@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "dictionary/7/2@native",
+      "right": "dictionary/7/4@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "dictionary/7/3@native",
+      "right": "dictionary/7/4@native",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    },
+    {
+      "kind": "response_difference",
+      "reason": "Outside displayed candidate set; stored pair retained in the full comparison",
+      "left": "dictionary/7/4@native",
+      "right": "user_linear@manual/train_point_fit",
+      "path_display_id": "7936cb23c96c8b2a975e812f4e4b9d21cd4232696687c434b96576a46598b958:0"
+    }
+  ],
+  "coefficient_scope": "Values, bounds and units are the original working-coordinate coefficients.",
+  "latex_scope": "Historical views without AST retain their original text; no formula parsing or reconstruction.",
+  "csv_scope": "Potential spreadsheet-formula text is apostrophe-prefixed; exact original strings remain in JSON.",
+  "formula_size_scope": "Display expands bounded local definitions/polynomial blocks; large formulas may need manual layout in TeX."
+}

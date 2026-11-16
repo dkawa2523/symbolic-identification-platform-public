@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="668" viewBox="0 0 1000 668" role="img" aria-labelledby="title desc" data-source-csv="../../tables/01_least-squares-fit/01_accuracy.csv" data-source-sha256="cf61d68151b71c333788449022fa6ab966c90d711778334f1ddb11925e565ada">
+<title id="title">Least-squares fit | Prediction error and equation size</title><desc id="desc">All frozen candidates; no ranking or new score. Ineligible candidates are marked with crosses. Missing scores remain in CSV, not zero.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203342">
+<text x="120" y="31" font-size="21" font-weight="bold">Least-squares fit | Prediction error and equation size</text>
+<path d="M 120.000 90 V 460 M 120 460.000 H 695" stroke="#e2e9ee" fill="none"/>
+<text x="120.0" y="483" font-size="13" text-anchor="middle">4.75</text>
+<text x="108" y="465.0" font-size="13" text-anchor="end">4.282</text>
+<path d="M 235.000 90 V 460 M 120 386.000 H 695" stroke="#e2e9ee" fill="none"/>
+<text x="235.0" y="483" font-size="13" text-anchor="middle">4.85</text>
+<text x="108" y="391.0" font-size="13" text-anchor="end">4.372</text>
+<path d="M 350.000 90 V 460 M 120 312.000 H 695" stroke="#e2e9ee" fill="none"/>
+<text x="350.0" y="483" font-size="13" text-anchor="middle">4.95</text>
+<text x="108" y="317.0" font-size="13" text-anchor="end">4.463</text>
+<path d="M 465.000 90 V 460 M 120 238.000 H 695" stroke="#e2e9ee" fill="none"/>
+<text x="465.0" y="483" font-size="13" text-anchor="middle">5.05</text>
+<text x="108" y="243.0" font-size="13" text-anchor="end">4.553</text>
+<path d="M 580.000 90 V 460 M 120 164.000 H 695" stroke="#e2e9ee" fill="none"/>
+<text x="580.0" y="483" font-size="13" text-anchor="middle">5.15</text>
+<text x="108" y="169.0" font-size="13" text-anchor="end">4.643</text>
+<path d="M 695.000 90 V 460 M 120 90.000 H 695" stroke="#e2e9ee" fill="none"/>
+<text x="695.0" y="483" font-size="13" text-anchor="middle">5.25</text>
+<text x="108" y="95.0" font-size="13" text-anchor="end">4.733</text>
+<circle data-row="0" data-series="Least-squares fit" data-x="5" data-y="4.507713759029069" cx="407.500" cy="275.000" r="3.6" fill="#28806b" fill-opacity="0.75"><title>{&quot;series&quot;: &quot;Least-squares fit&quot;, &quot;point_index&quot;: 0, &quot;x&quot;: 5, &quot;y&quot;: 4.507713759029069, &quot;valid&quot;: true, &quot;plotted&quot;: true, &quot;plot_reason&quot;: null, &quot;candidate_id&quot;: &quot;user_linear@manual/train_point_fit&quot;, &quot;eligible&quot;: true, &quot;reason&quot;: null, &quot;coverage&quot;: null, &quot;subject&quot;: {&quot;relation_ref&quot;: &quot;user_linear@manual/train_point_fit&quot;, &quot;relation_state_sha256&quot;: &quot;f00c7d89248c1f415268c6e71128e38cbfaf83f3a2819da1ebdbd4f1a6a543ea&quot;, &quot;view&quot;: &quot;value&quot;, &quot;settings_ref&quot;: &quot;44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a&quot;}, &quot;checks&quot;: [{&quot;name&quot;: &quot;operators&quot;, &quot;status&quot;: &quot;pass&quot;, &quot;required&quot;: true, &quot;method&quot;: &quot;structural&quot;, &quot;reason&quot;: null, &quot;member&quot;: 0}, {&quot;name&quot;: &quot;max_nodes&quot;, &quot;status&quot;: &quot;pass&quot;, &quot;required&quot;: true, &quot;method&quot;: &quot;structural&quot;, &quot;reason&quot;: null, &quot;member&quot;: 0}, {&quot;name&quot;: &quot;units&quot;, &quot;status&quot;: &quot;pass&quot;, &quot;required&quot;: false, &quot;method&quot;: &quot;structural&quot;, &quot;reason&quot;: null, &quot;member&quot;: 0}, {&quot;name&quot;: &quot;probe_response&quot;, &quot;status&quot;: &quot;pass&quot;, &quot;required&quot;: true, &quot;method&quot;: &quot;shared feasible geometry/provided points; no global guarantee&quot;, &quot;reason&quot;: null}, {&quot;name&quot;: &quot;target_domain_probes&quot;, &quot;status&quot;: &quot;pass&quot;, &quot;required&quot;: true, &quot;method&quot;: &quot;explicit sampled probes; no global guarantee&quot;, &quot;reason&quot;: null}], &quot;native_check&quot;: {&quot;passed&quot;: null, &quot;kind&quot;: &quot;named derived point fit; source native remains unchanged&quot;}}</title></circle>
+<text x="413.5" y="266.0" font-size="11" data-candidate-numbers="9">9</text>
+<path d="M 120 90 V 460 H 695" stroke="#536b79" fill="none"/>
+<text x="407.5" y="517" font-size="15" text-anchor="middle">Expression nodes [count]</text>
+<text x="24" y="275.0" font-size="15" text-anchor="middle" transform="rotate(-90 24 275.0)">Selection RMSE [mm]</text>
+<circle cx="735" cy="86" r="4" fill="#28806b"/>
+<text x="748" y="90" font-size="12" >Least-squares fit</text>
+<text x="40" y="555" font-size="12" fill="#536b79">Selection data</text>
+<text x="40" y="573" font-size="12" fill="#536b79">All candidates with finite scores; crosses are excluded by checks.</text>
+<text x="40" y="591" font-size="12" fill="#536b79">Candidates: 1; eligible: 1; excluded: 0. Numbers match the equation table.</text>
+</g></svg>

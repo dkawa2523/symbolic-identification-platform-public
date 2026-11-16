@@ -1,0 +1,44 @@
+task_id: proton_em_form_factor__GE_over_GD
+domain: physics / nuclear_particle_physics
+license: CC-BY-4.0
+type: typeI
+has_group_id: false
+context: The proton's internal charge distribution is characterized by its electromagnetic
+  form factors, with the dipole form factor serving as a standard reference shape,
+  a subject in nuclear and hadronic physics.
+target:
+  name: GE_over_GD
+  symbol: G_E / G_D
+  unit: ''
+  description: Ratio of the proton electric Sachs form factor to the standard dipole
+    form factor, measured as a function of four-momentum transfer squared.
+  range:
+    train:
+    - 0.844
+    - 1
+    test:
+    - 0.287
+    - 0.837
+inputs:
+- name: Q2_GeV2
+  symbol: Q²
+  unit: GeV^2
+  description: Four-momentum transfer squared in electron-proton elastic scattering.
+  range:
+    train:
+    - 0.007
+    - 1.83
+    test:
+    - 2.07
+    - 5.85
+data_files:
+  train: data/train.csv
+  test: data/test.csv
+n_train: 37
+n_test: 10
+caps:
+  max_law_constants: 8
+  max_local_params: 0
+  max_init_size_per_param: 1
+  fit_timeout_seconds: null
+metric: rmse

@@ -1,0 +1,51 @@
+{
+  "at": "2026-11-15T15:18:47.729237+00:00",
+  "session": 78772,
+  "session_running": true,
+  "status": {
+    "stage": "discovery",
+    "time": "2026-11-15T15:14:19.268097+00:00",
+    "arm": "yacht",
+    "method": "physo",
+    "final_accessed": false
+  },
+  "completed_native": 3,
+  "completed": [
+    {
+      "arm": "yacht",
+      "method": "pysr",
+      "status": "ok",
+      "reason": null,
+      "worker_wall_seconds": 389.5647166080016,
+      "portable_rows": 14
+    },
+    {
+      "arm": "yacht",
+      "method": "parfam",
+      "status": "ok",
+      "reason": null,
+      "worker_wall_seconds": 3040.191859793995,
+      "portable_rows": 159
+    },
+    {
+      "arm": "yacht",
+      "method": "torchsisso",
+      "status": "ok",
+      "reason": null,
+      "worker_wall_seconds": 16.727101085998584,
+      "portable_rows": 3
+    }
+  ],
+  "last_health_observation": {
+    "job": "yacht/physo/42",
+    "container": "f8ea3414f762",
+    "cpu_percent": 140.38,
+    "memory": "1.161GiB/6GiB",
+    "OOMKilled": false,
+    "log_warning": "native LaTeX display not available; no fatal traceback observed",
+    "scope": "Resource snapshot, not precision/convergence/eligibility evidence"
+  },
+  "global_choices_exists": false,
+  "Final_marker_exists": false,
+  "action": "Read-only monitor; no interruption, no settings/source/data/image change, no retry or Final scoring"
+}

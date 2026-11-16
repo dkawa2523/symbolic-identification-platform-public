@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "engine": "physo",
+      "seed": 17,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "reason": null,
+      "wall_seconds": 7.376634048006963,
+      "exported_candidates": 3,
+      "summary_path": "/work/results/cleanup-normal-20261116-030616/calculation/discover/physo/17/engine_summary.json"
+    }
+  ],
+  "selection_performed": false,
+  "final_accessed": false
+}

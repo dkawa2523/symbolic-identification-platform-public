@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "engine": "e2e",
+      "seed": 17,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "reason": null,
+      "wall_seconds": 2501.1375135399867,
+      "exported_candidates": 175,
+      "summary_path": "/work/results/practical-fixed-20261115-1400/synthetic_supported/e2e/calculation/discover/e2e/17/engine_summary.json"
+    }
+  ],
+  "selection_performed": false,
+  "final_accessed": false
+}

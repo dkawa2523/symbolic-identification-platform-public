@@ -1,0 +1,245 @@
+{
+  "scope": "1001 score-only finite response centers, not domain guarantee; never fed to selection",
+  "results": [
+    {
+      "id": "pysr/17/5@native",
+      "checks": [
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null,
+          "n_points": 1001,
+          "n_valid": 1001,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "violation_rate": 0.0,
+          "failure_rate": 0.0,
+          "rate_denominator": "all declared points; invalid points separate from finite violations",
+          "max_violation": 0.0,
+          "max_finite_violation": 0.0,
+          "response_unit": "1",
+          "response_bounds": [
+            0,
+            null
+          ],
+          "worst_point": {
+            "x": 0.10010000000000001
+          },
+          "worst_prediction": 0.26544045659958504
+        },
+        {
+          "name": "increasing",
+          "status": "pass",
+          "required": true,
+          "method": "central finite-step sampled response; no global guarantee",
+          "reason": null,
+          "feature": "x",
+          "direction": null,
+          "working_direction": null,
+          "path_unit": null,
+          "order": 1,
+          "sign": 1,
+          "step": 0.0001,
+          "tolerance": 1e-05,
+          "response_unit": "(1)/(1)^1",
+          "n_points": 1001,
+          "n_valid": 1001,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "violation_rate": 0.0,
+          "failure_rate": 0.0,
+          "rate_denominator": "all declared points; invalid points separate from finite violations",
+          "max_violation": 0.0,
+          "max_finite_violation": 0.0,
+          "worst_point": {
+            "x": 0.10010000000000001
+          },
+          "worst_response": 2.4539190282066303,
+          "knowledge": "Declared finite-point increasing response"
+        }
+      ]
+    },
+    {
+      "id": "torchsisso/17/0@native",
+      "checks": [
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null,
+          "n_points": 1001,
+          "n_valid": 1001,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "violation_rate": 0.0,
+          "failure_rate": 0.0,
+          "rate_denominator": "all declared points; invalid points separate from finite violations",
+          "max_violation": 0.0,
+          "max_finite_violation": 0.0,
+          "response_unit": "1",
+          "response_bounds": [
+            0,
+            null
+          ],
+          "worst_point": {
+            "x": 0.10010000000000001
+          },
+          "worst_prediction": 0.7117589744779028
+        },
+        {
+          "name": "increasing",
+          "status": "pass",
+          "required": true,
+          "method": "central finite-step sampled response; no global guarantee",
+          "reason": null,
+          "feature": "x",
+          "direction": null,
+          "working_direction": null,
+          "path_unit": null,
+          "order": 1,
+          "sign": 1,
+          "step": 0.0001,
+          "tolerance": 1e-05,
+          "response_unit": "(1)/(1)^1",
+          "n_points": 1001,
+          "n_valid": 1001,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "violation_rate": 0.0,
+          "failure_rate": 0.0,
+          "rate_denominator": "all declared points; invalid points separate from finite violations",
+          "max_violation": 0.0,
+          "max_finite_violation": 0.0,
+          "worst_point": {
+            "x": 0.10010000000000001
+          },
+          "worst_response": 1.0556197726457883,
+          "knowledge": "Declared finite-point increasing response"
+        }
+      ]
+    },
+    {
+      "id": "physo/17/8@native",
+      "checks": [
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null,
+          "n_points": 1001,
+          "n_valid": 1001,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "violation_rate": 0.0,
+          "failure_rate": 0.0,
+          "rate_denominator": "all declared points; invalid points separate from finite violations",
+          "max_violation": 0.0,
+          "max_finite_violation": 0.0,
+          "response_unit": "1",
+          "response_bounds": [
+            0,
+            null
+          ],
+          "worst_point": {
+            "x": 0.10010000000000001
+          },
+          "worst_prediction": 0.26606489434763536
+        },
+        {
+          "name": "increasing",
+          "status": "pass",
+          "required": true,
+          "method": "central finite-step sampled response; no global guarantee",
+          "reason": null,
+          "feature": "x",
+          "direction": null,
+          "working_direction": null,
+          "path_unit": null,
+          "order": 1,
+          "sign": 1,
+          "step": 0.0001,
+          "tolerance": 1e-05,
+          "response_unit": "(1)/(1)^1",
+          "n_points": 1001,
+          "n_valid": 1001,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "violation_rate": 0.0,
+          "failure_rate": 0.0,
+          "rate_denominator": "all declared points; invalid points separate from finite violations",
+          "max_violation": 0.0,
+          "max_finite_violation": 0.0,
+          "worst_point": {
+            "x": 0.10010000000000001
+          },
+          "worst_response": 2.385883885215878,
+          "knowledge": "Declared finite-point increasing response"
+        }
+      ]
+    },
+    {
+      "id": "e2e/17/125/known-affine-fit@native",
+      "checks": [
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null,
+          "n_points": 1001,
+          "n_valid": 1001,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "violation_rate": 0.0,
+          "failure_rate": 0.0,
+          "rate_denominator": "all declared points; invalid points separate from finite violations",
+          "max_violation": 0.0,
+          "max_finite_violation": 0.0,
+          "response_unit": "1",
+          "response_bounds": [
+            0,
+            null
+          ],
+          "worst_point": {
+            "x": 0.10010000000000001
+          },
+          "worst_prediction": 0.27348065333027005
+        },
+        {
+          "name": "increasing",
+          "status": "fail",
+          "required": true,
+          "method": "central finite-step sampled response; no global guarantee",
+          "reason": null,
+          "feature": "x",
+          "direction": null,
+          "working_direction": null,
+          "path_unit": null,
+          "order": 1,
+          "sign": 1,
+          "step": 0.0001,
+          "tolerance": 1e-05,
+          "response_unit": "(1)/(1)^1",
+          "n_points": 1001,
+          "n_valid": 1001,
+          "n_violating": 7,
+          "n_invalid": 0,
+          "violation_rate": 0.006993006993006993,
+          "failure_rate": 0.006993006993006993,
+          "rate_denominator": "all declared points; invalid points separate from finite violations",
+          "max_violation": 111.50203898126014,
+          "max_finite_violation": 111.50203898126014,
+          "worst_point": {
+            "x": 2.2644889999999998
+          },
+          "worst_response": -111.50204898126015,
+          "knowledge": "Declared finite-point increasing response"
+        }
+      ]
+    }
+  ]
+}

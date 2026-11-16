@@ -1,0 +1,137 @@
+{
+  "runtime_extensions": [],
+  "prepared_sha256": "e263197ee15b33a7c4b1f02de16366bf8b0638524742b9a6157dad7e1bc0edf2",
+  "split_seed": 42,
+  "public_units": {
+    "x": "1",
+    "y": "1"
+  },
+  "unit_coordinates": {
+    "policy": "canonical problem; explicit CSV conversion; all domains/constraints/tolerances in problem units",
+    "columns": {
+      "x": {
+        "coordinate_role": null,
+        "source_unit": "1",
+        "problem_unit": "1",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      },
+      "y": {
+        "coordinate_role": null,
+        "source_unit": "1",
+        "problem_unit": "1",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      }
+    }
+  },
+  "input_geometry": {
+    "schema_version": 1,
+    "source_variables": [
+      {
+        "id": "x0",
+        "column": "x",
+        "unit": "1",
+        "domain": [
+          0.1,
+          4.0
+        ],
+        "coordinate_role": null
+      }
+    ],
+    "domain": {
+      "columns": [
+        "x"
+      ],
+      "space_id": "source_inputs",
+      "kind": "box",
+      "units": {
+        "x": "1"
+      },
+      "coordinate_roles": {
+        "x": null
+      },
+      "bounds": [
+        [
+          0.1,
+          4.0
+        ]
+      ]
+    },
+    "map": null
+  },
+  "execution_domain": {
+    "columns": [
+      "x"
+    ],
+    "space_id": "source_inputs",
+    "kind": "box",
+    "units": {
+      "x": "1"
+    },
+    "coordinate_roles": {
+      "x": null
+    },
+    "bounds": [
+      [
+        0.1,
+        4.0
+      ]
+    ]
+  },
+  "fixed_constants": {},
+  "requirements_ref": {
+    "requirements_sha256": "35ba19472d59ab6158650d6aa5f176e2c90edd1643a654af61137001cdde3d48",
+    "scope": "canonical common request; native settings/checks are derived evidence"
+  },
+  "train": "/work/results/practical-fixed-20261115-1400/synthetic_none/baselines/calculation/prepare/train.npz",
+  "variables": [
+    {
+      "id": "x0",
+      "column": "x",
+      "unit": "1",
+      "domain": [
+        0.1,
+        4.0
+      ],
+      "coordinate_role": null
+    }
+  ],
+  "target": {
+    "coordinate_role": null,
+    "column": "y",
+    "unit": "1",
+    "domain": null
+  },
+  "operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "limits": {
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "probes": [],
+    "response_bounds": [
+      null,
+      null
+    ],
+    "response_checks": [],
+    "response_enforcement": null,
+    "max_wall_seconds": 21600,
+    "response_mode": "search"
+  },
+  "seed": 17,
+  "engine": "linear",
+  "options": {},
+  "max_export_candidates": 20,
+  "candidate_pool_policy": "all",
+  "device": "cpu",
+  "asset_manifest": null
+}

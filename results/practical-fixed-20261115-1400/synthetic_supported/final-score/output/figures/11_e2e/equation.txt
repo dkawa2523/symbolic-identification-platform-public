@@ -1,0 +1,64 @@
+11. e2e | equation
+Candidate: e2e/17/125/known-affine-fit@native
+Coordinates: public
+y [1] = ((0.75 * x) + ((coef['__slot_h_c2'] + (coef['__slot_h_c4'] * (1 / ((coef['__slot_h_c8'] + (coef['__slot_h_c10'] * (1 / (coef['__slot_h_c13'] + (coef['__slot_h_c15'] * ((x - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale'])))))) - (coef['__slot_h_c18'] + (coef['__slot_h_c20'] * ((x - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale']))))))) + (coef['__slot_h_c23'] + (coef['__slot_h_c25'] * (1 / (coef['__slot_h_c28'] + (coef['__slot_h_c30'] * (1 / (coef['__slot_h_c33'] + (coef['__slot_h_c35'] * (1 / (coef['__slot_h_c38'] + (coef['__slot_h_c40'] * (1 / (coef['__slot_h_c43'] + (coef['__slot_h_c45'] * (1 / (coef['__slot_h_c48'] + (coef['__slot_h_c50'] * (1 / (coef['__slot_h_c53'] + (coef['__slot_h_c55'] * ((x - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale'])))))))))))))))))))))))
+
+__slot_h_c10 = -0.20199110458135008 [1]
+__slot_h_c13 = -3.0170679227934127 [1]
+__slot_h_c15 = -0.249871246513016 [1]
+__slot_h_c18 = 0.02782615839409602 [1]
+__slot_h_c2 = -0.28608761362150004 [1]
+__slot_h_c20 = -0.03148121346559579 [1]
+__slot_h_c23 = 2.245575033847901 [1]
+__slot_h_c25 = 0.46042483881401985 [1]
+__slot_h_c28 = 0.37928486584861115 [1]
+__slot_h_c30 = -1.2256667468422733 [1]
+__slot_h_c33 = -0.04076234642677988 [1]
+__slot_h_c35 = 0.000962567445148803 [1]
+__slot_h_c38 = -0.5551126945217775 [1]
+__slot_h_c4 = -0.04403400872623396 [1]
+__slot_h_c40 = -14.167040088518197 [1]
+__slot_h_c43 = -1.5489822257082586 [1]
+__slot_h_c45 = 31.3327905049318 [1]
+__slot_h_c48 = -0.03765952549039632 [1]
+__slot_h_c50 = 14.736168511502376 [1]
+__slot_h_c53 = 2.591404230970542 [1]
+__slot_h_c55 = -51.23330467961724 [1]
+__slot_h_c8 = 0.028737139215004936 [1]
+__slot_h_x0_mean = 1.9634916034894223 [1]
+__slot_h_x0_scale = 1.0820323259523998 [1]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((0.75 * x) + h(x))
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Declared fixed contribution 0.75*x plus one shared unknown h(x)'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [1]) = ((c2 + (c4 * (1 / ((c8 + (c10 * (1 / (c13 + (c15 * ((x0 - x0_mean) / x0_scale)))))) - (c18 + (c20 * ((x0 - x0_mean) / x0_scale))))))) + (c23 + (c25 * (1 / (c28 + (c30 * (1 / (c33 + (c35 * (1 / (c38 + (c40 * (1 / (c43 + (c45 * (1 / (c48 + (c50 * (1 / (c53 + (c55 * ((x0 - x0_mean) / x0_scale))))))))))))))))))))))
+  Unit: 1
+  c2 = -0.28608761362150004; role=free; unit=1; tied_to=None
+  c4 = -0.04403400872623396; role=free; unit=1; tied_to=None
+  c8 = 0.028737139215004936; role=free; unit=1; tied_to=None
+  c10 = -0.20199110458135008; role=free; unit=1; tied_to=None
+  c13 = -3.0170679227934127; role=free; unit=1; tied_to=None
+  c15 = -0.249871246513016; role=free; unit=1; tied_to=None
+  x0_mean = 1.9634916034894223; role=fixed; unit=1; tied_to=None
+  x0_scale = 1.0820323259523998; role=fixed; unit=1; tied_to=None
+  c18 = 0.02782615839409602; role=free; unit=1; tied_to=None
+  c20 = -0.03148121346559579; role=free; unit=1; tied_to=None
+  c23 = 2.245575033847901; role=free; unit=1; tied_to=None
+  c25 = 0.46042483881401985; role=free; unit=1; tied_to=None
+  c28 = 0.37928486584861115; role=free; unit=1; tied_to=None
+  c30 = -1.2256667468422733; role=free; unit=1; tied_to=None
+  c33 = -0.04076234642677988; role=free; unit=1; tied_to=None
+  c35 = 0.000962567445148803; role=free; unit=1; tied_to=None
+  c38 = -0.5551126945217775; role=free; unit=1; tied_to=None
+  c40 = -14.167040088518197; role=free; unit=1; tied_to=None
+  c43 = -1.5489822257082586; role=free; unit=1; tied_to=None
+  c45 = 31.3327905049318; role=free; unit=1; tied_to=None
+  c48 = -0.03765952549039632; role=free; unit=1; tied_to=None
+  c50 = 14.736168511502376; role=free; unit=1; tied_to=None
+  c53 = 2.591404230970542; role=free; unit=1; tied_to=None
+  c55 = -51.23330467961724; role=free; unit=1; tied_to=None
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.

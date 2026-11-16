@@ -1,0 +1,453 @@
+{
+  "native_recovery": null,
+  "version": "2.7.2",
+  "juliacall": "0.9.36",
+  "native_search_operators": {
+    "binary": [
+      "+",
+      "-",
+      "*",
+      "/"
+    ],
+    "unary": []
+  },
+  "native_operator_constraints": {},
+  "native_nested_constraints": {},
+  "native_search_seconds_limit": 2880,
+  "native_search_limits": {
+    "niterations": 10000,
+    "populations": 8,
+    "population_size": 40,
+    "ncycles_per_iteration": 380,
+    "max_evals": null,
+    "timeout_in_seconds": 2880
+  },
+  "source_complexity_budget": {
+    "max_nodes": 256,
+    "native_maxsize": 256,
+    "variable_costs": [
+      1
+    ],
+    "output_cost": 0,
+    "square_cube_cost": 2
+  },
+  "native_execution_options": {
+    "parallelism": "serial",
+    "deterministic": true
+  },
+  "unit_search": {
+    "mode": "post_check_only",
+    "native_units": false
+  },
+  "coefficient_unit_inference": {},
+  "native_input_variables": [
+    "x0"
+  ],
+  "native_input_columns": [
+    "x"
+  ],
+  "native_work_observation": "Configured ceilings and measured fit time only; actual mutation/evaluation counts and stop criterion are not reported by this adapter. A returned fit is not proof of convergence.",
+  "fit_elapsed_seconds": 2962.1721488040057,
+  "recovery_elapsed_seconds": null,
+  "native_import_seconds": 20.758081895997748,
+  "native_search_fit_seconds": 2939.198812376999,
+  "native_export_seconds": 1.7999038819980342,
+  "native_candidates": 59,
+  "rejected_exports": [
+    {
+      "index": 16,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 17,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 18,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 19,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 20,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 21,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 22,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 23,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 24,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 25,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 26,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 27,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 28,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 29,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 30,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 31,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 32,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 33,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 34,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 35,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 36,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 37,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 38,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 39,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 40,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 41,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 42,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 43,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 44,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 45,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 46,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 47,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 48,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 49,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 50,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 51,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 52,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 53,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 54,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 55,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 56,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 57,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    },
+    {
+      "index": 58,
+      "reason": "Unsupported nested reciprocal IEEE semantics"
+    }
+  ],
+  "template_evidence": {},
+  "template_native_support": null,
+  "constraint_support": {
+    "operators": "enforced during search",
+    "max_nodes": "weighted native source-coordinate size for ordinary expressions; template full-size fitness gate includes fixed skeleton and repeated calls",
+    "native_operator_profile": "optional per-argument/nesting restrictions enforced by PySR; not additional common output requirements",
+    "units": "default post-check only; explicit unit_mode soft/hard applies native dimensional fitness to ordinary expressions, including custom response loss; template native-unit search unsupported",
+    "variables": "disallowed input columns excluded before native search; response points projected after full-schema validation; subset with templates unsupported; full-schema export rechecked",
+    "allowed_variables": "disallowed input columns excluded before native search; response points projected after full-schema validation; subset with templates unsupported; full-schema export rechecked",
+    "probes": "native finite-point objective in search mode; explicit filter mode is post-check only",
+    "response_checks": "native finite-step objective in search mode; no global guarantee",
+    "equation_template": "native fixed structure/shared slots; full source AST and local slot size hard-gated in search fitness before prediction; units and exported expression rechecked after search"
+  },
+  "response_search": {
+    "mode": "search",
+    "search_response_constraints": false,
+    "objective": "train_scaled_mse",
+    "slot_max_nodes": {},
+    "slot_size_enforcement": null,
+    "method": "native objective during structure search and constant optimization",
+    "template_total_size_gate": false,
+    "source_variable_costs": {
+      "x0": 1
+    },
+    "source_output_cost": 0,
+    "weight": 1.0,
+    "response_enforcement": {
+      "requested": null,
+      "effective": "not_requested",
+      "stage": "none"
+    },
+    "unit_search": {
+      "mode": "post_check_only",
+      "native_units": false
+    },
+    "points": [],
+    "native_points": [],
+    "native_variable_ids": [
+      "x0"
+    ],
+    "terms": [],
+    "data_scale": 1.1509251612719777,
+    "scope": "declared finite points and finite-step responses; not a global guarantee"
+  },
+  "native_check_source": "PySRRegressor.predict(index=...) versus unsimplified equation AST",
+  "assets": null,
+  "python": "3.11.15",
+  "python_executable": "/opt/venv/bin/python",
+  "device": "cpu",
+  "allowed_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "native_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "unavailable_search_operators": [],
+  "operator_policy": "unavailable_search_operators is the requested/export-capability difference, not decoder reachability; generation enforcement and context-dependent routes are specified by constraint_support and native metadata",
+  "status": "ok",
+  "native_execution_status": "completed",
+  "native_artifacts": {
+    "native_models": "/work/results/practical-fixed-20261115-1400/synthetic_none/pysr/calculation/discover/pysr/17/pysr_native.json"
+  },
+  "native_artifact_sha256": {
+    "native_models": "a27e2902a1ec17e01645110eda5a4dc2f49cf7a7383583410dd570f10947ea77"
+  },
+  "portable_status": "candidates",
+  "fixed_constants_native_support": "template_only",
+  "exported_candidates": 16,
+  "selection_candidates": 16,
+  "prelimit_constraint_eligible": null,
+  "portable_candidates": "/work/results/practical-fixed-20261115-1400/synthetic_none/pysr/calculation/discover/pysr/17/candidates.jsonl",
+  "portable_candidates_sha256": "cdb07e3053cccd1dac7b0410175ab79cd0c748e7e315b8d5fc518f4a2e25e511",
+  "candidate_pool": {
+    "policy": "all",
+    "emitted": 16,
+    "retained": 16,
+    "limit": null,
+    "discarded_from_comparison_ids": [],
+    "archive_scope": "all faithfully exported native candidates, not all internal search states",
+    "quality_scope": "Train/shared probes only when explicit bounded allocation is requested; compare owns final eligibility"
+  },
+  "truncation": "none; all faithfully emitted candidates reach common evaluation",
+  "engine": "pysr",
+  "seed": 17,
+  "wall_seconds": 2965.480276643997,
+  "runtime_image_id": "sha256:43d979e1acb694cb6e42a0d08c57f737a31844599665daef971bf632eb73a5c0",
+  "prepared_sha256": "a5e7fcf79d151cb58d325e236555a0126cfafcc9cc67c97f87fd8ef4fa9eba3b",
+  "job_sha256": "ea22f1c19e043ddd89e44702d0b18f0fe982d7c20967357377a36f4cdd48ef7d",
+  "requested_constraints": {
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "probes": [],
+    "response_bounds": [
+      null,
+      null
+    ],
+    "response_checks": [],
+    "response_enforcement": null,
+    "max_wall_seconds": 21600,
+    "response_mode": "search"
+  },
+  "requirements_ref": {
+    "requirements_sha256": "35ba19472d59ab6158650d6aa5f176e2c90edd1643a654af61137001cdde3d48",
+    "scope": "canonical common request; native settings/checks are derived evidence"
+  },
+  "resolved_native_profile": {
+    "options": {
+      "objective": "mse",
+      "niterations": 10000,
+      "populations": 8,
+      "population_size": 40,
+      "ncycles_per_iteration": 380,
+      "seconds": 2880,
+      "parallelism": "serial"
+    },
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "device": "cpu",
+    "candidate_pool_policy": "all"
+  },
+  "response_mode": "search",
+  "capability_declaration": {
+    "unit_search": {
+      "defaults": {
+        "unit_mode": "hard"
+      },
+      "choices": {
+        "unit_mode": [
+          "soft",
+          "hard"
+        ]
+      },
+      "templates": false
+    },
+    "response_enforcement": {
+      "default": "soft",
+      "supported": [
+        "soft",
+        "hard"
+      ],
+      "stage": "native structure fitness and constant optimization"
+    },
+    "supported_options": [
+      "constraint_weight",
+      "deterministic",
+      "dimensional_constraint_penalty",
+      "dimensionless_constants_only",
+      "max_evals",
+      "maxdepth",
+      "ncycles_per_iteration",
+      "nested_constraints",
+      "niterations",
+      "objective",
+      "operator_constraints",
+      "parallelism",
+      "population_size",
+      "populations",
+      "procs",
+      "seconds",
+      "template_parameter_initialization",
+      "unit_mode"
+    ],
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "neg",
+      "sqrt",
+      "log",
+      "exp",
+      "abs",
+      "sin",
+      "cos",
+      "tanh",
+      "sinh",
+      "cosh",
+      "pow",
+      "pow_int"
+    ],
+    "equation_template": true,
+    "fixed_constants": "template_only",
+    "constraints": {
+      "operators": "enforced during search",
+      "max_nodes": "weighted native source-coordinate size for ordinary expressions; template full-size fitness gate includes fixed skeleton and repeated calls",
+      "native_operator_profile": "optional per-argument/nesting restrictions enforced by PySR; not additional common output requirements",
+      "units": "default post-check only; explicit unit_mode soft/hard applies native dimensional fitness to ordinary expressions, including custom response loss; template native-unit search unsupported",
+      "variables": "disallowed input columns excluded before native search; response points projected after full-schema validation; subset with templates unsupported; full-schema export rechecked",
+      "allowed_variables": "disallowed input columns excluded before native search; response points projected after full-schema validation; subset with templates unsupported; full-schema export rechecked",
+      "probes": "native finite-point objective in search mode; explicit filter mode is post-check only",
+      "response_checks": "native finite-step objective in search mode; no global guarantee",
+      "equation_template": "native fixed structure/shared slots; full source AST and local slot size hard-gated in search fitness before prediction; units and exported expression rechecked after search"
+    },
+    "search_constraints": [
+      "response_bounds",
+      "response_checks",
+      "probes"
+    ],
+    "requires_assets": false
+  },
+  "constraint_application": {
+    "operators": "enforced during search",
+    "max_nodes": "weighted native source-coordinate size for ordinary expressions; template full-size fitness gate includes fixed skeleton and repeated calls",
+    "units": "post-check only; native unit fitness disabled"
+  },
+  "response_enforcement": {
+    "effective": "not_requested"
+  },
+  "readiness_scope": "this profile/run only; execution, fidelity, common admissibility and scientific adequacy are distinct",
+  "candidates_sha256": "cdb07e3053cccd1dac7b0410175ab79cd0c748e7e315b8d5fc518f4a2e25e511"
+}

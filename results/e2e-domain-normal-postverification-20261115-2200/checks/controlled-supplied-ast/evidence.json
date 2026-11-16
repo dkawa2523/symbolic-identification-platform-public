@@ -1,0 +1,273 @@
+[
+  {
+    "fixture": 0,
+    "raw_equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "div",
+        "args": [
+          {
+            "op": "sub",
+            "args": [
+              {
+                "var": "x"
+              },
+              {
+                "const": 0.25
+              }
+            ]
+          },
+          {
+            "op": "sub",
+            "args": [
+              {
+                "var": "x"
+              },
+              {
+                "const": 0.25
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {},
+      "arithmetic": "strict_real"
+    },
+    "singular": {
+      "status": "explicit_rejection",
+      "message": "Equation undefined at row 0; no rows were dropped"
+    },
+    "offpoint_exact": true,
+    "proof": {
+      "scope": "all intermediate rational divisors on one declared closed interval",
+      "method": "exact_Fraction_interval_exclusion_and_Sturm",
+      "budgets": {
+        "max_nodes": 256,
+        "max_degree": 32,
+        "max_integer_bits": 4096,
+        "max_operations": 20000
+      },
+      "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+      "not_certified": [
+        "IEEE_finiteness",
+        "conditioning",
+        "monotonicity",
+        "physical_validity"
+      ],
+      "checked_divisors": [
+        {
+          "path": [
+            1
+          ],
+          "operation": "div",
+          "degree": 1,
+          "zero_set": {
+            "kind": "interior",
+            "roots": 1
+          }
+        }
+      ],
+      "interval": [
+        -1,
+        1
+      ],
+      "status": "unsafe",
+      "reason": "proved_intermediate_divisor_zero",
+      "witness": {
+        "path": [
+          1
+        ],
+        "operation": "div",
+        "degree": 1,
+        "zero_set": {
+          "kind": "interior",
+          "roots": 1
+        }
+      },
+      "arithmetic_operations": 71
+    },
+    "bundle_sha256": "0ac38933e8041ee7d0ef9e0041fdb940a8c8bc99818bdc212b76d65450ac3447"
+  },
+  {
+    "fixture": 1,
+    "raw_equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "mul",
+        "args": [
+          {
+            "const": 0
+          },
+          {
+            "op": "div",
+            "args": [
+              {
+                "const": 1
+              },
+              {
+                "op": "sub",
+                "args": [
+                  {
+                    "var": "x"
+                  },
+                  {
+                    "const": 0.25
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {},
+      "arithmetic": "strict_real"
+    },
+    "singular": {
+      "status": "explicit_rejection",
+      "message": "Equation undefined at row 0; no rows were dropped"
+    },
+    "offpoint_exact": true,
+    "proof": {
+      "scope": "all intermediate rational divisors on one declared closed interval",
+      "method": "exact_Fraction_interval_exclusion_and_Sturm",
+      "budgets": {
+        "max_nodes": 256,
+        "max_degree": 32,
+        "max_integer_bits": 4096,
+        "max_operations": 20000
+      },
+      "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+      "not_certified": [
+        "IEEE_finiteness",
+        "conditioning",
+        "monotonicity",
+        "physical_validity"
+      ],
+      "checked_divisors": [
+        {
+          "path": [
+            1,
+            1
+          ],
+          "operation": "div",
+          "degree": 1,
+          "zero_set": {
+            "kind": "interior",
+            "roots": 1
+          }
+        }
+      ],
+      "interval": [
+        -1,
+        1
+      ],
+      "status": "unsafe",
+      "reason": "proved_intermediate_divisor_zero",
+      "witness": {
+        "path": [
+          1,
+          1
+        ],
+        "operation": "div",
+        "degree": 1,
+        "zero_set": {
+          "kind": "interior",
+          "roots": 1
+        }
+      },
+      "arithmetic_operations": 61
+    },
+    "bundle_sha256": "6f0e57d974cca43ee70e5114b04095a5573c933018b761b37b395d88a75c181c"
+  },
+  {
+    "fixture": 2,
+    "raw_equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "div",
+        "args": [
+          {
+            "const": 1
+          },
+          {
+            "op": "div",
+            "args": [
+              {
+                "const": 1
+              },
+              {
+                "op": "sub",
+                "args": [
+                  {
+                    "var": "x"
+                  },
+                  {
+                    "const": 0.25
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {},
+      "arithmetic": "strict_real"
+    },
+    "singular": {
+      "status": "explicit_rejection",
+      "message": "Equation undefined at row 0; no rows were dropped"
+    },
+    "offpoint_exact": true,
+    "proof": {
+      "scope": "all intermediate rational divisors on one declared closed interval",
+      "method": "exact_Fraction_interval_exclusion_and_Sturm",
+      "budgets": {
+        "max_nodes": 256,
+        "max_degree": 32,
+        "max_integer_bits": 4096,
+        "max_operations": 20000
+      },
+      "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+      "not_certified": [
+        "IEEE_finiteness",
+        "conditioning",
+        "monotonicity",
+        "physical_validity"
+      ],
+      "checked_divisors": [
+        {
+          "path": [
+            1,
+            1
+          ],
+          "operation": "div",
+          "degree": 1,
+          "zero_set": {
+            "kind": "interior",
+            "roots": 1
+          }
+        }
+      ],
+      "interval": [
+        -1,
+        1
+      ],
+      "status": "unsafe",
+      "reason": "proved_intermediate_divisor_zero",
+      "witness": {
+        "path": [
+          1,
+          1
+        ],
+        "operation": "div",
+        "degree": 1,
+        "zero_set": {
+          "kind": "interior",
+          "roots": 1
+        }
+      },
+      "arithmetic_operations": 61
+    },
+    "bundle_sha256": "a91b532614cd7f3f3f6509f9045cdb463008da078635e25a1b3dfbe74eb96a0a"
+  }
+]

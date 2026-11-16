@@ -1,0 +1,34 @@
+{
+  "time": "2026-11-15T17:41:44.536835+00:00",
+  "state": {
+    "returncode": 0,
+    "stdout": "{\"Status\":\"running\",\"Running\":true,\"Paused\":false,\"Restarting\":false,\"OOMKilled\":false,\"Dead\":false,\"Pid\":1654612,\"ExitCode\":0,\"Error\":\"\",\"StartedAt\":\"2026-11-15T17:02:07.362126929Z\",\"FinishedAt\":\"0001-01-01T00:00:00Z\"}\n",
+    "stderr": ""
+  },
+  "stats": {
+    "returncode": 0,
+    "stdout": "106.78% 891.8MiB / 6GiB 14.51%\n",
+    "stderr": ""
+  },
+  "memory_events": {
+    "returncode": 0,
+    "stdout": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+    "stderr": ""
+  },
+  "native_updates": [
+    {
+      "path": "results\\practical-fixed-20261115-1400\\synthetic_supported\\pysr\\calculation\\discover\\pysr\\17\\native\\ff27b1c46f574aaabdc0444e9aa1230b\\hall_of_fame.csv",
+      "size": 18011,
+      "modified": "2026-11-15T17:41:39.502118+00:00"
+    }
+  ],
+  "log": {
+    "size": 195,
+    "tail": "/opt/venv/lib/python3.11/site-packages/pysr/sr.py:1972: UserWarning: Note: Using a large maxsize for the equation search will be exponentially slower and use significant memory.\n  warnings.warn(\n"
+  },
+  "physo_fit_readonly_sha": {
+    "returncode": 0,
+    "stdout": "{\"path\": \"/opt/venv/lib/python3.11/site-packages/physo/task/fit.py\", \"sha256\": \"80efa6de7d8a40fa90aeccb3c4ffcee278c29d16b860b9ea6d535d83b9241cd6\", \"size\": 5579}\n",
+    "stderr": ""
+  }
+}

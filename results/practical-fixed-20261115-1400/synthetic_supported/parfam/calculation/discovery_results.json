@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "engine": "parfam",
+      "seed": 17,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "reason": null,
+      "wall_seconds": 20.700846168998396,
+      "exported_candidates": 7,
+      "summary_path": "/work/results/practical-fixed-20261115-1400/synthetic_supported/parfam/calculation/discover/parfam/17/engine_summary.json"
+    }
+  ],
+  "selection_performed": false,
+  "final_accessed": false
+}

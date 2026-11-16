@@ -1,0 +1,14 @@
+pysr==2.7.2
+juliacall==0.9.36
+physo==1.1.11
+TorchSisso==0.1.8
+sympy==1.14.0
+scikit-learn==1.5.2
+ProGED @ git+https://github.com/brencej/ProGED.git@875c05535286392080afc012c6b1a6dac1b77b35
+parfam @ git+https://github.com/Philipp238/parfam.git@e10379a0e19238b50178492c48da0d0444d4898f
+matplotlib==3.8.4
+omegaconf==2.3.0
+pathos==0.3.2
+pmlb==1.0.1.post3
+psutil==5.9.8
+requests==2.32.2

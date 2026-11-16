@@ -1,0 +1,39 @@
+{
+  "prepare": {
+    "run": "/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/prepare/run.json",
+    "final": "/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/prepare/final.npz",
+    "selection": "/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/prepare/selection.npz",
+    "train": "/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/prepare/train.npz"
+  },
+  "search": {
+    "engines": [
+      "pysr"
+    ],
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "seeds": [
+      17
+    ],
+    "max_wall_seconds": 21600,
+    "max_export_candidates": 20,
+    "candidate_pool_policy": "all",
+    "allow_partial_engines": true,
+    "response_mode": "search",
+    "engine_options": {
+      "pysr": {
+        "objective": "mse",
+        "niterations": 10000,
+        "populations": 8,
+        "population_size": 40,
+        "ncycles_per_iteration": 380,
+        "seconds": 2880,
+        "parallelism": "serial"
+      }
+    },
+    "runtimes": {}
+  }
+}

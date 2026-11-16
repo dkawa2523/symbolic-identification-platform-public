@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="356">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203342">
+<text x="40" y="40" font-size="24" font-weight="bold">4. physo | equation</text>
+<text x="40" y="68" font-size="13">Candidate physo/42/22@native | page 1/1</text>
+<text x="40" y="110" font-size="20">Coordinates: public</text>
+<text x="40" y="137" font-size="20"></text>
+<text x="40" y="164" font-size="20">resistance [1] = (((froude + (cosh(θ[c0]) + θ[c0]) + θ[c0]) * θ[c0] * froude</text>
+<text x="40" y="191" font-size="20">+ froude + θ[c1]) * θ[c0] / prismatic_coefficient) ^ 3 * froude</text>
+<text x="40" y="218" font-size="20"></text>
+<text x="40" y="245" font-size="20">Coefficients (working coordinates; rounded on image)</text>
+<text x="40" y="272" font-size="20">c0 = 1.332418 [1]; role=free</text>
+<text x="40" y="299" font-size="20">c1 = -1.489411 [1]; role=free</text>
+</g></svg>

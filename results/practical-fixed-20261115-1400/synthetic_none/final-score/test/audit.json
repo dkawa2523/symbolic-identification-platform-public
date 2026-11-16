@@ -1,0 +1,180 @@
+{
+  "study_sha256": "9a2ab7576655eb7482c01468aec27b0ff79a9606a6f7c2c9065584845c65431f",
+  "frozen_pool_sha256": "c4158a976420374895055d8fdfda3fcfef1f4896f5e6101af543397207495231",
+  "final_evidence_role": "holdout under explicit user declaration",
+  "results": [
+    {
+      "id": "pysr/17/5@native",
+      "source_index": 5,
+      "kind": "explicit",
+      "selection_eligible": true,
+      "target_metrics": {
+        "rmse": 0.0322223545332267,
+        "mae": 0.025400247445726408,
+        "r2": 0.9992812679467459,
+        "reason": null
+      },
+      "coverage": 1.0,
+      "prediction_support": {
+        "established": null,
+        "reason": "No predeclared prediction tolerance or no audit; independent support not established",
+        "criteria": {
+          "rmse_max": null,
+          "minimum_valid_coverage": 1.0
+        },
+        "observed_rmse": 0.0322223545332267,
+        "valid_coverage": 1.0,
+        "scope": "This frozen target predictor and audit rows only; not coefficient/structure identification, future shift or interval coverage. No reselection."
+      }
+    },
+    {
+      "id": "parfam/17/0@native",
+      "source_index": 16,
+      "kind": "explicit",
+      "selection_eligible": true,
+      "target_metrics": {
+        "rmse": 0.03274212548023051,
+        "mae": 0.025798161190842203,
+        "r2": 0.9992578935486027,
+        "reason": null
+      },
+      "coverage": 1.0,
+      "prediction_support": {
+        "established": null,
+        "reason": "No predeclared prediction tolerance or no audit; independent support not established",
+        "criteria": {
+          "rmse_max": null,
+          "minimum_valid_coverage": 1.0
+        },
+        "observed_rmse": 0.03274212548023051,
+        "valid_coverage": 1.0,
+        "scope": "This frozen target predictor and audit rows only; not coefficient/structure identification, future shift or interval coverage. No reselection."
+      }
+    },
+    {
+      "id": "torchsisso/17/0@native",
+      "source_index": 21,
+      "kind": "explicit",
+      "selection_eligible": true,
+      "target_metrics": {
+        "rmse": 0.13689178118104095,
+        "mae": 0.11580603899101943,
+        "r2": 0.9870279916733812,
+        "reason": null
+      },
+      "coverage": 1.0,
+      "prediction_support": {
+        "established": null,
+        "reason": "No predeclared prediction tolerance or no audit; independent support not established",
+        "criteria": {
+          "rmse_max": null,
+          "minimum_valid_coverage": 1.0
+        },
+        "observed_rmse": 0.13689178118104095,
+        "valid_coverage": 1.0,
+        "scope": "This frozen target predictor and audit rows only; not coefficient/structure identification, future shift or interval coverage. No reselection."
+      }
+    },
+    {
+      "id": "physo/17/7@native",
+      "source_index": 31,
+      "kind": "explicit",
+      "selection_eligible": true,
+      "target_metrics": {
+        "rmse": 0.07449229563010985,
+        "mae": 0.0631280453091968,
+        "r2": 0.9961587268884945,
+        "reason": null
+      },
+      "coverage": 1.0,
+      "prediction_support": {
+        "established": null,
+        "reason": "No predeclared prediction tolerance or no audit; independent support not established",
+        "criteria": {
+          "rmse_max": null,
+          "minimum_valid_coverage": 1.0
+        },
+        "observed_rmse": 0.07449229563010985,
+        "valid_coverage": 1.0,
+        "scope": "This frozen target predictor and audit rows only; not coefficient/structure identification, future shift or interval coverage. No reselection."
+      }
+    },
+    {
+      "id": "e2e/17/46@native",
+      "source_index": 82,
+      "kind": "explicit",
+      "selection_eligible": true,
+      "target_metrics": {
+        "rmse": 0.032436705950198104,
+        "mae": 0.025745675177851538,
+        "r2": 0.999271673758871,
+        "reason": null
+      },
+      "coverage": 1.0,
+      "prediction_support": {
+        "established": null,
+        "reason": "No predeclared prediction tolerance or no audit; independent support not established",
+        "criteria": {
+          "rmse_max": null,
+          "minimum_valid_coverage": 1.0
+        },
+        "observed_rmse": 0.032436705950198104,
+        "valid_coverage": 1.0,
+        "scope": "This frozen target predictor and audit rows only; not coefficient/structure identification, future shift or interval coverage. No reselection."
+      }
+    },
+    {
+      "id": "mean/17/0@native",
+      "source_index": 230,
+      "kind": "explicit",
+      "selection_eligible": true,
+      "target_metrics": {
+        "rmse": 1.209133845562933,
+        "mae": 1.040420963011515,
+        "r2": -0.012048267684924507,
+        "reason": null
+      },
+      "coverage": 1.0,
+      "prediction_support": {
+        "established": null,
+        "reason": "No predeclared prediction tolerance or no audit; independent support not established",
+        "criteria": {
+          "rmse_max": null,
+          "minimum_valid_coverage": 1.0
+        },
+        "observed_rmse": 1.209133845562933,
+        "valid_coverage": 1.0,
+        "scope": "This frozen target predictor and audit rows only; not coefficient/structure identification, future shift or interval coverage. No reselection."
+      }
+    },
+    {
+      "id": "linear/17/1@native",
+      "source_index": 232,
+      "kind": "explicit",
+      "selection_eligible": true,
+      "target_metrics": {
+        "rmse": 0.1368917705049106,
+        "mae": 0.11580602671836139,
+        "r2": 0.9870279936967437,
+        "reason": null
+      },
+      "coverage": 1.0,
+      "prediction_support": {
+        "established": null,
+        "reason": "No predeclared prediction tolerance or no audit; independent support not established",
+        "criteria": {
+          "rmse_max": null,
+          "minimum_valid_coverage": 1.0
+        },
+        "observed_rmse": 0.1368917705049106,
+        "valid_coverage": 1.0,
+        "scope": "This frozen target predictor and audit rows only; not coefficient/structure identification, future shift or interval coverage. No reselection."
+      }
+    }
+  ],
+  "predictions_sha256": "3506e65bd2c4c015733aa7101e47f4e433a147094d4cde050515ea63e2d89b08",
+  "selection_changed": false,
+  "refit": false,
+  "final_history": "declared_unseen",
+  "history_scope": "Local recorded history and declarations only; external prior exposure cannot be verified"
+}

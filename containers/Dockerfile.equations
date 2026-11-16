@@ -1,0 +1,17 @@
+# Task-local optional evaluators. Existing host/discovery environments stay unchanged.
+ARG CORE_IMAGE=symbolic-handoff:core
+FROM ${CORE_IMAGE} AS equation-analysis
+RUN uv venv /opt/analysis
+COPY containers/requirements/equation-analysis.txt /opt/requirements/equation-analysis.txt
+RUN uv pip install --python /opt/analysis/bin/python -r /opt/requirements/equation-analysis.txt
+ENV PATH="/opt/analysis/bin:${PATH}" MPLBACKEND=Agg
+COPY pkgs/symbolic /opt/equation-symbolic
+RUN uv pip install --python /opt/analysis/bin/python -e /opt/equation-symbolic
+RUN python -c "import effector, reggression; print('optional real evaluator imports passed')"
+
+FROM symbolic-handoff:classic AS equation-evidence
+ENV JULIA_NUM_PRECOMPILE_TASKS=2 JULIA_NUM_THREADS=2
+COPY containers/julia/equation-evidence /opt/equation-evidence
+RUN /opt/julia/bin/julia --project=/opt/equation-evidence -e \
+    'using Pkg; Pkg.instantiate(); Pkg.precompile()'
+ENV SYMBOLIC_LIKELIHOOD_PROJECT=/opt/equation-evidence

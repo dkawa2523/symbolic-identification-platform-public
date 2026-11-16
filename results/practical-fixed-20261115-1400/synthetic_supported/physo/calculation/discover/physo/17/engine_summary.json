@@ -1,0 +1,1535 @@
+{
+  "native_candidates": 12,
+  "input_rows": 256,
+  "native_input_variables": [
+    "x0"
+  ],
+  "native_input_columns": [
+    "x"
+  ],
+  "source_complexity_budget": {
+    "max_nodes": 256,
+    "variable_costs": {
+      "x0": 1
+    },
+    "output_cost": 4,
+    "prior_instances": [
+      {
+        "token_costs": {
+          "add": 1,
+          "sub": 1,
+          "mul": 1,
+          "div": 1,
+          "1.0": 1,
+          "c0": 1,
+          "c1": 1,
+          "x0": 1
+        },
+        "calls": 0,
+        "masked_choices": 0
+      },
+      {
+        "token_costs": {
+          "add": 1,
+          "sub": 1,
+          "mul": 1,
+          "div": 1,
+          "1.0": 1,
+          "c0": 1,
+          "c1": 1,
+          "x0": 1
+        },
+        "calls": 256,
+        "masked_choices": 0
+      }
+    ],
+    "slot_prior_instances": [
+      {
+        "token_costs": {
+          "add": 1,
+          "sub": 1,
+          "mul": 1,
+          "div": 1,
+          "1.0": 1,
+          "c0": 1,
+          "c1": 1,
+          "x0": 1
+        },
+        "calls": 0,
+        "masked_choices": 0
+      },
+      {
+        "token_costs": {
+          "add": 1,
+          "sub": 1,
+          "mul": 1,
+          "div": 1,
+          "1.0": 1,
+          "c0": 1,
+          "c1": 1,
+          "x0": 1
+        },
+        "calls": 256,
+        "masked_choices": 0
+      }
+    ],
+    "token_multiplier": 1
+  },
+  "native_execution_status": "failed",
+  "termination_reason": "native_failure",
+  "checkpoint_seconds": 0.0,
+  "physo": "1.1.11",
+  "torch": "2.7.1+cpu",
+  "numpy": "1.26.4",
+  "native_import_seconds": 8.49990364399855,
+  "native_search_fit_seconds": 315.0555637280049,
+  "native_export_seconds": 0.30105191899929196,
+  "timing_scope": {
+    "native_search_fit_seconds": "inclusive elapsed through the start of this export; contains earlier completed-iteration conversion/parity/snapshot work",
+    "native_export_seconds": "this export only, after the preceding elapsed interval",
+    "checkpoint_seconds": "overlapping subset: earlier completed logger hooks, including conversion/parity/atomic snapshot; never add to search elapsed"
+  },
+  "native_search_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "template_search": {
+    "scope": "single shared slot / fixed outer / variable-only calls",
+    "slot_output_unit": "1",
+    "observed_y_unit": "1",
+    "loss_target": "original observed y",
+    "strict_real": {
+      "strict_execute_calls": 3182,
+      "nonfinite_fit_failures": 0
+    }
+  },
+  "response_search": {
+    "stage": "coefficient_fit_before_native_reward_and_RNN_update",
+    "enforcement": "hard",
+    "scope": "declared finite points only; generated structures and physical-unit prior unchanged",
+    "solver": "common SLSQP coefficient extension, not native LBFGS",
+    "coordinates": "prepared working coordinates; no repeated source conversion",
+    "native_reward_equal_duplicate_elimination": false,
+    "native_duplicate_setting_overridden": false,
+    "factory_calls": 1,
+    "counts": {
+      "feasible": 1585,
+      "solver_converged": 1268,
+      "no_accepted_fit": 415,
+      "feasible_without_convergence_claim": 317
+    },
+    "count_scope": "program visits across reward batches; repeated structures count again",
+    "batches": [
+      {
+        "batch": 0,
+        "feasible": 1585,
+        "solver_converged": 1268,
+        "no_accepted_fit": 415,
+        "feasible_without_convergence_claim": 317,
+        "positive_rewards": 1585
+      }
+    ],
+    "examples": [
+      {
+        "index": 0,
+        "solver": {
+          "prediction_evaluations": 8,
+          "max_nfev": 200,
+          "free_parameters": [
+            "__slot_h_c0"
+          ],
+          "solver": "SLSQP",
+          "nfev": 6,
+          "success": true,
+          "status": 0,
+          "termination": "Optimization terminated successfully",
+          "parameter_scales": [
+            18.414802580351644
+          ],
+          "response_scale": 1.1509251612719777,
+          "inward_constraint_retry": false,
+          "nfev_scope": "all constrained fitting objective evaluations including numerical gradient probes; scaling probes separately counted",
+          "objective_sum_squares": 0.09763524800166724,
+          "result": "feasible_candidate; solver convergence is reported separately"
+        },
+        "status": "feasible",
+        "reward": 0.7622790703050137,
+        "equation": {
+          "schema_version": 2,
+          "ast": {
+            "op": "add",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "const": 0.75
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "__slot_h_c0"
+                  },
+                  {
+                    "op": "add",
+                    "args": [
+                      {
+                        "const": 1.0
+                      },
+                      {
+                        "const": 1.0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "parameters": {
+            "__slot_h_c0": {
+              "value": -0.793826570465277,
+              "trainable": true,
+              "origin": "native_free_constant_slot",
+              "bounds": [
+                null,
+                null
+              ],
+              "unit": "1",
+              "physo_native_name": "c0"
+            }
+          },
+          "template": {
+            "specification": {
+              "coordinate_space": "working",
+              "ast": {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "const": 0.75
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  },
+                  {
+                    "slot": "h",
+                    "args": [
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "parameters": {},
+              "components": {},
+              "slots": {
+                "h": {
+                  "arguments": [
+                    {
+                      "name": "x0",
+                      "unit": "1"
+                    }
+                  ],
+                  "unit": "1",
+                  "allowed_operators": [
+                    "add",
+                    "sub",
+                    "mul",
+                    "div"
+                  ],
+                  "max_nodes": 252
+                }
+              },
+              "knowledge": {
+                "kind": "hypothesis",
+                "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+              }
+            },
+            "slots": {
+              "h": {
+                "schema_version": 1,
+                "ast": {
+                  "op": "add",
+                  "args": [
+                    {
+                      "param": "c0"
+                    },
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "const": 1.0
+                        },
+                        {
+                          "const": 1.0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "parameters": {
+                  "c0": {
+                    "value": 1.0,
+                    "trainable": true,
+                    "origin": "native_free_constant_slot",
+                    "bounds": [
+                      null,
+                      null
+                    ],
+                    "unit": "1",
+                    "physo_native_name": "c0"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "response_values": [
+          1.1132334861101785,
+          1.2720649472261818,
+          1.430896408342185,
+          1.5897278694581882,
+          1.7485593305741916,
+          1.9073907916901953,
+          2.0662222528061984,
+          2.2250537139222017,
+          2.3838851750382046,
+          2.5427166361542084,
+          2.7015480972702113,
+          2.860379558386215,
+          3.0192110195022184,
+          3.1780424806182217,
+          3.336873941734225,
+          3.4957054028502283,
+          3.6545368639662317,
+          2.529343153078356,
+          2.529343153075289,
+          2.5293431530722215,
+          2.529343153078356,
+          2.5293431530844903,
+          2.5293431530844903,
+          2.529343153078356,
+          2.5293431530722215,
+          2.529343153078356,
+          2.529343153078356,
+          2.529343153078356,
+          2.529343153078356,
+          2.529343153090625,
+          2.529343153078356,
+          2.529343153090625,
+          2.5293431530660873,
+          2.529343153090625
+        ]
+      },
+      {
+        "index": 1,
+        "solver": {
+          "prediction_evaluations": 15,
+          "max_nfev": 200,
+          "free_parameters": [
+            "__slot_h_c1"
+          ],
+          "solver": "SLSQP",
+          "nfev": 13,
+          "success": true,
+          "status": 0,
+          "termination": "Optimization terminated successfully",
+          "parameter_scales": [
+            6.138267526783881
+          ],
+          "response_scale": 1.1509251612719777,
+          "inward_constraint_retry": false,
+          "nfev_scope": "all constrained fitting objective evaluations including numerical gradient probes; scaling probes separately counted",
+          "objective_sum_squares": 0.0976352480016618,
+          "result": "feasible_candidate; solver convergence is reported separately"
+        },
+        "status": "feasible",
+        "reward": 0.7622790703050187,
+        "equation": {
+          "schema_version": 2,
+          "ast": {
+            "op": "add",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "const": 0.75
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "const": 1.0
+                          },
+                          {
+                            "param": "__slot_h_c1"
+                          }
+                        ]
+                      },
+                      {
+                        "param": "__slot_h_c1"
+                      }
+                    ]
+                  },
+                  {
+                    "const": 1.0
+                  }
+                ]
+              }
+            ]
+          },
+          "parameters": {
+            "__slot_h_c1": {
+              "value": 0.7067201000628344,
+              "trainable": true,
+              "origin": "native_free_constant_slot",
+              "bounds": [
+                null,
+                null
+              ],
+              "unit": "1",
+              "physo_native_name": "c1"
+            }
+          },
+          "template": {
+            "specification": {
+              "coordinate_space": "working",
+              "ast": {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "const": 0.75
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  },
+                  {
+                    "slot": "h",
+                    "args": [
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "parameters": {},
+              "components": {},
+              "slots": {
+                "h": {
+                  "arguments": [
+                    {
+                      "name": "x0",
+                      "unit": "1"
+                    }
+                  ],
+                  "unit": "1",
+                  "allowed_operators": [
+                    "add",
+                    "sub",
+                    "mul",
+                    "div"
+                  ],
+                  "max_nodes": 252
+                }
+              },
+              "knowledge": {
+                "kind": "hypothesis",
+                "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+              }
+            },
+            "slots": {
+              "h": {
+                "schema_version": 1,
+                "ast": {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "add",
+                          "args": [
+                            {
+                              "const": 1.0
+                            },
+                            {
+                              "param": "c1"
+                            }
+                          ]
+                        },
+                        {
+                          "param": "c1"
+                        }
+                      ]
+                    },
+                    {
+                      "const": 1.0
+                    }
+                  ]
+                },
+                "parameters": {
+                  "c1": {
+                    "value": 1.0,
+                    "trainable": true,
+                    "origin": "native_free_constant_slot",
+                    "bounds": [
+                      null,
+                      null
+                    ],
+                    "unit": "1",
+                    "physo_native_name": "c1"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "response_values": [
+          1.113233460357795,
+          1.2720649214737982,
+          1.4308963825898016,
+          1.589727843705805,
+          1.7485593048218082,
+          1.9073907659378115,
+          2.066222227053815,
+          2.225053688169818,
+          2.3838851492858213,
+          2.5427166104018246,
+          2.701548071517828,
+          2.8603795326338313,
+          3.019210993749835,
+          3.178042454865838,
+          3.3368739159818417,
+          3.4957053770978446,
+          3.6545368382138483,
+          2.529343153078356,
+          2.529343153081423,
+          2.529343153078356,
+          2.529343153078356,
+          2.529343153090625,
+          2.5293431530722215,
+          2.5293431530844903,
+          2.5293431530722215,
+          2.5293431530844903,
+          2.5293431530722215,
+          2.5293431530844903,
+          2.529343153078356,
+          2.529343153078356,
+          2.529343153090625,
+          2.529343153078356,
+          2.529343153090625,
+          2.529343153090625
+        ]
+      },
+      {
+        "index": 2,
+        "solver": {
+          "prediction_evaluations": 56,
+          "max_nfev": 200,
+          "free_parameters": [
+            "__slot_h_c0",
+            "__slot_h_c1"
+          ],
+          "solver": "SLSQP",
+          "nfev": 53,
+          "success": true,
+          "status": 0,
+          "termination": "Optimization terminated successfully",
+          "parameter_scales": [
+            1.0,
+            18.414802580351644
+          ],
+          "response_scale": 1.1509251612719777,
+          "inward_constraint_retry": false,
+          "nfev_scope": "all constrained fitting objective evaluations including numerical gradient probes; scaling probes separately counted",
+          "objective_sum_squares": 0.09763524800165316,
+          "result": "feasible_candidate; solver convergence is reported separately"
+        },
+        "status": "feasible",
+        "reward": 0.7622790703050268,
+        "equation": {
+          "schema_version": 2,
+          "ast": {
+            "op": "add",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "const": 0.75
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "op": "sub",
+                "args": [
+                  {
+                    "op": "div",
+                    "args": [
+                      {
+                        "op": "div",
+                        "args": [
+                          {
+                            "op": "add",
+                            "args": [
+                              {
+                                "op": "div",
+                                "args": [
+                                  {
+                                    "op": "div",
+                                    "args": [
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "param": "__slot_h_c1"
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "const": 1.0
+                                              },
+                                              {
+                                                "op": "mul",
+                                                "args": [
+                                                  {
+                                                    "param": "__slot_h_c1"
+                                                  },
+                                                  {
+                                                    "const": 1.0
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "const": 1.0
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "param": "__slot_h_c1"
+                                  }
+                                ]
+                              },
+                              {
+                                "param": "__slot_h_c0"
+                              }
+                            ]
+                          },
+                          {
+                            "param": "__slot_h_c1"
+                          }
+                        ]
+                      },
+                      {
+                        "const": 1.0
+                      }
+                    ]
+                  },
+                  {
+                    "param": "__slot_h_c0"
+                  }
+                ]
+              }
+            ]
+          },
+          "parameters": {
+            "__slot_h_c0": {
+              "value": -1.17334062578039,
+              "trainable": true,
+              "origin": "native_free_constant_slot",
+              "bounds": [
+                null,
+                null
+              ],
+              "unit": "1",
+              "physo_native_name": "c0"
+            },
+            "__slot_h_c1": {
+              "value": -35.7369952839378,
+              "trainable": true,
+              "origin": "native_free_constant_slot",
+              "bounds": [
+                null,
+                null
+              ],
+              "unit": "1",
+              "physo_native_name": "c1"
+            }
+          },
+          "template": {
+            "specification": {
+              "coordinate_space": "working",
+              "ast": {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "const": 0.75
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  },
+                  {
+                    "slot": "h",
+                    "args": [
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "parameters": {},
+              "components": {},
+              "slots": {
+                "h": {
+                  "arguments": [
+                    {
+                      "name": "x0",
+                      "unit": "1"
+                    }
+                  ],
+                  "unit": "1",
+                  "allowed_operators": [
+                    "add",
+                    "sub",
+                    "mul",
+                    "div"
+                  ],
+                  "max_nodes": 252
+                }
+              },
+              "knowledge": {
+                "kind": "hypothesis",
+                "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+              }
+            },
+            "slots": {
+              "h": {
+                "schema_version": 1,
+                "ast": {
+                  "op": "sub",
+                  "args": [
+                    {
+                      "op": "div",
+                      "args": [
+                        {
+                          "op": "div",
+                          "args": [
+                            {
+                              "op": "add",
+                              "args": [
+                                {
+                                  "op": "div",
+                                  "args": [
+                                    {
+                                      "op": "div",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "param": "c1"
+                                            },
+                                            {
+                                              "op": "mul",
+                                              "args": [
+                                                {
+                                                  "const": 1.0
+                                                },
+                                                {
+                                                  "op": "mul",
+                                                  "args": [
+                                                    {
+                                                      "param": "c1"
+                                                    },
+                                                    {
+                                                      "const": 1.0
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "const": 1.0
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "param": "c1"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "param": "c0"
+                                }
+                              ]
+                            },
+                            {
+                              "param": "c1"
+                            }
+                          ]
+                        },
+                        {
+                          "const": 1.0
+                        }
+                      ]
+                    },
+                    {
+                      "param": "c0"
+                    }
+                  ]
+                },
+                "parameters": {
+                  "c1": {
+                    "value": 1.0,
+                    "trainable": true,
+                    "origin": "native_free_constant_slot",
+                    "bounds": [
+                      null,
+                      null
+                    ],
+                    "unit": "1",
+                    "physo_native_name": "c1"
+                  },
+                  "c0": {
+                    "value": 1.0,
+                    "trainable": true,
+                    "origin": "native_free_constant_slot",
+                    "bounds": [
+                      null,
+                      null
+                    ],
+                    "unit": "1",
+                    "physo_native_name": "c0"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "response_values": [
+          1.1132333614549148,
+          1.272064822570918,
+          1.4308962836869212,
+          1.5897277448029246,
+          1.7485592059189279,
+          1.9073906670349317,
+          2.066222128150935,
+          2.2250535892669383,
+          2.383885050382941,
+          2.542716511498945,
+          2.701547972614948,
+          2.860379433730951,
+          3.0192108948469545,
+          3.178042355962958,
+          3.336873817078961,
+          3.4957052781949645,
+          3.6545367393109682,
+          2.529343153078356,
+          2.529343153075289,
+          2.5293431530722215,
+          2.529343153078356,
+          2.529343153078356,
+          2.5293431530844903,
+          2.5293431530844903,
+          2.5293431530722215,
+          2.529343153078356,
+          2.529343153078356,
+          2.529343153078356,
+          2.529343153078356,
+          2.529343153090625,
+          2.529343153078356,
+          2.529343153078356,
+          2.529343153078356,
+          2.529343153078356
+        ]
+      },
+      {
+        "index": 5,
+        "solver": {
+          "prediction_evaluations": 0,
+          "max_nfev": 200,
+          "free_parameters": []
+        },
+        "status": "no_accepted_fit",
+        "reason": "No feasible fixed-parameter equation; bounds unchanged"
+      },
+      {
+        "index": 6,
+        "solver": {
+          "prediction_evaluations": 157,
+          "max_nfev": 200,
+          "free_parameters": [
+            "__slot_h_c0",
+            "__slot_h_c1"
+          ],
+          "solver": "SLSQP",
+          "nfev": 154,
+          "success": false,
+          "status": 8,
+          "termination": "Positive directional derivative for linesearch",
+          "parameter_scales": [
+            9.207401290175822,
+            18.414802580351644
+          ],
+          "response_scale": 1.1509251612719777,
+          "inward_constraint_retry": true,
+          "nfev_scope": "all constrained fitting objective evaluations including numerical gradient probes; scaling probes separately counted"
+        },
+        "status": "no_accepted_fit",
+        "reason": "No feasible coefficient iterate found; no response tolerance relaxed"
+      },
+      {
+        "index": 9,
+        "solver": {
+          "prediction_evaluations": 1,
+          "max_nfev": 200,
+          "free_parameters": [
+            "__slot_h_c0",
+            "__slot_h_c1"
+          ]
+        },
+        "status": "no_accepted_fit",
+        "reason": "Coefficient fit entered an invalid real domain or observation shape"
+      }
+    ],
+    "max_nfev_per_program": 200
+  },
+  "fixed_constants": {},
+  "parameter_units": {
+    "c0": "1",
+    "c1": "1"
+  },
+  "coefficient_catalog_scope": "input/target dimensions, per-input powers0..2, 2 independent slots per dimension plus input scales; bounded catalog, not completeness",
+  "resolved_native_config": {
+    "learning_config": {
+      "batch_size": 2000,
+      "max_time_step": 256,
+      "n_epochs": 1000000000,
+      "gamma_decay": 0.7,
+      "entropy_weight": 0.005,
+      "risk_factor": 0.05,
+      "rewards_computer": "physo.physym.reward.make_RewardsComputer.<locals>.rewards_computer",
+      "get_optimizer": "physo.config.config2.<lambda>",
+      "observe_units": true
+    },
+    "reward_config": {
+      "reward_function": "physo.physym.reward.SquashedNRMSE",
+      "zero_out_unphysical": true,
+      "zero_out_duplicates": false,
+      "keep_lowest_complexity_duplicate": false
+    },
+    "free_const_opti_args": {
+      "loss": "MSE",
+      "method": "LBFGS",
+      "method_args": {
+        "n_steps": 15,
+        "tol": 1e-08,
+        "lbfgs_func_args": {
+          "max_iter": 4,
+          "line_search_fn": "strong_wolfe"
+        }
+      }
+    },
+    "priors_config": [
+      [
+        "SoftLengthPrior",
+        {
+          "length_loc": 8,
+          "scale": 5
+        }
+      ],
+      [
+        "NoUselessInversePrior",
+        null
+      ],
+      [
+        "PhysicalUnitsPrior",
+        {
+          "prob_eps": 1.1920928955078125e-07
+        }
+      ]
+    ],
+    "cell_config": {
+      "hidden_size": 128,
+      "n_layers": 1,
+      "is_lobotomized": false
+    }
+  },
+  "physo_profile": {
+    "profile": "config2",
+    "preset": "config2",
+    "epochs": 50,
+    "max_n_evaluations": 100000,
+    "physo_version": "1.1.11",
+    "preset_source_sha256": "4102a98305b5f0a36d36a3d0707d70b720a2f11709a726519223ee0b13a7f056",
+    "preset_learning_config": {
+      "batch_size": 2000,
+      "max_time_step": 35,
+      "n_epochs": 1000000000,
+      "gamma_decay": 0.7,
+      "entropy_weight": 0.005,
+      "risk_factor": 0.05,
+      "rewards_computer": "physo.physym.reward.make_RewardsComputer.<locals>.rewards_computer",
+      "get_optimizer": "physo.config.config2.<lambda>",
+      "observe_units": true
+    },
+    "explicit_overrides": {
+      "epochs": 50,
+      "max_n_evaluations": 100000
+    },
+    "effective_epochs": 50,
+    "effective_batch_size": 2000,
+    "override_order": [
+      "pinned preset",
+      "legacy lightweight defaults only",
+      "explicit method options",
+      "common source AST budget and supported-operator prior adjustments",
+      "CPU single-thread/nonparallel resource policy"
+    ],
+    "resources": {
+      "device": "cpu",
+      "torch_threads": 1,
+      "parallel_mode": false
+    },
+    "unit_mode": "all input/target units dimensionless",
+    "scope": "preset-derived configuration plus platform extensions; not a quality guarantee; no automatic unit-based preset switch"
+  },
+  "candidate_scope": "complexity_ladder",
+  "native_strict_pareto_candidates": 6,
+  "native_work": {
+    "epochs_completed": 1,
+    "sampled": 2000,
+    "physical": 2000,
+    "positive_reward": 1585,
+    "optimizer_steps": 1,
+    "scope": "actual logger rows/optimizer steps; reward counts can repeat expressions and do not prove convergence"
+  },
+  "rejected_exports": [],
+  "constraint_support": {
+    "operators": "enforced during search",
+    "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+    "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+    "variables": "disallowed columns excluded before native search; full-schema export/prediction checked",
+    "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+    "probes": "finite-point hard constrained coefficient fit before native reward/RNN update",
+    "response_bounds": "hard finite-point coefficient constraints before reward",
+    "response_checks": "finite-step coefficient constraints before reward; not analytic proof",
+    "fixed_constants": "enforced during search, immutable values/units; native SR rounded-name collisions rejected",
+    "power_indices": "native n2/n3/n4; rootn uses native signed cbrt only"
+  },
+  "assets": null,
+  "python": "3.11.15",
+  "python_executable": "/opt/venv/bin/python",
+  "device": "cpu",
+  "allowed_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "native_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "unavailable_search_operators": [],
+  "operator_policy": "unavailable_search_operators is the requested/export-capability difference, not decoder reachability; generation enforcement and context-dependent routes are specified by constraint_support and native metadata",
+  "status": "partial",
+  "native_artifacts": {
+    "native_programs": "/work/results/practical-fixed-20261115-1400/synthetic_supported/physo/calculation/discover/physo/17/recovered_native/0_physo_native.json"
+  },
+  "native_artifact_sha256": {
+    "native_programs": "13af3def96bb42b78bd928c4f7ad8cc0d96a37ab51f91a61919c0238d5af92c9"
+  },
+  "portable_status": "candidates",
+  "fixed_constants_native_support": true,
+  "exported_candidates": 12,
+  "selection_candidates": 12,
+  "prelimit_constraint_eligible": null,
+  "portable_candidates": "/work/results/practical-fixed-20261115-1400/synthetic_supported/physo/calculation/discover/physo/17/candidates.jsonl",
+  "portable_candidates_sha256": "91399e85594b664dd96f77aa210df84d188b7e526651df59884ae3bbe2670701",
+  "candidate_pool": {
+    "policy": "all",
+    "emitted": 12,
+    "retained": 12,
+    "limit": null,
+    "discarded_from_comparison_ids": [],
+    "archive_scope": "all faithfully exported native candidates, not all internal search states",
+    "quality_scope": "Train/shared probes only when explicit bounded allocation is requested; compare owns final eligibility"
+  },
+  "truncation": "none; all faithfully emitted candidates reach common evaluation",
+  "engine": "physo",
+  "seed": 17,
+  "reason": "Validated saved native hypotheses; search did not complete: Worker exited -9; see worker.log",
+  "completed_progress_sha256": "b20c1394dba862b7334d445203bfbd6882f475ba884f732ba0f2e694c2213a61",
+  "original_execution": {
+    "artifact": "/work/results/practical-fixed-20261115-1400/synthetic_supported/physo/calculation/discover/physo/17/interrupted_execution.json",
+    "sha256": "8ef0b37715e7cd18bda7cedb3646d11561e6c5d45a4c29a3ce9b07e807574ace",
+    "status": "failed",
+    "reason": "Worker exited -9; see worker.log",
+    "engine": "physo",
+    "seed": 17
+  },
+  "checkpoint_scope": "data-only hypotheses; no optimizer/RNG resume guarantee",
+  "work_scope": "Counts stop at the validated snapshot; in-flight work and optimizer state are not reconstructed",
+  "recovery_seconds": 0.49552816100185737,
+  "runtime_image_id": "sha256:43d979e1acb694cb6e42a0d08c57f737a31844599665daef971bf632eb73a5c0",
+  "prepared_sha256": "25cb8f49449fe3c134c4aa5c55dcd5cfb1460632ef68fa0e91aa78f367aa1849",
+  "job_sha256": "aac518a00a9bdf1cf9c51a0045faac3df5edc92aeaab682e73abe989bcd38831",
+  "requested_constraints": {
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": {
+      "coordinate_space": "working",
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "const": 0.75
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "slot": "h",
+            "args": [
+              {
+                "var": "x0"
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {},
+      "components": {},
+      "slots": {
+        "h": {
+          "arguments": [
+            {
+              "name": "x0",
+              "unit": "1"
+            }
+          ],
+          "unit": "1",
+          "allowed_operators": [
+            "add",
+            "sub",
+            "mul",
+            "div"
+          ],
+          "max_nodes": 252
+        }
+      },
+      "knowledge": {
+        "kind": "hypothesis",
+        "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+      }
+    },
+    "probes": [
+      {
+        "x": 0.10010000000000001
+      },
+      {
+        "x": 0.3438375
+      },
+      {
+        "x": 0.587575
+      },
+      {
+        "x": 0.8313125
+      },
+      {
+        "x": 1.07505
+      },
+      {
+        "x": 1.3187875
+      },
+      {
+        "x": 1.5625250000000002
+      },
+      {
+        "x": 1.8062625
+      },
+      {
+        "x": 2.05
+      },
+      {
+        "x": 2.2937374999999998
+      },
+      {
+        "x": 2.5374749999999997
+      },
+      {
+        "x": 2.7812124999999996
+      },
+      {
+        "x": 3.02495
+      },
+      {
+        "x": 3.2686875
+      },
+      {
+        "x": 3.512425
+      },
+      {
+        "x": 3.7561625
+      },
+      {
+        "x": 3.9999
+      }
+    ],
+    "response_bounds": [
+      0.0,
+      null
+    ],
+    "response_checks": [
+      {
+        "name": "increasing",
+        "feature": "x",
+        "order": 1,
+        "sign": 1,
+        "step": 0.0001,
+        "tolerance": 1e-05,
+        "points": [
+          {
+            "x": 0.10010000000000001
+          },
+          {
+            "x": 0.3438375
+          },
+          {
+            "x": 0.587575
+          },
+          {
+            "x": 0.8313125
+          },
+          {
+            "x": 1.07505
+          },
+          {
+            "x": 1.3187875
+          },
+          {
+            "x": 1.5625250000000002
+          },
+          {
+            "x": 1.8062625
+          },
+          {
+            "x": 2.05
+          },
+          {
+            "x": 2.2937374999999998
+          },
+          {
+            "x": 2.5374749999999997
+          },
+          {
+            "x": 2.7812124999999996
+          },
+          {
+            "x": 3.02495
+          },
+          {
+            "x": 3.2686875
+          },
+          {
+            "x": 3.512425
+          },
+          {
+            "x": 3.7561625
+          },
+          {
+            "x": 3.9999
+          }
+        ],
+        "knowledge": "Declared finite-point increasing response"
+      }
+    ],
+    "response_enforcement": "hard",
+    "max_wall_seconds": 21600,
+    "response_mode": "search",
+    "domain_probes": [
+      {
+        "x": 0.7074927323053738
+      },
+      {
+        "x": 0.7840913857374404
+      },
+      {
+        "x": 1.7784253015982936
+      },
+      {
+        "x": 0.8239618237100979
+      },
+      {
+        "x": 3.5814003493697837
+      },
+      {
+        "x": 0.2476520901940135
+      },
+      {
+        "x": 3.475483436476617
+      },
+      {
+        "x": 0.305248513826072
+      },
+      {
+        "x": 2.295276023224203
+      },
+      {
+        "x": 2.776180484941333
+      },
+      {
+        "x": 0.2994431105004205
+      },
+      {
+        "x": 0.36704735172851755
+      },
+      {
+        "x": 0.6299562312732385
+      },
+      {
+        "x": 3.436045155813486
+      },
+      {
+        "x": 2.9287872797571763
+      },
+      {
+        "x": 0.9395443891072537
+      },
+      {
+        "x": 2.05
+      },
+      {
+        "x": 0.1
+      },
+      {
+        "x": 4.0
+      },
+      {
+        "x": 1.0
+      },
+      {
+        "x": 0.10010000000000001
+      },
+      {
+        "x": 0.3438375
+      },
+      {
+        "x": 0.587575
+      },
+      {
+        "x": 0.8313125
+      },
+      {
+        "x": 1.07505
+      },
+      {
+        "x": 1.3187875
+      },
+      {
+        "x": 1.5625250000000002
+      },
+      {
+        "x": 1.8062625
+      },
+      {
+        "x": 2.05
+      },
+      {
+        "x": 2.2937374999999998
+      },
+      {
+        "x": 2.5374749999999997
+      },
+      {
+        "x": 2.7812124999999996
+      },
+      {
+        "x": 3.02495
+      },
+      {
+        "x": 3.2686875
+      },
+      {
+        "x": 3.512425
+      },
+      {
+        "x": 3.7561625
+      },
+      {
+        "x": 3.9999
+      }
+    ]
+  },
+  "requirements_ref": {
+    "requirements_sha256": "81b861c5d41eb8dfa97ec7343bcc193fcf2eed762452bd75a8a9cf71727f39d5",
+    "scope": "canonical common request; native settings/checks are derived evidence"
+  },
+  "resolved_native_profile": {
+    "options": {
+      "profile": "config2",
+      "epochs": 50,
+      "max_n_evaluations": 100000,
+      "response_max_nfev": 200
+    },
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "device": "cpu",
+    "candidate_pool_policy": "all"
+  },
+  "response_mode": "search",
+  "capability_declaration": {
+    "unit_search": {
+      "defaults": {},
+      "choices": {},
+      "templates": true
+    },
+    "equation_template": true,
+    "template_scope": "one shared slot, fixed outer coefficients, variable-only calls, identity formal schema; no signed cbrt",
+    "supported_options": [
+      "batch_size",
+      "candidate_scope",
+      "constants_per_unit",
+      "entropy_weight",
+      "epochs",
+      "max_n_evaluations",
+      "parameter_units",
+      "profile",
+      "response_max_nfev",
+      "risk_factor",
+      "unit_basis_degree"
+    ],
+    "operators": [
+      "abs",
+      "acos",
+      "add",
+      "asin",
+      "atan",
+      "cos",
+      "cosh",
+      "div",
+      "exp",
+      "log",
+      "mul",
+      "neg",
+      "pow_int",
+      "rootn",
+      "sin",
+      "sinh",
+      "sqrt",
+      "sub",
+      "tan",
+      "tanh"
+    ],
+    "fixed_constants": true,
+    "constraints": {
+      "operators": "enforced during search",
+      "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+      "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+      "variables": "disallowed columns excluded before native search; full-schema export/prediction checked",
+      "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+      "probes": "finite-point hard constrained coefficient fit before native reward/RNN update",
+      "response_bounds": "hard finite-point coefficient constraints before reward",
+      "response_checks": "finite-step coefficient constraints before reward; not analytic proof",
+      "fixed_constants": "enforced during search, immutable values/units; native SR rounded-name collisions rejected",
+      "power_indices": "native n2/n3/n4; rootn uses native signed cbrt only"
+    },
+    "search_constraints": [
+      "probes",
+      "response_bounds",
+      "response_checks"
+    ],
+    "response_enforcement": {
+      "default": "hard",
+      "supported": [
+        "hard"
+      ],
+      "stage": "constrained coefficient fit before native reward and RNN update"
+    },
+    "requires_assets": false
+  },
+  "constraint_application": {
+    "operators": "enforced during search",
+    "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+    "response_enforcement": {
+      "requested": "hard",
+      "effective": "hard",
+      "stage": "constrained coefficient fit before native reward and RNN update",
+      "scope": "declared finite points only; different defaults are not equivalent enforcement"
+    },
+    "equation_template": "post-filtered",
+    "probes": "finite-point hard constrained coefficient fit before native reward/RNN update; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee",
+    "response_bounds": "hard finite-point coefficient constraints before reward; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee",
+    "response_checks": "finite-step coefficient constraints before reward; not analytic proof; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee"
+  },
+  "response_enforcement": {
+    "requested": "hard",
+    "effective": "hard",
+    "stage": "constrained coefficient fit before native reward and RNN update",
+    "scope": "declared finite points only; different defaults are not equivalent enforcement"
+  },
+  "readiness_scope": "this profile/run only; execution, fidelity, common admissibility and scientific adequacy are distinct",
+  "candidates_sha256": "91399e85594b664dd96f77aa210df84d188b7e526651df59884ae3bbe2670701",
+  "wall_seconds": 340.27204115100903
+}

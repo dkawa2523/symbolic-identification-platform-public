@@ -1,0 +1,14 @@
+4. physo | equation
+Candidate: physo/42/22@native
+Coordinates: public
+resistance [1] = (((((((((((froude + (cosh(coef['c0']) + coef['c0'])) + coef['c0']) * coef['c0']) * froude) + froude) + coef['c1']) * coef['c0']) / prismatic_coefficient)) ** (3)) * froude)
+
+c0 = 1.332418017036151 [1]
+c1 = -1.4894109681669716 [1]
+buoyancy_position_work [1] = 1 * buoyancy_position [1] + (0)
+prismatic_coefficient_work [1] = 1 * prismatic_coefficient [1] + (0)
+length_displacement_ratio_work [1] = 1 * length_displacement_ratio [1] + (0)
+beam_draught_ratio_work [1] = 1 * beam_draught_ratio [1] + (0)
+length_beam_ratio_work [1] = 1 * length_beam_ratio [1] + (0)
+froude_work [1] = 1 * froude [1] + (0)
+resistance_work [1] = 1 * resistance [1] + (0)

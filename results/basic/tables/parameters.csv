@@ -1,0 +1,22 @@
+candidate_id,method,kind,component,member_index,member_id,weight,eligible,name,value,unit,unit_origin,coordinate_role,role,tied_to,bounds,origin
+mean/7/0@native,mean,explicit,prediction,,,,True,c0,0.4271035919238572,m,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+linear/7/0@native,linear,explicit,prediction,,,,True,c0,2.4709998687414836,1,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+linear/7/1@native,linear,explicit,prediction,,,,True,c0,2.0006353662977636,1,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+linear/7/1@native,linear,explicit,prediction,,,,True,c1,0.09867022748465006,m,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+dictionary/7/0@native,dictionary,explicit,prediction,,,,True,c0,2.4709998687414836,1,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+dictionary/7/1@native,dictionary,explicit,prediction,,,,True,c0,2.0006353662977636,1,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+dictionary/7/1@native,dictionary,explicit,prediction,,,,True,c1,0.09867022748465006,m,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+dictionary/7/2@native,dictionary,explicit,prediction,,,,True,c0,1.9800482518411497,1,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+dictionary/7/2@native,dictionary,explicit,prediction,,,,True,c1,0.09989602257387437,m,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+dictionary/7/2@native,dictionary,explicit,prediction,,,,True,c2,0.06254467839173311,m^(-1),declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+dictionary/7/3@native,dictionary,explicit,prediction,,,,True,c0,1.8950087680139356,1,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+dictionary/7/3@native,dictionary,explicit,prediction,,,,True,c1,0.1029094766657416,m,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+dictionary/7/3@native,dictionary,explicit,prediction,,,,True,c2,0.6743619275150817,m^(-1),declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+dictionary/7/3@native,dictionary,explicit,prediction,,,,True,c3,-1.2469145960083245,m^(-2),declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+dictionary/7/4@native,dictionary,explicit,prediction,,,,True,c0,1.418926204100946,1,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+dictionary/7/4@native,dictionary,explicit,prediction,,,,True,c1,0.13893347951272547,m,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+dictionary/7/4@native,dictionary,explicit,prediction,,,,True,c2,3.03225141604955,m^(-1),declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+dictionary/7/4@native,dictionary,explicit,prediction,,,,True,c3,-5.104095989824242,m^(-2),declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+dictionary/7/4@native,dictionary,explicit,prediction,,,,True,c4,-0.0008249278703255765,m^(2),declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+user_linear@manual/train_point_fit,Least-squares fit,explicit,prediction,,,,True,a,2.000635436522328,1,unit provenance not separately recorded,,free,,"[0, 4]",user_declared
+user_linear@manual/train_point_fit,Least-squares fit,explicit,prediction,,,,True,b,0.09867021695224298,m,unit provenance not separately recorded,,free,,"[-1, 1]",user_declared

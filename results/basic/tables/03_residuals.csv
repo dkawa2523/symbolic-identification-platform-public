@@ -1,0 +1,49 @@
+series,point_index,x,y,valid,plotted,plot_reason,candidate_id,method,eligible
+user_linear@manual/train_point_fit,0,9.389784260096866,2.060678657166526,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,1,22.50244356494878,-0.9444222311603134,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,2,10.595111057366736,5.386708148322095,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,3,5.516384202885436,6.011660544005287,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,4,7.428710366292647,-1.972579202564273,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,5,12.963291853737324,-3.998666704457865,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,6,3.548177662466374,3.552492350301917,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,7,14.873261039879653,1.8974101198632742,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,8,15.091870575049509,7.835151318189959,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,9,14.76100356211521,2.381995143934834,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,10,9.927156124384476,1.028919695005126,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,11,19.81946787492872,8.32561342969057,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+dictionary/7/1@native,0,9.389784260096866,2.0606747186945884,True,True,,dictionary/7/1@native,dictionary,True
+dictionary/7/1@native,1,22.50244356494878,-0.9444169613244124,True,True,,dictionary/7/1@native,dictionary,True
+dictionary/7/1@native,2,10.595111057366736,5.386705056285634,True,True,,dictionary/7/1@native,dictionary,True
+dictionary/7/1@native,3,5.516384202885436,6.011653885454965,True,True,,dictionary/7/1@native,dictionary,True
+dictionary/7/1@native,4,7.428710366292647,-1.9725845181918222,True,True,,dictionary/7/1@native,dictionary,True
+dictionary/7/1@native,5,12.963291853737324,-3.9986681334497343,True,True,,dictionary/7/1@native,dictionary,True
+dictionary/7/1@native,6,3.548177662466374,3.552484309587156,True,True,,dictionary/7/1@native,dictionary,True
+dictionary/7/1@native,7,14.873261039879653,1.8974100321389464,True,True,,dictionary/7/1@native,dictionary,True
+dictionary/7/1@native,8,15.091870575049509,7.835151383983274,True,True,,dictionary/7/1@native,dictionary,True
+dictionary/7/1@native,9,14.76100356211521,2.3819949773782323,True,True,,dictionary/7/1@native,dictionary,True
+dictionary/7/1@native,10,9.927156124384476,1.0289161339001596,True,True,,dictionary/7/1@native,dictionary,True
+dictionary/7/1@native,11,19.81946787492872,8.32561681541849,True,True,,dictionary/7/1@native,dictionary,True
+dictionary/7/2@native,0,9.389784260096866,2.2165210388450096,True,True,,dictionary/7/2@native,dictionary,True
+dictionary/7/2@native,1,22.50244356494878,-0.7046203631519976,True,True,,dictionary/7/2@native,dictionary,True
+dictionary/7/2@native,2,10.595111057366736,5.640033699315206,True,True,,dictionary/7/2@native,dictionary,True
+dictionary/7/2@native,3,5.516384202885436,5.731196575677583,True,True,,dictionary/7/2@native,dictionary,True
+dictionary/7/2@native,4,7.428710366292647,-2.0141799233220348,True,True,,dictionary/7/2@native,dictionary,True
+dictionary/7/2@native,5,12.963291853737324,-3.6067396461147427,True,True,,dictionary/7/2@native,dictionary,True
+dictionary/7/2@native,6,3.548177662466374,2.9784155891806883,True,True,,dictionary/7/2@native,dictionary,True
+dictionary/7/2@native,7,14.873261039879653,2.350015031271968,True,True,,dictionary/7/2@native,dictionary,True
+dictionary/7/2@native,8,15.091870575049509,8.291790864188519,True,True,,dictionary/7/2@native,dictionary,True
+dictionary/7/2@native,9,14.76100356211521,2.8322959378421775,True,True,,dictionary/7/2@native,dictionary,True
+dictionary/7/2@native,10,9.927156124384476,1.2304680602724938,True,True,,dictionary/7/2@native,dictionary,True
+dictionary/7/2@native,11,19.81946787492872,8.723252576769813,True,True,,dictionary/7/2@native,dictionary,True
+dictionary/7/3@native,0,9.389784260096866,2.8261120788163896,True,True,,dictionary/7/3@native,dictionary,True
+dictionary/7/3@native,1,22.50244356494878,-1.3543241917681748,True,True,,dictionary/7/3@native,dictionary,True
+dictionary/7/3@native,2,10.595111057366736,6.25160981439199,True,True,,dictionary/7/3@native,dictionary,True
+dictionary/7/3@native,3,5.516384202885436,5.756371921567277,True,True,,dictionary/7/3@native,dictionary,True
+dictionary/7/3@native,4,7.428710366292647,-1.5754719996001199,True,True,,dictionary/7/3@native,dictionary,True
+dictionary/7/3@native,5,12.963291853737324,-3.161348181497714,True,True,,dictionary/7/3@native,dictionary,True
+dictionary/7/3@native,6,3.548177662466374,2.2677618713964343,True,True,,dictionary/7/3@native,dictionary,True
+dictionary/7/3@native,7,14.873261039879653,2.5530212272795727,True,True,,dictionary/7/3@native,dictionary,True
+dictionary/7/3@native,8,15.091870575049509,8.463492891861213,True,True,,dictionary/7/3@native,dictionary,True
+dictionary/7/3@native,9,14.76100356211521,3.0511760203106864,True,True,,dictionary/7/3@native,dictionary,True
+dictionary/7/3@native,10,9.927156124384476,1.8495170179413933,True,True,,dictionary/7/3@native,dictionary,True
+dictionary/7/3@native,11,19.81946787492872,8.238916361465675,True,True,,dictionary/7/3@native,dictionary,True

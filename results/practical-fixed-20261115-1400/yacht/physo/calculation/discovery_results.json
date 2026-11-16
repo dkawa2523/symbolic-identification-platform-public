@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "engine": "physo",
+      "seed": 42,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "reason": null,
+      "wall_seconds": 1852.9255048389896,
+      "exported_candidates": 20,
+      "summary_path": "/work/results/practical-fixed-20261115-1400/yacht/physo/calculation/discover/physo/42/engine_summary.json"
+    }
+  ],
+  "selection_performed": false,
+  "final_accessed": false
+}

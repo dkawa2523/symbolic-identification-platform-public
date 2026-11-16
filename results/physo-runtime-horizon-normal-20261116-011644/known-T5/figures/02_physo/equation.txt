@@ -1,0 +1,16 @@
+2. physo | equation
+Candidate: physo/17/1@native
+Coordinates: public
+y [m^2] = (((x + x)) ** (2))
+
+x_work [m] = 1 * x [m] + (0)
+y_work [m^2] = 1 * y [m^2] + (0)
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((h(x)) ** 2)
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Exposed small wrapper/horizon mechanism only, not a quality benchmark'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [m]) = (x0 + x0)
+  Unit: m
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.

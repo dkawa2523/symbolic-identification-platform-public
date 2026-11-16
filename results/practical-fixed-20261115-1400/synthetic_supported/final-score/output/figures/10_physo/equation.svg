@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="599">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203342">
+<text x="40" y="40" font-size="24" font-weight="bold">10. physo | equation</text>
+<text x="40" y="68" font-size="13">Candidate physo/17/8@native | page 1/1</text>
+<text x="40" y="110" font-size="20">Coordinates: public</text>
+<text x="40" y="137" font-size="20"></text>
+<text x="40" y="164" font-size="20">y [1] = 0.75 * x + (θ[__slot_h_c0] + θ[__slot_h_c0] / (x - (1.0 +</text>
+<text x="40" y="191" font-size="20">θ[__slot_h_c0] + x) * θ[__slot_h_c0] - θ[__slot_h_c1])) / 1.0</text>
+<text x="40" y="218" font-size="20"></text>
+<text x="40" y="245" font-size="20">Coefficients (working coordinates; rounded on image)</text>
+<text x="40" y="272" font-size="20">__slot_h_c0 = 1.9998573 [1]; role=free</text>
+<text x="40" y="299" font-size="20">__slot_h_c1 = -4.9937868 [1]; role=free</text>
+<text x="40" y="326" font-size="20">Declared structure and fitted slots</text>
+<text x="40" y="353" font-size="20">Coordinates: canonical working; ranges on frozen Selection inputs only</text>
+<text x="40" y="380" font-size="20">declared outer: relation = ((0.75 * x) + h(x))</text>
+<text x="40" y="407" font-size="20">fitted slot: h(x0 [1]) = ((c0 + (c0 / ((x0 - (((1.0 + c0) + x0) * c0)) -</text>
+<text x="40" y="434" font-size="20">c1))) / 1.0)</text>
+<text x="40" y="461" font-size="20">  Unit: 1</text>
+<text x="40" y="488" font-size="20">  c0 = 1.9998573; free; [1]</text>
+<text x="40" y="515" font-size="20">  c1 = -4.9937868; free; [1]</text>
+<text x="40" y="542" font-size="20">Shared slot name = shared function and coefficients</text>
+</g></svg>

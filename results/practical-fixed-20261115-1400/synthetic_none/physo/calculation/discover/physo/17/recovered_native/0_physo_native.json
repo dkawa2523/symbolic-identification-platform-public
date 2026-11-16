@@ -1,0 +1,403 @@
+{
+  "template_search": null,
+  "response_search": null,
+  "fixed_constants": {},
+  "parameter_units": {
+    "c0": "1",
+    "c1": "1"
+  },
+  "coefficient_catalog_scope": "input/target dimensions, per-input powers0..2, 2 independent slots per dimension plus input scales; bounded catalog, not completeness",
+  "candidate_scope": "complexity_ladder",
+  "native_learning_trace": [
+    {
+      "epoch": 0,
+      "sampled": 2000,
+      "physical": 2000,
+      "positive_reward": 1873,
+      "elite": 100,
+      "loss": 0.2095281153390299,
+      "optimizer_steps": 1,
+      "gradient_l2": 0.020974133613392815,
+      "parameter_change_l2": 0.9263938201738777
+    }
+  ],
+  "resolved_native_config": {
+    "learning_config": {
+      "batch_size": 2000,
+      "max_time_step": 256,
+      "n_epochs": 1000000000,
+      "gamma_decay": 0.7,
+      "entropy_weight": 0.005,
+      "risk_factor": 0.05,
+      "rewards_computer": "physo.physym.reward.make_RewardsComputer.<locals>.rewards_computer",
+      "get_optimizer": "physo.config.config2.<lambda>",
+      "observe_units": true
+    },
+    "reward_config": {
+      "reward_function": "physo.physym.reward.SquashedNRMSE",
+      "zero_out_unphysical": true,
+      "zero_out_duplicates": false,
+      "keep_lowest_complexity_duplicate": false
+    },
+    "free_const_opti_args": {
+      "loss": "MSE",
+      "method": "LBFGS",
+      "method_args": {
+        "n_steps": 15,
+        "tol": 1e-08,
+        "lbfgs_func_args": {
+          "max_iter": 4,
+          "line_search_fn": "strong_wolfe"
+        }
+      }
+    },
+    "priors_config": [
+      [
+        "SoftLengthPrior",
+        {
+          "length_loc": 8,
+          "scale": 5
+        }
+      ],
+      [
+        "NoUselessInversePrior",
+        null
+      ],
+      [
+        "PhysicalUnitsPrior",
+        {
+          "prob_eps": 1.1920928955078125e-07
+        }
+      ]
+    ],
+    "cell_config": {
+      "hidden_size": 128,
+      "n_layers": 1,
+      "is_lobotomized": false
+    }
+  },
+  "physo_profile": {
+    "profile": "config2",
+    "preset": "config2",
+    "epochs": 50,
+    "max_n_evaluations": 100000,
+    "physo_version": "1.1.11",
+    "preset_source_sha256": "4102a98305b5f0a36d36a3d0707d70b720a2f11709a726519223ee0b13a7f056",
+    "preset_learning_config": {
+      "batch_size": 2000,
+      "max_time_step": 35,
+      "n_epochs": 1000000000,
+      "gamma_decay": 0.7,
+      "entropy_weight": 0.005,
+      "risk_factor": 0.05,
+      "rewards_computer": "physo.physym.reward.make_RewardsComputer.<locals>.rewards_computer",
+      "get_optimizer": "physo.config.config2.<lambda>",
+      "observe_units": true
+    },
+    "explicit_overrides": {
+      "epochs": 50,
+      "max_n_evaluations": 100000
+    },
+    "effective_epochs": 50,
+    "effective_batch_size": 2000,
+    "override_order": [
+      "pinned preset",
+      "legacy lightweight defaults only",
+      "explicit method options",
+      "common source AST budget and supported-operator prior adjustments",
+      "CPU single-thread/nonparallel resource policy"
+    ],
+    "resources": {
+      "device": "cpu",
+      "torch_threads": 1,
+      "parallel_mode": false
+    },
+    "unit_mode": "all input/target units dimensionless",
+    "scope": "preset-derived configuration plus platform extensions; not a quality guarantee; no automatic unit-based preset switch"
+  },
+  "native_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "programs": [
+    {
+      "rank": 0,
+      "prefix": [
+        "x0"
+      ],
+      "free_parameters": [
+        [
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "rank": 1,
+      "prefix": [
+        "add",
+        "x0",
+        "c0"
+      ],
+      "free_parameters": [
+        [
+          0.7153003918126195,
+          1.0
+        ]
+      ]
+    },
+    {
+      "rank": 2,
+      "prefix": [
+        "mul",
+        "c1",
+        "add",
+        "c0",
+        "x0"
+      ],
+      "free_parameters": [
+        [
+          0.5741546751923152,
+          1.055620645372118
+        ]
+      ]
+    },
+    {
+      "rank": 3,
+      "prefix": [
+        "add",
+        "add",
+        "c1",
+        "c0",
+        "mul",
+        "c0",
+        "x0"
+      ],
+      "free_parameters": [
+        [
+          1.0556197726450178,
+          -0.4495283374088813
+        ]
+      ]
+    },
+    {
+      "rank": 4,
+      "prefix": [
+        "mul",
+        "div",
+        "1.0",
+        "add",
+        "c0",
+        "div",
+        "1.0",
+        "x0",
+        "c1"
+      ],
+      "free_parameters": [
+        [
+          0.2079969167867664,
+          2.045364414324449
+        ]
+      ]
+    },
+    {
+      "rank": 5,
+      "prefix": [
+        "add",
+        "x0",
+        "sub",
+        "c0",
+        "div",
+        "1.0",
+        "div",
+        "x0",
+        "add",
+        "x0",
+        "c1"
+      ],
+      "free_parameters": [
+        [
+          1.8070523836295966,
+          0.08740189378852224
+        ]
+      ]
+    },
+    {
+      "rank": 6,
+      "prefix": [
+        "div",
+        "x0",
+        "add",
+        "sub",
+        "c0",
+        "sub",
+        "div",
+        "x0",
+        "c1",
+        "c0",
+        "add",
+        "x0",
+        "1.0"
+      ],
+      "free_parameters": [
+        [
+          -0.25554849201437274,
+          1.113207198414113
+        ]
+      ]
+    },
+    {
+      "rank": 7,
+      "prefix": [
+        "div",
+        "1.0",
+        "div",
+        "div",
+        "mul",
+        "div",
+        "sub",
+        "add",
+        "c0",
+        "x0",
+        "1.0",
+        "c0",
+        "c1",
+        "c0",
+        "x0"
+      ],
+      "free_parameters": [
+        [
+          5.807498019534802,
+          3.4298887564116494
+        ]
+      ]
+    },
+    {
+      "rank": 8,
+      "prefix": [
+        "div",
+        "x0",
+        "add",
+        "mul",
+        "sub",
+        "mul",
+        "add",
+        "c1",
+        "c1",
+        "add",
+        "mul",
+        "x0",
+        "1.0",
+        "1.0",
+        "x0",
+        "c1",
+        "c0"
+      ],
+      "free_parameters": [
+        [
+          0.47387989494603977,
+          -0.08667088282876313
+        ]
+      ]
+    },
+    {
+      "rank": 9,
+      "prefix": [
+        "sub",
+        "mul",
+        "sub",
+        "div",
+        "add",
+        "x0",
+        "1.0",
+        "mul",
+        "sub",
+        "add",
+        "1.0",
+        "div",
+        "c1",
+        "x0",
+        "c0",
+        "c0",
+        "x0",
+        "c0",
+        "c0"
+      ],
+      "free_parameters": [
+        [
+          0.05001356498190186,
+          0.16410146169612658
+        ]
+      ]
+    },
+    {
+      "rank": 10,
+      "prefix": [
+        "sub",
+        "c1",
+        "sub",
+        "mul",
+        "add",
+        "mul",
+        "1.0",
+        "sub",
+        "sub",
+        "mul",
+        "sub",
+        "x0",
+        "c0",
+        "sub",
+        "1.0",
+        "c1",
+        "c0",
+        "x0",
+        "c1",
+        "1.0",
+        "x0"
+      ],
+      "free_parameters": [
+        [
+          0.3117245746688428,
+          0.05561136089903041
+        ]
+      ]
+    },
+    {
+      "rank": 11,
+      "prefix": [
+        "add",
+        "add",
+        "div",
+        "sub",
+        "mul",
+        "mul",
+        "mul",
+        "div",
+        "div",
+        "div",
+        "add",
+        "1.0",
+        "1.0",
+        "1.0",
+        "x0",
+        "c0",
+        "x0",
+        "c1",
+        "x0",
+        "c1",
+        "c0",
+        "c0",
+        "c0"
+      ],
+      "free_parameters": [
+        [
+          0.41169422635337327,
+          0.08945961743092767
+        ]
+      ]
+    }
+  ],
+  "rejected_exports": []
+}

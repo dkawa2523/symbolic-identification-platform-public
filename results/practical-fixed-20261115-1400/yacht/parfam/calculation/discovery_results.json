@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "engine": "parfam",
+      "seed": 42,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "reason": null,
+      "wall_seconds": 3040.191859793995,
+      "exported_candidates": 159,
+      "summary_path": "/work/results/practical-fixed-20261115-1400/yacht/parfam/calculation/discover/parfam/42/engine_summary.json"
+    }
+  ],
+  "selection_performed": false,
+  "final_accessed": false
+}

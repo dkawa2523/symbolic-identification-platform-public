@@ -1,0 +1,70 @@
+Representative equations: error and size
+X: Expression nodes [count]
+Y: Selection RMSE [1]
+
+1. pysr
+Candidate: pysr/17/5@native
+Variant: native; seed: 17
+Eligible: True; reason: None
+Equation (public): y [1] = ((0.75 * x) + (((x / (x + coef['__slot_h_c0'])) + x) / ((x / coef['__slot_h_c1']) - coef['__slot_h_c2'])))
+  coef['__slot_h_c0'] = 0.7725579678102222 [1]
+  coef['__slot_h_c1'] = 2.07395343412467 [1]
+  coef['__slot_h_c2'] = -1.0801275723145394 [1]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)
+
+9. torchsisso
+Candidate: torchsisso/17/0@native
+Variant: native; seed: 17
+Eligible: True; reason: None
+Equation (public): y [1] = ((0.75 * x) + (coef['__slot_h_intercept'] + (coef['__slot_h_c0'] * x)))
+  coef['__slot_h_c0'] = 0.3056197726450177 [1]
+  coef['__slot_h_intercept'] = 0.6060914352361365 [1]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)
+
+10. physo
+Candidate: physo/17/8@native
+Variant: native; seed: 17
+Eligible: True; reason: None
+Equation (public): y [1] = ((0.75 * x) + ((coef['__slot_h_c0'] + (coef['__slot_h_c0'] / ((x - (((1.0 + coef['__slot_h_c0']) + x) * coef['__slot_h_c0'])) - coef['__slot_h_c1']))) / 1.0))
+  coef['__slot_h_c0'] = 1.9998572859905726 [1]
+  coef['__slot_h_c1'] = -4.993786815920743 [1]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)
+
+11. e2e
+Candidate: e2e/17/125/known-affine-fit@native
+Variant: native; seed: 17
+Eligible: True; reason: None
+Equation (public): y [1] = ((0.75 * x) + ((coef['__slot_h_c2'] + (coef['__slot_h_c4'] * (1 / ((coef['__slot_h_c8'] + (coef['__slot_h_c10'] * (1 / (coef['__slot_h_c13'] + (coef['__slot_h_c15'] * ((x - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale'])))))) - (coef['__slot_h_c18'] + (coef['__slot_h_c20'] * ((x - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale']))))))) + (coef['__slot_h_c23'] + (coef['__slot_h_c25'] * (1 / (coef['__slot_h_c28'] + (coef['__slot_h_c30'] * (1 / (coef['__slot_h_c33'] + (coef['__slot_h_c35'] * (1 / (coef['__slot_h_c38'] + (coef['__slot_h_c40'] * (1 / (coef['__slot_h_c43'] + (coef['__slot_h_c45'] * (1 / (coef['__slot_h_c48'] + (coef['__slot_h_c50'] * (1 / (coef['__slot_h_c53'] + (coef['__slot_h_c55'] * ((x - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale'])))))))))))))))))))))))
+  coef['__slot_h_c10'] = -0.20199110458135008 [1]
+  coef['__slot_h_c13'] = -3.0170679227934127 [1]
+  coef['__slot_h_c15'] = -0.249871246513016 [1]
+  coef['__slot_h_c18'] = 0.02782615839409602 [1]
+  coef['__slot_h_c2'] = -0.28608761362150004 [1]
+  coef['__slot_h_c20'] = -0.03148121346559579 [1]
+  coef['__slot_h_c23'] = 2.245575033847901 [1]
+  coef['__slot_h_c25'] = 0.46042483881401985 [1]
+  coef['__slot_h_c28'] = 0.37928486584861115 [1]
+  coef['__slot_h_c30'] = -1.2256667468422733 [1]
+  coef['__slot_h_c33'] = -0.04076234642677988 [1]
+  coef['__slot_h_c35'] = 0.000962567445148803 [1]
+  coef['__slot_h_c38'] = -0.5551126945217775 [1]
+  coef['__slot_h_c4'] = -0.04403400872623396 [1]
+  coef['__slot_h_c40'] = -14.167040088518197 [1]
+  coef['__slot_h_c43'] = -1.5489822257082586 [1]
+  coef['__slot_h_c45'] = 31.3327905049318 [1]
+  coef['__slot_h_c48'] = -0.03765952549039632 [1]
+  coef['__slot_h_c50'] = 14.736168511502376 [1]
+  coef['__slot_h_c53'] = 2.591404230970542 [1]
+  coef['__slot_h_c55'] = -51.23330467961724 [1]
+  coef['__slot_h_c8'] = 0.028737139215004936 [1]
+  coef['__slot_h_x0_mean'] = 1.9634916034894223 [1]
+  coef['__slot_h_x0_scale'] = 1.0820323259523998 [1]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)
+
+Scope: Saved display representatives only. All candidates and extreme errors remain in the accuracy overview and candidate table.
+
+Exact rows and provenance: matching CSV and plot_data.json.

@@ -1,0 +1,18 @@
+FROM python@sha256:6a0e06f5ba0b373d051aabd3fffb9b873f27f9a2a3a14bcbe37dee6f0e3bbc70 AS flash
+RUN apt-get update && apt-get install -y --no-install-recommends git ca-certificates fonts-dejavu-core fonts-noto-cjk \
+    && rm -rf /var/lib/apt/lists/*
+RUN python -m pip install --no-cache-dir uv==0.11.16 && uv venv /opt/venv
+RUN uv pip install --python /opt/venv/bin/python --torch-backend cpu torch==2.14.1
+COPY containers/requirements/flash.txt /opt/requirements/flash.txt
+RUN uv pip install --python /opt/venv/bin/python -r /opt/requirements/flash.txt
+COPY pkgs/symbolic/src/ml_platform_symbolic/engines/decoder_runtime.py /tmp/decoder_runtime.py
+RUN /opt/venv/bin/python /tmp/decoder_runtime.py --engine flash --source /opt/venv/lib/python3.12/site-packages/flash_ansr/model/flash_ansr_model.py
+COPY pkgs/symbolic /opt/symbolic
+RUN uv pip install --python /opt/venv/bin/python -e /opt/symbolic
+RUN uv pip install --python /opt/venv/bin/python pytest==8.3.5
+ENV PATH="/opt/venv/bin:${PATH}" \
+    PYTHONPATH="/work/pkgs/symbolic/src" \
+    PYTHONDONTWRITEBYTECODE=1 \
+    WANDB_MODE=disabled
+WORKDIR /work
+CMD ["python", "-m", "ml_platform_symbolic", "--help"]

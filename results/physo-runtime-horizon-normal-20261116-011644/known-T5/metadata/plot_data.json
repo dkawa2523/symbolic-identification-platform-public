@@ -1,0 +1,1483 @@
+{
+  "schema_version": 1,
+  "figures": [
+    {
+      "id": "01_accuracy",
+      "kind": "selection_tradeoff",
+      "title": "Prediction error and equation size",
+      "x_label": "Expression nodes [count]",
+      "y_label": "Selection RMSE [m^2]",
+      "rows": [
+        {
+          "series": "physo",
+          "point_index": 0,
+          "x": 3,
+          "y": 3.3675306987094733,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/0@native",
+          "eligible": true,
+          "reason": null,
+          "subject": {
+            "relation_ref": "physo/17/0@native",
+            "relation_state_sha256": "19343605f2fcb6966c113d12138172cd37590ac15044d8eb6d21eed4b279659b",
+            "view": "value",
+            "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          "checks": [
+            {
+              "name": "operators",
+              "status": "pass",
+              "required": true,
+              "method": "structural",
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "max_nodes",
+              "status": "pass",
+              "required": true,
+              "method": "expanded source-coordinate AST",
+              "reason": null,
+              "count": 3,
+              "limit": 12,
+              "member": 0
+            },
+            {
+              "name": "units",
+              "status": "pass",
+              "required": true,
+              "method": "structural",
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "template.structure",
+              "status": "pass",
+              "required": true,
+              "member": 0
+            },
+            {
+              "name": "template.slot.h.operators",
+              "status": "pass",
+              "required": true,
+              "member": 0
+            },
+            {
+              "name": "template.slot.h.nodes",
+              "status": "pass",
+              "required": true,
+              "member": 0
+            },
+            {
+              "name": "template.slot.h.units",
+              "status": "pass",
+              "required": true,
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "template.argument.0.units",
+              "status": "pass",
+              "required": true,
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "template.output.units",
+              "status": "pass",
+              "required": true,
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "domain_prediction_validity",
+              "status": "pass",
+              "required": true,
+              "method": "automatic domain points; finite prediction only, no response-bound expansion",
+              "reason": null,
+              "n_points": 16,
+              "n_valid": 16
+            }
+          ],
+          "native_check": {
+            "passed": true,
+            "n_points": 64,
+            "max_abs_error": 0.0,
+            "absolute_scale": 2.6101210323658384,
+            "signal_rtol": 1e-05,
+            "atol": 2.6101210323658385e-05,
+            "float64_ulp_allowance": 8,
+            "resolution_limited": false,
+            "zero_signal_policy": "exact equality; no dimensional absolute floor",
+            "finite_and_signed_nonfinite_masks_match": true,
+            "policy": "signal scale plus float64 ULP; no relative tolerance on raw output offset",
+            "train_points": 48,
+            "boundary_and_configured_points": 16,
+            "scope": "train plus independent declared-domain/interior/boundary/configured probes; no global equivalence proof",
+            "division_policy": "common evaluator oracle",
+            "domain_probe_policy": "observed",
+            "arithmetic": "strict_real",
+            "comparison_semantics": "declared native arithmetic, including signed Inf/NaN masks",
+            "common_prediction_semantics": "finite real-domain projection; invalid intermediate rows retained separately",
+            "common_real_domain_valid_points": 64
+          }
+        },
+        {
+          "series": "physo",
+          "point_index": 0,
+          "x": 5,
+          "y": 4.45136038133333e-16,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "eligible": true,
+          "reason": null,
+          "subject": {
+            "relation_ref": "physo/17/1@native",
+            "relation_state_sha256": "15ae3ee97f48d331b4e9d0f849f4317b99c02738a97760dc65a890ed73dacd28",
+            "view": "value",
+            "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          "checks": [
+            {
+              "name": "operators",
+              "status": "pass",
+              "required": true,
+              "method": "structural",
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "max_nodes",
+              "status": "pass",
+              "required": true,
+              "method": "expanded source-coordinate AST",
+              "reason": null,
+              "count": 5,
+              "limit": 12,
+              "member": 0
+            },
+            {
+              "name": "units",
+              "status": "pass",
+              "required": true,
+              "method": "structural",
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "template.structure",
+              "status": "pass",
+              "required": true,
+              "member": 0
+            },
+            {
+              "name": "template.slot.h.operators",
+              "status": "pass",
+              "required": true,
+              "member": 0
+            },
+            {
+              "name": "template.slot.h.nodes",
+              "status": "pass",
+              "required": true,
+              "member": 0
+            },
+            {
+              "name": "template.slot.h.units",
+              "status": "pass",
+              "required": true,
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "template.argument.0.units",
+              "status": "pass",
+              "required": true,
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "template.output.units",
+              "status": "pass",
+              "required": true,
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "domain_prediction_validity",
+              "status": "pass",
+              "required": true,
+              "method": "automatic domain points; finite prediction only, no response-bound expansion",
+              "reason": null,
+              "n_points": 16,
+              "n_valid": 16
+            }
+          ],
+          "native_check": {
+            "passed": true,
+            "n_points": 64,
+            "max_abs_error": 0.0,
+            "absolute_scale": 2.6101210323658384,
+            "signal_rtol": 1e-05,
+            "atol": 2.6101210323658385e-05,
+            "float64_ulp_allowance": 8,
+            "resolution_limited": false,
+            "zero_signal_policy": "exact equality; no dimensional absolute floor",
+            "finite_and_signed_nonfinite_masks_match": true,
+            "policy": "signal scale plus float64 ULP; no relative tolerance on raw output offset",
+            "train_points": 48,
+            "boundary_and_configured_points": 16,
+            "scope": "train plus independent declared-domain/interior/boundary/configured probes; no global equivalence proof",
+            "division_policy": "common evaluator oracle",
+            "domain_probe_policy": "observed",
+            "arithmetic": "strict_real",
+            "comparison_semantics": "declared native arithmetic, including signed Inf/NaN masks",
+            "common_prediction_semantics": "finite real-domain projection; invalid intermediate rows retained separately",
+            "common_real_domain_valid_points": 64
+          }
+        },
+        {
+          "series": "physo",
+          "point_index": 0,
+          "x": 7,
+          "y": 4.45136038133333e-16,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/2@native",
+          "eligible": true,
+          "reason": null,
+          "subject": {
+            "relation_ref": "physo/17/2@native",
+            "relation_state_sha256": "a6bbcb39e01eaef4ab215430927ef5459d68ca1db5e32ee77632f8ffcc568e6e",
+            "view": "value",
+            "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          "checks": [
+            {
+              "name": "operators",
+              "status": "pass",
+              "required": true,
+              "method": "structural",
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "max_nodes",
+              "status": "pass",
+              "required": true,
+              "method": "expanded source-coordinate AST",
+              "reason": null,
+              "count": 7,
+              "limit": 12,
+              "member": 0
+            },
+            {
+              "name": "units",
+              "status": "pass",
+              "required": true,
+              "method": "structural",
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "template.structure",
+              "status": "pass",
+              "required": true,
+              "member": 0
+            },
+            {
+              "name": "template.slot.h.operators",
+              "status": "pass",
+              "required": true,
+              "member": 0
+            },
+            {
+              "name": "template.slot.h.nodes",
+              "status": "pass",
+              "required": true,
+              "member": 0
+            },
+            {
+              "name": "template.slot.h.units",
+              "status": "pass",
+              "required": true,
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "template.argument.0.units",
+              "status": "pass",
+              "required": true,
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "template.output.units",
+              "status": "pass",
+              "required": true,
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "domain_prediction_validity",
+              "status": "pass",
+              "required": true,
+              "method": "automatic domain points; finite prediction only, no response-bound expansion",
+              "reason": null,
+              "n_points": 16,
+              "n_valid": 16
+            }
+          ],
+          "native_check": {
+            "passed": true,
+            "n_points": 64,
+            "max_abs_error": 0.0,
+            "absolute_scale": 2.6101210323658384,
+            "signal_rtol": 1e-05,
+            "atol": 2.6101210323658385e-05,
+            "float64_ulp_allowance": 8,
+            "resolution_limited": false,
+            "zero_signal_policy": "exact equality; no dimensional absolute floor",
+            "finite_and_signed_nonfinite_masks_match": true,
+            "policy": "signal scale plus float64 ULP; no relative tolerance on raw output offset",
+            "train_points": 48,
+            "boundary_and_configured_points": 16,
+            "scope": "train plus independent declared-domain/interior/boundary/configured probes; no global equivalence proof",
+            "division_policy": "common evaluator oracle",
+            "domain_probe_policy": "observed",
+            "arithmetic": "strict_real",
+            "comparison_semantics": "declared native arithmetic, including signed Inf/NaN masks",
+            "common_prediction_semantics": "finite real-domain projection; invalid intermediate rows retained separately",
+            "common_real_domain_valid_points": 64
+          }
+        }
+      ],
+      "scope": "All frozen candidates; no ranking or new score. Ineligible candidates are marked with crosses. Missing scores remain in CSV, not zero.",
+      "models": [
+        {
+          "candidate_id": "physo/17/0@native",
+          "number": 1,
+          "method": "physo",
+          "label": "1. physo",
+          "color": "#196787",
+          "formula": "y [m^2] = ((x) ** (2))",
+          "display_formula": "y [m^2] = x ^ 2",
+          "coordinate": "public",
+          "parameters": [],
+          "mappings": [
+            "x_work [m] = 1 * x [m] + (0)",
+            "y_work [m^2] = 1 * y [m^2] + (0)"
+          ],
+          "components": [],
+          "template": {
+            "status": "computed",
+            "knowledge": {
+              "kind": "hypothesis",
+              "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+            },
+            "declared_formula": "((h(x)) ** 2)",
+            "sharing": "Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.",
+            "components": [],
+            "slots": [
+              {
+                "name": "h",
+                "arguments": [
+                  {
+                    "name": "x0",
+                    "unit": "m"
+                  }
+                ],
+                "unit": "m",
+                "description": null,
+                "formula": "x0",
+                "parameters": []
+              }
+            ],
+            "dependent_parameters": [],
+            "coordinates": "canonical working; ranges on frozen Selection inputs only",
+            "interpretation_limit": "Named components describe this declared representation, not unique identification or causal effects."
+          },
+          "eligible": true,
+          "reason": null,
+          "variant": "native",
+          "seed": 17,
+          "selection": {
+            "rmse": 3.3675306987094733,
+            "mae": 2.6956169410831183,
+            "r2": -0.5657916641581999,
+            "reason": null
+          },
+          "final_metrics": {}
+        },
+        {
+          "candidate_id": "physo/17/1@native",
+          "number": 2,
+          "method": "physo",
+          "label": "2. physo",
+          "color": "#196787",
+          "formula": "y [m^2] = (((x + x)) ** (2))",
+          "display_formula": "y [m^2] = (x + x) ^ 2",
+          "coordinate": "public",
+          "parameters": [],
+          "mappings": [
+            "x_work [m] = 1 * x [m] + (0)",
+            "y_work [m^2] = 1 * y [m^2] + (0)"
+          ],
+          "components": [],
+          "template": {
+            "status": "computed",
+            "knowledge": {
+              "kind": "hypothesis",
+              "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+            },
+            "declared_formula": "((h(x)) ** 2)",
+            "sharing": "Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.",
+            "components": [],
+            "slots": [
+              {
+                "name": "h",
+                "arguments": [
+                  {
+                    "name": "x0",
+                    "unit": "m"
+                  }
+                ],
+                "unit": "m",
+                "description": null,
+                "formula": "(x0 + x0)",
+                "parameters": []
+              }
+            ],
+            "dependent_parameters": [],
+            "coordinates": "canonical working; ranges on frozen Selection inputs only",
+            "interpretation_limit": "Named components describe this declared representation, not unique identification or causal effects."
+          },
+          "eligible": true,
+          "reason": null,
+          "variant": "native",
+          "seed": 17,
+          "selection": {
+            "rmse": 4.45136038133333e-16,
+            "mae": 1.5612511283791264e-16,
+            "r2": 1.0,
+            "reason": null
+          },
+          "final_metrics": {}
+        },
+        {
+          "candidate_id": "physo/17/2@native",
+          "number": 3,
+          "method": "physo",
+          "label": "3. physo",
+          "color": "#196787",
+          "formula": "y [m^2] = (((x * (1.0 * coef['__slot_h_a']))) ** (2))",
+          "display_formula": "y [m^2] = (x * (1.0 * θ[__slot_h_a])) ^ 2",
+          "coordinate": "public",
+          "parameters": [
+            {
+              "name": "__slot_h_a",
+              "value": 2.0,
+              "unit": "1",
+              "unit_origin": "unit provenance not separately recorded",
+              "role": "free",
+              "tied_to": null,
+              "bounds": [
+                null,
+                null
+              ],
+              "origin": "native_free_constant_slot",
+              "coordinate_role": null
+            }
+          ],
+          "mappings": [
+            "x_work [m] = 1 * x [m] + (0)",
+            "y_work [m^2] = 1 * y [m^2] + (0)"
+          ],
+          "components": [],
+          "template": {
+            "status": "computed",
+            "knowledge": {
+              "kind": "hypothesis",
+              "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+            },
+            "declared_formula": "((h(x)) ** 2)",
+            "sharing": "Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.",
+            "components": [],
+            "slots": [
+              {
+                "name": "h",
+                "arguments": [
+                  {
+                    "name": "x0",
+                    "unit": "m"
+                  }
+                ],
+                "unit": "m",
+                "description": null,
+                "formula": "(x0 * (1.0 * a))",
+                "parameters": [
+                  {
+                    "name": "a",
+                    "value": 2.0,
+                    "unit": "1",
+                    "unit_origin": "unit provenance not separately recorded",
+                    "role": "free",
+                    "tied_to": null,
+                    "bounds": [
+                      null,
+                      null
+                    ],
+                    "origin": "native_free_constant_slot",
+                    "coordinate_role": null
+                  }
+                ]
+              }
+            ],
+            "dependent_parameters": [],
+            "coordinates": "canonical working; ranges on frozen Selection inputs only",
+            "interpretation_limit": "Named components describe this declared representation, not unique identification or causal effects."
+          },
+          "eligible": true,
+          "reason": null,
+          "variant": "native",
+          "seed": 17,
+          "selection": {
+            "rmse": 4.45136038133333e-16,
+            "mae": 1.5612511283791264e-16,
+            "r2": 1.0,
+            "reason": null
+          },
+          "final_metrics": {}
+        }
+      ],
+      "display_ids": [
+        "physo/17/1@native"
+      ]
+    },
+    {
+      "id": "02_predictions",
+      "kind": "observed_prediction",
+      "title": "Observed and predicted values",
+      "x_label": "Observed [m^2]",
+      "y_label": "Predicted [m^2]",
+      "rows": [
+        {
+          "series": "physo/17/1@native",
+          "point_index": 0,
+          "x": 0.2239555643721484,
+          "y": 0.22395556437214825,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 1,
+          "x": 0.3400039674667724,
+          "y": 0.34000396746677247,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 2,
+          "x": 0.4801904384050783,
+          "y": 0.4801904384050783,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 3,
+          "x": 0.6445149771870661,
+          "y": 0.6445149771870661,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 4,
+          "x": 0.8329775838127356,
+          "y": 0.8329775838127356,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 5,
+          "x": 1.0455782582820867,
+          "y": 1.0455782582820867,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 6,
+          "x": 1.28231700059512,
+          "y": 1.28231700059512,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 7,
+          "x": 1.5431938107518353,
+          "y": 1.5431938107518353,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 8,
+          "x": 1.8282086887522315,
+          "y": 1.8282086887522315,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 9,
+          "x": 2.1373616345963096,
+          "y": 2.1373616345963096,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 10,
+          "x": 2.470652648284071,
+          "y": 2.470652648284071,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 11,
+          "x": 2.8280817298155125,
+          "y": 2.8280817298155125,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 12,
+          "x": 3.2096488791906364,
+          "y": 3.2096488791906364,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 13,
+          "x": 3.615354096409443,
+          "y": 3.615354096409444,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 14,
+          "x": 4.04519738147193,
+          "y": 4.04519738147193,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 15,
+          "x": 4.499178734378099,
+          "y": 4.4991787343780985,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 16,
+          "x": 4.977298155127952,
+          "y": 4.977298155127952,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 17,
+          "x": 5.479555643721484,
+          "y": 5.479555643721484,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 18,
+          "x": 6.005951200158698,
+          "y": 6.0059512001587,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 19,
+          "x": 6.556484824439594,
+          "y": 6.556484824439594,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 20,
+          "x": 7.1311565165641735,
+          "y": 7.1311565165641735,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 21,
+          "x": 7.7299662765324335,
+          "y": 7.7299662765324335,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 22,
+          "x": 8.352914104344375,
+          "y": 8.352914104344375,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 23,
+          "x": 9.0,
+          "y": 9.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        }
+      ],
+      "scope": "Stored Selection rows, actual covariates. Invalid rows remain in the source table. No Final data or recalculated predictions.",
+      "models": [
+        {
+          "candidate_id": "physo/17/1@native",
+          "number": 2,
+          "method": "physo",
+          "label": "2. physo",
+          "color": "#196787",
+          "formula": "y [m^2] = (((x + x)) ** (2))",
+          "display_formula": "y [m^2] = (x + x) ^ 2",
+          "coordinate": "public",
+          "parameters": [],
+          "mappings": [
+            "x_work [m] = 1 * x [m] + (0)",
+            "y_work [m^2] = 1 * y [m^2] + (0)"
+          ],
+          "components": [],
+          "template": {
+            "status": "computed",
+            "knowledge": {
+              "kind": "hypothesis",
+              "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+            },
+            "declared_formula": "((h(x)) ** 2)",
+            "sharing": "Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.",
+            "components": [],
+            "slots": [
+              {
+                "name": "h",
+                "arguments": [
+                  {
+                    "name": "x0",
+                    "unit": "m"
+                  }
+                ],
+                "unit": "m",
+                "description": null,
+                "formula": "(x0 + x0)",
+                "parameters": []
+              }
+            ],
+            "dependent_parameters": [],
+            "coordinates": "canonical working; ranges on frozen Selection inputs only",
+            "interpretation_limit": "Named components describe this declared representation, not unique identification or causal effects."
+          },
+          "eligible": true,
+          "reason": null,
+          "variant": "native",
+          "seed": 17,
+          "selection": {
+            "rmse": 4.45136038133333e-16,
+            "mae": 1.5612511283791264e-16,
+            "r2": 1.0,
+            "reason": null
+          },
+          "final_metrics": {}
+        }
+      ],
+      "reference": "identity"
+    },
+    {
+      "id": "03_residuals",
+      "kind": "residual",
+      "title": "Prediction residuals",
+      "x_label": "x [m]",
+      "y_label": "Observed - predicted [m^2]",
+      "rows": [
+        {
+          "series": "physo/17/1@native",
+          "point_index": 0,
+          "x": 0.2366197183098591,
+          "y": 1.3877787807814457e-16,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 1,
+          "x": 0.2915492957746479,
+          "y": -5.551115123125783e-17,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 2,
+          "x": 0.3464788732394366,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 3,
+          "x": 0.4014084507042254,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 4,
+          "x": 0.4563380281690141,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 5,
+          "x": 0.5112676056338028,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 6,
+          "x": 0.5661971830985916,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 7,
+          "x": 0.6211267605633803,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 8,
+          "x": 0.676056338028169,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 9,
+          "x": 0.7309859154929577,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 10,
+          "x": 0.7859154929577465,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 11,
+          "x": 0.8408450704225352,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 12,
+          "x": 0.8957746478873239,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 13,
+          "x": 0.9507042253521129,
+          "y": -8.881784197001252e-16,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 14,
+          "x": 1.0056338028169014,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 15,
+          "x": 1.06056338028169,
+          "y": 8.881784197001252e-16,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 16,
+          "x": 1.115492957746479,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 17,
+          "x": 1.1704225352112676,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 18,
+          "x": 1.2253521126760565,
+          "y": -1.7763568394002505e-15,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 19,
+          "x": 1.280281690140845,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 20,
+          "x": 1.3352112676056338,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 21,
+          "x": 1.3901408450704225,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 22,
+          "x": 1.4450704225352111,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        },
+        {
+          "series": "physo/17/1@native",
+          "point_index": 23,
+          "x": 1.5,
+          "y": 0.0,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "method": "physo",
+          "eligible": true
+        }
+      ],
+      "scope": "Selection rows at actual covariates; not a fixed-condition response, time sequence or causal effect.",
+      "models": [
+        {
+          "candidate_id": "physo/17/1@native",
+          "number": 2,
+          "method": "physo",
+          "label": "2. physo",
+          "color": "#196787",
+          "formula": "y [m^2] = (((x + x)) ** (2))",
+          "display_formula": "y [m^2] = (x + x) ^ 2",
+          "coordinate": "public",
+          "parameters": [],
+          "mappings": [
+            "x_work [m] = 1 * x [m] + (0)",
+            "y_work [m^2] = 1 * y [m^2] + (0)"
+          ],
+          "components": [],
+          "template": {
+            "status": "computed",
+            "knowledge": {
+              "kind": "hypothesis",
+              "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+            },
+            "declared_formula": "((h(x)) ** 2)",
+            "sharing": "Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.",
+            "components": [],
+            "slots": [
+              {
+                "name": "h",
+                "arguments": [
+                  {
+                    "name": "x0",
+                    "unit": "m"
+                  }
+                ],
+                "unit": "m",
+                "description": null,
+                "formula": "(x0 + x0)",
+                "parameters": []
+              }
+            ],
+            "dependent_parameters": [],
+            "coordinates": "canonical working; ranges on frozen Selection inputs only",
+            "interpretation_limit": "Named components describe this declared representation, not unique identification or causal effects."
+          },
+          "eligible": true,
+          "reason": null,
+          "variant": "native",
+          "seed": 17,
+          "selection": {
+            "rmse": 4.45136038133333e-16,
+            "mae": 1.5612511283791264e-16,
+            "r2": 1.0,
+            "reason": null
+          },
+          "final_metrics": {}
+        }
+      ],
+      "reference": "zero"
+    },
+    {
+      "id": "04_representatives",
+      "kind": "selection_tradeoff",
+      "title": "Representative equations: error and size",
+      "x_label": "Expression nodes [count]",
+      "y_label": "Selection RMSE [m^2]",
+      "rows": [
+        {
+          "series": "physo",
+          "point_index": 0,
+          "x": 5,
+          "y": 4.45136038133333e-16,
+          "valid": true,
+          "plotted": true,
+          "plot_reason": null,
+          "candidate_id": "physo/17/1@native",
+          "eligible": true,
+          "reason": null,
+          "subject": {
+            "relation_ref": "physo/17/1@native",
+            "relation_state_sha256": "15ae3ee97f48d331b4e9d0f849f4317b99c02738a97760dc65a890ed73dacd28",
+            "view": "value",
+            "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          "checks": [
+            {
+              "name": "operators",
+              "status": "pass",
+              "required": true,
+              "method": "structural",
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "max_nodes",
+              "status": "pass",
+              "required": true,
+              "method": "expanded source-coordinate AST",
+              "reason": null,
+              "count": 5,
+              "limit": 12,
+              "member": 0
+            },
+            {
+              "name": "units",
+              "status": "pass",
+              "required": true,
+              "method": "structural",
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "template.structure",
+              "status": "pass",
+              "required": true,
+              "member": 0
+            },
+            {
+              "name": "template.slot.h.operators",
+              "status": "pass",
+              "required": true,
+              "member": 0
+            },
+            {
+              "name": "template.slot.h.nodes",
+              "status": "pass",
+              "required": true,
+              "member": 0
+            },
+            {
+              "name": "template.slot.h.units",
+              "status": "pass",
+              "required": true,
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "template.argument.0.units",
+              "status": "pass",
+              "required": true,
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "template.output.units",
+              "status": "pass",
+              "required": true,
+              "reason": null,
+              "member": 0
+            },
+            {
+              "name": "domain_prediction_validity",
+              "status": "pass",
+              "required": true,
+              "method": "automatic domain points; finite prediction only, no response-bound expansion",
+              "reason": null,
+              "n_points": 16,
+              "n_valid": 16
+            }
+          ],
+          "native_check": {
+            "passed": true,
+            "n_points": 64,
+            "max_abs_error": 0.0,
+            "absolute_scale": 2.6101210323658384,
+            "signal_rtol": 1e-05,
+            "atol": 2.6101210323658385e-05,
+            "float64_ulp_allowance": 8,
+            "resolution_limited": false,
+            "zero_signal_policy": "exact equality; no dimensional absolute floor",
+            "finite_and_signed_nonfinite_masks_match": true,
+            "policy": "signal scale plus float64 ULP; no relative tolerance on raw output offset",
+            "train_points": 48,
+            "boundary_and_configured_points": 16,
+            "scope": "train plus independent declared-domain/interior/boundary/configured probes; no global equivalence proof",
+            "division_policy": "common evaluator oracle",
+            "domain_probe_policy": "observed",
+            "arithmetic": "strict_real",
+            "comparison_semantics": "declared native arithmetic, including signed Inf/NaN masks",
+            "common_prediction_semantics": "finite real-domain projection; invalid intermediate rows retained separately",
+            "common_real_domain_valid_points": 64
+          }
+        }
+      ],
+      "scope": "Saved display representatives only. All candidates and extreme errors remain in the accuracy overview and candidate table.",
+      "models": [
+        {
+          "candidate_id": "physo/17/1@native",
+          "number": 2,
+          "method": "physo",
+          "label": "2. physo",
+          "color": "#196787",
+          "formula": "y [m^2] = (((x + x)) ** (2))",
+          "display_formula": "y [m^2] = (x + x) ^ 2",
+          "coordinate": "public",
+          "parameters": [],
+          "mappings": [
+            "x_work [m] = 1 * x [m] + (0)",
+            "y_work [m^2] = 1 * y [m^2] + (0)"
+          ],
+          "components": [],
+          "template": {
+            "status": "computed",
+            "knowledge": {
+              "kind": "hypothesis",
+              "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+            },
+            "declared_formula": "((h(x)) ** 2)",
+            "sharing": "Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.",
+            "components": [],
+            "slots": [
+              {
+                "name": "h",
+                "arguments": [
+                  {
+                    "name": "x0",
+                    "unit": "m"
+                  }
+                ],
+                "unit": "m",
+                "description": null,
+                "formula": "(x0 + x0)",
+                "parameters": []
+              }
+            ],
+            "dependent_parameters": [],
+            "coordinates": "canonical working; ranges on frozen Selection inputs only",
+            "interpretation_limit": "Named components describe this declared representation, not unique identification or causal effects."
+          },
+          "eligible": true,
+          "reason": null,
+          "variant": "native",
+          "seed": 17,
+          "selection": {
+            "rmse": 4.45136038133333e-16,
+            "mae": 1.5612511283791264e-16,
+            "r2": 1.0,
+            "reason": null
+          },
+          "final_metrics": {}
+        }
+      ],
+      "candidate_scope": "representatives",
+      "display_ids": [
+        "physo/17/1@native"
+      ]
+    }
+  ],
+  "unavailable": [
+    {
+      "kind": "response",
+      "reason": "No source-bound saved response path for displayed candidate",
+      "candidate_id": "physo/17/1@native"
+    }
+  ],
+  "csv_string_policy": "Strings beginning with =, +, -, @ or whitespace controls are prefixed with an apostrophe for spreadsheet safety. JSON retains exact raw strings.",
+  "displayed_candidate_ids": [
+    "physo/17/1@native"
+  ],
+  "provenance": {
+    "study_sha256": "6e627e7a6bd6fe99f94705711bd1ff529cc7895a7e9b820857fa0f1d0a488a48",
+    "comparison_sha256": "662008cd3681ebc09e25138ceddcd4c2c54d8631ce90a784562852dbb7bfb4cb",
+    "decision_sha256": null,
+    "purpose": "local_prediction",
+    "unit": "m^2",
+    "display_units": {},
+    "display_unit_scope": null
+  },
+  "scope": "Frozen report evidence only; no new prediction, fit, score, selection or Final access."
+}

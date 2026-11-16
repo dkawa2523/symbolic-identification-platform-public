@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="491">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203342">
+<text x="40" y="40" font-size="24" font-weight="bold">1. pysr | equation</text>
+<text x="40" y="68" font-size="13">Candidate pysr/42/12@native | page 1/1</text>
+<text x="40" y="110" font-size="20">Coordinates: public</text>
+<text x="40" y="137" font-size="20"></text>
+<text x="40" y="164" font-size="20">resistance [1] = (sin((froude + (froude - θ[c0]) + froude) * (θ[c1] -</text>
+<text x="40" y="191" font-size="20">froude)) + ((froude - sin((froude + froude - θ[c2]) * sinh(froude))) * θ[c3]</text>
+<text x="40" y="218" font-size="20">+ θ[c4])) ^ 2 + θ[c5]</text>
+<text x="40" y="245" font-size="20"></text>
+<text x="40" y="272" font-size="20">Coefficients (working coordinates; rounded on image)</text>
+<text x="40" y="299" font-size="20">c0 = -7.1417163 [unit unknown]; role=free</text>
+<text x="40" y="326" font-size="20">c1 = -3.5871367 [unit unknown]; role=free</text>
+<text x="40" y="353" font-size="20">c2 = -7.5695955 [unit unknown]; role=free</text>
+<text x="40" y="380" font-size="20">c3 = 3.912633 [unit unknown]; role=free</text>
+<text x="40" y="407" font-size="20">c4 = 2.9309081 [unit unknown]; role=free</text>
+<text x="40" y="434" font-size="20">c5 = 0.21394368 [unit unknown]; role=free</text>
+</g></svg>

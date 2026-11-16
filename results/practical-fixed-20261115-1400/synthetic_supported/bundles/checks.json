@@ -1,0 +1,90 @@
+[
+  {
+    "id": "pysr/17/5@native",
+    "partition": "train",
+    "rows": 256,
+    "valid_rows": 256,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "00.zip",
+    "sha256": "9c6d02888ff21aa8459db1f1bd9da70b238059135679e08643214593ec9d4525"
+  },
+  {
+    "id": "pysr/17/5@native",
+    "partition": "independent_points",
+    "rows": 3,
+    "valid_rows": 3,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "00.zip",
+    "sha256": "9c6d02888ff21aa8459db1f1bd9da70b238059135679e08643214593ec9d4525"
+  },
+  {
+    "id": "torchsisso/17/0@native",
+    "partition": "train",
+    "rows": 256,
+    "valid_rows": 256,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "01.zip",
+    "sha256": "e9050cb16688039697d8c6a2858d5a26b957eb150127dfb9bc990ca4d414e053"
+  },
+  {
+    "id": "torchsisso/17/0@native",
+    "partition": "independent_points",
+    "rows": 3,
+    "valid_rows": 3,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "01.zip",
+    "sha256": "e9050cb16688039697d8c6a2858d5a26b957eb150127dfb9bc990ca4d414e053"
+  },
+  {
+    "id": "physo/17/8@native",
+    "partition": "train",
+    "rows": 256,
+    "valid_rows": 256,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "02.zip",
+    "sha256": "de691369320df5dfa4d7ccc492d58587f7d60afd930d5c9fb175bc7438071fb6"
+  },
+  {
+    "id": "physo/17/8@native",
+    "partition": "independent_points",
+    "rows": 3,
+    "valid_rows": 3,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "02.zip",
+    "sha256": "de691369320df5dfa4d7ccc492d58587f7d60afd930d5c9fb175bc7438071fb6"
+  },
+  {
+    "id": "e2e/17/125/known-affine-fit@native",
+    "partition": "train",
+    "rows": 256,
+    "valid_rows": 256,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "03.zip",
+    "sha256": "90205839e89693855da4060b89026438b00ebad6638125b6665de3b9477876fc"
+  },
+  {
+    "id": "e2e/17/125/known-affine-fit@native",
+    "partition": "independent_points",
+    "rows": 3,
+    "valid_rows": 3,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "03.zip",
+    "sha256": "90205839e89693855da4060b89026438b00ebad6638125b6665de3b9477876fc"
+  }
+]

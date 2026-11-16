@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="491">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203342">
+<text x="40" y="40" font-size="24" font-weight="bold">7. linear | equation</text>
+<text x="40" y="68" font-size="13">Candidate linear/42/5@native | page 1/1</text>
+<text x="40" y="110" font-size="20">Coordinates: public</text>
+<text x="40" y="137" font-size="20"></text>
+<text x="40" y="164" font-size="20">resistance [1] = θ[c0] * froude + θ[c1] + θ[c2] * prismatic_coefficient +</text>
+<text x="40" y="191" font-size="20">θ[c3] * buoyancy_position + θ[c4] * beam_draught_ratio + θ[c5] *</text>
+<text x="40" y="218" font-size="20">length_beam_ratio</text>
+<text x="40" y="245" font-size="20"></text>
+<text x="40" y="272" font-size="20">Coefficients (working coordinates; rounded on image)</text>
+<text x="40" y="299" font-size="20">c0 = 122.57331 [1]; role=free</text>
+<text x="40" y="326" font-size="20">c1 = -15.071172 [1]; role=free</text>
+<text x="40" y="353" font-size="20">c2 = -11.968094 [1]; role=free</text>
+<text x="40" y="380" font-size="20">c3 = 0.15666877 [1]; role=free</text>
+<text x="40" y="407" font-size="20">c4 = -0.31950379 [1]; role=free</text>
+<text x="40" y="434" font-size="20">c5 = -0.39029416 [1]; role=free</text>
+</g></svg>

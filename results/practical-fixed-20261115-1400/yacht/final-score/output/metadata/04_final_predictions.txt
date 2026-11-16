@@ -1,0 +1,186 @@
+Final: observed and predicted values
+X: Observed [1]
+Y: Predicted [1]
+
+1. pysr
+Candidate: pysr/42/12@native
+Variant: native; seed: 42
+Eligible: True; reason: None
+Equation (public): resistance [1] = ((((sin((((froude + (froude - coef['c0'])) + froude) * (coef['c1'] - froude))) + (((froude - sin((((froude + froude) - coef['c2']) * sinh(froude)))) * coef['c3']) + coef['c4']))) ** (2)) + coef['c5'])
+  coef['c0'] = -7.141716255083116 [unit unknown]
+  coef['c1'] = -3.5871367488089185 [unit unknown]
+  coef['c2'] = -7.5695955269207404 [unit unknown]
+  coef['c3'] = 3.9126330441693407 [unit unknown]
+  coef['c4'] = 2.9309080544240684 [unit unknown]
+  coef['c5'] = 0.21394368458250937 [unit unknown]
+buoyancy_position_work [1] = 1 * buoyancy_position [1] + (0)
+prismatic_coefficient_work [1] = 1 * prismatic_coefficient [1] + (0)
+length_displacement_ratio_work [1] = 1 * length_displacement_ratio [1] + (0)
+beam_draught_ratio_work [1] = 1 * beam_draught_ratio [1] + (0)
+length_beam_ratio_work [1] = 1 * length_beam_ratio [1] + (0)
+froude_work [1] = 1 * froude [1] + (0)
+resistance_work [1] = 1 * resistance [1] + (0)
+
+2. parfam
+Candidate: parfam/42/0@native
+Variant: native; seed: 42
+Eligible: True; reason: None
+Equation (public): resistance [1] = (((((((((coef['c14'] + (coef['c15'] * cos(((((((coef['c7'] + (coef['c8'] * froude)) + (coef['c9'] * length_beam_ratio)) + (coef['c10'] * beam_draught_ratio)) + (coef['c11'] * length_displacement_ratio)) + (coef['c12'] * prismatic_coefficient)) + (coef['c13'] * buoyancy_position))))) + (coef['c16'] * cos(((((((coef['c0'] + (coef['c1'] * froude)) + (coef['c2'] * length_beam_ratio)) + (coef['c3'] * beam_draught_ratio)) + (coef['c4'] * length_displacement_ratio)) + (coef['c5'] * prismatic_coefficient)) + (coef['c6'] * buoyancy_position))))) + (coef['c17'] * froude)) + (coef['c18'] * length_beam_ratio)) + (coef['c19'] * beam_draught_ratio)) + (coef['c20'] * length_displacement_ratio)) + (coef['c21'] * prismatic_coefficient)) + (coef['c22'] * buoyancy_position)) / ((((((((coef['c23'] + (coef['c24'] * cos(((((((coef['c7'] + (coef['c8'] * froude)) + (coef['c9'] * length_beam_ratio)) + (coef['c10'] * beam_draught_ratio)) + (coef['c11'] * length_displacement_ratio)) + (coef['c12'] * prismatic_coefficient)) + (coef['c13'] * buoyancy_position))))) + (coef['c25'] * cos(((((((coef['c0'] + (coef['c1'] * froude)) + (coef['c2'] * length_beam_ratio)) + (coef['c3'] * beam_draught_ratio)) + (coef['c4'] * length_displacement_ratio)) + (coef['c5'] * prismatic_coefficient)) + (coef['c6'] * buoyancy_position))))) + (coef['c26'] * froude)) + (coef['c27'] * length_beam_ratio)) + (coef['c28'] * beam_draught_ratio)) + (coef['c29'] * length_displacement_ratio)) + (coef['c30'] * prismatic_coefficient)) + (coef['c31'] * buoyancy_position)))
+  coef['c0'] = 0.0029139494425493902 [unit unknown]
+  coef['c1'] = -0.003620430690430107 [unit unknown]
+  coef['c2'] = 0.12390678626501485 [unit unknown]
+  coef['c3'] = -1.5878312717402867 [unit unknown]
+  coef['c4'] = 0.12625506648878218 [unit unknown]
+  coef['c5'] = -1.5569568327332948e-05 [unit unknown]
+  coef['c6'] = -1.4079699638556205 [unit unknown]
+  coef['c7'] = 6.566346006199999 [unit unknown]
+  coef['c8'] = -2.9620746138112524 [unit unknown]
+  coef['c9'] = 0.04732411407523346 [unit unknown]
+  coef['c10'] = 0.04496516999601458 [unit unknown]
+  coef['c11'] = -0.06550623314224711 [unit unknown]
+  coef['c12'] = 0.3900065301292217 [unit unknown]
+  coef['c13'] = -0.002849507135306504 [unit unknown]
+  coef['c14'] = -0.37336967881979716 [unit unknown]
+  coef['c15'] = -0.12790366366412362 [unit unknown]
+  coef['c16'] = 0.016395540924370868 [unit unknown]
+  coef['c17'] = 0.5798418059528039 [unit unknown]
+  coef['c18'] = -0.09734253576121771 [unit unknown]
+  coef['c19'] = 0.01151096841492081 [unit unknown]
+  coef['c20'] = 0.0765639906884916 [unit unknown]
+  coef['c21'] = 0.6393479161001345 [unit unknown]
+  coef['c22'] = 0.00066990665328528 [unit unknown]
+  coef['c23'] = 0.5160146876181716 [unit unknown]
+  coef['c24'] = -0.3409363456508652 [unit unknown]
+  coef['c25'] = -0.00020821126451951805 [unit unknown]
+  coef['c26'] = -0.7768673595557385 [unit unknown]
+  coef['c27'] = 0.0115329078043383 [unit unknown]
+  coef['c28'] = 0.011649586802265131 [unit unknown]
+  coef['c29'] = -0.015806608614931664 [unit unknown]
+  coef['c30'] = 0.11597126441497202 [unit unknown]
+  coef['c31'] = -0.0006393751004572983 [unit unknown]
+buoyancy_position_work [1] = 1 * buoyancy_position [1] + (0)
+prismatic_coefficient_work [1] = 1 * prismatic_coefficient [1] + (0)
+length_displacement_ratio_work [1] = 1 * length_displacement_ratio [1] + (0)
+beam_draught_ratio_work [1] = 1 * beam_draught_ratio [1] + (0)
+length_beam_ratio_work [1] = 1 * length_beam_ratio [1] + (0)
+froude_work [1] = 1 * froude [1] + (0)
+resistance_work [1] = 1 * resistance [1] + (0)
+
+3. torchsisso
+Candidate: torchsisso/42/2@native
+Variant: native; seed: 42
+Eligible: True; reason: None
+Equation (public): resistance [1] = (((coef['intercept'] + (coef['c0'] * ((froude) ** (4)))) + (coef['c1'] * cosh(froude))) + (coef['c2'] * ((froude) ** (2))))
+  coef['intercept'] = -9479842.032773923 [unit unknown]
+  coef['c0'] = -396983.28240661015 [unit unknown]
+  coef['c1'] = 9479840.231441721 [unit unknown]
+  coef['c2'] = -4739790.111331243 [unit unknown]
+buoyancy_position_work [1] = 1 * buoyancy_position [1] + (0)
+prismatic_coefficient_work [1] = 1 * prismatic_coefficient [1] + (0)
+length_displacement_ratio_work [1] = 1 * length_displacement_ratio [1] + (0)
+beam_draught_ratio_work [1] = 1 * beam_draught_ratio [1] + (0)
+length_beam_ratio_work [1] = 1 * length_beam_ratio [1] + (0)
+froude_work [1] = 1 * froude [1] + (0)
+resistance_work [1] = 1 * resistance [1] + (0)
+
+4. physo
+Candidate: physo/42/22@native
+Variant: native; seed: 42
+Eligible: True; reason: None
+Equation (public): resistance [1] = (((((((((((froude + (cosh(coef['c0']) + coef['c0'])) + coef['c0']) * coef['c0']) * froude) + froude) + coef['c1']) * coef['c0']) / prismatic_coefficient)) ** (3)) * froude)
+  coef['c0'] = 1.332418017036151 [1]
+  coef['c1'] = -1.4894109681669716 [1]
+buoyancy_position_work [1] = 1 * buoyancy_position [1] + (0)
+prismatic_coefficient_work [1] = 1 * prismatic_coefficient [1] + (0)
+length_displacement_ratio_work [1] = 1 * length_displacement_ratio [1] + (0)
+beam_draught_ratio_work [1] = 1 * beam_draught_ratio [1] + (0)
+length_beam_ratio_work [1] = 1 * length_beam_ratio [1] + (0)
+froude_work [1] = 1 * froude [1] + (0)
+resistance_work [1] = 1 * resistance [1] + (0)
+
+5. e2e
+Candidate: e2e/42/7@native
+Variant: native; seed: 42
+Eligible: True; reason: None
+Equation (public): resistance [1] = ((((coef['c4'] + (coef['c6'] * ((((buoyancy_position - coef['x0_mean']) / coef['x0_scale'])) ** (2)))) + (coef['c10'] + (coef['c12'] * ((((coef['c16'] + (coef['c18'] * ((beam_draught_ratio - coef['x3_mean']) / coef['x3_scale']))) - ((coef['c22'] + (coef['c24'] * (((((coef['c29'] + (coef['c31'] * ((buoyancy_position - coef['x0_mean']) / coef['x0_scale']))) + (coef['c34'] + (coef['c36'] * ((froude - coef['x5_mean']) / coef['x5_scale'])))) - (coef['c39'] + (coef['c41'] * ((froude - coef['x5_mean']) / coef['x5_scale']))))) ** (3)))) + ((coef['c45'] + (coef['c47'] * ((length_displacement_ratio - coef['x2_mean']) / coef['x2_scale']))) + ((coef['c51'] + (coef['c53'] * ((beam_draught_ratio - coef['x3_mean']) / coef['x3_scale']))) * (coef['c56'] + (coef['c58'] * ((length_beam_ratio - coef['x4_mean']) / coef['x4_scale'])))))))) ** (2))))) - (coef['c61'] + (coef['c63'] * ((prismatic_coefficient - coef['x1_mean']) / coef['x1_scale'])))) * (coef['c66'] + (coef['c68'] * sin((coef['c71'] + (((froude - coef['x5_mean']) / coef['x5_scale']) * (1 / ((buoyancy_position - coef['x0_mean']) / coef['x0_scale']))))))))
+  coef['c4'] = -33.617267561123846 [unit unknown]
+  coef['c6'] = -29.301204821203438 [unit unknown]
+  coef['x0_mean'] = -2.176923076923078 [1]
+  coef['x0_scale'] = 1.5257552208931948 [1]
+  coef['c10'] = -42.97376756120749 [unit unknown]
+  coef['c12'] = -0.03630471095527468 [unit unknown]
+  coef['c16'] = -2.403978707878902 [unit unknown]
+  coef['c18'] = 55.55152565469002 [unit unknown]
+  coef['x3_mean'] = 4.0269230769230795 [1]
+  coef['x3_scale'] = 0.6445437815932537 [1]
+  coef['c22'] = 2.0109787062559343 [unit unknown]
+  coef['c24'] = 0.3306584552843378 [unit unknown]
+  coef['c29'] = 0.8267177600485796 [unit unknown]
+  coef['c31'] = 0.03521426091660975 [unit unknown]
+  coef['c34'] = 4.436717759945225 [unit unknown]
+  coef['c36'] = 9.72820783181574 [unit unknown]
+  coef['x5_mean'] = 0.2874999999999999 [1]
+  coef['x5_scale'] = 0.1007782218537319 [1]
+  coef['c39'] = -0.8770177598009782 [unit unknown]
+  coef['c41'] = 6.201792168316634 [unit unknown]
+  coef['c45'] = 42.85397870839583 [unit unknown]
+  coef['c47'] = 44.02639607502421 [unit unknown]
+  coef['x2_mean'] = 4.789230769230766 [1]
+  coef['x2_scale'] = 0.2364956183839202 [1]
+  coef['c51'] = -6.542796822534318 [unit unknown]
+  coef['c53'] = -0.713788928411555 [unit unknown]
+  coef['c56'] = 1.5515686127929695 [unit unknown]
+  coef['c58'] = 7.971044769297492 [unit unknown]
+  coef['x4_mean'] = 3.1776923076922996 [1]
+  coef['x4_scale'] = 0.25192043451344653 [1]
+  coef['c61'] = -5.082732440832853 [unit unknown]
+  coef['c63'] = 92.67704617464597 [unit unknown]
+  coef['x1_mean'] = 0.5638461538461524 [1]
+  coef['x1_scale'] = 0.024381096567268733 [1]
+  coef['c66'] = -0.004144763552464888 [unit unknown]
+  coef['c68'] = 9.228874694756727e-05 [unit unknown]
+  coef['c71'] = 10.47439792787571 [unit unknown]
+buoyancy_position_work [1] = 1 * buoyancy_position [1] + (0)
+prismatic_coefficient_work [1] = 1 * prismatic_coefficient [1] + (0)
+length_displacement_ratio_work [1] = 1 * length_displacement_ratio [1] + (0)
+beam_draught_ratio_work [1] = 1 * beam_draught_ratio [1] + (0)
+length_beam_ratio_work [1] = 1 * length_beam_ratio [1] + (0)
+froude_work [1] = 1 * froude [1] + (0)
+resistance_work [1] = 1 * resistance [1] + (0)
+
+6. mean
+Candidate: mean/42/0@native
+Variant: native; seed: 42
+Eligible: True; reason: None
+Equation (public): resistance [1] = coef['c0']
+  coef['c0'] = 10.552582312056593 [1]
+buoyancy_position_work [1] = 1 * buoyancy_position [1] + (0)
+prismatic_coefficient_work [1] = 1 * prismatic_coefficient [1] + (0)
+length_displacement_ratio_work [1] = 1 * length_displacement_ratio [1] + (0)
+beam_draught_ratio_work [1] = 1 * beam_draught_ratio [1] + (0)
+length_beam_ratio_work [1] = 1 * length_beam_ratio [1] + (0)
+froude_work [1] = 1 * froude [1] + (0)
+resistance_work [1] = 1 * resistance [1] + (0)
+
+7. linear
+Candidate: linear/42/5@native
+Variant: native; seed: 42
+Eligible: True; reason: None
+Equation (public): resistance [1] = ((((((coef['c0'] * froude) + coef['c1']) + (coef['c2'] * prismatic_coefficient)) + (coef['c3'] * buoyancy_position)) + (coef['c4'] * beam_draught_ratio)) + (coef['c5'] * length_beam_ratio))
+  coef['c0'] = 122.57330659493762 [1]
+  coef['c1'] = -15.071171542801931 [1]
+  coef['c2'] = -11.968093959051668 [1]
+  coef['c3'] = 0.15666876943573066 [1]
+  coef['c4'] = -0.3195037910826854 [1]
+  coef['c5'] = -0.39029415628836045 [1]
+buoyancy_position_work [1] = 1 * buoyancy_position [1] + (0)
+prismatic_coefficient_work [1] = 1 * prismatic_coefficient [1] + (0)
+length_displacement_ratio_work [1] = 1 * length_displacement_ratio [1] + (0)
+beam_draught_ratio_work [1] = 1 * beam_draught_ratio [1] + (0)
+length_beam_ratio_work [1] = 1 * length_beam_ratio [1] + (0)
+froude_work [1] = 1 * froude [1] + (0)
+resistance_work [1] = 1 * resistance [1] + (0)
+
+Scope: post-selection audit; prior exposure not excluded
+
+Exact rows and provenance: matching CSV and plot_data.json.

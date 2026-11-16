@@ -1,0 +1,40 @@
+{
+  "search": {
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "neg",
+      "abs",
+      "sqrt",
+      "pow_int",
+      "pow",
+      "rootn",
+      "sin",
+      "cos",
+      "exp",
+      "log",
+      "tanh"
+    ],
+    "engine_options": {
+      "flash_ansr": {
+        "draws": 128
+      }
+    }
+  },
+  "model_assets": {
+    "flash_ansr": {
+      "manifest_file": "pretrained/flash/manifest.json"
+    }
+  },
+  "constraints": {
+    "max_nodes": 60
+  },
+  "evaluation": {
+    "coefficient_fit": "none",
+    "selection_policy": "balanced",
+    "relative_tolerance": 0.01,
+    "absolute_tolerance": 1e-06
+  }
+}

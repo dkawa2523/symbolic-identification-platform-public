@@ -1,0 +1,14 @@
+{
+  "images": {
+    "core": "sha256:bdc532d7fcb7021e1a57810de876bfa8b2ad5ef7cd29762334fda5d14689acd9",
+    "classic": "sha256:43d979e1acb694cb6e42a0d08c57f737a31844599665daef971bf632eb73a5c0"
+  },
+  "cpus": 4,
+  "memory_limit": "6g",
+  "network": "none",
+  "status": "discovery_finished",
+  "started_at": "2026-11-15T16:47:49.196904+00:00",
+  "phase": "awaiting_explicit_scientific_comparison",
+  "final_accessed": false,
+  "finished_at": "2026-11-15T16:49:10.354759+00:00"
+}

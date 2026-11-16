@@ -1,0 +1,18 @@
+1. pysr | equation
+Candidate: pysr/42/12@native
+Coordinates: public
+resistance [1] = ((((sin((((froude + (froude - coef['c0'])) + froude) * (coef['c1'] - froude))) + (((froude - sin((((froude + froude) - coef['c2']) * sinh(froude)))) * coef['c3']) + coef['c4']))) ** (2)) + coef['c5'])
+
+c0 = -7.141716255083116 [unit unknown]
+c1 = -3.5871367488089185 [unit unknown]
+c2 = -7.5695955269207404 [unit unknown]
+c3 = 3.9126330441693407 [unit unknown]
+c4 = 2.9309080544240684 [unit unknown]
+c5 = 0.21394368458250937 [unit unknown]
+buoyancy_position_work [1] = 1 * buoyancy_position [1] + (0)
+prismatic_coefficient_work [1] = 1 * prismatic_coefficient [1] + (0)
+length_displacement_ratio_work [1] = 1 * length_displacement_ratio [1] + (0)
+beam_draught_ratio_work [1] = 1 * beam_draught_ratio [1] + (0)
+length_beam_ratio_work [1] = 1 * length_beam_ratio [1] + (0)
+froude_work [1] = 1 * froude [1] + (0)
+resistance_work [1] = 1 * resistance [1] + (0)

@@ -1,0 +1,71 @@
+{
+  "partition": "Final",
+  "role": "holdout under explicit user declaration",
+  "history": "declared_unseen",
+  "history_scope": "Local recorded history and declarations only; external prior exposure cannot be verified",
+  "final_accessed": true,
+  "selection_changed": false,
+  "refit": false,
+  "attempts": [
+    {
+      "method": "pysr",
+      "seed": 17,
+      "status": "scored",
+      "run_status": "ok",
+      "wall_seconds": 2937.725066401006,
+      "reason": null,
+      "candidate_id": "pysr/17/5@native",
+      "coverage": 1.0,
+      "rmse": 0.03220240002130408,
+      "mae": 0.025403522050583507,
+      "r2": 0.9992821578572894
+    },
+    {
+      "method": "parfam",
+      "seed": 17,
+      "status": "no_eligible_candidate",
+      "run_status": "ok",
+      "wall_seconds": 20.700846168998396,
+      "reason": "No eligible finite Selection candidate"
+    },
+    {
+      "method": "torchsisso",
+      "seed": 17,
+      "status": "scored",
+      "run_status": "ok",
+      "wall_seconds": 8.321705223002937,
+      "reason": null,
+      "candidate_id": "torchsisso/17/0@native",
+      "coverage": 1.0,
+      "rmse": 0.13689178118104098,
+      "mae": 0.11580603899101942,
+      "r2": 0.9870279916733812
+    },
+    {
+      "method": "physo",
+      "seed": 17,
+      "status": "scored",
+      "run_status": "partial",
+      "wall_seconds": 340.27204115100903,
+      "reason": null,
+      "candidate_id": "physo/17/8@native",
+      "coverage": 1.0,
+      "rmse": 0.03168956729579884,
+      "mae": 0.025186842807329912,
+      "r2": 0.9993048394977511
+    },
+    {
+      "method": "e2e",
+      "seed": 17,
+      "status": "scored",
+      "run_status": "ok",
+      "wall_seconds": 2501.1375135399867,
+      "reason": null,
+      "candidate_id": "e2e/17/125/known-affine-fit@native",
+      "coverage": 1.0,
+      "rmse": 0.031559549366604045,
+      "mae": 0.025031032651699144,
+      "r2": 0.9993105320913384
+    }
+  ]
+}

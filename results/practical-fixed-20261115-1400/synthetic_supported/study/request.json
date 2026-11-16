@@ -1,0 +1,29 @@
+{
+  "prepared_run": "/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/prepare/run.json",
+  "sources": [
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/discover/pysr/17/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/prepare/run.json"
+    },
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/synthetic_supported/parfam/calculation/discover/parfam/17/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/synthetic_supported/parfam/calculation/prepare/run.json"
+    },
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/synthetic_supported/torchsisso/calculation/discover/torchsisso/17/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/synthetic_supported/torchsisso/calculation/prepare/run.json"
+    },
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/synthetic_supported/physo/calculation/discover/physo/17/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/synthetic_supported/physo/calculation/prepare/run.json"
+    },
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/synthetic_supported/e2e/calculation/discover/e2e/17/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/synthetic_supported/e2e/calculation/prepare/run.json"
+    }
+  ],
+  "question": "Fixed one-seed comparison; synthetic support combines known contribution and finite hard responses.",
+  "purpose": "local_prediction",
+  "final_history": "declared_unseen",
+  "data_kind": "Fresh procedural samples of a disclosed designed synthetic law; pretraining overlap unknown"
+}

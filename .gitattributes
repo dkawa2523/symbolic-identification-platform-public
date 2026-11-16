@@ -1,0 +1,3 @@
+# Preserve the exact source bytes identified by SOURCE_MANIFEST across platforms.
+* -text
+*.zip binary

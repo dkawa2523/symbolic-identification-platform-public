@@ -1,0 +1,544 @@
+{
+  "record": {
+    "execution_domain": {
+      "bounds": [
+        [
+          0.03,
+          0.3
+        ]
+      ],
+      "columns": [
+        "length_cm"
+      ],
+      "coordinate_roles": {
+        "length_cm": null
+      },
+      "kind": "box",
+      "space_id": "source_inputs",
+      "units": {
+        "length_cm": "m"
+      }
+    },
+    "input_geometry": {
+      "domain": {
+        "bounds": [
+          [
+            0.03,
+            0.3
+          ]
+        ],
+        "columns": [
+          "length_cm"
+        ],
+        "coordinate_roles": {
+          "length_cm": null
+        },
+        "kind": "box",
+        "space_id": "source_inputs",
+        "units": {
+          "length_cm": "m"
+        }
+      },
+      "map": null,
+      "schema_version": 1,
+      "source_variables": [
+        {
+          "column": "length_cm",
+          "coordinate_role": null,
+          "domain": [
+            0.03,
+            0.3
+          ],
+          "id": "x0",
+          "unit": "m"
+        }
+      ]
+    },
+    "origin": {
+      "derived": "/work/results/basic/calculation/fits/fit_0.json",
+      "fit": {
+        "data_sha256": "e77a2cf4130085ec3e79c992cd4a50d160f92f3dc3bc88865243ad6be1eb487b",
+        "equation": {
+          "ast": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "param": "a"
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ],
+                "op": "mul"
+              },
+              {
+                "param": "b"
+              }
+            ],
+            "op": "add"
+          },
+          "parameters": {
+            "a": {
+              "bounds": [
+                0,
+                4
+              ],
+              "origin": "user_declared",
+              "trainable": true,
+              "unit": "1",
+              "value": 2.000635436522328
+            },
+            "b": {
+              "bounds": [
+                -1,
+                1
+              ],
+              "origin": "user_declared",
+              "trainable": true,
+              "unit": "m",
+              "value": 0.09867021695224298
+            }
+          },
+          "schema_version": 1
+        },
+        "fit_role": "train",
+        "input_geometry": {
+          "domain": {
+            "bounds": [
+              [
+                0.03,
+                0.3
+              ]
+            ],
+            "columns": [
+              "length_cm"
+            ],
+            "coordinate_roles": {
+              "length_cm": null
+            },
+            "kind": "box",
+            "space_id": "source_inputs",
+            "units": {
+              "length_cm": "m"
+            }
+          },
+          "map": null,
+          "schema_version": 1,
+          "source_variables": [
+            {
+              "column": "length_cm",
+              "coordinate_role": null,
+              "domain": [
+                0.03,
+                0.3
+              ],
+              "id": "x0",
+              "unit": "m"
+            }
+          ]
+        },
+        "kind": "derived_equation",
+        "meaning": "named estimator variant, not native search, posterior update, or source mutation",
+        "method": "least_squares",
+        "observation_model": {
+          "estimation_target": "best fixed-observed-X squared-error approximation; not latent physical coefficients with input error",
+          "family": "least_squares"
+        },
+        "options": {},
+        "parent": {
+          "equation_sha256": "cde87ac500e1f2925a6f43b26069f3d20569b0dd390b9e05ef266c228df23e0d",
+          "id": "user_linear@manual",
+          "study_sha256": "5587191292eb6401740c15cda5b964dd0280ee26f24f54416e5b1bf3ddd94797"
+        },
+        "split_sha256": "0fc1be9c5a9ab6bbd5b9311177e1cd487b72c92cab37dd309a398beae4b1eb06",
+        "target": {
+          "column": "response_mm",
+          "coordinate_role": null,
+          "domain": [
+            -1.0,
+            2.0
+          ],
+          "unit": "m"
+        },
+        "variables": [
+          {
+            "column": "length_cm",
+            "coordinate_role": null,
+            "domain": [
+              0.03,
+              0.3
+            ],
+            "id": "x0",
+            "unit": "m"
+          }
+        ],
+        "variant": "train_point_fit"
+      },
+      "parent": {
+        "equation_sha256": "cde87ac500e1f2925a6f43b26069f3d20569b0dd390b9e05ef266c228df23e0d",
+        "id": "user_linear@manual",
+        "study_sha256": "5587191292eb6401740c15cda5b964dd0280ee26f24f54416e5b1bf3ddd94797"
+      }
+    },
+    "target": {
+      "column": "response_mm",
+      "coordinate_role": null,
+      "domain": [
+        -1.0,
+        2.0
+      ],
+      "unit": "m"
+    },
+    "variables": [
+      {
+        "column": "length_cm",
+        "coordinate_role": null,
+        "domain": [
+          0.03,
+          0.3
+        ],
+        "id": "x0",
+        "unit": "m"
+      }
+    ],
+    "id": "user_linear@manual/train_point_fit",
+    "candidate_id": "user_linear@manual",
+    "variant": "train_point_fit",
+    "kind": "explicit",
+    "equation": {
+      "schema_version": 1,
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "param": "a"
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "param": "b"
+          }
+        ]
+      },
+      "parameters": {
+        "a": {
+          "value": 2.000635436522328,
+          "trainable": true,
+          "bounds": [
+            0,
+            4
+          ],
+          "unit": "1",
+          "origin": "user_declared"
+        },
+        "b": {
+          "value": 0.09867021695224298,
+          "trainable": true,
+          "bounds": [
+            -1,
+            1
+          ],
+          "unit": "m",
+          "origin": "user_declared"
+        }
+      }
+    },
+    "native_check": {
+      "passed": null,
+      "kind": "named derived point fit; source native remains unchanged"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "subject": {
+      "relation_ref": "user_linear@manual/train_point_fit",
+      "relation_state_sha256": "f00c7d89248c1f415268c6e71128e38cbfaf83f3a2819da1ebdbd4f1a6a543ea",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "parameters": [
+      {
+        "name": "a",
+        "value": 2.000635436522328,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          0,
+          4
+        ],
+        "origin": "user_declared",
+        "coordinate_role": null
+      },
+      {
+        "name": "b",
+        "value": 0.09867021695224298,
+        "unit": "m",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          -1,
+          1
+        ],
+        "origin": "user_declared",
+        "coordinate_role": null
+      }
+    ]
+  },
+  "schema": {
+    "variables": [
+      {
+        "id": "x0",
+        "column": "length_cm",
+        "unit": "m",
+        "domain": [
+          0.03,
+          0.3
+        ],
+        "coordinate_role": null
+      }
+    ],
+    "target": {
+      "coordinate_role": null,
+      "column": "response_mm",
+      "unit": "m",
+      "domain": [
+        -1.0,
+        2.0
+      ]
+    },
+    "input_geometry": {
+      "domain": {
+        "bounds": [
+          [
+            0.03,
+            0.3
+          ]
+        ],
+        "columns": [
+          "length_cm"
+        ],
+        "coordinate_roles": {
+          "length_cm": null
+        },
+        "kind": "box",
+        "space_id": "source_inputs",
+        "units": {
+          "length_cm": "m"
+        }
+      },
+      "map": null,
+      "schema_version": 1,
+      "source_variables": [
+        {
+          "column": "length_cm",
+          "coordinate_role": null,
+          "domain": [
+            0.03,
+            0.3
+          ],
+          "id": "x0",
+          "unit": "m"
+        }
+      ]
+    },
+    "feature_ranges": [
+      [
+        0.03021743367103808,
+        0.29551265144201044
+      ]
+    ],
+    "unit_coordinates": {
+      "policy": "canonical problem; explicit CSV conversion; all domains/constraints/tolerances in problem units",
+      "columns": {
+        "length_cm": {
+          "coordinate_role": null,
+          "source_unit": "cm",
+          "problem_unit": "m",
+          "scale": 0.01,
+          "offset": 0.0,
+          "dimension_status": "known"
+        },
+        "response_mm": {
+          "coordinate_role": null,
+          "source_unit": "mm",
+          "problem_unit": "m",
+          "scale": 0.001,
+          "offset": 0.0,
+          "dimension_status": "known"
+        }
+      }
+    },
+    "public_units": {
+      "length_cm": "cm",
+      "response_mm": "mm"
+    }
+  },
+  "decision": {
+    "schema_version": 1,
+    "status": "adopt",
+    "calibration_plan": {
+      "alpha": 0.1,
+      "exchangeability": "exchangeable_groups",
+      "group_column": "group",
+      "observation_model": "Independent exchangeable synthetic three-observation groups; iid Gaussian noise within this generator",
+      "max_width": 40.0,
+      "unit": "mm"
+    },
+    "purpose": "local_prediction",
+    "parameter_target": "conditional_model",
+    "reason": "Predeclared 0.02m local tolerance and40mm full observation interval; explicit informed linear family, no mechanism or extrapolation claim",
+    "missing_support": [],
+    "selected_id": "user_linear@manual/train_point_fit",
+    "retain": [],
+    "comparison_sha256": "173a4ae06be6546e8f96c779e5c98c6928d07d607f58bbff7b83fc844407a4bf",
+    "comparison_path": "/work/results/basic/calculation/comparison/comparison.json",
+    "study_sha256": "14e8ecd94233a6dd54341f9548a39ba1e06026f9c35468a0cefc12db57bdfb21",
+    "data_role": "selection",
+    "mode": "development",
+    "final_exposure_at_choice": {
+      "declared_history": "known_exposed",
+      "status": "known prior Final exposure on these data",
+      "same_data_exposed": true,
+      "evidence": [
+        {
+          "source": "explicit known-exposed history declaration",
+          "data_sha256": "e77a2cf4130085ec3e79c992cd4a50d160f92f3dc3bc88865243ad6be1eb487b",
+          "split_sha256": "0fc1be9c5a9ab6bbd5b9311177e1cd487b72c92cab37dd309a398beae4b1eb06"
+        }
+      ]
+    },
+    "declared_final_history": "known_exposed",
+    "subject": {
+      "relation_ref": "user_linear@manual/train_point_fit",
+      "relation_state_sha256": "f00c7d89248c1f415268c6e71128e38cbfaf83f3a2819da1ebdbd4f1a6a543ea",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "output_kind": "explicit",
+    "applicability_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "length_cm",
+          "unit": "m",
+          "domain": [
+            0.03,
+            0.3
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "response_mm",
+        "unit": "m",
+        "domain": [
+          -1.0,
+          2.0
+        ]
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "length_cm",
+            "unit": "m",
+            "domain": [
+              0.03,
+              0.3
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "length_cm"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "length_cm": "m"
+          },
+          "coordinate_roles": {
+            "length_cm": null
+          },
+          "bounds": [
+            [
+              0.03,
+              0.3
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "criteria": {
+      "engineering_tolerance": 0.02,
+      "purpose": "local_prediction",
+      "required_evidence": [],
+      "quantity_tolerances": {}
+    },
+    "equation": {
+      "schema_version": 1,
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "param": "a"
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "param": "b"
+          }
+        ]
+      },
+      "parameters": {
+        "a": {
+          "value": 2.000635436522328,
+          "trainable": true,
+          "bounds": [
+            0,
+            4
+          ],
+          "unit": "1",
+          "origin": "user_declared"
+        },
+        "b": {
+          "value": 0.09867021695224298,
+          "trainable": true,
+          "bounds": [
+            -1,
+            1
+          ],
+          "unit": "m",
+          "origin": "user_declared"
+        }
+      }
+    },
+    "frozen_choice_sha256": "5827e2eb15482a58b4157d7f2b14e333b79c8359dadf9ce24fbfde6c9ff04894",
+    "interval_sha256": "69c3130a72a989c6a60063c00b7b249669a3a73c4b7dac9ff8afd7153fce35ca",
+    "interval_path": "/work/results/basic/calculation/interval",
+    "calibrated_full_width": 18.147579705655616,
+    "use_scope": "Use assessment applies the frozen prediction-error and interval-width criteria only. Split-conformal coverage is marginal over calibration and future sampling under exchangeability. Conditioning on acceptance by the observed calibration width does not preserve nominal coverage; adoption is not a coverage guarantee for accepted deployments."
+  },
+  "decision_sha256": "0eccc2ff6a99c3b4a947eff73988ca91e6204f78c424f569909b81bb9e4f1b7b"
+}

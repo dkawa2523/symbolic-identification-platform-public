@@ -1,0 +1,58 @@
+{
+  "task": "symbolic_pipeline",
+  "data": {
+    "local_path": "results/practical-fixed-20261115-1400/inputs/synthetic/table.csv",
+    "target_column": "y",
+    "feature_columns": [
+      "x"
+    ],
+    "units": {
+      "x": "1",
+      "y": "1"
+    },
+    "domain": {
+      "x": [
+        0.1,
+        4
+      ]
+    }
+  },
+  "split": {
+    "file": "results/practical-fixed-20261115-1400/inputs/synthetic/split.csv"
+  },
+  "search": {
+    "engines": [
+      "physo"
+    ],
+    "seeds": [
+      17
+    ],
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "max_wall_seconds": 21600,
+    "candidate_pool_policy": "all",
+    "max_export_candidates": 20,
+    "allow_partial_engines": true,
+    "engine_options": {
+      "physo": {
+        "profile": "config2",
+        "epochs": 50,
+        "max_n_evaluations": 100000,
+        "response_max_nfev": 200
+      }
+    },
+    "runtimes": {}
+  },
+  "constraints": {
+    "max_nodes": 256
+  },
+  "model_assets": {},
+  "evaluation": {
+    "selection_policy": "accuracy",
+    "absolute_tolerance": 1e-06
+  }
+}

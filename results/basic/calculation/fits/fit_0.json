@@ -1,0 +1,119 @@
+{
+  "kind": "derived_equation",
+  "variant": "train_point_fit",
+  "equation": {
+    "schema_version": 1,
+    "ast": {
+      "op": "add",
+      "args": [
+        {
+          "op": "mul",
+          "args": [
+            {
+              "param": "a"
+            },
+            {
+              "var": "x0"
+            }
+          ]
+        },
+        {
+          "param": "b"
+        }
+      ]
+    },
+    "parameters": {
+      "a": {
+        "value": 2.000635436522328,
+        "trainable": true,
+        "bounds": [
+          0,
+          4
+        ],
+        "unit": "1",
+        "origin": "user_declared"
+      },
+      "b": {
+        "value": 0.09867021695224298,
+        "trainable": true,
+        "bounds": [
+          -1,
+          1
+        ],
+        "unit": "m",
+        "origin": "user_declared"
+      }
+    }
+  },
+  "variables": [
+    {
+      "id": "x0",
+      "column": "length_cm",
+      "unit": "m",
+      "domain": [
+        0.03,
+        0.3
+      ],
+      "coordinate_role": null
+    }
+  ],
+  "target": {
+    "coordinate_role": null,
+    "column": "response_mm",
+    "unit": "m",
+    "domain": [
+      -1.0,
+      2.0
+    ]
+  },
+  "input_geometry": {
+    "domain": {
+      "bounds": [
+        [
+          0.03,
+          0.3
+        ]
+      ],
+      "columns": [
+        "length_cm"
+      ],
+      "coordinate_roles": {
+        "length_cm": null
+      },
+      "kind": "box",
+      "space_id": "source_inputs",
+      "units": {
+        "length_cm": "m"
+      }
+    },
+    "map": null,
+    "schema_version": 1,
+    "source_variables": [
+      {
+        "column": "length_cm",
+        "coordinate_role": null,
+        "domain": [
+          0.03,
+          0.3
+        ],
+        "id": "x0",
+        "unit": "m"
+      }
+    ]
+  },
+  "parent": {
+    "id": "user_linear@manual",
+    "equation_sha256": "cde87ac500e1f2925a6f43b26069f3d20569b0dd390b9e05ef266c228df23e0d",
+    "study_sha256": "5587191292eb6401740c15cda5b964dd0280ee26f24f54416e5b1bf3ddd94797"
+  },
+  "data_sha256": "e77a2cf4130085ec3e79c992cd4a50d160f92f3dc3bc88865243ad6be1eb487b",
+  "split_sha256": "0fc1be9c5a9ab6bbd5b9311177e1cd487b72c92cab37dd309a398beae4b1eb06",
+  "fit_role": "train",
+  "method": "least_squares",
+  "observation_model": {
+    "family": "least_squares",
+    "estimation_target": "best fixed-observed-X squared-error approximation; not latent physical coefficients with input error"
+  },
+  "options": {},
+  "meaning": "named estimator variant, not native search, posterior update, or source mutation"
+}

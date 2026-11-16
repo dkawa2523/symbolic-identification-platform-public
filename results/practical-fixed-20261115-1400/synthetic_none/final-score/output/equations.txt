@@ -1,0 +1,55 @@
+Fixed one-seed comparison; synthetic support combines known contribution and finite hard responses.
+
+pysr | pysr/17/5@native | prediction
+y [1] = x * θ[c0] + θ[c1] / (x + θ[c2]) * x
+  c0 = 0.7703912336607768 [unit unknown]
+  c1 = 1.877267579757631 [unit unknown]
+  c2 = 0.9109618476254446 [unit unknown]
+
+parfam | parfam/17/0@native | prediction
+y [1] = (θ[c0] + θ[c1] * x + θ[c2] * x * x) / (θ[c3] + θ[c4] * x)
+  c0 = 0.009347708239925461 [unit unknown]
+  c1 = -1.8825575906968812 [unit unknown]
+  c2 = -0.5990912976950008 [unit unknown]
+  c3 = -0.642589919324488 [unit unknown]
+  c4 = -0.7662102815693276 [unit unknown]
+
+torchsisso | torchsisso/17/0@native | prediction
+y [1] = θ[intercept] + θ[c0] * x
+  intercept = 0.6060914352361366 [1]
+  c0 = 1.0556197726450176 [1]
+
+physo | physo/17/7@native | prediction
+y [1] = 1.0 / ((θ[c0] + x - 1.0) / θ[c0] * θ[c1] / θ[c0] / x)
+  c0 = 5.807498019534802 [1]
+  c1 = 3.4298887564116494 [1]
+
+e2e | e2e/17/46@native | prediction
+y [1] = θ[c1] + θ[c3] * (1 / (θ[c6] + θ[c8] * (1 / ((θ[c12] + θ[c14] * (1 / (θ[c18] + θ[c20] * ((x - θ[x0_mean]) / θ[x0_scale]) - (θ[c23] + θ[c25] * (1 / (θ[c28] + θ[c30] * ((x - θ[x0_mean]) / θ[x0_scale]))))))) * (θ[c33] + θ[c35] * ((x - θ[x0_mean]) / θ[x0_scale]))))))
+  c1 = -2.4280176468965298 [unit unknown]
+  c3 = 4.293707903262057 [unit unknown]
+  c6 = 0.41380759114440707 [unit unknown]
+  c8 = 0.13661937611615957 [unit unknown]
+  c12 = 0.03132134191208994 [unit unknown]
+  c14 = -1.1008760245063571 [unit unknown]
+  c18 = -0.8854183325965032 [unit unknown]
+  c20 = 4.610025138879653 [unit unknown]
+  x0_mean = 1.9634916034894223 [1]
+  x0_scale = 1.0820323259523998 [1]
+  c23 = -0.20344166185285018 [unit unknown]
+  c25 = -4.2770720481479145 [unit unknown]
+  c28 = 0.0999163742809262 [unit unknown]
+  c30 = 0.010935096832285716 [unit unknown]
+  c33 = 64.42540312365837 [unit unknown]
+  c35 = 26.841401469537267 [unit unknown]
+
+mean | mean/17/0@native | prediction
+y [1] = θ[c0]
+  c0 = 2.6787919685141217 [1]
+
+linear | linear/17/1@native | prediction
+y [1] = θ[c0] * x + θ[c1]
+  c0 = 1.0556197374929093 [1]
+  c1 = 0.6060914981960914 [1]
+
+Coefficient values use the saved working coordinates. Details: metadata/equations.txt

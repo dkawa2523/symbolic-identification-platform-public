@@ -1,0 +1,45 @@
+{
+  "prepared_run": "/work/results/basic/calculation/prepare/prepare/run.json",
+  "sources": [
+    {
+      "discovery": "/work/results/basic/calculation/native/mean/discover/engine_summary.json"
+    },
+    {
+      "discovery": "/work/results/basic/calculation/native/linear/discover/engine_summary.json"
+    },
+    {
+      "discovery": "/work/results/basic/calculation/native/dictionary/discover/engine_summary.json"
+    },
+    {
+      "manual": {
+        "id": "user_linear",
+        "expression": "a*length_cm+b",
+        "parameters": {
+          "a": {
+            "value": 1,
+            "trainable": true,
+            "bounds": [
+              0,
+              4
+            ],
+            "unit": "1"
+          },
+          "b": {
+            "value": 0,
+            "trainable": true,
+            "bounds": [
+              -1,
+              1
+            ],
+            "unit": "m"
+          }
+        },
+        "knowledge": "User-proposed linear family; not blind family discovery. Expression uses working m coordinates."
+      }
+    }
+  ],
+  "purpose": "local_prediction",
+  "question": "Can a simple local response be used within this observed length range?",
+  "engineering_tolerance": 0.02,
+  "final_history": "known_exposed"
+}

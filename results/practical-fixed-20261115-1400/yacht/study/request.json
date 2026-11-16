@@ -1,0 +1,37 @@
+{
+  "prepared_run": "/work/results/practical-fixed-20261115-1400/yacht/pysr/calculation/prepare/run.json",
+  "sources": [
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/yacht/pysr/calculation/discover/pysr/42/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/yacht/pysr/calculation/prepare/run.json"
+    },
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/yacht/parfam/calculation/discover/parfam/42/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/yacht/parfam/calculation/prepare/run.json"
+    },
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/yacht/torchsisso/calculation/discover/torchsisso/42/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/yacht/torchsisso/calculation/prepare/run.json"
+    },
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/yacht/physo/calculation/discover/physo/42/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/yacht/physo/calculation/prepare/run.json"
+    },
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/yacht/e2e/calculation/discover/e2e/42/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/yacht/e2e/calculation/prepare/run.json"
+    },
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/yacht/baselines/calculation/discover/mean/42/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/yacht/baselines/calculation/prepare/run.json"
+    },
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/yacht/baselines/calculation/discover/linear/42/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/yacht/baselines/calculation/prepare/run.json"
+    }
+  ],
+  "question": "Fixed one-seed comparison; synthetic support combines known contribution and finite hard responses.",
+  "purpose": "local_prediction",
+  "final_history": "known_exposed",
+  "data_kind": "Yacht published exposed split"
+}

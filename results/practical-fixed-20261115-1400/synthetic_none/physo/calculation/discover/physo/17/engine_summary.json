@@ -1,0 +1,371 @@
+{
+  "native_candidates": 12,
+  "input_rows": 256,
+  "native_input_variables": [
+    "x0"
+  ],
+  "native_input_columns": [
+    "x"
+  ],
+  "source_complexity_budget": {
+    "max_nodes": 256,
+    "variable_costs": {
+      "x0": 1
+    },
+    "output_cost": 0,
+    "prior_instances": [
+      {
+        "token_costs": {
+          "add": 1,
+          "sub": 1,
+          "mul": 1,
+          "div": 1,
+          "1.0": 1,
+          "c0": 1,
+          "c1": 1,
+          "x0": 1
+        },
+        "calls": 0,
+        "masked_choices": 0
+      },
+      {
+        "token_costs": {
+          "add": 1,
+          "sub": 1,
+          "mul": 1,
+          "div": 1,
+          "1.0": 1,
+          "c0": 1,
+          "c1": 1,
+          "x0": 1
+        },
+        "calls": 256,
+        "masked_choices": 0
+      }
+    ],
+    "slot_prior_instances": [],
+    "token_multiplier": 1
+  },
+  "native_execution_status": "failed",
+  "termination_reason": "native_failure",
+  "checkpoint_seconds": 0.0,
+  "physo": "1.1.11",
+  "torch": "2.7.1+cpu",
+  "numpy": "1.26.4",
+  "native_import_seconds": 12.048195487004705,
+  "native_search_fit_seconds": 159.72579939599382,
+  "native_export_seconds": 0.14533070998732,
+  "timing_scope": {
+    "native_search_fit_seconds": "inclusive elapsed through the start of this export; contains earlier completed-iteration conversion/parity/snapshot work",
+    "native_export_seconds": "this export only, after the preceding elapsed interval",
+    "checkpoint_seconds": "overlapping subset: earlier completed logger hooks, including conversion/parity/atomic snapshot; never add to search elapsed"
+  },
+  "native_search_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "template_search": null,
+  "response_search": null,
+  "fixed_constants": {},
+  "parameter_units": {
+    "c0": "1",
+    "c1": "1"
+  },
+  "coefficient_catalog_scope": "input/target dimensions, per-input powers0..2, 2 independent slots per dimension plus input scales; bounded catalog, not completeness",
+  "resolved_native_config": {
+    "learning_config": {
+      "batch_size": 2000,
+      "max_time_step": 256,
+      "n_epochs": 1000000000,
+      "gamma_decay": 0.7,
+      "entropy_weight": 0.005,
+      "risk_factor": 0.05,
+      "rewards_computer": "physo.physym.reward.make_RewardsComputer.<locals>.rewards_computer",
+      "get_optimizer": "physo.config.config2.<lambda>",
+      "observe_units": true
+    },
+    "reward_config": {
+      "reward_function": "physo.physym.reward.SquashedNRMSE",
+      "zero_out_unphysical": true,
+      "zero_out_duplicates": false,
+      "keep_lowest_complexity_duplicate": false
+    },
+    "free_const_opti_args": {
+      "loss": "MSE",
+      "method": "LBFGS",
+      "method_args": {
+        "n_steps": 15,
+        "tol": 1e-08,
+        "lbfgs_func_args": {
+          "max_iter": 4,
+          "line_search_fn": "strong_wolfe"
+        }
+      }
+    },
+    "priors_config": [
+      [
+        "SoftLengthPrior",
+        {
+          "length_loc": 8,
+          "scale": 5
+        }
+      ],
+      [
+        "NoUselessInversePrior",
+        null
+      ],
+      [
+        "PhysicalUnitsPrior",
+        {
+          "prob_eps": 1.1920928955078125e-07
+        }
+      ]
+    ],
+    "cell_config": {
+      "hidden_size": 128,
+      "n_layers": 1,
+      "is_lobotomized": false
+    }
+  },
+  "physo_profile": {
+    "profile": "config2",
+    "preset": "config2",
+    "epochs": 50,
+    "max_n_evaluations": 100000,
+    "physo_version": "1.1.11",
+    "preset_source_sha256": "4102a98305b5f0a36d36a3d0707d70b720a2f11709a726519223ee0b13a7f056",
+    "preset_learning_config": {
+      "batch_size": 2000,
+      "max_time_step": 35,
+      "n_epochs": 1000000000,
+      "gamma_decay": 0.7,
+      "entropy_weight": 0.005,
+      "risk_factor": 0.05,
+      "rewards_computer": "physo.physym.reward.make_RewardsComputer.<locals>.rewards_computer",
+      "get_optimizer": "physo.config.config2.<lambda>",
+      "observe_units": true
+    },
+    "explicit_overrides": {
+      "epochs": 50,
+      "max_n_evaluations": 100000
+    },
+    "effective_epochs": 50,
+    "effective_batch_size": 2000,
+    "override_order": [
+      "pinned preset",
+      "legacy lightweight defaults only",
+      "explicit method options",
+      "common source AST budget and supported-operator prior adjustments",
+      "CPU single-thread/nonparallel resource policy"
+    ],
+    "resources": {
+      "device": "cpu",
+      "torch_threads": 1,
+      "parallel_mode": false
+    },
+    "unit_mode": "all input/target units dimensionless",
+    "scope": "preset-derived configuration plus platform extensions; not a quality guarantee; no automatic unit-based preset switch"
+  },
+  "candidate_scope": "complexity_ladder",
+  "native_strict_pareto_candidates": 6,
+  "native_work": {
+    "epochs_completed": 1,
+    "sampled": 2000,
+    "physical": 2000,
+    "positive_reward": 1873,
+    "optimizer_steps": 1,
+    "scope": "actual logger rows/optimizer steps; reward counts can repeat expressions and do not prove convergence"
+  },
+  "rejected_exports": [],
+  "constraint_support": {
+    "operators": "enforced during search",
+    "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+    "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+    "variables": "disallowed columns excluded before native search; full-schema export/prediction checked",
+    "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+    "probes": "finite-point hard constrained coefficient fit before native reward/RNN update",
+    "response_bounds": "hard finite-point coefficient constraints before reward",
+    "response_checks": "finite-step coefficient constraints before reward; not analytic proof",
+    "fixed_constants": "enforced during search, immutable values/units; native SR rounded-name collisions rejected",
+    "power_indices": "native n2/n3/n4; rootn uses native signed cbrt only"
+  },
+  "assets": null,
+  "python": "3.11.15",
+  "python_executable": "/opt/venv/bin/python",
+  "device": "cpu",
+  "allowed_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "native_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "unavailable_search_operators": [],
+  "operator_policy": "unavailable_search_operators is the requested/export-capability difference, not decoder reachability; generation enforcement and context-dependent routes are specified by constraint_support and native metadata",
+  "status": "partial",
+  "native_artifacts": {
+    "native_programs": "/work/results/practical-fixed-20261115-1400/synthetic_none/physo/calculation/discover/physo/17/recovered_native/0_physo_native.json"
+  },
+  "native_artifact_sha256": {
+    "native_programs": "b785132f2d1dcc7dce1b20e9b6dc8de43c761d9318f1b872966bc06e7fdde8f6"
+  },
+  "portable_status": "candidates",
+  "fixed_constants_native_support": true,
+  "exported_candidates": 12,
+  "selection_candidates": 12,
+  "prelimit_constraint_eligible": null,
+  "portable_candidates": "/work/results/practical-fixed-20261115-1400/synthetic_none/physo/calculation/discover/physo/17/candidates.jsonl",
+  "portable_candidates_sha256": "1e37fdc28d508ac3854b0f41bdb142bb8d4be8d57723f4b4fa586a570bafc52a",
+  "candidate_pool": {
+    "policy": "all",
+    "emitted": 12,
+    "retained": 12,
+    "limit": null,
+    "discarded_from_comparison_ids": [],
+    "archive_scope": "all faithfully exported native candidates, not all internal search states",
+    "quality_scope": "Train/shared probes only when explicit bounded allocation is requested; compare owns final eligibility"
+  },
+  "truncation": "none; all faithfully emitted candidates reach common evaluation",
+  "engine": "physo",
+  "seed": 17,
+  "reason": "Validated saved native hypotheses; search did not complete: Worker exited -9; see worker.log",
+  "completed_progress_sha256": "4b4d5300cfacd7dc23644b9efefaf046cd2e8d23dadae7a5d0511668eaf262e6",
+  "original_execution": {
+    "artifact": "/work/results/practical-fixed-20261115-1400/synthetic_none/physo/calculation/discover/physo/17/interrupted_execution.json",
+    "sha256": "8ef0b37715e7cd18bda7cedb3646d11561e6c5d45a4c29a3ce9b07e807574ace",
+    "status": "failed",
+    "reason": "Worker exited -9; see worker.log",
+    "engine": "physo",
+    "seed": 17
+  },
+  "checkpoint_scope": "data-only hypotheses; no optimizer/RNG resume guarantee",
+  "work_scope": "Counts stop at the validated snapshot; in-flight work and optimizer state are not reconstructed",
+  "recovery_seconds": 0.4450238650024403,
+  "runtime_image_id": "sha256:43d979e1acb694cb6e42a0d08c57f737a31844599665daef971bf632eb73a5c0",
+  "prepared_sha256": "f91a2d72d04e53c66fad831258e19a5a395b88b16ab3c7e40ccd26fc5e719676",
+  "job_sha256": "57b9f61e06f15cdf905a74d4612faec841d7df928b9df08418ba6758f46b8658",
+  "requested_constraints": {
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "probes": [],
+    "response_bounds": [
+      null,
+      null
+    ],
+    "response_checks": [],
+    "response_enforcement": null,
+    "max_wall_seconds": 21600,
+    "response_mode": "search"
+  },
+  "requirements_ref": {
+    "requirements_sha256": "35ba19472d59ab6158650d6aa5f176e2c90edd1643a654af61137001cdde3d48",
+    "scope": "canonical common request; native settings/checks are derived evidence"
+  },
+  "resolved_native_profile": {
+    "options": {
+      "profile": "config2",
+      "epochs": 50,
+      "max_n_evaluations": 100000,
+      "response_max_nfev": 200
+    },
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "device": "cpu",
+    "candidate_pool_policy": "all"
+  },
+  "response_mode": "search",
+  "capability_declaration": {
+    "unit_search": {
+      "defaults": {},
+      "choices": {},
+      "templates": true
+    },
+    "equation_template": true,
+    "template_scope": "one shared slot, fixed outer coefficients, variable-only calls, identity formal schema; no signed cbrt",
+    "supported_options": [
+      "batch_size",
+      "candidate_scope",
+      "constants_per_unit",
+      "entropy_weight",
+      "epochs",
+      "max_n_evaluations",
+      "parameter_units",
+      "profile",
+      "response_max_nfev",
+      "risk_factor",
+      "unit_basis_degree"
+    ],
+    "operators": [
+      "abs",
+      "acos",
+      "add",
+      "asin",
+      "atan",
+      "cos",
+      "cosh",
+      "div",
+      "exp",
+      "log",
+      "mul",
+      "neg",
+      "pow_int",
+      "rootn",
+      "sin",
+      "sinh",
+      "sqrt",
+      "sub",
+      "tan",
+      "tanh"
+    ],
+    "fixed_constants": true,
+    "constraints": {
+      "operators": "enforced during search",
+      "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+      "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+      "variables": "disallowed columns excluded before native search; full-schema export/prediction checked",
+      "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+      "probes": "finite-point hard constrained coefficient fit before native reward/RNN update",
+      "response_bounds": "hard finite-point coefficient constraints before reward",
+      "response_checks": "finite-step coefficient constraints before reward; not analytic proof",
+      "fixed_constants": "enforced during search, immutable values/units; native SR rounded-name collisions rejected",
+      "power_indices": "native n2/n3/n4; rootn uses native signed cbrt only"
+    },
+    "search_constraints": [
+      "probes",
+      "response_bounds",
+      "response_checks"
+    ],
+    "response_enforcement": {
+      "default": "hard",
+      "supported": [
+        "hard"
+      ],
+      "stage": "constrained coefficient fit before native reward and RNN update"
+    },
+    "requires_assets": false
+  },
+  "constraint_application": {
+    "operators": "enforced during search",
+    "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included"
+  },
+  "response_enforcement": {
+    "effective": "not_requested"
+  },
+  "readiness_scope": "this profile/run only; execution, fidelity, common admissibility and scientific adequacy are distinct",
+  "candidates_sha256": "1e37fdc28d508ac3854b0f41bdb142bb8d4be8d57723f4b4fa586a570bafc52a",
+  "wall_seconds": 200.8264462170191
+}

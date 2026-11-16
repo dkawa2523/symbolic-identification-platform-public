@@ -1,0 +1,12 @@
+{
+  "partition": "Selection",
+  "final_accessed": false,
+  "adoption_performed": false,
+  "rule": "Minimum eligible finite Selection RMSE per method/seed; exact ties by ID",
+  "representative_ids": [
+    "physo/17/1@native"
+  ],
+  "output": "/work/results/cleanup-normal-20261116-031218-v1",
+  "all_candidates": "/work/results/cleanup-normal-20261116-031218-v1/calculation/study",
+  "discovery_complete": true
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="788">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203342">
+<text x="40" y="40" font-size="24" font-weight="bold">5. e2e | equation</text>
+<text x="40" y="68" font-size="13">Candidate e2e/42/7@native | page 2/3</text>
+<text x="40" y="110" font-size="20">x3_mean = 4.0269231 [1]; role=fixed</text>
+<text x="40" y="137" font-size="20">x3_scale = 0.64454378 [1]; role=fixed</text>
+<text x="40" y="164" font-size="20">c22 = 2.0109787 [unit unknown]; role=free</text>
+<text x="40" y="191" font-size="20">c24 = 0.33065846 [unit unknown]; role=free</text>
+<text x="40" y="218" font-size="20">c29 = 0.82671776 [unit unknown]; role=free</text>
+<text x="40" y="245" font-size="20">c31 = 0.035214261 [unit unknown]; role=free</text>
+<text x="40" y="272" font-size="20">c34 = 4.4367178 [unit unknown]; role=free</text>
+<text x="40" y="299" font-size="20">c36 = 9.7282078 [unit unknown]; role=free</text>
+<text x="40" y="326" font-size="20">x5_mean = 0.2875 [1]; role=fixed</text>
+<text x="40" y="353" font-size="20">x5_scale = 0.10077822 [1]; role=fixed</text>
+<text x="40" y="380" font-size="20">c39 = -0.87701776 [unit unknown]; role=free</text>
+<text x="40" y="407" font-size="20">c41 = 6.2017922 [unit unknown]; role=free</text>
+<text x="40" y="434" font-size="20">c45 = 42.853979 [unit unknown]; role=free</text>
+<text x="40" y="461" font-size="20">c47 = 44.026396 [unit unknown]; role=free</text>
+<text x="40" y="488" font-size="20">x2_mean = 4.7892308 [1]; role=fixed</text>
+<text x="40" y="515" font-size="20">x2_scale = 0.23649562 [1]; role=fixed</text>
+<text x="40" y="542" font-size="20">c51 = -6.5427968 [unit unknown]; role=free</text>
+<text x="40" y="569" font-size="20">c53 = -0.71378893 [unit unknown]; role=free</text>
+<text x="40" y="596" font-size="20">c56 = 1.5515686 [unit unknown]; role=free</text>
+<text x="40" y="623" font-size="20">c58 = 7.9710448 [unit unknown]; role=free</text>
+<text x="40" y="650" font-size="20">x4_mean = 3.1776923 [1]; role=fixed</text>
+<text x="40" y="677" font-size="20">x4_scale = 0.25192043 [1]; role=fixed</text>
+<text x="40" y="704" font-size="20">c61 = -5.0827324 [unit unknown]; role=free</text>
+<text x="40" y="731" font-size="20">c63 = 92.677046 [unit unknown]; role=free</text>
+</g></svg>

@@ -1,0 +1,182 @@
+Fixed one-seed comparison; synthetic support combines known contribution and finite hard responses.
+
+pysr | pysr/17/5@native | prediction
+y [1] = 0.75 * x + (x / (x + θ[__slot_h_c0]) + x) / (x / θ[__slot_h_c1] - θ[__slot_h_c2])
+  __slot_h_c0 = 0.7725579678102222 [1]
+  __slot_h_c1 = 2.07395343412467 [1]
+  __slot_h_c2 = -1.0801275723145394 [1]
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((0.75 * x) + h(x))
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Declared fixed contribution 0.75*x plus one shared unknown h(x)'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [1]) = (((x0 / (x0 + c0)) + x0) / ((x0 / c1) - c2))
+  Unit: 1
+  c0 = 0.7725579678102222; role=free; unit=1; tied_to=None
+  c1 = 2.07395343412467; role=free; unit=1; tied_to=None
+  c2 = -1.0801275723145394; role=free; unit=1; tied_to=None
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.
+
+parfam | parfam/17/0@native | prediction
+y [1] = 0.75 * x + (θ[__slot_h_c0] + θ[__slot_h_c1] * x) / (θ[__slot_h_c2] + θ[__slot_h_c3] * x)
+  __slot_h_c0 = -0.013936264965212355 [unit unknown]
+  __slot_h_c1 = -1.402230087865118 [unit unknown]
+  __slot_h_c2 = -0.7150789503926552 [unit unknown]
+  __slot_h_c3 = -0.6990437001399401 [unit unknown]
+Template readout: unavailable
+Reason: template.slot.h.units:unknown
+Status: template.slot.h.units:unknown
+
+parfam | parfam/17/1@native | prediction
+y [1] = 0.75 * x + (θ[__slot_h_c0] + θ[__slot_h_c1] * x) / (θ[__slot_h_c2] + θ[__slot_h_c3] * x)
+  __slot_h_c0 = -0.013936264965212355 [unit unknown]
+  __slot_h_c1 = -1.402230087865118 [unit unknown]
+  __slot_h_c2 = -0.7150789503926552 [unit unknown]
+  __slot_h_c3 = -0.6990437001399401 [unit unknown]
+Template readout: unavailable
+Reason: template.slot.h.units:unknown
+Status: template.slot.h.units:unknown
+
+parfam | parfam/17/2@native | prediction
+y [1] = 0.75 * x + (θ[__slot_h_c0] + θ[__slot_h_c1] * x + θ[__slot_h_c2] * x * x)
+  __slot_h_c0 = 0.3007093397142817 [unit unknown]
+  __slot_h_c1 = 0.7424870493664758 [unit unknown]
+  __slot_h_c2 = -0.11001743160797772 [unit unknown]
+Template readout: unavailable
+Reason: template.slot.h.units:unknown
+Status: template.slot.h.units:unknown
+
+parfam | parfam/17/3@native | prediction
+y [1] = 0.75 * x + (θ[__slot_h_c0] + θ[__slot_h_c1] * x) / (θ[__slot_h_c2] + θ[__slot_h_c3] * x)
+  __slot_h_c0 = 0.33604114704619936 [unit unknown]
+  __slot_h_c1 = -1.1719590433019547 [unit unknown]
+  __slot_h_c2 = 0.2772922758717265 [unit unknown]
+  __slot_h_c3 = -0.9607856127887626 [unit unknown]
+Template readout: unavailable
+Reason: template.slot.h.units:unknown; increasing:fail
+Status: template.slot.h.units:unknown; increasing:fail
+
+parfam | parfam/17/4@native | prediction
+y [1] = 0.75 * x + (θ[__slot_h_c0] + θ[__slot_h_c1] * x + θ[__slot_h_c2] * x * x) / (θ[__slot_h_c3] + θ[__slot_h_c4] * x)
+  __slot_h_c0 = 0.17401329854200628 [unit unknown]
+  __slot_h_c1 = -0.5190396098204058 [unit unknown]
+  __slot_h_c2 = -0.2851651240649012 [unit unknown]
+  __slot_h_c3 = 0.2812358176823764 [unit unknown]
+  __slot_h_c4 = -0.9596386897434498 [unit unknown]
+Template readout: unavailable
+Reason: template.slot.h.units:unknown
+Status: template.slot.h.units:unknown
+
+parfam | parfam/17/5@native | prediction
+y [1] = 0.75 * x + (θ[__slot_h_c0] + θ[__slot_h_c1] * x + θ[__slot_h_c2] * x * x)
+  __slot_h_c0 = 0.30070906144594883 [unit unknown]
+  __slot_h_c1 = 0.7424873193067988 [unit unknown]
+  __slot_h_c2 = -0.11001748741767374 [unit unknown]
+Template readout: unavailable
+Reason: template.slot.h.units:unknown
+Status: template.slot.h.units:unknown
+
+parfam | parfam/17/6@native | prediction
+y [1] = 0.75 * x + (θ[__slot_h_c0] + θ[__slot_h_c1] * x) / (θ[__slot_h_c2] + θ[__slot_h_c3] * x)
+  __slot_h_c0 = -0.013936264965212355 [unit unknown]
+  __slot_h_c1 = -1.402230087865118 [unit unknown]
+  __slot_h_c2 = -0.7150789503926552 [unit unknown]
+  __slot_h_c3 = -0.6990437001399401 [unit unknown]
+Template readout: unavailable
+Reason: template.slot.h.units:unknown
+Status: template.slot.h.units:unknown
+
+torchsisso | torchsisso/17/0@native | prediction
+y [1] = 0.75 * x + (θ[__slot_h_intercept] + θ[__slot_h_c0] * x)
+  __slot_h_c0 = 0.3056197726450177 [1]
+  __slot_h_intercept = 0.6060914352361365 [1]
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((0.75 * x) + h(x))
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Declared fixed contribution 0.75*x plus one shared unknown h(x)'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [1]) = (intercept + (c0 * x0))
+  Unit: 1
+  intercept = 0.6060914352361365; role=free; unit=1; tied_to=None
+  c0 = 0.3056197726450177; role=free; unit=1; tied_to=None
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.
+
+physo | physo/17/8@native | prediction
+y [1] = 0.75 * x + (θ[__slot_h_c0] + θ[__slot_h_c0] / (x - (1.0 + θ[__slot_h_c0] + x) * θ[__slot_h_c0] - θ[__slot_h_c1])) / 1.0
+  __slot_h_c0 = 1.9998572859905726 [1]
+  __slot_h_c1 = -4.993786815920743 [1]
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((0.75 * x) + h(x))
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Declared fixed contribution 0.75*x plus one shared unknown h(x)'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [1]) = ((c0 + (c0 / ((x0 - (((1.0 + c0) + x0) * c0)) - c1))) / 1.0)
+  Unit: 1
+  c0 = 1.9998572859905726; role=free; unit=1; tied_to=None
+  c1 = -4.993786815920743; role=free; unit=1; tied_to=None
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.
+
+e2e | e2e/17/125/known-affine-fit@native | prediction
+y [1] = 0.75 * x + (θ[__slot_h_c2] + θ[__slot_h_c4] * (1 / (θ[__slot_h_c8] + θ[__slot_h_c10] * (1 / (θ[__slot_h_c13] + θ[__slot_h_c15] * ((x - θ[__slot_h_x0_mean]) / θ[__slot_h_x0_scale]))) - (θ[__slot_h_c18] + θ[__slot_h_c20] * ((x - θ[__slot_h_x0_mean]) / θ[__slot_h_x0_scale])))) + (θ[__slot_h_c23] + θ[__slot_h_c25] * (1 / (θ[__slot_h_c28] + θ[__slot_h_c30] * (1 / (θ[__slot_h_c33] + θ[__slot_h_c35] * (1 / (θ[__slot_h_c38] + θ[__slot_h_c40] * (1 / (θ[__slot_h_c43] + θ[__slot_h_c45] * (1 / (θ[__slot_h_c48] + θ[__slot_h_c50] * (1 / (θ[__slot_h_c53] + θ[__slot_h_c55] * ((x - θ[__slot_h_x0_mean]) / θ[__slot_h_x0_scale])))))))))))))))
+  __slot_h_c10 = -0.20199110458135008 [1]
+  __slot_h_c13 = -3.0170679227934127 [1]
+  __slot_h_c15 = -0.249871246513016 [1]
+  __slot_h_c18 = 0.02782615839409602 [1]
+  __slot_h_c2 = -0.28608761362150004 [1]
+  __slot_h_c20 = -0.03148121346559579 [1]
+  __slot_h_c23 = 2.245575033847901 [1]
+  __slot_h_c25 = 0.46042483881401985 [1]
+  __slot_h_c28 = 0.37928486584861115 [1]
+  __slot_h_c30 = -1.2256667468422733 [1]
+  __slot_h_c33 = -0.04076234642677988 [1]
+  __slot_h_c35 = 0.000962567445148803 [1]
+  __slot_h_c38 = -0.5551126945217775 [1]
+  __slot_h_c4 = -0.04403400872623396 [1]
+  __slot_h_c40 = -14.167040088518197 [1]
+  __slot_h_c43 = -1.5489822257082586 [1]
+  __slot_h_c45 = 31.3327905049318 [1]
+  __slot_h_c48 = -0.03765952549039632 [1]
+  __slot_h_c50 = 14.736168511502376 [1]
+  __slot_h_c53 = 2.591404230970542 [1]
+  __slot_h_c55 = -51.23330467961724 [1]
+  __slot_h_c8 = 0.028737139215004936 [1]
+  __slot_h_x0_mean = 1.9634916034894223 [1]
+  __slot_h_x0_scale = 1.0820323259523998 [1]
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((0.75 * x) + h(x))
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Declared fixed contribution 0.75*x plus one shared unknown h(x)'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [1]) = ((c2 + (c4 * (1 / ((c8 + (c10 * (1 / (c13 + (c15 * ((x0 - x0_mean) / x0_scale)))))) - (c18 + (c20 * ((x0 - x0_mean) / x0_scale))))))) + (c23 + (c25 * (1 / (c28 + (c30 * (1 / (c33 + (c35 * (1 / (c38 + (c40 * (1 / (c43 + (c45 * (1 / (c48 + (c50 * (1 / (c53 + (c55 * ((x0 - x0_mean) / x0_scale))))))))))))))))))))))
+  Unit: 1
+  c2 = -0.28608761362150004; role=free; unit=1; tied_to=None
+  c4 = -0.04403400872623396; role=free; unit=1; tied_to=None
+  c8 = 0.028737139215004936; role=free; unit=1; tied_to=None
+  c10 = -0.20199110458135008; role=free; unit=1; tied_to=None
+  c13 = -3.0170679227934127; role=free; unit=1; tied_to=None
+  c15 = -0.249871246513016; role=free; unit=1; tied_to=None
+  x0_mean = 1.9634916034894223; role=fixed; unit=1; tied_to=None
+  x0_scale = 1.0820323259523998; role=fixed; unit=1; tied_to=None
+  c18 = 0.02782615839409602; role=free; unit=1; tied_to=None
+  c20 = -0.03148121346559579; role=free; unit=1; tied_to=None
+  c23 = 2.245575033847901; role=free; unit=1; tied_to=None
+  c25 = 0.46042483881401985; role=free; unit=1; tied_to=None
+  c28 = 0.37928486584861115; role=free; unit=1; tied_to=None
+  c30 = -1.2256667468422733; role=free; unit=1; tied_to=None
+  c33 = -0.04076234642677988; role=free; unit=1; tied_to=None
+  c35 = 0.000962567445148803; role=free; unit=1; tied_to=None
+  c38 = -0.5551126945217775; role=free; unit=1; tied_to=None
+  c40 = -14.167040088518197; role=free; unit=1; tied_to=None
+  c43 = -1.5489822257082586; role=free; unit=1; tied_to=None
+  c45 = 31.3327905049318; role=free; unit=1; tied_to=None
+  c48 = -0.03765952549039632; role=free; unit=1; tied_to=None
+  c50 = 14.736168511502376; role=free; unit=1; tied_to=None
+  c53 = 2.591404230970542; role=free; unit=1; tied_to=None
+  c55 = -51.23330467961724; role=free; unit=1; tied_to=None
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.
+
+Coefficient values use the saved working coordinates. Details: metadata/equations.txt

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="668" viewBox="0 0 1000 668" role="img" aria-labelledby="title desc" data-source-csv="../tables/04_representatives.csv" data-source-sha256="f3260a92b26520cf88deacc795fbc6b52251f27011b39055415bb94652bb9a6c">
+<title id="title">Representative equations: error and size</title><desc id="desc">Saved display representatives only. All candidates and extreme errors remain in the accuracy overview and candidate table.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203342">
+<text x="120" y="31" font-size="21" font-weight="bold">Representative equations: error and size</text>
+<path d="M 120.000 90 V 460 M 120 460.000 H 695" stroke="#e2e9ee" fill="none"/>
+<text x="120.0" y="483" font-size="13" text-anchor="middle">4.75</text>
+<text x="108" y="465.0" font-size="13" text-anchor="end">4.229e-16</text>
+<path d="M 235.000 90 V 460 M 120 386.000 H 695" stroke="#e2e9ee" fill="none"/>
+<text x="235.0" y="483" font-size="13" text-anchor="middle">4.85</text>
+<text x="108" y="391.0" font-size="13" text-anchor="end">4.318e-16</text>
+<path d="M 350.000 90 V 460 M 120 312.000 H 695" stroke="#e2e9ee" fill="none"/>
+<text x="350.0" y="483" font-size="13" text-anchor="middle">4.95</text>
+<text x="108" y="317.0" font-size="13" text-anchor="end">4.407e-16</text>
+<path d="M 465.000 90 V 460 M 120 238.000 H 695" stroke="#e2e9ee" fill="none"/>
+<text x="465.0" y="483" font-size="13" text-anchor="middle">5.05</text>
+<text x="108" y="243.0" font-size="13" text-anchor="end">4.496e-16</text>
+<path d="M 580.000 90 V 460 M 120 164.000 H 695" stroke="#e2e9ee" fill="none"/>
+<text x="580.0" y="483" font-size="13" text-anchor="middle">5.15</text>
+<text x="108" y="169.0" font-size="13" text-anchor="end">4.585e-16</text>
+<path d="M 695.000 90 V 460 M 120 90.000 H 695" stroke="#e2e9ee" fill="none"/>
+<text x="695.0" y="483" font-size="13" text-anchor="middle">5.25</text>
+<text x="108" y="95.0" font-size="13" text-anchor="end">4.674e-16</text>
+<circle data-row="0" data-series="physo" data-x="5" data-y="4.45136038133333e-16" cx="407.500" cy="275.000" r="3.6" fill="#196787" fill-opacity="0.75"><title>{&quot;series&quot;: &quot;physo&quot;, &quot;point_index&quot;: 0, &quot;x&quot;: 5, &quot;y&quot;: 4.45136038133333e-16, &quot;valid&quot;: true, &quot;plotted&quot;: true, &quot;plot_reason&quot;: null, &quot;candidate_id&quot;: &quot;physo/17/1@native&quot;, &quot;eligible&quot;: true, &quot;reason&quot;: null, &quot;subject&quot;: {&quot;relation_ref&quot;: &quot;physo/17/1@native&quot;, &quot;relation_state_sha256&quot;: &quot;15ae3ee97f48d331b4e9d0f849f4317b99c02738a97760dc65a890ed73dacd28&quot;, &quot;view&quot;: &quot;value&quot;, &quot;settings_ref&quot;: &quot;44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a&quot;}, &quot;checks&quot;: [{&quot;name&quot;: &quot;operators&quot;, &quot;status&quot;: &quot;pass&quot;, &quot;required&quot;: true, &quot;method&quot;: &quot;structural&quot;, &quot;reason&quot;: null, &quot;member&quot;: 0}, {&quot;name&quot;: &quot;max_nodes&quot;, &quot;status&quot;: &quot;pass&quot;, &quot;required&quot;: true, &quot;method&quot;: &quot;expanded source-coordinate AST&quot;, &quot;reason&quot;: null, &quot;count&quot;: 5, &quot;limit&quot;: 12, &quot;member&quot;: 0}, {&quot;name&quot;: &quot;units&quot;, &quot;status&quot;: &quot;pass&quot;, &quot;required&quot;: true, &quot;method&quot;: &quot;structural&quot;, &quot;reason&quot;: null, &quot;member&quot;: 0}, {&quot;name&quot;: &quot;template.structure&quot;, &quot;status&quot;: &quot;pass&quot;, &quot;required&quot;: true, &quot;member&quot;: 0}, {&quot;name&quot;: &quot;template.slot.h.operators&quot;, &quot;status&quot;: &quot;pass&quot;, &quot;required&quot;: true, &quot;member&quot;: 0}, {&quot;name&quot;: &quot;template.slot.h.nodes&quot;, &quot;status&quot;: &quot;pass&quot;, &quot;required&quot;: true, &quot;member&quot;: 0}, {&quot;name&quot;: &quot;template.slot.h.units&quot;, &quot;status&quot;: &quot;pass&quot;, &quot;required&quot;: true, &quot;reason&quot;: null, &quot;member&quot;: 0}, {&quot;name&quot;: &quot;template.argument.0.units&quot;, &quot;status&quot;: &quot;pass&quot;, &quot;required&quot;: true, &quot;reason&quot;: null, &quot;member&quot;: 0}, {&quot;name&quot;: &quot;template.output.units&quot;, &quot;status&quot;: &quot;pass&quot;, &quot;required&quot;: true, &quot;reason&quot;: null, &quot;member&quot;: 0}, {&quot;name&quot;: &quot;domain_prediction_validity&quot;, &quot;status&quot;: &quot;pass&quot;, &quot;required&quot;: true, &quot;method&quot;: &quot;automatic domain points; finite prediction only, no response-bound expansion&quot;, &quot;reason&quot;: null, &quot;n_points&quot;: 16, &quot;n_valid&quot;: 16}], &quot;native_check&quot;: {&quot;passed&quot;: true, &quot;n_points&quot;: 64, &quot;max_abs_error&quot;: 0.0, &quot;absolute_scale&quot;: 2.6101210323658384, &quot;signal_rtol&quot;: 1e-05, &quot;atol&quot;: 2.6101210323658385e-05, &quot;float64_ulp_allowance&quot;: 8, &quot;resolution_limited&quot;: false, &quot;zero_signal_policy&quot;: &quot;exact equality; no dimensional absolute floor&quot;, &quot;finite_and_signed_nonfinite_masks_match&quot;: true, &quot;policy&quot;: &quot;signal scale plus float64 ULP; no relative tolerance on raw output offset&quot;, &quot;train_points&quot;: 48, &quot;boundary_and_configured_points&quot;: 16, &quot;scope&quot;: &quot;train plus independent declared-domain/interior/boundary/configured probes; no global equivalence proof&quot;, &quot;division_policy&quot;: &quot;common evaluator oracle&quot;, &quot;domain_probe_policy&quot;: &quot;observed&quot;, &quot;arithmetic&quot;: &quot;strict_real&quot;, &quot;comparison_semantics&quot;: &quot;declared native arithmetic, including signed Inf/NaN masks&quot;, &quot;common_prediction_semantics&quot;: &quot;finite real-domain projection; invalid intermediate rows retained separately&quot;, &quot;common_real_domain_valid_points&quot;: 64}}</title></circle>
+<text x="413.5" y="266.0" font-size="11" data-candidate-numbers="2">2</text>
+<path d="M 120 90 V 460 H 695" stroke="#536b79" fill="none"/>
+<text x="407.5" y="517" font-size="15" text-anchor="middle">Expression nodes [count]</text>
+<text x="24" y="275.0" font-size="15" text-anchor="middle" transform="rotate(-90 24 275.0)">Selection RMSE [m^2]</text>
+<circle cx="735" cy="86" r="4" fill="#196787"/>
+<text x="748" y="90" font-size="12" >physo</text>
+<text x="40" y="555" font-size="12" fill="#536b79">Selection data</text>
+<text x="40" y="573" font-size="12" fill="#536b79">Display representatives only; all candidates remain in the accuracy overview and table.</text>
+<text x="40" y="591" font-size="12" fill="#536b79">Candidates: 1; eligible: 1; excluded: 0. Numbers match the equation table.</text>
+</g></svg>

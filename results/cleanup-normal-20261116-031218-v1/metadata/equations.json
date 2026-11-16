@@ -1,0 +1,436 @@
+[
+  {
+    "candidate_id": "physo/17/0@native",
+    "method": "physo",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": true,
+    "reason": null,
+    "variant": "native",
+    "subject": {
+      "relation_ref": "physo/17/0@native",
+      "relation_state_sha256": "19343605f2fcb6966c113d12138172cd37590ac15044d8eb6d21eed4b279659b",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "pow_int",
+        "args": [
+          {
+            "var": "x0"
+          },
+          {
+            "const": 2
+          }
+        ]
+      },
+      "parameters": {},
+      "template": {
+        "specification": {
+          "coordinate_space": "working",
+          "ast": {
+            "op": "pow_int",
+            "args": [
+              {
+                "slot": "h",
+                "args": [
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "const": 2
+              }
+            ]
+          },
+          "parameters": {},
+          "components": {},
+          "knowledge": {
+            "kind": "hypothesis",
+            "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+          },
+          "slots": {
+            "h": {
+              "arguments": [
+                {
+                  "name": "x0",
+                  "unit": "m"
+                }
+              ],
+              "unit": "m",
+              "max_nodes": 7,
+              "allowed_operators": [
+                "mul",
+                "add"
+              ]
+            }
+          }
+        },
+        "slots": {
+          "h": {
+            "schema_version": 1,
+            "ast": {
+              "var": "x0"
+            },
+            "parameters": {}
+          }
+        }
+      }
+    },
+    "n_nodes": 3,
+    "working_n_nodes": 3,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "((x_work) ** (2))",
+    "latex": "\\left(\\text{x\\_work}\\right)^{2}",
+    "public_text": "y [m^2] = ((x) ** (2))",
+    "public_latex": "\\text{y}\\;[\\text{m\\textasciicircum{}2}] = \\left(\\text{x}\\right)^{2}",
+    "display_text": "x_work ^ 2",
+    "public_display_text": "y [m^2] = x ^ 2",
+    "parameters": [],
+    "arithmetic": "strict_real",
+    "operators": [
+      "pow_int"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names.",
+      "pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "physo/17/1@native",
+    "method": "physo",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": true,
+    "reason": null,
+    "variant": "native",
+    "subject": {
+      "relation_ref": "physo/17/1@native",
+      "relation_state_sha256": "15ae3ee97f48d331b4e9d0f849f4317b99c02738a97760dc65a890ed73dacd28",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "pow_int",
+        "args": [
+          {
+            "op": "add",
+            "args": [
+              {
+                "var": "x0"
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "const": 2
+          }
+        ]
+      },
+      "parameters": {},
+      "template": {
+        "specification": {
+          "coordinate_space": "working",
+          "ast": {
+            "op": "pow_int",
+            "args": [
+              {
+                "slot": "h",
+                "args": [
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "const": 2
+              }
+            ]
+          },
+          "parameters": {},
+          "components": {},
+          "knowledge": {
+            "kind": "hypothesis",
+            "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+          },
+          "slots": {
+            "h": {
+              "arguments": [
+                {
+                  "name": "x0",
+                  "unit": "m"
+                }
+              ],
+              "unit": "m",
+              "max_nodes": 7,
+              "allowed_operators": [
+                "mul",
+                "add"
+              ]
+            }
+          }
+        },
+        "slots": {
+          "h": {
+            "schema_version": 1,
+            "ast": {
+              "op": "add",
+              "args": [
+                {
+                  "var": "x0"
+                },
+                {
+                  "var": "x0"
+                }
+              ]
+            },
+            "parameters": {}
+          }
+        }
+      }
+    },
+    "n_nodes": 5,
+    "working_n_nodes": 5,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "(((x_work + x_work)) ** (2))",
+    "latex": "\\left(\\left(\\text{x\\_work} + \\text{x\\_work}\\right)\\right)^{2}",
+    "public_text": "y [m^2] = (((x + x)) ** (2))",
+    "public_latex": "\\text{y}\\;[\\text{m\\textasciicircum{}2}] = \\left(\\left(\\text{x} + \\text{x}\\right)\\right)^{2}",
+    "display_text": "(x_work + x_work) ^ 2",
+    "public_display_text": "y [m^2] = (x + x) ^ 2",
+    "parameters": [],
+    "arithmetic": "strict_real",
+    "operators": [
+      "add",
+      "pow_int"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names.",
+      "pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "physo/17/2@native",
+    "method": "physo",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": true,
+    "reason": null,
+    "variant": "native",
+    "subject": {
+      "relation_ref": "physo/17/2@native",
+      "relation_state_sha256": "a6bbcb39e01eaef4ab215430927ef5459d68ca1db5e32ee77632f8ffcc568e6e",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "pow_int",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "var": "x0"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "const": 1.0
+                  },
+                  {
+                    "param": "__slot_h_a"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "const": 2
+          }
+        ]
+      },
+      "parameters": {
+        "__slot_h_a": {
+          "value": 2.0,
+          "trainable": true,
+          "origin": "native_free_constant_slot",
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "physo_native_name": "a"
+        }
+      },
+      "template": {
+        "specification": {
+          "coordinate_space": "working",
+          "ast": {
+            "op": "pow_int",
+            "args": [
+              {
+                "slot": "h",
+                "args": [
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "const": 2
+              }
+            ]
+          },
+          "parameters": {},
+          "components": {},
+          "knowledge": {
+            "kind": "hypothesis",
+            "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+          },
+          "slots": {
+            "h": {
+              "arguments": [
+                {
+                  "name": "x0",
+                  "unit": "m"
+                }
+              ],
+              "unit": "m",
+              "max_nodes": 7,
+              "allowed_operators": [
+                "mul",
+                "add"
+              ]
+            }
+          }
+        },
+        "slots": {
+          "h": {
+            "schema_version": 1,
+            "ast": {
+              "op": "mul",
+              "args": [
+                {
+                  "var": "x0"
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "const": 1.0
+                    },
+                    {
+                      "param": "a"
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "a": {
+                "value": 2.0,
+                "trainable": true,
+                "origin": "native_free_constant_slot",
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "physo_native_name": "a"
+              }
+            }
+          }
+        }
+      }
+    },
+    "n_nodes": 7,
+    "working_n_nodes": 7,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "(((x_work * (1.0 * coef['__slot_h_a']))) ** (2))",
+    "latex": "\\left(\\left(\\text{x\\_work} \\cdot \\left(1.0 \\cdot \\theta_{\\text{\\_\\_slot\\_h\\_a}}\\right)\\right)\\right)^{2}",
+    "public_text": "y [m^2] = (((x * (1.0 * coef['__slot_h_a']))) ** (2))",
+    "public_latex": "\\text{y}\\;[\\text{m\\textasciicircum{}2}] = \\left(\\left(\\text{x} \\cdot \\left(1.0 \\cdot \\theta_{\\text{\\_\\_slot\\_h\\_a}}\\right)\\right)\\right)^{2}",
+    "display_text": "(x_work * (1.0 * \u03b8[__slot_h_a])) ^ 2",
+    "public_display_text": "y [m^2] = (x * (1.0 * \u03b8[__slot_h_a])) ^ 2",
+    "parameters": [
+      {
+        "name": "__slot_h_a",
+        "value": 2.0,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_free_constant_slot",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "strict_real",
+    "operators": [
+      "mul",
+      "pow_int"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names.",
+      "pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes."
+    ],
+    "display_status": "stored AST"
+  }
+]

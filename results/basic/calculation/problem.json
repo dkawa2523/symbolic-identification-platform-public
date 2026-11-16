@@ -1,0 +1,41 @@
+{
+  "data": {
+    "local_path": "/work/results/basic/calculation/table.csv",
+    "feature_columns": [
+      "length_cm"
+    ],
+    "target_column": "response_mm",
+    "units": {
+      "length_cm": "cm",
+      "response_mm": "mm"
+    },
+    "domain": {
+      "length_cm": [
+        3,
+        30
+      ],
+      "response_mm": [
+        -1000,
+        2000
+      ]
+    }
+  },
+  "split": {
+    "file": "/work/results/basic/calculation/split.csv",
+    "group_column": "group"
+  },
+  "search": {
+    "engines": [
+      "mean",
+      "linear",
+      "dictionary"
+    ],
+    "seeds": [
+      7
+    ],
+    "max_wall_seconds": 30
+  },
+  "constraints": {
+    "max_nodes": 60
+  }
+}

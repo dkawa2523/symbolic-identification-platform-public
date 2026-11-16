@@ -1,0 +1,16 @@
+3. torchsisso | equation
+Candidate: torchsisso/42/2@native
+Coordinates: public
+resistance [1] = (((coef['intercept'] + (coef['c0'] * ((froude) ** (4)))) + (coef['c1'] * cosh(froude))) + (coef['c2'] * ((froude) ** (2))))
+
+intercept = -9479842.032773923 [unit unknown]
+c0 = -396983.28240661015 [unit unknown]
+c1 = 9479840.231441721 [unit unknown]
+c2 = -4739790.111331243 [unit unknown]
+buoyancy_position_work [1] = 1 * buoyancy_position [1] + (0)
+prismatic_coefficient_work [1] = 1 * prismatic_coefficient [1] + (0)
+length_displacement_ratio_work [1] = 1 * length_displacement_ratio [1] + (0)
+beam_draught_ratio_work [1] = 1 * beam_draught_ratio [1] + (0)
+length_beam_ratio_work [1] = 1 * length_beam_ratio [1] + (0)
+froude_work [1] = 1 * froude [1] + (0)
+resistance_work [1] = 1 * resistance [1] + (0)

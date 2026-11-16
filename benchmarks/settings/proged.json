@@ -1,0 +1,35 @@
+{
+  "search": {
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "sin",
+      "cos",
+      "exp",
+      "log",
+      "pow_int"
+    ],
+    "engine_options": {
+      "proged": {
+        "sample_size": 80,
+        "depth_limit": 8,
+        "max_attempts": 600,
+        "max_constants": 6,
+        "optimizer": "DE",
+        "optimizer_iterations": 20,
+        "optimizer_population": 16
+      }
+    }
+  },
+  "constraints": {
+    "max_nodes": 50
+  },
+  "evaluation": {
+    "coefficient_fit": "none",
+    "selection_policy": "balanced",
+    "relative_tolerance": 0.01,
+    "absolute_tolerance": 1e-06
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "time": "2026-11-15T18:57:36.407993+00:00",
+  "status": {
+    "stage": "all_discovery_complete",
+    "time": "2026-11-15T18:43:02.277930+00:00",
+    "final_accessed": false
+  },
+  "runs": [
+    {
+      "arm": "yacht",
+      "method": "pysr",
+      "status": "ok",
+      "native_execution_status": "completed",
+      "wall_seconds": 389.5647166080016,
+      "exported_candidates": 14,
+      "reason": null
+    },
+    {
+      "arm": "yacht",
+      "method": "parfam",
+      "status": "ok",
+      "native_execution_status": "completed",
+      "wall_seconds": 3040.191859793995,
+      "exported_candidates": 159,
+      "reason": null
+    },
+    {
+      "arm": "yacht",
+      "method": "torchsisso",
+      "status": "ok",
+      "native_execution_status": "completed",
+      "wall_seconds": 16.727101085998584,
+      "exported_candidates": 3,
+      "reason": null
+    },
+    {
+      "arm": "yacht",
+      "method": "physo",
+      "status": "ok",
+      "native_execution_status": "completed",
+      "wall_seconds": 1852.9255048389896,
+      "exported_candidates": 20,
+      "reason": null
+    },
+    {
+      "arm": "yacht",
+      "method": "e2e",
+      "status": "ok",
+      "native_execution_status": "completed",
+      "wall_seconds": 198.73502130398992,
+      "exported_candidates": 31,
+      "reason": null
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "pysr",
+      "status": "ok",
+      "native_execution_status": "completed",
+      "wall_seconds": 2965.480276643997,
+      "exported_candidates": 16,
+      "reason": null
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "parfam",
+      "status": "ok",
+      "native_execution_status": "completed",
+      "wall_seconds": 18.339761305018328,
+      "exported_candidates": 5,
+      "reason": null
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "torchsisso",
+      "status": "ok",
+      "native_execution_status": "completed",
+      "wall_seconds": 14.11293273299816,
+      "exported_candidates": 3,
+      "reason": null
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "physo",
+      "status": "partial",
+      "native_execution_status": "failed",
+      "wall_seconds": 200.8264462170191,
+      "exported_candidates": 12,
+      "reason": "Validated saved native hypotheses; search did not complete: Worker exited -9; see worker.log"
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "e2e",
+      "status": "ok",
+      "native_execution_status": "completed",
+      "wall_seconds": 310.0351577429974,
+      "exported_candidates": 194,
+      "reason": null
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "pysr",
+      "status": "ok",
+      "native_execution_status": "completed",
+      "wall_seconds": 2937.725066401006,
+      "exported_candidates": 11,
+      "reason": null
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "parfam",
+      "status": "ok",
+      "native_execution_status": "completed",
+      "wall_seconds": 20.700846168998396,
+      "exported_candidates": 7,
+      "reason": null
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "torchsisso",
+      "status": "ok",
+      "native_execution_status": "completed",
+      "wall_seconds": 8.321705223002937,
+      "exported_candidates": 3,
+      "reason": null
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "physo",
+      "status": "partial",
+      "native_execution_status": "failed",
+      "wall_seconds": 340.27204115100903,
+      "exported_candidates": 12,
+      "reason": "Validated saved native hypotheses; search did not complete: Worker exited -9; see worker.log"
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "e2e",
+      "status": "ok",
+      "native_execution_status": "completed",
+      "wall_seconds": 2501.1375135399867,
+      "exported_candidates": 175,
+      "reason": null
+    }
+  ],
+  "locks": {
+    "global_choices.json": false,
+    "final_access_started.json": false,
+    "score_complete.json": false
+  }
+}

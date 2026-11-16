@@ -1,0 +1,3895 @@
+[
+  {
+    "candidate_id": "pysr/42/12@native",
+    "method": "pysr",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": true,
+    "reason": null,
+    "variant": "native",
+    "subject": {
+      "relation_ref": "pysr/42/12@native",
+      "relation_state_sha256": "d26a484cc1d95ec310eb3b391b48d6b9165a7c03b851eabdfaeaa9a8aadf1ec6",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 1,
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "pow_int",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "sin",
+                    "args": [
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "op": "add",
+                            "args": [
+                              {
+                                "op": "add",
+                                "args": [
+                                  {
+                                    "var": "x5"
+                                  },
+                                  {
+                                    "op": "sub",
+                                    "args": [
+                                      {
+                                        "var": "x5"
+                                      },
+                                      {
+                                        "param": "c0"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "var": "x5"
+                              }
+                            ]
+                          },
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "param": "c1"
+                              },
+                              {
+                                "var": "x5"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "op": "add",
+                    "args": [
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "var": "x5"
+                              },
+                              {
+                                "op": "sin",
+                                "args": [
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "var": "x5"
+                                              },
+                                              {
+                                                "var": "x5"
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "param": "c2"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "sinh",
+                                        "args": [
+                                          {
+                                            "var": "x5"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "param": "c3"
+                          }
+                        ]
+                      },
+                      {
+                        "param": "c4"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "const": 2
+              }
+            ]
+          },
+          {
+            "param": "c5"
+          }
+        ]
+      },
+      "parameters": {
+        "c0": {
+          "value": -7.141716255083116,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "pysr_native_constant_node"
+        },
+        "c1": {
+          "value": -3.5871367488089185,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "pysr_native_constant_node"
+        },
+        "c2": {
+          "value": -7.5695955269207404,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "pysr_native_constant_node"
+        },
+        "c3": {
+          "value": 3.9126330441693407,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "pysr_native_constant_node"
+        },
+        "c4": {
+          "value": 2.9309080544240684,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "pysr_native_constant_node"
+        },
+        "c5": {
+          "value": 0.21394368458250937,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "pysr_native_constant_node"
+        }
+      }
+    },
+    "n_nodes": 32,
+    "working_n_nodes": 32,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "((((sin((((froude_work + (froude_work - coef['c0'])) + froude_work) * (coef['c1'] - froude_work))) + (((froude_work - sin((((froude_work + froude_work) - coef['c2']) * sinh(froude_work)))) * coef['c3']) + coef['c4']))) ** (2)) + coef['c5'])",
+    "latex": "\\left(\\left(\\left(\\operatorname{sin}\\left(\\left(\\left(\\left(\\text{froude\\_work} + \\left(\\text{froude\\_work} - \\theta_{\\text{c0}}\\right)\\right) + \\text{froude\\_work}\\right) \\cdot \\left(\\theta_{\\text{c1}} - \\text{froude\\_work}\\right)\\right)\\right) + \\left(\\left(\\left(\\text{froude\\_work} - \\operatorname{sin}\\left(\\left(\\left(\\left(\\text{froude\\_work} + \\text{froude\\_work}\\right) - \\theta_{\\text{c2}}\\right) \\cdot \\operatorname{sinh}\\left(\\text{froude\\_work}\\right)\\right)\\right)\\right) \\cdot \\theta_{\\text{c3}}\\right) + \\theta_{\\text{c4}}\\right)\\right)\\right)^{2} + \\theta_{\\text{c5}}\\right)",
+    "public_text": "resistance [1] = ((((sin((((froude + (froude - coef['c0'])) + froude) * (coef['c1'] - froude))) + (((froude - sin((((froude + froude) - coef['c2']) * sinh(froude)))) * coef['c3']) + coef['c4']))) ** (2)) + coef['c5'])",
+    "public_latex": "\\text{resistance}\\;[\\text{1}] = \\left(\\left(\\left(\\operatorname{sin}\\left(\\left(\\left(\\left(\\text{froude} + \\left(\\text{froude} - \\theta_{\\text{c0}}\\right)\\right) + \\text{froude}\\right) \\cdot \\left(\\theta_{\\text{c1}} - \\text{froude}\\right)\\right)\\right) + \\left(\\left(\\left(\\text{froude} - \\operatorname{sin}\\left(\\left(\\left(\\left(\\text{froude} + \\text{froude}\\right) - \\theta_{\\text{c2}}\\right) \\cdot \\operatorname{sinh}\\left(\\text{froude}\\right)\\right)\\right)\\right) \\cdot \\theta_{\\text{c3}}\\right) + \\theta_{\\text{c4}}\\right)\\right)\\right)^{2} + \\theta_{\\text{c5}}\\right)",
+    "display_text": "(sin((froude_work + (froude_work - \u03b8[c0]) + froude_work) * (\u03b8[c1] - froude_work)) + ((froude_work - sin((froude_work + froude_work - \u03b8[c2]) * sinh(froude_work))) * \u03b8[c3] + \u03b8[c4])) ^ 2 + \u03b8[c5]",
+    "public_display_text": "resistance [1] = (sin((froude + (froude - \u03b8[c0]) + froude) * (\u03b8[c1] - froude)) + ((froude - sin((froude + froude - \u03b8[c2]) * sinh(froude))) * \u03b8[c3] + \u03b8[c4])) ^ 2 + \u03b8[c5]",
+    "parameters": [
+      {
+        "name": "c0",
+        "value": -7.141716255083116,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "pysr_native_constant_node",
+        "coordinate_role": null
+      },
+      {
+        "name": "c1",
+        "value": -3.5871367488089185,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "pysr_native_constant_node",
+        "coordinate_role": null
+      },
+      {
+        "name": "c2",
+        "value": -7.5695955269207404,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "pysr_native_constant_node",
+        "coordinate_role": null
+      },
+      {
+        "name": "c3",
+        "value": 3.9126330441693407,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "pysr_native_constant_node",
+        "coordinate_role": null
+      },
+      {
+        "name": "c4",
+        "value": 2.9309080544240684,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "pysr_native_constant_node",
+        "coordinate_role": null
+      },
+      {
+        "name": "c5",
+        "value": 0.21394368458250937,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "pysr_native_constant_node",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "strict_real",
+    "operators": [
+      "add",
+      "mul",
+      "pow_int",
+      "sin",
+      "sinh",
+      "sub"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names.",
+      "pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "parfam/42/0@native",
+    "method": "parfam",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": true,
+    "reason": null,
+    "variant": "native",
+    "subject": {
+      "relation_ref": "parfam/42/0@native",
+      "relation_state_sha256": "9470e84553509a2f60f8596f17d89c667306a70672721008a4fb6821c202b0f1",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "div",
+        "args": [
+          {
+            "poly": [
+              {
+                "coefficient": {
+                  "param": "c14"
+                },
+                "powers": []
+              },
+              {
+                "coefficient": {
+                  "param": "c15"
+                },
+                "powers": [
+                  [
+                    7,
+                    1
+                  ]
+                ]
+              },
+              {
+                "coefficient": {
+                  "param": "c16"
+                },
+                "powers": [
+                  [
+                    6,
+                    1
+                  ]
+                ]
+              },
+              {
+                "coefficient": {
+                  "param": "c17"
+                },
+                "powers": [
+                  [
+                    5,
+                    1
+                  ]
+                ]
+              },
+              {
+                "coefficient": {
+                  "param": "c18"
+                },
+                "powers": [
+                  [
+                    4,
+                    1
+                  ]
+                ]
+              },
+              {
+                "coefficient": {
+                  "param": "c19"
+                },
+                "powers": [
+                  [
+                    3,
+                    1
+                  ]
+                ]
+              },
+              {
+                "coefficient": {
+                  "param": "c20"
+                },
+                "powers": [
+                  [
+                    2,
+                    1
+                  ]
+                ]
+              },
+              {
+                "coefficient": {
+                  "param": "c21"
+                },
+                "powers": [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              },
+              {
+                "coefficient": {
+                  "param": "c22"
+                },
+                "powers": [
+                  [
+                    0,
+                    1
+                  ]
+                ]
+              }
+            ],
+            "args": [
+              {
+                "var": "x0"
+              },
+              {
+                "var": "x1"
+              },
+              {
+                "var": "x2"
+              },
+              {
+                "var": "x3"
+              },
+              {
+                "var": "x4"
+              },
+              {
+                "var": "x5"
+              },
+              {
+                "ref": "s1"
+              },
+              {
+                "ref": "s3"
+              }
+            ]
+          },
+          {
+            "poly": [
+              {
+                "coefficient": {
+                  "param": "c23"
+                },
+                "powers": []
+              },
+              {
+                "coefficient": {
+                  "param": "c24"
+                },
+                "powers": [
+                  [
+                    7,
+                    1
+                  ]
+                ]
+              },
+              {
+                "coefficient": {
+                  "param": "c25"
+                },
+                "powers": [
+                  [
+                    6,
+                    1
+                  ]
+                ]
+              },
+              {
+                "coefficient": {
+                  "param": "c26"
+                },
+                "powers": [
+                  [
+                    5,
+                    1
+                  ]
+                ]
+              },
+              {
+                "coefficient": {
+                  "param": "c27"
+                },
+                "powers": [
+                  [
+                    4,
+                    1
+                  ]
+                ]
+              },
+              {
+                "coefficient": {
+                  "param": "c28"
+                },
+                "powers": [
+                  [
+                    3,
+                    1
+                  ]
+                ]
+              },
+              {
+                "coefficient": {
+                  "param": "c29"
+                },
+                "powers": [
+                  [
+                    2,
+                    1
+                  ]
+                ]
+              },
+              {
+                "coefficient": {
+                  "param": "c30"
+                },
+                "powers": [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              },
+              {
+                "coefficient": {
+                  "param": "c31"
+                },
+                "powers": [
+                  [
+                    0,
+                    1
+                  ]
+                ]
+              }
+            ],
+            "args": [
+              {
+                "var": "x0"
+              },
+              {
+                "var": "x1"
+              },
+              {
+                "var": "x2"
+              },
+              {
+                "var": "x3"
+              },
+              {
+                "var": "x4"
+              },
+              {
+                "var": "x5"
+              },
+              {
+                "ref": "s1"
+              },
+              {
+                "ref": "s3"
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {
+        "c0": {
+          "value": 0.0029139494425493902,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c1": {
+          "value": -0.003620430690430107,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c2": {
+          "value": 0.12390678626501485,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c3": {
+          "value": -1.5878312717402867,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c4": {
+          "value": 0.12625506648878218,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c5": {
+          "value": -1.5569568327332948e-05,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c6": {
+          "value": -1.4079699638556205,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c7": {
+          "value": 6.566346006199999,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c8": {
+          "value": -2.9620746138112524,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c9": {
+          "value": 0.04732411407523346,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c10": {
+          "value": 0.04496516999601458,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c11": {
+          "value": -0.06550623314224711,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c12": {
+          "value": 0.3900065301292217,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c13": {
+          "value": -0.002849507135306504,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c14": {
+          "value": -0.37336967881979716,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c15": {
+          "value": -0.12790366366412362,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c16": {
+          "value": 0.016395540924370868,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c17": {
+          "value": 0.5798418059528039,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c18": {
+          "value": -0.09734253576121771,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c19": {
+          "value": 0.01151096841492081,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c20": {
+          "value": 0.0765639906884916,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c21": {
+          "value": 0.6393479161001345,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c22": {
+          "value": 0.00066990665328528,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block"
+        },
+        "c23": {
+          "value": 0.5160146876181716,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": 0.5160146876181716,
+          "normalization_group": "denominator_23",
+          "normalization_norm": 1.0
+        },
+        "c24": {
+          "value": -0.3409363456508652,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": -0.3409363456508652,
+          "normalization_group": "denominator_23",
+          "normalization_norm": 1.0
+        },
+        "c25": {
+          "value": -0.00020821126451951805,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": -0.00020821126451951805,
+          "normalization_group": "denominator_23",
+          "normalization_norm": 1.0
+        },
+        "c26": {
+          "value": -0.7768673595557385,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": -0.7768673595557385,
+          "normalization_group": "denominator_23",
+          "normalization_norm": 1.0
+        },
+        "c27": {
+          "value": 0.0115329078043383,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": 0.0115329078043383,
+          "normalization_group": "denominator_23",
+          "normalization_norm": 1.0
+        },
+        "c28": {
+          "value": 0.011649586802265131,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": 0.011649586802265131,
+          "normalization_group": "denominator_23",
+          "normalization_norm": 1.0
+        },
+        "c29": {
+          "value": -0.015806608614931664,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": -0.015806608614931664,
+          "normalization_group": "denominator_23",
+          "normalization_norm": 1.0
+        },
+        "c30": {
+          "value": 0.11597126441497202,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": 0.11597126441497202,
+          "normalization_group": "denominator_23",
+          "normalization_norm": 1.0
+        },
+        "c31": {
+          "value": -0.0006393751004572983,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": -0.0006393751004572983,
+          "normalization_group": "denominator_23",
+          "normalization_norm": 1.0
+        }
+      },
+      "arithmetic": "numpy_ieee",
+      "definitions": {
+        "s0": {
+          "poly": [
+            {
+              "coefficient": {
+                "param": "c0"
+              },
+              "powers": []
+            },
+            {
+              "coefficient": {
+                "param": "c1"
+              },
+              "powers": [
+                [
+                  5,
+                  1
+                ]
+              ]
+            },
+            {
+              "coefficient": {
+                "param": "c2"
+              },
+              "powers": [
+                [
+                  4,
+                  1
+                ]
+              ]
+            },
+            {
+              "coefficient": {
+                "param": "c3"
+              },
+              "powers": [
+                [
+                  3,
+                  1
+                ]
+              ]
+            },
+            {
+              "coefficient": {
+                "param": "c4"
+              },
+              "powers": [
+                [
+                  2,
+                  1
+                ]
+              ]
+            },
+            {
+              "coefficient": {
+                "param": "c5"
+              },
+              "powers": [
+                [
+                  1,
+                  1
+                ]
+              ]
+            },
+            {
+              "coefficient": {
+                "param": "c6"
+              },
+              "powers": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            }
+          ],
+          "args": [
+            {
+              "var": "x0"
+            },
+            {
+              "var": "x1"
+            },
+            {
+              "var": "x2"
+            },
+            {
+              "var": "x3"
+            },
+            {
+              "var": "x4"
+            },
+            {
+              "var": "x5"
+            }
+          ]
+        },
+        "s1": {
+          "op": "cos",
+          "args": [
+            {
+              "ref": "s0"
+            }
+          ]
+        },
+        "s2": {
+          "poly": [
+            {
+              "coefficient": {
+                "param": "c7"
+              },
+              "powers": []
+            },
+            {
+              "coefficient": {
+                "param": "c8"
+              },
+              "powers": [
+                [
+                  5,
+                  1
+                ]
+              ]
+            },
+            {
+              "coefficient": {
+                "param": "c9"
+              },
+              "powers": [
+                [
+                  4,
+                  1
+                ]
+              ]
+            },
+            {
+              "coefficient": {
+                "param": "c10"
+              },
+              "powers": [
+                [
+                  3,
+                  1
+                ]
+              ]
+            },
+            {
+              "coefficient": {
+                "param": "c11"
+              },
+              "powers": [
+                [
+                  2,
+                  1
+                ]
+              ]
+            },
+            {
+              "coefficient": {
+                "param": "c12"
+              },
+              "powers": [
+                [
+                  1,
+                  1
+                ]
+              ]
+            },
+            {
+              "coefficient": {
+                "param": "c13"
+              },
+              "powers": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            }
+          ],
+          "args": [
+            {
+              "var": "x0"
+            },
+            {
+              "var": "x1"
+            },
+            {
+              "var": "x2"
+            },
+            {
+              "var": "x3"
+            },
+            {
+              "var": "x4"
+            },
+            {
+              "var": "x5"
+            }
+          ]
+        },
+        "s3": {
+          "op": "cos",
+          "args": [
+            {
+              "ref": "s2"
+            }
+          ]
+        }
+      }
+    },
+    "n_nodes": 167,
+    "working_n_nodes": 167,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "(((((((((coef['c14'] + (coef['c15'] * cos(((((((coef['c7'] + (coef['c8'] * froude_work)) + (coef['c9'] * length_beam_ratio_work)) + (coef['c10'] * beam_draught_ratio_work)) + (coef['c11'] * length_displacement_ratio_work)) + (coef['c12'] * prismatic_coefficient_work)) + (coef['c13'] * buoyancy_position_work))))) + (coef['c16'] * cos(((((((coef['c0'] + (coef['c1'] * froude_work)) + (coef['c2'] * length_beam_ratio_work)) + (coef['c3'] * beam_draught_ratio_work)) + (coef['c4'] * length_displacement_ratio_work)) + (coef['c5'] * prismatic_coefficient_work)) + (coef['c6'] * buoyancy_position_work))))) + (coef['c17'] * froude_work)) + (coef['c18'] * length_beam_ratio_work)) + (coef['c19'] * beam_draught_ratio_work)) + (coef['c20'] * length_displacement_ratio_work)) + (coef['c21'] * prismatic_coefficient_work)) + (coef['c22'] * buoyancy_position_work)) / ((((((((coef['c23'] + (coef['c24'] * cos(((((((coef['c7'] + (coef['c8'] * froude_work)) + (coef['c9'] * length_beam_ratio_work)) + (coef['c10'] * beam_draught_ratio_work)) + (coef['c11'] * length_displacement_ratio_work)) + (coef['c12'] * prismatic_coefficient_work)) + (coef['c13'] * buoyancy_position_work))))) + (coef['c25'] * cos(((((((coef['c0'] + (coef['c1'] * froude_work)) + (coef['c2'] * length_beam_ratio_work)) + (coef['c3'] * beam_draught_ratio_work)) + (coef['c4'] * length_displacement_ratio_work)) + (coef['c5'] * prismatic_coefficient_work)) + (coef['c6'] * buoyancy_position_work))))) + (coef['c26'] * froude_work)) + (coef['c27'] * length_beam_ratio_work)) + (coef['c28'] * beam_draught_ratio_work)) + (coef['c29'] * length_displacement_ratio_work)) + (coef['c30'] * prismatic_coefficient_work)) + (coef['c31'] * buoyancy_position_work)))",
+    "latex": "\\frac{\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\theta_{\\text{c14}} + \\left(\\theta_{\\text{c15}} \\cdot \\operatorname{cos}\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\theta_{\\text{c7}} + \\left(\\theta_{\\text{c8}} \\cdot \\text{froude\\_work}\\right)\\right) + \\left(\\theta_{\\text{c9}} \\cdot \\text{length\\_beam\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c10}} \\cdot \\text{beam\\_draught\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c11}} \\cdot \\text{length\\_displacement\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c12}} \\cdot \\text{prismatic\\_coefficient\\_work}\\right)\\right) + \\left(\\theta_{\\text{c13}} \\cdot \\text{buoyancy\\_position\\_work}\\right)\\right)\\right)\\right)\\right) + \\left(\\theta_{\\text{c16}} \\cdot \\operatorname{cos}\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\theta_{\\text{c0}} + \\left(\\theta_{\\text{c1}} \\cdot \\text{froude\\_work}\\right)\\right) + \\left(\\theta_{\\text{c2}} \\cdot \\text{length\\_beam\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c3}} \\cdot \\text{beam\\_draught\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c4}} \\cdot \\text{length\\_displacement\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c5}} \\cdot \\text{prismatic\\_coefficient\\_work}\\right)\\right) + \\left(\\theta_{\\text{c6}} \\cdot \\text{buoyancy\\_position\\_work}\\right)\\right)\\right)\\right)\\right) + \\left(\\theta_{\\text{c17}} \\cdot \\text{froude\\_work}\\right)\\right) + \\left(\\theta_{\\text{c18}} \\cdot \\text{length\\_beam\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c19}} \\cdot \\text{beam\\_draught\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c20}} \\cdot \\text{length\\_displacement\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c21}} \\cdot \\text{prismatic\\_coefficient\\_work}\\right)\\right) + \\left(\\theta_{\\text{c22}} \\cdot \\text{buoyancy\\_position\\_work}\\right)\\right)}{\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\theta_{\\text{c23}} + \\left(\\theta_{\\text{c24}} \\cdot \\operatorname{cos}\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\theta_{\\text{c7}} + \\left(\\theta_{\\text{c8}} \\cdot \\text{froude\\_work}\\right)\\right) + \\left(\\theta_{\\text{c9}} \\cdot \\text{length\\_beam\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c10}} \\cdot \\text{beam\\_draught\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c11}} \\cdot \\text{length\\_displacement\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c12}} \\cdot \\text{prismatic\\_coefficient\\_work}\\right)\\right) + \\left(\\theta_{\\text{c13}} \\cdot \\text{buoyancy\\_position\\_work}\\right)\\right)\\right)\\right)\\right) + \\left(\\theta_{\\text{c25}} \\cdot \\operatorname{cos}\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\theta_{\\text{c0}} + \\left(\\theta_{\\text{c1}} \\cdot \\text{froude\\_work}\\right)\\right) + \\left(\\theta_{\\text{c2}} \\cdot \\text{length\\_beam\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c3}} \\cdot \\text{beam\\_draught\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c4}} \\cdot \\text{length\\_displacement\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c5}} \\cdot \\text{prismatic\\_coefficient\\_work}\\right)\\right) + \\left(\\theta_{\\text{c6}} \\cdot \\text{buoyancy\\_position\\_work}\\right)\\right)\\right)\\right)\\right) + \\left(\\theta_{\\text{c26}} \\cdot \\text{froude\\_work}\\right)\\right) + \\left(\\theta_{\\text{c27}} \\cdot \\text{length\\_beam\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c28}} \\cdot \\text{beam\\_draught\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c29}} \\cdot \\text{length\\_displacement\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c30}} \\cdot \\text{prismatic\\_coefficient\\_work}\\right)\\right) + \\left(\\theta_{\\text{c31}} \\cdot \\text{buoyancy\\_position\\_work}\\right)\\right)}",
+    "public_text": "resistance [1] = (((((((((coef['c14'] + (coef['c15'] * cos(((((((coef['c7'] + (coef['c8'] * froude)) + (coef['c9'] * length_beam_ratio)) + (coef['c10'] * beam_draught_ratio)) + (coef['c11'] * length_displacement_ratio)) + (coef['c12'] * prismatic_coefficient)) + (coef['c13'] * buoyancy_position))))) + (coef['c16'] * cos(((((((coef['c0'] + (coef['c1'] * froude)) + (coef['c2'] * length_beam_ratio)) + (coef['c3'] * beam_draught_ratio)) + (coef['c4'] * length_displacement_ratio)) + (coef['c5'] * prismatic_coefficient)) + (coef['c6'] * buoyancy_position))))) + (coef['c17'] * froude)) + (coef['c18'] * length_beam_ratio)) + (coef['c19'] * beam_draught_ratio)) + (coef['c20'] * length_displacement_ratio)) + (coef['c21'] * prismatic_coefficient)) + (coef['c22'] * buoyancy_position)) / ((((((((coef['c23'] + (coef['c24'] * cos(((((((coef['c7'] + (coef['c8'] * froude)) + (coef['c9'] * length_beam_ratio)) + (coef['c10'] * beam_draught_ratio)) + (coef['c11'] * length_displacement_ratio)) + (coef['c12'] * prismatic_coefficient)) + (coef['c13'] * buoyancy_position))))) + (coef['c25'] * cos(((((((coef['c0'] + (coef['c1'] * froude)) + (coef['c2'] * length_beam_ratio)) + (coef['c3'] * beam_draught_ratio)) + (coef['c4'] * length_displacement_ratio)) + (coef['c5'] * prismatic_coefficient)) + (coef['c6'] * buoyancy_position))))) + (coef['c26'] * froude)) + (coef['c27'] * length_beam_ratio)) + (coef['c28'] * beam_draught_ratio)) + (coef['c29'] * length_displacement_ratio)) + (coef['c30'] * prismatic_coefficient)) + (coef['c31'] * buoyancy_position)))",
+    "public_latex": "\\text{resistance}\\;[\\text{1}] = \\frac{\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\theta_{\\text{c14}} + \\left(\\theta_{\\text{c15}} \\cdot \\operatorname{cos}\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\theta_{\\text{c7}} + \\left(\\theta_{\\text{c8}} \\cdot \\text{froude}\\right)\\right) + \\left(\\theta_{\\text{c9}} \\cdot \\text{length\\_beam\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c10}} \\cdot \\text{beam\\_draught\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c11}} \\cdot \\text{length\\_displacement\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c12}} \\cdot \\text{prismatic\\_coefficient}\\right)\\right) + \\left(\\theta_{\\text{c13}} \\cdot \\text{buoyancy\\_position}\\right)\\right)\\right)\\right)\\right) + \\left(\\theta_{\\text{c16}} \\cdot \\operatorname{cos}\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\theta_{\\text{c0}} + \\left(\\theta_{\\text{c1}} \\cdot \\text{froude}\\right)\\right) + \\left(\\theta_{\\text{c2}} \\cdot \\text{length\\_beam\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c3}} \\cdot \\text{beam\\_draught\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c4}} \\cdot \\text{length\\_displacement\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c5}} \\cdot \\text{prismatic\\_coefficient}\\right)\\right) + \\left(\\theta_{\\text{c6}} \\cdot \\text{buoyancy\\_position}\\right)\\right)\\right)\\right)\\right) + \\left(\\theta_{\\text{c17}} \\cdot \\text{froude}\\right)\\right) + \\left(\\theta_{\\text{c18}} \\cdot \\text{length\\_beam\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c19}} \\cdot \\text{beam\\_draught\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c20}} \\cdot \\text{length\\_displacement\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c21}} \\cdot \\text{prismatic\\_coefficient}\\right)\\right) + \\left(\\theta_{\\text{c22}} \\cdot \\text{buoyancy\\_position}\\right)\\right)}{\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\theta_{\\text{c23}} + \\left(\\theta_{\\text{c24}} \\cdot \\operatorname{cos}\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\theta_{\\text{c7}} + \\left(\\theta_{\\text{c8}} \\cdot \\text{froude}\\right)\\right) + \\left(\\theta_{\\text{c9}} \\cdot \\text{length\\_beam\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c10}} \\cdot \\text{beam\\_draught\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c11}} \\cdot \\text{length\\_displacement\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c12}} \\cdot \\text{prismatic\\_coefficient}\\right)\\right) + \\left(\\theta_{\\text{c13}} \\cdot \\text{buoyancy\\_position}\\right)\\right)\\right)\\right)\\right) + \\left(\\theta_{\\text{c25}} \\cdot \\operatorname{cos}\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\theta_{\\text{c0}} + \\left(\\theta_{\\text{c1}} \\cdot \\text{froude}\\right)\\right) + \\left(\\theta_{\\text{c2}} \\cdot \\text{length\\_beam\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c3}} \\cdot \\text{beam\\_draught\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c4}} \\cdot \\text{length\\_displacement\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c5}} \\cdot \\text{prismatic\\_coefficient}\\right)\\right) + \\left(\\theta_{\\text{c6}} \\cdot \\text{buoyancy\\_position}\\right)\\right)\\right)\\right)\\right) + \\left(\\theta_{\\text{c26}} \\cdot \\text{froude}\\right)\\right) + \\left(\\theta_{\\text{c27}} \\cdot \\text{length\\_beam\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c28}} \\cdot \\text{beam\\_draught\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c29}} \\cdot \\text{length\\_displacement\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c30}} \\cdot \\text{prismatic\\_coefficient}\\right)\\right) + \\left(\\theta_{\\text{c31}} \\cdot \\text{buoyancy\\_position}\\right)\\right)}",
+    "display_text": "(\u03b8[c14] + \u03b8[c15] * cos(\u03b8[c7] + \u03b8[c8] * froude_work + \u03b8[c9] * length_beam_ratio_work + \u03b8[c10] * beam_draught_ratio_work + \u03b8[c11] * length_displacement_ratio_work + \u03b8[c12] * prismatic_coefficient_work + \u03b8[c13] * buoyancy_position_work) + \u03b8[c16] * cos(\u03b8[c0] + \u03b8[c1] * froude_work + \u03b8[c2] * length_beam_ratio_work + \u03b8[c3] * beam_draught_ratio_work + \u03b8[c4] * length_displacement_ratio_work + \u03b8[c5] * prismatic_coefficient_work + \u03b8[c6] * buoyancy_position_work) + \u03b8[c17] * froude_work + \u03b8[c18] * length_beam_ratio_work + \u03b8[c19] * beam_draught_ratio_work + \u03b8[c20] * length_displacement_ratio_work + \u03b8[c21] * prismatic_coefficient_work + \u03b8[c22] * buoyancy_position_work) / (\u03b8[c23] + \u03b8[c24] * cos(\u03b8[c7] + \u03b8[c8] * froude_work + \u03b8[c9] * length_beam_ratio_work + \u03b8[c10] * beam_draught_ratio_work + \u03b8[c11] * length_displacement_ratio_work + \u03b8[c12] * prismatic_coefficient_work + \u03b8[c13] * buoyancy_position_work) + \u03b8[c25] * cos(\u03b8[c0] + \u03b8[c1] * froude_work + \u03b8[c2] * length_beam_ratio_work + \u03b8[c3] * beam_draught_ratio_work + \u03b8[c4] * length_displacement_ratio_work + \u03b8[c5] * prismatic_coefficient_work + \u03b8[c6] * buoyancy_position_work) + \u03b8[c26] * froude_work + \u03b8[c27] * length_beam_ratio_work + \u03b8[c28] * beam_draught_ratio_work + \u03b8[c29] * length_displacement_ratio_work + \u03b8[c30] * prismatic_coefficient_work + \u03b8[c31] * buoyancy_position_work)",
+    "public_display_text": "resistance [1] = (\u03b8[c14] + \u03b8[c15] * cos(\u03b8[c7] + \u03b8[c8] * froude + \u03b8[c9] * length_beam_ratio + \u03b8[c10] * beam_draught_ratio + \u03b8[c11] * length_displacement_ratio + \u03b8[c12] * prismatic_coefficient + \u03b8[c13] * buoyancy_position) + \u03b8[c16] * cos(\u03b8[c0] + \u03b8[c1] * froude + \u03b8[c2] * length_beam_ratio + \u03b8[c3] * beam_draught_ratio + \u03b8[c4] * length_displacement_ratio + \u03b8[c5] * prismatic_coefficient + \u03b8[c6] * buoyancy_position) + \u03b8[c17] * froude + \u03b8[c18] * length_beam_ratio + \u03b8[c19] * beam_draught_ratio + \u03b8[c20] * length_displacement_ratio + \u03b8[c21] * prismatic_coefficient + \u03b8[c22] * buoyancy_position) / (\u03b8[c23] + \u03b8[c24] * cos(\u03b8[c7] + \u03b8[c8] * froude + \u03b8[c9] * length_beam_ratio + \u03b8[c10] * beam_draught_ratio + \u03b8[c11] * length_displacement_ratio + \u03b8[c12] * prismatic_coefficient + \u03b8[c13] * buoyancy_position) + \u03b8[c25] * cos(\u03b8[c0] + \u03b8[c1] * froude + \u03b8[c2] * length_beam_ratio + \u03b8[c3] * beam_draught_ratio + \u03b8[c4] * length_displacement_ratio + \u03b8[c5] * prismatic_coefficient + \u03b8[c6] * buoyancy_position) + \u03b8[c26] * froude + \u03b8[c27] * length_beam_ratio + \u03b8[c28] * beam_draught_ratio + \u03b8[c29] * length_displacement_ratio + \u03b8[c30] * prismatic_coefficient + \u03b8[c31] * buoyancy_position)",
+    "parameters": [
+      {
+        "name": "c0",
+        "value": 0.0029139494425493902,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c1",
+        "value": -0.003620430690430107,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c2",
+        "value": 0.12390678626501485,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c3",
+        "value": -1.5878312717402867,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c4",
+        "value": 0.12625506648878218,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c5",
+        "value": -1.5569568327332948e-05,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c6",
+        "value": -1.4079699638556205,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c7",
+        "value": 6.566346006199999,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c8",
+        "value": -2.9620746138112524,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c9",
+        "value": 0.04732411407523346,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c10",
+        "value": 0.04496516999601458,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c11",
+        "value": -0.06550623314224711,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c12",
+        "value": 0.3900065301292217,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c13",
+        "value": -0.002849507135306504,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c14",
+        "value": -0.37336967881979716,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c15",
+        "value": -0.12790366366412362,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c16",
+        "value": 0.016395540924370868,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c17",
+        "value": 0.5798418059528039,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c18",
+        "value": -0.09734253576121771,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c19",
+        "value": 0.01151096841492081,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c20",
+        "value": 0.0765639906884916,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c21",
+        "value": 0.6393479161001345,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c22",
+        "value": 0.00066990665328528,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "c23",
+        "value": 0.5160146876181716,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      },
+      {
+        "name": "c24",
+        "value": -0.3409363456508652,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      },
+      {
+        "name": "c25",
+        "value": -0.00020821126451951805,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      },
+      {
+        "name": "c26",
+        "value": -0.7768673595557385,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      },
+      {
+        "name": "c27",
+        "value": 0.0115329078043383,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      },
+      {
+        "name": "c28",
+        "value": 0.011649586802265131,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      },
+      {
+        "name": "c29",
+        "value": -0.015806608614931664,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      },
+      {
+        "name": "c30",
+        "value": 0.11597126441497202,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      },
+      {
+        "name": "c31",
+        "value": -0.0006393751004572983,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "numpy_ieee",
+    "operators": [
+      "add",
+      "cos",
+      "div",
+      "mul"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "torchsisso/42/2@native",
+    "method": "torchsisso",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": true,
+    "reason": null,
+    "variant": "native",
+    "subject": {
+      "relation_ref": "torchsisso/42/2@native",
+      "relation_state_sha256": "0b91ace0c99a17b86a40573e77fa42227a0e7fcf629159130ba2ddc1a029b81b",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "add",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "intercept"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "c0"
+                      },
+                      {
+                        "op": "pow_int",
+                        "args": [
+                          {
+                            "var": "x5"
+                          },
+                          {
+                            "const": 4
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "param": "c1"
+                  },
+                  {
+                    "op": "cosh",
+                    "args": [
+                      {
+                        "var": "x5"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "mul",
+            "args": [
+              {
+                "param": "c2"
+              },
+              {
+                "op": "pow_int",
+                "args": [
+                  {
+                    "var": "x5"
+                  },
+                  {
+                    "const": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {
+        "intercept": {
+          "value": -9479842.032773923,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_regression_solve"
+        },
+        "c0": {
+          "value": -396983.28240661015,
+          "trainable": true,
+          "origin": "native_regression_solve",
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null
+        },
+        "c1": {
+          "value": 9479840.231441721,
+          "trainable": true,
+          "origin": "native_regression_solve",
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null
+        },
+        "c2": {
+          "value": -4739790.111331243,
+          "trainable": true,
+          "origin": "native_regression_solve",
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null
+        }
+      },
+      "arithmetic": "numpy_ieee"
+    },
+    "n_nodes": 18,
+    "working_n_nodes": 18,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "(((coef['intercept'] + (coef['c0'] * ((froude_work) ** (4)))) + (coef['c1'] * cosh(froude_work))) + (coef['c2'] * ((froude_work) ** (2))))",
+    "latex": "\\left(\\left(\\left(\\theta_{\\text{intercept}} + \\left(\\theta_{\\text{c0}} \\cdot \\left(\\text{froude\\_work}\\right)^{4}\\right)\\right) + \\left(\\theta_{\\text{c1}} \\cdot \\operatorname{cosh}\\left(\\text{froude\\_work}\\right)\\right)\\right) + \\left(\\theta_{\\text{c2}} \\cdot \\left(\\text{froude\\_work}\\right)^{2}\\right)\\right)",
+    "public_text": "resistance [1] = (((coef['intercept'] + (coef['c0'] * ((froude) ** (4)))) + (coef['c1'] * cosh(froude))) + (coef['c2'] * ((froude) ** (2))))",
+    "public_latex": "\\text{resistance}\\;[\\text{1}] = \\left(\\left(\\left(\\theta_{\\text{intercept}} + \\left(\\theta_{\\text{c0}} \\cdot \\left(\\text{froude}\\right)^{4}\\right)\\right) + \\left(\\theta_{\\text{c1}} \\cdot \\operatorname{cosh}\\left(\\text{froude}\\right)\\right)\\right) + \\left(\\theta_{\\text{c2}} \\cdot \\left(\\text{froude}\\right)^{2}\\right)\\right)",
+    "display_text": "\u03b8[intercept] + \u03b8[c0] * froude_work ^ 4 + \u03b8[c1] * cosh(froude_work) + \u03b8[c2] * froude_work ^ 2",
+    "public_display_text": "resistance [1] = \u03b8[intercept] + \u03b8[c0] * froude ^ 4 + \u03b8[c1] * cosh(froude) + \u03b8[c2] * froude ^ 2",
+    "parameters": [
+      {
+        "name": "intercept",
+        "value": -9479842.032773923,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_regression_solve",
+        "coordinate_role": null
+      },
+      {
+        "name": "c0",
+        "value": -396983.28240661015,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_regression_solve",
+        "coordinate_role": null
+      },
+      {
+        "name": "c1",
+        "value": 9479840.231441721,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_regression_solve",
+        "coordinate_role": null
+      },
+      {
+        "name": "c2",
+        "value": -4739790.111331243,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_regression_solve",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "numpy_ieee",
+    "operators": [
+      "add",
+      "cosh",
+      "mul",
+      "pow_int"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names.",
+      "pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "physo/42/22@native",
+    "method": "physo",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": true,
+    "reason": null,
+    "variant": "native",
+    "subject": {
+      "relation_ref": "physo/42/22@native",
+      "relation_state_sha256": "52c14475d840c2c279b660c14a7ddea0d6c65fdf434a3bb4ed232e42de765799",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 1,
+      "ast": {
+        "op": "mul",
+        "args": [
+          {
+            "op": "pow_int",
+            "args": [
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "op": "add",
+                            "args": [
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "add",
+                                        "args": [
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "var": "x5"
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "cosh",
+                                                    "args": [
+                                                      {
+                                                        "param": "c0"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "param": "c0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "param": "c0"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "param": "c0"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "var": "x5"
+                                  }
+                                ]
+                              },
+                              {
+                                "var": "x5"
+                              }
+                            ]
+                          },
+                          {
+                            "param": "c1"
+                          }
+                        ]
+                      },
+                      {
+                        "param": "c0"
+                      }
+                    ]
+                  },
+                  {
+                    "var": "x1"
+                  }
+                ]
+              },
+              {
+                "const": 3
+              }
+            ]
+          },
+          {
+            "var": "x5"
+          }
+        ]
+      },
+      "parameters": {
+        "c0": {
+          "value": 1.332418017036151,
+          "trainable": true,
+          "origin": "native_free_constant_slot",
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1"
+        },
+        "c1": {
+          "value": -1.4894109681669716,
+          "trainable": true,
+          "origin": "native_free_constant_slot",
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1"
+        }
+      }
+    },
+    "n_nodes": 24,
+    "working_n_nodes": 24,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "(((((((((((froude_work + (cosh(coef['c0']) + coef['c0'])) + coef['c0']) * coef['c0']) * froude_work) + froude_work) + coef['c1']) * coef['c0']) / prismatic_coefficient_work)) ** (3)) * froude_work)",
+    "latex": "\\left(\\left(\\frac{\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\text{froude\\_work} + \\left(\\operatorname{cosh}\\left(\\theta_{\\text{c0}}\\right) + \\theta_{\\text{c0}}\\right)\\right) + \\theta_{\\text{c0}}\\right) \\cdot \\theta_{\\text{c0}}\\right) \\cdot \\text{froude\\_work}\\right) + \\text{froude\\_work}\\right) + \\theta_{\\text{c1}}\\right) \\cdot \\theta_{\\text{c0}}\\right)}{\\text{prismatic\\_coefficient\\_work}}\\right)^{3} \\cdot \\text{froude\\_work}\\right)",
+    "public_text": "resistance [1] = (((((((((((froude + (cosh(coef['c0']) + coef['c0'])) + coef['c0']) * coef['c0']) * froude) + froude) + coef['c1']) * coef['c0']) / prismatic_coefficient)) ** (3)) * froude)",
+    "public_latex": "\\text{resistance}\\;[\\text{1}] = \\left(\\left(\\frac{\\left(\\left(\\left(\\left(\\left(\\left(\\left(\\text{froude} + \\left(\\operatorname{cosh}\\left(\\theta_{\\text{c0}}\\right) + \\theta_{\\text{c0}}\\right)\\right) + \\theta_{\\text{c0}}\\right) \\cdot \\theta_{\\text{c0}}\\right) \\cdot \\text{froude}\\right) + \\text{froude}\\right) + \\theta_{\\text{c1}}\\right) \\cdot \\theta_{\\text{c0}}\\right)}{\\text{prismatic\\_coefficient}}\\right)^{3} \\cdot \\text{froude}\\right)",
+    "display_text": "(((froude_work + (cosh(\u03b8[c0]) + \u03b8[c0]) + \u03b8[c0]) * \u03b8[c0] * froude_work + froude_work + \u03b8[c1]) * \u03b8[c0] / prismatic_coefficient_work) ^ 3 * froude_work",
+    "public_display_text": "resistance [1] = (((froude + (cosh(\u03b8[c0]) + \u03b8[c0]) + \u03b8[c0]) * \u03b8[c0] * froude + froude + \u03b8[c1]) * \u03b8[c0] / prismatic_coefficient) ^ 3 * froude",
+    "parameters": [
+      {
+        "name": "c0",
+        "value": 1.332418017036151,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_free_constant_slot",
+        "coordinate_role": null
+      },
+      {
+        "name": "c1",
+        "value": -1.4894109681669716,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_free_constant_slot",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "strict_real",
+    "operators": [
+      "add",
+      "cosh",
+      "div",
+      "mul",
+      "pow_int"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names.",
+      "pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "e2e/42/7@native",
+    "method": "e2e",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": true,
+    "reason": null,
+    "variant": "native",
+    "subject": {
+      "relation_ref": "e2e/42/7@native",
+      "relation_state_sha256": "1782989114c44f1e10005e2c70391ed6dd9bb252390c756ba553473f4e5b1efe",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "mul",
+        "args": [
+          {
+            "op": "sub",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "add",
+                    "args": [
+                      {
+                        "param": "c4"
+                      },
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "param": "c6"
+                          },
+                          {
+                            "op": "pow_int",
+                            "args": [
+                              {
+                                "op": "div",
+                                "args": [
+                                  {
+                                    "op": "sub",
+                                    "args": [
+                                      {
+                                        "var": "x0"
+                                      },
+                                      {
+                                        "param": "x0_mean"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "param": "x0_scale"
+                                  }
+                                ]
+                              },
+                              {
+                                "const": 2
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "op": "add",
+                    "args": [
+                      {
+                        "param": "c10"
+                      },
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "param": "c12"
+                          },
+                          {
+                            "op": "pow_int",
+                            "args": [
+                              {
+                                "op": "sub",
+                                "args": [
+                                  {
+                                    "op": "add",
+                                    "args": [
+                                      {
+                                        "param": "c16"
+                                      },
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          {
+                                            "param": "c18"
+                                          },
+                                          {
+                                            "op": "div",
+                                            "args": [
+                                              {
+                                                "op": "sub",
+                                                "args": [
+                                                  {
+                                                    "var": "x3"
+                                                  },
+                                                  {
+                                                    "param": "x3_mean"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "param": "x3_scale"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "add",
+                                    "args": [
+                                      {
+                                        "op": "add",
+                                        "args": [
+                                          {
+                                            "param": "c22"
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "param": "c24"
+                                              },
+                                              {
+                                                "op": "pow_int",
+                                                "args": [
+                                                  {
+                                                    "op": "sub",
+                                                    "args": [
+                                                      {
+                                                        "op": "add",
+                                                        "args": [
+                                                          {
+                                                            "op": "add",
+                                                            "args": [
+                                                              {
+                                                                "param": "c29"
+                                                              },
+                                                              {
+                                                                "op": "mul",
+                                                                "args": [
+                                                                  {
+                                                                    "param": "c31"
+                                                                  },
+                                                                  {
+                                                                    "op": "div",
+                                                                    "args": [
+                                                                      {
+                                                                        "op": "sub",
+                                                                        "args": [
+                                                                          {
+                                                                            "var": "x0"
+                                                                          },
+                                                                          {
+                                                                            "param": "x0_mean"
+                                                                          }
+                                                                        ]
+                                                                      },
+                                                                      {
+                                                                        "param": "x0_scale"
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "op": "add",
+                                                            "args": [
+                                                              {
+                                                                "param": "c34"
+                                                              },
+                                                              {
+                                                                "op": "mul",
+                                                                "args": [
+                                                                  {
+                                                                    "param": "c36"
+                                                                  },
+                                                                  {
+                                                                    "op": "div",
+                                                                    "args": [
+                                                                      {
+                                                                        "op": "sub",
+                                                                        "args": [
+                                                                          {
+                                                                            "var": "x5"
+                                                                          },
+                                                                          {
+                                                                            "param": "x5_mean"
+                                                                          }
+                                                                        ]
+                                                                      },
+                                                                      {
+                                                                        "param": "x5_scale"
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "op": "add",
+                                                        "args": [
+                                                          {
+                                                            "param": "c39"
+                                                          },
+                                                          {
+                                                            "op": "mul",
+                                                            "args": [
+                                                              {
+                                                                "param": "c41"
+                                                              },
+                                                              {
+                                                                "op": "div",
+                                                                "args": [
+                                                                  {
+                                                                    "op": "sub",
+                                                                    "args": [
+                                                                      {
+                                                                        "var": "x5"
+                                                                      },
+                                                                      {
+                                                                        "param": "x5_mean"
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  {
+                                                                    "param": "x5_scale"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "const": 3
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "add",
+                                        "args": [
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "param": "c45"
+                                              },
+                                              {
+                                                "op": "mul",
+                                                "args": [
+                                                  {
+                                                    "param": "c47"
+                                                  },
+                                                  {
+                                                    "op": "div",
+                                                    "args": [
+                                                      {
+                                                        "op": "sub",
+                                                        "args": [
+                                                          {
+                                                            "var": "x2"
+                                                          },
+                                                          {
+                                                            "param": "x2_mean"
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "param": "x2_scale"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "param": "c51"
+                                                  },
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      {
+                                                        "param": "c53"
+                                                      },
+                                                      {
+                                                        "op": "div",
+                                                        "args": [
+                                                          {
+                                                            "op": "sub",
+                                                            "args": [
+                                                              {
+                                                                "var": "x3"
+                                                              },
+                                                              {
+                                                                "param": "x3_mean"
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "param": "x3_scale"
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "param": "c56"
+                                                  },
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      {
+                                                        "param": "c58"
+                                                      },
+                                                      {
+                                                        "op": "div",
+                                                        "args": [
+                                                          {
+                                                            "op": "sub",
+                                                            "args": [
+                                                              {
+                                                                "var": "x4"
+                                                              },
+                                                              {
+                                                                "param": "x4_mean"
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "param": "x4_scale"
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "const": 2
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "c61"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "c63"
+                      },
+                      {
+                        "op": "div",
+                        "args": [
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "var": "x1"
+                              },
+                              {
+                                "param": "x1_mean"
+                              }
+                            ]
+                          },
+                          {
+                            "param": "x1_scale"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "add",
+            "args": [
+              {
+                "param": "c66"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "param": "c68"
+                  },
+                  {
+                    "op": "sin",
+                    "args": [
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "param": "c71"
+                          },
+                          {
+                            "op": "mul",
+                            "args": [
+                              {
+                                "op": "div",
+                                "args": [
+                                  {
+                                    "op": "sub",
+                                    "args": [
+                                      {
+                                        "var": "x5"
+                                      },
+                                      {
+                                        "param": "x5_mean"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "param": "x5_scale"
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "div",
+                                "args": [
+                                  {
+                                    "const": 1
+                                  },
+                                  {
+                                    "op": "div",
+                                    "args": [
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "var": "x0"
+                                          },
+                                          {
+                                            "param": "x0_mean"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "param": "x0_scale"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {
+        "c4": {
+          "value": -33.617267561123846,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c6": {
+          "value": -29.301204821203438,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "x0_mean": {
+          "value": -2.176923076923078,
+          "trainable": false,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "train_normalization"
+        },
+        "x0_scale": {
+          "value": 1.5257552208931948,
+          "trainable": false,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "train_normalization"
+        },
+        "c10": {
+          "value": -42.97376756120749,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c12": {
+          "value": -0.03630471095527468,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c16": {
+          "value": -2.403978707878902,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c18": {
+          "value": 55.55152565469002,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "x3_mean": {
+          "value": 4.0269230769230795,
+          "trainable": false,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "train_normalization"
+        },
+        "x3_scale": {
+          "value": 0.6445437815932537,
+          "trainable": false,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "train_normalization"
+        },
+        "c22": {
+          "value": 2.0109787062559343,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c24": {
+          "value": 0.3306584552843378,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c29": {
+          "value": 0.8267177600485796,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c31": {
+          "value": 0.03521426091660975,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c34": {
+          "value": 4.436717759945225,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c36": {
+          "value": 9.72820783181574,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "x5_mean": {
+          "value": 0.2874999999999999,
+          "trainable": false,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "train_normalization"
+        },
+        "x5_scale": {
+          "value": 0.1007782218537319,
+          "trainable": false,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "train_normalization"
+        },
+        "c39": {
+          "value": -0.8770177598009782,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c41": {
+          "value": 6.201792168316634,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c45": {
+          "value": 42.85397870839583,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c47": {
+          "value": 44.02639607502421,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "x2_mean": {
+          "value": 4.789230769230766,
+          "trainable": false,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "train_normalization"
+        },
+        "x2_scale": {
+          "value": 0.2364956183839202,
+          "trainable": false,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "train_normalization"
+        },
+        "c51": {
+          "value": -6.542796822534318,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c53": {
+          "value": -0.713788928411555,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c56": {
+          "value": 1.5515686127929695,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c58": {
+          "value": 7.971044769297492,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "x4_mean": {
+          "value": 3.1776923076922996,
+          "trainable": false,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "train_normalization"
+        },
+        "x4_scale": {
+          "value": 0.25192043451344653,
+          "trainable": false,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "train_normalization"
+        },
+        "c61": {
+          "value": -5.082732440832853,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c63": {
+          "value": 92.67704617464597,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "x1_mean": {
+          "value": 0.5638461538461524,
+          "trainable": false,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "train_normalization"
+        },
+        "x1_scale": {
+          "value": 0.024381096567268733,
+          "trainable": false,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "train_normalization"
+        },
+        "c66": {
+          "value": -0.004144763552464888,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c68": {
+          "value": 9.228874694756727e-05,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        },
+        "c71": {
+          "value": 10.47439792787571,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_decimal_coefficient"
+        }
+      },
+      "arithmetic": "numpy_ieee"
+    },
+    "n_nodes": 124,
+    "working_n_nodes": 124,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "((((coef['c4'] + (coef['c6'] * ((((buoyancy_position_work - coef['x0_mean']) / coef['x0_scale'])) ** (2)))) + (coef['c10'] + (coef['c12'] * ((((coef['c16'] + (coef['c18'] * ((beam_draught_ratio_work - coef['x3_mean']) / coef['x3_scale']))) - ((coef['c22'] + (coef['c24'] * (((((coef['c29'] + (coef['c31'] * ((buoyancy_position_work - coef['x0_mean']) / coef['x0_scale']))) + (coef['c34'] + (coef['c36'] * ((froude_work - coef['x5_mean']) / coef['x5_scale'])))) - (coef['c39'] + (coef['c41'] * ((froude_work - coef['x5_mean']) / coef['x5_scale']))))) ** (3)))) + ((coef['c45'] + (coef['c47'] * ((length_displacement_ratio_work - coef['x2_mean']) / coef['x2_scale']))) + ((coef['c51'] + (coef['c53'] * ((beam_draught_ratio_work - coef['x3_mean']) / coef['x3_scale']))) * (coef['c56'] + (coef['c58'] * ((length_beam_ratio_work - coef['x4_mean']) / coef['x4_scale'])))))))) ** (2))))) - (coef['c61'] + (coef['c63'] * ((prismatic_coefficient_work - coef['x1_mean']) / coef['x1_scale'])))) * (coef['c66'] + (coef['c68'] * sin((coef['c71'] + (((froude_work - coef['x5_mean']) / coef['x5_scale']) * (1 / ((buoyancy_position_work - coef['x0_mean']) / coef['x0_scale']))))))))",
+    "latex": "\\left(\\left(\\left(\\left(\\theta_{\\text{c4}} + \\left(\\theta_{\\text{c6}} \\cdot \\left(\\frac{\\left(\\text{buoyancy\\_position\\_work} - \\theta_{\\text{x0\\_mean}}\\right)}{\\theta_{\\text{x0\\_scale}}}\\right)^{2}\\right)\\right) + \\left(\\theta_{\\text{c10}} + \\left(\\theta_{\\text{c12}} \\cdot \\left(\\left(\\left(\\theta_{\\text{c16}} + \\left(\\theta_{\\text{c18}} \\cdot \\frac{\\left(\\text{beam\\_draught\\_ratio\\_work} - \\theta_{\\text{x3\\_mean}}\\right)}{\\theta_{\\text{x3\\_scale}}}\\right)\\right) - \\left(\\left(\\theta_{\\text{c22}} + \\left(\\theta_{\\text{c24}} \\cdot \\left(\\left(\\left(\\left(\\theta_{\\text{c29}} + \\left(\\theta_{\\text{c31}} \\cdot \\frac{\\left(\\text{buoyancy\\_position\\_work} - \\theta_{\\text{x0\\_mean}}\\right)}{\\theta_{\\text{x0\\_scale}}}\\right)\\right) + \\left(\\theta_{\\text{c34}} + \\left(\\theta_{\\text{c36}} \\cdot \\frac{\\left(\\text{froude\\_work} - \\theta_{\\text{x5\\_mean}}\\right)}{\\theta_{\\text{x5\\_scale}}}\\right)\\right)\\right) - \\left(\\theta_{\\text{c39}} + \\left(\\theta_{\\text{c41}} \\cdot \\frac{\\left(\\text{froude\\_work} - \\theta_{\\text{x5\\_mean}}\\right)}{\\theta_{\\text{x5\\_scale}}}\\right)\\right)\\right)\\right)^{3}\\right)\\right) + \\left(\\left(\\theta_{\\text{c45}} + \\left(\\theta_{\\text{c47}} \\cdot \\frac{\\left(\\text{length\\_displacement\\_ratio\\_work} - \\theta_{\\text{x2\\_mean}}\\right)}{\\theta_{\\text{x2\\_scale}}}\\right)\\right) + \\left(\\left(\\theta_{\\text{c51}} + \\left(\\theta_{\\text{c53}} \\cdot \\frac{\\left(\\text{beam\\_draught\\_ratio\\_work} - \\theta_{\\text{x3\\_mean}}\\right)}{\\theta_{\\text{x3\\_scale}}}\\right)\\right) \\cdot \\left(\\theta_{\\text{c56}} + \\left(\\theta_{\\text{c58}} \\cdot \\frac{\\left(\\text{length\\_beam\\_ratio\\_work} - \\theta_{\\text{x4\\_mean}}\\right)}{\\theta_{\\text{x4\\_scale}}}\\right)\\right)\\right)\\right)\\right)\\right)\\right)^{2}\\right)\\right)\\right) - \\left(\\theta_{\\text{c61}} + \\left(\\theta_{\\text{c63}} \\cdot \\frac{\\left(\\text{prismatic\\_coefficient\\_work} - \\theta_{\\text{x1\\_mean}}\\right)}{\\theta_{\\text{x1\\_scale}}}\\right)\\right)\\right) \\cdot \\left(\\theta_{\\text{c66}} + \\left(\\theta_{\\text{c68}} \\cdot \\operatorname{sin}\\left(\\left(\\theta_{\\text{c71}} + \\left(\\frac{\\left(\\text{froude\\_work} - \\theta_{\\text{x5\\_mean}}\\right)}{\\theta_{\\text{x5\\_scale}}} \\cdot \\frac{1}{\\frac{\\left(\\text{buoyancy\\_position\\_work} - \\theta_{\\text{x0\\_mean}}\\right)}{\\theta_{\\text{x0\\_scale}}}}\\right)\\right)\\right)\\right)\\right)\\right)",
+    "public_text": "resistance [1] = ((((coef['c4'] + (coef['c6'] * ((((buoyancy_position - coef['x0_mean']) / coef['x0_scale'])) ** (2)))) + (coef['c10'] + (coef['c12'] * ((((coef['c16'] + (coef['c18'] * ((beam_draught_ratio - coef['x3_mean']) / coef['x3_scale']))) - ((coef['c22'] + (coef['c24'] * (((((coef['c29'] + (coef['c31'] * ((buoyancy_position - coef['x0_mean']) / coef['x0_scale']))) + (coef['c34'] + (coef['c36'] * ((froude - coef['x5_mean']) / coef['x5_scale'])))) - (coef['c39'] + (coef['c41'] * ((froude - coef['x5_mean']) / coef['x5_scale']))))) ** (3)))) + ((coef['c45'] + (coef['c47'] * ((length_displacement_ratio - coef['x2_mean']) / coef['x2_scale']))) + ((coef['c51'] + (coef['c53'] * ((beam_draught_ratio - coef['x3_mean']) / coef['x3_scale']))) * (coef['c56'] + (coef['c58'] * ((length_beam_ratio - coef['x4_mean']) / coef['x4_scale'])))))))) ** (2))))) - (coef['c61'] + (coef['c63'] * ((prismatic_coefficient - coef['x1_mean']) / coef['x1_scale'])))) * (coef['c66'] + (coef['c68'] * sin((coef['c71'] + (((froude - coef['x5_mean']) / coef['x5_scale']) * (1 / ((buoyancy_position - coef['x0_mean']) / coef['x0_scale']))))))))",
+    "public_latex": "\\text{resistance}\\;[\\text{1}] = \\left(\\left(\\left(\\left(\\theta_{\\text{c4}} + \\left(\\theta_{\\text{c6}} \\cdot \\left(\\frac{\\left(\\text{buoyancy\\_position} - \\theta_{\\text{x0\\_mean}}\\right)}{\\theta_{\\text{x0\\_scale}}}\\right)^{2}\\right)\\right) + \\left(\\theta_{\\text{c10}} + \\left(\\theta_{\\text{c12}} \\cdot \\left(\\left(\\left(\\theta_{\\text{c16}} + \\left(\\theta_{\\text{c18}} \\cdot \\frac{\\left(\\text{beam\\_draught\\_ratio} - \\theta_{\\text{x3\\_mean}}\\right)}{\\theta_{\\text{x3\\_scale}}}\\right)\\right) - \\left(\\left(\\theta_{\\text{c22}} + \\left(\\theta_{\\text{c24}} \\cdot \\left(\\left(\\left(\\left(\\theta_{\\text{c29}} + \\left(\\theta_{\\text{c31}} \\cdot \\frac{\\left(\\text{buoyancy\\_position} - \\theta_{\\text{x0\\_mean}}\\right)}{\\theta_{\\text{x0\\_scale}}}\\right)\\right) + \\left(\\theta_{\\text{c34}} + \\left(\\theta_{\\text{c36}} \\cdot \\frac{\\left(\\text{froude} - \\theta_{\\text{x5\\_mean}}\\right)}{\\theta_{\\text{x5\\_scale}}}\\right)\\right)\\right) - \\left(\\theta_{\\text{c39}} + \\left(\\theta_{\\text{c41}} \\cdot \\frac{\\left(\\text{froude} - \\theta_{\\text{x5\\_mean}}\\right)}{\\theta_{\\text{x5\\_scale}}}\\right)\\right)\\right)\\right)^{3}\\right)\\right) + \\left(\\left(\\theta_{\\text{c45}} + \\left(\\theta_{\\text{c47}} \\cdot \\frac{\\left(\\text{length\\_displacement\\_ratio} - \\theta_{\\text{x2\\_mean}}\\right)}{\\theta_{\\text{x2\\_scale}}}\\right)\\right) + \\left(\\left(\\theta_{\\text{c51}} + \\left(\\theta_{\\text{c53}} \\cdot \\frac{\\left(\\text{beam\\_draught\\_ratio} - \\theta_{\\text{x3\\_mean}}\\right)}{\\theta_{\\text{x3\\_scale}}}\\right)\\right) \\cdot \\left(\\theta_{\\text{c56}} + \\left(\\theta_{\\text{c58}} \\cdot \\frac{\\left(\\text{length\\_beam\\_ratio} - \\theta_{\\text{x4\\_mean}}\\right)}{\\theta_{\\text{x4\\_scale}}}\\right)\\right)\\right)\\right)\\right)\\right)\\right)^{2}\\right)\\right)\\right) - \\left(\\theta_{\\text{c61}} + \\left(\\theta_{\\text{c63}} \\cdot \\frac{\\left(\\text{prismatic\\_coefficient} - \\theta_{\\text{x1\\_mean}}\\right)}{\\theta_{\\text{x1\\_scale}}}\\right)\\right)\\right) \\cdot \\left(\\theta_{\\text{c66}} + \\left(\\theta_{\\text{c68}} \\cdot \\operatorname{sin}\\left(\\left(\\theta_{\\text{c71}} + \\left(\\frac{\\left(\\text{froude} - \\theta_{\\text{x5\\_mean}}\\right)}{\\theta_{\\text{x5\\_scale}}} \\cdot \\frac{1}{\\frac{\\left(\\text{buoyancy\\_position} - \\theta_{\\text{x0\\_mean}}\\right)}{\\theta_{\\text{x0\\_scale}}}}\\right)\\right)\\right)\\right)\\right)\\right)",
+    "display_text": "(\u03b8[c4] + \u03b8[c6] * ((buoyancy_position_work - \u03b8[x0_mean]) / \u03b8[x0_scale]) ^ 2 + (\u03b8[c10] + \u03b8[c12] * (\u03b8[c16] + \u03b8[c18] * ((beam_draught_ratio_work - \u03b8[x3_mean]) / \u03b8[x3_scale]) - (\u03b8[c22] + \u03b8[c24] * (\u03b8[c29] + \u03b8[c31] * ((buoyancy_position_work - \u03b8[x0_mean]) / \u03b8[x0_scale]) + (\u03b8[c34] + \u03b8[c36] * ((froude_work - \u03b8[x5_mean]) / \u03b8[x5_scale])) - (\u03b8[c39] + \u03b8[c41] * ((froude_work - \u03b8[x5_mean]) / \u03b8[x5_scale]))) ^ 3 + (\u03b8[c45] + \u03b8[c47] * ((length_displacement_ratio_work - \u03b8[x2_mean]) / \u03b8[x2_scale]) + (\u03b8[c51] + \u03b8[c53] * ((beam_draught_ratio_work - \u03b8[x3_mean]) / \u03b8[x3_scale])) * (\u03b8[c56] + \u03b8[c58] * ((length_beam_ratio_work - \u03b8[x4_mean]) / \u03b8[x4_scale]))))) ^ 2) - (\u03b8[c61] + \u03b8[c63] * ((prismatic_coefficient_work - \u03b8[x1_mean]) / \u03b8[x1_scale]))) * (\u03b8[c66] + \u03b8[c68] * sin(\u03b8[c71] + (froude_work - \u03b8[x5_mean]) / \u03b8[x5_scale] * (1 / ((buoyancy_position_work - \u03b8[x0_mean]) / \u03b8[x0_scale]))))",
+    "public_display_text": "resistance [1] = (\u03b8[c4] + \u03b8[c6] * ((buoyancy_position - \u03b8[x0_mean]) / \u03b8[x0_scale]) ^ 2 + (\u03b8[c10] + \u03b8[c12] * (\u03b8[c16] + \u03b8[c18] * ((beam_draught_ratio - \u03b8[x3_mean]) / \u03b8[x3_scale]) - (\u03b8[c22] + \u03b8[c24] * (\u03b8[c29] + \u03b8[c31] * ((buoyancy_position - \u03b8[x0_mean]) / \u03b8[x0_scale]) + (\u03b8[c34] + \u03b8[c36] * ((froude - \u03b8[x5_mean]) / \u03b8[x5_scale])) - (\u03b8[c39] + \u03b8[c41] * ((froude - \u03b8[x5_mean]) / \u03b8[x5_scale]))) ^ 3 + (\u03b8[c45] + \u03b8[c47] * ((length_displacement_ratio - \u03b8[x2_mean]) / \u03b8[x2_scale]) + (\u03b8[c51] + \u03b8[c53] * ((beam_draught_ratio - \u03b8[x3_mean]) / \u03b8[x3_scale])) * (\u03b8[c56] + \u03b8[c58] * ((length_beam_ratio - \u03b8[x4_mean]) / \u03b8[x4_scale]))))) ^ 2) - (\u03b8[c61] + \u03b8[c63] * ((prismatic_coefficient - \u03b8[x1_mean]) / \u03b8[x1_scale]))) * (\u03b8[c66] + \u03b8[c68] * sin(\u03b8[c71] + (froude - \u03b8[x5_mean]) / \u03b8[x5_scale] * (1 / ((buoyancy_position - \u03b8[x0_mean]) / \u03b8[x0_scale]))))",
+    "parameters": [
+      {
+        "name": "c4",
+        "value": -33.617267561123846,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c6",
+        "value": -29.301204821203438,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "x0_mean",
+        "value": -2.176923076923078,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "fixed",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "train_normalization",
+        "coordinate_role": null
+      },
+      {
+        "name": "x0_scale",
+        "value": 1.5257552208931948,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "fixed",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "train_normalization",
+        "coordinate_role": null
+      },
+      {
+        "name": "c10",
+        "value": -42.97376756120749,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c12",
+        "value": -0.03630471095527468,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c16",
+        "value": -2.403978707878902,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c18",
+        "value": 55.55152565469002,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "x3_mean",
+        "value": 4.0269230769230795,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "fixed",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "train_normalization",
+        "coordinate_role": null
+      },
+      {
+        "name": "x3_scale",
+        "value": 0.6445437815932537,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "fixed",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "train_normalization",
+        "coordinate_role": null
+      },
+      {
+        "name": "c22",
+        "value": 2.0109787062559343,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c24",
+        "value": 0.3306584552843378,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c29",
+        "value": 0.8267177600485796,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c31",
+        "value": 0.03521426091660975,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c34",
+        "value": 4.436717759945225,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c36",
+        "value": 9.72820783181574,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "x5_mean",
+        "value": 0.2874999999999999,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "fixed",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "train_normalization",
+        "coordinate_role": null
+      },
+      {
+        "name": "x5_scale",
+        "value": 0.1007782218537319,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "fixed",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "train_normalization",
+        "coordinate_role": null
+      },
+      {
+        "name": "c39",
+        "value": -0.8770177598009782,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c41",
+        "value": 6.201792168316634,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c45",
+        "value": 42.85397870839583,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c47",
+        "value": 44.02639607502421,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "x2_mean",
+        "value": 4.789230769230766,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "fixed",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "train_normalization",
+        "coordinate_role": null
+      },
+      {
+        "name": "x2_scale",
+        "value": 0.2364956183839202,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "fixed",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "train_normalization",
+        "coordinate_role": null
+      },
+      {
+        "name": "c51",
+        "value": -6.542796822534318,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c53",
+        "value": -0.713788928411555,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c56",
+        "value": 1.5515686127929695,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c58",
+        "value": 7.971044769297492,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "x4_mean",
+        "value": 3.1776923076922996,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "fixed",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "train_normalization",
+        "coordinate_role": null
+      },
+      {
+        "name": "x4_scale",
+        "value": 0.25192043451344653,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "fixed",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "train_normalization",
+        "coordinate_role": null
+      },
+      {
+        "name": "c61",
+        "value": -5.082732440832853,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c63",
+        "value": 92.67704617464597,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "x1_mean",
+        "value": 0.5638461538461524,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "fixed",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "train_normalization",
+        "coordinate_role": null
+      },
+      {
+        "name": "x1_scale",
+        "value": 0.024381096567268733,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "fixed",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "train_normalization",
+        "coordinate_role": null
+      },
+      {
+        "name": "c66",
+        "value": -0.004144763552464888,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c68",
+        "value": 9.228874694756727e-05,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "c71",
+        "value": 10.47439792787571,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "numpy_ieee",
+    "operators": [
+      "add",
+      "div",
+      "mul",
+      "pow_int",
+      "sin",
+      "sub"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names.",
+      "pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "mean/42/0@native",
+    "method": "mean",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": true,
+    "reason": null,
+    "variant": "native",
+    "subject": {
+      "relation_ref": "mean/42/0@native",
+      "relation_state_sha256": "5e54124cb868bbe77e076890027a6b58f0a611657fea2488665332cc0d491c17",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "poly": [
+          {
+            "coefficient": {
+              "param": "c0"
+            },
+            "powers": []
+          }
+        ],
+        "args": []
+      },
+      "parameters": {
+        "c0": {
+          "value": 10.552582312056593,
+          "trainable": true,
+          "origin": "baseline_regression_solve",
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "unit_origin": "declared target and known additive basis; unknown basis stays unknown"
+        }
+      }
+    },
+    "n_nodes": 1,
+    "working_n_nodes": 1,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "coef['c0']",
+    "latex": "\\theta_{\\text{c0}}",
+    "public_text": "resistance [1] = coef['c0']",
+    "public_latex": "\\text{resistance}\\;[\\text{1}] = \\theta_{\\text{c0}}",
+    "display_text": "\u03b8[c0]",
+    "public_display_text": "resistance [1] = \u03b8[c0]",
+    "parameters": [
+      {
+        "name": "c0",
+        "value": 10.552582312056593,
+        "unit": "1",
+        "unit_origin": "declared target and known additive basis; unknown basis stays unknown",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "baseline_regression_solve",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "strict_real",
+    "operators": [],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "linear/42/5@native",
+    "method": "linear",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": true,
+    "reason": null,
+    "variant": "native",
+    "subject": {
+      "relation_ref": "linear/42/5@native",
+      "relation_state_sha256": "4e2ed3b793e2508f17c6d348cbcacee412c3c18361177eb440d9d34b4b9a954b",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "poly": [
+          {
+            "coefficient": {
+              "param": "c0"
+            },
+            "powers": [
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "coefficient": {
+              "param": "c1"
+            },
+            "powers": []
+          },
+          {
+            "coefficient": {
+              "param": "c2"
+            },
+            "powers": [
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "coefficient": {
+              "param": "c3"
+            },
+            "powers": [
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "coefficient": {
+              "param": "c4"
+            },
+            "powers": [
+              [
+                3,
+                1
+              ]
+            ]
+          },
+          {
+            "coefficient": {
+              "param": "c5"
+            },
+            "powers": [
+              [
+                4,
+                1
+              ]
+            ]
+          }
+        ],
+        "args": [
+          {
+            "var": "x5"
+          },
+          {
+            "var": "x1"
+          },
+          {
+            "var": "x0"
+          },
+          {
+            "var": "x3"
+          },
+          {
+            "var": "x4"
+          }
+        ]
+      },
+      "parameters": {
+        "c0": {
+          "value": 122.57330659493762,
+          "trainable": true,
+          "origin": "baseline_regression_solve",
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "unit_origin": "declared target and known additive basis; unknown basis stays unknown"
+        },
+        "c1": {
+          "value": -15.071171542801931,
+          "trainable": true,
+          "origin": "baseline_regression_solve",
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "unit_origin": "declared target and known additive basis; unknown basis stays unknown"
+        },
+        "c2": {
+          "value": -11.968093959051668,
+          "trainable": true,
+          "origin": "baseline_regression_solve",
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "unit_origin": "declared target and known additive basis; unknown basis stays unknown"
+        },
+        "c3": {
+          "value": 0.15666876943573066,
+          "trainable": true,
+          "origin": "baseline_regression_solve",
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "unit_origin": "declared target and known additive basis; unknown basis stays unknown"
+        },
+        "c4": {
+          "value": -0.3195037910826854,
+          "trainable": true,
+          "origin": "baseline_regression_solve",
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "unit_origin": "declared target and known additive basis; unknown basis stays unknown"
+        },
+        "c5": {
+          "value": -0.39029415628836045,
+          "trainable": true,
+          "origin": "baseline_regression_solve",
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "unit_origin": "declared target and known additive basis; unknown basis stays unknown"
+        }
+      }
+    },
+    "n_nodes": 21,
+    "working_n_nodes": 21,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "((((((coef['c0'] * froude_work) + coef['c1']) + (coef['c2'] * prismatic_coefficient_work)) + (coef['c3'] * buoyancy_position_work)) + (coef['c4'] * beam_draught_ratio_work)) + (coef['c5'] * length_beam_ratio_work))",
+    "latex": "\\left(\\left(\\left(\\left(\\left(\\left(\\theta_{\\text{c0}} \\cdot \\text{froude\\_work}\\right) + \\theta_{\\text{c1}}\\right) + \\left(\\theta_{\\text{c2}} \\cdot \\text{prismatic\\_coefficient\\_work}\\right)\\right) + \\left(\\theta_{\\text{c3}} \\cdot \\text{buoyancy\\_position\\_work}\\right)\\right) + \\left(\\theta_{\\text{c4}} \\cdot \\text{beam\\_draught\\_ratio\\_work}\\right)\\right) + \\left(\\theta_{\\text{c5}} \\cdot \\text{length\\_beam\\_ratio\\_work}\\right)\\right)",
+    "public_text": "resistance [1] = ((((((coef['c0'] * froude) + coef['c1']) + (coef['c2'] * prismatic_coefficient)) + (coef['c3'] * buoyancy_position)) + (coef['c4'] * beam_draught_ratio)) + (coef['c5'] * length_beam_ratio))",
+    "public_latex": "\\text{resistance}\\;[\\text{1}] = \\left(\\left(\\left(\\left(\\left(\\left(\\theta_{\\text{c0}} \\cdot \\text{froude}\\right) + \\theta_{\\text{c1}}\\right) + \\left(\\theta_{\\text{c2}} \\cdot \\text{prismatic\\_coefficient}\\right)\\right) + \\left(\\theta_{\\text{c3}} \\cdot \\text{buoyancy\\_position}\\right)\\right) + \\left(\\theta_{\\text{c4}} \\cdot \\text{beam\\_draught\\_ratio}\\right)\\right) + \\left(\\theta_{\\text{c5}} \\cdot \\text{length\\_beam\\_ratio}\\right)\\right)",
+    "display_text": "\u03b8[c0] * froude_work + \u03b8[c1] + \u03b8[c2] * prismatic_coefficient_work + \u03b8[c3] * buoyancy_position_work + \u03b8[c4] * beam_draught_ratio_work + \u03b8[c5] * length_beam_ratio_work",
+    "public_display_text": "resistance [1] = \u03b8[c0] * froude + \u03b8[c1] + \u03b8[c2] * prismatic_coefficient + \u03b8[c3] * buoyancy_position + \u03b8[c4] * beam_draught_ratio + \u03b8[c5] * length_beam_ratio",
+    "parameters": [
+      {
+        "name": "c0",
+        "value": 122.57330659493762,
+        "unit": "1",
+        "unit_origin": "declared target and known additive basis; unknown basis stays unknown",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "baseline_regression_solve",
+        "coordinate_role": null
+      },
+      {
+        "name": "c1",
+        "value": -15.071171542801931,
+        "unit": "1",
+        "unit_origin": "declared target and known additive basis; unknown basis stays unknown",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "baseline_regression_solve",
+        "coordinate_role": null
+      },
+      {
+        "name": "c2",
+        "value": -11.968093959051668,
+        "unit": "1",
+        "unit_origin": "declared target and known additive basis; unknown basis stays unknown",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "baseline_regression_solve",
+        "coordinate_role": null
+      },
+      {
+        "name": "c3",
+        "value": 0.15666876943573066,
+        "unit": "1",
+        "unit_origin": "declared target and known additive basis; unknown basis stays unknown",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "baseline_regression_solve",
+        "coordinate_role": null
+      },
+      {
+        "name": "c4",
+        "value": -0.3195037910826854,
+        "unit": "1",
+        "unit_origin": "declared target and known additive basis; unknown basis stays unknown",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "baseline_regression_solve",
+        "coordinate_role": null
+      },
+      {
+        "name": "c5",
+        "value": -0.39029415628836045,
+        "unit": "1",
+        "unit_origin": "declared target and known additive basis; unknown basis stays unknown",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "baseline_regression_solve",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "strict_real",
+    "operators": [
+      "add",
+      "mul"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names."
+    ],
+    "display_status": "stored AST"
+  }
+]

@@ -1,0 +1,7 @@
+/opt/venv/lib/python3.11/site-packages/physo/physym/program.py:49: UserWarning: Latex display is not available. Issues: shutil.which('latex') returned None
+  warnings.warn(msg)
+/opt/venv/lib/python3.11/site-packages/physo/physym/program.py:49: UserWarning: Latex display is not available. Issues: shutil.which('latex') returned None
+  warnings.warn(msg)
+Enforcing spawn multiprocessing start method.
+SR task started...
+Unable to save last plots and data before stopping due to max evaluation limit.

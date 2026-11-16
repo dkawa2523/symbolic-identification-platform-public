@@ -1,0 +1,182 @@
+{
+  "checked_at": "2026-11-15T17:00:17.138352+00:00",
+  "status": {
+    "stage": "discovery",
+    "time": "2026-11-15T16:59:52.079380+00:00",
+    "arm": "synthetic_none",
+    "method": "baselines",
+    "final_accessed": false
+  },
+  "runs": [
+    {
+      "arm": "yacht",
+      "method": "pysr",
+      "completed": true,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "portable_status": "candidates",
+      "wall_seconds": 389.5647166080016,
+      "exported_candidates": 14,
+      "error": null,
+      "reason": null,
+      "native_search_fit_seconds": 359.61147321699536,
+      "fit_elapsed_seconds": 385.4762246439932
+    },
+    {
+      "arm": "yacht",
+      "method": "parfam",
+      "completed": true,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "portable_status": "candidates",
+      "wall_seconds": 3040.191859793995,
+      "exported_candidates": 159,
+      "error": null,
+      "reason": null,
+      "native_search_fit_seconds": null,
+      "fit_elapsed_seconds": null
+    },
+    {
+      "arm": "yacht",
+      "method": "torchsisso",
+      "completed": true,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "portable_status": "candidates",
+      "wall_seconds": 16.727101085998584,
+      "exported_candidates": 3,
+      "error": null,
+      "reason": null,
+      "native_search_fit_seconds": null,
+      "fit_elapsed_seconds": null
+    },
+    {
+      "arm": "yacht",
+      "method": "physo",
+      "completed": true,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "portable_status": "candidates",
+      "wall_seconds": 1852.9255048389896,
+      "exported_candidates": 20,
+      "error": null,
+      "reason": null,
+      "native_search_fit_seconds": 1826.4645765970054,
+      "fit_elapsed_seconds": null
+    },
+    {
+      "arm": "yacht",
+      "method": "e2e",
+      "completed": true,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "portable_status": "candidates",
+      "wall_seconds": 198.73502130398992,
+      "exported_candidates": 31,
+      "error": null,
+      "reason": null,
+      "native_search_fit_seconds": null,
+      "fit_elapsed_seconds": null
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "pysr",
+      "completed": true,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "portable_status": "candidates",
+      "wall_seconds": 2965.480276643997,
+      "exported_candidates": 16,
+      "error": null,
+      "reason": null,
+      "native_search_fit_seconds": 2939.198812376999,
+      "fit_elapsed_seconds": 2962.1721488040057
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "parfam",
+      "completed": true,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "portable_status": "candidates",
+      "wall_seconds": 18.339761305018328,
+      "exported_candidates": 5,
+      "error": null,
+      "reason": null,
+      "native_search_fit_seconds": null,
+      "fit_elapsed_seconds": null
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "torchsisso",
+      "completed": true,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "portable_status": "candidates",
+      "wall_seconds": 14.11293273299816,
+      "exported_candidates": 3,
+      "error": null,
+      "reason": null,
+      "native_search_fit_seconds": null,
+      "fit_elapsed_seconds": null
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "physo",
+      "completed": true,
+      "status": "partial",
+      "native_execution_status": "failed",
+      "portable_status": "candidates",
+      "wall_seconds": 200.8264462170191,
+      "exported_candidates": 12,
+      "error": null,
+      "reason": "Validated saved native hypotheses; search did not complete: Worker exited -9; see worker.log",
+      "native_search_fit_seconds": 159.72579939599382,
+      "fit_elapsed_seconds": null
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "e2e",
+      "completed": true,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "portable_status": "candidates",
+      "wall_seconds": 310.0351577429974,
+      "exported_candidates": 194,
+      "error": null,
+      "reason": null,
+      "native_search_fit_seconds": null,
+      "fit_elapsed_seconds": null
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "pysr",
+      "completed": false
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "parfam",
+      "completed": false
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "torchsisso",
+      "completed": false
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "physo",
+      "completed": false
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "e2e",
+      "completed": false
+    }
+  ],
+  "locks": {
+    "global_choices.json": false,
+    "final_access_started.json": false,
+    "score_complete.json": false
+  }
+}

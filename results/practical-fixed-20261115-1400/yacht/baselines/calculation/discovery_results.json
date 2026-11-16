@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "engine": "mean",
+      "seed": 42,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "reason": null,
+      "wall_seconds": 20.025232618994778,
+      "exported_candidates": 1,
+      "summary_path": "/work/results/practical-fixed-20261115-1400/yacht/baselines/calculation/discover/mean/42/engine_summary.json"
+    },
+    {
+      "engine": "linear",
+      "seed": 42,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "reason": null,
+      "wall_seconds": 30.287344310985645,
+      "exported_candidates": 6,
+      "summary_path": "/work/results/practical-fixed-20261115-1400/yacht/baselines/calculation/discover/linear/42/engine_summary.json"
+    }
+  ],
+  "selection_performed": false,
+  "final_accessed": false
+}

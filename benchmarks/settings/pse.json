@@ -1,0 +1,11 @@
+{
+  "search": {
+    "operators": ["add", "sub", "mul", "div", "pow_int", "sin", "cos"],
+    "runtimes": {"pse": {"device": "cuda"}},
+    "engine_options": {
+      "pse": {"layers": 2, "slots": 3, "use_const": true, "top_k": 10, "seconds": 90},
+      "parfam": {"seconds": 90}
+    }
+  },
+  "constraints": {"max_nodes": 100}
+}

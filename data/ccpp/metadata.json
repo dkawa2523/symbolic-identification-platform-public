@@ -1,0 +1,82 @@
+{
+  "dataset": "CCPP",
+  "uci_id": 294,
+  "doi": "10.24432/C5002N",
+  "citation": "Tfekci, P. & Kaya, H. (2014). Combined Cycle Power Plant [Dataset]. UCI Machine Learning Repository.",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_page": "https://archive.ics.uci.edu/dataset/294/combined+cycle+power+plant",
+  "source_url": "https://archive.ics.uci.edu/static/public/294/combined%2Bcycle%2Bpower%2Bplant.zip",
+  "audited_utc": "2026-11-13T13:58:19.875554+00:00",
+  "source_sha256": "cc7b2a4977c0a44e8221c91d9a7e5746b3c68186cff7e5c61c70af6432b98c7a",
+  "workbook_sha256": "ccd490981db2a2f079963b3d9f0aea30d9d338900a0285428dfc6385396f4651",
+  "table_sha256": "e20e5f1059cfd58807bf204f74815510e21b2fc7409bedd1d1524b57dcbd80ba",
+  "selected_sheet": "Sheet1",
+  "selection_rule": "First workbook sheet, fixed before model evaluation; other sheets audit only",
+  "features": [
+    "AT",
+    "V",
+    "AP",
+    "RH"
+  ],
+  "target": "PE",
+  "units": {
+    "AT": "degC",
+    "V": "cmHg",
+    "AP": "mbar",
+    "RH": "%",
+    "PE": "MW"
+  },
+  "rows": 9568,
+  "missing_cells": 0,
+  "nonfinite_cells": 0,
+  "sheets": [
+    {
+      "sheet": "Sheet1",
+      "rows": 9568,
+      "multiset_sha256": "4ab6e098f992a08a3ca9cbc6493bc30d3d43b0e08b4b08c94fa4e1b8f71a3cf4",
+      "same_multiset_as_sheet1": true,
+      "same_order_as_sheet1": true
+    },
+    {
+      "sheet": "Sheet2",
+      "rows": 9568,
+      "multiset_sha256": "4ab6e098f992a08a3ca9cbc6493bc30d3d43b0e08b4b08c94fa4e1b8f71a3cf4",
+      "same_multiset_as_sheet1": true,
+      "same_order_as_sheet1": false
+    },
+    {
+      "sheet": "Sheet3",
+      "rows": 9568,
+      "multiset_sha256": "4ab6e098f992a08a3ca9cbc6493bc30d3d43b0e08b4b08c94fa4e1b8f71a3cf4",
+      "same_multiset_as_sheet1": true,
+      "same_order_as_sheet1": false
+    },
+    {
+      "sheet": "Sheet4",
+      "rows": 9568,
+      "multiset_sha256": "4ab6e098f992a08a3ca9cbc6493bc30d3d43b0e08b4b08c94fa4e1b8f71a3cf4",
+      "same_multiset_as_sheet1": true,
+      "same_order_as_sheet1": false
+    },
+    {
+      "sheet": "Sheet5",
+      "rows": 9568,
+      "multiset_sha256": "4ab6e098f992a08a3ca9cbc6493bc30d3d43b0e08b4b08c94fa4e1b8f71a3cf4",
+      "same_multiset_as_sheet1": true,
+      "same_order_as_sheet1": false
+    }
+  ],
+  "unique_complete_rows": 9527,
+  "exact_duplicate_excess_rows": 41,
+  "complete_duplicate_groups": 41,
+  "unique_input_groups": 9527,
+  "repeated_input_groups": 41,
+  "input_groups_with_different_targets": 0,
+  "maximum_input_group_size": 2,
+  "group_definition": "Exact AT,V,AP,RH tuple; duplicate-leakage guard only, not experiment/plant/time ID",
+  "duplicate_policy": "Keep every source row; same-input rows must remain in one future partition",
+  "target_access": "Parsed only for schema, finiteness, duplicate and sheet multiset checks; no target statistics or model evaluation",
+  "split_status": "Not generated; benchmark plan is separate",
+  "pretraining_overlap": "Unknown; public dataset may be in pretrained corpora"
+}

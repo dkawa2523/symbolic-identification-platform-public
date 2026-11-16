@@ -1,0 +1,9 @@
+dictionary | equation
+Candidate: dictionary/7/1@native
+Coordinates: public
+response_mm [mm] = ((((coef['c0'] * ((0.01) * (length_cm) + (0.0))) + coef['c1'])) - (0.0)) / (0.001)
+
+c0 = 2.0006353662977636 [1]
+c1 = 0.09867022748465006 [m]
+length_cm_work [m] = 0.01 * length_cm [cm] + (0)
+response_mm_work [m] = 0.001 * response_mm [mm] + (0)

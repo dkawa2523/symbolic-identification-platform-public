@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="329">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203342">
+<text x="40" y="40" font-size="24" font-weight="bold">Least-squares fit | equation</text>
+<text x="40" y="68" font-size="13">Candidate user_linear@manual/train_point_fit | page 1/1</text>
+<text x="40" y="110" font-size="20">Coordinates: public</text>
+<text x="40" y="137" font-size="20"></text>
+<text x="40" y="164" font-size="20">response_mm [mm] = (θ[a] * (0.01 * length_cm) + θ[b]) / 0.001</text>
+<text x="40" y="191" font-size="20"></text>
+<text x="40" y="218" font-size="20">Coefficients (working coordinates; rounded on image)</text>
+<text x="40" y="245" font-size="20">a = 2.0006354 [1]</text>
+<text x="40" y="272" font-size="20">b = 0.098670217 [m]</text>
+</g></svg>

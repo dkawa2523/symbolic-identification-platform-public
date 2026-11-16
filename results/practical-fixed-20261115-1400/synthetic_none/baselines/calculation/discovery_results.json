@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "engine": "mean",
+      "seed": 17,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "reason": null,
+      "wall_seconds": 3.8406154529948253,
+      "exported_candidates": 1,
+      "summary_path": "/work/results/practical-fixed-20261115-1400/synthetic_none/baselines/calculation/discover/mean/17/engine_summary.json"
+    },
+    {
+      "engine": "linear",
+      "seed": 17,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "reason": null,
+      "wall_seconds": 3.9137132269970607,
+      "exported_candidates": 2,
+      "summary_path": "/work/results/practical-fixed-20261115-1400/synthetic_none/baselines/calculation/discover/linear/17/engine_summary.json"
+    }
+  ],
+  "selection_performed": false,
+  "final_accessed": false
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="437">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203342">
+<text x="40" y="40" font-size="24" font-weight="bold">dictionary | equation</text>
+<text x="40" y="68" font-size="13">Candidate dictionary/7/3@native | page 1/1</text>
+<text x="40" y="110" font-size="20">Coordinates: public</text>
+<text x="40" y="137" font-size="20"></text>
+<text x="40" y="164" font-size="20">response_mm [mm] = (θ[c0] * (0.01 * length_cm) + θ[c1] + θ[c2] * ((0.01 *</text>
+<text x="40" y="191" font-size="20">length_cm) * (0.01 * length_cm)) + θ[c3] * ((0.01 * length_cm) * (0.01 *</text>
+<text x="40" y="218" font-size="20">length_cm) * (0.01 * length_cm))) / 0.001</text>
+<text x="40" y="245" font-size="20"></text>
+<text x="40" y="272" font-size="20">Coefficients (working coordinates; rounded on image)</text>
+<text x="40" y="299" font-size="20">c0 = 1.8950088 [1]</text>
+<text x="40" y="326" font-size="20">c1 = 0.10290948 [m]</text>
+<text x="40" y="353" font-size="20">c2 = 0.67436193 [m^(-1)]</text>
+<text x="40" y="380" font-size="20">c3 = -1.2469146 [m^(-2)]</text>
+</g></svg>

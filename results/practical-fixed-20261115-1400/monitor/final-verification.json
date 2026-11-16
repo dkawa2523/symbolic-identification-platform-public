@@ -1,0 +1,394 @@
+{
+  "checked_at": "2026-11-15T19:14:38.277343+00:00",
+  "freeze_files_verified": 427,
+  "global_bound_files_verified": 326,
+  "image_ids": {
+    "symbolic-handoff:core": "sha256:bdc532d7fcb7021e1a57810de876bfa8b2ad5ef7cd29762334fda5d14689acd9",
+    "symbolic-handoff:classic": "sha256:43d979e1acb694cb6e42a0d08c57f737a31844599665daef971bf632eb73a5c0",
+    "symbolic-handoff:e2e": "sha256:5a45e360005eb029222c86004168123b4fc6c5f821a931ffa4c14b8e511d7d30"
+  },
+  "global_choices_sha256": "6cc953d2d3c8973d0b94d05fe0e4fd3e64feee61f352d12e79926deb0ddb7aac",
+  "selection_changed": false,
+  "refit": false,
+  "arms": {
+    "yacht": {
+      "scored_ids": [
+        "e2e/42/7@native",
+        "linear/42/5@native",
+        "mean/42/0@native",
+        "parfam/42/0@native",
+        "physo/42/22@native",
+        "pysr/42/12@native",
+        "torchsisso/42/2@native"
+      ],
+      "final_history": "known_exposed",
+      "dense_response": null
+    },
+    "synthetic_none": {
+      "scored_ids": [
+        "e2e/17/46@native",
+        "linear/17/1@native",
+        "mean/17/0@native",
+        "parfam/17/0@native",
+        "physo/17/7@native",
+        "pysr/17/5@native",
+        "torchsisso/17/0@native"
+      ],
+      "final_history": "declared_unseen",
+      "dense_response": [
+        {
+          "id": "pysr/17/5@native",
+          "checks": [
+            {
+              "name": "probe_response",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": null
+            },
+            {
+              "name": "increasing",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": 2.4432948789288034
+            }
+          ]
+        },
+        {
+          "id": "parfam/17/0@native",
+          "checks": [
+            {
+              "name": "probe_response",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": null
+            },
+            {
+              "name": "increasing",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": 2.509874506959331
+            }
+          ]
+        },
+        {
+          "id": "torchsisso/17/0@native",
+          "checks": [
+            {
+              "name": "probe_response",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": null
+            },
+            {
+              "name": "increasing",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": 1.0556197726452332
+            }
+          ]
+        },
+        {
+          "id": "physo/17/7@native",
+          "checks": [
+            {
+              "name": "probe_response",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": null
+            },
+            {
+              "name": "increasing",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": 1.9628144896580157
+            }
+          ]
+        },
+        {
+          "id": "e2e/17/46@native",
+          "checks": [
+            {
+              "name": "probe_response",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": null
+            },
+            {
+              "name": "increasing",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": 2.3111621045401876
+            }
+          ]
+        },
+        {
+          "id": "mean/17/0@native",
+          "checks": [
+            {
+              "name": "probe_response",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": null
+            },
+            {
+              "name": "increasing",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": 0.0
+            }
+          ]
+        },
+        {
+          "id": "linear/17/1@native",
+          "checks": [
+            {
+              "name": "probe_response",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": null
+            },
+            {
+              "name": "increasing",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": 1.0556197374927967
+            }
+          ]
+        }
+      ]
+    },
+    "synthetic_supported": {
+      "scored_ids": [
+        "e2e/17/125/known-affine-fit@native",
+        "physo/17/8@native",
+        "pysr/17/5@native",
+        "torchsisso/17/0@native"
+      ],
+      "final_history": "declared_unseen",
+      "dense_response": [
+        {
+          "id": "pysr/17/5@native",
+          "checks": [
+            {
+              "name": "probe_response",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": null
+            },
+            {
+              "name": "increasing",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": 2.4539190282066303
+            }
+          ]
+        },
+        {
+          "id": "torchsisso/17/0@native",
+          "checks": [
+            {
+              "name": "probe_response",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": null
+            },
+            {
+              "name": "increasing",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": 1.0556197726457883
+            }
+          ]
+        },
+        {
+          "id": "physo/17/8@native",
+          "checks": [
+            {
+              "name": "probe_response",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": null
+            },
+            {
+              "name": "increasing",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": 2.385883885215878
+            }
+          ]
+        },
+        {
+          "id": "e2e/17/125/known-affine-fit@native",
+          "checks": [
+            {
+              "name": "probe_response",
+              "status": "pass",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 0,
+              "n_invalid": 0,
+              "max_violation": 0.0,
+              "worst_point": {
+                "x": 0.10010000000000001
+              },
+              "worst_response": null
+            },
+            {
+              "name": "increasing",
+              "status": "fail",
+              "n_points": 1001,
+              "n_valid": 1001,
+              "n_violating": 7,
+              "n_invalid": 0,
+              "max_violation": 111.50203898126014,
+              "worst_point": {
+                "x": 2.2644889999999998
+              },
+              "worst_response": -111.50204898126015
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2 @@
+engine,seed,status,native_execution_status,reason,wall_seconds,exported_candidates,summary_path
+pysr,42,ok,completed,,389.5647166080016,14,/work/results/practical-fixed-20261115-1400/yacht/pysr/calculation/discover/pysr/42/engine_summary.json

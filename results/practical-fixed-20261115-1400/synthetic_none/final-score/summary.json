@@ -1,0 +1,102 @@
+{
+  "partition": "Final",
+  "role": "holdout under explicit user declaration",
+  "history": "declared_unseen",
+  "history_scope": "Local recorded history and declarations only; external prior exposure cannot be verified",
+  "final_accessed": true,
+  "selection_changed": false,
+  "refit": false,
+  "attempts": [
+    {
+      "method": "pysr",
+      "seed": 17,
+      "status": "scored",
+      "run_status": "ok",
+      "wall_seconds": 2965.480276643997,
+      "reason": null,
+      "candidate_id": "pysr/17/5@native",
+      "coverage": 1.0,
+      "rmse": 0.0322223545332267,
+      "mae": 0.025400247445726408,
+      "r2": 0.9992812679467459
+    },
+    {
+      "method": "parfam",
+      "seed": 17,
+      "status": "scored",
+      "run_status": "ok",
+      "wall_seconds": 18.339761305018328,
+      "reason": null,
+      "candidate_id": "parfam/17/0@native",
+      "coverage": 1.0,
+      "rmse": 0.03274212548023051,
+      "mae": 0.025798161190842203,
+      "r2": 0.9992578935486027
+    },
+    {
+      "method": "torchsisso",
+      "seed": 17,
+      "status": "scored",
+      "run_status": "ok",
+      "wall_seconds": 14.11293273299816,
+      "reason": null,
+      "candidate_id": "torchsisso/17/0@native",
+      "coverage": 1.0,
+      "rmse": 0.13689178118104095,
+      "mae": 0.11580603899101943,
+      "r2": 0.9870279916733812
+    },
+    {
+      "method": "physo",
+      "seed": 17,
+      "status": "scored",
+      "run_status": "partial",
+      "wall_seconds": 200.8264462170191,
+      "reason": null,
+      "candidate_id": "physo/17/7@native",
+      "coverage": 1.0,
+      "rmse": 0.07449229563010985,
+      "mae": 0.0631280453091968,
+      "r2": 0.9961587268884945
+    },
+    {
+      "method": "e2e",
+      "seed": 17,
+      "status": "scored",
+      "run_status": "ok",
+      "wall_seconds": 310.0351577429974,
+      "reason": null,
+      "candidate_id": "e2e/17/46@native",
+      "coverage": 1.0,
+      "rmse": 0.032436705950198104,
+      "mae": 0.025745675177851538,
+      "r2": 0.999271673758871
+    },
+    {
+      "method": "mean",
+      "seed": 17,
+      "status": "scored",
+      "run_status": "ok",
+      "wall_seconds": 3.8406154529948253,
+      "reason": null,
+      "candidate_id": "mean/17/0@native",
+      "coverage": 1.0,
+      "rmse": 1.209133845562933,
+      "mae": 1.040420963011515,
+      "r2": -0.012048267684924507
+    },
+    {
+      "method": "linear",
+      "seed": 17,
+      "status": "scored",
+      "run_status": "ok",
+      "wall_seconds": 3.9137132269970607,
+      "reason": null,
+      "candidate_id": "linear/17/1@native",
+      "coverage": 1.0,
+      "rmse": 0.1368917705049106,
+      "mae": 0.11580602671836139,
+      "r2": 0.9870279936967437
+    }
+  ]
+}

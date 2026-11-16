@@ -1,0 +1,9 @@
+{
+  "schema_version": 3,
+  "files": {
+    "resolved.json": "5b049016f4f4310892eafabba11746b35bc23028fa82795b624af5dfad14310b",
+    "hypotheses.json": "99cec475fa097485e612808211e8dd55b09ac397d59ad0e58bfec1bf0c9dd0bf",
+    "numerical.json": "817b10ac3cb0abe9f2483a36e80799874328c78f269a8313523909b7af0f5f82",
+    "numerical.npz": "4a57a040df3b4dbf8e38de7865b2bcef31f21fa6200bdfe1bf87db2d8d9d1dda"
+  }
+}

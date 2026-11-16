@@ -1,0 +1,10 @@
+{
+  "prepared_run": "/work/results/physo-runtime-horizon-normal-20261116-011644/known-T5/calculation/prepare/run.json",
+  "sources": [
+    {
+      "discovery": "/work/results/physo-runtime-horizon-normal-20261116-011644/known-T5/calculation/discover/physo/17/engine_summary.json"
+    }
+  ],
+  "purpose": "local_prediction",
+  "question": "Compare equations on fixed Selection rows, not independent Final evidence."
+}

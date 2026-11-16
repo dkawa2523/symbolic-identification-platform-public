@@ -1,0 +1,296 @@
+{
+  "status": "inputs_valid",
+  "package_identity": {
+    "version": "0.90.4",
+    "mode": "source",
+    "installed_metadata_version": "0.1.0"
+  },
+  "path_base": "/work",
+  "data_file": "/work/data/yacht/table.csv",
+  "identity_column": "sample_id",
+  "group_column": "group_id",
+  "feature_columns": [
+    "buoyancy_position",
+    "prismatic_coefficient",
+    "length_displacement_ratio",
+    "beam_draught_ratio",
+    "length_beam_ratio",
+    "froude"
+  ],
+  "target_column": "resistance",
+  "unit_coordinates": {
+    "buoyancy_position": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "prismatic_coefficient": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "length_displacement_ratio": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "beam_draught_ratio": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "length_beam_ratio": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "froude": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "resistance": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    }
+  },
+  "working_domains": {},
+  "working_variables": [
+    {
+      "id": "x0",
+      "column": "buoyancy_position",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x1",
+      "column": "prismatic_coefficient",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x2",
+      "column": "length_displacement_ratio",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x3",
+      "column": "beam_draught_ratio",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x4",
+      "column": "length_beam_ratio",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x5",
+      "column": "froude",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    }
+  ],
+  "target": {
+    "coordinate_role": null,
+    "column": "resistance",
+    "unit": "1",
+    "domain": null
+  },
+  "split": {
+    "method": "fixed",
+    "file": "data/yacht/split.csv",
+    "group_column": "group_id",
+    "seed": 42,
+    "valid_size": 0.2,
+    "selection_size": 0.2
+  },
+  "partitions": {
+    "final": {
+      "n_rows": 70,
+      "n_groups": 5
+    },
+    "selection": {
+      "n_rows": 56,
+      "n_groups": 4
+    },
+    "train": {
+      "n_rows": 182,
+      "n_groups": 13
+    }
+  },
+  "search_budget": {
+    "seeds": [
+      42
+    ],
+    "max_wall_seconds": 3600,
+    "candidate_pool_policy": "all",
+    "max_export_candidates": 20,
+    "allow_partial_engines": true
+  },
+  "requirements": {
+    "allowed_operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "neg",
+      "abs",
+      "exp",
+      "log",
+      "sqrt",
+      "pow_int",
+      "sin",
+      "cos",
+      "tanh",
+      "sinh",
+      "cosh"
+    ],
+    "fixed_constants": {},
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "required_responses": {
+      "points": [],
+      "bounds": [
+        null,
+        null
+      ],
+      "checks": [],
+      "enforcement": null
+    }
+  },
+  "engines": {
+    "parfam": {
+      "declared_input_issues": [],
+      "adapter_input_issues": [],
+      "adapter_validation": "passed",
+      "asset_input_issues": [],
+      "asset_verification": {
+        "status": "not_requested",
+        "manifest_sha256": null,
+        "files_verified": 0
+      },
+      "options": {
+        "degree": 2,
+        "maxiter": 100,
+        "repetitions": 2,
+        "max_active_parameters": 12
+      },
+      "runtime": {},
+      "assets": {},
+      "effective_operator_subset": [
+        "add",
+        "sub",
+        "mul",
+        "div",
+        "exp",
+        "log",
+        "sqrt",
+        "pow_int",
+        "sin",
+        "cos"
+      ],
+      "capabilities": {
+        "supported_options": [
+          "candidate_scope",
+          "degree",
+          "denominator_degree",
+          "family",
+          "family_search",
+          "function_power",
+          "functions",
+          "input_degree",
+          "max_active_functions",
+          "max_active_parameters",
+          "maxiter",
+          "objective",
+          "repetitions",
+          "seconds",
+          "threads"
+        ],
+        "response_enforcement": {
+          "default": "hard",
+          "supported": [
+            "hard"
+          ],
+          "stage": "native family coefficient optimization and selection"
+        },
+        "operators": [
+          "add",
+          "sub",
+          "mul",
+          "div",
+          "pow_int",
+          "sin",
+          "cos",
+          "exp",
+          "log",
+          "sqrt"
+        ],
+        "requires_assets": false,
+        "equation_template": true,
+        "family_search": "fixed keeps one configured family; up_to searches bounded degree families. Default polynomial=fixed, rational=up_to; Complete includes lower-degree extension",
+        "search_constraints": [
+          "response_bounds",
+          "response_checks",
+          "probes"
+        ],
+        "constraints": {
+          "equation_template": "one shared slot, fixed outer parameters; native coefficient-family search in the full strict-real composition against original y; nested slots, outer free parameters and mapped coordinates rejected",
+          "operators": "native polynomial/rational family with explicitly configured ordinary torch functions; exports post-filtered",
+          "functions_and_denominators": "ordinary functions installed through public extend_function_dict during fit/reconstruction; upstream protected defaults are not relabelled ordinary",
+          "units": "unknown fitted coefficient units; portable post-filter",
+          "max_nodes": "source AST family-size filtering before coefficient fit; extends Complete/Max with missing lower-degree families, preserves original order/repetitions and fixed No mode, rejects an empty feasible set; active-parameter count remains a stopping preference",
+          "variables": "disallowed columns excluded before native search; full-schema export/prediction checked",
+          "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+          "probes": "declared-point finite predictions required during coefficient search and native family/reduction selection; post-filter only in explicit filter mode",
+          "response_bounds": "explicit SLSQP inequalities/equalities in native coefficient fitting and pruning refits; strict feasibility in native family/reduction selection; declared points only",
+          "response_checks": "finite-step response inequalities/equalities passed to SLSQP coefficient fitting and pruning refits; strict feasibility in native family/reduction selection; no global guarantee"
+        }
+      },
+      "constraint_application": {
+        "operators": "native polynomial/rational family with explicitly configured ordinary torch functions; exports post-filtered",
+        "max_nodes": "source AST family-size filtering before coefficient fit; extends Complete/Max with missing lower-degree families, preserves original order/repetitions and fixed No mode, rejects an empty feasible set; active-parameter count remains a stopping preference"
+      },
+      "response_mode": "search"
+    }
+  },
+  "not_checked": [
+    "Only adapter-provided static input checks ran. An extension without validate_request is explicitly not_available.",
+    "Native libraries, runtime startup, GPU availability and checkpoint deserialization were not tested; verified file hashes and input checks are not native readiness evidence.",
+    "No search, fitting, predictions, Selection metrics or Final metrics were performed. No input files were changed."
+  ]
+}

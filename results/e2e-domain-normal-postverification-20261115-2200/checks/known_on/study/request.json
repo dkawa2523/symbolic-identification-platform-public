@@ -1,0 +1,12 @@
+{
+  "prepared_run": "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/known_on/calculation/prepare/run.json",
+  "sources": [
+    {
+      "discovery": "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/known_on/calculation/discover/e2e/731/engine_summary.json",
+      "prepared_run": "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/known_on/calculation/prepare/run.json"
+    }
+  ],
+  "purpose": "local_prediction",
+  "final_history": "known_exposed",
+  "data_kind": "disclosed qualification dummy; no Final rows"
+}

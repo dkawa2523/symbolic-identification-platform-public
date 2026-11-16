@@ -1,0 +1,12 @@
+2. parfam | equation
+Candidate: parfam/17/0@native
+Coordinates: public
+y [1] = (((coef['c0'] + (coef['c1'] * x)) + ((coef['c2'] * x) * x)) / (coef['c3'] + (coef['c4'] * x)))
+
+c0 = 0.009347708239925461 [unit unknown]
+c1 = -1.8825575906968812 [unit unknown]
+c2 = -0.5990912976950008 [unit unknown]
+c3 = -0.642589919324488 [unit unknown]
+c4 = -0.7662102815693276 [unit unknown]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)

@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-11-15T17:02:35.935099+00:00",
+  "status": {
+    "stage": "discovery",
+    "time": "2026-11-15T17:01:37.503461+00:00",
+    "arm": "synthetic_supported",
+    "method": "pysr",
+    "final_accessed": false
+  },
+  "locks": {
+    "global_choices.json": false,
+    "final_access_started.json": false,
+    "score_complete.json": false
+  },
+  "identity": {
+    "code": 0,
+    "stdout": "[\"python\",\"scripts/container_stage.py\",\"discover\",\"--run-dir\",\"/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation\",\"--engine\",\"pysr\",\"--seed\",\"17\"]",
+    "stderr": ""
+  },
+  "state": {
+    "code": 0,
+    "stdout": "{\"Status\":\"running\",\"Running\":true,\"Paused\":false,\"Restarting\":false,\"OOMKilled\":false,\"Dead\":false,\"Pid\":1654612,\"ExitCode\":0,\"Error\":\"\",\"StartedAt\":\"2026-11-15T17:02:07.362126929Z\",\"FinishedAt\":\"0001-01-01T00:00:00Z\"}",
+    "stderr": ""
+  },
+  "stats": {
+    "code": 0,
+    "stdout": "105.71% 648.9MiB / 6GiB 10.56%",
+    "stderr": ""
+  },
+  "memory_events": {
+    "code": 0,
+    "stdout": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "stderr": ""
+  },
+  "execution": {
+    "images": {
+      "core": "sha256:bdc532d7fcb7021e1a57810de876bfa8b2ad5ef7cd29762334fda5d14689acd9",
+      "classic": "sha256:43d979e1acb694cb6e42a0d08c57f737a31844599665daef971bf632eb73a5c0"
+    },
+    "cpus": 4,
+    "memory_limit": "6g",
+    "network": "none",
+    "status": "running",
+    "started_at": "2026-11-15T17:01:37.582465+00:00",
+    "phase": "discover:pysr/17"
+  },
+  "log": {
+    "path": "results\\practical-fixed-20261115-1400\\synthetic_supported\\pysr\\calculation\\discover\\pysr\\17\\worker.log",
+    "size": 195,
+    "modified": "2026-11-15T17:02:29.592036+00:00",
+    "tail": "/opt/venv/lib/python3.11/site-packages/pysr/sr.py:1972: UserWarning: Note: Using a large maxsize for the equation search will be exponentially slower and use significant memory.\n  warnings.warn(\n"
+  }
+}

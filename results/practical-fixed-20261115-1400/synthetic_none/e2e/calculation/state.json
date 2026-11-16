@@ -1,0 +1,45 @@
+{
+  "prepare": {
+    "run": "/work/results/practical-fixed-20261115-1400/synthetic_none/e2e/calculation/prepare/run.json",
+    "final": "/work/results/practical-fixed-20261115-1400/synthetic_none/e2e/calculation/prepare/final.npz",
+    "selection": "/work/results/practical-fixed-20261115-1400/synthetic_none/e2e/calculation/prepare/selection.npz",
+    "train": "/work/results/practical-fixed-20261115-1400/synthetic_none/e2e/calculation/prepare/train.npz"
+  },
+  "search": {
+    "engines": [
+      "e2e"
+    ],
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "seeds": [
+      17
+    ],
+    "max_wall_seconds": 21600,
+    "max_export_candidates": 20,
+    "candidate_pool_policy": "all",
+    "allow_partial_engines": true,
+    "response_mode": "search",
+    "engine_options": {
+      "e2e": {
+        "beam_size": 64,
+        "n_trees_to_refine": 64,
+        "max_input_points": 200,
+        "max_train_rows": null,
+        "generation_batch_size": 1,
+        "refinement_seconds": 5,
+        "max_generated_output_len": 128,
+        "operator_mask": true,
+        "response_max_nfev": 1000
+      }
+    },
+    "runtimes": {
+      "e2e": {
+        "device": "cpu"
+      }
+    }
+  }
+}

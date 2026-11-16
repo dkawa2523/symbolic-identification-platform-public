@@ -1,0 +1,2 @@
+engine,seed,status,native_execution_status,reason,wall_seconds,exported_candidates,summary_path
+physo,17,partial,failed,Validated saved native hypotheses; search did not complete: Worker exited -9; see worker.log,200.8264462170191,12,/work/results/practical-fixed-20261115-1400/synthetic_none/physo/calculation/discover/physo/17/engine_summary.json

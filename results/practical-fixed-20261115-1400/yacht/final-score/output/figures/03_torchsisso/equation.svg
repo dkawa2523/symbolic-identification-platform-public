@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="410">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203342">
+<text x="40" y="40" font-size="24" font-weight="bold">3. torchsisso | equation</text>
+<text x="40" y="68" font-size="13">Candidate torchsisso/42/2@native | page 1/1</text>
+<text x="40" y="110" font-size="20">Coordinates: public</text>
+<text x="40" y="137" font-size="20"></text>
+<text x="40" y="164" font-size="20">resistance [1] = θ[intercept] + θ[c0] * froude ^ 4 + θ[c1] * cosh(froude) +</text>
+<text x="40" y="191" font-size="20">θ[c2] * froude ^ 2</text>
+<text x="40" y="218" font-size="20"></text>
+<text x="40" y="245" font-size="20">Coefficients (working coordinates; rounded on image)</text>
+<text x="40" y="272" font-size="20">intercept = -9479842 [unit unknown]; role=free</text>
+<text x="40" y="299" font-size="20">c0 = -396983.28 [unit unknown]; role=free</text>
+<text x="40" y="326" font-size="20">c1 = 9479840.2 [unit unknown]; role=free</text>
+<text x="40" y="353" font-size="20">c2 = -4739790.1 [unit unknown]; role=free</text>
+</g></svg>

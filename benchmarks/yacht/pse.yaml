@@ -1,0 +1,22 @@
+task: symbolic_pipeline
+data:
+  local_path: data/yacht/table.csv
+  target_column: resistance
+  feature_columns: [buoyancy_position, prismatic_coefficient, length_displacement_ratio, beam_draught_ratio, length_beam_ratio, froude]
+  units: {buoyancy_position: "1", prismatic_coefficient: "1", length_displacement_ratio: "1", beam_draught_ratio: "1", length_beam_ratio: "1", froude: "1", resistance: "1"}
+split:
+  file: data/yacht/split.csv
+  group_column: group_id
+search:
+  engines: [mean, linear, dictionary, pse]
+  runtimes:
+    pse: {device: cuda}
+  seeds: [42]
+  operators: [add, mul]
+  max_wall_seconds: 300
+  max_export_candidates: 20
+  allow_partial_engines: true
+  engine_options:
+    pse: {layers: 2, slots: 2, seconds: 10, top_k: 3}
+constraints: {max_nodes: 30}
+evaluation: {selection_policy: balanced, absolute_tolerance: 0.000001}

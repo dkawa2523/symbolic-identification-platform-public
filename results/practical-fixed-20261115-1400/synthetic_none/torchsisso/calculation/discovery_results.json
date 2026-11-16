@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "engine": "torchsisso",
+      "seed": 17,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "reason": null,
+      "wall_seconds": 14.11293273299816,
+      "exported_candidates": 3,
+      "summary_path": "/work/results/practical-fixed-20261115-1400/synthetic_none/torchsisso/calculation/discover/torchsisso/17/engine_summary.json"
+    }
+  ],
+  "selection_performed": false,
+  "final_accessed": false
+}

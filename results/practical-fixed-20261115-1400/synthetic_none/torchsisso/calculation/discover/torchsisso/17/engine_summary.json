@@ -1,0 +1,219 @@
+{
+  "version": "0.1.8",
+  "adapter_source_sha256": "c596244f44840eecd5c52a6daa36200dd50c0594cd6c40b70d901a74db317ca4",
+  "torch_version": "2.7.1+cpu",
+  "native_source_sha256": "5ef9adf0069bd525cfd3b86eb8068560ed70832e81b0d0d3b7bddf87596202e8",
+  "native_feature_source_sha256": "a10ddc1c8bb49d4f754a1060dc4f6e57cbddd93f0b638c8d93616a7bd44efa1d",
+  "native_candidates": 3,
+  "equation_template": null,
+  "response_search": null,
+  "source_complexity_budget": {
+    "max_nodes": 256,
+    "variable_costs": {
+      "x0": 1
+    },
+    "output_cost": 0,
+    "combination_events": [
+      {
+        "proposed": 1,
+        "feasible": 1
+      },
+      {
+        "proposed": 1,
+        "feasible": 1
+      }
+    ],
+    "scope": "descriptor and affine-combination filtering before least squares; intermediate feature expansion still unconstrained"
+  },
+  "dimensional": true,
+  "target_dimension": "1",
+  "public_output_unit": "1",
+  "coefficient_units": "1; intercept=1",
+  "expanded_features": 1,
+  "removed_degenerate_train_descriptors": [],
+  "native_search_operators": [
+    "+",
+    "-",
+    "*",
+    "/"
+  ],
+  "native_dtype": "torch.float64",
+  "input_rows": 256,
+  "native_input_variables": [
+    "x0"
+  ],
+  "native_input_columns": [
+    "x"
+  ],
+  "export_precision": "observed native solve indices, raw-scale full coefficients/intercept; no rounded display parsing",
+  "native_check_scope": "native selected descriptors on Train and declared-domain validation points; raw IEEE masks retained, common real validity separate",
+  "validation_probe_count": 20,
+  "validation_probe_scope": "declared input geometry; observed geometry reuses Train rows, not independent data",
+  "rejected_exports": [],
+  "constraint_support": {
+    "operators": "native descriptor operators; affine add/mul and all exports post-filtered",
+    "units": "explicit dimensional mode: native dimensional expansion/target-unit descriptor filter, dimensionless coefficients and target-unit intercept; nondimensional mode: coefficient units unknown; common structural check",
+    "max_nodes": "source AST descriptor/combination budget before native affine coefficient fits; feature expansion intermediates not bounded",
+    "variables": "disallowed columns excluded before native search; full-schema export/prediction checked",
+    "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+    "probes": "finite-point hard constrained coefficient fit for each explored SIS subset; no global guarantee",
+    "response_bounds": "hard coefficient constraints within subset search",
+    "response_checks": "finite-step hard coefficient constraints within subset search; not analytic derivative proof"
+  },
+  "assets": null,
+  "python": "3.11.15",
+  "python_executable": "/opt/venv/bin/python",
+  "device": "cpu",
+  "allowed_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "native_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "unavailable_search_operators": [],
+  "operator_policy": "unavailable_search_operators is the requested/export-capability difference, not decoder reachability; generation enforcement and context-dependent routes are specified by constraint_support and native metadata",
+  "status": "ok",
+  "native_execution_status": "completed",
+  "native_artifacts": {
+    "native_models": "/work/results/practical-fixed-20261115-1400/synthetic_none/torchsisso/calculation/discover/torchsisso/17/torchsisso_native.json"
+  },
+  "native_artifact_sha256": {
+    "native_models": "37c0763ce2a1f7ead9925c082e658be0aa722e3ac4e5649b5ec9263adb7eaba8"
+  },
+  "portable_status": "candidates",
+  "fixed_constants_native_support": "template_only",
+  "exported_candidates": 3,
+  "selection_candidates": 3,
+  "prelimit_constraint_eligible": null,
+  "portable_candidates": "/work/results/practical-fixed-20261115-1400/synthetic_none/torchsisso/calculation/discover/torchsisso/17/candidates.jsonl",
+  "portable_candidates_sha256": "b628557ef92cbd4bf1198d94ba8b2072c5484d0589486806683da87eb4ff3568",
+  "candidate_pool": {
+    "policy": "all",
+    "emitted": 3,
+    "retained": 3,
+    "limit": null,
+    "discarded_from_comparison_ids": [],
+    "archive_scope": "all faithfully exported native candidates, not all internal search states",
+    "quality_scope": "Train/shared probes only when explicit bounded allocation is requested; compare owns final eligibility"
+  },
+  "truncation": "none; all faithfully emitted candidates reach common evaluation",
+  "engine": "torchsisso",
+  "seed": 17,
+  "wall_seconds": 14.11293273299816,
+  "runtime_image_id": "sha256:43d979e1acb694cb6e42a0d08c57f737a31844599665daef971bf632eb73a5c0",
+  "prepared_sha256": "9b1271b143b9f4a5eecfc4b7aad09eb5cfcfeeb83258e230753d4d864ba03e01",
+  "job_sha256": "390d34dba4dc893ba94ed753280d2f8b045bad76200b1cffe11006401306df0d",
+  "requested_constraints": {
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "probes": [],
+    "response_bounds": [
+      null,
+      null
+    ],
+    "response_checks": [],
+    "response_enforcement": null,
+    "max_wall_seconds": 21600,
+    "response_mode": "search"
+  },
+  "requirements_ref": {
+    "requirements_sha256": "35ba19472d59ab6158650d6aa5f176e2c90edd1643a654af61137001cdde3d48",
+    "scope": "canonical common request; native settings/checks are derived evidence"
+  },
+  "resolved_native_profile": {
+    "options": {
+      "dimensional": true,
+      "n_expansion": 2,
+      "n_term": 3,
+      "k": 10,
+      "response_max_iterations": 200
+    },
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "device": "cpu",
+    "candidate_pool_policy": "all"
+  },
+  "response_mode": "search",
+  "capability_declaration": {
+    "unit_search": {
+      "defaults": {
+        "dimensional": true
+      },
+      "choices": {
+        "dimensional": [
+          true
+        ]
+      },
+      "templates": true
+    },
+    "equation_template": true,
+    "fixed_constants": "template_only",
+    "template_scope": "one affine shared slot with identical composed arguments; fixed scalar scale and known offset; dimensional only; hard finite-point response conditions through affine linear transformation",
+    "supported_options": [
+      "dimensional",
+      "k",
+      "n_expansion",
+      "n_term",
+      "response_max_iterations"
+    ],
+    "operators": [
+      "add",
+      "cos",
+      "cosh",
+      "div",
+      "exp",
+      "log",
+      "mul",
+      "pow_int",
+      "sin",
+      "sinh",
+      "sub",
+      "tanh"
+    ],
+    "requires_assets": false,
+    "search_constraints": [
+      "probes",
+      "response_bounds",
+      "response_checks"
+    ],
+    "response_enforcement": {
+      "default": "hard",
+      "supported": [
+        "hard"
+      ],
+      "stage": "constrained-SIS subset coefficient optimization and residual update"
+    },
+    "constraints": {
+      "operators": "native descriptor operators; affine add/mul and all exports post-filtered",
+      "units": "explicit dimensional mode: native dimensional expansion/target-unit descriptor filter, dimensionless coefficients and target-unit intercept; nondimensional mode: coefficient units unknown; common structural check",
+      "max_nodes": "source AST descriptor/combination budget before native affine coefficient fits; feature expansion intermediates not bounded",
+      "variables": "disallowed columns excluded before native search; full-schema export/prediction checked",
+      "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+      "probes": "finite-point hard constrained coefficient fit for each explored SIS subset; no global guarantee",
+      "response_bounds": "hard coefficient constraints within subset search",
+      "response_checks": "finite-step hard coefficient constraints within subset search; not analytic derivative proof"
+    }
+  },
+  "constraint_application": {
+    "operators": "native descriptor operators; affine add/mul and all exports post-filtered",
+    "max_nodes": "source AST descriptor/combination budget before native affine coefficient fits; feature expansion intermediates not bounded"
+  },
+  "response_enforcement": {
+    "effective": "not_requested"
+  },
+  "readiness_scope": "this profile/run only; execution, fidelity, common admissibility and scientific adequacy are distinct",
+  "candidates_sha256": "b628557ef92cbd4bf1198d94ba8b2072c5484d0589486806683da87eb4ff3568"
+}

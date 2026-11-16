@@ -1,0 +1,2 @@
+candidate_id,method,kind,component,member_index,member_id,weight,eligible,name,value,unit,unit_origin,coordinate_role,role,tied_to,bounds,origin
+physo/17/2@native,physo,explicit,prediction,,,,True,__slot_h_a,2.0,1,unit provenance not separately recorded,,free,,"[null, null]",native_free_constant_slot

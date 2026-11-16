@@ -1,0 +1,74 @@
+{
+  "derived_not_complete_frozen_snapshot": true,
+  "changes": [
+    {
+      "path": "results/practical-fixed-20261115-1400/monitor/physo-b0-oom-20261115T170205Z.json",
+      "action": "excluded",
+      "original_sha256": "a1991cebfe265a134a36514de4773ad201ec234d4892954b60662336f7d9eacc",
+      "public_sha256": null
+    },
+    {
+      "path": "results/practical-fixed-20261115-1400/yacht/pysr/calculation/discover/pysr/42/native/0ce89b10c0444eeba889484c012abe98/checkpoint.pkl",
+      "action": "excluded",
+      "original_sha256": "f252484b072c9cb597ba3053b11d21b756f789cbc40dd656936b7635f157a4cc",
+      "public_sha256": null
+    },
+    {
+      "path": "results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/discover/pysr/17/native/ff27b1c46f574aaabdc0444e9aa1230b/checkpoint.pkl",
+      "action": "excluded",
+      "original_sha256": "4244fa78e08c07be68faa4e9ded9876753242b785929910c342f011f8bdf6220",
+      "public_sha256": null
+    },
+    {
+      "path": "results/practical-fixed-20261115-1400/synthetic_none/pysr/calculation/discover/pysr/17/native/3b892e7b068d4c4bb85d111dd937621c/checkpoint.pkl",
+      "action": "excluded",
+      "original_sha256": "3ca2da16d4d56f0216c3c84184f70cee378b894cbcefe4105624a7369137f112",
+      "public_sha256": null
+    },
+    {
+      "path": "results/cleanup-normal-20261116-030616/calculation/container_execution.json",
+      "action": "excluded",
+      "original_sha256": "f8934b6a81ea1bd610f30ea9a5c2e780d0f2614a06f92e961c8f1607891beff7",
+      "public_sha256": null
+    },
+    {
+      "path": "data/concrete/source.zip",
+      "action": "excluded",
+      "original_sha256": "dad85d14de8aee4e07479daa774e6b569a313715b71a3b92c95a07cf91c2c9a7",
+      "public_sha256": null
+    },
+    {
+      "path": "data/partial_equations/abalone/source.zip",
+      "action": "excluded",
+      "original_sha256": "755a6a67c5b266961a3f149ea13be2cfb6e6c727e48cee3c83bc0b4526210ee4",
+      "public_sha256": null
+    },
+    {
+      "path": "data/partial_equations/abalone/source.names",
+      "action": "redacted contact lines10,13",
+      "original_sha256": "542eee5a2a0ee72db563de010dc3b5055b03c5dc624049ae1f2208fc66a14aac",
+      "public_sha256": "1826ae2e181173987450ab1d8f350067cc5926ef466a84339bd3e79aa4853918"
+    },
+    {
+      "path": "ASSET_MANIFEST.json",
+      "action": "public repo and verified MIT evidence",
+      "original_sha256": "2440ef562bc0309549ccd7691f5eb45c8109023019d244d4f4f562eb00674f90",
+      "public_sha256": "f12f40052e28c081714b30cb0bb77d5c8ff1181a723a6454bf02e912067522d9"
+    },
+    {
+      "path": "README.md",
+      "action": "public derived scope/setup links",
+      "original_sha256": "583edcf35b640abde46bd77caffb7f0b5bcd6f1e5d83c54a44cc01731fe3d468",
+      "public_sha256": "ce3a55f02642f529862f392d10525c12947b1c3b01cb2cf2fc02b095dd5183a4"
+    }
+  ],
+  "numeric_model_scores_unchanged": true,
+  "e2e_weight_excluded": true,
+  "dataset_rights_local_records": {
+    "UCI yacht/airfoil/concrete/ccpp/abalone": "CC-BY-4.0 metadata and original attribution retained except contact redaction",
+    "NIST": "bundled public-domain terms retained",
+    "external/scilaws_proton_15b9325": "metadata.yaml explicitly CC-BY-4.0; source context in benchmarks/proton.md",
+    "partial_equations synthetic": "project-generated data and generator/source metadata retained"
+  },
+  "historical_manifests": "References and hashes describe originals, not excluded/redacted publication artifacts."
+}

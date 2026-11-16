@@ -1,0 +1,2 @@
+engine,seed,status,native_execution_status,reason,wall_seconds,exported_candidates,summary_path
+e2e,42,ok,completed,,198.73502130398992,31,/work/results/practical-fixed-20261115-1400/yacht/e2e/calculation/discover/e2e/42/engine_summary.json

@@ -1,0 +1,20 @@
+# Test responsibilities
+
+Fast tests run against the numerical/domain packages without optional search libraries, network access, checkpoint loading or GPU work. The default `python -m pytest` excludes the `native` marker. Use an environment with the package and its test dependencies already installed, or the existing `core` container profile.
+
+## Keep one owner for each risk
+
+- Input boundaries: `test_json_config`, `test_data_selection`, `test_observation_coordinates`, `test_equation_templates`, and `test_input_geometry` cover malformed input, frozen partitions and physical coordinates. Validate at the receiving boundary, not every helper.
+- Shared execution and numerical counterexamples: `test_expression_model`, `test_domains`, `test_unit_coordinates`, `test_fitting_scales`, and `test_core_native_boundaries` cover invalid intermediate values, fixed/free parameters, scale loss and replay fidelity. Equality alone is insufficient when both paths could make the same mistake; preserve an independent expected value or invalid mask.
+- Candidate allocation: `test_candidate_pool` owns complete archives, explicit diverse caps, parameter identity and rejected obsolete policies. Candidate-generation tests do not rank other methods.
+- Adapter conversion: `test_*_export`, `test_e2e`, `test_pysr_template`, and `test_parfam_functions` exercise each native representation's conversion and unsupported intent before optional runtime access. `test_physo_export` owns coefficient-unit conversion and the truth-independent unit catalog. Small synthetic native records are transport/export fixtures, not proof of a real native run.
+- Workflow and leakage: `test_workbench`, `test_foundation_boundaries`, `test_response_constraints`, `test_estimation_and_use`, and `test_hypothesis_outputs` cover selection before Final, unchanged sources, distinct observations for calibration, explicit evidence scope and prediction use. Pair-scope/derivative coverage has one workflow owner in `test_foundation_boundaries`.
+- Persistence and handoff: `test_hypothesis_storage`, `test_result_handoff`, `test_internal_release`, `test_pipeline`, `test_ensemble`, and `test_implicit` cover portable reload, integrity, supported historical data-only artifacts and integration transport. Keep corruption and interrupted-write cases; they are not optional diagnostics.
+- Reporting: interpretation tests and `node tests/verify_report_runtime.cjs` check preserved evidence, units, selection binding and rendering behavior. Reporting must not recompute, refit or reselect. JavaScript checks do not replace browser/visual acceptance.
+- Lifecycle and external execution: `test_runner`, `test_review_boundaries`, and `test_native_completed_progress` cover owned process cleanup, partial outcomes and interruption. `test_runtime_extensions` runs the third-party NumPy adapter through actual discovery/evaluator workers and portable reload, and checks missing or changed extension failures. This is a source regression; the [extension guide](../docs/developer_spec.md) gives separate installed-package acceptance. Keep failures distinct from valid-but-ineligible candidates.
+
+## Separate real native acceptance
+
+Run `python -m pytest -m native` only with the required pinned profiles and explicitly prepared assets. Each adapter needs a small native-to-portable check; source-only conversion tests do not replace it. Tests must not silently download checkpoints, substitute another engine, discard difficult rows or claim scientific identification from a finite prediction. Installed-wheel and source tests are separate gates.
+
+When consolidating, move each unique assertion to its owner before removing duplicated setup. Preserve native markers and numerical counterexamples. Counts and coverage percentages are evidence of exercised code, not a target or proof of scientific correctness. Add regression tests for an observed defect or a concrete boundary risk, not a mirror of dataclass fields, registry lists or private implementation structure.

@@ -1,0 +1,15 @@
+Prediction residuals
+X: x [m]
+Y: Observed - predicted [m^2]
+
+2. physo
+Candidate: physo/17/1@native
+Variant: native; seed: 17
+Eligible: True; reason: None
+Equation (public): y [m^2] = (((x + x)) ** (2))
+x_work [m] = 1 * x [m] + (0)
+y_work [m^2] = 1 * y [m^2] + (0)
+
+Scope: Selection rows at actual covariates; not a fixed-condition response, time sequence or causal effect.
+
+Exact rows and provenance: matching CSV and plot_data.json.

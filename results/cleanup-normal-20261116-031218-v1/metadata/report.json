@@ -1,0 +1,2258 @@
+{
+  "schema_version": 1,
+  "question": "Compare equations on fixed Selection rows, not independent Final evidence.",
+  "purpose": "local_prediction",
+  "data_kind": "unspecified; not asserted to be equipment measurements",
+  "unit": "m^2",
+  "unit_label": null,
+  "display_units": {},
+  "display_unit_scope": null,
+  "working_unit": "m^2",
+  "engineering_tolerance": null,
+  "columns": [
+    {
+      "column": "x",
+      "public_unit": "m",
+      "working_unit": "m",
+      "scale": 1.0,
+      "offset": 0.0,
+      "coordinate_role": null
+    }
+  ],
+  "mappings": [
+    "x_work [m] = 1 * x [m] + (0)",
+    "y_work [m^2] = 1 * y [m^2] + (0)"
+  ],
+  "geometry": {
+    "schema_version": 1,
+    "source_variables": [
+      {
+        "id": "x0",
+        "column": "x",
+        "unit": "m",
+        "domain": null,
+        "coordinate_role": null
+      }
+    ],
+    "domain": {
+      "columns": [
+        "x"
+      ],
+      "space_id": "source_inputs",
+      "kind": "observed",
+      "units": {
+        "x": "m"
+      },
+      "coordinate_roles": {
+        "x": null
+      },
+      "bounds": [
+        null
+      ]
+    },
+    "map": null
+  },
+  "observation_model": null,
+  "study_sha256": "b7bc4d3edc98dfd38d949a3f2c28ee394c90848f9351f5b58cc6de8c52b0f42e",
+  "comparison_sha256": "ee04b947b42f06c358c114c33ccfc8e857639142ce4e08a4099b532a7c63ff63",
+  "selection_rows": 24,
+  "decision": null,
+  "decision_sha256": null,
+  "audit": {
+    "provided": false,
+    "label": "Final\u76e3\u67fb\u672a\u8aad\u8fbc\u3002\u3053\u306e\u8868\u793a\u304b\u3089Final\u652f\u6301\u3092\u5224\u65ad\u3067\u304d\u307e\u305b\u3093\u3002",
+    "rows": {},
+    "unit": "m^2",
+    "quantity_coordinate": "public"
+  },
+  "interval": null,
+  "exposure": {
+    "selection_snapshot": {
+      "declared_history": "unknown",
+      "status": "prior exposure unknown",
+      "same_data_exposed": false,
+      "evidence": []
+    },
+    "current_access_record": false,
+    "current_record": null
+  },
+  "residual_axis": {
+    "x": [
+      0.2366197183098591,
+      0.2915492957746479,
+      0.3464788732394366,
+      0.4014084507042254,
+      0.4563380281690141,
+      0.5112676056338028,
+      0.5661971830985916,
+      0.6211267605633803,
+      0.676056338028169,
+      0.7309859154929577,
+      0.7859154929577465,
+      0.8408450704225352,
+      0.8957746478873239,
+      0.9507042253521129,
+      1.0056338028169014,
+      1.06056338028169,
+      1.115492957746479,
+      1.1704225352112676,
+      1.2253521126760565,
+      1.280281690140845,
+      1.3352112676056338,
+      1.3901408450704225,
+      1.4450704225352111,
+      1.5
+    ],
+    "x_label": "x [m]",
+    "scope": "Selection rows at their actual covariates; not fixed-condition causal response"
+  },
+  "candidates": [
+    {
+      "id": "physo/17/0@native",
+      "kind": "explicit",
+      "subject": {
+        "relation_ref": "physo/17/0@native",
+        "relation_state_sha256": "19343605f2fcb6966c113d12138172cd37590ac15044d8eb6d21eed4b279659b",
+        "view": "value",
+        "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "method": "physo",
+      "seed": 17,
+      "variant": "native",
+      "syntax": "syntax-d1e33e368e05",
+      "hypothesis": null,
+      "eligible": true,
+      "reason": null,
+      "native_check": {
+        "passed": true,
+        "n_points": 64,
+        "max_abs_error": 0.0,
+        "absolute_scale": 2.6101210323658384,
+        "signal_rtol": 1e-05,
+        "atol": 2.6101210323658385e-05,
+        "float64_ulp_allowance": 8,
+        "resolution_limited": false,
+        "zero_signal_policy": "exact equality; no dimensional absolute floor",
+        "finite_and_signed_nonfinite_masks_match": true,
+        "policy": "signal scale plus float64 ULP; no relative tolerance on raw output offset",
+        "train_points": 48,
+        "boundary_and_configured_points": 16,
+        "scope": "train plus independent declared-domain/interior/boundary/configured probes; no global equivalence proof",
+        "division_policy": "common evaluator oracle",
+        "domain_probe_policy": "observed",
+        "arithmetic": "strict_real",
+        "comparison_semantics": "declared native arithmetic, including signed Inf/NaN masks",
+        "common_prediction_semantics": "finite real-domain projection; invalid intermediate rows retained separately",
+        "common_real_domain_valid_points": 64
+      },
+      "selection": {
+        "rmse": 3.3675306987094733,
+        "mae": 2.6956169410831183,
+        "r2": -0.5657916641581999,
+        "reason": null
+      },
+      "complexity": {
+        "nodes": 3,
+        "free": 0
+      },
+      "checks": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "expanded source-coordinate AST",
+          "reason": null,
+          "count": 3,
+          "limit": 12,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.structure",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.operators",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.nodes",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.argument.0.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.output.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "domain_prediction_validity",
+          "status": "pass",
+          "required": true,
+          "method": "automatic domain points; finite prediction only, no response-bound expansion",
+          "reason": null,
+          "n_points": 16,
+          "n_valid": 16
+        }
+      ],
+      "response_evaluation": [
+        {
+          "status": "not_evaluated",
+          "reason": "No response evaluation points specified",
+          "point_origin": "prepared_problem",
+          "data_role": "Selection eligibility; not independent Test",
+          "independence": "not_asserted; external reuse history unknown",
+          "coordinates": "working; canonical units and frozen input geometry",
+          "point_units": {
+            "x": "m"
+          },
+          "bounds_scope": "current study conditions, including additional restrictions",
+          "overlap_with_prepared_points": null,
+          "points": []
+        },
+        {
+          "status": "not_evaluated",
+          "reason": "No response evaluation points specified",
+          "point_origin": "additional_study",
+          "data_role": "Selection eligibility; not independent Test",
+          "independence": "not_asserted; external reuse history unknown",
+          "coordinates": "working; canonical units and frozen input geometry",
+          "point_units": {
+            "x": "m"
+          },
+          "bounds_scope": "current study conditions, including additional restrictions",
+          "overlap_with_prepared_points": 0,
+          "points": []
+        }
+      ],
+      "selection_strata": {},
+      "final": null,
+      "interpretation": null,
+      "interpretations": [],
+      "template": {
+        "status": "computed",
+        "knowledge": {
+          "kind": "hypothesis",
+          "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+        },
+        "declared_formula": "((h(x)) ** 2)",
+        "sharing": "Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.",
+        "components": [],
+        "slots": [
+          {
+            "name": "h",
+            "arguments": [
+              {
+                "name": "x0",
+                "unit": "m"
+              }
+            ],
+            "unit": "m",
+            "description": null,
+            "formula": "x0",
+            "parameters": []
+          }
+        ],
+        "dependent_parameters": [],
+        "coordinates": "canonical working; ranges on frozen Selection inputs only",
+        "interpretation_limit": "Named components describe this declared representation, not unique identification or causal effects."
+      },
+      "local_parameter_identifiability": {
+        "status": "not_computed",
+        "reason": "Not requested for this record via parameter_evidence_ids; prediction metrics and eligibility are independent.",
+        "data_role": "selection"
+      },
+      "questions": [],
+      "execution_view": {
+        "name": "value",
+        "settings": {}
+      },
+      "source": {
+        "status": "ok",
+        "native_execution_status": "completed",
+        "wall_seconds": 7.225188595009968,
+        "response_enforcement": {
+          "effective": "not_requested"
+        },
+        "recovery_seconds": null,
+        "reason": null,
+        "termination": "native_return",
+        "native_work": {
+          "epochs_completed": 1,
+          "optimizer_steps": 1,
+          "physical": 48,
+          "positive_reward": 48,
+          "sampled": 48,
+          "scope": "actual logger rows/optimizer steps; reward counts can repeat expressions and do not prove convergence"
+        },
+        "scope": null,
+        "fit": null,
+        "knowledge": null,
+        "artifacts": {
+          "native_programs": "/work/results/cleanup-normal-20261116-031218-v1/calculation/discover/physo/17/physo_native.json"
+        },
+        "effective_profile": {
+          "candidate_pool_policy": "all",
+          "device": "cpu",
+          "operators": [
+            "mul",
+            "add",
+            "pow_int"
+          ],
+          "options": {
+            "batch_size": 48,
+            "epochs": 1,
+            "max_n_evaluations": 48,
+            "max_time_step": 5,
+            "parameter_units": {
+              "a": "1"
+            }
+          }
+        },
+        "profile_evidence": {
+          "assets": null,
+          "candidate_pool": {
+            "archive_scope": "all faithfully exported native candidates, not all internal search states",
+            "discarded_from_comparison_ids": [],
+            "emitted": 3,
+            "limit": null,
+            "policy": "all",
+            "quality_scope": "Train/shared probes only when explicit bounded allocation is requested; compare owns final eligibility",
+            "retained": 3
+          },
+          "constraint_application": {
+            "equation_template": "post-filtered",
+            "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+            "operators": "enforced during search",
+            "unit_search": {
+              "all_input_target_basic_dimensions_dimensionless": false,
+              "native_options": {},
+              "requested": true,
+              "scope": "native basic dimensions (L/M/T/K) used during search; angle/cycle quantity kinds remain portable post-checks; not an identical hard guarantee across methods",
+              "supported": true,
+              "warning": null
+            },
+            "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter"
+          },
+          "constraint_support": {
+            "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+            "fixed_constants": "enforced during search, immutable values/units; native SR rounded-name collisions rejected",
+            "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+            "operators": "enforced during search",
+            "power_indices": "native n2/n3/n4; rootn uses native signed cbrt only",
+            "probes": "finite-point hard constrained coefficient fit before native reward/RNN update",
+            "response_bounds": "hard finite-point coefficient constraints before reward",
+            "response_checks": "finite-step coefficient constraints before reward; not analytic proof",
+            "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+            "variables": "disallowed columns excluded before native search; full-schema export/prediction checked"
+          },
+          "engine": "physo",
+          "exported_candidates": 3,
+          "hard_wall_budget": 90,
+          "native_artifacts": {
+            "native_programs": "/work/results/cleanup-normal-20261116-031218-v1/calculation/discover/physo/17/physo_native.json"
+          },
+          "native_effective_work": {
+            "checkpoint_seconds": 0.02119554701494053,
+            "native_candidates": 3,
+            "native_search_operators": [
+              "mul",
+              "add"
+            ],
+            "native_work": {
+              "epochs_completed": 1,
+              "optimizer_steps": 1,
+              "physical": 48,
+              "positive_reward": 48,
+              "sampled": 48,
+              "scope": "actual logger rows/optimizer steps; reward counts can repeat expressions and do not prove convergence"
+            },
+            "termination_reason": "native_return"
+          },
+          "native_execution_status": "completed",
+          "profile": {
+            "device": "cpu",
+            "limits": {
+              "allowed_variables": null,
+              "equation_template": {
+                "ast": {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "var": "x0"
+                        }
+                      ],
+                      "slot": "h"
+                    },
+                    {
+                      "const": 2
+                    }
+                  ],
+                  "op": "pow_int"
+                },
+                "components": {},
+                "coordinate_space": "working",
+                "knowledge": {
+                  "kind": "hypothesis",
+                  "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+                },
+                "parameters": {},
+                "slots": {
+                  "h": {
+                    "allowed_operators": [
+                      "mul",
+                      "add"
+                    ],
+                    "arguments": [
+                      {
+                        "name": "x0",
+                        "unit": "m"
+                      }
+                    ],
+                    "max_nodes": 7,
+                    "unit": "m"
+                  }
+                }
+              },
+              "max_free_parameters": null,
+              "max_nodes": 12,
+              "max_wall_seconds": 90,
+              "probes": [],
+              "require_units": true,
+              "response_bounds": [
+                null,
+                null
+              ],
+              "response_checks": [],
+              "response_enforcement": null,
+              "response_mode": "search",
+              "unit_search": true
+            },
+            "max_wall_seconds": null,
+            "operators": [
+              "mul",
+              "add",
+              "pow_int"
+            ],
+            "options": {
+              "batch_size": 48,
+              "epochs": 1,
+              "max_n_evaluations": 48,
+              "max_time_step": 5,
+              "parameter_units": {
+                "a": "1"
+              }
+            }
+          },
+          "reason": null,
+          "response_enforcement": {
+            "effective": "not_requested"
+          },
+          "retained_candidates": 3,
+          "runtime": "3.11.15",
+          "runtime_image_id": "sha256:777094d547ccb85be4f578dd001946a5e7757e6420a1e886f76171a2067107fc",
+          "scope": "evidence for this resolved profile and run; not all-library readiness or adequacy on other problems",
+          "search_response_evidence": null,
+          "seed": 17,
+          "status": "ok",
+          "summary_path": "/work/results/cleanup-normal-20261116-031218-v1/calculation/discover/physo/17/engine_summary.json",
+          "summary_sha256": "c20660f1112f14098ec222e298e9cea2d18b8ba52d305e98600986378d095457",
+          "wall_seconds": 7.225188595009968
+        }
+      },
+      "parameters": [],
+      "formula": "((x_work) ** (2))",
+      "public_formula": "y [m^2] = ((x) ** (2))",
+      "public_rule": "y [m^2] = (F_work - (0)) / (1)",
+      "mappings": [
+        "x_work [m] = 1 * x [m] + (0)",
+        "y_work [m^2] = 1 * y [m^2] + (0)"
+      ],
+      "residual": null,
+      "members": [],
+      "equation_output": {
+        "equation": {
+          "schema_version": 2,
+          "ast": {
+            "op": "pow_int",
+            "args": [
+              {
+                "var": "x0"
+              },
+              {
+                "const": 2
+              }
+            ]
+          },
+          "parameters": {},
+          "template": {
+            "specification": {
+              "coordinate_space": "working",
+              "ast": {
+                "op": "pow_int",
+                "args": [
+                  {
+                    "slot": "h",
+                    "args": [
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  },
+                  {
+                    "const": 2
+                  }
+                ]
+              },
+              "parameters": {},
+              "components": {},
+              "knowledge": {
+                "kind": "hypothesis",
+                "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+              },
+              "slots": {
+                "h": {
+                  "arguments": [
+                    {
+                      "name": "x0",
+                      "unit": "m"
+                    }
+                  ],
+                  "unit": "m",
+                  "max_nodes": 7,
+                  "allowed_operators": [
+                    "mul",
+                    "add"
+                  ]
+                }
+              }
+            },
+            "slots": {
+              "h": {
+                "schema_version": 1,
+                "ast": {
+                  "var": "x0"
+                },
+                "parameters": {}
+              }
+            }
+          }
+        },
+        "n_nodes": 3,
+        "working_n_nodes": 3,
+        "complexity_scope": "expanded source-coordinate AST",
+        "text": "((x_work) ** (2))",
+        "latex": "\\left(\\text{x\\_work}\\right)^{2}",
+        "public_text": "y [m^2] = ((x) ** (2))",
+        "public_latex": "\\text{y}\\;[\\text{m\\textasciicircum{}2}] = \\left(\\text{x}\\right)^{2}",
+        "display_text": "x_work ^ 2",
+        "public_display_text": "y [m^2] = x ^ 2",
+        "parameters": [],
+        "arithmetic": "strict_real",
+        "operators": [
+          "pow_int"
+        ],
+        "semantic_notes": [
+          "Display only; no simplification, fitting, coefficient conversion or model selection.",
+          "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+          "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+          "coef['name'] / theta_name denote coefficients, distinct from input and target column names.",
+          "pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes."
+        ]
+      },
+      "prediction_scatter": {
+        "observed": [
+          0.2239555643721484,
+          0.3400039674667724,
+          0.4801904384050783,
+          0.6445149771870661,
+          0.8329775838127356,
+          1.0455782582820867,
+          1.28231700059512,
+          1.5431938107518353,
+          1.8282086887522315,
+          2.1373616345963096,
+          2.470652648284071,
+          2.8280817298155125,
+          3.2096488791906364,
+          3.615354096409443,
+          4.04519738147193,
+          4.499178734378099,
+          4.977298155127952,
+          5.479555643721484,
+          6.005951200158698,
+          6.556484824439594,
+          7.1311565165641735,
+          7.7299662765324335,
+          8.352914104344375,
+          9.0
+        ],
+        "predicted": [
+          0.05598889109303706,
+          0.08500099186669312,
+          0.12004760960126958,
+          0.16112874429676652,
+          0.2082443959531839,
+          0.2613945645705217,
+          0.32057925014878,
+          0.3857984526879588,
+          0.4570521721880579,
+          0.5343404086490774,
+          0.6176631620710178,
+          0.7070204324538781,
+          0.8024122197976591,
+          0.903838524102361,
+          1.0112993453679826,
+          1.1247946835945246,
+          1.244324538781988,
+          1.369888910930371,
+          1.501487800039675,
+          1.6391212061098985,
+          1.7827891291410434,
+          1.9324915691331084,
+          2.0882285260860938,
+          2.25
+        ],
+        "valid": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "scope": "Stored Selection rows; no Final data opened or predictions recomputed"
+      },
+      "residual_scatter": {
+        "y": [
+          0.16796667327911133,
+          0.2550029756000793,
+          0.3601428288038087,
+          0.4833862328902996,
+          0.6247331878595517,
+          0.784183693711565,
+          0.96173775044634,
+          1.1573953580638765,
+          1.3711565165641737,
+          1.603021225947232,
+          1.8529894862130534,
+          2.1210612973616345,
+          2.4072366593929773,
+          2.711515572307082,
+          3.033898036103948,
+          3.3743840507835747,
+          3.732973616345964,
+          4.109666732791113,
+          4.504463400119024,
+          4.917363618329696,
+          5.34836738742313,
+          5.797474707399325,
+          6.264685578258281,
+          6.75
+        ],
+        "valid": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "y_label": "observed - prediction [m^2]",
+        "scope": "Selection rows at their actual covariates; not fixed-condition causal response"
+      }
+    },
+    {
+      "id": "physo/17/1@native",
+      "kind": "explicit",
+      "subject": {
+        "relation_ref": "physo/17/1@native",
+        "relation_state_sha256": "15ae3ee97f48d331b4e9d0f849f4317b99c02738a97760dc65a890ed73dacd28",
+        "view": "value",
+        "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "method": "physo",
+      "seed": 17,
+      "variant": "native",
+      "syntax": "syntax-a628c53e9893",
+      "hypothesis": null,
+      "eligible": true,
+      "reason": null,
+      "native_check": {
+        "passed": true,
+        "n_points": 64,
+        "max_abs_error": 0.0,
+        "absolute_scale": 2.6101210323658384,
+        "signal_rtol": 1e-05,
+        "atol": 2.6101210323658385e-05,
+        "float64_ulp_allowance": 8,
+        "resolution_limited": false,
+        "zero_signal_policy": "exact equality; no dimensional absolute floor",
+        "finite_and_signed_nonfinite_masks_match": true,
+        "policy": "signal scale plus float64 ULP; no relative tolerance on raw output offset",
+        "train_points": 48,
+        "boundary_and_configured_points": 16,
+        "scope": "train plus independent declared-domain/interior/boundary/configured probes; no global equivalence proof",
+        "division_policy": "common evaluator oracle",
+        "domain_probe_policy": "observed",
+        "arithmetic": "strict_real",
+        "comparison_semantics": "declared native arithmetic, including signed Inf/NaN masks",
+        "common_prediction_semantics": "finite real-domain projection; invalid intermediate rows retained separately",
+        "common_real_domain_valid_points": 64
+      },
+      "selection": {
+        "rmse": 4.45136038133333e-16,
+        "mae": 1.5612511283791264e-16,
+        "r2": 1.0,
+        "reason": null
+      },
+      "complexity": {
+        "nodes": 5,
+        "free": 0
+      },
+      "checks": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "expanded source-coordinate AST",
+          "reason": null,
+          "count": 5,
+          "limit": 12,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.structure",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.operators",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.nodes",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.argument.0.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.output.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "domain_prediction_validity",
+          "status": "pass",
+          "required": true,
+          "method": "automatic domain points; finite prediction only, no response-bound expansion",
+          "reason": null,
+          "n_points": 16,
+          "n_valid": 16
+        }
+      ],
+      "response_evaluation": [
+        {
+          "status": "not_evaluated",
+          "reason": "No response evaluation points specified",
+          "point_origin": "prepared_problem",
+          "data_role": "Selection eligibility; not independent Test",
+          "independence": "not_asserted; external reuse history unknown",
+          "coordinates": "working; canonical units and frozen input geometry",
+          "point_units": {
+            "x": "m"
+          },
+          "bounds_scope": "current study conditions, including additional restrictions",
+          "overlap_with_prepared_points": null,
+          "points": []
+        },
+        {
+          "status": "not_evaluated",
+          "reason": "No response evaluation points specified",
+          "point_origin": "additional_study",
+          "data_role": "Selection eligibility; not independent Test",
+          "independence": "not_asserted; external reuse history unknown",
+          "coordinates": "working; canonical units and frozen input geometry",
+          "point_units": {
+            "x": "m"
+          },
+          "bounds_scope": "current study conditions, including additional restrictions",
+          "overlap_with_prepared_points": 0,
+          "points": []
+        }
+      ],
+      "selection_strata": {},
+      "final": null,
+      "interpretation": null,
+      "interpretations": [],
+      "template": {
+        "status": "computed",
+        "knowledge": {
+          "kind": "hypothesis",
+          "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+        },
+        "declared_formula": "((h(x)) ** 2)",
+        "sharing": "Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.",
+        "components": [],
+        "slots": [
+          {
+            "name": "h",
+            "arguments": [
+              {
+                "name": "x0",
+                "unit": "m"
+              }
+            ],
+            "unit": "m",
+            "description": null,
+            "formula": "(x0 + x0)",
+            "parameters": []
+          }
+        ],
+        "dependent_parameters": [],
+        "coordinates": "canonical working; ranges on frozen Selection inputs only",
+        "interpretation_limit": "Named components describe this declared representation, not unique identification or causal effects."
+      },
+      "local_parameter_identifiability": {
+        "status": "not_computed",
+        "reason": "Not requested for this record via parameter_evidence_ids; prediction metrics and eligibility are independent.",
+        "data_role": "selection"
+      },
+      "questions": [],
+      "execution_view": {
+        "name": "value",
+        "settings": {}
+      },
+      "source": {
+        "status": "ok",
+        "native_execution_status": "completed",
+        "wall_seconds": 7.225188595009968,
+        "response_enforcement": {
+          "effective": "not_requested"
+        },
+        "recovery_seconds": null,
+        "reason": null,
+        "termination": "native_return",
+        "native_work": {
+          "epochs_completed": 1,
+          "optimizer_steps": 1,
+          "physical": 48,
+          "positive_reward": 48,
+          "sampled": 48,
+          "scope": "actual logger rows/optimizer steps; reward counts can repeat expressions and do not prove convergence"
+        },
+        "scope": null,
+        "fit": null,
+        "knowledge": null,
+        "artifacts": {
+          "native_programs": "/work/results/cleanup-normal-20261116-031218-v1/calculation/discover/physo/17/physo_native.json"
+        },
+        "effective_profile": {
+          "candidate_pool_policy": "all",
+          "device": "cpu",
+          "operators": [
+            "mul",
+            "add",
+            "pow_int"
+          ],
+          "options": {
+            "batch_size": 48,
+            "epochs": 1,
+            "max_n_evaluations": 48,
+            "max_time_step": 5,
+            "parameter_units": {
+              "a": "1"
+            }
+          }
+        },
+        "profile_evidence": {
+          "assets": null,
+          "candidate_pool": {
+            "archive_scope": "all faithfully exported native candidates, not all internal search states",
+            "discarded_from_comparison_ids": [],
+            "emitted": 3,
+            "limit": null,
+            "policy": "all",
+            "quality_scope": "Train/shared probes only when explicit bounded allocation is requested; compare owns final eligibility",
+            "retained": 3
+          },
+          "constraint_application": {
+            "equation_template": "post-filtered",
+            "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+            "operators": "enforced during search",
+            "unit_search": {
+              "all_input_target_basic_dimensions_dimensionless": false,
+              "native_options": {},
+              "requested": true,
+              "scope": "native basic dimensions (L/M/T/K) used during search; angle/cycle quantity kinds remain portable post-checks; not an identical hard guarantee across methods",
+              "supported": true,
+              "warning": null
+            },
+            "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter"
+          },
+          "constraint_support": {
+            "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+            "fixed_constants": "enforced during search, immutable values/units; native SR rounded-name collisions rejected",
+            "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+            "operators": "enforced during search",
+            "power_indices": "native n2/n3/n4; rootn uses native signed cbrt only",
+            "probes": "finite-point hard constrained coefficient fit before native reward/RNN update",
+            "response_bounds": "hard finite-point coefficient constraints before reward",
+            "response_checks": "finite-step coefficient constraints before reward; not analytic proof",
+            "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+            "variables": "disallowed columns excluded before native search; full-schema export/prediction checked"
+          },
+          "engine": "physo",
+          "exported_candidates": 3,
+          "hard_wall_budget": 90,
+          "native_artifacts": {
+            "native_programs": "/work/results/cleanup-normal-20261116-031218-v1/calculation/discover/physo/17/physo_native.json"
+          },
+          "native_effective_work": {
+            "checkpoint_seconds": 0.02119554701494053,
+            "native_candidates": 3,
+            "native_search_operators": [
+              "mul",
+              "add"
+            ],
+            "native_work": {
+              "epochs_completed": 1,
+              "optimizer_steps": 1,
+              "physical": 48,
+              "positive_reward": 48,
+              "sampled": 48,
+              "scope": "actual logger rows/optimizer steps; reward counts can repeat expressions and do not prove convergence"
+            },
+            "termination_reason": "native_return"
+          },
+          "native_execution_status": "completed",
+          "profile": {
+            "device": "cpu",
+            "limits": {
+              "allowed_variables": null,
+              "equation_template": {
+                "ast": {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "var": "x0"
+                        }
+                      ],
+                      "slot": "h"
+                    },
+                    {
+                      "const": 2
+                    }
+                  ],
+                  "op": "pow_int"
+                },
+                "components": {},
+                "coordinate_space": "working",
+                "knowledge": {
+                  "kind": "hypothesis",
+                  "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+                },
+                "parameters": {},
+                "slots": {
+                  "h": {
+                    "allowed_operators": [
+                      "mul",
+                      "add"
+                    ],
+                    "arguments": [
+                      {
+                        "name": "x0",
+                        "unit": "m"
+                      }
+                    ],
+                    "max_nodes": 7,
+                    "unit": "m"
+                  }
+                }
+              },
+              "max_free_parameters": null,
+              "max_nodes": 12,
+              "max_wall_seconds": 90,
+              "probes": [],
+              "require_units": true,
+              "response_bounds": [
+                null,
+                null
+              ],
+              "response_checks": [],
+              "response_enforcement": null,
+              "response_mode": "search",
+              "unit_search": true
+            },
+            "max_wall_seconds": null,
+            "operators": [
+              "mul",
+              "add",
+              "pow_int"
+            ],
+            "options": {
+              "batch_size": 48,
+              "epochs": 1,
+              "max_n_evaluations": 48,
+              "max_time_step": 5,
+              "parameter_units": {
+                "a": "1"
+              }
+            }
+          },
+          "reason": null,
+          "response_enforcement": {
+            "effective": "not_requested"
+          },
+          "retained_candidates": 3,
+          "runtime": "3.11.15",
+          "runtime_image_id": "sha256:777094d547ccb85be4f578dd001946a5e7757e6420a1e886f76171a2067107fc",
+          "scope": "evidence for this resolved profile and run; not all-library readiness or adequacy on other problems",
+          "search_response_evidence": null,
+          "seed": 17,
+          "status": "ok",
+          "summary_path": "/work/results/cleanup-normal-20261116-031218-v1/calculation/discover/physo/17/engine_summary.json",
+          "summary_sha256": "c20660f1112f14098ec222e298e9cea2d18b8ba52d305e98600986378d095457",
+          "wall_seconds": 7.225188595009968
+        }
+      },
+      "parameters": [],
+      "formula": "(((x_work + x_work)) ** (2))",
+      "public_formula": "y [m^2] = (((x + x)) ** (2))",
+      "public_rule": "y [m^2] = (F_work - (0)) / (1)",
+      "mappings": [
+        "x_work [m] = 1 * x [m] + (0)",
+        "y_work [m^2] = 1 * y [m^2] + (0)"
+      ],
+      "residual": null,
+      "members": [],
+      "equation_output": {
+        "equation": {
+          "schema_version": 2,
+          "ast": {
+            "op": "pow_int",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "var": "x0"
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "const": 2
+              }
+            ]
+          },
+          "parameters": {},
+          "template": {
+            "specification": {
+              "coordinate_space": "working",
+              "ast": {
+                "op": "pow_int",
+                "args": [
+                  {
+                    "slot": "h",
+                    "args": [
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  },
+                  {
+                    "const": 2
+                  }
+                ]
+              },
+              "parameters": {},
+              "components": {},
+              "knowledge": {
+                "kind": "hypothesis",
+                "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+              },
+              "slots": {
+                "h": {
+                  "arguments": [
+                    {
+                      "name": "x0",
+                      "unit": "m"
+                    }
+                  ],
+                  "unit": "m",
+                  "max_nodes": 7,
+                  "allowed_operators": [
+                    "mul",
+                    "add"
+                  ]
+                }
+              }
+            },
+            "slots": {
+              "h": {
+                "schema_version": 1,
+                "ast": {
+                  "op": "add",
+                  "args": [
+                    {
+                      "var": "x0"
+                    },
+                    {
+                      "var": "x0"
+                    }
+                  ]
+                },
+                "parameters": {}
+              }
+            }
+          }
+        },
+        "n_nodes": 5,
+        "working_n_nodes": 5,
+        "complexity_scope": "expanded source-coordinate AST",
+        "text": "(((x_work + x_work)) ** (2))",
+        "latex": "\\left(\\left(\\text{x\\_work} + \\text{x\\_work}\\right)\\right)^{2}",
+        "public_text": "y [m^2] = (((x + x)) ** (2))",
+        "public_latex": "\\text{y}\\;[\\text{m\\textasciicircum{}2}] = \\left(\\left(\\text{x} + \\text{x}\\right)\\right)^{2}",
+        "display_text": "(x_work + x_work) ^ 2",
+        "public_display_text": "y [m^2] = (x + x) ^ 2",
+        "parameters": [],
+        "arithmetic": "strict_real",
+        "operators": [
+          "add",
+          "pow_int"
+        ],
+        "semantic_notes": [
+          "Display only; no simplification, fitting, coefficient conversion or model selection.",
+          "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+          "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+          "coef['name'] / theta_name denote coefficients, distinct from input and target column names.",
+          "pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes."
+        ]
+      },
+      "prediction_scatter": {
+        "observed": [
+          0.2239555643721484,
+          0.3400039674667724,
+          0.4801904384050783,
+          0.6445149771870661,
+          0.8329775838127356,
+          1.0455782582820867,
+          1.28231700059512,
+          1.5431938107518353,
+          1.8282086887522315,
+          2.1373616345963096,
+          2.470652648284071,
+          2.8280817298155125,
+          3.2096488791906364,
+          3.615354096409443,
+          4.04519738147193,
+          4.499178734378099,
+          4.977298155127952,
+          5.479555643721484,
+          6.005951200158698,
+          6.556484824439594,
+          7.1311565165641735,
+          7.7299662765324335,
+          8.352914104344375,
+          9.0
+        ],
+        "predicted": [
+          0.22395556437214825,
+          0.34000396746677247,
+          0.4801904384050783,
+          0.6445149771870661,
+          0.8329775838127356,
+          1.0455782582820867,
+          1.28231700059512,
+          1.5431938107518353,
+          1.8282086887522315,
+          2.1373616345963096,
+          2.470652648284071,
+          2.8280817298155125,
+          3.2096488791906364,
+          3.615354096409444,
+          4.04519738147193,
+          4.4991787343780985,
+          4.977298155127952,
+          5.479555643721484,
+          6.0059512001587,
+          6.556484824439594,
+          7.1311565165641735,
+          7.7299662765324335,
+          8.352914104344375,
+          9.0
+        ],
+        "valid": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "scope": "Stored Selection rows; no Final data opened or predictions recomputed"
+      },
+      "residual_scatter": {
+        "y": [
+          1.3877787807814457e-16,
+          -5.551115123125783e-17,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -8.881784197001252e-16,
+          0.0,
+          8.881784197001252e-16,
+          0.0,
+          0.0,
+          -1.7763568394002505e-15,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "valid": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "y_label": "observed - prediction [m^2]",
+        "scope": "Selection rows at their actual covariates; not fixed-condition causal response"
+      }
+    },
+    {
+      "id": "physo/17/2@native",
+      "kind": "explicit",
+      "subject": {
+        "relation_ref": "physo/17/2@native",
+        "relation_state_sha256": "a6bbcb39e01eaef4ab215430927ef5459d68ca1db5e32ee77632f8ffcc568e6e",
+        "view": "value",
+        "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "method": "physo",
+      "seed": 17,
+      "variant": "native",
+      "syntax": "syntax-173532d39af6",
+      "hypothesis": null,
+      "eligible": true,
+      "reason": null,
+      "native_check": {
+        "passed": true,
+        "n_points": 64,
+        "max_abs_error": 0.0,
+        "absolute_scale": 2.6101210323658384,
+        "signal_rtol": 1e-05,
+        "atol": 2.6101210323658385e-05,
+        "float64_ulp_allowance": 8,
+        "resolution_limited": false,
+        "zero_signal_policy": "exact equality; no dimensional absolute floor",
+        "finite_and_signed_nonfinite_masks_match": true,
+        "policy": "signal scale plus float64 ULP; no relative tolerance on raw output offset",
+        "train_points": 48,
+        "boundary_and_configured_points": 16,
+        "scope": "train plus independent declared-domain/interior/boundary/configured probes; no global equivalence proof",
+        "division_policy": "common evaluator oracle",
+        "domain_probe_policy": "observed",
+        "arithmetic": "strict_real",
+        "comparison_semantics": "declared native arithmetic, including signed Inf/NaN masks",
+        "common_prediction_semantics": "finite real-domain projection; invalid intermediate rows retained separately",
+        "common_real_domain_valid_points": 64
+      },
+      "selection": {
+        "rmse": 4.45136038133333e-16,
+        "mae": 1.5612511283791264e-16,
+        "r2": 1.0,
+        "reason": null
+      },
+      "complexity": {
+        "nodes": 7,
+        "free": 1
+      },
+      "checks": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "expanded source-coordinate AST",
+          "reason": null,
+          "count": 7,
+          "limit": 12,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.structure",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.operators",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.nodes",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.argument.0.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.output.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "domain_prediction_validity",
+          "status": "pass",
+          "required": true,
+          "method": "automatic domain points; finite prediction only, no response-bound expansion",
+          "reason": null,
+          "n_points": 16,
+          "n_valid": 16
+        }
+      ],
+      "response_evaluation": [
+        {
+          "status": "not_evaluated",
+          "reason": "No response evaluation points specified",
+          "point_origin": "prepared_problem",
+          "data_role": "Selection eligibility; not independent Test",
+          "independence": "not_asserted; external reuse history unknown",
+          "coordinates": "working; canonical units and frozen input geometry",
+          "point_units": {
+            "x": "m"
+          },
+          "bounds_scope": "current study conditions, including additional restrictions",
+          "overlap_with_prepared_points": null,
+          "points": []
+        },
+        {
+          "status": "not_evaluated",
+          "reason": "No response evaluation points specified",
+          "point_origin": "additional_study",
+          "data_role": "Selection eligibility; not independent Test",
+          "independence": "not_asserted; external reuse history unknown",
+          "coordinates": "working; canonical units and frozen input geometry",
+          "point_units": {
+            "x": "m"
+          },
+          "bounds_scope": "current study conditions, including additional restrictions",
+          "overlap_with_prepared_points": 0,
+          "points": []
+        }
+      ],
+      "selection_strata": {},
+      "final": null,
+      "interpretation": null,
+      "interpretations": [],
+      "template": {
+        "status": "computed",
+        "knowledge": {
+          "kind": "hypothesis",
+          "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+        },
+        "declared_formula": "((h(x)) ** 2)",
+        "sharing": "Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.",
+        "components": [],
+        "slots": [
+          {
+            "name": "h",
+            "arguments": [
+              {
+                "name": "x0",
+                "unit": "m"
+              }
+            ],
+            "unit": "m",
+            "description": null,
+            "formula": "(x0 * (1.0 * a))",
+            "parameters": [
+              {
+                "name": "a",
+                "value": 2.0,
+                "unit": "1",
+                "unit_origin": "unit provenance not separately recorded",
+                "role": "free",
+                "tied_to": null,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "origin": "native_free_constant_slot",
+                "coordinate_role": null
+              }
+            ]
+          }
+        ],
+        "dependent_parameters": [],
+        "coordinates": "canonical working; ranges on frozen Selection inputs only",
+        "interpretation_limit": "Named components describe this declared representation, not unique identification or causal effects."
+      },
+      "local_parameter_identifiability": {
+        "status": "not_computed",
+        "reason": "Not requested for this record via parameter_evidence_ids; prediction metrics and eligibility are independent.",
+        "data_role": "selection"
+      },
+      "questions": [],
+      "execution_view": {
+        "name": "value",
+        "settings": {}
+      },
+      "source": {
+        "status": "ok",
+        "native_execution_status": "completed",
+        "wall_seconds": 7.225188595009968,
+        "response_enforcement": {
+          "effective": "not_requested"
+        },
+        "recovery_seconds": null,
+        "reason": null,
+        "termination": "native_return",
+        "native_work": {
+          "epochs_completed": 1,
+          "optimizer_steps": 1,
+          "physical": 48,
+          "positive_reward": 48,
+          "sampled": 48,
+          "scope": "actual logger rows/optimizer steps; reward counts can repeat expressions and do not prove convergence"
+        },
+        "scope": null,
+        "fit": null,
+        "knowledge": null,
+        "artifacts": {
+          "native_programs": "/work/results/cleanup-normal-20261116-031218-v1/calculation/discover/physo/17/physo_native.json"
+        },
+        "effective_profile": {
+          "candidate_pool_policy": "all",
+          "device": "cpu",
+          "operators": [
+            "mul",
+            "add",
+            "pow_int"
+          ],
+          "options": {
+            "batch_size": 48,
+            "epochs": 1,
+            "max_n_evaluations": 48,
+            "max_time_step": 5,
+            "parameter_units": {
+              "a": "1"
+            }
+          }
+        },
+        "profile_evidence": {
+          "assets": null,
+          "candidate_pool": {
+            "archive_scope": "all faithfully exported native candidates, not all internal search states",
+            "discarded_from_comparison_ids": [],
+            "emitted": 3,
+            "limit": null,
+            "policy": "all",
+            "quality_scope": "Train/shared probes only when explicit bounded allocation is requested; compare owns final eligibility",
+            "retained": 3
+          },
+          "constraint_application": {
+            "equation_template": "post-filtered",
+            "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+            "operators": "enforced during search",
+            "unit_search": {
+              "all_input_target_basic_dimensions_dimensionless": false,
+              "native_options": {},
+              "requested": true,
+              "scope": "native basic dimensions (L/M/T/K) used during search; angle/cycle quantity kinds remain portable post-checks; not an identical hard guarantee across methods",
+              "supported": true,
+              "warning": null
+            },
+            "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter"
+          },
+          "constraint_support": {
+            "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+            "fixed_constants": "enforced during search, immutable values/units; native SR rounded-name collisions rejected",
+            "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+            "operators": "enforced during search",
+            "power_indices": "native n2/n3/n4; rootn uses native signed cbrt only",
+            "probes": "finite-point hard constrained coefficient fit before native reward/RNN update",
+            "response_bounds": "hard finite-point coefficient constraints before reward",
+            "response_checks": "finite-step coefficient constraints before reward; not analytic proof",
+            "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+            "variables": "disallowed columns excluded before native search; full-schema export/prediction checked"
+          },
+          "engine": "physo",
+          "exported_candidates": 3,
+          "hard_wall_budget": 90,
+          "native_artifacts": {
+            "native_programs": "/work/results/cleanup-normal-20261116-031218-v1/calculation/discover/physo/17/physo_native.json"
+          },
+          "native_effective_work": {
+            "checkpoint_seconds": 0.02119554701494053,
+            "native_candidates": 3,
+            "native_search_operators": [
+              "mul",
+              "add"
+            ],
+            "native_work": {
+              "epochs_completed": 1,
+              "optimizer_steps": 1,
+              "physical": 48,
+              "positive_reward": 48,
+              "sampled": 48,
+              "scope": "actual logger rows/optimizer steps; reward counts can repeat expressions and do not prove convergence"
+            },
+            "termination_reason": "native_return"
+          },
+          "native_execution_status": "completed",
+          "profile": {
+            "device": "cpu",
+            "limits": {
+              "allowed_variables": null,
+              "equation_template": {
+                "ast": {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "var": "x0"
+                        }
+                      ],
+                      "slot": "h"
+                    },
+                    {
+                      "const": 2
+                    }
+                  ],
+                  "op": "pow_int"
+                },
+                "components": {},
+                "coordinate_space": "working",
+                "knowledge": {
+                  "kind": "hypothesis",
+                  "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+                },
+                "parameters": {},
+                "slots": {
+                  "h": {
+                    "allowed_operators": [
+                      "mul",
+                      "add"
+                    ],
+                    "arguments": [
+                      {
+                        "name": "x0",
+                        "unit": "m"
+                      }
+                    ],
+                    "max_nodes": 7,
+                    "unit": "m"
+                  }
+                }
+              },
+              "max_free_parameters": null,
+              "max_nodes": 12,
+              "max_wall_seconds": 90,
+              "probes": [],
+              "require_units": true,
+              "response_bounds": [
+                null,
+                null
+              ],
+              "response_checks": [],
+              "response_enforcement": null,
+              "response_mode": "search",
+              "unit_search": true
+            },
+            "max_wall_seconds": null,
+            "operators": [
+              "mul",
+              "add",
+              "pow_int"
+            ],
+            "options": {
+              "batch_size": 48,
+              "epochs": 1,
+              "max_n_evaluations": 48,
+              "max_time_step": 5,
+              "parameter_units": {
+                "a": "1"
+              }
+            }
+          },
+          "reason": null,
+          "response_enforcement": {
+            "effective": "not_requested"
+          },
+          "retained_candidates": 3,
+          "runtime": "3.11.15",
+          "runtime_image_id": "sha256:777094d547ccb85be4f578dd001946a5e7757e6420a1e886f76171a2067107fc",
+          "scope": "evidence for this resolved profile and run; not all-library readiness or adequacy on other problems",
+          "search_response_evidence": null,
+          "seed": 17,
+          "status": "ok",
+          "summary_path": "/work/results/cleanup-normal-20261116-031218-v1/calculation/discover/physo/17/engine_summary.json",
+          "summary_sha256": "c20660f1112f14098ec222e298e9cea2d18b8ba52d305e98600986378d095457",
+          "wall_seconds": 7.225188595009968
+        }
+      },
+      "parameters": [
+        {
+          "name": "__slot_h_a",
+          "value": 2.0,
+          "unit": "1",
+          "unit_origin": "unit provenance not separately recorded",
+          "role": "free",
+          "tied_to": null,
+          "bounds": [
+            null,
+            null
+          ],
+          "origin": "native_free_constant_slot",
+          "coordinate_role": null
+        }
+      ],
+      "formula": "(((x_work * (1.0 * coef['__slot_h_a']))) ** (2))",
+      "public_formula": "y [m^2] = (((x * (1.0 * coef['__slot_h_a']))) ** (2))",
+      "public_rule": "y [m^2] = (F_work - (0)) / (1)",
+      "mappings": [
+        "x_work [m] = 1 * x [m] + (0)",
+        "y_work [m^2] = 1 * y [m^2] + (0)"
+      ],
+      "residual": null,
+      "members": [],
+      "equation_output": {
+        "equation": {
+          "schema_version": 2,
+          "ast": {
+            "op": "pow_int",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "var": "x0"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "const": 1.0
+                      },
+                      {
+                        "param": "__slot_h_a"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "const": 2
+              }
+            ]
+          },
+          "parameters": {
+            "__slot_h_a": {
+              "value": 2.0,
+              "trainable": true,
+              "origin": "native_free_constant_slot",
+              "bounds": [
+                null,
+                null
+              ],
+              "unit": "1",
+              "physo_native_name": "a"
+            }
+          },
+          "template": {
+            "specification": {
+              "coordinate_space": "working",
+              "ast": {
+                "op": "pow_int",
+                "args": [
+                  {
+                    "slot": "h",
+                    "args": [
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  },
+                  {
+                    "const": 2
+                  }
+                ]
+              },
+              "parameters": {},
+              "components": {},
+              "knowledge": {
+                "kind": "hypothesis",
+                "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+              },
+              "slots": {
+                "h": {
+                  "arguments": [
+                    {
+                      "name": "x0",
+                      "unit": "m"
+                    }
+                  ],
+                  "unit": "m",
+                  "max_nodes": 7,
+                  "allowed_operators": [
+                    "mul",
+                    "add"
+                  ]
+                }
+              }
+            },
+            "slots": {
+              "h": {
+                "schema_version": 1,
+                "ast": {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "var": "x0"
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "const": 1.0
+                        },
+                        {
+                          "param": "a"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "parameters": {
+                  "a": {
+                    "value": 2.0,
+                    "trainable": true,
+                    "origin": "native_free_constant_slot",
+                    "bounds": [
+                      null,
+                      null
+                    ],
+                    "unit": "1",
+                    "physo_native_name": "a"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "n_nodes": 7,
+        "working_n_nodes": 7,
+        "complexity_scope": "expanded source-coordinate AST",
+        "text": "(((x_work * (1.0 * coef['__slot_h_a']))) ** (2))",
+        "latex": "\\left(\\left(\\text{x\\_work} \\cdot \\left(1.0 \\cdot \\theta_{\\text{\\_\\_slot\\_h\\_a}}\\right)\\right)\\right)^{2}",
+        "public_text": "y [m^2] = (((x * (1.0 * coef['__slot_h_a']))) ** (2))",
+        "public_latex": "\\text{y}\\;[\\text{m\\textasciicircum{}2}] = \\left(\\left(\\text{x} \\cdot \\left(1.0 \\cdot \\theta_{\\text{\\_\\_slot\\_h\\_a}}\\right)\\right)\\right)^{2}",
+        "display_text": "(x_work * (1.0 * \u03b8[__slot_h_a])) ^ 2",
+        "public_display_text": "y [m^2] = (x * (1.0 * \u03b8[__slot_h_a])) ^ 2",
+        "parameters": [
+          {
+            "name": "__slot_h_a",
+            "value": 2.0,
+            "unit": "1",
+            "unit_origin": "unit provenance not separately recorded",
+            "role": "free",
+            "tied_to": null,
+            "bounds": [
+              null,
+              null
+            ],
+            "origin": "native_free_constant_slot",
+            "coordinate_role": null
+          }
+        ],
+        "arithmetic": "strict_real",
+        "operators": [
+          "mul",
+          "pow_int"
+        ],
+        "semantic_notes": [
+          "Display only; no simplification, fitting, coefficient conversion or model selection.",
+          "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+          "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+          "coef['name'] / theta_name denote coefficients, distinct from input and target column names.",
+          "pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes."
+        ]
+      },
+      "prediction_scatter": {
+        "observed": [
+          0.2239555643721484,
+          0.3400039674667724,
+          0.4801904384050783,
+          0.6445149771870661,
+          0.8329775838127356,
+          1.0455782582820867,
+          1.28231700059512,
+          1.5431938107518353,
+          1.8282086887522315,
+          2.1373616345963096,
+          2.470652648284071,
+          2.8280817298155125,
+          3.2096488791906364,
+          3.615354096409443,
+          4.04519738147193,
+          4.499178734378099,
+          4.977298155127952,
+          5.479555643721484,
+          6.005951200158698,
+          6.556484824439594,
+          7.1311565165641735,
+          7.7299662765324335,
+          8.352914104344375,
+          9.0
+        ],
+        "predicted": [
+          0.22395556437214825,
+          0.34000396746677247,
+          0.4801904384050783,
+          0.6445149771870661,
+          0.8329775838127356,
+          1.0455782582820867,
+          1.28231700059512,
+          1.5431938107518353,
+          1.8282086887522315,
+          2.1373616345963096,
+          2.470652648284071,
+          2.8280817298155125,
+          3.2096488791906364,
+          3.615354096409444,
+          4.04519738147193,
+          4.4991787343780985,
+          4.977298155127952,
+          5.479555643721484,
+          6.0059512001587,
+          6.556484824439594,
+          7.1311565165641735,
+          7.7299662765324335,
+          8.352914104344375,
+          9.0
+        ],
+        "valid": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "scope": "Stored Selection rows; no Final data opened or predictions recomputed"
+      },
+      "residual_scatter": {
+        "y": [
+          1.3877787807814457e-16,
+          -5.551115123125783e-17,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -8.881784197001252e-16,
+          0.0,
+          8.881784197001252e-16,
+          0.0,
+          0.0,
+          -1.7763568394002505e-15,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "valid": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "y_label": "observed - prediction [m^2]",
+        "scope": "Selection rows at their actual covariates; not fixed-condition causal response"
+      }
+    }
+  ],
+  "display_ids": [
+    "physo/17/1@native"
+  ],
+  "display_rule": "Display only: explicit IDs or lowest stored Selection-error representatives of different syntax; selected subject pinned. Syntax diversity is not mechanism diversity. All methods/candidates remain in the table.",
+  "pair_display_scope": "Frozen primary pairs plus explicitly requested same-pool supplemental pairs. Primary retained on overlap; supplemental results are display evidence, not a changed adoption decision.",
+  "pairs": [],
+  "analysis_comparisons": [],
+  "analyses": [],
+  "evidence_notes": [],
+  "context": {
+    "variables": [
+      {
+        "id": "x0",
+        "column": "x",
+        "unit": "m",
+        "domain": null,
+        "coordinate_role": null
+      }
+    ],
+    "target": {
+      "coordinate_role": null,
+      "column": "y",
+      "unit": "m^2",
+      "domain": null
+    },
+    "unit_coordinates": {
+      "policy": "canonical problem; explicit CSV conversion; all domains/constraints/tolerances in problem units",
+      "columns": {
+        "x": {
+          "coordinate_role": null,
+          "source_unit": "m",
+          "problem_unit": "m",
+          "scale": 1.0,
+          "offset": 0.0,
+          "dimension_status": "known"
+        },
+        "y": {
+          "coordinate_role": null,
+          "source_unit": "m^2",
+          "problem_unit": "m^2",
+          "scale": 1.0,
+          "offset": 0.0,
+          "dimension_status": "known"
+        }
+      }
+    },
+    "data_roles": {
+      "evidence_fit": "train",
+      "comparison": "selection",
+      "behavior_reference": "train"
+    },
+    "constraint_application": {
+      "kind": "postcheck only; no claim these additions were enforced in native search",
+      "discovery_constraints": {
+        "max_nodes": 12,
+        "max_free_parameters": null,
+        "require_units": true,
+        "allowed_variables": null,
+        "equation_template": {
+          "coordinate_space": "working",
+          "ast": {
+            "op": "pow_int",
+            "args": [
+              {
+                "slot": "h",
+                "args": [
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "const": 2
+              }
+            ]
+          },
+          "parameters": {},
+          "components": {},
+          "knowledge": {
+            "kind": "hypothesis",
+            "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+          },
+          "slots": {
+            "h": {
+              "arguments": [
+                {
+                  "name": "x0",
+                  "unit": "m"
+                }
+              ],
+              "unit": "m",
+              "max_nodes": 7,
+              "allowed_operators": [
+                "mul",
+                "add"
+              ]
+            }
+          }
+        },
+        "unit_search": true,
+        "probes": [],
+        "response_bounds": [
+          null,
+          null
+        ],
+        "response_checks": [],
+        "response_enforcement": null
+      },
+      "discovery_requirements_ref": {
+        "requirements_sha256": "96d7fb9bde11830e19b392ed01233ef8cb610c42674fab02196cf58f69c6da3f",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "additional": {},
+      "candidate_pool": "the immutable source pool, including its recorded export cap and truncation"
+    },
+    "runtime": {
+      "python": "3.11.15",
+      "image": "sha256:13d0423be2f7d75a28bef38278ed3beffd449997a6a140b50118315e0365fa5e",
+      "common_source_sha256": {
+        "equation_evaluation/api.py": "6de19297f06854d9e68d0249b25efa13147ecf5068aa84fe14f12f5994e09005",
+        "equation_evaluation/numerical.py": "3f053d9df0f8b8ab8d6c4789d840d0ec39334bc0f17a8bbeca2310b9ccf36a27",
+        "estimation.py": "c0c59e71290977cbf4c9fc57618219f3f55db5f2a51b960e9323fd618ce36049",
+        "execution_views.py": "dc194df325c6ed045bf2e25b5d237557e63deb265a6570ea13589d16fe6a7a24",
+        "question_results.py": "c9809bdd77adef52a65772bbfa083ce8c3ad0a1c2fb804a11f8224fc81725d8d",
+        "metrics.py": "0a88927d73a47da42302426328efe404aaf44d7965193d737baa95dab9a1f48a",
+        "operators.py": "416377a122a27d65d5bc51e10fc59904c1b2f2b47b0dba0459ed7ed3633183b2",
+        "hypotheses.py": "4e96cc0390c7a35edea729db232c47ca5e54c2223d9d13fed117c6c8f4f0076c",
+        "hypothesis_storage.py": "9720caca2b36e7508891dc79caf5ad7cfe2abbe5ae124e30f82e883f566e198c",
+        "evaluation.py": "c6d28efbd24cc12ab62b342195ca0d52ac26925b97970c68a474e1a6d1ad9f1e",
+        "units.py": "3b25b832b28b84732ac30ae6d63e8f56a1f8d374a8ae5a9d146a30ef11b04b82",
+        "coordinates.py": "cbb8c750b5b9ece963cd5581d10a34f001dce81ea229a24b282191f961c6d44c",
+        "numerical_fidelity.py": "11d1031b8e224b2b54af7cb7c25e6e68dd91ffac3c4ac42a5630bddaf40c9529",
+        "expressions.py": "8f209199d49570b3c793677b6bf201a5f7aa98955d031e10d4febeed91990dd8",
+        "constraints.py": "67fa8563b5727555853b26b37589de4fb37139ffa04471b00ac5adaa84dbd984",
+        "domains.py": "0537faafa3418bcfeb80102200be35c6d686a0307a61979212da97dab01cab25",
+        "parameters.py": "a4b6fedabd32691c5610632448e6beed7240aec3be551ab13666a7ffb3d32e4d"
+      }
+    },
+    "data_sha256": "368411943e690ebc3548fec2376751d8a58dd3cd920cc88c530b7c20260c238c",
+    "split_sha256": "257def2b9a4e3acefa382a0c6d7fe93e6123a0b7c6e329d2bf45facb702ef8ef",
+    "group_column": null,
+    "strata_column": null
+  },
+  "supplemental_comparison_sha256": null
+}

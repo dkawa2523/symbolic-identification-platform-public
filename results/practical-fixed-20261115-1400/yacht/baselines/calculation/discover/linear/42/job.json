@@ -1,0 +1,291 @@
+{
+  "runtime_extensions": [],
+  "prepared_sha256": "647ced7bcc2278a007f9252f308cbce4d19c30c6e6623ba0b865caeff8fffc7a",
+  "split_seed": 42,
+  "public_units": {
+    "buoyancy_position": "1",
+    "prismatic_coefficient": "1",
+    "length_displacement_ratio": "1",
+    "beam_draught_ratio": "1",
+    "length_beam_ratio": "1",
+    "froude": "1",
+    "resistance": "1"
+  },
+  "unit_coordinates": {
+    "policy": "canonical problem; explicit CSV conversion; all domains/constraints/tolerances in problem units",
+    "columns": {
+      "buoyancy_position": {
+        "coordinate_role": null,
+        "source_unit": "1",
+        "problem_unit": "1",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      },
+      "prismatic_coefficient": {
+        "coordinate_role": null,
+        "source_unit": "1",
+        "problem_unit": "1",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      },
+      "length_displacement_ratio": {
+        "coordinate_role": null,
+        "source_unit": "1",
+        "problem_unit": "1",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      },
+      "beam_draught_ratio": {
+        "coordinate_role": null,
+        "source_unit": "1",
+        "problem_unit": "1",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      },
+      "length_beam_ratio": {
+        "coordinate_role": null,
+        "source_unit": "1",
+        "problem_unit": "1",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      },
+      "froude": {
+        "coordinate_role": null,
+        "source_unit": "1",
+        "problem_unit": "1",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      },
+      "resistance": {
+        "coordinate_role": null,
+        "source_unit": "1",
+        "problem_unit": "1",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      }
+    }
+  },
+  "input_geometry": {
+    "schema_version": 1,
+    "source_variables": [
+      {
+        "id": "x0",
+        "column": "buoyancy_position",
+        "unit": "1",
+        "domain": null,
+        "coordinate_role": null
+      },
+      {
+        "id": "x1",
+        "column": "prismatic_coefficient",
+        "unit": "1",
+        "domain": null,
+        "coordinate_role": null
+      },
+      {
+        "id": "x2",
+        "column": "length_displacement_ratio",
+        "unit": "1",
+        "domain": null,
+        "coordinate_role": null
+      },
+      {
+        "id": "x3",
+        "column": "beam_draught_ratio",
+        "unit": "1",
+        "domain": null,
+        "coordinate_role": null
+      },
+      {
+        "id": "x4",
+        "column": "length_beam_ratio",
+        "unit": "1",
+        "domain": null,
+        "coordinate_role": null
+      },
+      {
+        "id": "x5",
+        "column": "froude",
+        "unit": "1",
+        "domain": null,
+        "coordinate_role": null
+      }
+    ],
+    "domain": {
+      "columns": [
+        "buoyancy_position",
+        "prismatic_coefficient",
+        "length_displacement_ratio",
+        "beam_draught_ratio",
+        "length_beam_ratio",
+        "froude"
+      ],
+      "space_id": "source_inputs",
+      "kind": "observed",
+      "units": {
+        "buoyancy_position": "1",
+        "prismatic_coefficient": "1",
+        "length_displacement_ratio": "1",
+        "beam_draught_ratio": "1",
+        "length_beam_ratio": "1",
+        "froude": "1"
+      },
+      "coordinate_roles": {
+        "buoyancy_position": null,
+        "prismatic_coefficient": null,
+        "length_displacement_ratio": null,
+        "beam_draught_ratio": null,
+        "length_beam_ratio": null,
+        "froude": null
+      },
+      "bounds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "map": null
+  },
+  "execution_domain": {
+    "columns": [
+      "buoyancy_position",
+      "prismatic_coefficient",
+      "length_displacement_ratio",
+      "beam_draught_ratio",
+      "length_beam_ratio",
+      "froude"
+    ],
+    "space_id": "source_inputs",
+    "kind": "observed",
+    "units": {
+      "buoyancy_position": "1",
+      "prismatic_coefficient": "1",
+      "length_displacement_ratio": "1",
+      "beam_draught_ratio": "1",
+      "length_beam_ratio": "1",
+      "froude": "1"
+    },
+    "coordinate_roles": {
+      "buoyancy_position": null,
+      "prismatic_coefficient": null,
+      "length_displacement_ratio": null,
+      "beam_draught_ratio": null,
+      "length_beam_ratio": null,
+      "froude": null
+    },
+    "bounds": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "fixed_constants": {},
+  "requirements_ref": {
+    "requirements_sha256": "95ad988b81c9bdb013dbaae8f36fbd452fb5a331452d7a3065c431eec8d1707b",
+    "scope": "canonical common request; native settings/checks are derived evidence"
+  },
+  "train": "/work/results/practical-fixed-20261115-1400/yacht/baselines/calculation/prepare/train.npz",
+  "variables": [
+    {
+      "id": "x0",
+      "column": "buoyancy_position",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x1",
+      "column": "prismatic_coefficient",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x2",
+      "column": "length_displacement_ratio",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x3",
+      "column": "beam_draught_ratio",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x4",
+      "column": "length_beam_ratio",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x5",
+      "column": "froude",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    }
+  ],
+  "target": {
+    "coordinate_role": null,
+    "column": "resistance",
+    "unit": "1",
+    "domain": null
+  },
+  "operators": [
+    "add",
+    "sub",
+    "mul",
+    "div",
+    "neg",
+    "abs",
+    "exp",
+    "log",
+    "sqrt",
+    "pow_int",
+    "sin",
+    "cos",
+    "tanh",
+    "sinh",
+    "cosh"
+  ],
+  "limits": {
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "probes": [],
+    "response_bounds": [
+      null,
+      null
+    ],
+    "response_checks": [],
+    "response_enforcement": null,
+    "max_wall_seconds": 3600,
+    "response_mode": "search"
+  },
+  "seed": 42,
+  "engine": "linear",
+  "options": {},
+  "max_export_candidates": 20,
+  "candidate_pool_policy": "all",
+  "device": "cpu",
+  "asset_manifest": null
+}

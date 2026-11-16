@@ -1,0 +1,49 @@
+5. e2e | equation
+Candidate: e2e/42/7@native
+Coordinates: public
+resistance [1] = ((((coef['c4'] + (coef['c6'] * ((((buoyancy_position - coef['x0_mean']) / coef['x0_scale'])) ** (2)))) + (coef['c10'] + (coef['c12'] * ((((coef['c16'] + (coef['c18'] * ((beam_draught_ratio - coef['x3_mean']) / coef['x3_scale']))) - ((coef['c22'] + (coef['c24'] * (((((coef['c29'] + (coef['c31'] * ((buoyancy_position - coef['x0_mean']) / coef['x0_scale']))) + (coef['c34'] + (coef['c36'] * ((froude - coef['x5_mean']) / coef['x5_scale'])))) - (coef['c39'] + (coef['c41'] * ((froude - coef['x5_mean']) / coef['x5_scale']))))) ** (3)))) + ((coef['c45'] + (coef['c47'] * ((length_displacement_ratio - coef['x2_mean']) / coef['x2_scale']))) + ((coef['c51'] + (coef['c53'] * ((beam_draught_ratio - coef['x3_mean']) / coef['x3_scale']))) * (coef['c56'] + (coef['c58'] * ((length_beam_ratio - coef['x4_mean']) / coef['x4_scale'])))))))) ** (2))))) - (coef['c61'] + (coef['c63'] * ((prismatic_coefficient - coef['x1_mean']) / coef['x1_scale'])))) * (coef['c66'] + (coef['c68'] * sin((coef['c71'] + (((froude - coef['x5_mean']) / coef['x5_scale']) * (1 / ((buoyancy_position - coef['x0_mean']) / coef['x0_scale']))))))))
+
+c4 = -33.617267561123846 [unit unknown]
+c6 = -29.301204821203438 [unit unknown]
+x0_mean = -2.176923076923078 [1]
+x0_scale = 1.5257552208931948 [1]
+c10 = -42.97376756120749 [unit unknown]
+c12 = -0.03630471095527468 [unit unknown]
+c16 = -2.403978707878902 [unit unknown]
+c18 = 55.55152565469002 [unit unknown]
+x3_mean = 4.0269230769230795 [1]
+x3_scale = 0.6445437815932537 [1]
+c22 = 2.0109787062559343 [unit unknown]
+c24 = 0.3306584552843378 [unit unknown]
+c29 = 0.8267177600485796 [unit unknown]
+c31 = 0.03521426091660975 [unit unknown]
+c34 = 4.436717759945225 [unit unknown]
+c36 = 9.72820783181574 [unit unknown]
+x5_mean = 0.2874999999999999 [1]
+x5_scale = 0.1007782218537319 [1]
+c39 = -0.8770177598009782 [unit unknown]
+c41 = 6.201792168316634 [unit unknown]
+c45 = 42.85397870839583 [unit unknown]
+c47 = 44.02639607502421 [unit unknown]
+x2_mean = 4.789230769230766 [1]
+x2_scale = 0.2364956183839202 [1]
+c51 = -6.542796822534318 [unit unknown]
+c53 = -0.713788928411555 [unit unknown]
+c56 = 1.5515686127929695 [unit unknown]
+c58 = 7.971044769297492 [unit unknown]
+x4_mean = 3.1776923076922996 [1]
+x4_scale = 0.25192043451344653 [1]
+c61 = -5.082732440832853 [unit unknown]
+c63 = 92.67704617464597 [unit unknown]
+x1_mean = 0.5638461538461524 [1]
+x1_scale = 0.024381096567268733 [1]
+c66 = -0.004144763552464888 [unit unknown]
+c68 = 9.228874694756727e-05 [unit unknown]
+c71 = 10.47439792787571 [unit unknown]
+buoyancy_position_work [1] = 1 * buoyancy_position [1] + (0)
+prismatic_coefficient_work [1] = 1 * prismatic_coefficient [1] + (0)
+length_displacement_ratio_work [1] = 1 * length_displacement_ratio [1] + (0)
+beam_draught_ratio_work [1] = 1 * beam_draught_ratio [1] + (0)
+length_beam_ratio_work [1] = 1 * length_beam_ratio [1] + (0)
+froude_work [1] = 1 * froude [1] + (0)
+resistance_work [1] = 1 * resistance [1] + (0)

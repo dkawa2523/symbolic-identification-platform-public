@@ -1,0 +1,5137 @@
+[
+  {
+    "candidate_id": "pysr/17/5@native",
+    "method": "pysr",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": true,
+    "reason": null,
+    "variant": "native",
+    "subject": {
+      "relation_ref": "pysr/17/5@native",
+      "relation_state_sha256": "181e42bde4ee94a32573f7a6334bd718c203d7d5a72446eb178ae5896104b42b",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "const": 0.75
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "op": "div",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "div",
+                    "args": [
+                      {
+                        "var": "x0"
+                      },
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "var": "x0"
+                          },
+                          {
+                            "param": "__slot_h_c0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "op": "sub",
+                "args": [
+                  {
+                    "op": "div",
+                    "args": [
+                      {
+                        "var": "x0"
+                      },
+                      {
+                        "param": "__slot_h_c1"
+                      }
+                    ]
+                  },
+                  {
+                    "param": "__slot_h_c2"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {
+        "__slot_h_c0": {
+          "value": 0.7725579678102222,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "pysr_native_template_constant_node",
+          "unit_origin": "declared_dimensionless_template_slot_convention"
+        },
+        "__slot_h_c1": {
+          "value": 2.07395343412467,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "pysr_native_template_constant_node",
+          "unit_origin": "declared_dimensionless_template_slot_convention"
+        },
+        "__slot_h_c2": {
+          "value": -1.0801275723145394,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "pysr_native_template_constant_node",
+          "unit_origin": "declared_dimensionless_template_slot_convention"
+        }
+      },
+      "template": {
+        "specification": {
+          "coordinate_space": "working",
+          "ast": {
+            "op": "add",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "const": 0.75
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "slot": "h",
+                "args": [
+                  {
+                    "var": "x0"
+                  }
+                ]
+              }
+            ]
+          },
+          "parameters": {},
+          "components": {},
+          "slots": {
+            "h": {
+              "arguments": [
+                {
+                  "name": "x0",
+                  "unit": "1"
+                }
+              ],
+              "unit": "1",
+              "allowed_operators": [
+                "add",
+                "sub",
+                "mul",
+                "div"
+              ],
+              "max_nodes": 252
+            }
+          },
+          "knowledge": {
+            "kind": "hypothesis",
+            "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+          }
+        },
+        "slots": {
+          "h": {
+            "schema_version": 1,
+            "ast": {
+              "op": "div",
+              "args": [
+                {
+                  "op": "add",
+                  "args": [
+                    {
+                      "op": "div",
+                      "args": [
+                        {
+                          "var": "x0"
+                        },
+                        {
+                          "op": "add",
+                          "args": [
+                            {
+                              "var": "x0"
+                            },
+                            {
+                              "param": "c0"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "var": "x0"
+                    }
+                  ]
+                },
+                {
+                  "op": "sub",
+                  "args": [
+                    {
+                      "op": "div",
+                      "args": [
+                        {
+                          "var": "x0"
+                        },
+                        {
+                          "param": "c1"
+                        }
+                      ]
+                    },
+                    {
+                      "param": "c2"
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "c0": {
+                "value": 0.7725579678102222,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "pysr_native_template_constant_node",
+                "unit_origin": "declared_dimensionless_template_slot_convention"
+              },
+              "c1": {
+                "value": 2.07395343412467,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "pysr_native_template_constant_node",
+                "unit_origin": "declared_dimensionless_template_slot_convention"
+              },
+              "c2": {
+                "value": -1.0801275723145394,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "pysr_native_template_constant_node",
+                "unit_origin": "declared_dimensionless_template_slot_convention"
+              }
+            }
+          }
+        }
+      }
+    },
+    "n_nodes": 17,
+    "working_n_nodes": 17,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "((0.75 * x_work) + (((x_work / (x_work + coef['__slot_h_c0'])) + x_work) / ((x_work / coef['__slot_h_c1']) - coef['__slot_h_c2'])))",
+    "latex": "\\left(\\left(0.75 \\cdot \\text{x\\_work}\\right) + \\frac{\\left(\\frac{\\text{x\\_work}}{\\left(\\text{x\\_work} + \\theta_{\\text{\\_\\_slot\\_h\\_c0}}\\right)} + \\text{x\\_work}\\right)}{\\left(\\frac{\\text{x\\_work}}{\\theta_{\\text{\\_\\_slot\\_h\\_c1}}} - \\theta_{\\text{\\_\\_slot\\_h\\_c2}}\\right)}\\right)",
+    "public_text": "y [1] = ((0.75 * x) + (((x / (x + coef['__slot_h_c0'])) + x) / ((x / coef['__slot_h_c1']) - coef['__slot_h_c2'])))",
+    "public_latex": "\\text{y}\\;[\\text{1}] = \\left(\\left(0.75 \\cdot \\text{x}\\right) + \\frac{\\left(\\frac{\\text{x}}{\\left(\\text{x} + \\theta_{\\text{\\_\\_slot\\_h\\_c0}}\\right)} + \\text{x}\\right)}{\\left(\\frac{\\text{x}}{\\theta_{\\text{\\_\\_slot\\_h\\_c1}}} - \\theta_{\\text{\\_\\_slot\\_h\\_c2}}\\right)}\\right)",
+    "display_text": "0.75 * x_work + (x_work / (x_work + \u03b8[__slot_h_c0]) + x_work) / (x_work / \u03b8[__slot_h_c1] - \u03b8[__slot_h_c2])",
+    "public_display_text": "y [1] = 0.75 * x + (x / (x + \u03b8[__slot_h_c0]) + x) / (x / \u03b8[__slot_h_c1] - \u03b8[__slot_h_c2])",
+    "parameters": [
+      {
+        "name": "__slot_h_c0",
+        "value": 0.7725579678102222,
+        "unit": "1",
+        "unit_origin": "declared_dimensionless_template_slot_convention",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "pysr_native_template_constant_node",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c1",
+        "value": 2.07395343412467,
+        "unit": "1",
+        "unit_origin": "declared_dimensionless_template_slot_convention",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "pysr_native_template_constant_node",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c2",
+        "value": -1.0801275723145394,
+        "unit": "1",
+        "unit_origin": "declared_dimensionless_template_slot_convention",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "pysr_native_template_constant_node",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "strict_real",
+    "operators": [
+      "add",
+      "div",
+      "mul",
+      "sub"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "parfam/17/0@native",
+    "method": "parfam",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": false,
+    "reason": "template.slot.h.units:unknown",
+    "variant": "native",
+    "subject": {
+      "relation_ref": "parfam/17/0@native",
+      "relation_state_sha256": "b7f6ca5b06cdc37fccd66a144aff8b5f5c72cc3781f41d6c56a14eb854c61099",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "const": 0.75
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "op": "div",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "__slot_h_c0"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "__slot_h_c1"
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "__slot_h_c2"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "__slot_h_c3"
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {
+        "__slot_h_c0": {
+          "value": -0.013936264965212355,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 0
+        },
+        "__slot_h_c1": {
+          "value": -1.402230087865118,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 1
+        },
+        "__slot_h_c2": {
+          "value": -0.7150789503926552,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": -0.7150789503926552,
+          "normalization_group": "denominator_2",
+          "normalization_norm": 1.0,
+          "native_coefficient_index": 2
+        },
+        "__slot_h_c3": {
+          "value": -0.6990437001399401,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": -0.6990437001399401,
+          "normalization_group": "denominator_2",
+          "normalization_norm": 1.0,
+          "native_coefficient_index": 3
+        }
+      },
+      "template": {
+        "specification": {
+          "coordinate_space": "working",
+          "ast": {
+            "op": "add",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "const": 0.75
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "slot": "h",
+                "args": [
+                  {
+                    "var": "x0"
+                  }
+                ]
+              }
+            ]
+          },
+          "parameters": {},
+          "components": {},
+          "slots": {
+            "h": {
+              "arguments": [
+                {
+                  "name": "x0",
+                  "unit": "1"
+                }
+              ],
+              "unit": "1",
+              "allowed_operators": [
+                "add",
+                "sub",
+                "mul",
+                "div"
+              ],
+              "max_nodes": 252
+            }
+          },
+          "knowledge": {
+            "kind": "hypothesis",
+            "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+          }
+        },
+        "slots": {
+          "h": {
+            "schema_version": 2,
+            "ast": {
+              "op": "div",
+              "args": [
+                {
+                  "poly": [
+                    {
+                      "coefficient": {
+                        "param": "c0"
+                      },
+                      "powers": []
+                    },
+                    {
+                      "coefficient": {
+                        "param": "c1"
+                      },
+                      "powers": [
+                        [
+                          0,
+                          1
+                        ]
+                      ]
+                    }
+                  ],
+                  "args": [
+                    {
+                      "var": "x0"
+                    }
+                  ]
+                },
+                {
+                  "poly": [
+                    {
+                      "coefficient": {
+                        "param": "c2"
+                      },
+                      "powers": []
+                    },
+                    {
+                      "coefficient": {
+                        "param": "c3"
+                      },
+                      "powers": [
+                        [
+                          0,
+                          1
+                        ]
+                      ]
+                    }
+                  ],
+                  "args": [
+                    {
+                      "var": "x0"
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "c0": {
+                "value": -0.013936264965212355,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 0
+              },
+              "c1": {
+                "value": -1.402230087865118,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 1
+              },
+              "c2": {
+                "value": -0.7150789503926552,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_normalized_denominator_coordinate",
+                "native_value": -0.7150789503926552,
+                "normalization_group": "denominator_2",
+                "normalization_norm": 1.0,
+                "native_coefficient_index": 2
+              },
+              "c3": {
+                "value": -0.6990437001399401,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_normalized_denominator_coordinate",
+                "native_value": -0.6990437001399401,
+                "normalization_group": "denominator_2",
+                "normalization_norm": 1.0,
+                "native_coefficient_index": 3
+              }
+            },
+            "arithmetic": "strict_real",
+            "definitions": {}
+          }
+        }
+      }
+    },
+    "n_nodes": 15,
+    "working_n_nodes": 15,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "((0.75 * x_work) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x_work)) / (coef['__slot_h_c2'] + (coef['__slot_h_c3'] * x_work))))",
+    "latex": "\\left(\\left(0.75 \\cdot \\text{x\\_work}\\right) + \\frac{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c1}} \\cdot \\text{x\\_work}\\right)\\right)}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c2}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c3}} \\cdot \\text{x\\_work}\\right)\\right)}\\right)",
+    "public_text": "y [1] = ((0.75 * x) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x)) / (coef['__slot_h_c2'] + (coef['__slot_h_c3'] * x))))",
+    "public_latex": "\\text{y}\\;[\\text{1}] = \\left(\\left(0.75 \\cdot \\text{x}\\right) + \\frac{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c1}} \\cdot \\text{x}\\right)\\right)}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c2}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c3}} \\cdot \\text{x}\\right)\\right)}\\right)",
+    "display_text": "0.75 * x_work + (\u03b8[__slot_h_c0] + \u03b8[__slot_h_c1] * x_work) / (\u03b8[__slot_h_c2] + \u03b8[__slot_h_c3] * x_work)",
+    "public_display_text": "y [1] = 0.75 * x + (\u03b8[__slot_h_c0] + \u03b8[__slot_h_c1] * x) / (\u03b8[__slot_h_c2] + \u03b8[__slot_h_c3] * x)",
+    "parameters": [
+      {
+        "name": "__slot_h_c0",
+        "value": -0.013936264965212355,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c1",
+        "value": -1.402230087865118,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c2",
+        "value": -0.7150789503926552,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c3",
+        "value": -0.6990437001399401,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "strict_real",
+    "operators": [
+      "add",
+      "div",
+      "mul"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "parfam/17/1@native",
+    "method": "parfam",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": false,
+    "reason": "template.slot.h.units:unknown",
+    "variant": "native",
+    "subject": {
+      "relation_ref": "parfam/17/1@native",
+      "relation_state_sha256": "b7f6ca5b06cdc37fccd66a144aff8b5f5c72cc3781f41d6c56a14eb854c61099",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "const": 0.75
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "op": "div",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "__slot_h_c0"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "__slot_h_c1"
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "__slot_h_c2"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "__slot_h_c3"
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {
+        "__slot_h_c0": {
+          "value": -0.013936264965212355,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 0
+        },
+        "__slot_h_c1": {
+          "value": -1.402230087865118,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 1
+        },
+        "__slot_h_c2": {
+          "value": -0.7150789503926552,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": -0.7150789503926552,
+          "normalization_group": "denominator_2",
+          "normalization_norm": 1.0,
+          "native_coefficient_index": 2
+        },
+        "__slot_h_c3": {
+          "value": -0.6990437001399401,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": -0.6990437001399401,
+          "normalization_group": "denominator_2",
+          "normalization_norm": 1.0,
+          "native_coefficient_index": 3
+        }
+      },
+      "template": {
+        "specification": {
+          "coordinate_space": "working",
+          "ast": {
+            "op": "add",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "const": 0.75
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "slot": "h",
+                "args": [
+                  {
+                    "var": "x0"
+                  }
+                ]
+              }
+            ]
+          },
+          "parameters": {},
+          "components": {},
+          "slots": {
+            "h": {
+              "arguments": [
+                {
+                  "name": "x0",
+                  "unit": "1"
+                }
+              ],
+              "unit": "1",
+              "allowed_operators": [
+                "add",
+                "sub",
+                "mul",
+                "div"
+              ],
+              "max_nodes": 252
+            }
+          },
+          "knowledge": {
+            "kind": "hypothesis",
+            "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+          }
+        },
+        "slots": {
+          "h": {
+            "schema_version": 2,
+            "ast": {
+              "op": "div",
+              "args": [
+                {
+                  "poly": [
+                    {
+                      "coefficient": {
+                        "param": "c0"
+                      },
+                      "powers": []
+                    },
+                    {
+                      "coefficient": {
+                        "param": "c1"
+                      },
+                      "powers": [
+                        [
+                          0,
+                          1
+                        ]
+                      ]
+                    }
+                  ],
+                  "args": [
+                    {
+                      "var": "x0"
+                    }
+                  ]
+                },
+                {
+                  "poly": [
+                    {
+                      "coefficient": {
+                        "param": "c2"
+                      },
+                      "powers": []
+                    },
+                    {
+                      "coefficient": {
+                        "param": "c3"
+                      },
+                      "powers": [
+                        [
+                          0,
+                          1
+                        ]
+                      ]
+                    }
+                  ],
+                  "args": [
+                    {
+                      "var": "x0"
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "c0": {
+                "value": -0.013936264965212355,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 0
+              },
+              "c1": {
+                "value": -1.402230087865118,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 1
+              },
+              "c2": {
+                "value": -0.7150789503926552,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_normalized_denominator_coordinate",
+                "native_value": -0.7150789503926552,
+                "normalization_group": "denominator_2",
+                "normalization_norm": 1.0,
+                "native_coefficient_index": 2
+              },
+              "c3": {
+                "value": -0.6990437001399401,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_normalized_denominator_coordinate",
+                "native_value": -0.6990437001399401,
+                "normalization_group": "denominator_2",
+                "normalization_norm": 1.0,
+                "native_coefficient_index": 3
+              }
+            },
+            "arithmetic": "strict_real",
+            "definitions": {}
+          }
+        }
+      }
+    },
+    "n_nodes": 15,
+    "working_n_nodes": 15,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "((0.75 * x_work) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x_work)) / (coef['__slot_h_c2'] + (coef['__slot_h_c3'] * x_work))))",
+    "latex": "\\left(\\left(0.75 \\cdot \\text{x\\_work}\\right) + \\frac{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c1}} \\cdot \\text{x\\_work}\\right)\\right)}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c2}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c3}} \\cdot \\text{x\\_work}\\right)\\right)}\\right)",
+    "public_text": "y [1] = ((0.75 * x) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x)) / (coef['__slot_h_c2'] + (coef['__slot_h_c3'] * x))))",
+    "public_latex": "\\text{y}\\;[\\text{1}] = \\left(\\left(0.75 \\cdot \\text{x}\\right) + \\frac{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c1}} \\cdot \\text{x}\\right)\\right)}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c2}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c3}} \\cdot \\text{x}\\right)\\right)}\\right)",
+    "display_text": "0.75 * x_work + (\u03b8[__slot_h_c0] + \u03b8[__slot_h_c1] * x_work) / (\u03b8[__slot_h_c2] + \u03b8[__slot_h_c3] * x_work)",
+    "public_display_text": "y [1] = 0.75 * x + (\u03b8[__slot_h_c0] + \u03b8[__slot_h_c1] * x) / (\u03b8[__slot_h_c2] + \u03b8[__slot_h_c3] * x)",
+    "parameters": [
+      {
+        "name": "__slot_h_c0",
+        "value": -0.013936264965212355,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c1",
+        "value": -1.402230087865118,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c2",
+        "value": -0.7150789503926552,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c3",
+        "value": -0.6990437001399401,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "strict_real",
+    "operators": [
+      "add",
+      "div",
+      "mul"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "parfam/17/2@native",
+    "method": "parfam",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": false,
+    "reason": "template.slot.h.units:unknown",
+    "variant": "native",
+    "subject": {
+      "relation_ref": "parfam/17/2@native",
+      "relation_state_sha256": "8e4cf5bd214bbca9cc095b996bf7e6a7c8ad5700f241e3474191ceb0c443b5b4",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "const": 0.75
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "op": "add",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "__slot_h_c0"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "__slot_h_c1"
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "__slot_h_c2"
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {
+        "__slot_h_c0": {
+          "value": 0.3007093397142817,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 0
+        },
+        "__slot_h_c1": {
+          "value": 0.7424870493664758,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 1
+        },
+        "__slot_h_c2": {
+          "value": -0.11001743160797772,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 2
+        }
+      },
+      "template": {
+        "specification": {
+          "coordinate_space": "working",
+          "ast": {
+            "op": "add",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "const": 0.75
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "slot": "h",
+                "args": [
+                  {
+                    "var": "x0"
+                  }
+                ]
+              }
+            ]
+          },
+          "parameters": {},
+          "components": {},
+          "slots": {
+            "h": {
+              "arguments": [
+                {
+                  "name": "x0",
+                  "unit": "1"
+                }
+              ],
+              "unit": "1",
+              "allowed_operators": [
+                "add",
+                "sub",
+                "mul",
+                "div"
+              ],
+              "max_nodes": 252
+            }
+          },
+          "knowledge": {
+            "kind": "hypothesis",
+            "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+          }
+        },
+        "slots": {
+          "h": {
+            "schema_version": 2,
+            "ast": {
+              "poly": [
+                {
+                  "coefficient": {
+                    "param": "c0"
+                  },
+                  "powers": []
+                },
+                {
+                  "coefficient": {
+                    "param": "c1"
+                  },
+                  "powers": [
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "coefficient": {
+                    "param": "c2"
+                  },
+                  "powers": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                }
+              ],
+              "args": [
+                {
+                  "var": "x0"
+                }
+              ]
+            },
+            "parameters": {
+              "c0": {
+                "value": 0.3007093397142817,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 0
+              },
+              "c1": {
+                "value": 0.7424870493664758,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 1
+              },
+              "c2": {
+                "value": -0.11001743160797772,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 2
+              }
+            },
+            "arithmetic": "strict_real",
+            "definitions": {}
+          }
+        }
+      }
+    },
+    "n_nodes": 15,
+    "working_n_nodes": 15,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "((0.75 * x_work) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x_work)) + ((coef['__slot_h_c2'] * x_work) * x_work)))",
+    "latex": "\\left(\\left(0.75 \\cdot \\text{x\\_work}\\right) + \\left(\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c1}} \\cdot \\text{x\\_work}\\right)\\right) + \\left(\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c2}} \\cdot \\text{x\\_work}\\right) \\cdot \\text{x\\_work}\\right)\\right)\\right)",
+    "public_text": "y [1] = ((0.75 * x) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x)) + ((coef['__slot_h_c2'] * x) * x)))",
+    "public_latex": "\\text{y}\\;[\\text{1}] = \\left(\\left(0.75 \\cdot \\text{x}\\right) + \\left(\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c1}} \\cdot \\text{x}\\right)\\right) + \\left(\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c2}} \\cdot \\text{x}\\right) \\cdot \\text{x}\\right)\\right)\\right)",
+    "display_text": "0.75 * x_work + (\u03b8[__slot_h_c0] + \u03b8[__slot_h_c1] * x_work + \u03b8[__slot_h_c2] * x_work * x_work)",
+    "public_display_text": "y [1] = 0.75 * x + (\u03b8[__slot_h_c0] + \u03b8[__slot_h_c1] * x + \u03b8[__slot_h_c2] * x * x)",
+    "parameters": [
+      {
+        "name": "__slot_h_c0",
+        "value": 0.3007093397142817,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c1",
+        "value": 0.7424870493664758,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c2",
+        "value": -0.11001743160797772,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "strict_real",
+    "operators": [
+      "add",
+      "mul"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "parfam/17/3@native",
+    "method": "parfam",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": false,
+    "reason": "template.slot.h.units:unknown; increasing:fail",
+    "variant": "native",
+    "subject": {
+      "relation_ref": "parfam/17/3@native",
+      "relation_state_sha256": "cab53d7329d18a7d04faa3ce52c8c52529144bee018aea2ac1673475b7e836f2",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "const": 0.75
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "op": "div",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "__slot_h_c0"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "__slot_h_c1"
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "__slot_h_c2"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "__slot_h_c3"
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {
+        "__slot_h_c0": {
+          "value": 0.33604114704619936,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 0
+        },
+        "__slot_h_c1": {
+          "value": -1.1719590433019547,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 1
+        },
+        "__slot_h_c2": {
+          "value": 0.2772922758717265,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": 3.3871232426808064,
+          "normalization_group": "denominator_2",
+          "normalization_norm": 12.214993122446968,
+          "native_coefficient_index": 2
+        },
+        "__slot_h_c3": {
+          "value": -0.9607856127887626,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": -11.73598965236073,
+          "normalization_group": "denominator_2",
+          "normalization_norm": 12.214993122446968,
+          "native_coefficient_index": 3
+        }
+      },
+      "template": {
+        "specification": {
+          "coordinate_space": "working",
+          "ast": {
+            "op": "add",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "const": 0.75
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "slot": "h",
+                "args": [
+                  {
+                    "var": "x0"
+                  }
+                ]
+              }
+            ]
+          },
+          "parameters": {},
+          "components": {},
+          "slots": {
+            "h": {
+              "arguments": [
+                {
+                  "name": "x0",
+                  "unit": "1"
+                }
+              ],
+              "unit": "1",
+              "allowed_operators": [
+                "add",
+                "sub",
+                "mul",
+                "div"
+              ],
+              "max_nodes": 252
+            }
+          },
+          "knowledge": {
+            "kind": "hypothesis",
+            "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+          }
+        },
+        "slots": {
+          "h": {
+            "schema_version": 2,
+            "ast": {
+              "op": "div",
+              "args": [
+                {
+                  "poly": [
+                    {
+                      "coefficient": {
+                        "param": "c0"
+                      },
+                      "powers": []
+                    },
+                    {
+                      "coefficient": {
+                        "param": "c1"
+                      },
+                      "powers": [
+                        [
+                          0,
+                          1
+                        ]
+                      ]
+                    }
+                  ],
+                  "args": [
+                    {
+                      "var": "x0"
+                    }
+                  ]
+                },
+                {
+                  "poly": [
+                    {
+                      "coefficient": {
+                        "param": "c2"
+                      },
+                      "powers": []
+                    },
+                    {
+                      "coefficient": {
+                        "param": "c3"
+                      },
+                      "powers": [
+                        [
+                          0,
+                          1
+                        ]
+                      ]
+                    }
+                  ],
+                  "args": [
+                    {
+                      "var": "x0"
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "c0": {
+                "value": 0.33604114704619936,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 0
+              },
+              "c1": {
+                "value": -1.1719590433019547,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 1
+              },
+              "c2": {
+                "value": 0.2772922758717265,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_normalized_denominator_coordinate",
+                "native_value": 3.3871232426808064,
+                "normalization_group": "denominator_2",
+                "normalization_norm": 12.214993122446968,
+                "native_coefficient_index": 2
+              },
+              "c3": {
+                "value": -0.9607856127887626,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_normalized_denominator_coordinate",
+                "native_value": -11.73598965236073,
+                "normalization_group": "denominator_2",
+                "normalization_norm": 12.214993122446968,
+                "native_coefficient_index": 3
+              }
+            },
+            "arithmetic": "strict_real",
+            "definitions": {}
+          }
+        }
+      }
+    },
+    "n_nodes": 15,
+    "working_n_nodes": 15,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "((0.75 * x_work) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x_work)) / (coef['__slot_h_c2'] + (coef['__slot_h_c3'] * x_work))))",
+    "latex": "\\left(\\left(0.75 \\cdot \\text{x\\_work}\\right) + \\frac{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c1}} \\cdot \\text{x\\_work}\\right)\\right)}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c2}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c3}} \\cdot \\text{x\\_work}\\right)\\right)}\\right)",
+    "public_text": "y [1] = ((0.75 * x) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x)) / (coef['__slot_h_c2'] + (coef['__slot_h_c3'] * x))))",
+    "public_latex": "\\text{y}\\;[\\text{1}] = \\left(\\left(0.75 \\cdot \\text{x}\\right) + \\frac{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c1}} \\cdot \\text{x}\\right)\\right)}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c2}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c3}} \\cdot \\text{x}\\right)\\right)}\\right)",
+    "display_text": "0.75 * x_work + (\u03b8[__slot_h_c0] + \u03b8[__slot_h_c1] * x_work) / (\u03b8[__slot_h_c2] + \u03b8[__slot_h_c3] * x_work)",
+    "public_display_text": "y [1] = 0.75 * x + (\u03b8[__slot_h_c0] + \u03b8[__slot_h_c1] * x) / (\u03b8[__slot_h_c2] + \u03b8[__slot_h_c3] * x)",
+    "parameters": [
+      {
+        "name": "__slot_h_c0",
+        "value": 0.33604114704619936,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c1",
+        "value": -1.1719590433019547,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c2",
+        "value": 0.2772922758717265,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c3",
+        "value": -0.9607856127887626,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "strict_real",
+    "operators": [
+      "add",
+      "div",
+      "mul"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "parfam/17/4@native",
+    "method": "parfam",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": false,
+    "reason": "template.slot.h.units:unknown",
+    "variant": "native",
+    "subject": {
+      "relation_ref": "parfam/17/4@native",
+      "relation_state_sha256": "739f67348d3e00bb717bcb6d77ea21972bce2cb69c1fe3a18bbc51f99f3dd39d",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "const": 0.75
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "op": "div",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "add",
+                    "args": [
+                      {
+                        "param": "__slot_h_c0"
+                      },
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "param": "__slot_h_c1"
+                          },
+                          {
+                            "var": "x0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "param": "__slot_h_c2"
+                          },
+                          {
+                            "var": "x0"
+                          }
+                        ]
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "__slot_h_c3"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "__slot_h_c4"
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {
+        "__slot_h_c0": {
+          "value": 0.17401329854200628,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 0
+        },
+        "__slot_h_c1": {
+          "value": -0.5190396098204058,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 1
+        },
+        "__slot_h_c2": {
+          "value": -0.2851651240649012,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 2
+        },
+        "__slot_h_c3": {
+          "value": 0.2812358176823764,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": 11.237294509263068,
+          "normalization_group": "denominator_3",
+          "normalization_norm": 39.9568397861552,
+          "native_coefficient_index": 3
+        },
+        "__slot_h_c4": {
+          "value": -0.9596386897434498,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": -38.34412937867492,
+          "normalization_group": "denominator_3",
+          "normalization_norm": 39.9568397861552,
+          "native_coefficient_index": 4
+        }
+      },
+      "template": {
+        "specification": {
+          "coordinate_space": "working",
+          "ast": {
+            "op": "add",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "const": 0.75
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "slot": "h",
+                "args": [
+                  {
+                    "var": "x0"
+                  }
+                ]
+              }
+            ]
+          },
+          "parameters": {},
+          "components": {},
+          "slots": {
+            "h": {
+              "arguments": [
+                {
+                  "name": "x0",
+                  "unit": "1"
+                }
+              ],
+              "unit": "1",
+              "allowed_operators": [
+                "add",
+                "sub",
+                "mul",
+                "div"
+              ],
+              "max_nodes": 252
+            }
+          },
+          "knowledge": {
+            "kind": "hypothesis",
+            "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+          }
+        },
+        "slots": {
+          "h": {
+            "schema_version": 2,
+            "ast": {
+              "op": "div",
+              "args": [
+                {
+                  "poly": [
+                    {
+                      "coefficient": {
+                        "param": "c0"
+                      },
+                      "powers": []
+                    },
+                    {
+                      "coefficient": {
+                        "param": "c1"
+                      },
+                      "powers": [
+                        [
+                          0,
+                          1
+                        ]
+                      ]
+                    },
+                    {
+                      "coefficient": {
+                        "param": "c2"
+                      },
+                      "powers": [
+                        [
+                          0,
+                          2
+                        ]
+                      ]
+                    }
+                  ],
+                  "args": [
+                    {
+                      "var": "x0"
+                    }
+                  ]
+                },
+                {
+                  "poly": [
+                    {
+                      "coefficient": {
+                        "param": "c3"
+                      },
+                      "powers": []
+                    },
+                    {
+                      "coefficient": {
+                        "param": "c4"
+                      },
+                      "powers": [
+                        [
+                          0,
+                          1
+                        ]
+                      ]
+                    }
+                  ],
+                  "args": [
+                    {
+                      "var": "x0"
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "c0": {
+                "value": 0.17401329854200628,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 0
+              },
+              "c1": {
+                "value": -0.5190396098204058,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 1
+              },
+              "c2": {
+                "value": -0.2851651240649012,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 2
+              },
+              "c3": {
+                "value": 0.2812358176823764,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_normalized_denominator_coordinate",
+                "native_value": 11.237294509263068,
+                "normalization_group": "denominator_3",
+                "normalization_norm": 39.9568397861552,
+                "native_coefficient_index": 3
+              },
+              "c4": {
+                "value": -0.9596386897434498,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_normalized_denominator_coordinate",
+                "native_value": -38.34412937867492,
+                "normalization_group": "denominator_3",
+                "normalization_norm": 39.9568397861552,
+                "native_coefficient_index": 4
+              }
+            },
+            "arithmetic": "strict_real",
+            "definitions": {}
+          }
+        }
+      }
+    },
+    "n_nodes": 21,
+    "working_n_nodes": 21,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "((0.75 * x_work) + (((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x_work)) + ((coef['__slot_h_c2'] * x_work) * x_work)) / (coef['__slot_h_c3'] + (coef['__slot_h_c4'] * x_work))))",
+    "latex": "\\left(\\left(0.75 \\cdot \\text{x\\_work}\\right) + \\frac{\\left(\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c1}} \\cdot \\text{x\\_work}\\right)\\right) + \\left(\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c2}} \\cdot \\text{x\\_work}\\right) \\cdot \\text{x\\_work}\\right)\\right)}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c3}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c4}} \\cdot \\text{x\\_work}\\right)\\right)}\\right)",
+    "public_text": "y [1] = ((0.75 * x) + (((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x)) + ((coef['__slot_h_c2'] * x) * x)) / (coef['__slot_h_c3'] + (coef['__slot_h_c4'] * x))))",
+    "public_latex": "\\text{y}\\;[\\text{1}] = \\left(\\left(0.75 \\cdot \\text{x}\\right) + \\frac{\\left(\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c1}} \\cdot \\text{x}\\right)\\right) + \\left(\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c2}} \\cdot \\text{x}\\right) \\cdot \\text{x}\\right)\\right)}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c3}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c4}} \\cdot \\text{x}\\right)\\right)}\\right)",
+    "display_text": "0.75 * x_work + (\u03b8[__slot_h_c0] + \u03b8[__slot_h_c1] * x_work + \u03b8[__slot_h_c2] * x_work * x_work) / (\u03b8[__slot_h_c3] + \u03b8[__slot_h_c4] * x_work)",
+    "public_display_text": "y [1] = 0.75 * x + (\u03b8[__slot_h_c0] + \u03b8[__slot_h_c1] * x + \u03b8[__slot_h_c2] * x * x) / (\u03b8[__slot_h_c3] + \u03b8[__slot_h_c4] * x)",
+    "parameters": [
+      {
+        "name": "__slot_h_c0",
+        "value": 0.17401329854200628,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c1",
+        "value": -0.5190396098204058,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c2",
+        "value": -0.2851651240649012,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c3",
+        "value": 0.2812358176823764,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c4",
+        "value": -0.9596386897434498,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "strict_real",
+    "operators": [
+      "add",
+      "div",
+      "mul"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "parfam/17/5@native",
+    "method": "parfam",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": false,
+    "reason": "template.slot.h.units:unknown",
+    "variant": "native",
+    "subject": {
+      "relation_ref": "parfam/17/5@native",
+      "relation_state_sha256": "b038765abb416e56246895032dfeaa6bfc1c7ee46d3b66d23e002271319d5191",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "const": 0.75
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "op": "add",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "__slot_h_c0"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "__slot_h_c1"
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "__slot_h_c2"
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {
+        "__slot_h_c0": {
+          "value": 0.30070906144594883,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 0
+        },
+        "__slot_h_c1": {
+          "value": 0.7424873193067988,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 1
+        },
+        "__slot_h_c2": {
+          "value": -0.11001748741767374,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 2
+        }
+      },
+      "template": {
+        "specification": {
+          "coordinate_space": "working",
+          "ast": {
+            "op": "add",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "const": 0.75
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "slot": "h",
+                "args": [
+                  {
+                    "var": "x0"
+                  }
+                ]
+              }
+            ]
+          },
+          "parameters": {},
+          "components": {},
+          "slots": {
+            "h": {
+              "arguments": [
+                {
+                  "name": "x0",
+                  "unit": "1"
+                }
+              ],
+              "unit": "1",
+              "allowed_operators": [
+                "add",
+                "sub",
+                "mul",
+                "div"
+              ],
+              "max_nodes": 252
+            }
+          },
+          "knowledge": {
+            "kind": "hypothesis",
+            "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+          }
+        },
+        "slots": {
+          "h": {
+            "schema_version": 2,
+            "ast": {
+              "poly": [
+                {
+                  "coefficient": {
+                    "param": "c0"
+                  },
+                  "powers": []
+                },
+                {
+                  "coefficient": {
+                    "param": "c1"
+                  },
+                  "powers": [
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "coefficient": {
+                    "param": "c2"
+                  },
+                  "powers": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                }
+              ],
+              "args": [
+                {
+                  "var": "x0"
+                }
+              ]
+            },
+            "parameters": {
+              "c0": {
+                "value": 0.30070906144594883,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 0
+              },
+              "c1": {
+                "value": 0.7424873193067988,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 1
+              },
+              "c2": {
+                "value": -0.11001748741767374,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 2
+              }
+            },
+            "arithmetic": "strict_real",
+            "definitions": {}
+          }
+        }
+      }
+    },
+    "n_nodes": 15,
+    "working_n_nodes": 15,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "((0.75 * x_work) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x_work)) + ((coef['__slot_h_c2'] * x_work) * x_work)))",
+    "latex": "\\left(\\left(0.75 \\cdot \\text{x\\_work}\\right) + \\left(\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c1}} \\cdot \\text{x\\_work}\\right)\\right) + \\left(\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c2}} \\cdot \\text{x\\_work}\\right) \\cdot \\text{x\\_work}\\right)\\right)\\right)",
+    "public_text": "y [1] = ((0.75 * x) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x)) + ((coef['__slot_h_c2'] * x) * x)))",
+    "public_latex": "\\text{y}\\;[\\text{1}] = \\left(\\left(0.75 \\cdot \\text{x}\\right) + \\left(\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c1}} \\cdot \\text{x}\\right)\\right) + \\left(\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c2}} \\cdot \\text{x}\\right) \\cdot \\text{x}\\right)\\right)\\right)",
+    "display_text": "0.75 * x_work + (\u03b8[__slot_h_c0] + \u03b8[__slot_h_c1] * x_work + \u03b8[__slot_h_c2] * x_work * x_work)",
+    "public_display_text": "y [1] = 0.75 * x + (\u03b8[__slot_h_c0] + \u03b8[__slot_h_c1] * x + \u03b8[__slot_h_c2] * x * x)",
+    "parameters": [
+      {
+        "name": "__slot_h_c0",
+        "value": 0.30070906144594883,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c1",
+        "value": 0.7424873193067988,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c2",
+        "value": -0.11001748741767374,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "strict_real",
+    "operators": [
+      "add",
+      "mul"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "parfam/17/6@native",
+    "method": "parfam",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": false,
+    "reason": "template.slot.h.units:unknown",
+    "variant": "native",
+    "subject": {
+      "relation_ref": "parfam/17/6@native",
+      "relation_state_sha256": "97b1c1dd8180870a08bd615eb10c57a91a24bc11f51facff6657165374fcb58c",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "const": 0.75
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "op": "div",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "__slot_h_c0"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "__slot_h_c1"
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "__slot_h_c2"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "__slot_h_c3"
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {
+        "__slot_h_c0": {
+          "value": -0.013936264965212355,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 0
+        },
+        "__slot_h_c1": {
+          "value": -1.402230087865118,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_coefficient_block",
+          "native_coefficient_index": 1
+        },
+        "__slot_h_c2": {
+          "value": -0.7150789503926552,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": -36.820268527434386,
+          "normalization_group": "denominator_2",
+          "normalization_norm": 51.491193395101476,
+          "native_coefficient_index": 2
+        },
+        "__slot_h_c3": {
+          "value": -0.6990437001399401,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": null,
+          "origin": "native_normalized_denominator_coordinate",
+          "native_value": -35.99459435553298,
+          "normalization_group": "denominator_2",
+          "normalization_norm": 51.491193395101476,
+          "native_coefficient_index": 3
+        }
+      },
+      "template": {
+        "specification": {
+          "coordinate_space": "working",
+          "ast": {
+            "op": "add",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "const": 0.75
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "slot": "h",
+                "args": [
+                  {
+                    "var": "x0"
+                  }
+                ]
+              }
+            ]
+          },
+          "parameters": {},
+          "components": {},
+          "slots": {
+            "h": {
+              "arguments": [
+                {
+                  "name": "x0",
+                  "unit": "1"
+                }
+              ],
+              "unit": "1",
+              "allowed_operators": [
+                "add",
+                "sub",
+                "mul",
+                "div"
+              ],
+              "max_nodes": 252
+            }
+          },
+          "knowledge": {
+            "kind": "hypothesis",
+            "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+          }
+        },
+        "slots": {
+          "h": {
+            "schema_version": 2,
+            "ast": {
+              "op": "div",
+              "args": [
+                {
+                  "poly": [
+                    {
+                      "coefficient": {
+                        "param": "c0"
+                      },
+                      "powers": []
+                    },
+                    {
+                      "coefficient": {
+                        "param": "c1"
+                      },
+                      "powers": [
+                        [
+                          0,
+                          1
+                        ]
+                      ]
+                    }
+                  ],
+                  "args": [
+                    {
+                      "var": "x0"
+                    }
+                  ]
+                },
+                {
+                  "poly": [
+                    {
+                      "coefficient": {
+                        "param": "c2"
+                      },
+                      "powers": []
+                    },
+                    {
+                      "coefficient": {
+                        "param": "c3"
+                      },
+                      "powers": [
+                        [
+                          0,
+                          1
+                        ]
+                      ]
+                    }
+                  ],
+                  "args": [
+                    {
+                      "var": "x0"
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "c0": {
+                "value": -0.013936264965212355,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 0
+              },
+              "c1": {
+                "value": -1.402230087865118,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_coefficient_block",
+                "native_coefficient_index": 1
+              },
+              "c2": {
+                "value": -0.7150789503926552,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_normalized_denominator_coordinate",
+                "native_value": -36.820268527434386,
+                "normalization_group": "denominator_2",
+                "normalization_norm": 51.491193395101476,
+                "native_coefficient_index": 2
+              },
+              "c3": {
+                "value": -0.6990437001399401,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_normalized_denominator_coordinate",
+                "native_value": -35.99459435553298,
+                "normalization_group": "denominator_2",
+                "normalization_norm": 51.491193395101476,
+                "native_coefficient_index": 3
+              }
+            },
+            "arithmetic": "strict_real",
+            "definitions": {}
+          }
+        }
+      }
+    },
+    "n_nodes": 15,
+    "working_n_nodes": 15,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "((0.75 * x_work) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x_work)) / (coef['__slot_h_c2'] + (coef['__slot_h_c3'] * x_work))))",
+    "latex": "\\left(\\left(0.75 \\cdot \\text{x\\_work}\\right) + \\frac{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c1}} \\cdot \\text{x\\_work}\\right)\\right)}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c2}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c3}} \\cdot \\text{x\\_work}\\right)\\right)}\\right)",
+    "public_text": "y [1] = ((0.75 * x) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x)) / (coef['__slot_h_c2'] + (coef['__slot_h_c3'] * x))))",
+    "public_latex": "\\text{y}\\;[\\text{1}] = \\left(\\left(0.75 \\cdot \\text{x}\\right) + \\frac{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c1}} \\cdot \\text{x}\\right)\\right)}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c2}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c3}} \\cdot \\text{x}\\right)\\right)}\\right)",
+    "display_text": "0.75 * x_work + (\u03b8[__slot_h_c0] + \u03b8[__slot_h_c1] * x_work) / (\u03b8[__slot_h_c2] + \u03b8[__slot_h_c3] * x_work)",
+    "public_display_text": "y [1] = 0.75 * x + (\u03b8[__slot_h_c0] + \u03b8[__slot_h_c1] * x) / (\u03b8[__slot_h_c2] + \u03b8[__slot_h_c3] * x)",
+    "parameters": [
+      {
+        "name": "__slot_h_c0",
+        "value": -0.013936264965212355,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c1",
+        "value": -1.402230087865118,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_coefficient_block",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c2",
+        "value": -0.7150789503926552,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c3",
+        "value": -0.6990437001399401,
+        "unit": null,
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_normalized_denominator_coordinate",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "strict_real",
+    "operators": [
+      "add",
+      "div",
+      "mul"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "torchsisso/17/0@native",
+    "method": "torchsisso",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": true,
+    "reason": null,
+    "variant": "native",
+    "subject": {
+      "relation_ref": "torchsisso/17/0@native",
+      "relation_state_sha256": "ea75caba3caeeb1dd85a0c4df11c1facf8d3dfdfaf53603423419282e6cf28b9",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "const": 0.75
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "op": "add",
+            "args": [
+              {
+                "param": "__slot_h_intercept"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "param": "__slot_h_c0"
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {
+        "__slot_h_c0": {
+          "value": 0.3056197726450177,
+          "trainable": true,
+          "origin": "native_regression_solve",
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1"
+        },
+        "__slot_h_intercept": {
+          "value": 0.6060914352361365,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_regression_solve"
+        }
+      },
+      "template": {
+        "specification": {
+          "coordinate_space": "working",
+          "ast": {
+            "op": "add",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "const": 0.75
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "slot": "h",
+                "args": [
+                  {
+                    "var": "x0"
+                  }
+                ]
+              }
+            ]
+          },
+          "parameters": {},
+          "components": {},
+          "slots": {
+            "h": {
+              "arguments": [
+                {
+                  "name": "x0",
+                  "unit": "1"
+                }
+              ],
+              "unit": "1",
+              "allowed_operators": [
+                "add",
+                "sub",
+                "mul",
+                "div"
+              ],
+              "max_nodes": 252
+            }
+          },
+          "knowledge": {
+            "kind": "hypothesis",
+            "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+          }
+        },
+        "slots": {
+          "h": {
+            "schema_version": 1,
+            "ast": {
+              "op": "add",
+              "args": [
+                {
+                  "param": "intercept"
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "param": "c0"
+                    },
+                    {
+                      "var": "x0"
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "intercept": {
+                "value": 0.6060914352361365,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_regression_solve"
+              },
+              "c0": {
+                "value": 0.3056197726450177,
+                "trainable": true,
+                "origin": "native_regression_solve",
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1"
+              }
+            }
+          }
+        }
+      }
+    },
+    "n_nodes": 9,
+    "working_n_nodes": 9,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "((0.75 * x_work) + (coef['__slot_h_intercept'] + (coef['__slot_h_c0'] * x_work)))",
+    "latex": "\\left(\\left(0.75 \\cdot \\text{x\\_work}\\right) + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_intercept}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} \\cdot \\text{x\\_work}\\right)\\right)\\right)",
+    "public_text": "y [1] = ((0.75 * x) + (coef['__slot_h_intercept'] + (coef['__slot_h_c0'] * x)))",
+    "public_latex": "\\text{y}\\;[\\text{1}] = \\left(\\left(0.75 \\cdot \\text{x}\\right) + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_intercept}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} \\cdot \\text{x}\\right)\\right)\\right)",
+    "display_text": "0.75 * x_work + (\u03b8[__slot_h_intercept] + \u03b8[__slot_h_c0] * x_work)",
+    "public_display_text": "y [1] = 0.75 * x + (\u03b8[__slot_h_intercept] + \u03b8[__slot_h_c0] * x)",
+    "parameters": [
+      {
+        "name": "__slot_h_c0",
+        "value": 0.3056197726450177,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_regression_solve",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_intercept",
+        "value": 0.6060914352361365,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_regression_solve",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "strict_real",
+    "operators": [
+      "add",
+      "mul"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "physo/17/8@native",
+    "method": "physo",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": true,
+    "reason": null,
+    "variant": "native",
+    "subject": {
+      "relation_ref": "physo/17/8@native",
+      "relation_state_sha256": "738862d52d2cf4b1b938d348819a2a461a7a62c0534adad9f4cbbb2df49699db",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "const": 0.75
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "op": "div",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "__slot_h_c0"
+                  },
+                  {
+                    "op": "div",
+                    "args": [
+                      {
+                        "param": "__slot_h_c0"
+                      },
+                      {
+                        "op": "sub",
+                        "args": [
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "var": "x0"
+                              },
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "add",
+                                    "args": [
+                                      {
+                                        "op": "add",
+                                        "args": [
+                                          {
+                                            "const": 1.0
+                                          },
+                                          {
+                                            "param": "__slot_h_c0"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "var": "x0"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "param": "__slot_h_c0"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "param": "__slot_h_c1"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "const": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {
+        "__slot_h_c0": {
+          "value": 1.9998572859905726,
+          "trainable": true,
+          "origin": "native_free_constant_slot",
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "physo_native_name": "c0"
+        },
+        "__slot_h_c1": {
+          "value": -4.993786815920743,
+          "trainable": true,
+          "origin": "native_free_constant_slot",
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "physo_native_name": "c1"
+        }
+      },
+      "template": {
+        "specification": {
+          "coordinate_space": "working",
+          "ast": {
+            "op": "add",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "const": 0.75
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "slot": "h",
+                "args": [
+                  {
+                    "var": "x0"
+                  }
+                ]
+              }
+            ]
+          },
+          "parameters": {},
+          "components": {},
+          "slots": {
+            "h": {
+              "arguments": [
+                {
+                  "name": "x0",
+                  "unit": "1"
+                }
+              ],
+              "unit": "1",
+              "allowed_operators": [
+                "add",
+                "sub",
+                "mul",
+                "div"
+              ],
+              "max_nodes": 252
+            }
+          },
+          "knowledge": {
+            "kind": "hypothesis",
+            "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+          }
+        },
+        "slots": {
+          "h": {
+            "schema_version": 1,
+            "ast": {
+              "op": "div",
+              "args": [
+                {
+                  "op": "add",
+                  "args": [
+                    {
+                      "param": "c0"
+                    },
+                    {
+                      "op": "div",
+                      "args": [
+                        {
+                          "param": "c0"
+                        },
+                        {
+                          "op": "sub",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "var": "x0"
+                                },
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    {
+                                      "op": "add",
+                                      "args": [
+                                        {
+                                          "op": "add",
+                                          "args": [
+                                            {
+                                              "const": 1.0
+                                            },
+                                            {
+                                              "param": "c0"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "var": "x0"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "param": "c0"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "param": "c1"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "const": 1.0
+                }
+              ]
+            },
+            "parameters": {
+              "c0": {
+                "value": 1.9998572859905726,
+                "trainable": true,
+                "origin": "native_free_constant_slot",
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "physo_native_name": "c0"
+              },
+              "c1": {
+                "value": -4.993786815920743,
+                "trainable": true,
+                "origin": "native_free_constant_slot",
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "physo_native_name": "c1"
+              }
+            }
+          }
+        }
+      }
+    },
+    "n_nodes": 21,
+    "working_n_nodes": 21,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "((0.75 * x_work) + ((coef['__slot_h_c0'] + (coef['__slot_h_c0'] / ((x_work - (((1.0 + coef['__slot_h_c0']) + x_work) * coef['__slot_h_c0'])) - coef['__slot_h_c1']))) / 1.0))",
+    "latex": "\\left(\\left(0.75 \\cdot \\text{x\\_work}\\right) + \\frac{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} + \\frac{\\theta_{\\text{\\_\\_slot\\_h\\_c0}}}{\\left(\\left(\\text{x\\_work} - \\left(\\left(\\left(1.0 + \\theta_{\\text{\\_\\_slot\\_h\\_c0}}\\right) + \\text{x\\_work}\\right) \\cdot \\theta_{\\text{\\_\\_slot\\_h\\_c0}}\\right)\\right) - \\theta_{\\text{\\_\\_slot\\_h\\_c1}}\\right)}\\right)}{1.0}\\right)",
+    "public_text": "y [1] = ((0.75 * x) + ((coef['__slot_h_c0'] + (coef['__slot_h_c0'] / ((x - (((1.0 + coef['__slot_h_c0']) + x) * coef['__slot_h_c0'])) - coef['__slot_h_c1']))) / 1.0))",
+    "public_latex": "\\text{y}\\;[\\text{1}] = \\left(\\left(0.75 \\cdot \\text{x}\\right) + \\frac{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c0}} + \\frac{\\theta_{\\text{\\_\\_slot\\_h\\_c0}}}{\\left(\\left(\\text{x} - \\left(\\left(\\left(1.0 + \\theta_{\\text{\\_\\_slot\\_h\\_c0}}\\right) + \\text{x}\\right) \\cdot \\theta_{\\text{\\_\\_slot\\_h\\_c0}}\\right)\\right) - \\theta_{\\text{\\_\\_slot\\_h\\_c1}}\\right)}\\right)}{1.0}\\right)",
+    "display_text": "0.75 * x_work + (\u03b8[__slot_h_c0] + \u03b8[__slot_h_c0] / (x_work - (1.0 + \u03b8[__slot_h_c0] + x_work) * \u03b8[__slot_h_c0] - \u03b8[__slot_h_c1])) / 1.0",
+    "public_display_text": "y [1] = 0.75 * x + (\u03b8[__slot_h_c0] + \u03b8[__slot_h_c0] / (x - (1.0 + \u03b8[__slot_h_c0] + x) * \u03b8[__slot_h_c0] - \u03b8[__slot_h_c1])) / 1.0",
+    "parameters": [
+      {
+        "name": "__slot_h_c0",
+        "value": 1.9998572859905726,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_free_constant_slot",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c1",
+        "value": -4.993786815920743,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_free_constant_slot",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "strict_real",
+    "operators": [
+      "add",
+      "div",
+      "mul",
+      "sub"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names."
+    ],
+    "display_status": "stored AST"
+  },
+  {
+    "candidate_id": "e2e/17/125/known-affine-fit@native",
+    "method": "e2e",
+    "kind": "explicit",
+    "component": "prediction",
+    "member_index": null,
+    "member_id": null,
+    "weight": null,
+    "eligible": true,
+    "reason": null,
+    "variant": "native",
+    "subject": {
+      "relation_ref": "e2e/17/125/known-affine-fit@native",
+      "relation_state_sha256": "a530168294b4839e2e0bb4c4571a3d9df3f229de0fd4a6d83228c02b9b2c487c",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "execution_view": {
+      "name": "value",
+      "settings": {}
+    },
+    "uncertainty_scope": null,
+    "branch": null,
+    "prediction_unavailable_reason": null,
+    "native_result": null,
+    "equation": {
+      "schema_version": 2,
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "const": 0.75
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "op": "add",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "__slot_h_c2"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "__slot_h_c4"
+                      },
+                      {
+                        "op": "div",
+                        "args": [
+                          {
+                            "const": 1
+                          },
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "op": "add",
+                                "args": [
+                                  {
+                                    "param": "__slot_h_c8"
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "param": "__slot_h_c10"
+                                      },
+                                      {
+                                        "op": "div",
+                                        "args": [
+                                          {
+                                            "const": 1
+                                          },
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "param": "__slot_h_c13"
+                                              },
+                                              {
+                                                "op": "mul",
+                                                "args": [
+                                                  {
+                                                    "param": "__slot_h_c15"
+                                                  },
+                                                  {
+                                                    "op": "div",
+                                                    "args": [
+                                                      {
+                                                        "op": "sub",
+                                                        "args": [
+                                                          {
+                                                            "var": "x0"
+                                                          },
+                                                          {
+                                                            "param": "__slot_h_x0_mean"
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "param": "__slot_h_x0_scale"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "add",
+                                "args": [
+                                  {
+                                    "param": "__slot_h_c18"
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "param": "__slot_h_c20"
+                                      },
+                                      {
+                                        "op": "div",
+                                        "args": [
+                                          {
+                                            "op": "sub",
+                                            "args": [
+                                              {
+                                                "var": "x0"
+                                              },
+                                              {
+                                                "param": "__slot_h_x0_mean"
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "param": "__slot_h_x0_scale"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "__slot_h_c23"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "__slot_h_c25"
+                      },
+                      {
+                        "op": "div",
+                        "args": [
+                          {
+                            "const": 1
+                          },
+                          {
+                            "op": "add",
+                            "args": [
+                              {
+                                "param": "__slot_h_c28"
+                              },
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "param": "__slot_h_c30"
+                                  },
+                                  {
+                                    "op": "div",
+                                    "args": [
+                                      {
+                                        "const": 1
+                                      },
+                                      {
+                                        "op": "add",
+                                        "args": [
+                                          {
+                                            "param": "__slot_h_c33"
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "param": "__slot_h_c35"
+                                              },
+                                              {
+                                                "op": "div",
+                                                "args": [
+                                                  {
+                                                    "const": 1
+                                                  },
+                                                  {
+                                                    "op": "add",
+                                                    "args": [
+                                                      {
+                                                        "param": "__slot_h_c38"
+                                                      },
+                                                      {
+                                                        "op": "mul",
+                                                        "args": [
+                                                          {
+                                                            "param": "__slot_h_c40"
+                                                          },
+                                                          {
+                                                            "op": "div",
+                                                            "args": [
+                                                              {
+                                                                "const": 1
+                                                              },
+                                                              {
+                                                                "op": "add",
+                                                                "args": [
+                                                                  {
+                                                                    "param": "__slot_h_c43"
+                                                                  },
+                                                                  {
+                                                                    "op": "mul",
+                                                                    "args": [
+                                                                      {
+                                                                        "param": "__slot_h_c45"
+                                                                      },
+                                                                      {
+                                                                        "op": "div",
+                                                                        "args": [
+                                                                          {
+                                                                            "const": 1
+                                                                          },
+                                                                          {
+                                                                            "op": "add",
+                                                                            "args": [
+                                                                              {
+                                                                                "param": "__slot_h_c48"
+                                                                              },
+                                                                              {
+                                                                                "op": "mul",
+                                                                                "args": [
+                                                                                  {
+                                                                                    "param": "__slot_h_c50"
+                                                                                  },
+                                                                                  {
+                                                                                    "op": "div",
+                                                                                    "args": [
+                                                                                      {
+                                                                                        "const": 1
+                                                                                      },
+                                                                                      {
+                                                                                        "op": "add",
+                                                                                        "args": [
+                                                                                          {
+                                                                                            "param": "__slot_h_c53"
+                                                                                          },
+                                                                                          {
+                                                                                            "op": "mul",
+                                                                                            "args": [
+                                                                                              {
+                                                                                                "param": "__slot_h_c55"
+                                                                                              },
+                                                                                              {
+                                                                                                "op": "div",
+                                                                                                "args": [
+                                                                                                  {
+                                                                                                    "op": "sub",
+                                                                                                    "args": [
+                                                                                                      {
+                                                                                                        "var": "x0"
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "param": "__slot_h_x0_mean"
+                                                                                                      }
+                                                                                                    ]
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "param": "__slot_h_x0_scale"
+                                                                                                  }
+                                                                                                ]
+                                                                                              }
+                                                                                            ]
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    ]
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {
+        "__slot_h_c10": {
+          "value": -0.20199110458135008,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c13": {
+          "value": -3.0170679227934127,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c15": {
+          "value": -0.249871246513016,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c18": {
+          "value": 0.02782615839409602,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c2": {
+          "value": -0.28608761362150004,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c20": {
+          "value": -0.03148121346559579,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c23": {
+          "value": 2.245575033847901,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c25": {
+          "value": 0.46042483881401985,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c28": {
+          "value": 0.37928486584861115,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c30": {
+          "value": -1.2256667468422733,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c33": {
+          "value": -0.04076234642677988,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c35": {
+          "value": 0.000962567445148803,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c38": {
+          "value": -0.5551126945217775,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c4": {
+          "value": -0.04403400872623396,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c40": {
+          "value": -14.167040088518197,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c43": {
+          "value": -1.5489822257082586,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c45": {
+          "value": 31.3327905049318,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c48": {
+          "value": -0.03765952549039632,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c50": {
+          "value": 14.736168511502376,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c53": {
+          "value": 2.591404230970542,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c55": {
+          "value": -51.23330467961724,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_c8": {
+          "value": 0.028737139215004936,
+          "trainable": true,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "native_decimal_coefficient"
+        },
+        "__slot_h_x0_mean": {
+          "value": 1.9634916034894223,
+          "trainable": false,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "train_normalization"
+        },
+        "__slot_h_x0_scale": {
+          "value": 1.0820323259523998,
+          "trainable": false,
+          "bounds": [
+            null,
+            null
+          ],
+          "unit": "1",
+          "origin": "train_normalization"
+        }
+      },
+      "template": {
+        "specification": {
+          "coordinate_space": "working",
+          "ast": {
+            "op": "add",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "const": 0.75
+                  },
+                  {
+                    "var": "x0"
+                  }
+                ]
+              },
+              {
+                "slot": "h",
+                "args": [
+                  {
+                    "var": "x0"
+                  }
+                ]
+              }
+            ]
+          },
+          "parameters": {},
+          "components": {},
+          "slots": {
+            "h": {
+              "arguments": [
+                {
+                  "name": "x0",
+                  "unit": "1"
+                }
+              ],
+              "unit": "1",
+              "allowed_operators": [
+                "add",
+                "sub",
+                "mul",
+                "div"
+              ],
+              "max_nodes": 252
+            }
+          },
+          "knowledge": {
+            "kind": "hypothesis",
+            "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+          }
+        },
+        "slots": {
+          "h": {
+            "schema_version": 2,
+            "ast": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "add",
+                  "args": [
+                    {
+                      "param": "c2"
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "param": "c4"
+                        },
+                        {
+                          "op": "div",
+                          "args": [
+                            {
+                              "const": 1
+                            },
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "op": "add",
+                                  "args": [
+                                    {
+                                      "param": "c8"
+                                    },
+                                    {
+                                      "op": "mul",
+                                      "args": [
+                                        {
+                                          "param": "c10"
+                                        },
+                                        {
+                                          "op": "div",
+                                          "args": [
+                                            {
+                                              "const": 1
+                                            },
+                                            {
+                                              "op": "add",
+                                              "args": [
+                                                {
+                                                  "param": "c13"
+                                                },
+                                                {
+                                                  "op": "mul",
+                                                  "args": [
+                                                    {
+                                                      "param": "c15"
+                                                    },
+                                                    {
+                                                      "op": "div",
+                                                      "args": [
+                                                        {
+                                                          "op": "sub",
+                                                          "args": [
+                                                            {
+                                                              "var": "x0"
+                                                            },
+                                                            {
+                                                              "param": "x0_mean"
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "param": "x0_scale"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "op": "add",
+                                  "args": [
+                                    {
+                                      "param": "c18"
+                                    },
+                                    {
+                                      "op": "mul",
+                                      "args": [
+                                        {
+                                          "param": "c20"
+                                        },
+                                        {
+                                          "op": "div",
+                                          "args": [
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                {
+                                                  "var": "x0"
+                                                },
+                                                {
+                                                  "param": "x0_mean"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "param": "x0_scale"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "add",
+                  "args": [
+                    {
+                      "param": "c23"
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "param": "c25"
+                        },
+                        {
+                          "op": "div",
+                          "args": [
+                            {
+                              "const": 1
+                            },
+                            {
+                              "op": "add",
+                              "args": [
+                                {
+                                  "param": "c28"
+                                },
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    {
+                                      "param": "c30"
+                                    },
+                                    {
+                                      "op": "div",
+                                      "args": [
+                                        {
+                                          "const": 1
+                                        },
+                                        {
+                                          "op": "add",
+                                          "args": [
+                                            {
+                                              "param": "c33"
+                                            },
+                                            {
+                                              "op": "mul",
+                                              "args": [
+                                                {
+                                                  "param": "c35"
+                                                },
+                                                {
+                                                  "op": "div",
+                                                  "args": [
+                                                    {
+                                                      "const": 1
+                                                    },
+                                                    {
+                                                      "op": "add",
+                                                      "args": [
+                                                        {
+                                                          "param": "c38"
+                                                        },
+                                                        {
+                                                          "op": "mul",
+                                                          "args": [
+                                                            {
+                                                              "param": "c40"
+                                                            },
+                                                            {
+                                                              "op": "div",
+                                                              "args": [
+                                                                {
+                                                                  "const": 1
+                                                                },
+                                                                {
+                                                                  "op": "add",
+                                                                  "args": [
+                                                                    {
+                                                                      "param": "c43"
+                                                                    },
+                                                                    {
+                                                                      "op": "mul",
+                                                                      "args": [
+                                                                        {
+                                                                          "param": "c45"
+                                                                        },
+                                                                        {
+                                                                          "op": "div",
+                                                                          "args": [
+                                                                            {
+                                                                              "const": 1
+                                                                            },
+                                                                            {
+                                                                              "op": "add",
+                                                                              "args": [
+                                                                                {
+                                                                                  "param": "c48"
+                                                                                },
+                                                                                {
+                                                                                  "op": "mul",
+                                                                                  "args": [
+                                                                                    {
+                                                                                      "param": "c50"
+                                                                                    },
+                                                                                    {
+                                                                                      "op": "div",
+                                                                                      "args": [
+                                                                                        {
+                                                                                          "const": 1
+                                                                                        },
+                                                                                        {
+                                                                                          "op": "add",
+                                                                                          "args": [
+                                                                                            {
+                                                                                              "param": "c53"
+                                                                                            },
+                                                                                            {
+                                                                                              "op": "mul",
+                                                                                              "args": [
+                                                                                                {
+                                                                                                  "param": "c55"
+                                                                                                },
+                                                                                                {
+                                                                                                  "op": "div",
+                                                                                                  "args": [
+                                                                                                    {
+                                                                                                      "op": "sub",
+                                                                                                      "args": [
+                                                                                                        {
+                                                                                                          "var": "x0"
+                                                                                                        },
+                                                                                                        {
+                                                                                                          "param": "x0_mean"
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    },
+                                                                                                    {
+                                                                                                      "param": "x0_scale"
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "c2": {
+                "value": -0.23500000000000001,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c4": {
+                "value": -0.0975,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c8": {
+                "value": 0.047400000000000005,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c10": {
+                "value": -0.14500000000000002,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c13": {
+                "value": -5.08,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c15": {
+                "value": -2.86,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "x0_mean": {
+                "value": 1.9634916034894223,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "x0_scale": {
+                "value": 1.0820323259523998,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "c18": {
+                "value": 0.0073999999999999995,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c20": {
+                "value": -0.0050999999999999995,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c23": {
+                "value": 2.81,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c25": {
+                "value": -0.549,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c28": {
+                "value": 0.341,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c30": {
+                "value": 0.73,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c33": {
+                "value": -0.00788,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c35": {
+                "value": 0.055200000000000006,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c38": {
+                "value": -1.53,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c40": {
+                "value": -15.1,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c43": {
+                "value": -0.655,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c45": {
+                "value": 28.1,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c48": {
+                "value": -0.0646,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c50": {
+                "value": 13.6,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c53": {
+                "value": 2.97,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "c55": {
+                "value": -37.2,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              }
+            },
+            "arithmetic": "strict_real"
+          }
+        }
+      }
+    },
+    "n_nodes": 81,
+    "working_n_nodes": 81,
+    "complexity_scope": "expanded source-coordinate AST",
+    "text": "((0.75 * x_work) + ((coef['__slot_h_c2'] + (coef['__slot_h_c4'] * (1 / ((coef['__slot_h_c8'] + (coef['__slot_h_c10'] * (1 / (coef['__slot_h_c13'] + (coef['__slot_h_c15'] * ((x_work - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale'])))))) - (coef['__slot_h_c18'] + (coef['__slot_h_c20'] * ((x_work - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale']))))))) + (coef['__slot_h_c23'] + (coef['__slot_h_c25'] * (1 / (coef['__slot_h_c28'] + (coef['__slot_h_c30'] * (1 / (coef['__slot_h_c33'] + (coef['__slot_h_c35'] * (1 / (coef['__slot_h_c38'] + (coef['__slot_h_c40'] * (1 / (coef['__slot_h_c43'] + (coef['__slot_h_c45'] * (1 / (coef['__slot_h_c48'] + (coef['__slot_h_c50'] * (1 / (coef['__slot_h_c53'] + (coef['__slot_h_c55'] * ((x_work - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale'])))))))))))))))))))))))",
+    "latex": "\\left(\\left(0.75 \\cdot \\text{x\\_work}\\right) + \\left(\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c2}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c4}} \\cdot \\frac{1}{\\left(\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c8}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c10}} \\cdot \\frac{1}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c13}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c15}} \\cdot \\frac{\\left(\\text{x\\_work} - \\theta_{\\text{\\_\\_slot\\_h\\_x0\\_mean}}\\right)}{\\theta_{\\text{\\_\\_slot\\_h\\_x0\\_scale}}}\\right)\\right)}\\right)\\right) - \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c18}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c20}} \\cdot \\frac{\\left(\\text{x\\_work} - \\theta_{\\text{\\_\\_slot\\_h\\_x0\\_mean}}\\right)}{\\theta_{\\text{\\_\\_slot\\_h\\_x0\\_scale}}}\\right)\\right)\\right)}\\right)\\right) + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c23}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c25}} \\cdot \\frac{1}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c28}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c30}} \\cdot \\frac{1}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c33}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c35}} \\cdot \\frac{1}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c38}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c40}} \\cdot \\frac{1}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c43}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c45}} \\cdot \\frac{1}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c48}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c50}} \\cdot \\frac{1}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c53}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c55}} \\cdot \\frac{\\left(\\text{x\\_work} - \\theta_{\\text{\\_\\_slot\\_h\\_x0\\_mean}}\\right)}{\\theta_{\\text{\\_\\_slot\\_h\\_x0\\_scale}}}\\right)\\right)}\\right)\\right)}\\right)\\right)}\\right)\\right)}\\right)\\right)}\\right)\\right)}\\right)\\right)\\right)\\right)",
+    "public_text": "y [1] = ((0.75 * x) + ((coef['__slot_h_c2'] + (coef['__slot_h_c4'] * (1 / ((coef['__slot_h_c8'] + (coef['__slot_h_c10'] * (1 / (coef['__slot_h_c13'] + (coef['__slot_h_c15'] * ((x - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale'])))))) - (coef['__slot_h_c18'] + (coef['__slot_h_c20'] * ((x - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale']))))))) + (coef['__slot_h_c23'] + (coef['__slot_h_c25'] * (1 / (coef['__slot_h_c28'] + (coef['__slot_h_c30'] * (1 / (coef['__slot_h_c33'] + (coef['__slot_h_c35'] * (1 / (coef['__slot_h_c38'] + (coef['__slot_h_c40'] * (1 / (coef['__slot_h_c43'] + (coef['__slot_h_c45'] * (1 / (coef['__slot_h_c48'] + (coef['__slot_h_c50'] * (1 / (coef['__slot_h_c53'] + (coef['__slot_h_c55'] * ((x - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale'])))))))))))))))))))))))",
+    "public_latex": "\\text{y}\\;[\\text{1}] = \\left(\\left(0.75 \\cdot \\text{x}\\right) + \\left(\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c2}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c4}} \\cdot \\frac{1}{\\left(\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c8}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c10}} \\cdot \\frac{1}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c13}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c15}} \\cdot \\frac{\\left(\\text{x} - \\theta_{\\text{\\_\\_slot\\_h\\_x0\\_mean}}\\right)}{\\theta_{\\text{\\_\\_slot\\_h\\_x0\\_scale}}}\\right)\\right)}\\right)\\right) - \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c18}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c20}} \\cdot \\frac{\\left(\\text{x} - \\theta_{\\text{\\_\\_slot\\_h\\_x0\\_mean}}\\right)}{\\theta_{\\text{\\_\\_slot\\_h\\_x0\\_scale}}}\\right)\\right)\\right)}\\right)\\right) + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c23}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c25}} \\cdot \\frac{1}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c28}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c30}} \\cdot \\frac{1}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c33}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c35}} \\cdot \\frac{1}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c38}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c40}} \\cdot \\frac{1}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c43}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c45}} \\cdot \\frac{1}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c48}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c50}} \\cdot \\frac{1}{\\left(\\theta_{\\text{\\_\\_slot\\_h\\_c53}} + \\left(\\theta_{\\text{\\_\\_slot\\_h\\_c55}} \\cdot \\frac{\\left(\\text{x} - \\theta_{\\text{\\_\\_slot\\_h\\_x0\\_mean}}\\right)}{\\theta_{\\text{\\_\\_slot\\_h\\_x0\\_scale}}}\\right)\\right)}\\right)\\right)}\\right)\\right)}\\right)\\right)}\\right)\\right)}\\right)\\right)}\\right)\\right)\\right)\\right)",
+    "display_text": "0.75 * x_work + (\u03b8[__slot_h_c2] + \u03b8[__slot_h_c4] * (1 / (\u03b8[__slot_h_c8] + \u03b8[__slot_h_c10] * (1 / (\u03b8[__slot_h_c13] + \u03b8[__slot_h_c15] * ((x_work - \u03b8[__slot_h_x0_mean]) / \u03b8[__slot_h_x0_scale]))) - (\u03b8[__slot_h_c18] + \u03b8[__slot_h_c20] * ((x_work - \u03b8[__slot_h_x0_mean]) / \u03b8[__slot_h_x0_scale])))) + (\u03b8[__slot_h_c23] + \u03b8[__slot_h_c25] * (1 / (\u03b8[__slot_h_c28] + \u03b8[__slot_h_c30] * (1 / (\u03b8[__slot_h_c33] + \u03b8[__slot_h_c35] * (1 / (\u03b8[__slot_h_c38] + \u03b8[__slot_h_c40] * (1 / (\u03b8[__slot_h_c43] + \u03b8[__slot_h_c45] * (1 / (\u03b8[__slot_h_c48] + \u03b8[__slot_h_c50] * (1 / (\u03b8[__slot_h_c53] + \u03b8[__slot_h_c55] * ((x_work - \u03b8[__slot_h_x0_mean]) / \u03b8[__slot_h_x0_scale])))))))))))))))",
+    "public_display_text": "y [1] = 0.75 * x + (\u03b8[__slot_h_c2] + \u03b8[__slot_h_c4] * (1 / (\u03b8[__slot_h_c8] + \u03b8[__slot_h_c10] * (1 / (\u03b8[__slot_h_c13] + \u03b8[__slot_h_c15] * ((x - \u03b8[__slot_h_x0_mean]) / \u03b8[__slot_h_x0_scale]))) - (\u03b8[__slot_h_c18] + \u03b8[__slot_h_c20] * ((x - \u03b8[__slot_h_x0_mean]) / \u03b8[__slot_h_x0_scale])))) + (\u03b8[__slot_h_c23] + \u03b8[__slot_h_c25] * (1 / (\u03b8[__slot_h_c28] + \u03b8[__slot_h_c30] * (1 / (\u03b8[__slot_h_c33] + \u03b8[__slot_h_c35] * (1 / (\u03b8[__slot_h_c38] + \u03b8[__slot_h_c40] * (1 / (\u03b8[__slot_h_c43] + \u03b8[__slot_h_c45] * (1 / (\u03b8[__slot_h_c48] + \u03b8[__slot_h_c50] * (1 / (\u03b8[__slot_h_c53] + \u03b8[__slot_h_c55] * ((x - \u03b8[__slot_h_x0_mean]) / \u03b8[__slot_h_x0_scale])))))))))))))))",
+    "parameters": [
+      {
+        "name": "__slot_h_c10",
+        "value": -0.20199110458135008,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c13",
+        "value": -3.0170679227934127,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c15",
+        "value": -0.249871246513016,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c18",
+        "value": 0.02782615839409602,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c2",
+        "value": -0.28608761362150004,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c20",
+        "value": -0.03148121346559579,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c23",
+        "value": 2.245575033847901,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c25",
+        "value": 0.46042483881401985,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c28",
+        "value": 0.37928486584861115,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c30",
+        "value": -1.2256667468422733,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c33",
+        "value": -0.04076234642677988,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c35",
+        "value": 0.000962567445148803,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c38",
+        "value": -0.5551126945217775,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c4",
+        "value": -0.04403400872623396,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c40",
+        "value": -14.167040088518197,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c43",
+        "value": -1.5489822257082586,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c45",
+        "value": 31.3327905049318,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c48",
+        "value": -0.03765952549039632,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c50",
+        "value": 14.736168511502376,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c53",
+        "value": 2.591404230970542,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c55",
+        "value": -51.23330467961724,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_c8",
+        "value": 0.028737139215004936,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "free",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "native_decimal_coefficient",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_x0_mean",
+        "value": 1.9634916034894223,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "fixed",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "train_normalization",
+        "coordinate_role": null
+      },
+      {
+        "name": "__slot_h_x0_scale",
+        "value": 1.0820323259523998,
+        "unit": "1",
+        "unit_origin": "unit provenance not separately recorded",
+        "role": "fixed",
+        "tied_to": null,
+        "bounds": [
+          null,
+          null
+        ],
+        "origin": "train_normalization",
+        "coordinate_role": null
+      }
+    ],
+    "arithmetic": "strict_real",
+    "operators": [
+      "add",
+      "div",
+      "mul",
+      "sub"
+    ],
+    "semantic_notes": [
+      "Display only; no simplification, fitting, coefficient conversion or model selection.",
+      "Common real-domain validity requires every intermediate and result to be finite; domain holes remain.",
+      "Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.",
+      "coef['name'] / theta_name denote coefficients, distinct from input and target column names."
+    ],
+    "display_status": "stored AST"
+  }
+]

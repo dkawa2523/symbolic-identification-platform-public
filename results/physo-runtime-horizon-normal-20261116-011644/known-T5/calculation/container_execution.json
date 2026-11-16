@@ -1,0 +1,14 @@
+{
+  "images": {
+    "core": "sha256:067ff62cfd0a034a9f893bc20fb7c0ce695c52d5f9a77388529eedd66445838a",
+    "classic": "sha256:9c7a19e446e54911b12c5490eaca47421b21c147fae51089904fb2b638690c5a"
+  },
+  "cpus": 4,
+  "memory_limit": "2g",
+  "network": "none",
+  "status": "comparison_finished",
+  "started_at": "2026-11-16T01:17:45.119759+00:00",
+  "phase": "selection_comparison",
+  "final_accessed": false,
+  "finished_at": "2026-11-16T01:18:03.352826+00:00"
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="788">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203342">
+<text x="40" y="40" font-size="24" font-weight="bold">5. e2e | equation</text>
+<text x="40" y="68" font-size="13">Candidate e2e/17/46@native | page 1/1</text>
+<text x="40" y="110" font-size="20">Coordinates: public</text>
+<text x="40" y="137" font-size="20"></text>
+<text x="40" y="164" font-size="20">y [1] = θ[c1] + θ[c3] * (1 / (θ[c6] + θ[c8] * (1 / ((θ[c12] + θ[c14] * (1 /</text>
+<text x="40" y="191" font-size="20">(θ[c18] + θ[c20] * ((x - θ[x0_mean]) / θ[x0_scale]) - (θ[c23] + θ[c25] * (1</text>
+<text x="40" y="218" font-size="20">/ (θ[c28] + θ[c30] * ((x - θ[x0_mean]) / θ[x0_scale]))))))) * (θ[c33] +</text>
+<text x="40" y="245" font-size="20">θ[c35] * ((x - θ[x0_mean]) / θ[x0_scale]))))))</text>
+<text x="40" y="272" font-size="20"></text>
+<text x="40" y="299" font-size="20">Coefficients (working coordinates; rounded on image)</text>
+<text x="40" y="326" font-size="20">c1 = -2.4280176 [unit unknown]; role=free</text>
+<text x="40" y="353" font-size="20">c3 = 4.2937079 [unit unknown]; role=free</text>
+<text x="40" y="380" font-size="20">c6 = 0.41380759 [unit unknown]; role=free</text>
+<text x="40" y="407" font-size="20">c8 = 0.13661938 [unit unknown]; role=free</text>
+<text x="40" y="434" font-size="20">c12 = 0.031321342 [unit unknown]; role=free</text>
+<text x="40" y="461" font-size="20">c14 = -1.100876 [unit unknown]; role=free</text>
+<text x="40" y="488" font-size="20">c18 = -0.88541833 [unit unknown]; role=free</text>
+<text x="40" y="515" font-size="20">c20 = 4.6100251 [unit unknown]; role=free</text>
+<text x="40" y="542" font-size="20">x0_mean = 1.9634916 [1]; role=fixed</text>
+<text x="40" y="569" font-size="20">x0_scale = 1.0820323 [1]; role=fixed</text>
+<text x="40" y="596" font-size="20">c23 = -0.20344166 [unit unknown]; role=free</text>
+<text x="40" y="623" font-size="20">c25 = -4.277072 [unit unknown]; role=free</text>
+<text x="40" y="650" font-size="20">c28 = 0.099916374 [unit unknown]; role=free</text>
+<text x="40" y="677" font-size="20">c30 = 0.010935097 [unit unknown]; role=free</text>
+<text x="40" y="704" font-size="20">c33 = 64.425403 [unit unknown]; role=free</text>
+<text x="40" y="731" font-size="20">c35 = 26.841401 [unit unknown]; role=free</text>
+</g></svg>

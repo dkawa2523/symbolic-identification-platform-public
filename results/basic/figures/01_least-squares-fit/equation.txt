@@ -1,0 +1,9 @@
+Least-squares fit | equation
+Candidate: user_linear@manual/train_point_fit
+Coordinates: public
+response_mm [mm] = ((((coef['a'] * ((0.01) * (length_cm) + (0.0))) + coef['b'])) - (0.0)) / (0.001)
+
+a = 2.000635436522328 [1]
+b = 0.09867021695224298 [m]
+length_cm_work [m] = 0.01 * length_cm [cm] + (0)
+response_mm_work [m] = 0.001 * response_mm [mm] + (0)

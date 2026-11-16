@@ -1,0 +1,210 @@
+{
+  "status": "inputs_valid",
+  "package_identity": {
+    "version": "0.90.4",
+    "mode": "source",
+    "installed_metadata_version": "0.1.0"
+  },
+  "path_base": "/work",
+  "data_file": "/work/results/practical-fixed-20261115-1400/inputs/synthetic/table.csv",
+  "identity_column": "sample_id",
+  "group_column": null,
+  "feature_columns": [
+    "x"
+  ],
+  "target_column": "y",
+  "unit_coordinates": {
+    "x": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "y": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    }
+  },
+  "working_domains": {
+    "x": [
+      0.1,
+      4.0
+    ]
+  },
+  "working_variables": [
+    {
+      "id": "x0",
+      "column": "x",
+      "unit": "1",
+      "domain": [
+        0.1,
+        4.0
+      ],
+      "coordinate_role": null
+    }
+  ],
+  "target": {
+    "coordinate_role": null,
+    "column": "y",
+    "unit": "1",
+    "domain": null
+  },
+  "split": {
+    "method": "fixed",
+    "file": "results/practical-fixed-20261115-1400/inputs/synthetic/split.csv",
+    "group_column": null,
+    "seed": 42,
+    "valid_size": 0.2,
+    "selection_size": 0.2
+  },
+  "partitions": {
+    "final": {
+      "n_rows": 256,
+      "n_groups": 256
+    },
+    "selection": {
+      "n_rows": 128,
+      "n_groups": 128
+    },
+    "train": {
+      "n_rows": 256,
+      "n_groups": 256
+    }
+  },
+  "search_budget": {
+    "seeds": [
+      17
+    ],
+    "max_wall_seconds": 21600,
+    "candidate_pool_policy": "all",
+    "max_export_candidates": 20,
+    "allow_partial_engines": true
+  },
+  "requirements": {
+    "allowed_operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "fixed_constants": {},
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "required_responses": {
+      "points": [],
+      "bounds": [
+        null,
+        null
+      ],
+      "checks": [],
+      "enforcement": null
+    }
+  },
+  "engines": {
+    "torchsisso": {
+      "declared_input_issues": [],
+      "adapter_input_issues": [],
+      "adapter_validation": "passed",
+      "asset_input_issues": [],
+      "asset_verification": {
+        "status": "not_requested",
+        "manifest_sha256": null,
+        "files_verified": 0
+      },
+      "options": {
+        "dimensional": true,
+        "n_expansion": 2,
+        "n_term": 3,
+        "k": 10,
+        "response_max_iterations": 200
+      },
+      "runtime": {},
+      "assets": {},
+      "effective_operator_subset": [
+        "add",
+        "sub",
+        "mul",
+        "div"
+      ],
+      "capabilities": {
+        "unit_search": {
+          "defaults": {
+            "dimensional": true
+          },
+          "choices": {
+            "dimensional": [
+              true
+            ]
+          },
+          "templates": true
+        },
+        "equation_template": true,
+        "fixed_constants": "template_only",
+        "template_scope": "one affine shared slot with identical composed arguments; fixed scalar scale and known offset; dimensional only; hard finite-point response conditions through affine linear transformation",
+        "supported_options": [
+          "dimensional",
+          "k",
+          "n_expansion",
+          "n_term",
+          "response_max_iterations"
+        ],
+        "operators": [
+          "add",
+          "cos",
+          "cosh",
+          "div",
+          "exp",
+          "log",
+          "mul",
+          "pow_int",
+          "sin",
+          "sinh",
+          "sub",
+          "tanh"
+        ],
+        "requires_assets": false,
+        "search_constraints": [
+          "probes",
+          "response_bounds",
+          "response_checks"
+        ],
+        "response_enforcement": {
+          "default": "hard",
+          "supported": [
+            "hard"
+          ],
+          "stage": "constrained-SIS subset coefficient optimization and residual update"
+        },
+        "constraints": {
+          "operators": "native descriptor operators; affine add/mul and all exports post-filtered",
+          "units": "explicit dimensional mode: native dimensional expansion/target-unit descriptor filter, dimensionless coefficients and target-unit intercept; nondimensional mode: coefficient units unknown; common structural check",
+          "max_nodes": "source AST descriptor/combination budget before native affine coefficient fits; feature expansion intermediates not bounded",
+          "variables": "disallowed columns excluded before native search; full-schema export/prediction checked",
+          "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+          "probes": "finite-point hard constrained coefficient fit for each explored SIS subset; no global guarantee",
+          "response_bounds": "hard coefficient constraints within subset search",
+          "response_checks": "finite-step hard coefficient constraints within subset search; not analytic derivative proof"
+        }
+      },
+      "constraint_application": {
+        "operators": "native descriptor operators; affine add/mul and all exports post-filtered",
+        "max_nodes": "source AST descriptor/combination budget before native affine coefficient fits; feature expansion intermediates not bounded"
+      },
+      "response_mode": "search"
+    }
+  },
+  "not_checked": [
+    "Only adapter-provided static input checks ran. An extension without validate_request is explicitly not_available.",
+    "Native libraries, runtime startup, GPU availability and checkpoint deserialization were not tested; verified file hashes and input checks are not native readiness evidence.",
+    "No search, fitting, predictions, Selection metrics or Final metrics were performed. No input files were changed."
+  ]
+}

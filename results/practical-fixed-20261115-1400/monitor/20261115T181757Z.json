@@ -1,0 +1,88 @@
+{
+  "time": "2026-11-15T18:17:55.196856+00:00",
+  "state": {
+    "returncode": 0,
+    "stdout": "{\"Status\":\"running\",\"Running\":true,\"Paused\":false,\"Restarting\":false,\"OOMKilled\":false,\"Dead\":false,\"Pid\":1678122,\"ExitCode\":0,\"Error\":\"\",\"StartedAt\":\"2026-11-15T18:00:50.884023094Z\",\"FinishedAt\":\"0001-01-01T00:00:00Z\"}\n",
+    "stderr": ""
+  },
+  "cmd": {
+    "returncode": 0,
+    "stdout": "[\"python\",\"scripts/container_stage.py\",\"discover\",\"--run-dir\",\"/work/results/practical-fixed-20261115-1400/synthetic_supported/e2e/calculation\",\"--engine\",\"e2e\",\"--seed\",\"17\"]\n",
+    "stderr": ""
+  },
+  "stats": {
+    "returncode": 0,
+    "stdout": "92.62% 1.589GiB / 6GiB 26.49%\n",
+    "stderr": ""
+  },
+  "memory_events": {
+    "returncode": 0,
+    "stdout": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+    "stderr": ""
+  },
+  "execution": {
+    "images": {
+      "core": "sha256:bdc532d7fcb7021e1a57810de876bfa8b2ad5ef7cd29762334fda5d14689acd9",
+      "e2e": "sha256:5a45e360005eb029222c86004168123b4fc6c5f821a931ffa4c14b8e511d7d30"
+    },
+    "cpus": 4,
+    "memory_limit": "6g",
+    "network": "none",
+    "status": "running",
+    "started_at": "2026-11-15T18:00:23.444063+00:00",
+    "phase": "discover:e2e/17"
+  },
+  "recent_files": [
+    {
+      "path": "completed_progress.json",
+      "size": 7093359,
+      "mtime": "2026-11-15T18:17:56.337566+00:00"
+    },
+    {
+      "path": "known_affine_native\\observations.npz",
+      "size": 7528,
+      "mtime": "2026-11-15T18:04:56.156755+00:00"
+    },
+    {
+      "path": "known_affine_native\\summary.json",
+      "size": 19630,
+      "mtime": "2026-11-15T18:04:56.134203+00:00"
+    },
+    {
+      "path": "known_affine_native\\candidates.json",
+      "size": 4523160,
+      "mtime": "2026-11-15T18:04:56.106212+00:00"
+    },
+    {
+      "path": "known_affine_native\\e2e_native.json",
+      "size": 103649,
+      "mtime": "2026-11-15T18:04:54.239978+00:00"
+    },
+    {
+      "path": "worker.log",
+      "size": 2880,
+      "mtime": "2026-11-15T18:04:34.892445+00:00"
+    },
+    {
+      "path": "job.json",
+      "size": 7629,
+      "mtime": "2026-11-15T18:01:00.351675+00:00"
+    }
+  ],
+  "log_tail": "/opt/e2e/symbolicregression/model/utils_wrapper.py:188: FutureWarning: We've integrated functorch into PyTorch. As the final step of the integration, `functorch.grad` is deprecated as of PyTorch 2.0 and will be deleted in a future version of PyTorch >= 2.3. Please use `torch.func.grad` instead; see the PyTorch 2.0 release notes and/or the `torch.func` migration guide for more details https://pytorch.org/docs/main/func.migrating.html\n  grad_obj = grad(objective_torch)(coeffs)\n/opt/e2e/symbolicregression/model/utils_wrapper.py:188: FutureWarning: We've integrated functorch into PyTorch. As the final step of the integration, `functorch.grad` is deprecated as of PyTorch 2.0 and will be deleted in a future version of PyTorch >= 2.3. Please use `torch.func.grad` instead; see the PyTorch 2.0 release notes and/or the `torch.func` migration guide for more details https://pytorch.org/docs/main/func.migrating.html\n  grad_obj = grad(objective_torch)(coeffs)\n/opt/e2e/symbolicregression/model/utils_wrapper.py:188: FutureWarning: We've integrated functorch into PyTorch. As the final step of the integration, `functorch.grad` is deprecated as of PyTorch 2.0 and will be deleted in a future version of PyTorch >= 2.3. Please use `torch.func.grad` instead; see the PyTorch 2.0 release notes and/or the `torch.func` migration guide for more details https://pytorch.org/docs/main/func.migrating.html\n  grad_obj = grad(objective_torch)(coeffs)\n/opt/e2e/symbolicregression/model/utils_wrapper.py:188: FutureWarning: We've integrated functorch into PyTorch. As the final step of the integration, `functorch.grad` is deprecated as of PyTorch 2.0 and will be deleted in a future version of PyTorch >= 2.3. Please use `torch.func.grad` instead; see the PyTorch 2.0 release notes and/or the `torch.func` migration guide for more details https://pytorch.org/docs/main/func.migrating.html\n  grad_obj = grad(objective_torch)(coeffs)\n/opt/e2e/symbolicregression/model/utils_wrapper.py:188: FutureWarning: We've integrated functorch into PyTorch. As the final step of the integration, `functorch.grad` is deprecated as of PyTorch 2.0 and will be deleted in a future version of PyTorch >= 2.3. Please use `torch.func.grad` instead; see the PyTorch 2.0 release notes and/or the `torch.func` migration guide for more details https://pytorch.org/docs/main/func.migrating.html\n  grad_obj = grad(objective_torch)(coeffs)\n/opt/e2e/symbolicregression/model/utils_wrapper.py:188: FutureWarning: We've integrated functorch into PyTorch. As the final step of the integration, `functorch.grad` is deprecated as of PyTorch 2.0 and will be deleted in a future version of PyTorch >= 2.3. Please use `torch.func.grad` instead; see the PyTorch 2.0 release notes and/or the `torch.func` migration guide for more details https://pytorch.org/docs/main/func.migrating.html\n  grad_obj = grad(objective_torch)(coeffs)\n",
+  "physo_execution": {
+    "images": {
+      "core": "sha256:bdc532d7fcb7021e1a57810de876bfa8b2ad5ef7cd29762334fda5d14689acd9",
+      "classic": "sha256:43d979e1acb694cb6e42a0d08c57f737a31844599665daef971bf632eb73a5c0"
+    },
+    "cpus": 4,
+    "memory_limit": "6g",
+    "network": "none",
+    "status": "discovery_finished",
+    "started_at": "2026-11-15T17:53:53.083522+00:00",
+    "phase": "awaiting_explicit_scientific_comparison",
+    "final_accessed": false,
+    "finished_at": "2026-11-15T18:00:20.195626+00:00"
+  },
+  "oom_events": []
+}

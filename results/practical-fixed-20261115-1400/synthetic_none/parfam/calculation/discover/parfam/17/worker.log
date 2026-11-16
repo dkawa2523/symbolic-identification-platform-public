@@ -1,0 +1,71 @@
+/opt/venv/lib/python3.11/site-packages/parfam/train.py:1689: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  x, y = torch.tensor(x, device=training_parameters['device']), torch.tensor(y, device=training_parameters['device'])
+INFO:root:Sequential computation
+INFO:root:Model parameters: {'degree_input_polynomials': 0, 'degree_output_polynomials': 2, 'degree_output_denominator': 0, 'degree_input_denominator': 0, 'function_names': [], 'width': 1, 'functions': [], 'degree_output_polynomials_specific': None, 'degree_output_polynomials_denominator_specific': None, 'enforce_function': False, 'maximal_potence': 2, 'stabilize_denominator': False}
+INFO:root:Number parameters: 3
+INFO:root:Number parameters active: 3
+INFO:root:Number of evaluations: 116
+INFO:root:Custom loss train: 0.002729200330627671
+INFO:root:Custom loss val: 0.002487940815600188
+INFO:root:Training time: 0.055258989334106445
+INFO:root:Cumulative training time: 0.06075692176818848
+INFO:root:Cumulative number of evaluations: 116
+INFO:root:New best custom loss validation: 0.002487940815600188
+INFO:root:Model parameters: {'degree_input_polynomials': 0, 'degree_output_polynomials': 1, 'degree_output_denominator': 1, 'degree_input_denominator': 0, 'functions': [], 'function_names': [], 'width': 1, 'degree_output_polynomials_specific': None, 'degree_output_polynomials_denominator_specific': None, 'enforce_function': False, 'maximal_potence': 2, 'stabilize_denominator': False}
+INFO:root:Number parameters: 4
+INFO:root:Number parameters active: 4
+INFO:root:Number of evaluations: 210
+INFO:root:Custom loss train: 0.0018530410748081388
+INFO:root:Custom loss val: 0.0015263263408093132
+INFO:root:Training time: 0.08498311042785645
+INFO:root:Cumulative training time: 0.14692139625549316
+INFO:root:Cumulative number of evaluations: 326
+INFO:root:New best custom loss validation: 0.0015263263408093132
+INFO:root:Model parameters: {'degree_input_polynomials': 0, 'degree_output_polynomials': 2, 'degree_output_denominator': 1, 'degree_input_denominator': 0, 'functions': [], 'function_names': [], 'width': 1, 'degree_output_polynomials_specific': None, 'degree_output_polynomials_denominator_specific': None, 'enforce_function': False, 'maximal_potence': 2, 'stabilize_denominator': False}
+INFO:root:Number parameters: 5
+INFO:root:Number parameters active: 5
+INFO:root:Number of evaluations: 355
+INFO:root:Custom loss train: 0.0006480629142015633
+INFO:root:Custom loss val: 0.000664234547738721
+INFO:root:Training time: 0.1485004425048828
+INFO:root:Cumulative training time: 0.2971353530883789
+INFO:root:Cumulative number of evaluations: 681
+INFO:root:New best custom loss validation: 0.000664234547738721
+INFO:root:Terminate proccess, wanted accuracy 0.001 and number of active parameters 4 / 12 was reached
+INFO:root:Time for multiprocessing in total: 0.3060011863708496
+INFO:root:Finetuning with this cut off would not change anything.
+INFO:root:Finetuning with this cut off would not change anything.
+INFO:root:Finetuning with this cut off would not change anything.
+INFO:root:Finetuning with this cut off would not change anything.
+INFO:root:Finetuning with this cut off would not change anything.
+INFO:root:Finetuning with this cut off would not change anything.
+INFO:root:Best distance (train, val, test): (tensor(0.0006), tensor(0.0007), tensor(0.0007))
+INFO:root:Best formula: (-0.599*x0**2 - 1.883*x0 + 0.009)/(-0.766*x0 - 0.643) best training time: 0.1485004425048828
+Python interpreter: /opt/venv/bin/python
+Utils file: /opt/venv/lib/python3.11/site-packages/parfam/utils.py
+/work
+Using cpu.
+Training parameters: {'normalization': False, 'time_limit': 2880, 'evaluations_limit': 1000000, 'max_dataset_length': 256, 'model': 'ParFamTorch', 'target_noise': 0.0, 'feature_noise': 0.0, 'seed': 17, 'accuracy': 0.0001, 'maxiter1': 100, 'maxiter2': 0, 'optimizer': 'basinhopping', 'pruning_iterations': 1, 'pruning_cut_off': 0.01, 'classifier': None, 'local_minimizer': 'BFGS', 'maxiter_per_dim_local_minimizer': 100, 'lambda_1': 0.001, 'repetitions': 2, 'parallel': False, 'n_processes': 4, 'lambda_1_cut': 0, 'lambda_1_piecewise': 0, 'device': 'cpu', 'iterative_finetuning': True, 'max_n_active_parameters': 12, 'lambda_1_finetuning': 1e-05, 'path_pretrained': 'Flexible dimension/full_19_big_training_sets/20240427_070711_5M/Datetime_20240427_070717_Loss_training_set_size_797545_batch_size_341_hidden_dim_256.pt', 'topk_predictions': 10, 'enforce_function_iterate': 'False', 'stabilize_denominator': False}
+Sequential computation
+##### Training #####
+Number parameters: 3
+Number parameters active: 3
+Training time: 0.055258989334106445
+Target expression: None
+Custom loss train: 0.002729200330627671
+Custom loss val: 0.002487940815600188
+##### Training #####
+Number parameters: 4
+Number parameters active: 4
+Training time: 0.08498311042785645
+Target expression: None
+Custom loss train: 0.0018530410748081388
+Custom loss val: 0.0015263263408093132
+##### Training #####
+Number parameters: 5
+Number parameters active: 5
+Training time: 0.1485004425048828
+Target expression: None
+Custom loss train: 0.0006480629142015633
+Custom loss val: 0.000664234547738721
+Terminate proccess, wanted accuracy 0.001 and number of active parameters 4 / 12 was reached

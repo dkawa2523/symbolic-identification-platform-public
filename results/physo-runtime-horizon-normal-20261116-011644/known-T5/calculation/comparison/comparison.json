@@ -1,0 +1,1298 @@
+{
+  "schema_version": 1,
+  "study": "/work/results/physo-runtime-horizon-normal-20261116-011644/known-T5/calculation/study",
+  "study_sha256": "6e627e7a6bd6fe99f94705711bd1ff529cc7895a7e9b820857fa0f1d0a488a48",
+  "purpose": "local_prediction",
+  "engineering_tolerance": null,
+  "candidates": [
+    {
+      "id": "physo/17/0@native",
+      "kind": "explicit",
+      "eligible": true,
+      "reason": null,
+      "local_parameter_identifiability": {
+        "status": "not_computed",
+        "reason": "Not requested for this record via parameter_evidence_ids; prediction metrics and eligibility are independent.",
+        "data_role": "selection"
+      },
+      "prediction_available": true,
+      "hypothesis": null,
+      "execution": {
+        "native_arithmetic": [
+          "strict_real"
+        ],
+        "prediction": "finite real-domain projection; invalid intermediate rows retained",
+        "stored_nodes": 3,
+        "expanded_nodes": 3,
+        "node_coordinate_system": "working"
+      },
+      "response_evaluation": [
+        {
+          "status": "not_evaluated",
+          "reason": "No response evaluation points specified",
+          "point_origin": "prepared_problem",
+          "data_role": "Selection eligibility; not independent Test",
+          "independence": "not_asserted; external reuse history unknown",
+          "coordinates": "working; canonical units and frozen input geometry",
+          "point_units": {
+            "x": "m"
+          },
+          "bounds_scope": "current study conditions, including additional restrictions",
+          "overlap_with_prepared_points": null,
+          "points": []
+        },
+        {
+          "status": "not_evaluated",
+          "reason": "No response evaluation points specified",
+          "point_origin": "additional_study",
+          "data_role": "Selection eligibility; not independent Test",
+          "independence": "not_asserted; external reuse history unknown",
+          "coordinates": "working; canonical units and frozen input geometry",
+          "point_units": {
+            "x": "m"
+          },
+          "bounds_scope": "current study conditions, including additional restrictions",
+          "overlap_with_prepared_points": 0,
+          "points": []
+        }
+      ],
+      "constraint_application": {
+        "requirements_ref": {
+          "requirements_sha256": "96d7fb9bde11830e19b392ed01233ef8cb610c42674fab02196cf58f69c6da3f",
+          "scope": "canonical common request; native settings/checks are derived evidence"
+        },
+        "requested": {
+          "max_nodes": 12,
+          "max_free_parameters": null,
+          "require_units": true,
+          "allowed_variables": null,
+          "equation_template": {
+            "coordinate_space": "working",
+            "ast": {
+              "op": "pow_int",
+              "args": [
+                {
+                  "slot": "h",
+                  "args": [
+                    {
+                      "var": "x0"
+                    }
+                  ]
+                },
+                {
+                  "const": 2
+                }
+              ]
+            },
+            "parameters": {},
+            "components": {},
+            "knowledge": {
+              "kind": "hypothesis",
+              "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+            },
+            "slots": {
+              "h": {
+                "arguments": [
+                  {
+                    "name": "x0",
+                    "unit": "m"
+                  }
+                ],
+                "unit": "m",
+                "max_nodes": 7,
+                "allowed_operators": [
+                  "mul",
+                  "add"
+                ]
+              }
+            }
+          },
+          "unit_search": true,
+          "probes": [],
+          "response_bounds": [
+            null,
+            null
+          ],
+          "response_checks": [],
+          "response_enforcement": null
+        },
+        "search_application": {
+          "operators": "enforced during search",
+          "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+          "equation_template": "post-filtered",
+          "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+          "unit_search": {
+            "requested": true,
+            "supported": true,
+            "all_input_target_basic_dimensions_dimensionless": false,
+            "warning": null,
+            "native_options": {},
+            "scope": "native basic dimensions (L/M/T/K) used during search; angle/cycle quantity kinds remain portable post-checks; not an identical hard guarantee across methods"
+          }
+        },
+        "additional_evaluation_conditions": {},
+        "evaluation_scope": "Selection-stage checks; additions do not establish independent final validation if used to choose candidates",
+        "native_declaration": {
+          "operators": "enforced during search",
+          "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+          "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+          "variables": "disallowed columns excluded before native search; full-schema export/prediction checked",
+          "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+          "probes": "finite-point hard constrained coefficient fit before native reward/RNN update",
+          "response_bounds": "hard finite-point coefficient constraints before reward",
+          "response_checks": "finite-step coefficient constraints before reward; not analytic proof",
+          "fixed_constants": "enforced during search, immutable values/units; native SR rounded-name collisions rejected",
+          "power_indices": "native n2/n3/n4; rootn uses native signed cbrt only"
+        },
+        "evaluation": [
+          {
+            "name": "operators",
+            "status": "pass",
+            "required": true,
+            "method": "structural",
+            "reason": null,
+            "member": 0
+          },
+          {
+            "name": "max_nodes",
+            "status": "pass",
+            "required": true,
+            "method": "expanded source-coordinate AST",
+            "reason": null,
+            "count": 3,
+            "limit": 12,
+            "member": 0
+          },
+          {
+            "name": "units",
+            "status": "pass",
+            "required": true,
+            "method": "structural",
+            "reason": null,
+            "member": 0
+          },
+          {
+            "name": "template.structure",
+            "status": "pass",
+            "required": true,
+            "member": 0
+          },
+          {
+            "name": "template.slot.h.operators",
+            "status": "pass",
+            "required": true,
+            "member": 0
+          },
+          {
+            "name": "template.slot.h.nodes",
+            "status": "pass",
+            "required": true,
+            "member": 0
+          },
+          {
+            "name": "template.slot.h.units",
+            "status": "pass",
+            "required": true,
+            "reason": null,
+            "member": 0
+          },
+          {
+            "name": "template.argument.0.units",
+            "status": "pass",
+            "required": true,
+            "reason": null,
+            "member": 0
+          },
+          {
+            "name": "template.output.units",
+            "status": "pass",
+            "required": true,
+            "reason": null,
+            "member": 0
+          },
+          {
+            "name": "domain_prediction_validity",
+            "status": "pass",
+            "required": true,
+            "method": "automatic domain points; finite prediction only, no response-bound expansion",
+            "reason": null,
+            "n_points": 16,
+            "n_valid": 16
+          }
+        ],
+        "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+      },
+      "complexity_scope": "expanded source-coordinate prediction AST",
+      "prediction_view": "explicit equation",
+      "requirements_eligible": true,
+      "requirement_failures": [],
+      "template": {
+        "status": "computed",
+        "knowledge": {
+          "kind": "hypothesis",
+          "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+        },
+        "declared_formula": "((h(x)) ** 2)",
+        "sharing": "Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.",
+        "components": [],
+        "slots": [
+          {
+            "name": "h",
+            "arguments": [
+              {
+                "name": "x0",
+                "unit": "m"
+              }
+            ],
+            "unit": "m",
+            "description": null,
+            "formula": "x0",
+            "parameters": []
+          }
+        ],
+        "dependent_parameters": [],
+        "coordinates": "canonical working; ranges on frozen Selection inputs only",
+        "interpretation_limit": "Named components describe this declared representation, not unique identification or causal effects."
+      },
+      "checks": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "expanded source-coordinate AST",
+          "reason": null,
+          "count": 3,
+          "limit": 12,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.structure",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.operators",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.nodes",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.argument.0.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.output.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "domain_prediction_validity",
+          "status": "pass",
+          "required": true,
+          "method": "automatic domain points; finite prediction only, no response-bound expansion",
+          "reason": null,
+          "n_points": 16,
+          "n_valid": 16
+        }
+      ],
+      "metrics": {
+        "train": {
+          "rmse": 3.2187590237133437,
+          "mae": 2.555043642134497,
+          "r2": -0.5207423323583165,
+          "reason": null
+        },
+        "selection": {
+          "rmse": 3.3675306987094733,
+          "mae": 2.6956169410831183,
+          "r2": -0.5657916641581999,
+          "reason": null
+        }
+      },
+      "regions": {
+        "all": {
+          "n_rows": 24,
+          "rmse": 3.3675306987094733,
+          "mae": 2.6956169410831183,
+          "r2": -0.5657916641581999,
+          "reason": null
+        }
+      },
+      "n_nodes": 3,
+      "working_n_nodes": 3,
+      "n_parameters": 0,
+      "formula": "((x) ** 2)",
+      "applicable_schema": {
+        "variables": [
+          {
+            "id": "x0",
+            "column": "x",
+            "unit": "m",
+            "domain": null,
+            "coordinate_role": null
+          }
+        ],
+        "target": {
+          "coordinate_role": null,
+          "column": "y",
+          "unit": "m^2",
+          "domain": null
+        },
+        "input_geometry": {
+          "schema_version": 1,
+          "source_variables": [
+            {
+              "id": "x0",
+              "column": "x",
+              "unit": "m",
+              "domain": null,
+              "coordinate_role": null
+            }
+          ],
+          "domain": {
+            "columns": [
+              "x"
+            ],
+            "space_id": "source_inputs",
+            "kind": "observed",
+            "units": {
+              "x": "m"
+            },
+            "coordinate_roles": {
+              "x": null
+            },
+            "bounds": [
+              null
+            ]
+          },
+          "map": null
+        }
+      },
+      "strata": {},
+      "groups": {},
+      "native_fidelity": "verified within recorded native checks",
+      "candidate_id": "physo/17/0@native",
+      "index": 0,
+      "rmse": 3.3675306987094733,
+      "mae": 2.6956169410831183,
+      "family": "syntax-d1e33e368e05",
+      "pareto": true
+    },
+    {
+      "id": "physo/17/1@native",
+      "kind": "explicit",
+      "eligible": true,
+      "reason": null,
+      "local_parameter_identifiability": {
+        "status": "not_computed",
+        "reason": "Not requested for this record via parameter_evidence_ids; prediction metrics and eligibility are independent.",
+        "data_role": "selection"
+      },
+      "prediction_available": true,
+      "hypothesis": null,
+      "execution": {
+        "native_arithmetic": [
+          "strict_real"
+        ],
+        "prediction": "finite real-domain projection; invalid intermediate rows retained",
+        "stored_nodes": 5,
+        "expanded_nodes": 5,
+        "node_coordinate_system": "working"
+      },
+      "response_evaluation": [
+        {
+          "status": "not_evaluated",
+          "reason": "No response evaluation points specified",
+          "point_origin": "prepared_problem",
+          "data_role": "Selection eligibility; not independent Test",
+          "independence": "not_asserted; external reuse history unknown",
+          "coordinates": "working; canonical units and frozen input geometry",
+          "point_units": {
+            "x": "m"
+          },
+          "bounds_scope": "current study conditions, including additional restrictions",
+          "overlap_with_prepared_points": null,
+          "points": []
+        },
+        {
+          "status": "not_evaluated",
+          "reason": "No response evaluation points specified",
+          "point_origin": "additional_study",
+          "data_role": "Selection eligibility; not independent Test",
+          "independence": "not_asserted; external reuse history unknown",
+          "coordinates": "working; canonical units and frozen input geometry",
+          "point_units": {
+            "x": "m"
+          },
+          "bounds_scope": "current study conditions, including additional restrictions",
+          "overlap_with_prepared_points": 0,
+          "points": []
+        }
+      ],
+      "constraint_application": {
+        "requirements_ref": {
+          "requirements_sha256": "96d7fb9bde11830e19b392ed01233ef8cb610c42674fab02196cf58f69c6da3f",
+          "scope": "canonical common request; native settings/checks are derived evidence"
+        },
+        "requested": {
+          "max_nodes": 12,
+          "max_free_parameters": null,
+          "require_units": true,
+          "allowed_variables": null,
+          "equation_template": {
+            "coordinate_space": "working",
+            "ast": {
+              "op": "pow_int",
+              "args": [
+                {
+                  "slot": "h",
+                  "args": [
+                    {
+                      "var": "x0"
+                    }
+                  ]
+                },
+                {
+                  "const": 2
+                }
+              ]
+            },
+            "parameters": {},
+            "components": {},
+            "knowledge": {
+              "kind": "hypothesis",
+              "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+            },
+            "slots": {
+              "h": {
+                "arguments": [
+                  {
+                    "name": "x0",
+                    "unit": "m"
+                  }
+                ],
+                "unit": "m",
+                "max_nodes": 7,
+                "allowed_operators": [
+                  "mul",
+                  "add"
+                ]
+              }
+            }
+          },
+          "unit_search": true,
+          "probes": [],
+          "response_bounds": [
+            null,
+            null
+          ],
+          "response_checks": [],
+          "response_enforcement": null
+        },
+        "search_application": {
+          "operators": "enforced during search",
+          "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+          "equation_template": "post-filtered",
+          "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+          "unit_search": {
+            "requested": true,
+            "supported": true,
+            "all_input_target_basic_dimensions_dimensionless": false,
+            "warning": null,
+            "native_options": {},
+            "scope": "native basic dimensions (L/M/T/K) used during search; angle/cycle quantity kinds remain portable post-checks; not an identical hard guarantee across methods"
+          }
+        },
+        "additional_evaluation_conditions": {},
+        "evaluation_scope": "Selection-stage checks; additions do not establish independent final validation if used to choose candidates",
+        "native_declaration": {
+          "operators": "enforced during search",
+          "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+          "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+          "variables": "disallowed columns excluded before native search; full-schema export/prediction checked",
+          "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+          "probes": "finite-point hard constrained coefficient fit before native reward/RNN update",
+          "response_bounds": "hard finite-point coefficient constraints before reward",
+          "response_checks": "finite-step coefficient constraints before reward; not analytic proof",
+          "fixed_constants": "enforced during search, immutable values/units; native SR rounded-name collisions rejected",
+          "power_indices": "native n2/n3/n4; rootn uses native signed cbrt only"
+        },
+        "evaluation": [
+          {
+            "name": "operators",
+            "status": "pass",
+            "required": true,
+            "method": "structural",
+            "reason": null,
+            "member": 0
+          },
+          {
+            "name": "max_nodes",
+            "status": "pass",
+            "required": true,
+            "method": "expanded source-coordinate AST",
+            "reason": null,
+            "count": 5,
+            "limit": 12,
+            "member": 0
+          },
+          {
+            "name": "units",
+            "status": "pass",
+            "required": true,
+            "method": "structural",
+            "reason": null,
+            "member": 0
+          },
+          {
+            "name": "template.structure",
+            "status": "pass",
+            "required": true,
+            "member": 0
+          },
+          {
+            "name": "template.slot.h.operators",
+            "status": "pass",
+            "required": true,
+            "member": 0
+          },
+          {
+            "name": "template.slot.h.nodes",
+            "status": "pass",
+            "required": true,
+            "member": 0
+          },
+          {
+            "name": "template.slot.h.units",
+            "status": "pass",
+            "required": true,
+            "reason": null,
+            "member": 0
+          },
+          {
+            "name": "template.argument.0.units",
+            "status": "pass",
+            "required": true,
+            "reason": null,
+            "member": 0
+          },
+          {
+            "name": "template.output.units",
+            "status": "pass",
+            "required": true,
+            "reason": null,
+            "member": 0
+          },
+          {
+            "name": "domain_prediction_validity",
+            "status": "pass",
+            "required": true,
+            "method": "automatic domain points; finite prediction only, no response-bound expansion",
+            "reason": null,
+            "n_points": 16,
+            "n_valid": 16
+          }
+        ],
+        "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+      },
+      "complexity_scope": "expanded source-coordinate prediction AST",
+      "prediction_view": "explicit equation",
+      "requirements_eligible": true,
+      "requirement_failures": [],
+      "template": {
+        "status": "computed",
+        "knowledge": {
+          "kind": "hypothesis",
+          "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+        },
+        "declared_formula": "((h(x)) ** 2)",
+        "sharing": "Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.",
+        "components": [],
+        "slots": [
+          {
+            "name": "h",
+            "arguments": [
+              {
+                "name": "x0",
+                "unit": "m"
+              }
+            ],
+            "unit": "m",
+            "description": null,
+            "formula": "(x0 + x0)",
+            "parameters": []
+          }
+        ],
+        "dependent_parameters": [],
+        "coordinates": "canonical working; ranges on frozen Selection inputs only",
+        "interpretation_limit": "Named components describe this declared representation, not unique identification or causal effects."
+      },
+      "checks": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "expanded source-coordinate AST",
+          "reason": null,
+          "count": 5,
+          "limit": 12,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.structure",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.operators",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.nodes",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.argument.0.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.output.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "domain_prediction_validity",
+          "status": "pass",
+          "required": true,
+          "method": "automatic domain points; finite prediction only, no response-bound expansion",
+          "reason": null,
+          "n_points": 16,
+          "n_valid": 16
+        }
+      ],
+      "metrics": {
+        "train": {
+          "rmse": 2.4385054240857433e-16,
+          "mae": 9.309682654408866e-17,
+          "r2": 1.0,
+          "reason": null
+        },
+        "selection": {
+          "rmse": 4.45136038133333e-16,
+          "mae": 1.5612511283791264e-16,
+          "r2": 1.0,
+          "reason": null
+        }
+      },
+      "regions": {
+        "all": {
+          "n_rows": 24,
+          "rmse": 4.45136038133333e-16,
+          "mae": 1.5612511283791264e-16,
+          "r2": 1.0,
+          "reason": null
+        }
+      },
+      "n_nodes": 5,
+      "working_n_nodes": 5,
+      "n_parameters": 0,
+      "formula": "(((x + x)) ** 2)",
+      "applicable_schema": {
+        "variables": [
+          {
+            "id": "x0",
+            "column": "x",
+            "unit": "m",
+            "domain": null,
+            "coordinate_role": null
+          }
+        ],
+        "target": {
+          "coordinate_role": null,
+          "column": "y",
+          "unit": "m^2",
+          "domain": null
+        },
+        "input_geometry": {
+          "schema_version": 1,
+          "source_variables": [
+            {
+              "id": "x0",
+              "column": "x",
+              "unit": "m",
+              "domain": null,
+              "coordinate_role": null
+            }
+          ],
+          "domain": {
+            "columns": [
+              "x"
+            ],
+            "space_id": "source_inputs",
+            "kind": "observed",
+            "units": {
+              "x": "m"
+            },
+            "coordinate_roles": {
+              "x": null
+            },
+            "bounds": [
+              null
+            ]
+          },
+          "map": null
+        }
+      },
+      "strata": {},
+      "groups": {},
+      "native_fidelity": "verified within recorded native checks",
+      "candidate_id": "physo/17/1@native",
+      "index": 1,
+      "rmse": 4.45136038133333e-16,
+      "mae": 1.5612511283791264e-16,
+      "family": "syntax-a628c53e9893",
+      "pareto": true
+    },
+    {
+      "id": "physo/17/2@native",
+      "kind": "explicit",
+      "eligible": true,
+      "reason": null,
+      "local_parameter_identifiability": {
+        "status": "not_computed",
+        "reason": "Not requested for this record via parameter_evidence_ids; prediction metrics and eligibility are independent.",
+        "data_role": "selection"
+      },
+      "prediction_available": true,
+      "hypothesis": null,
+      "execution": {
+        "native_arithmetic": [
+          "strict_real"
+        ],
+        "prediction": "finite real-domain projection; invalid intermediate rows retained",
+        "stored_nodes": 7,
+        "expanded_nodes": 7,
+        "node_coordinate_system": "working"
+      },
+      "response_evaluation": [
+        {
+          "status": "not_evaluated",
+          "reason": "No response evaluation points specified",
+          "point_origin": "prepared_problem",
+          "data_role": "Selection eligibility; not independent Test",
+          "independence": "not_asserted; external reuse history unknown",
+          "coordinates": "working; canonical units and frozen input geometry",
+          "point_units": {
+            "x": "m"
+          },
+          "bounds_scope": "current study conditions, including additional restrictions",
+          "overlap_with_prepared_points": null,
+          "points": []
+        },
+        {
+          "status": "not_evaluated",
+          "reason": "No response evaluation points specified",
+          "point_origin": "additional_study",
+          "data_role": "Selection eligibility; not independent Test",
+          "independence": "not_asserted; external reuse history unknown",
+          "coordinates": "working; canonical units and frozen input geometry",
+          "point_units": {
+            "x": "m"
+          },
+          "bounds_scope": "current study conditions, including additional restrictions",
+          "overlap_with_prepared_points": 0,
+          "points": []
+        }
+      ],
+      "constraint_application": {
+        "requirements_ref": {
+          "requirements_sha256": "96d7fb9bde11830e19b392ed01233ef8cb610c42674fab02196cf58f69c6da3f",
+          "scope": "canonical common request; native settings/checks are derived evidence"
+        },
+        "requested": {
+          "max_nodes": 12,
+          "max_free_parameters": null,
+          "require_units": true,
+          "allowed_variables": null,
+          "equation_template": {
+            "coordinate_space": "working",
+            "ast": {
+              "op": "pow_int",
+              "args": [
+                {
+                  "slot": "h",
+                  "args": [
+                    {
+                      "var": "x0"
+                    }
+                  ]
+                },
+                {
+                  "const": 2
+                }
+              ]
+            },
+            "parameters": {},
+            "components": {},
+            "knowledge": {
+              "kind": "hypothesis",
+              "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+            },
+            "slots": {
+              "h": {
+                "arguments": [
+                  {
+                    "name": "x0",
+                    "unit": "m"
+                  }
+                ],
+                "unit": "m",
+                "max_nodes": 7,
+                "allowed_operators": [
+                  "mul",
+                  "add"
+                ]
+              }
+            }
+          },
+          "unit_search": true,
+          "probes": [],
+          "response_bounds": [
+            null,
+            null
+          ],
+          "response_checks": [],
+          "response_enforcement": null
+        },
+        "search_application": {
+          "operators": "enforced during search",
+          "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+          "equation_template": "post-filtered",
+          "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+          "unit_search": {
+            "requested": true,
+            "supported": true,
+            "all_input_target_basic_dimensions_dimensionless": false,
+            "warning": null,
+            "native_options": {},
+            "scope": "native basic dimensions (L/M/T/K) used during search; angle/cycle quantity kinds remain portable post-checks; not an identical hard guarantee across methods"
+          }
+        },
+        "additional_evaluation_conditions": {},
+        "evaluation_scope": "Selection-stage checks; additions do not establish independent final validation if used to choose candidates",
+        "native_declaration": {
+          "operators": "enforced during search",
+          "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+          "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+          "variables": "disallowed columns excluded before native search; full-schema export/prediction checked",
+          "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+          "probes": "finite-point hard constrained coefficient fit before native reward/RNN update",
+          "response_bounds": "hard finite-point coefficient constraints before reward",
+          "response_checks": "finite-step coefficient constraints before reward; not analytic proof",
+          "fixed_constants": "enforced during search, immutable values/units; native SR rounded-name collisions rejected",
+          "power_indices": "native n2/n3/n4; rootn uses native signed cbrt only"
+        },
+        "evaluation": [
+          {
+            "name": "operators",
+            "status": "pass",
+            "required": true,
+            "method": "structural",
+            "reason": null,
+            "member": 0
+          },
+          {
+            "name": "max_nodes",
+            "status": "pass",
+            "required": true,
+            "method": "expanded source-coordinate AST",
+            "reason": null,
+            "count": 7,
+            "limit": 12,
+            "member": 0
+          },
+          {
+            "name": "units",
+            "status": "pass",
+            "required": true,
+            "method": "structural",
+            "reason": null,
+            "member": 0
+          },
+          {
+            "name": "template.structure",
+            "status": "pass",
+            "required": true,
+            "member": 0
+          },
+          {
+            "name": "template.slot.h.operators",
+            "status": "pass",
+            "required": true,
+            "member": 0
+          },
+          {
+            "name": "template.slot.h.nodes",
+            "status": "pass",
+            "required": true,
+            "member": 0
+          },
+          {
+            "name": "template.slot.h.units",
+            "status": "pass",
+            "required": true,
+            "reason": null,
+            "member": 0
+          },
+          {
+            "name": "template.argument.0.units",
+            "status": "pass",
+            "required": true,
+            "reason": null,
+            "member": 0
+          },
+          {
+            "name": "template.output.units",
+            "status": "pass",
+            "required": true,
+            "reason": null,
+            "member": 0
+          },
+          {
+            "name": "domain_prediction_validity",
+            "status": "pass",
+            "required": true,
+            "method": "automatic domain points; finite prediction only, no response-bound expansion",
+            "reason": null,
+            "n_points": 16,
+            "n_valid": 16
+          }
+        ],
+        "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+      },
+      "complexity_scope": "expanded source-coordinate prediction AST",
+      "prediction_view": "explicit equation",
+      "requirements_eligible": true,
+      "requirement_failures": [],
+      "template": {
+        "status": "computed",
+        "knowledge": {
+          "kind": "hypothesis",
+          "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+        },
+        "declared_formula": "((h(x)) ** 2)",
+        "sharing": "Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.",
+        "components": [],
+        "slots": [
+          {
+            "name": "h",
+            "arguments": [
+              {
+                "name": "x0",
+                "unit": "m"
+              }
+            ],
+            "unit": "m",
+            "description": null,
+            "formula": "(x0 * (1.0 * a))",
+            "parameters": [
+              {
+                "name": "a",
+                "value": 2.0,
+                "unit": "1",
+                "unit_origin": "unit provenance not separately recorded",
+                "role": "free",
+                "tied_to": null,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "origin": "native_free_constant_slot",
+                "coordinate_role": null
+              }
+            ]
+          }
+        ],
+        "dependent_parameters": [],
+        "coordinates": "canonical working; ranges on frozen Selection inputs only",
+        "interpretation_limit": "Named components describe this declared representation, not unique identification or causal effects."
+      },
+      "checks": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "expanded source-coordinate AST",
+          "reason": null,
+          "count": 7,
+          "limit": 12,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.structure",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.operators",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.nodes",
+          "status": "pass",
+          "required": true,
+          "member": 0
+        },
+        {
+          "name": "template.slot.h.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.argument.0.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "template.output.units",
+          "status": "pass",
+          "required": true,
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "domain_prediction_validity",
+          "status": "pass",
+          "required": true,
+          "method": "automatic domain points; finite prediction only, no response-bound expansion",
+          "reason": null,
+          "n_points": 16,
+          "n_valid": 16
+        }
+      ],
+      "metrics": {
+        "train": {
+          "rmse": 2.4385054240857433e-16,
+          "mae": 9.309682654408866e-17,
+          "r2": 1.0,
+          "reason": null
+        },
+        "selection": {
+          "rmse": 4.45136038133333e-16,
+          "mae": 1.5612511283791264e-16,
+          "r2": 1.0,
+          "reason": null
+        }
+      },
+      "regions": {
+        "all": {
+          "n_rows": 24,
+          "rmse": 4.45136038133333e-16,
+          "mae": 1.5612511283791264e-16,
+          "r2": 1.0,
+          "reason": null
+        }
+      },
+      "n_nodes": 7,
+      "working_n_nodes": 7,
+      "n_parameters": 1,
+      "formula": "(((x * (1.0 * 2.0))) ** 2)",
+      "applicable_schema": {
+        "variables": [
+          {
+            "id": "x0",
+            "column": "x",
+            "unit": "m",
+            "domain": null,
+            "coordinate_role": null
+          }
+        ],
+        "target": {
+          "coordinate_role": null,
+          "column": "y",
+          "unit": "m^2",
+          "domain": null
+        },
+        "input_geometry": {
+          "schema_version": 1,
+          "source_variables": [
+            {
+              "id": "x0",
+              "column": "x",
+              "unit": "m",
+              "domain": null,
+              "coordinate_role": null
+            }
+          ],
+          "domain": {
+            "columns": [
+              "x"
+            ],
+            "space_id": "source_inputs",
+            "kind": "observed",
+            "units": {
+              "x": "m"
+            },
+            "coordinate_roles": {
+              "x": null
+            },
+            "bounds": [
+              null
+            ]
+          },
+          "map": null
+        }
+      },
+      "strata": {},
+      "groups": {},
+      "native_fidelity": "verified within recorded native checks",
+      "candidate_id": "physo/17/2@native",
+      "index": 2,
+      "rmse": 4.45136038133333e-16,
+      "mae": 1.5612511283791264e-16,
+      "family": "syntax-173532d39af6",
+      "pareto": false
+    }
+  ],
+  "pairs": [],
+  "pair_scope": {
+    "ids": [
+      "physo/17/1@native"
+    ],
+    "mode": "explicit subjects; other pairs uncomputed, not zero",
+    "default_rule": null,
+    "all_candidate_evaluations_retained": true
+  },
+  "families": [
+    {
+      "family": "syntax-d1e33e368e05",
+      "members": [
+        "physo/17/0@native"
+      ],
+      "distinct_source_runs": 1,
+      "unknown_source_members": 0,
+      "meaning": "syntactic family occurrence; no posterior probability or mechanism claim"
+    },
+    {
+      "family": "syntax-a628c53e9893",
+      "members": [
+        "physo/17/1@native"
+      ],
+      "distinct_source_runs": 1,
+      "unknown_source_members": 0,
+      "meaning": "syntactic family occurrence; no posterior probability or mechanism claim"
+    },
+    {
+      "family": "syntax-173532d39af6",
+      "members": [
+        "physo/17/2@native"
+      ],
+      "distinct_source_runs": 1,
+      "unknown_source_members": 0,
+      "meaning": "syntactic family occurrence; no posterior probability or mechanism claim"
+    }
+  ],
+  "analyses": [],
+  "analysis_comparisons": [],
+  "interpretation": "Similarity is not accuracy or physical superiority; no hypothesis selected",
+  "pair_arrays_sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
+  "unavailable_prediction_comparisons": [],
+  "scientific_hypotheses": {},
+  "representative_ids": [
+    "physo/17/0@native",
+    "physo/17/1@native",
+    "physo/17/2@native"
+  ],
+  "representative_rule": "user-labeled hypothesis: lowest Selection error display member; otherwise smallest eligible syntax member; non-explicit prediction views retained. Display only, not adoption or proof of mechanism"
+}

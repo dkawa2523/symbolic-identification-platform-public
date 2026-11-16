@@ -1,0 +1,10 @@
+1. pysr | equation
+Candidate: pysr/17/5@native
+Coordinates: public
+y [1] = ((x * coef['c0']) + ((coef['c1'] / (x + coef['c2'])) * x))
+
+c0 = 0.7703912336607768 [unit unknown]
+c1 = 1.877267579757631 [unit unknown]
+c2 = 0.9109618476254446 [unit unknown]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)

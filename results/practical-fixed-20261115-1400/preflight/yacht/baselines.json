@@ -1,0 +1,320 @@
+{
+  "status": "inputs_valid",
+  "package_identity": {
+    "version": "0.90.4",
+    "mode": "source",
+    "installed_metadata_version": "0.1.0"
+  },
+  "path_base": "/work",
+  "data_file": "/work/data/yacht/table.csv",
+  "identity_column": "sample_id",
+  "group_column": "group_id",
+  "feature_columns": [
+    "buoyancy_position",
+    "prismatic_coefficient",
+    "length_displacement_ratio",
+    "beam_draught_ratio",
+    "length_beam_ratio",
+    "froude"
+  ],
+  "target_column": "resistance",
+  "unit_coordinates": {
+    "buoyancy_position": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "prismatic_coefficient": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "length_displacement_ratio": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "beam_draught_ratio": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "length_beam_ratio": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "froude": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "resistance": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    }
+  },
+  "working_domains": {},
+  "working_variables": [
+    {
+      "id": "x0",
+      "column": "buoyancy_position",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x1",
+      "column": "prismatic_coefficient",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x2",
+      "column": "length_displacement_ratio",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x3",
+      "column": "beam_draught_ratio",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x4",
+      "column": "length_beam_ratio",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x5",
+      "column": "froude",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    }
+  ],
+  "target": {
+    "coordinate_role": null,
+    "column": "resistance",
+    "unit": "1",
+    "domain": null
+  },
+  "split": {
+    "method": "fixed",
+    "file": "data/yacht/split.csv",
+    "group_column": "group_id",
+    "seed": 42,
+    "valid_size": 0.2,
+    "selection_size": 0.2
+  },
+  "partitions": {
+    "final": {
+      "n_rows": 70,
+      "n_groups": 5
+    },
+    "selection": {
+      "n_rows": 56,
+      "n_groups": 4
+    },
+    "train": {
+      "n_rows": 182,
+      "n_groups": 13
+    }
+  },
+  "search_budget": {
+    "seeds": [
+      42
+    ],
+    "max_wall_seconds": 3600,
+    "candidate_pool_policy": "all",
+    "max_export_candidates": 20,
+    "allow_partial_engines": true
+  },
+  "requirements": {
+    "allowed_operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "neg",
+      "abs",
+      "exp",
+      "log",
+      "sqrt",
+      "pow_int",
+      "sin",
+      "cos",
+      "tanh",
+      "sinh",
+      "cosh"
+    ],
+    "fixed_constants": {},
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "required_responses": {
+      "points": [],
+      "bounds": [
+        null,
+        null
+      ],
+      "checks": [],
+      "enforcement": null
+    }
+  },
+  "engines": {
+    "mean": {
+      "declared_input_issues": [],
+      "adapter_input_issues": [],
+      "adapter_validation": "passed",
+      "asset_input_issues": [],
+      "asset_verification": {
+        "status": "not_requested",
+        "manifest_sha256": null,
+        "files_verified": 0
+      },
+      "options": {},
+      "runtime": {},
+      "assets": {},
+      "effective_operator_subset": [
+        "add",
+        "sub",
+        "mul",
+        "div",
+        "neg",
+        "abs",
+        "exp",
+        "log",
+        "sqrt",
+        "pow_int"
+      ],
+      "capabilities": {
+        "supported_options": [
+          "max_degree",
+          "max_terms",
+          "ridge"
+        ],
+        "operators": [
+          "add",
+          "sub",
+          "mul",
+          "div",
+          "pow_int",
+          "log",
+          "exp",
+          "sqrt",
+          "abs",
+          "neg"
+        ],
+        "constraints": {
+          "operators": "enforced during construction",
+          "units": "post-filtered",
+          "max_nodes": "post-filtered",
+          "variables": "enforced during construction",
+          "allowed_variables": "enforced during term construction before coefficient fitting",
+          "probes": "post-filtered"
+        },
+        "requires_assets": false
+      },
+      "constraint_application": {
+        "operators": "enforced during construction",
+        "max_nodes": "post-filtered"
+      },
+      "response_mode": "search"
+    },
+    "linear": {
+      "declared_input_issues": [],
+      "adapter_input_issues": [],
+      "adapter_validation": "passed",
+      "asset_input_issues": [],
+      "asset_verification": {
+        "status": "not_requested",
+        "manifest_sha256": null,
+        "files_verified": 0
+      },
+      "options": {},
+      "runtime": {},
+      "assets": {},
+      "effective_operator_subset": [
+        "add",
+        "sub",
+        "mul",
+        "div",
+        "neg",
+        "abs",
+        "exp",
+        "log",
+        "sqrt",
+        "pow_int"
+      ],
+      "capabilities": {
+        "supported_options": [
+          "max_degree",
+          "max_terms",
+          "ridge"
+        ],
+        "operators": [
+          "add",
+          "sub",
+          "mul",
+          "div",
+          "pow_int",
+          "log",
+          "exp",
+          "sqrt",
+          "abs",
+          "neg"
+        ],
+        "constraints": {
+          "operators": "enforced during construction",
+          "units": "post-filtered",
+          "max_nodes": "post-filtered",
+          "variables": "enforced during construction",
+          "allowed_variables": "enforced during term construction before coefficient fitting",
+          "probes": "post-filtered"
+        },
+        "requires_assets": false
+      },
+      "constraint_application": {
+        "operators": "enforced during construction",
+        "max_nodes": "post-filtered"
+      },
+      "response_mode": "search"
+    }
+  },
+  "not_checked": [
+    "Only adapter-provided static input checks ran. An extension without validate_request is explicitly not_available.",
+    "Native libraries, runtime startup, GPU availability and checkpoint deserialization were not tested; verified file hashes and input checks are not native readiness evidence.",
+    "No search, fitting, predictions, Selection metrics or Final metrics were performed. No input files were changed."
+  ]
+}

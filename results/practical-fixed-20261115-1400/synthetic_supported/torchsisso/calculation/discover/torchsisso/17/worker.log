@@ -1,0 +1,68 @@
+************************************* Starting Feature Space Construction in cpu ****************************************************************
+
+
+************************************ Provided Operator Set to perform Symbolic Regression is:: ['+', '-', '*', '/'] ************************************************************* 
+
+***************************************  Removing the categorical variable columns, if there are any!!  *********************************************************** 
+
+**********************************************************  Extracting the dimensions of the same variables and will perform the feature expansion accordingly.... *********************************************************************** 
+
+
+Starting the feature expansion for the given feature variables.... 
+ 
+************************************************ Shape of the dimension list and feature variable count matched... proceeding for further extraction and feature expansion..************************************************ 
+
+************************************ Extraction of dimensionless and same dimension variables is completed!!.. ********************************************** 
+
+************************************************ 1 dimension less feature variables found in the given list!! ************************************************ 
+
+******************************************************  Doing feature expansion of the non dimension feature variables... ******************************************************************** 
+
+************************************************ Starting the feature expansion for converting the dimensional to non dimensional features ************************************************ 
+
+************************************************ Dimension to nondimension feature expansion completed.... with feature space size: 0 ************************************************ 
+
+************************************************ Dimensional feature expansion completed.... with feature space size:  0 ************************************************ 
+
+************************************************ Inter dimensional feature expansion completed, with feature space size:  0 ************************************************ 
+
+************************************************ Time taken for the 1 feature expansion:  0.01543426513671875  seconds.. ************************************************ 
+
+************************************************ Size of the feature space formed in the 1 expansion 1 ************************************************ 
+
+************************************************ Extraction of target dimension feature variables found.., performing the regression!!.. ************************************************ 
+
+************************************************ 1 output dimension feature variables found in the given list!! ************************************************ 
+
+************************************* Starting Feature Space Construction in cpu ****************************************************************
+
+
+************************************ Provided Operator Set to perform Symbolic Regression is:: ['+', '-', '*', '/'] ************************************************************* 
+
+***************************************  Removing the categorical variable columns, if there are any!!  *********************************************************** 
+
+**********************************************************  Extracting the dimensions of the same variables and will perform the feature expansion accordingly.... *********************************************************************** 
+
+
+Starting the feature expansion for the given feature variables.... 
+ 
+************************************************ Shape of the dimension list and feature variable count matched... proceeding for further extraction and feature expansion..************************************************ 
+
+************************************ Extraction of dimensionless and same dimension variables is completed!!.. ********************************************** 
+
+************************************************ 1 dimension less feature variables found in the given list!! ************************************************ 
+
+******************************************************  Doing feature expansion of the non dimension feature variables... ******************************************************************** 
+
+************************************************ Starting the feature expansion for converting the dimensional to non dimensional features ************************************************ 
+
+************************************************ Dimension to nondimension feature expansion completed.... with feature space size: 0 ************************************************ 
+
+************************************************ Dimensional feature expansion completed.... with feature space size:  0 ************************************************ 
+
+************************************************ Inter dimensional feature expansion completed, with feature space size:  0 ************************************************ 
+
+************************************************ Time taken for the 1 feature expansion:  0.0007421970367431641  seconds.. ************************************************ 
+
+************************************************ Size of the feature space formed in the 1 expansion 1 ************************************************ 
+

@@ -1,0 +1,78 @@
+{
+  "task": "symbolic_pipeline",
+  "data": {
+    "local_path": "data/yacht/table.csv",
+    "target_column": "resistance",
+    "feature_columns": [
+      "buoyancy_position",
+      "prismatic_coefficient",
+      "length_displacement_ratio",
+      "beam_draught_ratio",
+      "length_beam_ratio",
+      "froude"
+    ],
+    "units": {
+      "buoyancy_position": "1",
+      "prismatic_coefficient": "1",
+      "length_displacement_ratio": "1",
+      "beam_draught_ratio": "1",
+      "length_beam_ratio": "1",
+      "froude": "1",
+      "resistance": "1"
+    }
+  },
+  "split": {
+    "file": "data/yacht/split.csv",
+    "group_column": "group_id"
+  },
+  "search": {
+    "engines": [
+      "e2e"
+    ],
+    "seeds": [
+      42
+    ],
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "abs",
+      "exp",
+      "log",
+      "sqrt",
+      "pow_int",
+      "sin",
+      "cos"
+    ],
+    "max_wall_seconds": 300,
+    "allow_partial_engines": false,
+    "runtimes": {
+      "e2e": {
+        "device": "cpu"
+      }
+    },
+    "engine_options": {
+      "e2e": {
+        "beam_size": 8,
+        "max_input_points": 200,
+        "n_trees_to_refine": 8,
+        "refinement_seconds": 2,
+        "max_generated_output_len": 128
+      }
+    },
+    "candidate_pool_policy": "all"
+  },
+  "model_assets": {
+    "e2e": {
+      "manifest_file": "pretrained/e2e/manifest.json"
+    }
+  },
+  "constraints": {
+    "max_nodes": 256
+  },
+  "evaluation": {
+    "selection_policy": "balanced",
+    "absolute_tolerance": 1e-06
+  }
+}

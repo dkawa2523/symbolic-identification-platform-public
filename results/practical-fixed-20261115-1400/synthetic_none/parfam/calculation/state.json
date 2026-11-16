@@ -1,0 +1,44 @@
+{
+  "prepare": {
+    "run": "/work/results/practical-fixed-20261115-1400/synthetic_none/parfam/calculation/prepare/run.json",
+    "final": "/work/results/practical-fixed-20261115-1400/synthetic_none/parfam/calculation/prepare/final.npz",
+    "selection": "/work/results/practical-fixed-20261115-1400/synthetic_none/parfam/calculation/prepare/selection.npz",
+    "train": "/work/results/practical-fixed-20261115-1400/synthetic_none/parfam/calculation/prepare/train.npz"
+  },
+  "search": {
+    "engines": [
+      "parfam"
+    ],
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "seeds": [
+      17
+    ],
+    "max_wall_seconds": 21600,
+    "max_export_candidates": 20,
+    "candidate_pool_policy": "all",
+    "allow_partial_engines": true,
+    "response_mode": "search",
+    "engine_options": {
+      "parfam": {
+        "objective": "mse",
+        "family": "rational",
+        "family_search": "up_to",
+        "functions": [],
+        "degree": 2,
+        "input_degree": 2,
+        "denominator_degree": 1,
+        "maxiter": 100,
+        "repetitions": 2,
+        "max_active_parameters": 12,
+        "candidate_scope": "completed_families",
+        "seconds": 2880
+      }
+    },
+    "runtimes": {}
+  }
+}

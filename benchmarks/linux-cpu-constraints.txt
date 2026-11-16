@@ -1,0 +1,11 @@
+# Reported key versions from the verified Linux run, not a complete environment freeze.
+# Install the CPU torch wheel separately from the official CPU index; see ../docs/setup.md.
+pysr==2.7.2
+juliacall==0.9.36
+physo==1.1.11
+torch==2.7.1+cpu
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.14.1
+scikit-learn==1.5.2
+sympy==1.14.0

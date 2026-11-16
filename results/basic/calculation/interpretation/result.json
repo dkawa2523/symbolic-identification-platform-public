@@ -1,0 +1,6015 @@
+{
+  "outcome": "ok",
+  "result_kind": "interpretation.readout/v1",
+  "results": [
+    {
+      "id": "mean/7/0@native",
+      "outcome": "ok",
+      "mathematics": [
+        "Top-level mathematical form: literal/variable",
+        "Operators in subexpressions: "
+      ],
+      "terms": [
+        {
+          "name": "term1",
+          "formula": "c0",
+          "formula_coordinates": "working",
+          "reference_value": 427.1035919238572,
+          "min": 427.1035919238572,
+          "max": 427.1035919238572,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "whole output coordinate mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        }
+      ],
+      "paths": [
+        {
+          "id": "length_response",
+          "at": {
+            "length_cm": 15.0
+          },
+          "direction": {
+            "length_cm": 1.0
+          },
+          "steps": [
+            -12.0,
+            -11.5,
+            -11.0,
+            -10.5,
+            -10.0,
+            -9.5,
+            -9.0,
+            -8.5,
+            -8.0,
+            -7.5,
+            -7.0,
+            -6.5,
+            -6.0,
+            -5.5,
+            -5.0,
+            -4.5,
+            -4.0,
+            -3.5,
+            -3.0,
+            -2.5,
+            -2.0,
+            -1.5,
+            -1.0,
+            -0.5,
+            0.0,
+            0.5,
+            1.0,
+            1.5,
+            2.0,
+            2.5,
+            3.0,
+            3.5,
+            4.0,
+            4.5,
+            5.0,
+            5.5,
+            6.0,
+            6.5,
+            7.0,
+            7.5,
+            8.0,
+            8.5,
+            9.0,
+            9.5,
+            10.0,
+            10.5,
+            11.0,
+            11.5,
+            12.0,
+            12.5,
+            13.0,
+            13.5,
+            14.0,
+            14.5,
+            15.0
+          ],
+          "path_unit": "cm",
+          "scope": "Declared1D operating range3..30cm, fixed source-domain path; model response, not a causal/physical mechanism claim",
+          "input_units": {
+            "length_cm": "cm"
+          },
+          "step_widths": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "source_points": [
+            [
+              3.0
+            ],
+            [
+              3.5
+            ],
+            [
+              4.0
+            ],
+            [
+              4.5
+            ],
+            [
+              5.0
+            ],
+            [
+              5.5
+            ],
+            [
+              6.0
+            ],
+            [
+              6.5
+            ],
+            [
+              7.0
+            ],
+            [
+              7.5
+            ],
+            [
+              8.0
+            ],
+            [
+              8.5
+            ],
+            [
+              9.0
+            ],
+            [
+              9.5
+            ],
+            [
+              10.0
+            ],
+            [
+              10.5
+            ],
+            [
+              11.0
+            ],
+            [
+              11.5
+            ],
+            [
+              12.0
+            ],
+            [
+              12.5
+            ],
+            [
+              13.0
+            ],
+            [
+              13.5
+            ],
+            [
+              14.0
+            ],
+            [
+              14.5
+            ],
+            [
+              15.0
+            ],
+            [
+              15.5
+            ],
+            [
+              16.0
+            ],
+            [
+              16.5
+            ],
+            [
+              17.0
+            ],
+            [
+              17.5
+            ],
+            [
+              18.0
+            ],
+            [
+              18.5
+            ],
+            [
+              19.0
+            ],
+            [
+              19.5
+            ],
+            [
+              20.0
+            ],
+            [
+              20.5
+            ],
+            [
+              21.0
+            ],
+            [
+              21.5
+            ],
+            [
+              22.0
+            ],
+            [
+              22.5
+            ],
+            [
+              23.0
+            ],
+            [
+              23.5
+            ],
+            [
+              24.0
+            ],
+            [
+              24.5
+            ],
+            [
+              25.0
+            ],
+            [
+              25.5
+            ],
+            [
+              26.0
+            ],
+            [
+              26.5
+            ],
+            [
+              27.0
+            ],
+            [
+              27.5
+            ],
+            [
+              28.0
+            ],
+            [
+              28.5
+            ],
+            [
+              29.0
+            ],
+            [
+              29.5
+            ],
+            [
+              30.0
+            ]
+          ],
+          "source_columns": [
+            "length_cm"
+          ],
+          "reference_geometry": {
+            "data_role": "train",
+            "coordinates": "public source inputs",
+            "n_reference_rows": 48,
+            "ranges": [
+              {
+                "column": "length_cm",
+                "min": 3.021743367103808,
+                "max": 29.551265144201043,
+                "constant": false
+              }
+            ],
+            "outside_marginal_range": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "constant_feature_changed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "method": "Euclidean nearest Train input distance after dividing each varying column by its Train range",
+            "scope": "Descriptive geometry, not a support, accuracy, safety or causal guarantee. Inside every marginal range can still leave the joint observed design. Distance depends on coordinates, feature count and sampling density; no OOD threshold is fitted. Constant columns are omitted from distances and changes are flagged separately. Identical input rows are counted once for reference neighbor spacing, not as independent observations.",
+            "n_distinct_designs": 48,
+            "status": "computed",
+            "nearest_distance": [
+              0.0008195913701911882,
+              0.011042878208257223,
+              0.0014089946682316057,
+              0.006039610471823095,
+              0.01044569873586007,
+              0.0017947375857387537,
+              0.00244776511455011,
+              0.00017510113451557618,
+              0.014788728548975533,
+              0.004058199948305058,
+              0.013945040212608423,
+              0.004901888284672168,
+              0.02374881678195276,
+              0.028314301369520345,
+              0.009467372872239754,
+              0.008735871359813074,
+              0.0028209836933092425,
+              0.011191911032821467,
+              0.007655017464459124,
+              0.0005599343675661839,
+              0.010703655792119016,
+              0.013874455629974969,
+              0.004972472867305622,
+              0.023819401364586212,
+              0.020674667196988794,
+              0.0018277386997082035,
+              0.017019189797572387,
+              0.0004418669218264615,
+              0.019288795419106997,
+              0.0018362248873577958,
+              0.00873804239875009,
+              0.004071980429427691,
+              0.002930907422944773,
+              0.015916021074335762,
+              0.03476294957161641,
+              0.01810057966890266,
+              0.0007463488283779851,
+              0.01959327732565852,
+              0.00280327704236083,
+              0.00801372684575663,
+              0.010833201651523905,
+              0.0021544317308498373,
+              0.015306310395310274,
+              0.00016554149689318454,
+              0.01901246999417372,
+              0.0019605289854836006,
+              0.016886399511796935,
+              0.033079517616416254,
+              0.014232589119135719,
+              0.0032789397418100386,
+              0.0009024553237287902,
+              0.0015941756716492117,
+              0.006102366198739273,
+              0.0019323810143196951,
+              0.01691454748296084
+            ],
+            "reference_neighbor_spacing": {
+              "median": 0.007302212898495863,
+              "p95": 0.03878051189037761
+            },
+            "n_outside_marginal_range": 2,
+            "n_constant_feature_changed": 0,
+            "max_nearest_distance": 0.03476294957161641
+          },
+          "prediction": [
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572,
+            427.1035919238572
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "coverage": 1.0,
+          "unit": "mm"
+        }
+      ],
+      "reference": {
+        "length_cm": 4.722880607910003
+      },
+      "reference_scope": "Explicit point or first actually observed Train row, not a measured zero baseline",
+      "identifiability": "Parameter/structure identifiability not established by prediction error. Conditional profiles, if provided separately, retain their own assumptions.",
+      "decomposition_scope": "Whole nested expression only; additive decomposition is unavailable",
+      "term_sum_check": null
+    },
+    {
+      "id": "linear/7/0@native",
+      "outcome": "ok",
+      "mathematics": [
+        "Top-level mathematical form: mul",
+        "Operators in subexpressions: mul\u00d71"
+      ],
+      "terms": [
+        {
+          "name": "term1",
+          "formula": "(c0 * length_cm_work)",
+          "formula_coordinates": "working",
+          "reference_value": 116.70237362227316,
+          "min": 87.67546538225875,
+          "max": 556.0353509535108,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "whole output coordinate mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        }
+      ],
+      "paths": [
+        {
+          "id": "length_response",
+          "at": {
+            "length_cm": 15.0
+          },
+          "direction": {
+            "length_cm": 1.0
+          },
+          "steps": [
+            -12.0,
+            -11.5,
+            -11.0,
+            -10.5,
+            -10.0,
+            -9.5,
+            -9.0,
+            -8.5,
+            -8.0,
+            -7.5,
+            -7.0,
+            -6.5,
+            -6.0,
+            -5.5,
+            -5.0,
+            -4.5,
+            -4.0,
+            -3.5,
+            -3.0,
+            -2.5,
+            -2.0,
+            -1.5,
+            -1.0,
+            -0.5,
+            0.0,
+            0.5,
+            1.0,
+            1.5,
+            2.0,
+            2.5,
+            3.0,
+            3.5,
+            4.0,
+            4.5,
+            5.0,
+            5.5,
+            6.0,
+            6.5,
+            7.0,
+            7.5,
+            8.0,
+            8.5,
+            9.0,
+            9.5,
+            10.0,
+            10.5,
+            11.0,
+            11.5,
+            12.0,
+            12.5,
+            13.0,
+            13.5,
+            14.0,
+            14.5,
+            15.0
+          ],
+          "path_unit": "cm",
+          "scope": "Declared1D operating range3..30cm, fixed source-domain path; model response, not a causal/physical mechanism claim",
+          "input_units": {
+            "length_cm": "cm"
+          },
+          "step_widths": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "source_points": [
+            [
+              3.0
+            ],
+            [
+              3.5
+            ],
+            [
+              4.0
+            ],
+            [
+              4.5
+            ],
+            [
+              5.0
+            ],
+            [
+              5.5
+            ],
+            [
+              6.0
+            ],
+            [
+              6.5
+            ],
+            [
+              7.0
+            ],
+            [
+              7.5
+            ],
+            [
+              8.0
+            ],
+            [
+              8.5
+            ],
+            [
+              9.0
+            ],
+            [
+              9.5
+            ],
+            [
+              10.0
+            ],
+            [
+              10.5
+            ],
+            [
+              11.0
+            ],
+            [
+              11.5
+            ],
+            [
+              12.0
+            ],
+            [
+              12.5
+            ],
+            [
+              13.0
+            ],
+            [
+              13.5
+            ],
+            [
+              14.0
+            ],
+            [
+              14.5
+            ],
+            [
+              15.0
+            ],
+            [
+              15.5
+            ],
+            [
+              16.0
+            ],
+            [
+              16.5
+            ],
+            [
+              17.0
+            ],
+            [
+              17.5
+            ],
+            [
+              18.0
+            ],
+            [
+              18.5
+            ],
+            [
+              19.0
+            ],
+            [
+              19.5
+            ],
+            [
+              20.0
+            ],
+            [
+              20.5
+            ],
+            [
+              21.0
+            ],
+            [
+              21.5
+            ],
+            [
+              22.0
+            ],
+            [
+              22.5
+            ],
+            [
+              23.0
+            ],
+            [
+              23.5
+            ],
+            [
+              24.0
+            ],
+            [
+              24.5
+            ],
+            [
+              25.0
+            ],
+            [
+              25.5
+            ],
+            [
+              26.0
+            ],
+            [
+              26.5
+            ],
+            [
+              27.0
+            ],
+            [
+              27.5
+            ],
+            [
+              28.0
+            ],
+            [
+              28.5
+            ],
+            [
+              29.0
+            ],
+            [
+              29.5
+            ],
+            [
+              30.0
+            ]
+          ],
+          "source_columns": [
+            "length_cm"
+          ],
+          "reference_geometry": {
+            "data_role": "train",
+            "coordinates": "public source inputs",
+            "n_reference_rows": 48,
+            "ranges": [
+              {
+                "column": "length_cm",
+                "min": 3.021743367103808,
+                "max": 29.551265144201043,
+                "constant": false
+              }
+            ],
+            "outside_marginal_range": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "constant_feature_changed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "method": "Euclidean nearest Train input distance after dividing each varying column by its Train range",
+            "scope": "Descriptive geometry, not a support, accuracy, safety or causal guarantee. Inside every marginal range can still leave the joint observed design. Distance depends on coordinates, feature count and sampling density; no OOD threshold is fitted. Constant columns are omitted from distances and changes are flagged separately. Identical input rows are counted once for reference neighbor spacing, not as independent observations.",
+            "n_distinct_designs": 48,
+            "status": "computed",
+            "nearest_distance": [
+              0.0008195913701911882,
+              0.011042878208257223,
+              0.0014089946682316057,
+              0.006039610471823095,
+              0.01044569873586007,
+              0.0017947375857387537,
+              0.00244776511455011,
+              0.00017510113451557618,
+              0.014788728548975533,
+              0.004058199948305058,
+              0.013945040212608423,
+              0.004901888284672168,
+              0.02374881678195276,
+              0.028314301369520345,
+              0.009467372872239754,
+              0.008735871359813074,
+              0.0028209836933092425,
+              0.011191911032821467,
+              0.007655017464459124,
+              0.0005599343675661839,
+              0.010703655792119016,
+              0.013874455629974969,
+              0.004972472867305622,
+              0.023819401364586212,
+              0.020674667196988794,
+              0.0018277386997082035,
+              0.017019189797572387,
+              0.0004418669218264615,
+              0.019288795419106997,
+              0.0018362248873577958,
+              0.00873804239875009,
+              0.004071980429427691,
+              0.002930907422944773,
+              0.015916021074335762,
+              0.03476294957161641,
+              0.01810057966890266,
+              0.0007463488283779851,
+              0.01959327732565852,
+              0.00280327704236083,
+              0.00801372684575663,
+              0.010833201651523905,
+              0.0021544317308498373,
+              0.015306310395310274,
+              0.00016554149689318454,
+              0.01901246999417372,
+              0.0019605289854836006,
+              0.016886399511796935,
+              0.033079517616416254,
+              0.014232589119135719,
+              0.0032789397418100386,
+              0.0009024553237287902,
+              0.0015941756716492117,
+              0.006102366198739273,
+              0.0019323810143196951,
+              0.01691454748296084
+            ],
+            "reference_neighbor_spacing": {
+              "median": 0.007302212898495863,
+              "p95": 0.03878051189037761
+            },
+            "n_outside_marginal_range": 2,
+            "n_constant_feature_changed": 0,
+            "max_nearest_distance": 0.03476294957161641
+          },
+          "prediction": [
+            74.1299960622445,
+            86.48499540595193,
+            98.83999474965934,
+            111.19499409336676,
+            123.54999343707418,
+            135.9049927807816,
+            148.259992124489,
+            160.61499146819642,
+            172.96999081190387,
+            185.32499015561126,
+            197.67998949931868,
+            210.03498884302613,
+            222.38998818673352,
+            234.74498753044094,
+            247.09998687414836,
+            259.4549862178558,
+            271.8099855615632,
+            284.1649849052706,
+            296.519984248978,
+            308.87498359268545,
+            321.22998293639284,
+            333.5849822801003,
+            345.93998162380774,
+            358.2949809675151,
+            370.6499803112225,
+            383.00497965492997,
+            395.35997899863736,
+            407.7149783423448,
+            420.06997768605225,
+            432.42497702975965,
+            444.77997637346704,
+            457.1349757171745,
+            469.4899750608819,
+            481.84497440458927,
+            494.1999737482967,
+            506.55497309200416,
+            518.9099724357116,
+            531.2649717794189,
+            543.6199711231264,
+            555.9749704668338,
+            568.3299698105412,
+            580.6849691542487,
+            593.039968497956,
+            605.3949678416634,
+            617.7499671853709,
+            630.1049665290783,
+            642.4599658727857,
+            654.8149652164932,
+            667.1699645602006,
+            679.524963903908,
+            691.8799632476155,
+            704.2349625913229,
+            716.5899619350301,
+            728.9449612787377,
+            741.299960622445
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "coverage": 1.0,
+          "unit": "mm"
+        }
+      ],
+      "reference": {
+        "length_cm": 4.722880607910003
+      },
+      "reference_scope": "Explicit point or first actually observed Train row, not a measured zero baseline",
+      "identifiability": "Parameter/structure identifiability not established by prediction error. Conditional profiles, if provided separately, retain their own assumptions.",
+      "decomposition_scope": "Whole nested expression only; additive decomposition is unavailable",
+      "term_sum_check": null
+    },
+    {
+      "id": "linear/7/1@native",
+      "outcome": "ok",
+      "mathematics": [
+        "Top-level mathematical form: add",
+        "Operators in subexpressions: add\u00d71, mul\u00d71"
+      ],
+      "terms": [
+        {
+          "name": "term1",
+          "formula": "(c0 * length_cm_work)",
+          "formula_coordinates": "working",
+          "reference_value": 94.48761974986633,
+          "min": 70.98609717437958,
+          "max": 450.1918442415606,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        },
+        {
+          "name": "term2",
+          "formula": "c1",
+          "formula_coordinates": "working",
+          "reference_value": 98.67022748465006,
+          "min": 98.67022748465006,
+          "max": 98.67022748465006,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        }
+      ],
+      "paths": [
+        {
+          "id": "length_response",
+          "at": {
+            "length_cm": 15.0
+          },
+          "direction": {
+            "length_cm": 1.0
+          },
+          "steps": [
+            -12.0,
+            -11.5,
+            -11.0,
+            -10.5,
+            -10.0,
+            -9.5,
+            -9.0,
+            -8.5,
+            -8.0,
+            -7.5,
+            -7.0,
+            -6.5,
+            -6.0,
+            -5.5,
+            -5.0,
+            -4.5,
+            -4.0,
+            -3.5,
+            -3.0,
+            -2.5,
+            -2.0,
+            -1.5,
+            -1.0,
+            -0.5,
+            0.0,
+            0.5,
+            1.0,
+            1.5,
+            2.0,
+            2.5,
+            3.0,
+            3.5,
+            4.0,
+            4.5,
+            5.0,
+            5.5,
+            6.0,
+            6.5,
+            7.0,
+            7.5,
+            8.0,
+            8.5,
+            9.0,
+            9.5,
+            10.0,
+            10.5,
+            11.0,
+            11.5,
+            12.0,
+            12.5,
+            13.0,
+            13.5,
+            14.0,
+            14.5,
+            15.0
+          ],
+          "path_unit": "cm",
+          "scope": "Declared1D operating range3..30cm, fixed source-domain path; model response, not a causal/physical mechanism claim",
+          "input_units": {
+            "length_cm": "cm"
+          },
+          "step_widths": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "source_points": [
+            [
+              3.0
+            ],
+            [
+              3.5
+            ],
+            [
+              4.0
+            ],
+            [
+              4.5
+            ],
+            [
+              5.0
+            ],
+            [
+              5.5
+            ],
+            [
+              6.0
+            ],
+            [
+              6.5
+            ],
+            [
+              7.0
+            ],
+            [
+              7.5
+            ],
+            [
+              8.0
+            ],
+            [
+              8.5
+            ],
+            [
+              9.0
+            ],
+            [
+              9.5
+            ],
+            [
+              10.0
+            ],
+            [
+              10.5
+            ],
+            [
+              11.0
+            ],
+            [
+              11.5
+            ],
+            [
+              12.0
+            ],
+            [
+              12.5
+            ],
+            [
+              13.0
+            ],
+            [
+              13.5
+            ],
+            [
+              14.0
+            ],
+            [
+              14.5
+            ],
+            [
+              15.0
+            ],
+            [
+              15.5
+            ],
+            [
+              16.0
+            ],
+            [
+              16.5
+            ],
+            [
+              17.0
+            ],
+            [
+              17.5
+            ],
+            [
+              18.0
+            ],
+            [
+              18.5
+            ],
+            [
+              19.0
+            ],
+            [
+              19.5
+            ],
+            [
+              20.0
+            ],
+            [
+              20.5
+            ],
+            [
+              21.0
+            ],
+            [
+              21.5
+            ],
+            [
+              22.0
+            ],
+            [
+              22.5
+            ],
+            [
+              23.0
+            ],
+            [
+              23.5
+            ],
+            [
+              24.0
+            ],
+            [
+              24.5
+            ],
+            [
+              25.0
+            ],
+            [
+              25.5
+            ],
+            [
+              26.0
+            ],
+            [
+              26.5
+            ],
+            [
+              27.0
+            ],
+            [
+              27.5
+            ],
+            [
+              28.0
+            ],
+            [
+              28.5
+            ],
+            [
+              29.0
+            ],
+            [
+              29.5
+            ],
+            [
+              30.0
+            ]
+          ],
+          "source_columns": [
+            "length_cm"
+          ],
+          "reference_geometry": {
+            "data_role": "train",
+            "coordinates": "public source inputs",
+            "n_reference_rows": 48,
+            "ranges": [
+              {
+                "column": "length_cm",
+                "min": 3.021743367103808,
+                "max": 29.551265144201043,
+                "constant": false
+              }
+            ],
+            "outside_marginal_range": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "constant_feature_changed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "method": "Euclidean nearest Train input distance after dividing each varying column by its Train range",
+            "scope": "Descriptive geometry, not a support, accuracy, safety or causal guarantee. Inside every marginal range can still leave the joint observed design. Distance depends on coordinates, feature count and sampling density; no OOD threshold is fitted. Constant columns are omitted from distances and changes are flagged separately. Identical input rows are counted once for reference neighbor spacing, not as independent observations.",
+            "n_distinct_designs": 48,
+            "status": "computed",
+            "nearest_distance": [
+              0.0008195913701911882,
+              0.011042878208257223,
+              0.0014089946682316057,
+              0.006039610471823095,
+              0.01044569873586007,
+              0.0017947375857387537,
+              0.00244776511455011,
+              0.00017510113451557618,
+              0.014788728548975533,
+              0.004058199948305058,
+              0.013945040212608423,
+              0.004901888284672168,
+              0.02374881678195276,
+              0.028314301369520345,
+              0.009467372872239754,
+              0.008735871359813074,
+              0.0028209836933092425,
+              0.011191911032821467,
+              0.007655017464459124,
+              0.0005599343675661839,
+              0.010703655792119016,
+              0.013874455629974969,
+              0.004972472867305622,
+              0.023819401364586212,
+              0.020674667196988794,
+              0.0018277386997082035,
+              0.017019189797572387,
+              0.0004418669218264615,
+              0.019288795419106997,
+              0.0018362248873577958,
+              0.00873804239875009,
+              0.004071980429427691,
+              0.002930907422944773,
+              0.015916021074335762,
+              0.03476294957161641,
+              0.01810057966890266,
+              0.0007463488283779851,
+              0.01959327732565852,
+              0.00280327704236083,
+              0.00801372684575663,
+              0.010833201651523905,
+              0.0021544317308498373,
+              0.015306310395310274,
+              0.00016554149689318454,
+              0.01901246999417372,
+              0.0019605289854836006,
+              0.016886399511796935,
+              0.033079517616416254,
+              0.014232589119135719,
+              0.0032789397418100386,
+              0.0009024553237287902,
+              0.0015941756716492117,
+              0.006102366198739273,
+              0.0019323810143196951,
+              0.01691454748296084
+            ],
+            "reference_neighbor_spacing": {
+              "median": 0.007302212898495863,
+              "p95": 0.03878051189037761
+            },
+            "n_outside_marginal_range": 2,
+            "n_constant_feature_changed": 0,
+            "max_nearest_distance": 0.03476294957161641
+          },
+          "prediction": [
+            158.68928847358296,
+            168.69246530507178,
+            178.6956421365606,
+            188.6988189680494,
+            198.70199579953822,
+            208.70517263102707,
+            218.70834946251588,
+            228.7115262940047,
+            238.71470312549351,
+            248.7178799569823,
+            258.7210567884711,
+            268.72423361995993,
+            278.72741045144875,
+            288.7305872829376,
+            298.73376411442644,
+            308.73694094591525,
+            318.74011777740407,
+            328.7432946088929,
+            338.74647144038164,
+            348.7496482718705,
+            358.7528251033593,
+            368.75600193484814,
+            378.75917876633696,
+            388.7623555978257,
+            398.76553242931453,
+            408.7687092608034,
+            418.7718860922922,
+            428.77506292378104,
+            438.77823975526985,
+            448.78141658675867,
+            458.7845934182474,
+            468.7877702497363,
+            478.79094708122517,
+            488.794123912714,
+            498.7973007442028,
+            508.8004775756917,
+            518.8036544071805,
+            528.8068312386692,
+            538.8100080701581,
+            548.8131849016469,
+            558.8163617331358,
+            568.8195385646245,
+            578.8227153961133,
+            588.8258922276021,
+            598.8290690590909,
+            608.8322458905798,
+            618.8354227220685,
+            628.8385995535575,
+            638.8417763850463,
+            648.8449532165351,
+            658.8481300480239,
+            668.8513068795128,
+            678.8544837110014,
+            688.8576605424903,
+            698.860837373979
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "coverage": 1.0,
+          "unit": "mm"
+        }
+      ],
+      "reference": {
+        "length_cm": 4.722880607910003
+      },
+      "reference_scope": "Explicit point or first actually observed Train row, not a measured zero baseline",
+      "identifiability": "Parameter/structure identifiability not established by prediction error. Conditional profiles, if provided separately, retain their own assumptions.",
+      "decomposition_scope": "Values of additive terms in THIS expression only",
+      "term_sum_check": {
+        "n_valid": 13,
+        "n_rows": 13,
+        "max_roundoff_difference": 0.0,
+        "meaning": "This syntactic sum reconstructs the same expression at these points; not unique/causal contributions"
+      }
+    },
+    {
+      "id": "dictionary/7/0@native",
+      "outcome": "ok",
+      "mathematics": [
+        "Top-level mathematical form: mul",
+        "Operators in subexpressions: mul\u00d71"
+      ],
+      "terms": [
+        {
+          "name": "term1",
+          "formula": "(c0 * length_cm_work)",
+          "formula_coordinates": "working",
+          "reference_value": 116.70237362227316,
+          "min": 87.67546538225875,
+          "max": 556.0353509535108,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "whole output coordinate mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        }
+      ],
+      "paths": [
+        {
+          "id": "length_response",
+          "at": {
+            "length_cm": 15.0
+          },
+          "direction": {
+            "length_cm": 1.0
+          },
+          "steps": [
+            -12.0,
+            -11.5,
+            -11.0,
+            -10.5,
+            -10.0,
+            -9.5,
+            -9.0,
+            -8.5,
+            -8.0,
+            -7.5,
+            -7.0,
+            -6.5,
+            -6.0,
+            -5.5,
+            -5.0,
+            -4.5,
+            -4.0,
+            -3.5,
+            -3.0,
+            -2.5,
+            -2.0,
+            -1.5,
+            -1.0,
+            -0.5,
+            0.0,
+            0.5,
+            1.0,
+            1.5,
+            2.0,
+            2.5,
+            3.0,
+            3.5,
+            4.0,
+            4.5,
+            5.0,
+            5.5,
+            6.0,
+            6.5,
+            7.0,
+            7.5,
+            8.0,
+            8.5,
+            9.0,
+            9.5,
+            10.0,
+            10.5,
+            11.0,
+            11.5,
+            12.0,
+            12.5,
+            13.0,
+            13.5,
+            14.0,
+            14.5,
+            15.0
+          ],
+          "path_unit": "cm",
+          "scope": "Declared1D operating range3..30cm, fixed source-domain path; model response, not a causal/physical mechanism claim",
+          "input_units": {
+            "length_cm": "cm"
+          },
+          "step_widths": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "source_points": [
+            [
+              3.0
+            ],
+            [
+              3.5
+            ],
+            [
+              4.0
+            ],
+            [
+              4.5
+            ],
+            [
+              5.0
+            ],
+            [
+              5.5
+            ],
+            [
+              6.0
+            ],
+            [
+              6.5
+            ],
+            [
+              7.0
+            ],
+            [
+              7.5
+            ],
+            [
+              8.0
+            ],
+            [
+              8.5
+            ],
+            [
+              9.0
+            ],
+            [
+              9.5
+            ],
+            [
+              10.0
+            ],
+            [
+              10.5
+            ],
+            [
+              11.0
+            ],
+            [
+              11.5
+            ],
+            [
+              12.0
+            ],
+            [
+              12.5
+            ],
+            [
+              13.0
+            ],
+            [
+              13.5
+            ],
+            [
+              14.0
+            ],
+            [
+              14.5
+            ],
+            [
+              15.0
+            ],
+            [
+              15.5
+            ],
+            [
+              16.0
+            ],
+            [
+              16.5
+            ],
+            [
+              17.0
+            ],
+            [
+              17.5
+            ],
+            [
+              18.0
+            ],
+            [
+              18.5
+            ],
+            [
+              19.0
+            ],
+            [
+              19.5
+            ],
+            [
+              20.0
+            ],
+            [
+              20.5
+            ],
+            [
+              21.0
+            ],
+            [
+              21.5
+            ],
+            [
+              22.0
+            ],
+            [
+              22.5
+            ],
+            [
+              23.0
+            ],
+            [
+              23.5
+            ],
+            [
+              24.0
+            ],
+            [
+              24.5
+            ],
+            [
+              25.0
+            ],
+            [
+              25.5
+            ],
+            [
+              26.0
+            ],
+            [
+              26.5
+            ],
+            [
+              27.0
+            ],
+            [
+              27.5
+            ],
+            [
+              28.0
+            ],
+            [
+              28.5
+            ],
+            [
+              29.0
+            ],
+            [
+              29.5
+            ],
+            [
+              30.0
+            ]
+          ],
+          "source_columns": [
+            "length_cm"
+          ],
+          "reference_geometry": {
+            "data_role": "train",
+            "coordinates": "public source inputs",
+            "n_reference_rows": 48,
+            "ranges": [
+              {
+                "column": "length_cm",
+                "min": 3.021743367103808,
+                "max": 29.551265144201043,
+                "constant": false
+              }
+            ],
+            "outside_marginal_range": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "constant_feature_changed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "method": "Euclidean nearest Train input distance after dividing each varying column by its Train range",
+            "scope": "Descriptive geometry, not a support, accuracy, safety or causal guarantee. Inside every marginal range can still leave the joint observed design. Distance depends on coordinates, feature count and sampling density; no OOD threshold is fitted. Constant columns are omitted from distances and changes are flagged separately. Identical input rows are counted once for reference neighbor spacing, not as independent observations.",
+            "n_distinct_designs": 48,
+            "status": "computed",
+            "nearest_distance": [
+              0.0008195913701911882,
+              0.011042878208257223,
+              0.0014089946682316057,
+              0.006039610471823095,
+              0.01044569873586007,
+              0.0017947375857387537,
+              0.00244776511455011,
+              0.00017510113451557618,
+              0.014788728548975533,
+              0.004058199948305058,
+              0.013945040212608423,
+              0.004901888284672168,
+              0.02374881678195276,
+              0.028314301369520345,
+              0.009467372872239754,
+              0.008735871359813074,
+              0.0028209836933092425,
+              0.011191911032821467,
+              0.007655017464459124,
+              0.0005599343675661839,
+              0.010703655792119016,
+              0.013874455629974969,
+              0.004972472867305622,
+              0.023819401364586212,
+              0.020674667196988794,
+              0.0018277386997082035,
+              0.017019189797572387,
+              0.0004418669218264615,
+              0.019288795419106997,
+              0.0018362248873577958,
+              0.00873804239875009,
+              0.004071980429427691,
+              0.002930907422944773,
+              0.015916021074335762,
+              0.03476294957161641,
+              0.01810057966890266,
+              0.0007463488283779851,
+              0.01959327732565852,
+              0.00280327704236083,
+              0.00801372684575663,
+              0.010833201651523905,
+              0.0021544317308498373,
+              0.015306310395310274,
+              0.00016554149689318454,
+              0.01901246999417372,
+              0.0019605289854836006,
+              0.016886399511796935,
+              0.033079517616416254,
+              0.014232589119135719,
+              0.0032789397418100386,
+              0.0009024553237287902,
+              0.0015941756716492117,
+              0.006102366198739273,
+              0.0019323810143196951,
+              0.01691454748296084
+            ],
+            "reference_neighbor_spacing": {
+              "median": 0.007302212898495863,
+              "p95": 0.03878051189037761
+            },
+            "n_outside_marginal_range": 2,
+            "n_constant_feature_changed": 0,
+            "max_nearest_distance": 0.03476294957161641
+          },
+          "prediction": [
+            74.1299960622445,
+            86.48499540595193,
+            98.83999474965934,
+            111.19499409336676,
+            123.54999343707418,
+            135.9049927807816,
+            148.259992124489,
+            160.61499146819642,
+            172.96999081190387,
+            185.32499015561126,
+            197.67998949931868,
+            210.03498884302613,
+            222.38998818673352,
+            234.74498753044094,
+            247.09998687414836,
+            259.4549862178558,
+            271.8099855615632,
+            284.1649849052706,
+            296.519984248978,
+            308.87498359268545,
+            321.22998293639284,
+            333.5849822801003,
+            345.93998162380774,
+            358.2949809675151,
+            370.6499803112225,
+            383.00497965492997,
+            395.35997899863736,
+            407.7149783423448,
+            420.06997768605225,
+            432.42497702975965,
+            444.77997637346704,
+            457.1349757171745,
+            469.4899750608819,
+            481.84497440458927,
+            494.1999737482967,
+            506.55497309200416,
+            518.9099724357116,
+            531.2649717794189,
+            543.6199711231264,
+            555.9749704668338,
+            568.3299698105412,
+            580.6849691542487,
+            593.039968497956,
+            605.3949678416634,
+            617.7499671853709,
+            630.1049665290783,
+            642.4599658727857,
+            654.8149652164932,
+            667.1699645602006,
+            679.524963903908,
+            691.8799632476155,
+            704.2349625913229,
+            716.5899619350301,
+            728.9449612787377,
+            741.299960622445
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "coverage": 1.0,
+          "unit": "mm"
+        }
+      ],
+      "reference": {
+        "length_cm": 4.722880607910003
+      },
+      "reference_scope": "Explicit point or first actually observed Train row, not a measured zero baseline",
+      "identifiability": "Parameter/structure identifiability not established by prediction error. Conditional profiles, if provided separately, retain their own assumptions.",
+      "decomposition_scope": "Whole nested expression only; additive decomposition is unavailable",
+      "term_sum_check": null
+    },
+    {
+      "id": "dictionary/7/1@native",
+      "outcome": "ok",
+      "mathematics": [
+        "Top-level mathematical form: add",
+        "Operators in subexpressions: add\u00d71, mul\u00d71"
+      ],
+      "terms": [
+        {
+          "name": "term1",
+          "formula": "(c0 * length_cm_work)",
+          "formula_coordinates": "working",
+          "reference_value": 94.48761974986633,
+          "min": 70.98609717437958,
+          "max": 450.1918442415606,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        },
+        {
+          "name": "term2",
+          "formula": "c1",
+          "formula_coordinates": "working",
+          "reference_value": 98.67022748465006,
+          "min": 98.67022748465006,
+          "max": 98.67022748465006,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        }
+      ],
+      "paths": [
+        {
+          "id": "length_response",
+          "at": {
+            "length_cm": 15.0
+          },
+          "direction": {
+            "length_cm": 1.0
+          },
+          "steps": [
+            -12.0,
+            -11.5,
+            -11.0,
+            -10.5,
+            -10.0,
+            -9.5,
+            -9.0,
+            -8.5,
+            -8.0,
+            -7.5,
+            -7.0,
+            -6.5,
+            -6.0,
+            -5.5,
+            -5.0,
+            -4.5,
+            -4.0,
+            -3.5,
+            -3.0,
+            -2.5,
+            -2.0,
+            -1.5,
+            -1.0,
+            -0.5,
+            0.0,
+            0.5,
+            1.0,
+            1.5,
+            2.0,
+            2.5,
+            3.0,
+            3.5,
+            4.0,
+            4.5,
+            5.0,
+            5.5,
+            6.0,
+            6.5,
+            7.0,
+            7.5,
+            8.0,
+            8.5,
+            9.0,
+            9.5,
+            10.0,
+            10.5,
+            11.0,
+            11.5,
+            12.0,
+            12.5,
+            13.0,
+            13.5,
+            14.0,
+            14.5,
+            15.0
+          ],
+          "path_unit": "cm",
+          "scope": "Declared1D operating range3..30cm, fixed source-domain path; model response, not a causal/physical mechanism claim",
+          "input_units": {
+            "length_cm": "cm"
+          },
+          "step_widths": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "source_points": [
+            [
+              3.0
+            ],
+            [
+              3.5
+            ],
+            [
+              4.0
+            ],
+            [
+              4.5
+            ],
+            [
+              5.0
+            ],
+            [
+              5.5
+            ],
+            [
+              6.0
+            ],
+            [
+              6.5
+            ],
+            [
+              7.0
+            ],
+            [
+              7.5
+            ],
+            [
+              8.0
+            ],
+            [
+              8.5
+            ],
+            [
+              9.0
+            ],
+            [
+              9.5
+            ],
+            [
+              10.0
+            ],
+            [
+              10.5
+            ],
+            [
+              11.0
+            ],
+            [
+              11.5
+            ],
+            [
+              12.0
+            ],
+            [
+              12.5
+            ],
+            [
+              13.0
+            ],
+            [
+              13.5
+            ],
+            [
+              14.0
+            ],
+            [
+              14.5
+            ],
+            [
+              15.0
+            ],
+            [
+              15.5
+            ],
+            [
+              16.0
+            ],
+            [
+              16.5
+            ],
+            [
+              17.0
+            ],
+            [
+              17.5
+            ],
+            [
+              18.0
+            ],
+            [
+              18.5
+            ],
+            [
+              19.0
+            ],
+            [
+              19.5
+            ],
+            [
+              20.0
+            ],
+            [
+              20.5
+            ],
+            [
+              21.0
+            ],
+            [
+              21.5
+            ],
+            [
+              22.0
+            ],
+            [
+              22.5
+            ],
+            [
+              23.0
+            ],
+            [
+              23.5
+            ],
+            [
+              24.0
+            ],
+            [
+              24.5
+            ],
+            [
+              25.0
+            ],
+            [
+              25.5
+            ],
+            [
+              26.0
+            ],
+            [
+              26.5
+            ],
+            [
+              27.0
+            ],
+            [
+              27.5
+            ],
+            [
+              28.0
+            ],
+            [
+              28.5
+            ],
+            [
+              29.0
+            ],
+            [
+              29.5
+            ],
+            [
+              30.0
+            ]
+          ],
+          "source_columns": [
+            "length_cm"
+          ],
+          "reference_geometry": {
+            "data_role": "train",
+            "coordinates": "public source inputs",
+            "n_reference_rows": 48,
+            "ranges": [
+              {
+                "column": "length_cm",
+                "min": 3.021743367103808,
+                "max": 29.551265144201043,
+                "constant": false
+              }
+            ],
+            "outside_marginal_range": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "constant_feature_changed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "method": "Euclidean nearest Train input distance after dividing each varying column by its Train range",
+            "scope": "Descriptive geometry, not a support, accuracy, safety or causal guarantee. Inside every marginal range can still leave the joint observed design. Distance depends on coordinates, feature count and sampling density; no OOD threshold is fitted. Constant columns are omitted from distances and changes are flagged separately. Identical input rows are counted once for reference neighbor spacing, not as independent observations.",
+            "n_distinct_designs": 48,
+            "status": "computed",
+            "nearest_distance": [
+              0.0008195913701911882,
+              0.011042878208257223,
+              0.0014089946682316057,
+              0.006039610471823095,
+              0.01044569873586007,
+              0.0017947375857387537,
+              0.00244776511455011,
+              0.00017510113451557618,
+              0.014788728548975533,
+              0.004058199948305058,
+              0.013945040212608423,
+              0.004901888284672168,
+              0.02374881678195276,
+              0.028314301369520345,
+              0.009467372872239754,
+              0.008735871359813074,
+              0.0028209836933092425,
+              0.011191911032821467,
+              0.007655017464459124,
+              0.0005599343675661839,
+              0.010703655792119016,
+              0.013874455629974969,
+              0.004972472867305622,
+              0.023819401364586212,
+              0.020674667196988794,
+              0.0018277386997082035,
+              0.017019189797572387,
+              0.0004418669218264615,
+              0.019288795419106997,
+              0.0018362248873577958,
+              0.00873804239875009,
+              0.004071980429427691,
+              0.002930907422944773,
+              0.015916021074335762,
+              0.03476294957161641,
+              0.01810057966890266,
+              0.0007463488283779851,
+              0.01959327732565852,
+              0.00280327704236083,
+              0.00801372684575663,
+              0.010833201651523905,
+              0.0021544317308498373,
+              0.015306310395310274,
+              0.00016554149689318454,
+              0.01901246999417372,
+              0.0019605289854836006,
+              0.016886399511796935,
+              0.033079517616416254,
+              0.014232589119135719,
+              0.0032789397418100386,
+              0.0009024553237287902,
+              0.0015941756716492117,
+              0.006102366198739273,
+              0.0019323810143196951,
+              0.01691454748296084
+            ],
+            "reference_neighbor_spacing": {
+              "median": 0.007302212898495863,
+              "p95": 0.03878051189037761
+            },
+            "n_outside_marginal_range": 2,
+            "n_constant_feature_changed": 0,
+            "max_nearest_distance": 0.03476294957161641
+          },
+          "prediction": [
+            158.68928847358296,
+            168.69246530507178,
+            178.6956421365606,
+            188.6988189680494,
+            198.70199579953822,
+            208.70517263102707,
+            218.70834946251588,
+            228.7115262940047,
+            238.71470312549351,
+            248.7178799569823,
+            258.7210567884711,
+            268.72423361995993,
+            278.72741045144875,
+            288.7305872829376,
+            298.73376411442644,
+            308.73694094591525,
+            318.74011777740407,
+            328.7432946088929,
+            338.74647144038164,
+            348.7496482718705,
+            358.7528251033593,
+            368.75600193484814,
+            378.75917876633696,
+            388.7623555978257,
+            398.76553242931453,
+            408.7687092608034,
+            418.7718860922922,
+            428.77506292378104,
+            438.77823975526985,
+            448.78141658675867,
+            458.7845934182474,
+            468.7877702497363,
+            478.79094708122517,
+            488.794123912714,
+            498.7973007442028,
+            508.8004775756917,
+            518.8036544071805,
+            528.8068312386692,
+            538.8100080701581,
+            548.8131849016469,
+            558.8163617331358,
+            568.8195385646245,
+            578.8227153961133,
+            588.8258922276021,
+            598.8290690590909,
+            608.8322458905798,
+            618.8354227220685,
+            628.8385995535575,
+            638.8417763850463,
+            648.8449532165351,
+            658.8481300480239,
+            668.8513068795128,
+            678.8544837110014,
+            688.8576605424903,
+            698.860837373979
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "coverage": 1.0,
+          "unit": "mm"
+        }
+      ],
+      "reference": {
+        "length_cm": 4.722880607910003
+      },
+      "reference_scope": "Explicit point or first actually observed Train row, not a measured zero baseline",
+      "identifiability": "Parameter/structure identifiability not established by prediction error. Conditional profiles, if provided separately, retain their own assumptions.",
+      "decomposition_scope": "Values of additive terms in THIS expression only",
+      "term_sum_check": {
+        "n_valid": 13,
+        "n_rows": 13,
+        "max_roundoff_difference": 0.0,
+        "meaning": "This syntactic sum reconstructs the same expression at these points; not unique/causal contributions"
+      }
+    },
+    {
+      "id": "dictionary/7/2@native",
+      "outcome": "ok",
+      "mathematics": [
+        "Top-level mathematical form: add",
+        "Operators in subexpressions: add\u00d72, mul\u00d73"
+      ],
+      "terms": [
+        {
+          "name": "term1",
+          "formula": "(c0 * length_cm_work)",
+          "formula_coordinates": "working",
+          "reference_value": 93.51531491346668,
+          "min": 70.25562977788361,
+          "max": 445.5592404293097,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        },
+        {
+          "name": "term2",
+          "formula": "c1",
+          "formula_coordinates": "working",
+          "reference_value": 99.89602257387436,
+          "min": 99.89602257387436,
+          "max": 99.89602257387436,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        },
+        {
+          "name": "term3",
+          "formula": "(c2 * (length_cm_work * length_cm_work))",
+          "formula_coordinates": "working",
+          "reference_value": 0.13950966556756625,
+          "min": 0.07874102767810912,
+          "max": 3.1670121248543057,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        }
+      ],
+      "paths": [
+        {
+          "id": "length_response",
+          "at": {
+            "length_cm": 15.0
+          },
+          "direction": {
+            "length_cm": 1.0
+          },
+          "steps": [
+            -12.0,
+            -11.5,
+            -11.0,
+            -10.5,
+            -10.0,
+            -9.5,
+            -9.0,
+            -8.5,
+            -8.0,
+            -7.5,
+            -7.0,
+            -6.5,
+            -6.0,
+            -5.5,
+            -5.0,
+            -4.5,
+            -4.0,
+            -3.5,
+            -3.0,
+            -2.5,
+            -2.0,
+            -1.5,
+            -1.0,
+            -0.5,
+            0.0,
+            0.5,
+            1.0,
+            1.5,
+            2.0,
+            2.5,
+            3.0,
+            3.5,
+            4.0,
+            4.5,
+            5.0,
+            5.5,
+            6.0,
+            6.5,
+            7.0,
+            7.5,
+            8.0,
+            8.5,
+            9.0,
+            9.5,
+            10.0,
+            10.5,
+            11.0,
+            11.5,
+            12.0,
+            12.5,
+            13.0,
+            13.5,
+            14.0,
+            14.5,
+            15.0
+          ],
+          "path_unit": "cm",
+          "scope": "Declared1D operating range3..30cm, fixed source-domain path; model response, not a causal/physical mechanism claim",
+          "input_units": {
+            "length_cm": "cm"
+          },
+          "step_widths": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "source_points": [
+            [
+              3.0
+            ],
+            [
+              3.5
+            ],
+            [
+              4.0
+            ],
+            [
+              4.5
+            ],
+            [
+              5.0
+            ],
+            [
+              5.5
+            ],
+            [
+              6.0
+            ],
+            [
+              6.5
+            ],
+            [
+              7.0
+            ],
+            [
+              7.5
+            ],
+            [
+              8.0
+            ],
+            [
+              8.5
+            ],
+            [
+              9.0
+            ],
+            [
+              9.5
+            ],
+            [
+              10.0
+            ],
+            [
+              10.5
+            ],
+            [
+              11.0
+            ],
+            [
+              11.5
+            ],
+            [
+              12.0
+            ],
+            [
+              12.5
+            ],
+            [
+              13.0
+            ],
+            [
+              13.5
+            ],
+            [
+              14.0
+            ],
+            [
+              14.5
+            ],
+            [
+              15.0
+            ],
+            [
+              15.5
+            ],
+            [
+              16.0
+            ],
+            [
+              16.5
+            ],
+            [
+              17.0
+            ],
+            [
+              17.5
+            ],
+            [
+              18.0
+            ],
+            [
+              18.5
+            ],
+            [
+              19.0
+            ],
+            [
+              19.5
+            ],
+            [
+              20.0
+            ],
+            [
+              20.5
+            ],
+            [
+              21.0
+            ],
+            [
+              21.5
+            ],
+            [
+              22.0
+            ],
+            [
+              22.5
+            ],
+            [
+              23.0
+            ],
+            [
+              23.5
+            ],
+            [
+              24.0
+            ],
+            [
+              24.5
+            ],
+            [
+              25.0
+            ],
+            [
+              25.5
+            ],
+            [
+              26.0
+            ],
+            [
+              26.5
+            ],
+            [
+              27.0
+            ],
+            [
+              27.5
+            ],
+            [
+              28.0
+            ],
+            [
+              28.5
+            ],
+            [
+              29.0
+            ],
+            [
+              29.5
+            ],
+            [
+              30.0
+            ]
+          ],
+          "source_columns": [
+            "length_cm"
+          ],
+          "reference_geometry": {
+            "data_role": "train",
+            "coordinates": "public source inputs",
+            "n_reference_rows": 48,
+            "ranges": [
+              {
+                "column": "length_cm",
+                "min": 3.021743367103808,
+                "max": 29.551265144201043,
+                "constant": false
+              }
+            ],
+            "outside_marginal_range": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "constant_feature_changed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "method": "Euclidean nearest Train input distance after dividing each varying column by its Train range",
+            "scope": "Descriptive geometry, not a support, accuracy, safety or causal guarantee. Inside every marginal range can still leave the joint observed design. Distance depends on coordinates, feature count and sampling density; no OOD threshold is fitted. Constant columns are omitted from distances and changes are flagged separately. Identical input rows are counted once for reference neighbor spacing, not as independent observations.",
+            "n_distinct_designs": 48,
+            "status": "computed",
+            "nearest_distance": [
+              0.0008195913701911882,
+              0.011042878208257223,
+              0.0014089946682316057,
+              0.006039610471823095,
+              0.01044569873586007,
+              0.0017947375857387537,
+              0.00244776511455011,
+              0.00017510113451557618,
+              0.014788728548975533,
+              0.004058199948305058,
+              0.013945040212608423,
+              0.004901888284672168,
+              0.02374881678195276,
+              0.028314301369520345,
+              0.009467372872239754,
+              0.008735871359813074,
+              0.0028209836933092425,
+              0.011191911032821467,
+              0.007655017464459124,
+              0.0005599343675661839,
+              0.010703655792119016,
+              0.013874455629974969,
+              0.004972472867305622,
+              0.023819401364586212,
+              0.020674667196988794,
+              0.0018277386997082035,
+              0.017019189797572387,
+              0.0004418669218264615,
+              0.019288795419106997,
+              0.0018362248873577958,
+              0.00873804239875009,
+              0.004071980429427691,
+              0.002930907422944773,
+              0.015916021074335762,
+              0.03476294957161641,
+              0.01810057966890266,
+              0.0007463488283779851,
+              0.01959327732565852,
+              0.00280327704236083,
+              0.00801372684575663,
+              0.010833201651523905,
+              0.0021544317308498373,
+              0.015306310395310274,
+              0.00016554149689318454,
+              0.01901246999417372,
+              0.0019605289854836006,
+              0.016886399511796935,
+              0.033079517616416254,
+              0.014232589119135719,
+              0.0032789397418100386,
+              0.0009024553237287902,
+              0.0015941756716492117,
+              0.006102366198739273,
+              0.0019323810143196951,
+              0.01691454748296084
+            ],
+            "reference_neighbor_spacing": {
+              "median": 0.007302212898495863,
+              "p95": 0.03878051189037761
+            },
+            "n_outside_marginal_range": 2,
+            "n_constant_feature_changed": 0,
+            "max_nearest_distance": 0.03476294957161641
+          },
+          "prediction": [
+            159.35376033966142,
+            169.2743286193445,
+            179.19802413294713,
+            189.12484688046936,
+            199.05479686191117,
+            208.98787407727258,
+            218.9240785265536,
+            228.86341020975416,
+            238.80586912687434,
+            248.7514552779141,
+            258.7001686628734,
+            268.6520092817524,
+            278.60697713455085,
+            288.56507222126896,
+            298.5262945419067,
+            308.49064409646394,
+            318.4581208849408,
+            328.42872490733725,
+            338.40245616365326,
+            348.3793146538889,
+            358.3593003780441,
+            368.3424133361189,
+            378.32865352811336,
+            388.31802095402725,
+            398.31051561386084,
+            408.306137507614,
+            418.30488663528666,
+            428.306762996879,
+            438.3117665923909,
+            448.3198974218224,
+            458.3311554851735,
+            468.3455407824441,
+            478.3630533136344,
+            488.38369307874416,
+            498.4074600777737,
+            508.4343543107226,
+            518.4643757775912,
+            528.4975244783794,
+            538.5338004130872,
+            548.5732035817144,
+            558.6157339842614,
+            568.661391620728,
+            578.7101764911141,
+            588.7620885954198,
+            598.817127933645,
+            608.87529450579,
+            618.9365883118544,
+            629.0010093518384,
+            639.0685576257421,
+            649.1392331335654,
+            659.2130358753083,
+            669.2899658509707,
+            679.3700230605525,
+            689.453207504054,
+            699.5395191814752
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "coverage": 1.0,
+          "unit": "mm"
+        }
+      ],
+      "reference": {
+        "length_cm": 4.722880607910003
+      },
+      "reference_scope": "Explicit point or first actually observed Train row, not a measured zero baseline",
+      "identifiability": "Parameter/structure identifiability not established by prediction error. Conditional profiles, if provided separately, retain their own assumptions.",
+      "decomposition_scope": "Values of additive terms in THIS expression only",
+      "term_sum_check": {
+        "n_valid": 13,
+        "n_rows": 13,
+        "max_roundoff_difference": 0.0,
+        "meaning": "This syntactic sum reconstructs the same expression at these points; not unique/causal contributions"
+      }
+    },
+    {
+      "id": "dictionary/7/3@native",
+      "outcome": "ok",
+      "mathematics": [
+        "Top-level mathematical form: add",
+        "Operators in subexpressions: add\u00d73, mul\u00d76"
+      ],
+      "terms": [
+        {
+          "name": "term1",
+          "formula": "(c0 * length_cm_work)",
+          "formula_coordinates": "working",
+          "reference_value": 89.49900162272442,
+          "min": 67.2382778084497,
+          "max": 426.423278573167,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        },
+        {
+          "name": "term2",
+          "formula": "c1",
+          "formula_coordinates": "working",
+          "reference_value": 102.9094766657416,
+          "min": 102.9094766657416,
+          "max": 102.9094766657416,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        },
+        {
+          "name": "term3",
+          "formula": "(c2 * (length_cm_work * length_cm_work))",
+          "formula_coordinates": "working",
+          "reference_value": 1.5042048244277726,
+          "min": 0.8489923134139353,
+          "max": 34.14698829537308,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        },
+        {
+          "name": "term4",
+          "formula": "(c3 * ((length_cm_work * length_cm_work) * length_cm_work))",
+          "formula_coordinates": "working",
+          "reference_value": -0.131358327307426,
+          "min": -14.207764577627316,
+          "max": -0.055699690384858024,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        }
+      ],
+      "paths": [
+        {
+          "id": "length_response",
+          "at": {
+            "length_cm": 15.0
+          },
+          "direction": {
+            "length_cm": 1.0
+          },
+          "steps": [
+            -12.0,
+            -11.5,
+            -11.0,
+            -10.5,
+            -10.0,
+            -9.5,
+            -9.0,
+            -8.5,
+            -8.0,
+            -7.5,
+            -7.0,
+            -6.5,
+            -6.0,
+            -5.5,
+            -5.0,
+            -4.5,
+            -4.0,
+            -3.5,
+            -3.0,
+            -2.5,
+            -2.0,
+            -1.5,
+            -1.0,
+            -0.5,
+            0.0,
+            0.5,
+            1.0,
+            1.5,
+            2.0,
+            2.5,
+            3.0,
+            3.5,
+            4.0,
+            4.5,
+            5.0,
+            5.5,
+            6.0,
+            6.5,
+            7.0,
+            7.5,
+            8.0,
+            8.5,
+            9.0,
+            9.5,
+            10.0,
+            10.5,
+            11.0,
+            11.5,
+            12.0,
+            12.5,
+            13.0,
+            13.5,
+            14.0,
+            14.5,
+            15.0
+          ],
+          "path_unit": "cm",
+          "scope": "Declared1D operating range3..30cm, fixed source-domain path; model response, not a causal/physical mechanism claim",
+          "input_units": {
+            "length_cm": "cm"
+          },
+          "step_widths": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "source_points": [
+            [
+              3.0
+            ],
+            [
+              3.5
+            ],
+            [
+              4.0
+            ],
+            [
+              4.5
+            ],
+            [
+              5.0
+            ],
+            [
+              5.5
+            ],
+            [
+              6.0
+            ],
+            [
+              6.5
+            ],
+            [
+              7.0
+            ],
+            [
+              7.5
+            ],
+            [
+              8.0
+            ],
+            [
+              8.5
+            ],
+            [
+              9.0
+            ],
+            [
+              9.5
+            ],
+            [
+              10.0
+            ],
+            [
+              10.5
+            ],
+            [
+              11.0
+            ],
+            [
+              11.5
+            ],
+            [
+              12.0
+            ],
+            [
+              12.5
+            ],
+            [
+              13.0
+            ],
+            [
+              13.5
+            ],
+            [
+              14.0
+            ],
+            [
+              14.5
+            ],
+            [
+              15.0
+            ],
+            [
+              15.5
+            ],
+            [
+              16.0
+            ],
+            [
+              16.5
+            ],
+            [
+              17.0
+            ],
+            [
+              17.5
+            ],
+            [
+              18.0
+            ],
+            [
+              18.5
+            ],
+            [
+              19.0
+            ],
+            [
+              19.5
+            ],
+            [
+              20.0
+            ],
+            [
+              20.5
+            ],
+            [
+              21.0
+            ],
+            [
+              21.5
+            ],
+            [
+              22.0
+            ],
+            [
+              22.5
+            ],
+            [
+              23.0
+            ],
+            [
+              23.5
+            ],
+            [
+              24.0
+            ],
+            [
+              24.5
+            ],
+            [
+              25.0
+            ],
+            [
+              25.5
+            ],
+            [
+              26.0
+            ],
+            [
+              26.5
+            ],
+            [
+              27.0
+            ],
+            [
+              27.5
+            ],
+            [
+              28.0
+            ],
+            [
+              28.5
+            ],
+            [
+              29.0
+            ],
+            [
+              29.5
+            ],
+            [
+              30.0
+            ]
+          ],
+          "source_columns": [
+            "length_cm"
+          ],
+          "reference_geometry": {
+            "data_role": "train",
+            "coordinates": "public source inputs",
+            "n_reference_rows": 48,
+            "ranges": [
+              {
+                "column": "length_cm",
+                "min": 3.021743367103808,
+                "max": 29.551265144201043,
+                "constant": false
+              }
+            ],
+            "outside_marginal_range": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "constant_feature_changed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "method": "Euclidean nearest Train input distance after dividing each varying column by its Train range",
+            "scope": "Descriptive geometry, not a support, accuracy, safety or causal guarantee. Inside every marginal range can still leave the joint observed design. Distance depends on coordinates, feature count and sampling density; no OOD threshold is fitted. Constant columns are omitted from distances and changes are flagged separately. Identical input rows are counted once for reference neighbor spacing, not as independent observations.",
+            "n_distinct_designs": 48,
+            "status": "computed",
+            "nearest_distance": [
+              0.0008195913701911882,
+              0.011042878208257223,
+              0.0014089946682316057,
+              0.006039610471823095,
+              0.01044569873586007,
+              0.0017947375857387537,
+              0.00244776511455011,
+              0.00017510113451557618,
+              0.014788728548975533,
+              0.004058199948305058,
+              0.013945040212608423,
+              0.004901888284672168,
+              0.02374881678195276,
+              0.028314301369520345,
+              0.009467372872239754,
+              0.008735871359813074,
+              0.0028209836933092425,
+              0.011191911032821467,
+              0.007655017464459124,
+              0.0005599343675661839,
+              0.010703655792119016,
+              0.013874455629974969,
+              0.004972472867305622,
+              0.023819401364586212,
+              0.020674667196988794,
+              0.0018277386997082035,
+              0.017019189797572387,
+              0.0004418669218264615,
+              0.019288795419106997,
+              0.0018362248873577958,
+              0.00873804239875009,
+              0.004071980429427691,
+              0.002930907422944773,
+              0.015916021074335762,
+              0.03476294957161641,
+              0.01810057966890266,
+              0.0007463488283779851,
+              0.01959327732565852,
+              0.00280327704236083,
+              0.00801372684575663,
+              0.010833201651523905,
+              0.0021544317308498373,
+              0.015306310395310274,
+              0.00016554149689318454,
+              0.01901246999417372,
+              0.0019605289854836006,
+              0.016886399511796935,
+              0.033079517616416254,
+              0.014232589119135719,
+              0.0032789397418100386,
+              0.0009024553237287902,
+              0.0015941756716492117,
+              0.006102366198739273,
+              0.0019323810143196951,
+              0.01691454748296084
+            ],
+            "reference_neighbor_spacing": {
+              "median": 0.007302212898495863,
+              "p95": 0.03878051189037761
+            },
+            "n_outside_marginal_range": 2,
+            "n_constant_feature_changed": 0,
+            "max_nearest_distance": 0.03476294957161641
+          },
+          "prediction": [
+            160.332998746831,
+            170.00741544413148,
+            179.70900393617865,
+            189.43682903702546,
+            199.18995556072502,
+            208.9674483213303,
+            218.76837213289417,
+            228.59179180946984,
+            238.43677216511014,
+            248.30237801386812,
+            258.1876741697967,
+            268.091725446949,
+            278.0135966593779,
+            287.9523526211364,
+            297.9070581462777,
+            307.8767780488544,
+            317.8605771429199,
+            327.857520242527,
+            337.8666721617287,
+            347.8870977145779,
+            357.91786171512786,
+            367.9580289774313,
+            378.0066643155414,
+            388.0628325435109,
+            398.12559847539313,
+            408.19402692524096,
+            418.26718270710734,
+            428.34413063504525,
+            438.42393552310773,
+            448.50566218534766,
+            458.5883754358181,
+            468.6711400885722,
+            478.7530209576627,
+            488.8330828571428,
+            498.91039060106544,
+            508.9840090034835,
+            519.0530028784501,
+            529.1164370400181,
+            539.1733763022409,
+            549.2228854791707,
+            559.2640293848614,
+            569.2958728333654,
+            579.3174806387358,
+            589.3279176150256,
+            599.326248576288,
+            609.311538336576,
+            619.2828517099421,
+            629.2392535104397,
+            639.1798085521218,
+            649.1035816490413,
+            659.0096376152512,
+            668.8970412648046,
+            678.7648574117542,
+            688.6121508701534,
+            698.4379864540548
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "coverage": 1.0,
+          "unit": "mm"
+        }
+      ],
+      "reference": {
+        "length_cm": 4.722880607910003
+      },
+      "reference_scope": "Explicit point or first actually observed Train row, not a measured zero baseline",
+      "identifiability": "Parameter/structure identifiability not established by prediction error. Conditional profiles, if provided separately, retain their own assumptions.",
+      "decomposition_scope": "Values of additive terms in THIS expression only",
+      "term_sum_check": {
+        "n_valid": 13,
+        "n_rows": 13,
+        "max_roundoff_difference": 0.0,
+        "meaning": "This syntactic sum reconstructs the same expression at these points; not unique/causal contributions"
+      }
+    },
+    {
+      "id": "dictionary/7/4@native",
+      "outcome": "ok",
+      "mathematics": [
+        "Top-level mathematical form: add",
+        "Operators in subexpressions: add\u00d74, div\u00d71, mul\u00d77",
+        "Division requires its denominators to be defined/nonzero; finite sampled checks are not a global guarantee"
+      ],
+      "terms": [
+        {
+          "name": "term1",
+          "formula": "(c0 * length_cm_work)",
+          "formula_coordinates": "working",
+          "reference_value": 67.0141905340371,
+          "min": 50.3460226207918,
+          "max": 319.29306830608533,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        },
+        {
+          "name": "term2",
+          "formula": "c1",
+          "formula_coordinates": "working",
+          "reference_value": 138.93347951272546,
+          "min": 138.93347951272546,
+          "max": 138.93347951272546,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        },
+        {
+          "name": "term3",
+          "formula": "(c2 * (length_cm_work * length_cm_work))",
+          "formula_coordinates": "working",
+          "reference_value": 6.763619093543312,
+          "min": 3.8174725463086214,
+          "max": 153.5410725128114,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        },
+        {
+          "name": "term4",
+          "formula": "(c3 * ((length_cm_work * length_cm_work) * length_cm_work))",
+          "formula_coordinates": "working",
+          "reference_value": -0.5376996257692191,
+          "min": -58.15778757998464,
+          "max": -0.22800003082641576,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        },
+        {
+          "name": "term5",
+          "formula": "(c4 * (1.0 / length_cm_work))",
+          "formula_coordinates": "working",
+          "reference_value": -17.466625536626225,
+          "min": -23.249339486348063,
+          "max": -3.6659479578055065,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        }
+      ],
+      "paths": [
+        {
+          "id": "length_response",
+          "at": {
+            "length_cm": 15.0
+          },
+          "direction": {
+            "length_cm": 1.0
+          },
+          "steps": [
+            -12.0,
+            -11.5,
+            -11.0,
+            -10.5,
+            -10.0,
+            -9.5,
+            -9.0,
+            -8.5,
+            -8.0,
+            -7.5,
+            -7.0,
+            -6.5,
+            -6.0,
+            -5.5,
+            -5.0,
+            -4.5,
+            -4.0,
+            -3.5,
+            -3.0,
+            -2.5,
+            -2.0,
+            -1.5,
+            -1.0,
+            -0.5,
+            0.0,
+            0.5,
+            1.0,
+            1.5,
+            2.0,
+            2.5,
+            3.0,
+            3.5,
+            4.0,
+            4.5,
+            5.0,
+            5.5,
+            6.0,
+            6.5,
+            7.0,
+            7.5,
+            8.0,
+            8.5,
+            9.0,
+            9.5,
+            10.0,
+            10.5,
+            11.0,
+            11.5,
+            12.0,
+            12.5,
+            13.0,
+            13.5,
+            14.0,
+            14.5,
+            15.0
+          ],
+          "path_unit": "cm",
+          "scope": "Declared1D operating range3..30cm, fixed source-domain path; model response, not a causal/physical mechanism claim",
+          "input_units": {
+            "length_cm": "cm"
+          },
+          "step_widths": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "source_points": [
+            [
+              3.0
+            ],
+            [
+              3.5
+            ],
+            [
+              4.0
+            ],
+            [
+              4.5
+            ],
+            [
+              5.0
+            ],
+            [
+              5.5
+            ],
+            [
+              6.0
+            ],
+            [
+              6.5
+            ],
+            [
+              7.0
+            ],
+            [
+              7.5
+            ],
+            [
+              8.0
+            ],
+            [
+              8.5
+            ],
+            [
+              9.0
+            ],
+            [
+              9.5
+            ],
+            [
+              10.0
+            ],
+            [
+              10.5
+            ],
+            [
+              11.0
+            ],
+            [
+              11.5
+            ],
+            [
+              12.0
+            ],
+            [
+              12.5
+            ],
+            [
+              13.0
+            ],
+            [
+              13.5
+            ],
+            [
+              14.0
+            ],
+            [
+              14.5
+            ],
+            [
+              15.0
+            ],
+            [
+              15.5
+            ],
+            [
+              16.0
+            ],
+            [
+              16.5
+            ],
+            [
+              17.0
+            ],
+            [
+              17.5
+            ],
+            [
+              18.0
+            ],
+            [
+              18.5
+            ],
+            [
+              19.0
+            ],
+            [
+              19.5
+            ],
+            [
+              20.0
+            ],
+            [
+              20.5
+            ],
+            [
+              21.0
+            ],
+            [
+              21.5
+            ],
+            [
+              22.0
+            ],
+            [
+              22.5
+            ],
+            [
+              23.0
+            ],
+            [
+              23.5
+            ],
+            [
+              24.0
+            ],
+            [
+              24.5
+            ],
+            [
+              25.0
+            ],
+            [
+              25.5
+            ],
+            [
+              26.0
+            ],
+            [
+              26.5
+            ],
+            [
+              27.0
+            ],
+            [
+              27.5
+            ],
+            [
+              28.0
+            ],
+            [
+              28.5
+            ],
+            [
+              29.0
+            ],
+            [
+              29.5
+            ],
+            [
+              30.0
+            ]
+          ],
+          "source_columns": [
+            "length_cm"
+          ],
+          "reference_geometry": {
+            "data_role": "train",
+            "coordinates": "public source inputs",
+            "n_reference_rows": 48,
+            "ranges": [
+              {
+                "column": "length_cm",
+                "min": 3.021743367103808,
+                "max": 29.551265144201043,
+                "constant": false
+              }
+            ],
+            "outside_marginal_range": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "constant_feature_changed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "method": "Euclidean nearest Train input distance after dividing each varying column by its Train range",
+            "scope": "Descriptive geometry, not a support, accuracy, safety or causal guarantee. Inside every marginal range can still leave the joint observed design. Distance depends on coordinates, feature count and sampling density; no OOD threshold is fitted. Constant columns are omitted from distances and changes are flagged separately. Identical input rows are counted once for reference neighbor spacing, not as independent observations.",
+            "n_distinct_designs": 48,
+            "status": "computed",
+            "nearest_distance": [
+              0.0008195913701911882,
+              0.011042878208257223,
+              0.0014089946682316057,
+              0.006039610471823095,
+              0.01044569873586007,
+              0.0017947375857387537,
+              0.00244776511455011,
+              0.00017510113451557618,
+              0.014788728548975533,
+              0.004058199948305058,
+              0.013945040212608423,
+              0.004901888284672168,
+              0.02374881678195276,
+              0.028314301369520345,
+              0.009467372872239754,
+              0.008735871359813074,
+              0.0028209836933092425,
+              0.011191911032821467,
+              0.007655017464459124,
+              0.0005599343675661839,
+              0.010703655792119016,
+              0.013874455629974969,
+              0.004972472867305622,
+              0.023819401364586212,
+              0.020674667196988794,
+              0.0018277386997082035,
+              0.017019189797572387,
+              0.0004418669218264615,
+              0.019288795419106997,
+              0.0018362248873577958,
+              0.00873804239875009,
+              0.004071980429427691,
+              0.002930907422944773,
+              0.015916021074335762,
+              0.03476294957161641,
+              0.01810057966890266,
+              0.0007463488283779851,
+              0.01959327732565852,
+              0.00280327704236083,
+              0.00801372684575663,
+              0.010833201651523905,
+              0.0021544317308498373,
+              0.015306310395310274,
+              0.00016554149689318454,
+              0.01901246999417372,
+              0.0019605289854836006,
+              0.016886399511796935,
+              0.033079517616416254,
+              0.014232589119135719,
+              0.0032789397418100386,
+              0.0009024553237287902,
+              0.0015941756716492117,
+              0.006102366198739273,
+              0.0019323810143196951,
+              0.01691454748296084
+            ],
+            "reference_neighbor_spacing": {
+              "median": 0.007302212898495863,
+              "p95": 0.03878051189037761
+            },
+            "n_outside_marginal_range": 2,
+            "n_constant_feature_changed": 0,
+            "max_nearest_distance": 0.03476294957161641
+          },
+          "prediction": [
+            156.59488564095398,
+            168.52219880176767,
+            179.5922710409544,
+            190.12862661601613,
+            200.32384885265708,
+            210.29909875014627,
+            220.13387428399898,
+            229.88203464588193,
+            239.5809569521308,
+            249.25703026886032,
+            258.9290893776585,
+            268.6106366239769,
+            278.3113231493903,
+            288.0379623663019,
+            297.7952393902356,
+            307.5862177771882,
+            317.412708059886,
+            327.27554014414756,
+            337.1747676061564,
+            347.1098229583879,
+            357.07963708493753,
+            367.08273213566594,
+            377.1172945144544,
+            387.1812327664432,
+            397.27222388782155,
+            407.3877506724327,
+            417.5251320558904,
+            427.6815479425833,
+            437.8540596514437,
+            448.03962685672667,
+            458.2351217053264,
+            468.437340644798,
+            478.643014383797,
+            488.84881632014316,
+            499.05136970467487,
+            509.2472537567352,
+            519.4330089060156,
+            529.6051413029819,
+            539.7601267142397,
+            549.8944138985191,
+            560.0044275423137,
+            570.0865708207564,
+            580.1372276383863,
+            590.1527645955364,
+            600.1295327187528,
+            610.063868987638,
+            619.9520976855179,
+            629.7905315972037,
+            639.5754730736693,
+            649.303214980582,
+            658.9700415452048,
+            668.5722291141514,
+            678.1060468327518,
+            687.5677572553318,
+            696.9536168944622
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "coverage": 1.0,
+          "unit": "mm"
+        }
+      ],
+      "reference": {
+        "length_cm": 4.722880607910003
+      },
+      "reference_scope": "Explicit point or first actually observed Train row, not a measured zero baseline",
+      "identifiability": "Parameter/structure identifiability not established by prediction error. Conditional profiles, if provided separately, retain their own assumptions.",
+      "decomposition_scope": "Values of additive terms in THIS expression only",
+      "term_sum_check": {
+        "n_valid": 13,
+        "n_rows": 13,
+        "max_roundoff_difference": 0.0,
+        "meaning": "This syntactic sum reconstructs the same expression at these points; not unique/causal contributions"
+      }
+    },
+    {
+      "id": "user_linear@manual/train_point_fit",
+      "outcome": "ok",
+      "mathematics": [
+        "Top-level mathematical form: add",
+        "Operators in subexpressions: add\u00d71, mul\u00d71"
+      ],
+      "terms": [
+        {
+          "name": "term1",
+          "formula": "(a * length_cm_work)",
+          "formula_coordinates": "working",
+          "reference_value": 94.48762306648867,
+          "min": 70.9860996660719,
+          "max": 450.19186004380356,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        },
+        {
+          "name": "term2",
+          "formula": "b",
+          "formula_coordinates": "working",
+          "reference_value": 98.67021695224298,
+          "min": 98.67021695224298,
+          "max": 98.67021695224298,
+          "n_valid": 12,
+          "n_rows": 12,
+          "unit": "additive difference-scale mm; inferred native term unit m",
+          "meaning": "Representation-dependent numerical term, not physical importance. Unknown dimensional compatibility does not authorize a physical contribution."
+        }
+      ],
+      "paths": [
+        {
+          "id": "length_response",
+          "at": {
+            "length_cm": 15.0
+          },
+          "direction": {
+            "length_cm": 1.0
+          },
+          "steps": [
+            -12.0,
+            -11.5,
+            -11.0,
+            -10.5,
+            -10.0,
+            -9.5,
+            -9.0,
+            -8.5,
+            -8.0,
+            -7.5,
+            -7.0,
+            -6.5,
+            -6.0,
+            -5.5,
+            -5.0,
+            -4.5,
+            -4.0,
+            -3.5,
+            -3.0,
+            -2.5,
+            -2.0,
+            -1.5,
+            -1.0,
+            -0.5,
+            0.0,
+            0.5,
+            1.0,
+            1.5,
+            2.0,
+            2.5,
+            3.0,
+            3.5,
+            4.0,
+            4.5,
+            5.0,
+            5.5,
+            6.0,
+            6.5,
+            7.0,
+            7.5,
+            8.0,
+            8.5,
+            9.0,
+            9.5,
+            10.0,
+            10.5,
+            11.0,
+            11.5,
+            12.0,
+            12.5,
+            13.0,
+            13.5,
+            14.0,
+            14.5,
+            15.0
+          ],
+          "path_unit": "cm",
+          "scope": "Declared1D operating range3..30cm, fixed source-domain path; model response, not a causal/physical mechanism claim",
+          "input_units": {
+            "length_cm": "cm"
+          },
+          "step_widths": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "source_points": [
+            [
+              3.0
+            ],
+            [
+              3.5
+            ],
+            [
+              4.0
+            ],
+            [
+              4.5
+            ],
+            [
+              5.0
+            ],
+            [
+              5.5
+            ],
+            [
+              6.0
+            ],
+            [
+              6.5
+            ],
+            [
+              7.0
+            ],
+            [
+              7.5
+            ],
+            [
+              8.0
+            ],
+            [
+              8.5
+            ],
+            [
+              9.0
+            ],
+            [
+              9.5
+            ],
+            [
+              10.0
+            ],
+            [
+              10.5
+            ],
+            [
+              11.0
+            ],
+            [
+              11.5
+            ],
+            [
+              12.0
+            ],
+            [
+              12.5
+            ],
+            [
+              13.0
+            ],
+            [
+              13.5
+            ],
+            [
+              14.0
+            ],
+            [
+              14.5
+            ],
+            [
+              15.0
+            ],
+            [
+              15.5
+            ],
+            [
+              16.0
+            ],
+            [
+              16.5
+            ],
+            [
+              17.0
+            ],
+            [
+              17.5
+            ],
+            [
+              18.0
+            ],
+            [
+              18.5
+            ],
+            [
+              19.0
+            ],
+            [
+              19.5
+            ],
+            [
+              20.0
+            ],
+            [
+              20.5
+            ],
+            [
+              21.0
+            ],
+            [
+              21.5
+            ],
+            [
+              22.0
+            ],
+            [
+              22.5
+            ],
+            [
+              23.0
+            ],
+            [
+              23.5
+            ],
+            [
+              24.0
+            ],
+            [
+              24.5
+            ],
+            [
+              25.0
+            ],
+            [
+              25.5
+            ],
+            [
+              26.0
+            ],
+            [
+              26.5
+            ],
+            [
+              27.0
+            ],
+            [
+              27.5
+            ],
+            [
+              28.0
+            ],
+            [
+              28.5
+            ],
+            [
+              29.0
+            ],
+            [
+              29.5
+            ],
+            [
+              30.0
+            ]
+          ],
+          "source_columns": [
+            "length_cm"
+          ],
+          "reference_geometry": {
+            "data_role": "train",
+            "coordinates": "public source inputs",
+            "n_reference_rows": 48,
+            "ranges": [
+              {
+                "column": "length_cm",
+                "min": 3.021743367103808,
+                "max": 29.551265144201043,
+                "constant": false
+              }
+            ],
+            "outside_marginal_range": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "constant_feature_changed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "method": "Euclidean nearest Train input distance after dividing each varying column by its Train range",
+            "scope": "Descriptive geometry, not a support, accuracy, safety or causal guarantee. Inside every marginal range can still leave the joint observed design. Distance depends on coordinates, feature count and sampling density; no OOD threshold is fitted. Constant columns are omitted from distances and changes are flagged separately. Identical input rows are counted once for reference neighbor spacing, not as independent observations.",
+            "n_distinct_designs": 48,
+            "status": "computed",
+            "nearest_distance": [
+              0.0008195913701911882,
+              0.011042878208257223,
+              0.0014089946682316057,
+              0.006039610471823095,
+              0.01044569873586007,
+              0.0017947375857387537,
+              0.00244776511455011,
+              0.00017510113451557618,
+              0.014788728548975533,
+              0.004058199948305058,
+              0.013945040212608423,
+              0.004901888284672168,
+              0.02374881678195276,
+              0.028314301369520345,
+              0.009467372872239754,
+              0.008735871359813074,
+              0.0028209836933092425,
+              0.011191911032821467,
+              0.007655017464459124,
+              0.0005599343675661839,
+              0.010703655792119016,
+              0.013874455629974969,
+              0.004972472867305622,
+              0.023819401364586212,
+              0.020674667196988794,
+              0.0018277386997082035,
+              0.017019189797572387,
+              0.0004418669218264615,
+              0.019288795419106997,
+              0.0018362248873577958,
+              0.00873804239875009,
+              0.004071980429427691,
+              0.002930907422944773,
+              0.015916021074335762,
+              0.03476294957161641,
+              0.01810057966890266,
+              0.0007463488283779851,
+              0.01959327732565852,
+              0.00280327704236083,
+              0.00801372684575663,
+              0.010833201651523905,
+              0.0021544317308498373,
+              0.015306310395310274,
+              0.00016554149689318454,
+              0.01901246999417372,
+              0.0019605289854836006,
+              0.016886399511796935,
+              0.033079517616416254,
+              0.014232589119135719,
+              0.0032789397418100386,
+              0.0009024553237287902,
+              0.0015941756716492117,
+              0.006102366198739273,
+              0.0019323810143196951,
+              0.01691454748296084
+            ],
+            "reference_neighbor_spacing": {
+              "median": 0.007302212898495863,
+              "p95": 0.03878051189037761
+            },
+            "n_outside_marginal_range": 2,
+            "n_constant_feature_changed": 0,
+            "max_nearest_distance": 0.03476294957161641
+          },
+          "prediction": [
+            158.68928004791283,
+            168.69245723052444,
+            178.6956344131361,
+            188.69881159574774,
+            198.70198877835938,
+            208.70516596097102,
+            218.70834314358268,
+            228.7115203261943,
+            238.71469750880593,
+            248.71787469141756,
+            258.72105187402923,
+            268.7242290566408,
+            278.7274062392525,
+            288.73058342186414,
+            298.7337606044758,
+            308.7369377870874,
+            318.74011496969905,
+            328.7432921523107,
+            338.7464693349224,
+            348.74964651753396,
+            358.7528237001456,
+            368.7560008827573,
+            378.75917806536887,
+            388.7623552479805,
+            398.76553243059215,
+            408.76870961320384,
+            418.7718867958154,
+            428.7750639784271,
+            438.77824116103875,
+            448.78141834365044,
+            458.78459552626197,
+            468.78777270887366,
+            478.7909498914853,
+            488.794127074097,
+            498.79730425670857,
+            508.8004814393203,
+            518.8036586219317,
+            528.8068358045434,
+            538.8100129871551,
+            548.8131901697668,
+            558.8163673523785,
+            568.8195445349902,
+            578.8227217176017,
+            588.8258989002132,
+            598.8290760828249,
+            608.8322532654366,
+            618.8354304480482,
+            628.8386076306599,
+            638.8417848132716,
+            648.8449619958833,
+            658.8481391784948,
+            668.8513163611065,
+            678.854493543718,
+            688.8576707263297,
+            698.8608479089413
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "coverage": 1.0,
+          "unit": "mm"
+        }
+      ],
+      "reference": {
+        "length_cm": 4.722880607910003
+      },
+      "reference_scope": "Explicit point or first actually observed Train row, not a measured zero baseline",
+      "identifiability": "Parameter/structure identifiability not established by prediction error. Conditional profiles, if provided separately, retain their own assumptions.",
+      "decomposition_scope": "Values of additive terms in THIS expression only",
+      "term_sum_check": {
+        "n_valid": 13,
+        "n_rows": 13,
+        "max_roundoff_difference": 0.0,
+        "meaning": "This syntactic sum reconstructs the same expression at these points; not unique/causal contributions"
+      }
+    }
+  ],
+  "data_role": "Train reference / Selection term distribution / explicitly requested feasible paths; no Final",
+  "options": {
+    "paths": [
+      {
+        "id": "length_response",
+        "at": {
+          "length_cm": 15.0
+        },
+        "direction": {
+          "length_cm": 1.0
+        },
+        "steps": [
+          -12.0,
+          -11.5,
+          -11.0,
+          -10.5,
+          -10.0,
+          -9.5,
+          -9.0,
+          -8.5,
+          -8.0,
+          -7.5,
+          -7.0,
+          -6.5,
+          -6.0,
+          -5.5,
+          -5.0,
+          -4.5,
+          -4.0,
+          -3.5,
+          -3.0,
+          -2.5,
+          -2.0,
+          -1.5,
+          -1.0,
+          -0.5,
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          4.5,
+          5.0,
+          5.5,
+          6.0,
+          6.5,
+          7.0,
+          7.5,
+          8.0,
+          8.5,
+          9.0,
+          9.5,
+          10.0,
+          10.5,
+          11.0,
+          11.5,
+          12.0,
+          12.5,
+          13.0,
+          13.5,
+          14.0,
+          14.5,
+          15.0
+        ],
+        "path_unit": "cm",
+        "scope": "Declared1D operating range3..30cm, fixed source-domain path; model response, not a causal/physical mechanism claim"
+      }
+    ]
+  },
+  "meaning": "Mathematical/model-property evidence only. Representation-dependent parts, no inferred mechanism or causal attribution",
+  "axis": "interpretation",
+  "backend_source_sha256": "90ae73fec4391a10b59432e01203b72ab37b4dee486a6488d8425ee2c9e98d48",
+  "python": "3.11.15",
+  "schema_version": 1,
+  "method": "interpretation",
+  "study_sha256": "14e8ecd94233a6dd54341f9548a39ba1e06026f9c35468a0cefc12db57bdfb21",
+  "runtime_image": "sha256:bdc532d7fcb7021e1a57810de876bfa8b2ad5ef7cd29762334fda5d14689acd9",
+  "worker_exit_code": 0,
+  "wall_seconds": 2.6791633649845608
+}

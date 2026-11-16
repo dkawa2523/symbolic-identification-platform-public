@@ -1,0 +1,13 @@
+series,point_index,x,y,valid,plotted,plot_reason,candidate_id,method,eligible
+user_linear@manual/train_point_fit,0,9.389784260096866,2.060678657166526,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,1,22.50244356494878,-0.9444222311603134,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,2,10.595111057366736,5.386708148322095,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,3,5.516384202885436,6.011660544005287,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,4,7.428710366292647,-1.972579202564273,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,5,12.963291853737324,-3.998666704457865,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,6,3.548177662466374,3.552492350301917,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,7,14.873261039879653,1.8974101198632742,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,8,15.091870575049509,7.835151318189959,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,9,14.76100356211521,2.381995143934834,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,10,9.927156124384476,1.028919695005126,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True
+user_linear@manual/train_point_fit,11,19.81946787492872,8.32561342969057,True,True,,user_linear@manual/train_point_fit,Least-squares fit,True

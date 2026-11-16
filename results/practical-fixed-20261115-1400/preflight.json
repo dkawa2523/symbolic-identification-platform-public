@@ -1,0 +1,108 @@
+{
+  "checks": [
+    {
+      "arm": "yacht",
+      "method": "pysr",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "yacht",
+      "method": "parfam",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "yacht",
+      "method": "torchsisso",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "yacht",
+      "method": "physo",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "yacht",
+      "method": "e2e",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "yacht",
+      "method": "baselines",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "pysr",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "parfam",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "torchsisso",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "physo",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "e2e",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "baselines",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "pysr",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "parfam",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "torchsisso",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "physo",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "e2e",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    }
+  ],
+  "final_analyzed": false,
+  "scope": "Existing review_inputs: common capability, effective subset, adapter and asset hash validation. No native search or Final metrics."
+}

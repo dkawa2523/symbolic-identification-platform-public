@@ -1,0 +1,2 @@
+engine,seed,status,native_execution_status,reason,wall_seconds,exported_candidates,summary_path
+torchsisso,42,ok,completed,,16.727101085998584,3,/work/results/practical-fixed-20261115-1400/yacht/torchsisso/calculation/discover/torchsisso/42/engine_summary.json

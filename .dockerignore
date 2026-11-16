@@ -1,0 +1,12 @@
+**
+!containers/
+!containers/**
+!pkgs/
+!pkgs/symbolic/
+!pkgs/symbolic/pyproject.toml
+!pkgs/symbolic/README.md
+!pkgs/symbolic/src/
+!pkgs/symbolic/src/ml_platform_symbolic/
+!pkgs/symbolic/src/ml_platform_symbolic/**
+**/__pycache__
+**/*.pyc

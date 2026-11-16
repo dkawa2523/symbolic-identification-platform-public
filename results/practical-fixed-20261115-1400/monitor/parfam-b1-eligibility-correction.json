@@ -1,0 +1,181 @@
+{
+  "checked_at": "2026-11-15T19:04:25.509513+00:00",
+  "correction": "Earlier summary generalized a truncated stdout; actual full original rows below. No frozen results changed.",
+  "rows": [
+    {
+      "id": "parfam/17/0@native",
+      "eligible": false,
+      "reason": "template.slot.h.units:unknown",
+      "responses": [
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "n_points": 17,
+          "n_valid": 17,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "max_violation": 0.0
+        },
+        {
+          "name": "increasing",
+          "status": "pass",
+          "n_points": 17,
+          "n_valid": 17,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "max_violation": 0.0
+        }
+      ]
+    },
+    {
+      "id": "parfam/17/1@native",
+      "eligible": false,
+      "reason": "template.slot.h.units:unknown",
+      "responses": [
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "n_points": 17,
+          "n_valid": 17,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "max_violation": 0.0
+        },
+        {
+          "name": "increasing",
+          "status": "pass",
+          "n_points": 17,
+          "n_valid": 17,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "max_violation": 0.0
+        }
+      ]
+    },
+    {
+      "id": "parfam/17/2@native",
+      "eligible": false,
+      "reason": "template.slot.h.units:unknown",
+      "responses": [
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "n_points": 17,
+          "n_valid": 17,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "max_violation": 0.0
+        },
+        {
+          "name": "increasing",
+          "status": "pass",
+          "n_points": 17,
+          "n_valid": 17,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "max_violation": 0.0
+        }
+      ]
+    },
+    {
+      "id": "parfam/17/3@native",
+      "eligible": false,
+      "reason": "template.slot.h.units:unknown; increasing:fail",
+      "responses": [
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "n_points": 17,
+          "n_valid": 17,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "max_violation": 0.0
+        },
+        {
+          "name": "increasing",
+          "status": "fail",
+          "n_points": 17,
+          "n_valid": 17,
+          "n_violating": 1,
+          "n_invalid": 0,
+          "max_violation": 5.268295807673499e-12
+        }
+      ]
+    },
+    {
+      "id": "parfam/17/4@native",
+      "eligible": false,
+      "reason": "template.slot.h.units:unknown",
+      "responses": [
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "n_points": 17,
+          "n_valid": 17,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "max_violation": 0.0
+        },
+        {
+          "name": "increasing",
+          "status": "pass",
+          "n_points": 17,
+          "n_valid": 17,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "max_violation": 0.0
+        }
+      ]
+    },
+    {
+      "id": "parfam/17/5@native",
+      "eligible": false,
+      "reason": "template.slot.h.units:unknown",
+      "responses": [
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "n_points": 17,
+          "n_valid": 17,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "max_violation": 0.0
+        },
+        {
+          "name": "increasing",
+          "status": "pass",
+          "n_points": 17,
+          "n_valid": 17,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "max_violation": 0.0
+        }
+      ]
+    },
+    {
+      "id": "parfam/17/6@native",
+      "eligible": false,
+      "reason": "template.slot.h.units:unknown",
+      "responses": [
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "n_points": 17,
+          "n_valid": 17,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "max_violation": 0.0
+        },
+        {
+          "name": "increasing",
+          "status": "pass",
+          "n_points": 17,
+          "n_valid": 17,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "max_violation": 0.0
+        }
+      ]
+    }
+  ]
+}

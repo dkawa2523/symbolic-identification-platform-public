@@ -1,0 +1,7 @@
+Frozen one-seed practical campaign, 15 native attempts plus four reference fits. All attempts preceded global representative freeze; existing common scorer then accessed Final once per frozen representative. No refit/reselection. 13 native ok, 2 PhySO partial.
+Yacht published Final was previously exposed. Synthetic samples are newly generated from a disclosed designed law, not evidence of an unseen structure or unknown pretraining overlap. B1 combines known outer and finite hard responses; no separate causal effects.
+B1 ParFam has no eligible representative: all seven slot units unknown; candidate3 additionally fails one declared monotonic check. This metadata gap is investigated as a separate post-hoc version, never rescued here.
+B1 E2E passes all 17 declared hard centers, but the score-only dense1001 audit finds 7 monotonic violations (max violation111.50203898126014). This audit includes some declared centers, is not fully independent and is not a domain guarantee. No representative was changed after this finding.
+PhySO B0 direct Docker oom event; B1 worker-9 cause not established from retained Docker history. Saved partial hypotheses are distinguishable from completed search.
+Prediction support criteria were not predeclared beyond finite coverage, so common audit prediction_support.established remains null. No proof of convergence, structural/coefficient identification or method-wide ranking.
+Separate PhySO memory derivative and ParFam unit-convention patches are not included in this frozen campaign.

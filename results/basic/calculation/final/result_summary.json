@@ -1,0 +1,586 @@
+{
+  "selected_id": "user_linear@manual/train_point_fit",
+  "origin": {
+    "derived": "/work/results/basic/calculation/fits/fit_0.json",
+    "fit": {
+      "data_sha256": "e77a2cf4130085ec3e79c992cd4a50d160f92f3dc3bc88865243ad6be1eb487b",
+      "equation": {
+        "ast": {
+          "args": [
+            {
+              "args": [
+                {
+                  "param": "a"
+                },
+                {
+                  "var": "x0"
+                }
+              ],
+              "op": "mul"
+            },
+            {
+              "param": "b"
+            }
+          ],
+          "op": "add"
+        },
+        "parameters": {
+          "a": {
+            "bounds": [
+              0,
+              4
+            ],
+            "origin": "user_declared",
+            "trainable": true,
+            "unit": "1",
+            "value": 2.000635436522328
+          },
+          "b": {
+            "bounds": [
+              -1,
+              1
+            ],
+            "origin": "user_declared",
+            "trainable": true,
+            "unit": "m",
+            "value": 0.09867021695224298
+          }
+        },
+        "schema_version": 1
+      },
+      "fit_role": "train",
+      "input_geometry": {
+        "domain": {
+          "bounds": [
+            [
+              0.03,
+              0.3
+            ]
+          ],
+          "columns": [
+            "length_cm"
+          ],
+          "coordinate_roles": {
+            "length_cm": null
+          },
+          "kind": "box",
+          "space_id": "source_inputs",
+          "units": {
+            "length_cm": "m"
+          }
+        },
+        "map": null,
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "column": "length_cm",
+            "coordinate_role": null,
+            "domain": [
+              0.03,
+              0.3
+            ],
+            "id": "x0",
+            "unit": "m"
+          }
+        ]
+      },
+      "kind": "derived_equation",
+      "meaning": "named estimator variant, not native search, posterior update, or source mutation",
+      "method": "least_squares",
+      "observation_model": {
+        "estimation_target": "best fixed-observed-X squared-error approximation; not latent physical coefficients with input error",
+        "family": "least_squares"
+      },
+      "options": {},
+      "parent": {
+        "equation_sha256": "cde87ac500e1f2925a6f43b26069f3d20569b0dd390b9e05ef266c228df23e0d",
+        "id": "user_linear@manual",
+        "study_sha256": "5587191292eb6401740c15cda5b964dd0280ee26f24f54416e5b1bf3ddd94797"
+      },
+      "split_sha256": "0fc1be9c5a9ab6bbd5b9311177e1cd487b72c92cab37dd309a398beae4b1eb06",
+      "target": {
+        "column": "response_mm",
+        "coordinate_role": null,
+        "domain": [
+          -1.0,
+          2.0
+        ],
+        "unit": "m"
+      },
+      "variables": [
+        {
+          "column": "length_cm",
+          "coordinate_role": null,
+          "domain": [
+            0.03,
+            0.3
+          ],
+          "id": "x0",
+          "unit": "m"
+        }
+      ],
+      "variant": "train_point_fit"
+    },
+    "parent": {
+      "equation_sha256": "cde87ac500e1f2925a6f43b26069f3d20569b0dd390b9e05ef266c228df23e0d",
+      "id": "user_linear@manual",
+      "study_sha256": "5587191292eb6401740c15cda5b964dd0280ee26f24f54416e5b1bf3ddd94797"
+    }
+  },
+  "output_kind": "explicit",
+  "decision": {
+    "schema_version": 1,
+    "status": "adopt",
+    "calibration_plan": {
+      "alpha": 0.1,
+      "exchangeability": "exchangeable_groups",
+      "group_column": "group",
+      "observation_model": "Independent exchangeable synthetic three-observation groups; iid Gaussian noise within this generator",
+      "max_width": 40.0,
+      "unit": "mm"
+    },
+    "purpose": "local_prediction",
+    "parameter_target": "conditional_model",
+    "reason": "Predeclared 0.02m local tolerance and40mm full observation interval; explicit informed linear family, no mechanism or extrapolation claim",
+    "missing_support": [],
+    "selected_id": "user_linear@manual/train_point_fit",
+    "retain": [],
+    "comparison_sha256": "173a4ae06be6546e8f96c779e5c98c6928d07d607f58bbff7b83fc844407a4bf",
+    "comparison_path": "/work/results/basic/calculation/comparison/comparison.json",
+    "study_sha256": "14e8ecd94233a6dd54341f9548a39ba1e06026f9c35468a0cefc12db57bdfb21",
+    "data_role": "selection",
+    "mode": "development",
+    "final_exposure_at_choice": {
+      "declared_history": "known_exposed",
+      "status": "known prior Final exposure on these data",
+      "same_data_exposed": true,
+      "evidence": [
+        {
+          "source": "explicit known-exposed history declaration",
+          "data_sha256": "e77a2cf4130085ec3e79c992cd4a50d160f92f3dc3bc88865243ad6be1eb487b",
+          "split_sha256": "0fc1be9c5a9ab6bbd5b9311177e1cd487b72c92cab37dd309a398beae4b1eb06"
+        }
+      ]
+    },
+    "declared_final_history": "known_exposed",
+    "subject": {
+      "relation_ref": "user_linear@manual/train_point_fit",
+      "relation_state_sha256": "f00c7d89248c1f415268c6e71128e38cbfaf83f3a2819da1ebdbd4f1a6a543ea",
+      "view": "value",
+      "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "output_kind": "explicit",
+    "applicability_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "length_cm",
+          "unit": "m",
+          "domain": [
+            0.03,
+            0.3
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "response_mm",
+        "unit": "m",
+        "domain": [
+          -1.0,
+          2.0
+        ]
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "length_cm",
+            "unit": "m",
+            "domain": [
+              0.03,
+              0.3
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "length_cm"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "length_cm": "m"
+          },
+          "coordinate_roles": {
+            "length_cm": null
+          },
+          "bounds": [
+            [
+              0.03,
+              0.3
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "criteria": {
+      "engineering_tolerance": 0.02,
+      "purpose": "local_prediction",
+      "required_evidence": [],
+      "quantity_tolerances": {}
+    },
+    "equation": {
+      "schema_version": 1,
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "param": "a"
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "param": "b"
+          }
+        ]
+      },
+      "parameters": {
+        "a": {
+          "value": 2.000635436522328,
+          "trainable": true,
+          "bounds": [
+            0,
+            4
+          ],
+          "unit": "1",
+          "origin": "user_declared"
+        },
+        "b": {
+          "value": 0.09867021695224298,
+          "trainable": true,
+          "bounds": [
+            -1,
+            1
+          ],
+          "unit": "m",
+          "origin": "user_declared"
+        }
+      }
+    },
+    "frozen_choice_sha256": "5827e2eb15482a58b4157d7f2b14e333b79c8359dadf9ce24fbfde6c9ff04894",
+    "interval_sha256": "69c3130a72a989c6a60063c00b7b249669a3a73c4b7dac9ff8afd7153fce35ca",
+    "interval_path": "/work/results/basic/calculation/interval",
+    "calibrated_full_width": 18.147579705655616,
+    "use_scope": "Use assessment applies the frozen prediction-error and interval-width criteria only. Split-conformal coverage is marginal over calibration and future sampling under exchangeability. Conditioning on acceptance by the observed calibration width does not preserve nominal coverage; adoption is not a coverage guarantee for accepted deployments."
+  },
+  "provenance": {
+    "config": {
+      "task": "symbolic_stage",
+      "domain": null,
+      "input_map": null,
+      "observation_model": null,
+      "run": {
+        "stage": "prepare",
+        "engine": null,
+        "seed": 42
+      },
+      "data": {
+        "local_path": "/work/results/basic/calculation/table.csv",
+        "target_column": "response_mm",
+        "feature_columns": [
+          "length_cm"
+        ],
+        "id_columns": [
+          "sample_id"
+        ],
+        "units": {
+          "length_cm": "m",
+          "response_mm": "m"
+        },
+        "source_units": {
+          "length_cm": "cm",
+          "response_mm": "mm"
+        },
+        "coordinate_roles": {
+          "length_cm": null,
+          "response_mm": null
+        },
+        "domain": {
+          "length_cm": [
+            0.03,
+            0.3
+          ],
+          "response_mm": [
+            -1.0,
+            2.0
+          ]
+        }
+      },
+      "split": {
+        "method": "fixed",
+        "file": "/work/results/basic/calculation/split.csv",
+        "group_column": "group",
+        "seed": 42,
+        "valid_size": 0.2,
+        "selection_size": 0.2
+      },
+      "search": {
+        "engines": [
+          "mean",
+          "linear",
+          "dictionary"
+        ],
+        "seeds": [
+          7
+        ],
+        "max_wall_seconds": 30,
+        "max_export_candidates": 100,
+        "candidate_pool_policy": "all",
+        "allow_partial_engines": false,
+        "engine_options": {},
+        "runtimes": {}
+      },
+      "evaluation": {
+        "mode": "holdout",
+        "coefficient_fit": "none",
+        "selection_policy": "balanced",
+        "relative_tolerance": 0.05,
+        "absolute_tolerance": 0.0,
+        "acceptable_rmse": null
+      },
+      "model": {
+        "local_model_path": null
+      },
+      "model_assets": {},
+      "stage_inputs": {},
+      "_prepared_requirements_ref": "b9b418d33595faf49001dd5ffeb6ae300c658056abdfdee48ecdd8337601a202"
+    },
+    "observation_index": {
+      "file": "/work/results/basic/calculation/prepare/prepare/observation_index.npz",
+      "sha256": "4a63f368afb6411c4de34950a4ed3722d09376bbb6fddeaed719d8d32c0ef346"
+    },
+    "unit_coordinates": {
+      "policy": "canonical problem; explicit CSV conversion; all domains/constraints/tolerances in problem units",
+      "columns": {
+        "length_cm": {
+          "coordinate_role": null,
+          "source_unit": "cm",
+          "problem_unit": "m",
+          "scale": 0.01,
+          "offset": 0.0,
+          "dimension_status": "known"
+        },
+        "response_mm": {
+          "coordinate_role": null,
+          "source_unit": "mm",
+          "problem_unit": "m",
+          "scale": 0.001,
+          "offset": 0.0,
+          "dimension_status": "known"
+        }
+      }
+    },
+    "variables": [
+      {
+        "id": "x0",
+        "column": "length_cm",
+        "unit": "m",
+        "domain": [
+          0.03,
+          0.3
+        ],
+        "coordinate_role": null
+      }
+    ],
+    "input_geometry": {
+      "schema_version": 1,
+      "source_variables": [
+        {
+          "id": "x0",
+          "column": "length_cm",
+          "unit": "m",
+          "domain": [
+            0.03,
+            0.3
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "domain": {
+        "columns": [
+          "length_cm"
+        ],
+        "space_id": "source_inputs",
+        "kind": "box",
+        "units": {
+          "length_cm": "m"
+        },
+        "coordinate_roles": {
+          "length_cm": null
+        },
+        "bounds": [
+          [
+            0.03,
+            0.3
+          ]
+        ]
+      },
+      "map": null
+    },
+    "target": {
+      "coordinate_role": null,
+      "column": "response_mm",
+      "unit": "m",
+      "domain": [
+        -1.0,
+        2.0
+      ]
+    },
+    "partitions": {
+      "final": {
+        "n_rows": 12,
+        "n_groups": 4
+      },
+      "selection": {
+        "n_rows": 12,
+        "n_groups": 4
+      },
+      "train": {
+        "n_rows": 48,
+        "n_groups": 16
+      }
+    },
+    "partition_hashes": {
+      "final": "0b3da7e510a13f1edc0d87746b9a5ace8b925909eaca2cc7ade93e58884fb9d2",
+      "selection": "ef3968e17e27e8fa5ef14a61aa8391eda4adcdb8d743c77d8dfb584c94a01845",
+      "train": "bf172a4761810cf0a34530b7a210fdaf20c6962d2fe31d05dcb6e16d8e916ee9"
+    },
+    "data_sha256": "e77a2cf4130085ec3e79c992cd4a50d160f92f3dc3bc88865243ad6be1eb487b",
+    "versions": {
+      "python": "3.11.15",
+      "ml-platform-symbolic": "0.90.2",
+      "ml-platform-core": "0.1.0",
+      "numpy": "1.26.4",
+      "pandas": "2.2.3",
+      "scipy": "1.14.1"
+    },
+    "package_identity": {
+      "version": "0.90.2",
+      "mode": "source",
+      "installed_metadata_version": "0.1.0"
+    },
+    "code_revision": "7dd816ff6a47b121668d52b995b0104fc2dbdb7b",
+    "source_sha256": "6f348bdd1b58226cf7b959fa1e9fb94ced8e82ee13f92f559d4eb576329a6070",
+    "feature_ranges": [
+      [
+        0.03021743367103808,
+        0.29551265144201044
+      ]
+    ],
+    "split_sha256": "0fc1be9c5a9ab6bbd5b9311177e1cd487b72c92cab37dd309a398beae4b1eb06",
+    "problem_schema_version": 2,
+    "requirements": {
+      "allowed_operators": [
+        "add",
+        "sub",
+        "mul",
+        "div"
+      ],
+      "fixed_constants": {},
+      "max_nodes": 60,
+      "max_free_parameters": null,
+      "require_units": false,
+      "allowed_variables": null,
+      "equation_template": null,
+      "required_responses": {
+        "points": [],
+        "bounds": [
+          null,
+          null
+        ],
+        "checks": []
+      }
+    },
+    "requirements_sha256": "b9b418d33595faf49001dd5ffeb6ae300c658056abdfdee48ecdd8337601a202",
+    "evaluation_constraint_application": {
+      "kind": "postcheck only; no claim these additions were enforced in native search",
+      "discovery_constraints": {
+        "max_nodes": 60,
+        "max_free_parameters": null,
+        "require_units": false,
+        "allowed_variables": null,
+        "equation_template": null,
+        "probes": [],
+        "response_bounds": [
+          null,
+          null
+        ],
+        "response_checks": []
+      },
+      "discovery_requirements_ref": {
+        "requirements_sha256": "b9b418d33595faf49001dd5ffeb6ae300c658056abdfdee48ecdd8337601a202",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "additional": {},
+      "candidate_pool": "the immutable source pool, including its recorded export cap and truncation"
+    }
+  },
+  "final_metrics": {
+    "rmse": 0.006079225147911387,
+    "mae": 0.004889416514180121,
+    "r2": 0.9981511158361461,
+    "reason": null,
+    "coverage": 1.0
+  },
+  "prediction_support": {
+    "established": true,
+    "reason": "Frozen prediction error criterion met on these rows",
+    "criteria": {
+      "rmse_max": 0.02,
+      "minimum_valid_coverage": 1.0
+    },
+    "observed_rmse": 0.006079225147911387,
+    "valid_coverage": 1.0,
+    "scope": "This frozen target predictor and audit rows only; not coefficient/structure identification, future shift or interval coverage. No reselection."
+  },
+  "decision_scope": "The embedded frozen decision used Selection/calibration. Independent Final support is recorded separately; an adopt flag is not a universal deployment approval.",
+  "final_evidence_role": "post-selection audit; prior exposure not excluded",
+  "selected_native_check": {
+    "passed": null,
+    "kind": "named derived point fit; source native remains unchanged"
+  },
+  "frozen_prediction_sha256": "bdfe6e823c59d141f14ddd9a70bf9dd8c9510899845784740eb9d01d2df0b764",
+  "evaluation_constraint_application": {
+    "kind": "postcheck only; no claim these additions were enforced in native search",
+    "discovery_constraints": {
+      "max_nodes": 60,
+      "max_free_parameters": null,
+      "require_units": false,
+      "allowed_variables": null,
+      "equation_template": null,
+      "probes": [],
+      "response_bounds": [
+        null,
+        null
+      ],
+      "response_checks": []
+    },
+    "discovery_requirements_ref": {
+      "requirements_sha256": "b9b418d33595faf49001dd5ffeb6ae300c658056abdfdee48ecdd8337601a202",
+      "scope": "canonical common request; native settings/checks are derived evidence"
+    },
+    "additional": {},
+    "candidate_pool": "the immutable source pool, including its recorded export cap and truncation"
+  }
+}

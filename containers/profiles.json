@@ -1,0 +1,90 @@
+{
+  "core": {
+    "image": "symbolic-handoff:core",
+    "dockerfile": "containers/Dockerfile",
+    "target": "core",
+    "gpu": false,
+    "engines": [
+      "mean",
+      "linear",
+      "dictionary",
+      "known_form",
+      "template_enumeration"
+    ]
+  },
+  "classic": {
+    "image": "symbolic-handoff:classic",
+    "dockerfile": "containers/Dockerfile",
+    "target": "classic",
+    "gpu": false,
+    "engines": [
+      "pysr",
+      "physo",
+      "torchsisso",
+      "proged",
+      "parfam"
+    ]
+  },
+  "gpu": {
+    "image": "symbolic-handoff:gpu",
+    "dockerfile": "containers/Dockerfile",
+    "target": "gpu",
+    "gpu": true,
+    "engines": [
+      "pse"
+    ]
+  },
+  "flash": {
+    "image": "symbolic-handoff:flash",
+    "dockerfile": "containers/Dockerfile.flash",
+    "target": "flash",
+    "gpu": false,
+    "engines": [
+      "flash_ansr",
+      "flash_template"
+    ]
+  },
+  "rasr": {
+    "image": "symbolic-handoff:rasr",
+    "dockerfile": "containers/Dockerfile.rasr",
+    "target": "rasr",
+    "gpu": false,
+    "engines": [
+      "rasr",
+      "rasr_template"
+    ]
+  },
+  "posterior": {
+    "image": "symbolic-handoff:posterior",
+    "dockerfile": "containers/Dockerfile",
+    "target": "posterior",
+    "gpu": false,
+    "engines": [
+      "pysips"
+    ]
+  },
+  "equation-analysis": {
+    "image": "symbolic-handoff:equation-analysis",
+    "dockerfile": "containers/Dockerfile.equations",
+    "target": "equation-analysis",
+    "gpu": false,
+    "engines": []
+  },
+  "equation-evidence": {
+    "image": "symbolic-handoff:equation-evidence",
+    "dockerfile": "containers/Dockerfile.equations",
+    "target": "equation-evidence",
+    "gpu": false,
+    "engines": []
+  },
+  "e2e": {
+    "engines": [
+      "e2e",
+      "e2e_template"
+    ],
+    "dockerfile": "containers/Dockerfile",
+    "gpu": false,
+    "target": "e2e",
+    "image": "symbolic-handoff:e2e"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "partition": "Selection",
+  "final_accessed": false,
+  "adoption_performed": false,
+  "rule": "Minimum eligible finite Selection RMSE per method/seed; exact ties by ID",
+  "representative_ids": [
+    "physo/17/1@native"
+  ],
+  "output": "/work/results/physo-runtime-horizon-normal-20261116-011644/known-T5",
+  "all_candidates": "/work/results/physo-runtime-horizon-normal-20261116-011644/known-T5/calculation/study",
+  "discovery_complete": true
+}

@@ -1,0 +1,43 @@
+{
+  "changes": "Repurpose shell_weight target; omit other weights and rings; add shape ratios, geometry groups, fixed split and quality flags. No rows removed.",
+  "citation": "Nash, W., Sellers, T., Talbot, S., Cawthorn, A., & Ford, W. (1994). Abalone. UCI Machine Learning Repository.",
+  "coordinate_units": "Stored UCI coordinates only; source describes scaling by 200. Do not interpret fitted constants as physical density or unscaled SI coefficients.",
+  "counts": {
+    "final_extrapolation": 488,
+    "final_interpolation": 371,
+    "selection": 341,
+    "train": 2977
+  },
+  "dataset": "UCI Abalone repurposed shell-weight prediction",
+  "doi": "10.24432/C55C7W",
+  "features": [
+    "length",
+    "diameter",
+    "height",
+    "diameter_ratio",
+    "height_ratio"
+  ],
+  "flagged_rows": 3,
+  "hypothesis": "shell_weight = length * diameter * height * h(diameter_ratio,height_ratio)",
+  "hypothesis_status": "Declared geometric allometry hypothesis, not known true biology; shell mass is not solid-body volume.",
+  "landing_url": "https://archive.ics.uci.edu/dataset/1/abalone",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "not_model_inputs": [
+    "sex",
+    "sample_id",
+    "group_id",
+    "rings",
+    "whole_weight",
+    "shucked_weight",
+    "viscera_weight"
+  ],
+  "performance_evaluated": false,
+  "pretraining_overlap": "unknown",
+  "retrieved_date": "2026-11-08",
+  "rows": 4177,
+  "source_sha256": "755a6a67c5b266961a3f149ea13be2cfb6e6c727e48cee3c83bc0b4526210ee4",
+  "source_url": "https://archive.ics.uci.edu/static/public/1/abalone.zip",
+  "split_policy": "length>0.65 is final_extrapolation. Otherwise SHA256 geometry-group modulo 10: 0 selection, 1 final_interpolation, 2..9 train.",
+  "target": "shell_weight"
+}

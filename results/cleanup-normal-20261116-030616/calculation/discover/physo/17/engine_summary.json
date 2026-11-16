@@ -1,0 +1,467 @@
+{
+  "native_candidates": 3,
+  "input_rows": 48,
+  "native_input_variables": [
+    "x0"
+  ],
+  "native_input_columns": [
+    "x"
+  ],
+  "source_complexity_budget": {
+    "max_nodes": 12,
+    "variable_costs": {
+      "x0": 1
+    },
+    "output_cost": 2,
+    "prior_instances": [
+      {
+        "prior_source_sha256": "024fb6df7341929dc27be33a3ba222d034c47a733716ade6edcea50aa047c885",
+        "token_costs": {
+          "mul": 1,
+          "add": 1,
+          "1.0": 1,
+          "a": 1,
+          "x0": 1
+        },
+        "calls": 0,
+        "masked_choices": 0
+      },
+      {
+        "prior_source_sha256": "024fb6df7341929dc27be33a3ba222d034c47a733716ade6edcea50aa047c885",
+        "token_costs": {
+          "mul": 1,
+          "add": 1,
+          "1.0": 1,
+          "a": 1,
+          "x0": 1
+        },
+        "calls": 5,
+        "masked_choices": 0
+      }
+    ],
+    "slot_prior_instances": [
+      {
+        "prior_source_sha256": "024fb6df7341929dc27be33a3ba222d034c47a733716ade6edcea50aa047c885",
+        "token_costs": {
+          "mul": 1,
+          "add": 1,
+          "1.0": 1,
+          "a": 1,
+          "x0": 1
+        },
+        "calls": 0,
+        "masked_choices": 0
+      },
+      {
+        "prior_source_sha256": "024fb6df7341929dc27be33a3ba222d034c47a733716ade6edcea50aa047c885",
+        "token_costs": {
+          "mul": 1,
+          "add": 1,
+          "1.0": 1,
+          "a": 1,
+          "x0": 1
+        },
+        "calls": 5,
+        "masked_choices": 0
+      }
+    ],
+    "token_multiplier": 1
+  },
+  "native_execution_status": "completed",
+  "termination_reason": "native_return",
+  "checkpoint_seconds": 0.021251733996905386,
+  "physo": "1.1.11",
+  "torch": "2.7.1+cpu",
+  "numpy": "1.26.4",
+  "native_import_seconds": 3.6676327119930647,
+  "native_search_fit_seconds": 1.497995941026602,
+  "native_export_seconds": 0.012818743009120226,
+  "timing_scope": {
+    "native_search_fit_seconds": "inclusive elapsed through the start of this export; contains earlier completed-iteration conversion/parity/snapshot work",
+    "native_export_seconds": "this export only, after the preceding elapsed interval",
+    "checkpoint_seconds": "overlapping subset: earlier completed logger hooks, including conversion/parity/atomic snapshot; never add to search elapsed"
+  },
+  "native_search_operators": [
+    "mul",
+    "add"
+  ],
+  "template_search": {
+    "scope": "single shared slot / fixed outer / variable-only calls",
+    "slot_output_unit": "m",
+    "observed_y_unit": "m^2",
+    "loss_target": "original observed y",
+    "strict_real": {
+      "strict_execute_calls": 184,
+      "nonfinite_fit_failures": 0
+    }
+  },
+  "response_search": null,
+  "fixed_constants": {},
+  "parameter_units": {
+    "a": "1"
+  },
+  "coefficient_catalog_scope": "explicit method-profile catalog",
+  "resolved_native_config": {
+    "learning_config": {
+      "batch_size": 48,
+      "max_time_step": 5,
+      "n_epochs": 1000000000,
+      "gamma_decay": 0.7,
+      "entropy_weight": 0.005,
+      "risk_factor": 0.05,
+      "rewards_computer": "physo.physym.reward.make_RewardsComputer.<locals>.rewards_computer",
+      "get_optimizer": "physo.config.config0.<lambda>",
+      "observe_units": true
+    },
+    "reward_config": {
+      "reward_function": "physo.physym.reward.SquashedNRMSE",
+      "zero_out_unphysical": true,
+      "zero_out_duplicates": false,
+      "keep_lowest_complexity_duplicate": false
+    },
+    "free_const_opti_args": {
+      "loss": "MSE",
+      "method": "LBFGS",
+      "method_args": {
+        "n_steps": 15,
+        "tol": 1e-08,
+        "lbfgs_func_args": {
+          "max_iter": 4,
+          "line_search_fn": "strong_wolfe"
+        }
+      }
+    },
+    "priors_config": [
+      [
+        "SoftLengthPrior",
+        {
+          "length_loc": 8,
+          "scale": 5
+        }
+      ],
+      [
+        "NoUselessInversePrior",
+        null
+      ],
+      [
+        "PhysicalUnitsPrior",
+        {
+          "prob_eps": 1.1920928955078125e-07
+        }
+      ],
+      [
+        "HardLengthPrior",
+        {
+          "min_length": 1,
+          "max_length": 5
+        }
+      ]
+    ],
+    "cell_config": {
+      "hidden_size": 128,
+      "n_layers": 1,
+      "is_lobotomized": false
+    }
+  },
+  "physo_profile": {
+    "profile": "lightweight",
+    "preset": "config0",
+    "epochs": 1,
+    "max_n_evaluations": 48,
+    "physo_version": "1.1.11",
+    "preset_source_sha256": "6c5e8c7ad058a2f714ce613988926b611d5aabc3de63eb96f3c17feb7a8e6676",
+    "preset_learning_config": {
+      "batch_size": 1000,
+      "max_time_step": 35,
+      "n_epochs": 1000000000,
+      "gamma_decay": 0.7,
+      "entropy_weight": 0.005,
+      "risk_factor": 0.05,
+      "rewards_computer": "physo.physym.reward.make_RewardsComputer.<locals>.rewards_computer",
+      "get_optimizer": "physo.config.config0.<lambda>",
+      "observe_units": true
+    },
+    "explicit_overrides": {
+      "batch_size": 48,
+      "epochs": 1,
+      "max_n_evaluations": 48,
+      "max_time_step": 5
+    },
+    "effective_epochs": 1,
+    "effective_batch_size": 48,
+    "horizon": {
+      "preset_max_time_step": 35,
+      "source_max_nodes": 12,
+      "requested_max_time_step": 5,
+      "effective_max_time_step": 5,
+      "origin": "explicit_physo_option",
+      "token_capacity_prior": "native_HardLengthPrior",
+      "native_min_length": 1,
+      "effective_minimum_ast_length": 1,
+      "scope": "Native token horizon; source AST and slot caps still enforced independently; no clipping"
+    },
+    "preset_hard_length_priors": [
+      [
+        "HardLengthPrior",
+        {
+          "min_length": 4,
+          "max_length": 35
+        }
+      ]
+    ],
+    "hard_length_policy": "Existing adapter replaces preset HardLength with weighted source/slot priors; explicit horizon adds min1/maxT (T1: native min0, natural AST minimum1). Active priors are in resolved_native_config.",
+    "override_order": [
+      "pinned preset",
+      "legacy lightweight defaults only",
+      "explicit method options",
+      "common source AST budget and supported-operator prior adjustments",
+      "CPU single-thread/nonparallel resource policy"
+    ],
+    "resources": {
+      "device": "cpu",
+      "torch_threads": 1,
+      "parallel_mode": false
+    },
+    "unit_mode": "dimensioned input/target units",
+    "scope": "preset-derived configuration plus platform extensions; not a quality guarantee; no automatic unit-based preset switch"
+  },
+  "candidate_scope": "complexity_ladder",
+  "native_strict_pareto_candidates": 2,
+  "native_work": {
+    "epochs_completed": 1,
+    "sampled": 48,
+    "physical": 48,
+    "positive_reward": 48,
+    "optimizer_steps": 1,
+    "scope": "actual logger rows/optimizer steps; reward counts can repeat expressions and do not prove convergence"
+  },
+  "rejected_exports": [],
+  "constraint_support": {
+    "operators": "enforced during search",
+    "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+    "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+    "variables": "disallowed columns excluded before native search; full-schema export/prediction checked",
+    "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+    "probes": "finite-point hard constrained coefficient fit before native reward/RNN update",
+    "response_bounds": "hard finite-point coefficient constraints before reward",
+    "response_checks": "finite-step coefficient constraints before reward; not analytic proof",
+    "fixed_constants": "enforced during search, immutable values/units; native SR rounded-name collisions rejected",
+    "power_indices": "native n2/n3/n4; rootn uses native signed cbrt only"
+  },
+  "assets": null,
+  "python": "3.11.15",
+  "python_executable": "/opt/venv/bin/python",
+  "device": "cpu",
+  "allowed_operators": [
+    "mul",
+    "add",
+    "pow_int"
+  ],
+  "native_operators": [
+    "mul",
+    "add",
+    "pow_int"
+  ],
+  "unavailable_search_operators": [],
+  "operator_policy": "unavailable_search_operators is the requested/export-capability difference, not decoder reachability; generation enforcement and context-dependent routes are specified by constraint_support and native metadata",
+  "status": "ok",
+  "native_artifacts": {
+    "native_programs": "/work/results/cleanup-normal-20261116-030616/calculation/discover/physo/17/physo_native.json"
+  },
+  "native_artifact_sha256": {
+    "native_programs": "a9631a0a02e025ecfbdc7049c3e8177484761f822de472825978483b66e4a130"
+  },
+  "portable_status": "candidates",
+  "fixed_constants_native_support": true,
+  "exported_candidates": 3,
+  "selection_candidates": 3,
+  "prelimit_constraint_eligible": null,
+  "portable_candidates": "/work/results/cleanup-normal-20261116-030616/calculation/discover/physo/17/candidates.jsonl",
+  "portable_candidates_sha256": "85b2646533ae4401f9fdc8c76124d8aab724ea47bec0dcce3f8b8a038208a5c5",
+  "candidate_pool": {
+    "policy": "all",
+    "emitted": 3,
+    "retained": 3,
+    "limit": null,
+    "discarded_from_comparison_ids": [],
+    "archive_scope": "all faithfully exported native candidates, not all internal search states",
+    "quality_scope": "Train/shared probes only when explicit bounded allocation is requested; compare owns final eligibility"
+  },
+  "truncation": "none; all faithfully emitted candidates reach common evaluation",
+  "engine": "physo",
+  "seed": 17,
+  "wall_seconds": 7.376634048006963,
+  "runtime_image_id": "sha256:777094d547ccb85be4f578dd001946a5e7757e6420a1e886f76171a2067107fc",
+  "prepared_sha256": "ff0aed3335a3b0409064e142a207430beb66a5cc604325b42dc3280fadd9698d",
+  "job_sha256": "7f0b14d711ee80a161e0e245760defc30698f6860bb08525044fc21f708fef80",
+  "requested_constraints": {
+    "max_nodes": 12,
+    "max_free_parameters": null,
+    "require_units": true,
+    "allowed_variables": null,
+    "equation_template": {
+      "coordinate_space": "working",
+      "ast": {
+        "op": "pow_int",
+        "args": [
+          {
+            "slot": "h",
+            "args": [
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "const": 2
+          }
+        ]
+      },
+      "parameters": {},
+      "components": {},
+      "knowledge": {
+        "kind": "hypothesis",
+        "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+      },
+      "slots": {
+        "h": {
+          "arguments": [
+            {
+              "name": "x0",
+              "unit": "m"
+            }
+          ],
+          "unit": "m",
+          "max_nodes": 7,
+          "allowed_operators": [
+            "mul",
+            "add"
+          ]
+        }
+      }
+    },
+    "unit_search": true,
+    "probes": [],
+    "response_bounds": [
+      null,
+      null
+    ],
+    "response_checks": [],
+    "response_enforcement": null,
+    "max_wall_seconds": 90,
+    "response_mode": "search"
+  },
+  "requirements_ref": {
+    "requirements_sha256": "96d7fb9bde11830e19b392ed01233ef8cb610c42674fab02196cf58f69c6da3f",
+    "scope": "canonical common request; native settings/checks are derived evidence"
+  },
+  "resolved_native_profile": {
+    "options": {
+      "epochs": 1,
+      "batch_size": 48,
+      "max_n_evaluations": 48,
+      "parameter_units": {
+        "a": "1"
+      },
+      "max_time_step": 5
+    },
+    "operators": [
+      "mul",
+      "add",
+      "pow_int"
+    ],
+    "device": "cpu",
+    "candidate_pool_policy": "all"
+  },
+  "response_mode": "search",
+  "capability_declaration": {
+    "unit_search": {
+      "defaults": {},
+      "choices": {},
+      "templates": true
+    },
+    "equation_template": true,
+    "template_scope": "one shared slot, fixed outer coefficients, variable-only calls, identity formal schema; no signed cbrt",
+    "supported_options": [
+      "batch_size",
+      "candidate_scope",
+      "constants_per_unit",
+      "entropy_weight",
+      "epochs",
+      "max_n_evaluations",
+      "max_time_step",
+      "parameter_units",
+      "profile",
+      "response_max_nfev",
+      "risk_factor",
+      "unit_basis_degree"
+    ],
+    "operators": [
+      "abs",
+      "acos",
+      "add",
+      "asin",
+      "atan",
+      "cos",
+      "cosh",
+      "div",
+      "exp",
+      "log",
+      "mul",
+      "neg",
+      "pow_int",
+      "rootn",
+      "sin",
+      "sinh",
+      "sqrt",
+      "sub",
+      "tan",
+      "tanh"
+    ],
+    "fixed_constants": true,
+    "constraints": {
+      "operators": "enforced during search",
+      "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+      "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+      "variables": "disallowed columns excluded before native search; full-schema export/prediction checked",
+      "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+      "probes": "finite-point hard constrained coefficient fit before native reward/RNN update",
+      "response_bounds": "hard finite-point coefficient constraints before reward",
+      "response_checks": "finite-step coefficient constraints before reward; not analytic proof",
+      "fixed_constants": "enforced during search, immutable values/units; native SR rounded-name collisions rejected",
+      "power_indices": "native n2/n3/n4; rootn uses native signed cbrt only"
+    },
+    "search_constraints": [
+      "probes",
+      "response_bounds",
+      "response_checks"
+    ],
+    "response_enforcement": {
+      "default": "hard",
+      "supported": [
+        "hard"
+      ],
+      "stage": "constrained coefficient fit before native reward and RNN update"
+    },
+    "requires_assets": false
+  },
+  "constraint_application": {
+    "operators": "enforced during search",
+    "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+    "equation_template": "post-filtered",
+    "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+    "unit_search": {
+      "requested": true,
+      "supported": true,
+      "all_input_target_basic_dimensions_dimensionless": false,
+      "warning": null,
+      "native_options": {},
+      "scope": "native basic dimensions (L/M/T/K) used during search; angle/cycle quantity kinds remain portable post-checks; not an identical hard guarantee across methods"
+    }
+  },
+  "response_enforcement": {
+    "effective": "not_requested"
+  },
+  "readiness_scope": "this profile/run only; execution, fidelity, common admissibility and scientific adequacy are distinct",
+  "candidates_sha256": "85b2646533ae4401f9fdc8c76124d8aab724ea47bec0dcce3f8b8a038208a5c5"
+}

@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-11-15T17:03:19.369495+00:00",
+  "read_only_container": "16368956064a",
+  "image": "sha256:43d979e1acb694cb6e42a0d08c57f737a31844599665daef971bf632eb73a5c0",
+  "nativefiles": {
+    "learn/learn.py": {
+      "sha256": "65bfac41ea384865c87388c157d7adc4fb86635d22b1d5967304e8f37054a4a8",
+      "size": 13363
+    },
+    "learn/rnn.py": {
+      "sha256": "17c3209ed2a212e92cc769bef87128d279c1cb53fcad5c333df6ddac06721bb8",
+      "size": 6314
+    },
+    "learn/monitoring.py": {
+      "sha256": "2199324d7d0e2d132a278d06cee45f42447462b7adf563006219b568715bf18b",
+      "size": 33819
+    },
+    "physym/token.py": {
+      "sha256": "aa6b47f10e980be69781cc2a6e24127b8cf80883649bcddeba85c7a87cf8fb00",
+      "size": 49634
+    },
+    "physym/vect_programs.py": {
+      "sha256": "79289acae247505d85560bcf09968f8f758467e94330ce0007d84b20b6b54697",
+      "size": 134770
+    },
+    "config/config2.py": {
+      "sha256": "4102a98305b5f0a36d36a3d0707d70b720a2f11709a726519223ee0b13a7f056",
+      "size": 3458
+    }
+  },
+  "scope": "No new training, imports of physo/Torch, settings changes, or Final access; hash reads only."
+}

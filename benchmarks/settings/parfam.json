@@ -1,0 +1,33 @@
+{
+  "search": {
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "pow_int",
+      "pow",
+      "sin",
+      "cos"
+    ],
+    "engine_options": {
+      "parfam": {
+        "family": "rational",
+        "functions": [
+          "sin",
+          "cos"
+        ],
+        "degree": 2,
+        "input_degree": 2,
+        "denominator_degree": 1,
+        "maxiter": 50,
+        "repetitions": 1,
+        "max_active_parameters": 12,
+        "seconds": 90
+      }
+    }
+  },
+  "constraints": {
+    "max_nodes": 100
+  }
+}

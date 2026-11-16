@@ -1,0 +1,9 @@
+7. linear | equation
+Candidate: linear/17/1@native
+Coordinates: public
+y [1] = ((coef['c0'] * x) + coef['c1'])
+
+c0 = 1.0556197374929093 [1]
+c1 = 0.6060914981960914 [1]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)

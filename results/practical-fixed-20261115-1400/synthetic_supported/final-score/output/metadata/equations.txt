@@ -1,0 +1,266 @@
+Fixed one-seed comparison; synthetic support combines known contribution and finite hard responses.
+
+Stored equations and coefficients; presentation only.
+All candidates are retained. Eligibility, display order and scientific adoption are distinct.
+Missing values remain missing. No metrics, responses, uncertainty or predictions were recomputed.
+
+pysr/17/5@native / prediction
+Method: pysr; eligible: True; stored AST
+Public: y [1] = ((0.75 * x) + (((x / (x + coef['__slot_h_c0'])) + x) / ((x / coef['__slot_h_c1']) - coef['__slot_h_c2'])))
+Working: ((0.75 * x_work) + (((x_work / (x_work + coef['__slot_h_c0'])) + x_work) / ((x_work / coef['__slot_h_c1']) - coef['__slot_h_c2'])))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "pysr/17/5@native", "relation_state_sha256": "181e42bde4ee94a32573f7a6334bd718c203d7d5a72446eb178ae5896104b42b", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  __slot_h_c0 = 0.7725579678102222; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=pysr_native_template_constant_node
+  __slot_h_c1 = 2.07395343412467; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=pysr_native_template_constant_node
+  __slot_h_c2 = -1.0801275723145394; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=pysr_native_template_constant_node
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((0.75 * x) + h(x))
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Declared fixed contribution 0.75*x plus one shared unknown h(x)'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [1]) = (((x0 / (x0 + c0)) + x0) / ((x0 / c1) - c2))
+  Unit: 1
+  c0 = 0.7725579678102222; role=free; unit=1; tied_to=None
+  c1 = 2.07395343412467; role=free; unit=1; tied_to=None
+  c2 = -1.0801275723145394; role=free; unit=1; tied_to=None
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+parfam/17/0@native / prediction
+Method: parfam; eligible: False; stored AST
+Public: y [1] = ((0.75 * x) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x)) / (coef['__slot_h_c2'] + (coef['__slot_h_c3'] * x))))
+Working: ((0.75 * x_work) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x_work)) / (coef['__slot_h_c2'] + (coef['__slot_h_c3'] * x_work))))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "parfam/17/0@native", "relation_state_sha256": "b7f6ca5b06cdc37fccd66a144aff8b5f5c72cc3781f41d6c56a14eb854c61099", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  __slot_h_c0 = -0.013936264965212355; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  __slot_h_c1 = -1.402230087865118; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  __slot_h_c2 = -0.7150789503926552; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+  __slot_h_c3 = -0.6990437001399401; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+Template readout: unavailable
+Reason: template.slot.h.units:unknown
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+parfam/17/1@native / prediction
+Method: parfam; eligible: False; stored AST
+Public: y [1] = ((0.75 * x) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x)) / (coef['__slot_h_c2'] + (coef['__slot_h_c3'] * x))))
+Working: ((0.75 * x_work) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x_work)) / (coef['__slot_h_c2'] + (coef['__slot_h_c3'] * x_work))))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "parfam/17/1@native", "relation_state_sha256": "b7f6ca5b06cdc37fccd66a144aff8b5f5c72cc3781f41d6c56a14eb854c61099", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  __slot_h_c0 = -0.013936264965212355; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  __slot_h_c1 = -1.402230087865118; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  __slot_h_c2 = -0.7150789503926552; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+  __slot_h_c3 = -0.6990437001399401; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+Template readout: unavailable
+Reason: template.slot.h.units:unknown
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+parfam/17/2@native / prediction
+Method: parfam; eligible: False; stored AST
+Public: y [1] = ((0.75 * x) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x)) + ((coef['__slot_h_c2'] * x) * x)))
+Working: ((0.75 * x_work) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x_work)) + ((coef['__slot_h_c2'] * x_work) * x_work)))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "parfam/17/2@native", "relation_state_sha256": "8e4cf5bd214bbca9cc095b996bf7e6a7c8ad5700f241e3474191ceb0c443b5b4", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  __slot_h_c0 = 0.3007093397142817; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  __slot_h_c1 = 0.7424870493664758; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  __slot_h_c2 = -0.11001743160797772; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+Template readout: unavailable
+Reason: template.slot.h.units:unknown
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+parfam/17/3@native / prediction
+Method: parfam; eligible: False; stored AST
+Public: y [1] = ((0.75 * x) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x)) / (coef['__slot_h_c2'] + (coef['__slot_h_c3'] * x))))
+Working: ((0.75 * x_work) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x_work)) / (coef['__slot_h_c2'] + (coef['__slot_h_c3'] * x_work))))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "parfam/17/3@native", "relation_state_sha256": "cab53d7329d18a7d04faa3ce52c8c52529144bee018aea2ac1673475b7e836f2", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  __slot_h_c0 = 0.33604114704619936; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  __slot_h_c1 = -1.1719590433019547; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  __slot_h_c2 = 0.2772922758717265; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+  __slot_h_c3 = -0.9607856127887626; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+Template readout: unavailable
+Reason: template.slot.h.units:unknown; increasing:fail
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+parfam/17/4@native / prediction
+Method: parfam; eligible: False; stored AST
+Public: y [1] = ((0.75 * x) + (((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x)) + ((coef['__slot_h_c2'] * x) * x)) / (coef['__slot_h_c3'] + (coef['__slot_h_c4'] * x))))
+Working: ((0.75 * x_work) + (((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x_work)) + ((coef['__slot_h_c2'] * x_work) * x_work)) / (coef['__slot_h_c3'] + (coef['__slot_h_c4'] * x_work))))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "parfam/17/4@native", "relation_state_sha256": "739f67348d3e00bb717bcb6d77ea21972bce2cb69c1fe3a18bbc51f99f3dd39d", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  __slot_h_c0 = 0.17401329854200628; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  __slot_h_c1 = -0.5190396098204058; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  __slot_h_c2 = -0.2851651240649012; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  __slot_h_c3 = 0.2812358176823764; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+  __slot_h_c4 = -0.9596386897434498; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+Template readout: unavailable
+Reason: template.slot.h.units:unknown
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+parfam/17/5@native / prediction
+Method: parfam; eligible: False; stored AST
+Public: y [1] = ((0.75 * x) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x)) + ((coef['__slot_h_c2'] * x) * x)))
+Working: ((0.75 * x_work) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x_work)) + ((coef['__slot_h_c2'] * x_work) * x_work)))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "parfam/17/5@native", "relation_state_sha256": "b038765abb416e56246895032dfeaa6bfc1c7ee46d3b66d23e002271319d5191", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  __slot_h_c0 = 0.30070906144594883; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  __slot_h_c1 = 0.7424873193067988; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  __slot_h_c2 = -0.11001748741767374; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+Template readout: unavailable
+Reason: template.slot.h.units:unknown
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+parfam/17/6@native / prediction
+Method: parfam; eligible: False; stored AST
+Public: y [1] = ((0.75 * x) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x)) / (coef['__slot_h_c2'] + (coef['__slot_h_c3'] * x))))
+Working: ((0.75 * x_work) + ((coef['__slot_h_c0'] + (coef['__slot_h_c1'] * x_work)) / (coef['__slot_h_c2'] + (coef['__slot_h_c3'] * x_work))))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "parfam/17/6@native", "relation_state_sha256": "97b1c1dd8180870a08bd615eb10c57a91a24bc11f51facff6657165374fcb58c", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  __slot_h_c0 = -0.013936264965212355; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  __slot_h_c1 = -1.402230087865118; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  __slot_h_c2 = -0.7150789503926552; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+  __slot_h_c3 = -0.6990437001399401; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+Template readout: unavailable
+Reason: template.slot.h.units:unknown
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+torchsisso/17/0@native / prediction
+Method: torchsisso; eligible: True; stored AST
+Public: y [1] = ((0.75 * x) + (coef['__slot_h_intercept'] + (coef['__slot_h_c0'] * x)))
+Working: ((0.75 * x_work) + (coef['__slot_h_intercept'] + (coef['__slot_h_c0'] * x_work)))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "torchsisso/17/0@native", "relation_state_sha256": "ea75caba3caeeb1dd85a0c4df11c1facf8d3dfdfaf53603423419282e6cf28b9", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  __slot_h_c0 = 0.3056197726450177; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_regression_solve
+  __slot_h_intercept = 0.6060914352361365; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_regression_solve
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((0.75 * x) + h(x))
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Declared fixed contribution 0.75*x plus one shared unknown h(x)'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [1]) = (intercept + (c0 * x0))
+  Unit: 1
+  intercept = 0.6060914352361365; role=free; unit=1; tied_to=None
+  c0 = 0.3056197726450177; role=free; unit=1; tied_to=None
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+physo/17/8@native / prediction
+Method: physo; eligible: True; stored AST
+Public: y [1] = ((0.75 * x) + ((coef['__slot_h_c0'] + (coef['__slot_h_c0'] / ((x - (((1.0 + coef['__slot_h_c0']) + x) * coef['__slot_h_c0'])) - coef['__slot_h_c1']))) / 1.0))
+Working: ((0.75 * x_work) + ((coef['__slot_h_c0'] + (coef['__slot_h_c0'] / ((x_work - (((1.0 + coef['__slot_h_c0']) + x_work) * coef['__slot_h_c0'])) - coef['__slot_h_c1']))) / 1.0))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "physo/17/8@native", "relation_state_sha256": "738862d52d2cf4b1b938d348819a2a461a7a62c0534adad9f4cbbb2df49699db", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  __slot_h_c0 = 1.9998572859905726; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_free_constant_slot
+  __slot_h_c1 = -4.993786815920743; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_free_constant_slot
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((0.75 * x) + h(x))
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Declared fixed contribution 0.75*x plus one shared unknown h(x)'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [1]) = ((c0 + (c0 / ((x0 - (((1.0 + c0) + x0) * c0)) - c1))) / 1.0)
+  Unit: 1
+  c0 = 1.9998572859905726; role=free; unit=1; tied_to=None
+  c1 = -4.993786815920743; role=free; unit=1; tied_to=None
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+e2e/17/125/known-affine-fit@native / prediction
+Method: e2e; eligible: True; stored AST
+Public: y [1] = ((0.75 * x) + ((coef['__slot_h_c2'] + (coef['__slot_h_c4'] * (1 / ((coef['__slot_h_c8'] + (coef['__slot_h_c10'] * (1 / (coef['__slot_h_c13'] + (coef['__slot_h_c15'] * ((x - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale'])))))) - (coef['__slot_h_c18'] + (coef['__slot_h_c20'] * ((x - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale']))))))) + (coef['__slot_h_c23'] + (coef['__slot_h_c25'] * (1 / (coef['__slot_h_c28'] + (coef['__slot_h_c30'] * (1 / (coef['__slot_h_c33'] + (coef['__slot_h_c35'] * (1 / (coef['__slot_h_c38'] + (coef['__slot_h_c40'] * (1 / (coef['__slot_h_c43'] + (coef['__slot_h_c45'] * (1 / (coef['__slot_h_c48'] + (coef['__slot_h_c50'] * (1 / (coef['__slot_h_c53'] + (coef['__slot_h_c55'] * ((x - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale'])))))))))))))))))))))))
+Working: ((0.75 * x_work) + ((coef['__slot_h_c2'] + (coef['__slot_h_c4'] * (1 / ((coef['__slot_h_c8'] + (coef['__slot_h_c10'] * (1 / (coef['__slot_h_c13'] + (coef['__slot_h_c15'] * ((x_work - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale'])))))) - (coef['__slot_h_c18'] + (coef['__slot_h_c20'] * ((x_work - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale']))))))) + (coef['__slot_h_c23'] + (coef['__slot_h_c25'] * (1 / (coef['__slot_h_c28'] + (coef['__slot_h_c30'] * (1 / (coef['__slot_h_c33'] + (coef['__slot_h_c35'] * (1 / (coef['__slot_h_c38'] + (coef['__slot_h_c40'] * (1 / (coef['__slot_h_c43'] + (coef['__slot_h_c45'] * (1 / (coef['__slot_h_c48'] + (coef['__slot_h_c50'] * (1 / (coef['__slot_h_c53'] + (coef['__slot_h_c55'] * ((x_work - coef['__slot_h_x0_mean']) / coef['__slot_h_x0_scale'])))))))))))))))))))))))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "e2e/17/125/known-affine-fit@native", "relation_state_sha256": "a530168294b4839e2e0bb4c4571a3d9df3f229de0fd4a6d83228c02b9b2c487c", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  __slot_h_c10 = -0.20199110458135008; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c13 = -3.0170679227934127; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c15 = -0.249871246513016; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c18 = 0.02782615839409602; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c2 = -0.28608761362150004; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c20 = -0.03148121346559579; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c23 = 2.245575033847901; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c25 = 0.46042483881401985; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c28 = 0.37928486584861115; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c30 = -1.2256667468422733; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c33 = -0.04076234642677988; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c35 = 0.000962567445148803; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c38 = -0.5551126945217775; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c4 = -0.04403400872623396; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c40 = -14.167040088518197; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c43 = -1.5489822257082586; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c45 = 31.3327905049318; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c48 = -0.03765952549039632; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c50 = 14.736168511502376; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c53 = 2.591404230970542; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c55 = -51.23330467961724; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_c8 = 0.028737139215004936; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  __slot_h_x0_mean = 1.9634916034894223; unit=1; role=fixed; tied_to=None; bounds=[None, None]; origin=train_normalization
+  __slot_h_x0_scale = 1.0820323259523998; unit=1; role=fixed; tied_to=None; bounds=[None, None]; origin=train_normalization
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((0.75 * x) + h(x))
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Declared fixed contribution 0.75*x plus one shared unknown h(x)'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [1]) = ((c2 + (c4 * (1 / ((c8 + (c10 * (1 / (c13 + (c15 * ((x0 - x0_mean) / x0_scale)))))) - (c18 + (c20 * ((x0 - x0_mean) / x0_scale))))))) + (c23 + (c25 * (1 / (c28 + (c30 * (1 / (c33 + (c35 * (1 / (c38 + (c40 * (1 / (c43 + (c45 * (1 / (c48 + (c50 * (1 / (c53 + (c55 * ((x0 - x0_mean) / x0_scale))))))))))))))))))))))
+  Unit: 1
+  c2 = -0.28608761362150004; role=free; unit=1; tied_to=None
+  c4 = -0.04403400872623396; role=free; unit=1; tied_to=None
+  c8 = 0.028737139215004936; role=free; unit=1; tied_to=None
+  c10 = -0.20199110458135008; role=free; unit=1; tied_to=None
+  c13 = -3.0170679227934127; role=free; unit=1; tied_to=None
+  c15 = -0.249871246513016; role=free; unit=1; tied_to=None
+  x0_mean = 1.9634916034894223; role=fixed; unit=1; tied_to=None
+  x0_scale = 1.0820323259523998; role=fixed; unit=1; tied_to=None
+  c18 = 0.02782615839409602; role=free; unit=1; tied_to=None
+  c20 = -0.03148121346559579; role=free; unit=1; tied_to=None
+  c23 = 2.245575033847901; role=free; unit=1; tied_to=None
+  c25 = 0.46042483881401985; role=free; unit=1; tied_to=None
+  c28 = 0.37928486584861115; role=free; unit=1; tied_to=None
+  c30 = -1.2256667468422733; role=free; unit=1; tied_to=None
+  c33 = -0.04076234642677988; role=free; unit=1; tied_to=None
+  c35 = 0.000962567445148803; role=free; unit=1; tied_to=None
+  c38 = -0.5551126945217775; role=free; unit=1; tied_to=None
+  c40 = -14.167040088518197; role=free; unit=1; tied_to=None
+  c43 = -1.5489822257082586; role=free; unit=1; tied_to=None
+  c45 = 31.3327905049318; role=free; unit=1; tied_to=None
+  c48 = -0.03765952549039632; role=free; unit=1; tied_to=None
+  c50 = 14.736168511502376; role=free; unit=1; tied_to=None
+  c53 = 2.591404230970542; role=free; unit=1; tied_to=None
+  c55 = -51.23330467961724; role=free; unit=1; tied_to=None
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+

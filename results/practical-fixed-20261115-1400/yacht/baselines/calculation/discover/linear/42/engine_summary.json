@@ -1,0 +1,163 @@
+{
+  "native_candidates": 6,
+  "rejected_exports": [],
+  "dictionary_terms": 7,
+  "train_selection_loss": "stable RMSE; equivalent ordering to squared error",
+  "normalization": "L2 with no physical-unit floor; max magnitude if L2 is unrepresentable",
+  "constraint_support": {
+    "operators": "enforced during construction",
+    "units": "post-filtered",
+    "max_nodes": "post-filtered",
+    "variables": "enforced during construction",
+    "allowed_variables": "enforced during term construction before coefficient fitting",
+    "probes": "post-filtered"
+  },
+  "assets": null,
+  "python": "3.11.15",
+  "python_executable": "/opt/venv/bin/python",
+  "device": "cpu",
+  "allowed_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div",
+    "neg",
+    "abs",
+    "exp",
+    "log",
+    "sqrt",
+    "pow_int",
+    "sin",
+    "cos",
+    "tanh",
+    "sinh",
+    "cosh"
+  ],
+  "native_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div",
+    "neg",
+    "abs",
+    "exp",
+    "log",
+    "sqrt",
+    "pow_int"
+  ],
+  "unavailable_search_operators": [
+    "cos",
+    "cosh",
+    "sin",
+    "sinh",
+    "tanh"
+  ],
+  "operator_policy": "unavailable_search_operators is the requested/export-capability difference, not decoder reachability; generation enforcement and context-dependent routes are specified by constraint_support and native metadata",
+  "status": "ok",
+  "native_execution_status": "completed",
+  "native_artifacts": {},
+  "native_artifact_sha256": {},
+  "portable_status": "candidates",
+  "fixed_constants_native_support": "unsupported",
+  "exported_candidates": 6,
+  "selection_candidates": 6,
+  "prelimit_constraint_eligible": null,
+  "portable_candidates": "/work/results/practical-fixed-20261115-1400/yacht/baselines/calculation/discover/linear/42/candidates.jsonl",
+  "portable_candidates_sha256": "bfb9554b6f4ea16abc70a0695fd42ab5858026f3a3d62d55b840ecbb90b68694",
+  "candidate_pool": {
+    "policy": "all",
+    "emitted": 6,
+    "retained": 6,
+    "limit": null,
+    "discarded_from_comparison_ids": [],
+    "archive_scope": "all faithfully exported native candidates, not all internal search states",
+    "quality_scope": "Train/shared probes only when explicit bounded allocation is requested; compare owns final eligibility"
+  },
+  "truncation": "none; all faithfully emitted candidates reach common evaluation",
+  "engine": "linear",
+  "seed": 42,
+  "wall_seconds": 30.287344310985645,
+  "runtime_image_id": "sha256:bdc532d7fcb7021e1a57810de876bfa8b2ad5ef7cd29762334fda5d14689acd9",
+  "prepared_sha256": "647ced7bcc2278a007f9252f308cbce4d19c30c6e6623ba0b865caeff8fffc7a",
+  "job_sha256": "2744f43d6a9a1ed9cde18cbde496a271c6e69cfc86b0c3489840b77fef36230b",
+  "requested_constraints": {
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "probes": [],
+    "response_bounds": [
+      null,
+      null
+    ],
+    "response_checks": [],
+    "response_enforcement": null,
+    "max_wall_seconds": 3600,
+    "response_mode": "search"
+  },
+  "requirements_ref": {
+    "requirements_sha256": "95ad988b81c9bdb013dbaae8f36fbd452fb5a331452d7a3065c431eec8d1707b",
+    "scope": "canonical common request; native settings/checks are derived evidence"
+  },
+  "resolved_native_profile": {
+    "options": {},
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "neg",
+      "abs",
+      "exp",
+      "log",
+      "sqrt",
+      "pow_int",
+      "sin",
+      "cos",
+      "tanh",
+      "sinh",
+      "cosh"
+    ],
+    "device": "cpu",
+    "candidate_pool_policy": "all"
+  },
+  "response_mode": "search",
+  "capability_declaration": {
+    "supported_options": [
+      "max_degree",
+      "max_terms",
+      "ridge"
+    ],
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "pow_int",
+      "log",
+      "exp",
+      "sqrt",
+      "abs",
+      "neg"
+    ],
+    "constraints": {
+      "operators": "enforced during construction",
+      "units": "post-filtered",
+      "max_nodes": "post-filtered",
+      "variables": "enforced during construction",
+      "allowed_variables": "enforced during term construction before coefficient fitting",
+      "probes": "post-filtered"
+    },
+    "requires_assets": false
+  },
+  "constraint_application": {
+    "operators": "enforced during construction",
+    "max_nodes": "post-filtered"
+  },
+  "response_enforcement": {
+    "effective": "not_requested"
+  },
+  "readiness_scope": "this profile/run only; execution, fidelity, common admissibility and scientific adequacy are distinct",
+  "candidates_sha256": "bfb9554b6f4ea16abc70a0695fd42ab5858026f3a3d62d55b840ecbb90b68694"
+}

@@ -1,0 +1,9 @@
+3. torchsisso | equation
+Candidate: torchsisso/17/0@native
+Coordinates: public
+y [1] = (coef['intercept'] + (coef['c0'] * x))
+
+intercept = 0.6060914352361366 [1]
+c0 = 1.0556197726450176 [1]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)

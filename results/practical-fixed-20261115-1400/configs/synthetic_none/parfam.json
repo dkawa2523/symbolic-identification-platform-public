@@ -1,0 +1,66 @@
+{
+  "task": "symbolic_pipeline",
+  "data": {
+    "local_path": "results/practical-fixed-20261115-1400/inputs/synthetic/table.csv",
+    "target_column": "y",
+    "feature_columns": [
+      "x"
+    ],
+    "units": {
+      "x": "1",
+      "y": "1"
+    },
+    "domain": {
+      "x": [
+        0.1,
+        4
+      ]
+    }
+  },
+  "split": {
+    "file": "results/practical-fixed-20261115-1400/inputs/synthetic/split.csv"
+  },
+  "search": {
+    "engines": [
+      "parfam"
+    ],
+    "seeds": [
+      17
+    ],
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "max_wall_seconds": 21600,
+    "candidate_pool_policy": "all",
+    "max_export_candidates": 20,
+    "allow_partial_engines": true,
+    "engine_options": {
+      "parfam": {
+        "objective": "mse",
+        "family": "rational",
+        "family_search": "up_to",
+        "functions": [],
+        "degree": 2,
+        "input_degree": 2,
+        "denominator_degree": 1,
+        "maxiter": 100,
+        "repetitions": 2,
+        "max_active_parameters": 12,
+        "candidate_scope": "completed_families",
+        "seconds": 2880
+      }
+    },
+    "runtimes": {}
+  },
+  "constraints": {
+    "max_nodes": 256
+  },
+  "model_assets": {},
+  "evaluation": {
+    "selection_policy": "accuracy",
+    "absolute_tolerance": 1e-06
+  }
+}

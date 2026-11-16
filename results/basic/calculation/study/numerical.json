@@ -1,0 +1,2897 @@
+[
+  {
+    "id": "mean/7/0@native",
+    "kind": "explicit",
+    "eligible": true,
+    "reason": null,
+    "prediction_available": true,
+    "hypothesis": null,
+    "execution": {
+      "native_arithmetic": [
+        "strict_real"
+      ],
+      "prediction": "finite real-domain projection; invalid intermediate rows retained",
+      "stored_nodes": 2,
+      "expanded_nodes": 1
+    },
+    "constraint_application": {
+      "requirements_ref": {
+        "requirements_sha256": "b9b418d33595faf49001dd5ffeb6ae300c658056abdfdee48ecdd8337601a202",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "requested": {
+        "max_nodes": 60,
+        "max_free_parameters": null,
+        "require_units": false,
+        "allowed_variables": null,
+        "equation_template": null,
+        "probes": [],
+        "response_bounds": [
+          null,
+          null
+        ],
+        "response_checks": []
+      },
+      "native_declaration": {
+        "operators": "enforced during construction",
+        "units": "post-filtered",
+        "max_nodes": "post-filtered",
+        "variables": "enforced during construction",
+        "probes": "post-filtered"
+      },
+      "evaluation": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "pass",
+          "required": false,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "shared feasible geometry/provided points; no global guarantee",
+          "reason": null
+        },
+        {
+          "name": "target_domain_probes",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null
+        }
+      ],
+      "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+    },
+    "complexity_scope": "prediction AST",
+    "prediction_view": "explicit equation",
+    "requirements_eligible": true,
+    "requirement_failures": [],
+    "local_parameter_identifiability": {
+      "status": "computed",
+      "data_role": "selection",
+      "n_samples": 12,
+      "method": "bounded finite-difference scaled coefficient Jacobian SVD",
+      "scope": "explicit point equation at saved coefficients; all Selection inputs, unweighted",
+      "interpretation_limit": "Full local rank does not prove global or structural identifiability. Rank deficiency may reflect this design, coefficient point, finite-difference resolution, or redundant parameters. This is not an uncertainty interval or a refit. Active bounds restrict feasible directions; rank is not a constrained uniqueness test.",
+      "parameter_names": [
+        "c0"
+      ],
+      "n_parameters": 1,
+      "n_valid_center": 12,
+      "output_scale": 0.4271035919238572,
+      "output_scale_rule": "max absolute center prediction; 1 only when all predictions are zero",
+      "parameter_scale_rule": "absolute nonzero value; otherwise finite bound width; otherwise 1 working-unit coordinate",
+      "relative_step": 6.0554544523933395e-06,
+      "relative_rank_tolerance": 1e-07,
+      "parameters": [
+        {
+          "name": "c0",
+          "value": 0.4271035919238572,
+          "unit": "m",
+          "scale": 0.4271035919238572,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 2.58630634736301e-06,
+          "step_minus": 2.58630634736301e-06,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 1.2931531737092605e-06,
+          "verification_step_minus": 1.2931531737092605e-06
+        }
+      ],
+      "resolution_check": "Compare the coefficient Jacobian at recorded steps and half steps; combine their RMS Frobenius difference with an output-roundoff estimate. Withhold rank when this exceeds rank discrimination. This is an empirical local stability check, not a rigorous error bound for arbitrary arithmetic or nonsmooth models.",
+      "roundoff_assumption": "8*float64 epsilon times the larger normalized endpoint magnitude, divided by the normalized parameter displacement; does not bound internal AST cancellation.",
+      "singular_values": [
+        1.0000000000087799
+      ],
+      "rank_threshold": 1.0000000000087798e-07,
+      "roundoff_resolution": 2.933491171705612e-10,
+      "half_step_difference": 1.22963848980797e-11,
+      "numerical_resolution": 3.0564550206864087e-10,
+      "rank": 1,
+      "nullity": 0,
+      "sample_normalization": "Jacobian divided by sqrt(n_samples); singular values use RMS sensitivity",
+      "column_rms_sensitivity": {
+        "c0": 1.00000000000878
+      },
+      "insensitive_parameters": [],
+      "full_column_rank": true,
+      "condition_number": 1.0
+    },
+    "checks": [
+      {
+        "name": "operators",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "max_nodes",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "units",
+        "status": "pass",
+        "required": false,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "shared feasible geometry/provided points; no global guarantee",
+        "reason": null
+      },
+      {
+        "name": "target_domain_probes",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null
+      }
+    ],
+    "metrics": {
+      "train": {
+        "rmse": 0.1731883816514127,
+        "mae": 0.15360642838928212,
+        "r2": -4.440892098500626e-16,
+        "reason": null
+      },
+      "selection": {
+        "rmse": 0.13493811949985746,
+        "mae": 0.11456792570268147,
+        "r2": -0.5786916830154498,
+        "reason": null
+      }
+    },
+    "regions": {
+      "all": {
+        "n_rows": 12,
+        "rmse": 0.13493811949985746,
+        "mae": 0.11456792570268147,
+        "r2": -0.5786916830154498,
+        "reason": null
+      }
+    },
+    "n_nodes": 1,
+    "n_parameters": 1,
+    "formula": "0.4271035919238572",
+    "applicable_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "length_cm",
+          "unit": "m",
+          "domain": [
+            0.03,
+            0.3
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "response_mm",
+        "unit": "m",
+        "domain": [
+          -1.0,
+          2.0
+        ]
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "length_cm",
+            "unit": "m",
+            "domain": [
+              0.03,
+              0.3
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "length_cm"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "length_cm": "m"
+          },
+          "coordinate_roles": {
+            "length_cm": null
+          },
+          "bounds": [
+            [
+              0.03,
+              0.3
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "strata": {},
+    "groups": {
+      "problemg16": {
+        "n_rows": 3,
+        "rmse": 0.12399088586988492,
+        "mae": 0.12346950943523355,
+        "r2": -0.13618403737350326,
+        "reason": null
+      },
+      "problemg17": {
+        "n_rows": 3,
+        "rmse": 0.166689207761071,
+        "mae": 0.15564245015662478,
+        "r2": -6.80327977982607,
+        "reason": null
+      },
+      "problemg18": {
+        "n_rows": 3,
+        "rmse": 0.1479307967908568,
+        "mae": 0.10051197659052917,
+        "r2": -0.857548149548238,
+        "reason": null
+      },
+      "problemg19": {
+        "n_rows": 3,
+        "rmse": 0.08826455672942089,
+        "mae": 0.0786477666283384,
+        "r2": -0.10933090878081342,
+        "reason": null
+      }
+    },
+    "native_fidelity": "verified within recorded native checks"
+  },
+  {
+    "id": "linear/7/0@native",
+    "kind": "explicit",
+    "eligible": true,
+    "reason": null,
+    "prediction_available": true,
+    "hypothesis": null,
+    "execution": {
+      "native_arithmetic": [
+        "strict_real"
+      ],
+      "prediction": "finite real-domain projection; invalid intermediate rows retained",
+      "stored_nodes": 3,
+      "expanded_nodes": 3
+    },
+    "constraint_application": {
+      "requirements_ref": {
+        "requirements_sha256": "b9b418d33595faf49001dd5ffeb6ae300c658056abdfdee48ecdd8337601a202",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "requested": {
+        "max_nodes": 60,
+        "max_free_parameters": null,
+        "require_units": false,
+        "allowed_variables": null,
+        "equation_template": null,
+        "probes": [],
+        "response_bounds": [
+          null,
+          null
+        ],
+        "response_checks": []
+      },
+      "native_declaration": {
+        "operators": "enforced during construction",
+        "units": "post-filtered",
+        "max_nodes": "post-filtered",
+        "variables": "enforced during construction",
+        "probes": "post-filtered"
+      },
+      "evaluation": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "pass",
+          "required": false,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "shared feasible geometry/provided points; no global guarantee",
+          "reason": null
+        },
+        {
+          "name": "target_domain_probes",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null
+        }
+      ],
+      "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+    },
+    "complexity_scope": "prediction AST",
+    "prediction_view": "explicit equation",
+    "requirements_eligible": true,
+    "requirement_failures": [],
+    "local_parameter_identifiability": {
+      "status": "computed",
+      "data_role": "selection",
+      "n_samples": 12,
+      "method": "bounded finite-difference scaled coefficient Jacobian SVD",
+      "scope": "explicit point equation at saved coefficients; all Selection inputs, unweighted",
+      "interpretation_limit": "Full local rank does not prove global or structural identifiability. Rank deficiency may reflect this design, coefficient point, finite-difference resolution, or redundant parameters. This is not an uncertainty interval or a refit. Active bounds restrict feasible directions; rank is not a constrained uniqueness test.",
+      "parameter_names": [
+        "c0"
+      ],
+      "n_parameters": 1,
+      "n_valid_center": 12,
+      "output_scale": 0.5560353509535109,
+      "output_scale_rule": "max absolute center prediction; 1 only when all predictions are zero",
+      "parameter_scale_rule": "absolute nonzero value; otherwise finite bound width; otherwise 1 working-unit coordinate",
+      "relative_step": 6.0554544523933395e-06,
+      "relative_rank_tolerance": 1e-07,
+      "parameters": [
+        {
+          "name": "c0",
+          "value": 2.4709998687414836,
+          "unit": "1",
+          "scale": 2.4709998687414836,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 1.4963027156866815e-05,
+          "step_minus": 1.4963027156866815e-05,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 7.4815135784334075e-06,
+          "verification_step_minus": 7.4815135784334075e-06
+        }
+      ],
+      "resolution_check": "Compare the coefficient Jacobian at recorded steps and half steps; combine their RMS Frobenius difference with an output-roundoff estimate. Withhold rank when this exceeds rank discrimination. This is an empirical local stability check, not a rigorous error bound for arbitrary arithmetic or nonsmooth models.",
+      "roundoff_assumption": "8*float64 epsilon times the larger normalized endpoint magnitude, divided by the normalized parameter displacement; does not bound internal AST cancellation.",
+      "singular_values": [
+        0.5922405934167262
+      ],
+      "rank_threshold": 5.9224059341672614e-08,
+      "roundoff_resolution": 1.7373325523735808e-10,
+      "half_step_difference": 1.2054574595282409e-11,
+      "numerical_resolution": 1.857878298326405e-10,
+      "rank": 1,
+      "nullity": 0,
+      "sample_normalization": "Jacobian divided by sqrt(n_samples); singular values use RMS sensitivity",
+      "column_rms_sensitivity": {
+        "c0": 0.5922405934167262
+      },
+      "insensitive_parameters": [],
+      "full_column_rank": true,
+      "condition_number": 1.0
+    },
+    "checks": [
+      {
+        "name": "operators",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "max_nodes",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "units",
+        "status": "pass",
+        "required": false,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "shared feasible geometry/provided points; no global guarantee",
+        "reason": null
+      },
+      {
+        "name": "target_domain_probes",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null
+      }
+    ],
+    "metrics": {
+      "train": {
+        "rmse": 0.046283411303974134,
+        "mae": 0.039202838938539576,
+        "r2": 0.9285810906057878,
+        "reason": null
+      },
+      "selection": {
+        "rmse": 0.05071769397754875,
+        "mae": 0.04526258795865695,
+        "r2": 0.7769783565845041,
+        "reason": null
+      }
+    },
+    "regions": {
+      "all": {
+        "n_rows": 12,
+        "rmse": 0.05071769397754875,
+        "mae": 0.04526258795865695,
+        "r2": 0.7769783565845041,
+        "reason": null
+      }
+    },
+    "n_nodes": 3,
+    "n_parameters": 1,
+    "formula": "(2.4709998687414836 * length_cm)",
+    "applicable_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "length_cm",
+          "unit": "m",
+          "domain": [
+            0.03,
+            0.3
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "response_mm",
+        "unit": "m",
+        "domain": [
+          -1.0,
+          2.0
+        ]
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "length_cm",
+            "unit": "m",
+            "domain": [
+              0.03,
+              0.3
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "length_cm"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "length_cm": "m"
+          },
+          "coordinate_roles": {
+            "length_cm": null
+          },
+          "bounds": [
+            [
+              0.03,
+              0.3
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "strata": {},
+    "groups": {
+      "problemg16": {
+        "n_rows": 3,
+        "rmse": 0.045480433813301045,
+        "mae": 0.039634559169672984,
+        "r2": 0.8471313765967152,
+        "reason": null
+      },
+      "problemg17": {
+        "n_rows": 3,
+        "rmse": 0.060960090473630796,
+        "mae": 0.0580624102661404,
+        "r2": -0.043646495845079736,
+        "reason": null
+      },
+      "problemg18": {
+        "n_rows": 3,
+        "rmse": 0.05631589179296785,
+        "mae": 0.050553672581537666,
+        "r2": 0.7307939482603816,
+        "reason": null
+      },
+      "problemg19": {
+        "n_rows": 3,
+        "rmse": 0.03651103628719089,
+        "mae": 0.03279970981727678,
+        "r2": 0.8101822837413799,
+        "reason": null
+      }
+    },
+    "native_fidelity": "verified within recorded native checks"
+  },
+  {
+    "id": "linear/7/1@native",
+    "kind": "explicit",
+    "eligible": true,
+    "reason": null,
+    "prediction_available": true,
+    "hypothesis": null,
+    "execution": {
+      "native_arithmetic": [
+        "strict_real"
+      ],
+      "prediction": "finite real-domain projection; invalid intermediate rows retained",
+      "stored_nodes": 4,
+      "expanded_nodes": 5
+    },
+    "constraint_application": {
+      "requirements_ref": {
+        "requirements_sha256": "b9b418d33595faf49001dd5ffeb6ae300c658056abdfdee48ecdd8337601a202",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "requested": {
+        "max_nodes": 60,
+        "max_free_parameters": null,
+        "require_units": false,
+        "allowed_variables": null,
+        "equation_template": null,
+        "probes": [],
+        "response_bounds": [
+          null,
+          null
+        ],
+        "response_checks": []
+      },
+      "native_declaration": {
+        "operators": "enforced during construction",
+        "units": "post-filtered",
+        "max_nodes": "post-filtered",
+        "variables": "enforced during construction",
+        "probes": "post-filtered"
+      },
+      "evaluation": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "pass",
+          "required": false,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "shared feasible geometry/provided points; no global guarantee",
+          "reason": null
+        },
+        {
+          "name": "target_domain_probes",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null
+        }
+      ],
+      "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+    },
+    "complexity_scope": "prediction AST",
+    "prediction_view": "explicit equation",
+    "requirements_eligible": true,
+    "requirement_failures": [],
+    "local_parameter_identifiability": {
+      "status": "computed",
+      "data_role": "selection",
+      "n_samples": 12,
+      "method": "bounded finite-difference scaled coefficient Jacobian SVD",
+      "scope": "explicit point equation at saved coefficients; all Selection inputs, unweighted",
+      "interpretation_limit": "Full local rank does not prove global or structural identifiability. Rank deficiency may reflect this design, coefficient point, finite-difference resolution, or redundant parameters. This is not an uncertainty interval or a refit. Active bounds restrict feasible directions; rank is not a constrained uniqueness test.",
+      "parameter_names": [
+        "c0",
+        "c1"
+      ],
+      "n_parameters": 2,
+      "n_valid_center": 12,
+      "output_scale": 0.5488620717262107,
+      "output_scale_rule": "max absolute center prediction; 1 only when all predictions are zero",
+      "parameter_scale_rule": "absolute nonzero value; otherwise finite bound width; otherwise 1 working-unit coordinate",
+      "relative_step": 6.0554544523933395e-06,
+      "relative_rank_tolerance": 1e-07,
+      "parameters": [
+        {
+          "name": "c0",
+          "value": 2.0006353662977636,
+          "unit": "1",
+          "scale": 2.0006353662977636,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 1.2114756336334409e-05,
+          "step_minus": 1.2114756336334409e-05,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 6.05737816794516e-06,
+          "verification_step_minus": 6.05737816794516e-06
+        },
+        {
+          "name": "c1",
+          "value": 0.09867022748465006,
+          "unit": "m",
+          "scale": 0.09867022748465006,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 5.97493068341115e-07,
+          "step_minus": 5.97493068341115e-07,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 2.9874653416361863e-07,
+          "verification_step_minus": 2.9874653416361863e-07
+        }
+      ],
+      "resolution_check": "Compare the coefficient Jacobian at recorded steps and half steps; combine their RMS Frobenius difference with an output-roundoff estimate. Withhold rank when this exceeds rank discrimination. This is an empirical local stability check, not a rigorous error bound for arbitrary arithmetic or nonsmooth models.",
+      "roundoff_assumption": "8*float64 epsilon times the larger normalized endpoint magnitude, divided by the normalized parameter displacement; does not bound internal AST cancellation.",
+      "singular_values": [
+        0.5134322269237565,
+        0.06841043788223375
+      ],
+      "rank_threshold": 5.134322269237564e-08,
+      "roundoff_resolution": 2.7147020057875843e-10,
+      "half_step_difference": 1.2795576786107652e-11,
+      "numerical_resolution": 2.842657773648661e-10,
+      "rank": 2,
+      "nullity": 0,
+      "sample_normalization": "Jacobian divided by sqrt(n_samples); singular values use RMS sensitivity",
+      "column_rms_sensitivity": {
+        "c0": 0.4857721069074628,
+        "c1": 0.17977235551054904
+      },
+      "insensitive_parameters": [],
+      "full_column_rank": true,
+      "condition_number": 7.505173812914524
+    },
+    "checks": [
+      {
+        "name": "operators",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "max_nodes",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "units",
+        "status": "pass",
+        "required": false,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "shared feasible geometry/provided points; no global guarantee",
+        "reason": null
+      },
+      {
+        "name": "target_domain_probes",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null
+      }
+    ],
+    "metrics": {
+      "train": {
+        "rmse": 0.005037504552896752,
+        "mae": 0.00397926482190776,
+        "r2": 0.9991539551322011,
+        "reason": null
+      },
+      "selection": {
+        "rmse": 0.004507712692964817,
+        "mae": 0.0037830230771506183,
+        "r2": 0.9982382654586245,
+        "reason": null
+      }
+    },
+    "regions": {
+      "all": {
+        "n_rows": 12,
+        "rmse": 0.004507712692964817,
+        "mae": 0.0037830230771506183,
+        "r2": 0.9982382654586245,
+        "reason": null
+      }
+    },
+    "n_nodes": 5,
+    "n_parameters": 2,
+    "formula": "((2.0006353662977636 * length_cm) + 0.09867022748465006)",
+    "applicable_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "length_cm",
+          "unit": "m",
+          "domain": [
+            0.03,
+            0.3
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "response_mm",
+        "unit": "m",
+        "domain": [
+          -1.0,
+          2.0
+        ]
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "length_cm",
+            "unit": "m",
+            "domain": [
+              0.03,
+              0.3
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "length_cm"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "length_cm": "m"
+          },
+          "coordinate_roles": {
+            "length_cm": null
+          },
+          "bounds": [
+            [
+              0.03,
+              0.3
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "strata": {},
+    "groups": {
+      "problemg16": {
+        "n_rows": 3,
+        "rmse": 0.00337416138008234,
+        "mae": 0.0027972655787682115,
+        "r2": 0.9991586031956714,
+        "reason": null
+      },
+      "problemg17": {
+        "n_rows": 3,
+        "rmse": 0.004321281405685981,
+        "mae": 0.0039943021790321736,
+        "r2": 0.9947557026118921,
+        "reason": null
+      },
+      "problemg18": {
+        "n_rows": 3,
+        "rmse": 0.005086252936752145,
+        "mae": 0.0044283485752364595,
+        "r2": 0.9978040684714572,
+        "reason": null
+      },
+      "problemg19": {
+        "n_rows": 3,
+        "rmse": 0.005034827499197773,
+        "mae": 0.003912175975565628,
+        "r2": 0.9963904121523708,
+        "reason": null
+      }
+    },
+    "native_fidelity": "verified within recorded native checks"
+  },
+  {
+    "id": "dictionary/7/0@native",
+    "kind": "explicit",
+    "eligible": true,
+    "reason": null,
+    "prediction_available": true,
+    "hypothesis": null,
+    "execution": {
+      "native_arithmetic": [
+        "strict_real"
+      ],
+      "prediction": "finite real-domain projection; invalid intermediate rows retained",
+      "stored_nodes": 3,
+      "expanded_nodes": 3
+    },
+    "constraint_application": {
+      "requirements_ref": {
+        "requirements_sha256": "b9b418d33595faf49001dd5ffeb6ae300c658056abdfdee48ecdd8337601a202",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "requested": {
+        "max_nodes": 60,
+        "max_free_parameters": null,
+        "require_units": false,
+        "allowed_variables": null,
+        "equation_template": null,
+        "probes": [],
+        "response_bounds": [
+          null,
+          null
+        ],
+        "response_checks": []
+      },
+      "native_declaration": {
+        "operators": "enforced during construction",
+        "units": "post-filtered",
+        "max_nodes": "post-filtered",
+        "variables": "enforced during construction",
+        "probes": "post-filtered"
+      },
+      "evaluation": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "pass",
+          "required": false,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "shared feasible geometry/provided points; no global guarantee",
+          "reason": null
+        },
+        {
+          "name": "target_domain_probes",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null
+        }
+      ],
+      "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+    },
+    "complexity_scope": "prediction AST",
+    "prediction_view": "explicit equation",
+    "requirements_eligible": true,
+    "requirement_failures": [],
+    "local_parameter_identifiability": {
+      "status": "computed",
+      "data_role": "selection",
+      "n_samples": 12,
+      "method": "bounded finite-difference scaled coefficient Jacobian SVD",
+      "scope": "explicit point equation at saved coefficients; all Selection inputs, unweighted",
+      "interpretation_limit": "Full local rank does not prove global or structural identifiability. Rank deficiency may reflect this design, coefficient point, finite-difference resolution, or redundant parameters. This is not an uncertainty interval or a refit. Active bounds restrict feasible directions; rank is not a constrained uniqueness test.",
+      "parameter_names": [
+        "c0"
+      ],
+      "n_parameters": 1,
+      "n_valid_center": 12,
+      "output_scale": 0.5560353509535109,
+      "output_scale_rule": "max absolute center prediction; 1 only when all predictions are zero",
+      "parameter_scale_rule": "absolute nonzero value; otherwise finite bound width; otherwise 1 working-unit coordinate",
+      "relative_step": 6.0554544523933395e-06,
+      "relative_rank_tolerance": 1e-07,
+      "parameters": [
+        {
+          "name": "c0",
+          "value": 2.4709998687414836,
+          "unit": "1",
+          "scale": 2.4709998687414836,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 1.4963027156866815e-05,
+          "step_minus": 1.4963027156866815e-05,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 7.4815135784334075e-06,
+          "verification_step_minus": 7.4815135784334075e-06
+        }
+      ],
+      "resolution_check": "Compare the coefficient Jacobian at recorded steps and half steps; combine their RMS Frobenius difference with an output-roundoff estimate. Withhold rank when this exceeds rank discrimination. This is an empirical local stability check, not a rigorous error bound for arbitrary arithmetic or nonsmooth models.",
+      "roundoff_assumption": "8*float64 epsilon times the larger normalized endpoint magnitude, divided by the normalized parameter displacement; does not bound internal AST cancellation.",
+      "singular_values": [
+        0.5922405934167262
+      ],
+      "rank_threshold": 5.9224059341672614e-08,
+      "roundoff_resolution": 1.7373325523735808e-10,
+      "half_step_difference": 1.2054574595282409e-11,
+      "numerical_resolution": 1.857878298326405e-10,
+      "rank": 1,
+      "nullity": 0,
+      "sample_normalization": "Jacobian divided by sqrt(n_samples); singular values use RMS sensitivity",
+      "column_rms_sensitivity": {
+        "c0": 0.5922405934167262
+      },
+      "insensitive_parameters": [],
+      "full_column_rank": true,
+      "condition_number": 1.0
+    },
+    "checks": [
+      {
+        "name": "operators",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "max_nodes",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "units",
+        "status": "pass",
+        "required": false,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "shared feasible geometry/provided points; no global guarantee",
+        "reason": null
+      },
+      {
+        "name": "target_domain_probes",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null
+      }
+    ],
+    "metrics": {
+      "train": {
+        "rmse": 0.046283411303974134,
+        "mae": 0.039202838938539576,
+        "r2": 0.9285810906057878,
+        "reason": null
+      },
+      "selection": {
+        "rmse": 0.05071769397754875,
+        "mae": 0.04526258795865695,
+        "r2": 0.7769783565845041,
+        "reason": null
+      }
+    },
+    "regions": {
+      "all": {
+        "n_rows": 12,
+        "rmse": 0.05071769397754875,
+        "mae": 0.04526258795865695,
+        "r2": 0.7769783565845041,
+        "reason": null
+      }
+    },
+    "n_nodes": 3,
+    "n_parameters": 1,
+    "formula": "(2.4709998687414836 * length_cm)",
+    "applicable_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "length_cm",
+          "unit": "m",
+          "domain": [
+            0.03,
+            0.3
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "response_mm",
+        "unit": "m",
+        "domain": [
+          -1.0,
+          2.0
+        ]
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "length_cm",
+            "unit": "m",
+            "domain": [
+              0.03,
+              0.3
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "length_cm"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "length_cm": "m"
+          },
+          "coordinate_roles": {
+            "length_cm": null
+          },
+          "bounds": [
+            [
+              0.03,
+              0.3
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "strata": {},
+    "groups": {
+      "problemg16": {
+        "n_rows": 3,
+        "rmse": 0.045480433813301045,
+        "mae": 0.039634559169672984,
+        "r2": 0.8471313765967152,
+        "reason": null
+      },
+      "problemg17": {
+        "n_rows": 3,
+        "rmse": 0.060960090473630796,
+        "mae": 0.0580624102661404,
+        "r2": -0.043646495845079736,
+        "reason": null
+      },
+      "problemg18": {
+        "n_rows": 3,
+        "rmse": 0.05631589179296785,
+        "mae": 0.050553672581537666,
+        "r2": 0.7307939482603816,
+        "reason": null
+      },
+      "problemg19": {
+        "n_rows": 3,
+        "rmse": 0.03651103628719089,
+        "mae": 0.03279970981727678,
+        "r2": 0.8101822837413799,
+        "reason": null
+      }
+    },
+    "native_fidelity": "verified within recorded native checks"
+  },
+  {
+    "id": "dictionary/7/1@native",
+    "kind": "explicit",
+    "eligible": true,
+    "reason": null,
+    "prediction_available": true,
+    "hypothesis": null,
+    "execution": {
+      "native_arithmetic": [
+        "strict_real"
+      ],
+      "prediction": "finite real-domain projection; invalid intermediate rows retained",
+      "stored_nodes": 4,
+      "expanded_nodes": 5
+    },
+    "constraint_application": {
+      "requirements_ref": {
+        "requirements_sha256": "b9b418d33595faf49001dd5ffeb6ae300c658056abdfdee48ecdd8337601a202",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "requested": {
+        "max_nodes": 60,
+        "max_free_parameters": null,
+        "require_units": false,
+        "allowed_variables": null,
+        "equation_template": null,
+        "probes": [],
+        "response_bounds": [
+          null,
+          null
+        ],
+        "response_checks": []
+      },
+      "native_declaration": {
+        "operators": "enforced during construction",
+        "units": "post-filtered",
+        "max_nodes": "post-filtered",
+        "variables": "enforced during construction",
+        "probes": "post-filtered"
+      },
+      "evaluation": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "pass",
+          "required": false,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "shared feasible geometry/provided points; no global guarantee",
+          "reason": null
+        },
+        {
+          "name": "target_domain_probes",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null
+        }
+      ],
+      "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+    },
+    "complexity_scope": "prediction AST",
+    "prediction_view": "explicit equation",
+    "requirements_eligible": true,
+    "requirement_failures": [],
+    "local_parameter_identifiability": {
+      "status": "computed",
+      "data_role": "selection",
+      "n_samples": 12,
+      "method": "bounded finite-difference scaled coefficient Jacobian SVD",
+      "scope": "explicit point equation at saved coefficients; all Selection inputs, unweighted",
+      "interpretation_limit": "Full local rank does not prove global or structural identifiability. Rank deficiency may reflect this design, coefficient point, finite-difference resolution, or redundant parameters. This is not an uncertainty interval or a refit. Active bounds restrict feasible directions; rank is not a constrained uniqueness test.",
+      "parameter_names": [
+        "c0",
+        "c1"
+      ],
+      "n_parameters": 2,
+      "n_valid_center": 12,
+      "output_scale": 0.5488620717262107,
+      "output_scale_rule": "max absolute center prediction; 1 only when all predictions are zero",
+      "parameter_scale_rule": "absolute nonzero value; otherwise finite bound width; otherwise 1 working-unit coordinate",
+      "relative_step": 6.0554544523933395e-06,
+      "relative_rank_tolerance": 1e-07,
+      "parameters": [
+        {
+          "name": "c0",
+          "value": 2.0006353662977636,
+          "unit": "1",
+          "scale": 2.0006353662977636,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 1.2114756336334409e-05,
+          "step_minus": 1.2114756336334409e-05,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 6.05737816794516e-06,
+          "verification_step_minus": 6.05737816794516e-06
+        },
+        {
+          "name": "c1",
+          "value": 0.09867022748465006,
+          "unit": "m",
+          "scale": 0.09867022748465006,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 5.97493068341115e-07,
+          "step_minus": 5.97493068341115e-07,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 2.9874653416361863e-07,
+          "verification_step_minus": 2.9874653416361863e-07
+        }
+      ],
+      "resolution_check": "Compare the coefficient Jacobian at recorded steps and half steps; combine their RMS Frobenius difference with an output-roundoff estimate. Withhold rank when this exceeds rank discrimination. This is an empirical local stability check, not a rigorous error bound for arbitrary arithmetic or nonsmooth models.",
+      "roundoff_assumption": "8*float64 epsilon times the larger normalized endpoint magnitude, divided by the normalized parameter displacement; does not bound internal AST cancellation.",
+      "singular_values": [
+        0.5134322269237565,
+        0.06841043788223375
+      ],
+      "rank_threshold": 5.134322269237564e-08,
+      "roundoff_resolution": 2.7147020057875843e-10,
+      "half_step_difference": 1.2795576786107652e-11,
+      "numerical_resolution": 2.842657773648661e-10,
+      "rank": 2,
+      "nullity": 0,
+      "sample_normalization": "Jacobian divided by sqrt(n_samples); singular values use RMS sensitivity",
+      "column_rms_sensitivity": {
+        "c0": 0.4857721069074628,
+        "c1": 0.17977235551054904
+      },
+      "insensitive_parameters": [],
+      "full_column_rank": true,
+      "condition_number": 7.505173812914524
+    },
+    "checks": [
+      {
+        "name": "operators",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "max_nodes",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "units",
+        "status": "pass",
+        "required": false,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "shared feasible geometry/provided points; no global guarantee",
+        "reason": null
+      },
+      {
+        "name": "target_domain_probes",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null
+      }
+    ],
+    "metrics": {
+      "train": {
+        "rmse": 0.005037504552896752,
+        "mae": 0.00397926482190776,
+        "r2": 0.9991539551322011,
+        "reason": null
+      },
+      "selection": {
+        "rmse": 0.004507712692964817,
+        "mae": 0.0037830230771506183,
+        "r2": 0.9982382654586245,
+        "reason": null
+      }
+    },
+    "regions": {
+      "all": {
+        "n_rows": 12,
+        "rmse": 0.004507712692964817,
+        "mae": 0.0037830230771506183,
+        "r2": 0.9982382654586245,
+        "reason": null
+      }
+    },
+    "n_nodes": 5,
+    "n_parameters": 2,
+    "formula": "((2.0006353662977636 * length_cm) + 0.09867022748465006)",
+    "applicable_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "length_cm",
+          "unit": "m",
+          "domain": [
+            0.03,
+            0.3
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "response_mm",
+        "unit": "m",
+        "domain": [
+          -1.0,
+          2.0
+        ]
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "length_cm",
+            "unit": "m",
+            "domain": [
+              0.03,
+              0.3
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "length_cm"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "length_cm": "m"
+          },
+          "coordinate_roles": {
+            "length_cm": null
+          },
+          "bounds": [
+            [
+              0.03,
+              0.3
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "strata": {},
+    "groups": {
+      "problemg16": {
+        "n_rows": 3,
+        "rmse": 0.00337416138008234,
+        "mae": 0.0027972655787682115,
+        "r2": 0.9991586031956714,
+        "reason": null
+      },
+      "problemg17": {
+        "n_rows": 3,
+        "rmse": 0.004321281405685981,
+        "mae": 0.0039943021790321736,
+        "r2": 0.9947557026118921,
+        "reason": null
+      },
+      "problemg18": {
+        "n_rows": 3,
+        "rmse": 0.005086252936752145,
+        "mae": 0.0044283485752364595,
+        "r2": 0.9978040684714572,
+        "reason": null
+      },
+      "problemg19": {
+        "n_rows": 3,
+        "rmse": 0.005034827499197773,
+        "mae": 0.003912175975565628,
+        "r2": 0.9963904121523708,
+        "reason": null
+      }
+    },
+    "native_fidelity": "verified within recorded native checks"
+  },
+  {
+    "id": "dictionary/7/2@native",
+    "kind": "explicit",
+    "eligible": true,
+    "reason": null,
+    "prediction_available": true,
+    "hypothesis": null,
+    "execution": {
+      "native_arithmetic": [
+        "strict_real"
+      ],
+      "prediction": "finite real-domain projection; invalid intermediate rows retained",
+      "stored_nodes": 8,
+      "expanded_nodes": 11
+    },
+    "constraint_application": {
+      "requirements_ref": {
+        "requirements_sha256": "b9b418d33595faf49001dd5ffeb6ae300c658056abdfdee48ecdd8337601a202",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "requested": {
+        "max_nodes": 60,
+        "max_free_parameters": null,
+        "require_units": false,
+        "allowed_variables": null,
+        "equation_template": null,
+        "probes": [],
+        "response_bounds": [
+          null,
+          null
+        ],
+        "response_checks": []
+      },
+      "native_declaration": {
+        "operators": "enforced during construction",
+        "units": "post-filtered",
+        "max_nodes": "post-filtered",
+        "variables": "enforced during construction",
+        "probes": "post-filtered"
+      },
+      "evaluation": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "pass",
+          "required": false,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "shared feasible geometry/provided points; no global guarantee",
+          "reason": null
+        },
+        {
+          "name": "target_domain_probes",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null
+        }
+      ],
+      "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+    },
+    "complexity_scope": "prediction AST",
+    "prediction_view": "explicit equation",
+    "requirements_eligible": true,
+    "requirement_failures": [],
+    "local_parameter_identifiability": {
+      "status": "computed",
+      "data_role": "selection",
+      "n_samples": 12,
+      "method": "bounded finite-difference scaled coefficient Jacobian SVD",
+      "scope": "explicit point equation at saved coefficients; all Selection inputs, unweighted",
+      "interpretation_limit": "Full local rank does not prove global or structural identifiability. Rank deficiency may reflect this design, coefficient point, finite-difference resolution, or redundant parameters. This is not an uncertainty interval or a refit. Active bounds restrict feasible directions; rank is not a constrained uniqueness test.",
+      "parameter_names": [
+        "c0",
+        "c1",
+        "c2"
+      ],
+      "n_parameters": 3,
+      "n_valid_center": 12,
+      "output_scale": 0.5486222751280383,
+      "output_scale_rule": "max absolute center prediction; 1 only when all predictions are zero",
+      "parameter_scale_rule": "absolute nonzero value; otherwise finite bound width; otherwise 1 working-unit coordinate",
+      "relative_step": 6.0554544523933395e-06,
+      "relative_rank_tolerance": 1e-07,
+      "parameters": [
+        {
+          "name": "c0",
+          "value": 1.9800482518411497,
+          "unit": "1",
+          "scale": 1.9800482518411497,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 1.1990092002589492e-05,
+          "step_minus": 1.1990092002589492e-05,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 5.995046001405768e-06,
+          "verification_step_minus": 5.995046001405768e-06
+        },
+        {
+          "name": "c1",
+          "value": 0.09989602257387437,
+          "unit": "m",
+          "scale": 0.09989602257387437,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 6.049158146753664e-07,
+          "step_minus": 6.049158146753664e-07,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 3.024579073307443e-07,
+          "verification_step_minus": 3.024579073307443e-07
+        },
+        {
+          "name": "c2",
+          "value": 0.06254467839173311,
+          "unit": "m^(-1)",
+          "scale": 0.06254467839173311,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 3.7873645124253397e-07,
+          "step_minus": 3.7873645124253397e-07,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 1.8936822562820588e-07,
+          "verification_step_minus": 1.8936822562820588e-07
+        }
+      ],
+      "resolution_check": "Compare the coefficient Jacobian at recorded steps and half steps; combine their RMS Frobenius difference with an output-roundoff estimate. Withhold rank when this exceeds rank discrimination. This is an empirical local stability check, not a rigorous error bound for arbitrary arithmetic or nonsmooth models.",
+      "roundoff_assumption": "8*float64 epsilon times the larger normalized endpoint magnitude, divided by the normalized parameter displacement; does not bound internal AST cancellation.",
+      "singular_values": [
+        0.5096358665047044,
+        0.06912348938571553,
+        0.0003660495094189837
+      ],
+      "rank_threshold": 5.0963586650470435e-08,
+      "roundoff_resolution": 3.324066251954956e-10,
+      "half_step_difference": 1.415893114402486e-11,
+      "numerical_resolution": 3.465655563395205e-10,
+      "rank": 3,
+      "nullity": 0,
+      "sample_normalization": "Jacobian divided by sqrt(n_samples); singular values use RMS sensitivity",
+      "column_rms_sensitivity": {
+        "c0": 0.4809835125486593,
+        "c1": 0.182085247175141,
+        "c2": 0.0025943443531594953
+      },
+      "insensitive_parameters": [],
+      "full_column_rank": true,
+      "condition_number": 1392.2593894843071
+    },
+    "checks": [
+      {
+        "name": "operators",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "max_nodes",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "units",
+        "status": "pass",
+        "required": false,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "shared feasible geometry/provided points; no global guarantee",
+        "reason": null
+      },
+      {
+        "name": "target_domain_probes",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null
+      }
+    ],
+    "metrics": {
+      "train": {
+        "rmse": 0.005024232977174164,
+        "mae": 0.003930256865407473,
+        "r2": 0.999158407161005,
+        "reason": null
+      },
+      "selection": {
+        "rmse": 0.00461798977350317,
+        "mae": 0.00385996077549602,
+        "r2": 0.9981510126171598,
+        "reason": null
+      }
+    },
+    "regions": {
+      "all": {
+        "n_rows": 12,
+        "rmse": 0.00461798977350317,
+        "mae": 0.00385996077549602,
+        "r2": 0.9981510126171598,
+        "reason": null
+      }
+    },
+    "n_nodes": 11,
+    "n_parameters": 3,
+    "formula": "(((1.9800482518411497 * length_cm) + 0.09989602257387437) + (0.06254467839173311 * (length_cm * length_cm)))",
+    "applicable_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "length_cm",
+          "unit": "m",
+          "domain": [
+            0.03,
+            0.3
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "response_mm",
+        "unit": "m",
+        "domain": [
+          -1.0,
+          2.0
+        ]
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "length_cm",
+            "unit": "m",
+            "domain": [
+              0.03,
+              0.3
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "length_cm"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "length_cm": "m"
+          },
+          "coordinate_roles": {
+            "length_cm": null
+          },
+          "bounds": [
+            [
+              0.03,
+              0.3
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "strata": {},
+    "groups": {
+      "problemg16": {
+        "n_rows": 3,
+        "rmse": 0.0035222831374560723,
+        "mae": 0.0028537250337707376,
+        "r2": 0.9990831090525144,
+        "reason": null
+      },
+      "problemg17": {
+        "n_rows": 3,
+        "rmse": 0.004078893061743913,
+        "mae": 0.00378403871503812,
+        "r2": 0.9953275264434172,
+        "reason": null
+      },
+      "problemg18": {
+        "n_rows": 3,
+        "rmse": 0.00526457740641858,
+        "mae": 0.004540073828213725,
+        "r2": 0.9976473901109624,
+        "reason": null
+      },
+      "problemg19": {
+        "n_rows": 3,
+        "rmse": 0.005342630046615282,
+        "mae": 0.004262005524961495,
+        "r2": 0.9959355795368743,
+        "reason": null
+      }
+    },
+    "native_fidelity": "verified within recorded native checks"
+  },
+  {
+    "id": "dictionary/7/3@native",
+    "kind": "explicit",
+    "eligible": true,
+    "reason": null,
+    "prediction_available": true,
+    "hypothesis": null,
+    "execution": {
+      "native_arithmetic": [
+        "strict_real"
+      ],
+      "prediction": "finite real-domain projection; invalid intermediate rows retained",
+      "stored_nodes": 14,
+      "expanded_nodes": 19
+    },
+    "constraint_application": {
+      "requirements_ref": {
+        "requirements_sha256": "b9b418d33595faf49001dd5ffeb6ae300c658056abdfdee48ecdd8337601a202",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "requested": {
+        "max_nodes": 60,
+        "max_free_parameters": null,
+        "require_units": false,
+        "allowed_variables": null,
+        "equation_template": null,
+        "probes": [],
+        "response_bounds": [
+          null,
+          null
+        ],
+        "response_checks": []
+      },
+      "native_declaration": {
+        "operators": "enforced during construction",
+        "units": "post-filtered",
+        "max_nodes": "post-filtered",
+        "variables": "enforced during construction",
+        "probes": "post-filtered"
+      },
+      "evaluation": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "pass",
+          "required": false,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "shared feasible geometry/provided points; no global guarantee",
+          "reason": null
+        },
+        {
+          "name": "target_domain_probes",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null
+        }
+      ],
+      "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+    },
+    "complexity_scope": "prediction AST",
+    "prediction_view": "explicit equation",
+    "requirements_eligible": true,
+    "requirement_failures": [],
+    "local_parameter_identifiability": {
+      "status": "computed",
+      "data_role": "selection",
+      "n_samples": 12,
+      "method": "bounded finite-difference scaled coefficient Jacobian SVD",
+      "scope": "explicit point equation at saved coefficients; all Selection inputs, unweighted",
+      "interpretation_limit": "Full local rank does not prove global or structural identifiability. Rank deficiency may reflect this design, coefficient point, finite-difference resolution, or redundant parameters. This is not an uncertainty interval or a refit. Active bounds restrict feasible directions; rank is not a constrained uniqueness test.",
+      "parameter_names": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "n_parameters": 4,
+      "n_valid_center": 12,
+      "output_scale": 0.5492719789566545,
+      "output_scale_rule": "max absolute center prediction; 1 only when all predictions are zero",
+      "parameter_scale_rule": "absolute nonzero value; otherwise finite bound width; otherwise 1 working-unit coordinate",
+      "relative_step": 6.0554544523933395e-06,
+      "relative_rank_tolerance": 1e-07,
+      "parameters": [
+        {
+          "name": "c0",
+          "value": 1.8950087680139356,
+          "unit": "1",
+          "scale": 1.8950087680139356,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 1.1475139281680313e-05,
+          "step_minus": 1.1475139281680313e-05,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 5.737569640951179e-06,
+          "verification_step_minus": 5.737569640951179e-06
+        },
+        {
+          "name": "c1",
+          "value": 0.1029094766657416,
+          "unit": "m",
+          "scale": 0.1029094766657416,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 6.231636486692116e-07,
+          "step_minus": 6.231636486692116e-07,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 3.115818243415447e-07,
+          "verification_step_minus": 3.115818243415447e-07
+        },
+        {
+          "name": "c2",
+          "value": 0.6743619275150817,
+          "unit": "m^(-1)",
+          "scale": 0.6743619275150817,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 4.0835679364636945e-06,
+          "step_minus": 4.0835679364636945e-06,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 2.0417839682318473e-06,
+          "verification_step_minus": 2.0417839682318473e-06
+        },
+        {
+          "name": "c3",
+          "value": -1.2469145960083245,
+          "unit": "m^(-2)",
+          "scale": 1.2469145960083245,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 7.5506345420528476e-06,
+          "step_minus": 7.5506345420528476e-06,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 3.7753172710264238e-06,
+          "verification_step_minus": 3.7753172710264238e-06
+        }
+      ],
+      "resolution_check": "Compare the coefficient Jacobian at recorded steps and half steps; combine their RMS Frobenius difference with an output-roundoff estimate. Withhold rank when this exceeds rank discrimination. This is an empirical local stability check, not a rigorous error bound for arbitrary arithmetic or nonsmooth models.",
+      "roundoff_assumption": "8*float64 epsilon times the larger normalized endpoint magnitude, divided by the normalized parameter displacement; does not bound internal AST cancellation.",
+      "singular_values": [
+        0.4922423633910973,
+        0.07110308678812051,
+        0.004817398004357613,
+        0.00028373621006458794
+      ],
+      "rank_threshold": 4.922423633910973e-08,
+      "roundoff_resolution": 3.8329215491132444e-10,
+      "half_step_difference": 2.4861403804730838e-11,
+      "numerical_resolution": 4.081535587160553e-10,
+      "rank": 4,
+      "nullity": 0,
+      "sample_normalization": "Jacobian divided by sqrt(n_samples); singular values use RMS sensitivity",
+      "column_rms_sensitivity": {
+        "c0": 0.4597816477502823,
+        "c1": 0.18735613795539716,
+        "c2": 0.027939349597515224,
+        "c3": 0.009969343206187184
+      },
+      "insensitive_parameters": [],
+      "full_column_rank": true,
+      "condition_number": 1734.8591611872391
+    },
+    "checks": [
+      {
+        "name": "operators",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "max_nodes",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "units",
+        "status": "pass",
+        "required": false,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "shared feasible geometry/provided points; no global guarantee",
+        "reason": null
+      },
+      {
+        "name": "target_domain_probes",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null
+      }
+    ],
+    "metrics": {
+      "train": {
+        "rmse": 0.005003262274509553,
+        "mae": 0.003873329924884883,
+        "r2": 0.9991654179668426,
+        "reason": null
+      },
+      "selection": {
+        "rmse": 0.004640557484075585,
+        "mae": 0.003945760298158053,
+        "r2": 0.9981328967818032,
+        "reason": null
+      }
+    },
+    "regions": {
+      "all": {
+        "n_rows": 12,
+        "rmse": 0.004640557484075585,
+        "mae": 0.003945760298158053,
+        "r2": 0.9981328967818032,
+        "reason": null
+      }
+    },
+    "n_nodes": 19,
+    "n_parameters": 4,
+    "formula": "((((1.8950087680139356 * length_cm) + 0.1029094766657416) + (0.6743619275150817 * (length_cm * length_cm))) + (-1.2469145960083245 * ((length_cm * length_cm) * length_cm)))",
+    "applicable_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "length_cm",
+          "unit": "m",
+          "domain": [
+            0.03,
+            0.3
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "response_mm",
+        "unit": "m",
+        "domain": [
+          -1.0,
+          2.0
+        ]
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "length_cm",
+            "unit": "m",
+            "domain": [
+              0.03,
+              0.3
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "length_cm"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "length_cm": "m"
+          },
+          "coordinate_roles": {
+            "length_cm": null
+          },
+          "bounds": [
+            [
+              0.03,
+              0.3
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "strata": {},
+    "groups": {
+      "problemg16": {
+        "n_rows": 3,
+        "rmse": 0.004037479773730252,
+        "mae": 0.003477348694992185,
+        "r2": 0.9987952695788229,
+        "reason": null
+      },
+      "problemg17": {
+        "n_rows": 3,
+        "rmse": 0.0038992329179635254,
+        "mae": 0.00349773070088837,
+        "r2": 0.9957300718230288,
+        "reason": null
+      },
+      "problemg18": {
+        "n_rows": 3,
+        "rmse": 0.005269135704676332,
+        "mae": 0.00442809199684574,
+        "r2": 0.9976433143649578,
+        "reason": null
+      },
+      "problemg19": {
+        "n_rows": 3,
+        "rmse": 0.005183632288842789,
+        "mae": 0.004379869799905919,
+        "r2": 0.9961738957634876,
+        "reason": null
+      }
+    },
+    "native_fidelity": "verified within recorded native checks"
+  },
+  {
+    "id": "dictionary/7/4@native",
+    "kind": "explicit",
+    "eligible": true,
+    "reason": null,
+    "prediction_available": true,
+    "hypothesis": null,
+    "execution": {
+      "native_arithmetic": [
+        "strict_real"
+      ],
+      "prediction": "finite real-domain projection; invalid intermediate rows retained",
+      "stored_nodes": 18,
+      "expanded_nodes": 25
+    },
+    "constraint_application": {
+      "requirements_ref": {
+        "requirements_sha256": "b9b418d33595faf49001dd5ffeb6ae300c658056abdfdee48ecdd8337601a202",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "requested": {
+        "max_nodes": 60,
+        "max_free_parameters": null,
+        "require_units": false,
+        "allowed_variables": null,
+        "equation_template": null,
+        "probes": [],
+        "response_bounds": [
+          null,
+          null
+        ],
+        "response_checks": []
+      },
+      "native_declaration": {
+        "operators": "enforced during construction",
+        "units": "post-filtered",
+        "max_nodes": "post-filtered",
+        "variables": "enforced during construction",
+        "probes": "post-filtered"
+      },
+      "evaluation": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "pass",
+          "required": false,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "shared feasible geometry/provided points; no global guarantee",
+          "reason": null
+        },
+        {
+          "name": "target_domain_probes",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null
+        }
+      ],
+      "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+    },
+    "complexity_scope": "prediction AST",
+    "prediction_view": "explicit equation",
+    "requirements_eligible": true,
+    "requirement_failures": [],
+    "local_parameter_identifiability": {
+      "status": "computed",
+      "data_role": "selection",
+      "n_samples": 12,
+      "method": "bounded finite-difference scaled coefficient Jacobian SVD",
+      "scope": "explicit point equation at saved coefficients; all Selection inputs, unweighted",
+      "interpretation_limit": "Full local rank does not prove global or structural identifiability. Rank deficiency may reflect this design, coefficient point, finite-difference resolution, or redundant parameters. This is not an uncertainty interval or a refit. Active bounds restrict feasible directions; rank is not a constrained uniqueness test.",
+      "parameter_names": [
+        "c0",
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "n_parameters": 5,
+      "n_valid_center": 12,
+      "output_scale": 0.549943884793832,
+      "output_scale_rule": "max absolute center prediction; 1 only when all predictions are zero",
+      "parameter_scale_rule": "absolute nonzero value; otherwise finite bound width; otherwise 1 working-unit coordinate",
+      "relative_step": 6.0554544523933395e-06,
+      "relative_rank_tolerance": 1e-07,
+      "parameters": [
+        {
+          "name": "c0",
+          "value": 1.418926204100946,
+          "unit": "1",
+          "scale": 1.418926204100946,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 8.592243000205002e-06,
+          "step_minus": 8.592243000205002e-06,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 4.296121500102501e-06,
+          "verification_step_minus": 4.296121500102501e-06
+        },
+        {
+          "name": "c1",
+          "value": 0.13893347951272547,
+          "unit": "m",
+          "scale": 0.13893347951272547,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 8.4130535710214e-07,
+          "step_minus": 8.4130535710214e-07,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 4.2065267855107e-07,
+          "verification_step_minus": 4.2065267855107e-07
+        },
+        {
+          "name": "c2",
+          "value": 3.03225141604955,
+          "unit": "m^(-1)",
+          "scale": 3.03225141604955,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 1.8361660337973262e-05,
+          "step_minus": 1.8361660337973262e-05,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 9.180830168986631e-06,
+          "verification_step_minus": 9.180830168986631e-06
+        },
+        {
+          "name": "c3",
+          "value": -5.104095989824242,
+          "unit": "m^(-2)",
+          "scale": 5.104095989824242,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 3.0907620787168355e-05,
+          "step_minus": 3.0907620787168355e-05,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 1.5453810394028267e-05,
+          "verification_step_minus": 1.5453810394028267e-05
+        },
+        {
+          "name": "c4",
+          "value": -0.0008249278703255765,
+          "unit": "m^(2)",
+          "scale": 0.0008249278703255765,
+          "bounds": [
+            null,
+            null
+          ],
+          "step_plus": 4.995313145224854e-09,
+          "step_minus": 4.995313145224854e-09,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 2.497656572558217e-09,
+          "verification_step_minus": 2.497656572558217e-09
+        }
+      ],
+      "resolution_check": "Compare the coefficient Jacobian at recorded steps and half steps; combine their RMS Frobenius difference with an output-roundoff estimate. Withhold rank when this exceeds rank discrimination. This is an empirical local stability check, not a rigorous error bound for arbitrary arithmetic or nonsmooth models.",
+      "roundoff_assumption": "8*float64 epsilon times the larger normalized endpoint magnitude, divided by the normalized parameter displacement; does not bound internal AST cancellation.",
+      "singular_values": [
+        0.4356703817402354,
+        0.09823639748510445,
+        0.01848416638792711,
+        0.0026028363828079493,
+        0.00039795444074666996
+      ],
+      "rank_threshold": 4.356703817402354e-08,
+      "roundoff_resolution": 4.2781892058697995e-10,
+      "half_step_difference": 3.016149785480862e-11,
+      "numerical_resolution": 4.5798041844178856e-10,
+      "rank": 5,
+      "nullity": 0,
+      "sample_normalization": "Jacobian divided by sqrt(n_samples); singular values use RMS sensitivity",
+      "column_rms_sensitivity": {
+        "c0": 0.3438502026802127,
+        "c1": 0.2526321018477554,
+        "c2": 0.12547509208157212,
+        "c3": 0.04075845742293409,
+        "c4": 0.018613906009992045
+      },
+      "insensitive_parameters": [],
+      "full_column_rank": true,
+      "condition_number": 1094.774519723414
+    },
+    "checks": [
+      {
+        "name": "operators",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "max_nodes",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "units",
+        "status": "pass",
+        "required": false,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "shared feasible geometry/provided points; no global guarantee",
+        "reason": null
+      },
+      {
+        "name": "target_domain_probes",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null
+      }
+    ],
+    "metrics": {
+      "train": {
+        "rmse": 0.004908279624965468,
+        "mae": 0.0038294938944879566,
+        "r2": 0.9991968048357358,
+        "reason": null
+      },
+      "selection": {
+        "rmse": 0.004853915028028392,
+        "mae": 0.004242772697048279,
+        "r2": 0.9979572634828697,
+        "reason": null
+      }
+    },
+    "regions": {
+      "all": {
+        "n_rows": 12,
+        "rmse": 0.004853915028028392,
+        "mae": 0.004242772697048279,
+        "r2": 0.9979572634828697,
+        "reason": null
+      }
+    },
+    "n_nodes": 25,
+    "n_parameters": 5,
+    "formula": "(((((1.418926204100946 * length_cm) + 0.13893347951272547) + (3.03225141604955 * (length_cm * length_cm))) + (-5.104095989824242 * ((length_cm * length_cm) * length_cm))) + (-0.0008249278703255765 * (1.0 / length_cm)))",
+    "applicable_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "length_cm",
+          "unit": "m",
+          "domain": [
+            0.03,
+            0.3
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "response_mm",
+        "unit": "m",
+        "domain": [
+          -1.0,
+          2.0
+        ]
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "length_cm",
+            "unit": "m",
+            "domain": [
+              0.03,
+              0.3
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "length_cm"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "length_cm": "m"
+          },
+          "coordinate_roles": {
+            "length_cm": null
+          },
+          "bounds": [
+            [
+              0.03,
+              0.3
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "strata": {},
+    "groups": {
+      "problemg16": {
+        "n_rows": 3,
+        "rmse": 0.004265471818003793,
+        "mae": 0.003764959813810531,
+        "r2": 0.9986553684057051,
+        "reason": null
+      },
+      "problemg17": {
+        "n_rows": 3,
+        "rmse": 0.003240927769252742,
+        "mae": 0.0031023793636539196,
+        "r2": 0.9970501433108011,
+        "reason": null
+      },
+      "problemg18": {
+        "n_rows": 3,
+        "rmse": 0.006088661651041079,
+        "mae": 0.005438051526356384,
+        "r2": 0.996853218642113,
+        "reason": null
+      },
+      "problemg19": {
+        "n_rows": 3,
+        "rmse": 0.005335944252025416,
+        "mae": 0.004665700084372282,
+        "r2": 0.9959457456450793,
+        "reason": null
+      }
+    },
+    "native_fidelity": "verified within recorded native checks"
+  },
+  {
+    "id": "user_linear@manual/train_point_fit",
+    "kind": "explicit",
+    "eligible": true,
+    "reason": null,
+    "prediction_available": true,
+    "hypothesis": null,
+    "execution": {
+      "native_arithmetic": [
+        "strict_real"
+      ],
+      "prediction": "finite real-domain projection; invalid intermediate rows retained",
+      "stored_nodes": 5,
+      "expanded_nodes": 5
+    },
+    "constraint_application": {
+      "requirements_ref": {
+        "requirements_sha256": "b9b418d33595faf49001dd5ffeb6ae300c658056abdfdee48ecdd8337601a202",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "requested": {
+        "max_nodes": 60,
+        "max_free_parameters": null,
+        "require_units": false,
+        "allowed_variables": null,
+        "equation_template": null,
+        "probes": [],
+        "response_bounds": [
+          null,
+          null
+        ],
+        "response_checks": []
+      },
+      "native_declaration": "not established; do not infer enforcement from a common pass",
+      "evaluation": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "pass",
+          "required": false,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "shared feasible geometry/provided points; no global guarantee",
+          "reason": null
+        },
+        {
+          "name": "target_domain_probes",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null
+        }
+      ],
+      "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+    },
+    "complexity_scope": "prediction AST",
+    "prediction_view": "explicit equation",
+    "requirements_eligible": true,
+    "requirement_failures": [],
+    "local_parameter_identifiability": {
+      "status": "computed",
+      "data_role": "selection",
+      "n_samples": 12,
+      "method": "bounded finite-difference scaled coefficient Jacobian SVD",
+      "scope": "explicit point equation at saved coefficients; all Selection inputs, unweighted",
+      "interpretation_limit": "Full local rank does not prove global or structural identifiability. Rank deficiency may reflect this design, coefficient point, finite-difference resolution, or redundant parameters. This is not an uncertainty interval or a refit. Active bounds restrict feasible directions; rank is not a constrained uniqueness test.",
+      "parameter_names": [
+        "a",
+        "b"
+      ],
+      "n_parameters": 2,
+      "n_valid_center": 12,
+      "output_scale": 0.5488620769960466,
+      "output_scale_rule": "max absolute center prediction; 1 only when all predictions are zero",
+      "parameter_scale_rule": "absolute nonzero value; otherwise finite bound width; otherwise 1 working-unit coordinate",
+      "relative_step": 6.0554544523933395e-06,
+      "relative_rank_tolerance": 1e-07,
+      "parameters": [
+        {
+          "name": "a",
+          "value": 2.000635436522328,
+          "unit": "1",
+          "scale": 2.000635436522328,
+          "bounds": [
+            0,
+            4
+          ],
+          "step_plus": 1.2114756761771872e-05,
+          "step_minus": 1.2114756761771872e-05,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 6.0573783806638914e-06,
+          "verification_step_minus": 6.0573783806638914e-06
+        },
+        {
+          "name": "b",
+          "value": 0.09867021695224298,
+          "unit": "m",
+          "scale": 0.09867021695224298,
+          "bounds": [
+            -1,
+            1
+          ],
+          "step_plus": 5.974930045588023e-07,
+          "step_minus": 5.974930045588023e-07,
+          "difference": "central",
+          "active_bound": null,
+          "verification_step_plus": 2.9874650228634003e-07,
+          "verification_step_minus": 2.9874650228634003e-07
+        }
+      ],
+      "resolution_check": "Compare the coefficient Jacobian at recorded steps and half steps; combine their RMS Frobenius difference with an output-roundoff estimate. Withhold rank when this exceeds rank discrimination. This is an empirical local stability check, not a rigorous error bound for arbitrary arithmetic or nonsmooth models.",
+      "roundoff_assumption": "8*float64 epsilon times the larger normalized endpoint magnitude, divided by the normalized parameter displacement; does not bound internal AST cancellation.",
+      "singular_values": [
+        0.5134322322414632,
+        0.06841043095721638
+      ],
+      "rank_threshold": 5.134322322414631e-08,
+      "roundoff_resolution": 2.714701973973306e-10,
+      "half_step_difference": 1.8156355537632047e-11,
+      "numerical_resolution": 2.8962655293496265e-10,
+      "rank": 2,
+      "nullity": 0,
+      "sample_normalization": "Jacobian divided by sqrt(n_samples); singular values use RMS sensitivity",
+      "column_rms_sensitivity": {
+        "a": 0.48577211929306674,
+        "b": 0.179772334594971
+      },
+      "insensitive_parameters": [],
+      "full_column_rank": true,
+      "condition_number": 7.505174650376953
+    },
+    "checks": [
+      {
+        "name": "operators",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "max_nodes",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "units",
+        "status": "pass",
+        "required": false,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "shared feasible geometry/provided points; no global guarantee",
+        "reason": null
+      },
+      {
+        "name": "target_domain_probes",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null
+      }
+    ],
+    "metrics": {
+      "train": {
+        "rmse": 0.0050375045528929675,
+        "mae": 0.003979265405943402,
+        "r2": 0.9991539551322024,
+        "reason": null
+      },
+      "selection": {
+        "rmse": 0.004507713759029069,
+        "mae": 0.003783024795388503,
+        "r2": 0.9982382646253316,
+        "reason": null
+      }
+    },
+    "regions": {
+      "all": {
+        "n_rows": 12,
+        "rmse": 0.004507713759029069,
+        "mae": 0.003783024795388503,
+        "r2": 0.9982382646253316,
+        "reason": null
+      }
+    },
+    "n_nodes": 5,
+    "n_parameters": 2,
+    "formula": "((2.000635436522328 * length_cm) + 0.09867021695224298)",
+    "applicable_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "length_cm",
+          "unit": "m",
+          "domain": [
+            0.03,
+            0.3
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "response_mm",
+        "unit": "m",
+        "domain": [
+          -1.0,
+          2.0
+        ]
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "length_cm",
+            "unit": "m",
+            "domain": [
+              0.03,
+              0.3
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "length_cm"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "length_cm": "m"
+          },
+          "coordinate_roles": {
+            "length_cm": null
+          },
+          "bounds": [
+            [
+              0.03,
+              0.3
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "strata": {},
+    "groups": {
+      "problemg16": {
+        "n_rows": 3,
+        "rmse": 0.0033741643189591462,
+        "mae": 0.0027972696788829783,
+        "r2": 0.9991586017299664,
+        "reason": null
+      },
+      "problemg17": {
+        "n_rows": 3,
+        "rmse": 0.004321283243824647,
+        "mae": 0.003994302150342475,
+        "r2": 0.9947556981503691,
+        "reason": null
+      },
+      "problemg18": {
+        "n_rows": 3,
+        "rmse": 0.005086254785886077,
+        "mae": 0.0044283512627850494,
+        "r2": 0.997804066874772,
+        "reason": null
+      },
+      "problemg19": {
+        "n_rows": 3,
+        "rmse": 0.005034825901827608,
+        "mae": 0.00391217608954351,
+        "r2": 0.9963904144427559,
+        "reason": null
+      }
+    },
+    "native_fidelity": "unverified"
+  }
+]

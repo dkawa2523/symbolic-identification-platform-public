@@ -1,0 +1,6 @@
+{
+  "artifacts": [
+    "/work/results/basic/calculation/fits/fit_0.json"
+  ],
+  "estimator": "least_squares"
+}

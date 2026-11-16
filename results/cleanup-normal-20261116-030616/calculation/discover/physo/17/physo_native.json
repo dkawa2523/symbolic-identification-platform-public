@@ -1,0 +1,202 @@
+{
+  "template_search": {
+    "scope": "single shared slot / fixed outer / variable-only calls",
+    "slot_output_unit": "m",
+    "observed_y_unit": "m^2",
+    "loss_target": "original observed y",
+    "strict_real": {
+      "strict_execute_calls": 184,
+      "nonfinite_fit_failures": 0
+    }
+  },
+  "response_search": null,
+  "fixed_constants": {},
+  "parameter_units": {
+    "a": "1"
+  },
+  "coefficient_catalog_scope": "explicit method-profile catalog",
+  "candidate_scope": "complexity_ladder",
+  "native_learning_trace": [
+    {
+      "epoch": 0,
+      "sampled": 48,
+      "physical": 48,
+      "positive_reward": 48,
+      "elite": 2,
+      "loss": -0.011281957705578086,
+      "optimizer_steps": 1,
+      "gradient_l2": 0.00044471763378863596,
+      "parameter_change_l2": 0.750962143112574
+    }
+  ],
+  "resolved_native_config": {
+    "learning_config": {
+      "batch_size": 48,
+      "max_time_step": 5,
+      "n_epochs": 1000000000,
+      "gamma_decay": 0.7,
+      "entropy_weight": 0.005,
+      "risk_factor": 0.05,
+      "rewards_computer": "physo.physym.reward.make_RewardsComputer.<locals>.rewards_computer",
+      "get_optimizer": "physo.config.config0.<lambda>",
+      "observe_units": true
+    },
+    "reward_config": {
+      "reward_function": "physo.physym.reward.SquashedNRMSE",
+      "zero_out_unphysical": true,
+      "zero_out_duplicates": false,
+      "keep_lowest_complexity_duplicate": false
+    },
+    "free_const_opti_args": {
+      "loss": "MSE",
+      "method": "LBFGS",
+      "method_args": {
+        "n_steps": 15,
+        "tol": 1e-08,
+        "lbfgs_func_args": {
+          "max_iter": 4,
+          "line_search_fn": "strong_wolfe"
+        }
+      }
+    },
+    "priors_config": [
+      [
+        "SoftLengthPrior",
+        {
+          "length_loc": 8,
+          "scale": 5
+        }
+      ],
+      [
+        "NoUselessInversePrior",
+        null
+      ],
+      [
+        "PhysicalUnitsPrior",
+        {
+          "prob_eps": 1.1920928955078125e-07
+        }
+      ],
+      [
+        "HardLengthPrior",
+        {
+          "min_length": 1,
+          "max_length": 5
+        }
+      ]
+    ],
+    "cell_config": {
+      "hidden_size": 128,
+      "n_layers": 1,
+      "is_lobotomized": false
+    }
+  },
+  "physo_profile": {
+    "profile": "lightweight",
+    "preset": "config0",
+    "epochs": 1,
+    "max_n_evaluations": 48,
+    "physo_version": "1.1.11",
+    "preset_source_sha256": "6c5e8c7ad058a2f714ce613988926b611d5aabc3de63eb96f3c17feb7a8e6676",
+    "preset_learning_config": {
+      "batch_size": 1000,
+      "max_time_step": 35,
+      "n_epochs": 1000000000,
+      "gamma_decay": 0.7,
+      "entropy_weight": 0.005,
+      "risk_factor": 0.05,
+      "rewards_computer": "physo.physym.reward.make_RewardsComputer.<locals>.rewards_computer",
+      "get_optimizer": "physo.config.config0.<lambda>",
+      "observe_units": true
+    },
+    "explicit_overrides": {
+      "batch_size": 48,
+      "epochs": 1,
+      "max_n_evaluations": 48,
+      "max_time_step": 5
+    },
+    "effective_epochs": 1,
+    "effective_batch_size": 48,
+    "horizon": {
+      "preset_max_time_step": 35,
+      "source_max_nodes": 12,
+      "requested_max_time_step": 5,
+      "effective_max_time_step": 5,
+      "origin": "explicit_physo_option",
+      "token_capacity_prior": "native_HardLengthPrior",
+      "native_min_length": 1,
+      "effective_minimum_ast_length": 1,
+      "scope": "Native token horizon; source AST and slot caps still enforced independently; no clipping"
+    },
+    "preset_hard_length_priors": [
+      [
+        "HardLengthPrior",
+        {
+          "min_length": 4,
+          "max_length": 35
+        }
+      ]
+    ],
+    "hard_length_policy": "Existing adapter replaces preset HardLength with weighted source/slot priors; explicit horizon adds min1/maxT (T1: native min0, natural AST minimum1). Active priors are in resolved_native_config.",
+    "override_order": [
+      "pinned preset",
+      "legacy lightweight defaults only",
+      "explicit method options",
+      "common source AST budget and supported-operator prior adjustments",
+      "CPU single-thread/nonparallel resource policy"
+    ],
+    "resources": {
+      "device": "cpu",
+      "torch_threads": 1,
+      "parallel_mode": false
+    },
+    "unit_mode": "dimensioned input/target units",
+    "scope": "preset-derived configuration plus platform extensions; not a quality guarantee; no automatic unit-based preset switch"
+  },
+  "native_operators": [
+    "mul",
+    "add"
+  ],
+  "programs": [
+    {
+      "rank": 0,
+      "prefix": [
+        "x0"
+      ],
+      "free_parameters": [
+        [
+          1.0
+        ]
+      ]
+    },
+    {
+      "rank": 1,
+      "prefix": [
+        "add",
+        "x0",
+        "x0"
+      ],
+      "free_parameters": [
+        [
+          1.0
+        ]
+      ]
+    },
+    {
+      "rank": 2,
+      "prefix": [
+        "mul",
+        "x0",
+        "mul",
+        "1.0",
+        "a"
+      ],
+      "free_parameters": [
+        [
+          2.0
+        ]
+      ]
+    }
+  ],
+  "rejected_exports": []
+}

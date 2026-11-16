@@ -1,0 +1,20 @@
+10. physo | equation
+Candidate: physo/17/8@native
+Coordinates: public
+y [1] = ((0.75 * x) + ((coef['__slot_h_c0'] + (coef['__slot_h_c0'] / ((x - (((1.0 + coef['__slot_h_c0']) + x) * coef['__slot_h_c0'])) - coef['__slot_h_c1']))) / 1.0))
+
+__slot_h_c0 = 1.9998572859905726 [1]
+__slot_h_c1 = -4.993786815920743 [1]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((0.75 * x) + h(x))
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Declared fixed contribution 0.75*x plus one shared unknown h(x)'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [1]) = ((c0 + (c0 / ((x0 - (((1.0 + c0) + x0) * c0)) - c1))) / 1.0)
+  Unit: 1
+  c0 = 1.9998572859905726; role=free; unit=1; tied_to=None
+  c1 = -4.993786815920743; role=free; unit=1; tied_to=None
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.

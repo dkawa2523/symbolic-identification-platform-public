@@ -1,0 +1,2 @@
+engine,seed,status,native_execution_status,reason,wall_seconds,exported_candidates,summary_path
+pysr,17,ok,completed,,2937.725066401006,11,/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/discover/pysr/17/engine_summary.json

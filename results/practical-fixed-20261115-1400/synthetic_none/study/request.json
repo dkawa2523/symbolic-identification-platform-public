@@ -1,0 +1,37 @@
+{
+  "prepared_run": "/work/results/practical-fixed-20261115-1400/synthetic_none/pysr/calculation/prepare/run.json",
+  "sources": [
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/synthetic_none/pysr/calculation/discover/pysr/17/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/synthetic_none/pysr/calculation/prepare/run.json"
+    },
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/synthetic_none/parfam/calculation/discover/parfam/17/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/synthetic_none/parfam/calculation/prepare/run.json"
+    },
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/synthetic_none/torchsisso/calculation/discover/torchsisso/17/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/synthetic_none/torchsisso/calculation/prepare/run.json"
+    },
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/synthetic_none/physo/calculation/discover/physo/17/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/synthetic_none/physo/calculation/prepare/run.json"
+    },
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/synthetic_none/e2e/calculation/discover/e2e/17/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/synthetic_none/e2e/calculation/prepare/run.json"
+    },
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/synthetic_none/baselines/calculation/discover/mean/17/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/synthetic_none/baselines/calculation/prepare/run.json"
+    },
+    {
+      "discovery": "/work/results/practical-fixed-20261115-1400/synthetic_none/baselines/calculation/discover/linear/17/engine_summary.json",
+      "prepared_run": "/work/results/practical-fixed-20261115-1400/synthetic_none/baselines/calculation/prepare/run.json"
+    }
+  ],
+  "question": "Fixed one-seed comparison; synthetic support combines known contribution and finite hard responses.",
+  "purpose": "local_prediction",
+  "final_history": "declared_unseen",
+  "data_kind": "Fresh procedural samples of a disclosed designed synthetic law; pretraining overlap unknown"
+}

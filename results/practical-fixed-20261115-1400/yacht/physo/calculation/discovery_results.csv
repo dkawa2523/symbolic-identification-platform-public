@@ -1,0 +1,2 @@
+engine,seed,status,native_execution_status,reason,wall_seconds,exported_candidates,summary_path
+physo,42,ok,completed,,1852.9255048389896,20,/work/results/practical-fixed-20261115-1400/yacht/physo/calculation/discover/physo/42/engine_summary.json

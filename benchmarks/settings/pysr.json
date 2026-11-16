@@ -1,0 +1,59 @@
+{
+  "search": {
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "neg",
+      "abs",
+      "sqrt",
+      "pow_int",
+      "pow",
+      "rootn",
+      "sin",
+      "cos",
+      "exp",
+      "log",
+      "tanh"
+    ],
+    "engine_options": {
+      "pysr": {
+        "niterations": 8,
+        "populations": 4,
+        "population_size": 32,
+        "ncycles_per_iteration": 80,
+        "seconds": 90,
+        "maxdepth": 15,
+        "operator_constraints": {
+          "div": [
+            -1,
+            8
+          ],
+          "sin": 8,
+          "cos": 8,
+          "pow_int": 8
+        },
+        "nested_constraints": {
+          "sin": {
+            "sin": 0,
+            "cos": 0
+          },
+          "cos": {
+            "sin": 0,
+            "cos": 0
+          }
+        }
+      }
+    }
+  },
+  "constraints": {
+    "max_nodes": 60
+  },
+  "evaluation": {
+    "coefficient_fit": "none",
+    "selection_policy": "balanced",
+    "relative_tolerance": 0.01,
+    "absolute_tolerance": 1e-06
+  }
+}

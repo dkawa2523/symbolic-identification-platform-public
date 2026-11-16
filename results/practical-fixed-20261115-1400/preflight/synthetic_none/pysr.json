@@ -1,0 +1,232 @@
+{
+  "status": "inputs_valid",
+  "package_identity": {
+    "version": "0.90.4",
+    "mode": "source",
+    "installed_metadata_version": "0.1.0"
+  },
+  "path_base": "/work",
+  "data_file": "/work/results/practical-fixed-20261115-1400/inputs/synthetic/table.csv",
+  "identity_column": "sample_id",
+  "group_column": null,
+  "feature_columns": [
+    "x"
+  ],
+  "target_column": "y",
+  "unit_coordinates": {
+    "x": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "y": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    }
+  },
+  "working_domains": {
+    "x": [
+      0.1,
+      4.0
+    ]
+  },
+  "working_variables": [
+    {
+      "id": "x0",
+      "column": "x",
+      "unit": "1",
+      "domain": [
+        0.1,
+        4.0
+      ],
+      "coordinate_role": null
+    }
+  ],
+  "target": {
+    "coordinate_role": null,
+    "column": "y",
+    "unit": "1",
+    "domain": null
+  },
+  "split": {
+    "method": "fixed",
+    "file": "results/practical-fixed-20261115-1400/inputs/synthetic/split.csv",
+    "group_column": null,
+    "seed": 42,
+    "valid_size": 0.2,
+    "selection_size": 0.2
+  },
+  "partitions": {
+    "final": {
+      "n_rows": 256,
+      "n_groups": 256
+    },
+    "selection": {
+      "n_rows": 128,
+      "n_groups": 128
+    },
+    "train": {
+      "n_rows": 256,
+      "n_groups": 256
+    }
+  },
+  "search_budget": {
+    "seeds": [
+      17
+    ],
+    "max_wall_seconds": 21600,
+    "candidate_pool_policy": "all",
+    "max_export_candidates": 20,
+    "allow_partial_engines": true
+  },
+  "requirements": {
+    "allowed_operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "fixed_constants": {},
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "required_responses": {
+      "points": [],
+      "bounds": [
+        null,
+        null
+      ],
+      "checks": [],
+      "enforcement": null
+    }
+  },
+  "engines": {
+    "pysr": {
+      "declared_input_issues": [],
+      "adapter_input_issues": [],
+      "adapter_validation": "passed",
+      "asset_input_issues": [],
+      "asset_verification": {
+        "status": "not_requested",
+        "manifest_sha256": null,
+        "files_verified": 0
+      },
+      "options": {
+        "objective": "mse",
+        "niterations": 10000,
+        "populations": 8,
+        "population_size": 40,
+        "ncycles_per_iteration": 380,
+        "seconds": 2880,
+        "parallelism": "serial"
+      },
+      "runtime": {},
+      "assets": {},
+      "effective_operator_subset": [
+        "add",
+        "sub",
+        "mul",
+        "div"
+      ],
+      "capabilities": {
+        "unit_search": {
+          "defaults": {
+            "unit_mode": "hard"
+          },
+          "choices": {
+            "unit_mode": [
+              "soft",
+              "hard"
+            ]
+          },
+          "templates": false
+        },
+        "response_enforcement": {
+          "default": "soft",
+          "supported": [
+            "soft",
+            "hard"
+          ],
+          "stage": "native structure fitness and constant optimization"
+        },
+        "supported_options": [
+          "constraint_weight",
+          "deterministic",
+          "dimensional_constraint_penalty",
+          "dimensionless_constants_only",
+          "max_evals",
+          "maxdepth",
+          "ncycles_per_iteration",
+          "nested_constraints",
+          "niterations",
+          "objective",
+          "operator_constraints",
+          "parallelism",
+          "population_size",
+          "populations",
+          "procs",
+          "seconds",
+          "template_parameter_initialization",
+          "unit_mode"
+        ],
+        "operators": [
+          "add",
+          "sub",
+          "mul",
+          "div",
+          "neg",
+          "sqrt",
+          "log",
+          "exp",
+          "abs",
+          "sin",
+          "cos",
+          "tanh",
+          "sinh",
+          "cosh",
+          "pow",
+          "pow_int"
+        ],
+        "equation_template": true,
+        "fixed_constants": "template_only",
+        "constraints": {
+          "operators": "enforced during search",
+          "max_nodes": "weighted native source-coordinate size for ordinary expressions; template full-size fitness gate includes fixed skeleton and repeated calls",
+          "native_operator_profile": "optional per-argument/nesting restrictions enforced by PySR; not additional common output requirements",
+          "units": "default post-check only; explicit unit_mode soft/hard applies native dimensional fitness to ordinary expressions, including custom response loss; template native-unit search unsupported",
+          "variables": "disallowed input columns excluded before native search; response points projected after full-schema validation; subset with templates unsupported; full-schema export rechecked",
+          "allowed_variables": "disallowed input columns excluded before native search; response points projected after full-schema validation; subset with templates unsupported; full-schema export rechecked",
+          "probes": "native finite-point objective in search mode; explicit filter mode is post-check only",
+          "response_checks": "native finite-step objective in search mode; no global guarantee",
+          "equation_template": "native fixed structure/shared slots; full source AST and local slot size hard-gated in search fitness before prediction; units and exported expression rechecked after search"
+        },
+        "search_constraints": [
+          "response_bounds",
+          "response_checks",
+          "probes"
+        ],
+        "requires_assets": false
+      },
+      "constraint_application": {
+        "operators": "enforced during search",
+        "max_nodes": "weighted native source-coordinate size for ordinary expressions; template full-size fitness gate includes fixed skeleton and repeated calls",
+        "units": "post-check only; native unit fitness disabled"
+      },
+      "response_mode": "search"
+    }
+  },
+  "not_checked": [
+    "Only adapter-provided static input checks ran. An extension without validate_request is explicitly not_available.",
+    "Native libraries, runtime startup, GPU availability and checkpoint deserialization were not tested; verified file hashes and input checks are not native readiness evidence.",
+    "No search, fitting, predictions, Selection metrics or Final metrics were performed. No input files were changed."
+  ]
+}

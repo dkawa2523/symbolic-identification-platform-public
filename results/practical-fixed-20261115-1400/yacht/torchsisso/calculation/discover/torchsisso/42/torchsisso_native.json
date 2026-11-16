@@ -1,0 +1,66 @@
+{
+  "models": [
+    {
+      "indices": [
+        134
+      ],
+      "coefficients": [
+        1159.5502816000655
+      ],
+      "intercept": -3.423848544992749,
+      "descriptors": [
+        "(x5)**4"
+      ]
+    },
+    {
+      "indices": [
+        134.0,
+        128.0
+      ],
+      "coefficients": [
+        3743.872986884908,
+        -1175.1275384800888
+      ],
+      "intercept": 3.645669149628521,
+      "descriptors": [
+        "(x5)**4",
+        "(x5)**3"
+      ]
+    },
+    {
+      "indices": [
+        134.0,
+        116.0,
+        122.0
+      ],
+      "coefficients": [
+        -396983.28240661015,
+        9479840.231441721,
+        -4739790.111331243
+      ],
+      "intercept": -9479842.032773923,
+      "descriptors": [
+        "(x5)**4",
+        "(cosh(x5))",
+        "(x5)**2"
+      ]
+    }
+  ],
+  "native_dtype": "torch.float64",
+  "validation_probe_count": 16,
+  "validation_probe_scope": "declared input geometry; observed geometry reuses Train rows, not independent data",
+  "oracle": "pinned native descriptor arithmetic; validation-only column filtering bypass; no search/refit",
+  "rejected_exports": [],
+  "removed_degenerate_train_descriptors": [],
+  "dimensional": false,
+  "input_units": {
+    "x0": "1",
+    "x1": "1",
+    "x2": "1",
+    "x3": "1",
+    "x4": "1",
+    "x5": "1"
+  },
+  "target_dimension": null,
+  "coefficient_units": "unknown"
+}

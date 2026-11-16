@@ -1,0 +1,21 @@
+{
+  "prepared_run": "/work/results/basic/calculation/prepare/prepare/run.json",
+  "sources": [
+    {
+      "discovery": "/work/results/basic/calculation/native/mean/discover/engine_summary.json"
+    },
+    {
+      "discovery": "/work/results/basic/calculation/native/linear/discover/engine_summary.json"
+    },
+    {
+      "discovery": "/work/results/basic/calculation/native/dictionary/discover/engine_summary.json"
+    },
+    {
+      "derived": "/work/results/basic/calculation/fits/fit_0.json"
+    }
+  ],
+  "purpose": "local_prediction",
+  "question": "Can a simple local response be used within this observed length range?",
+  "engineering_tolerance": 0.02,
+  "final_history": "known_exposed"
+}

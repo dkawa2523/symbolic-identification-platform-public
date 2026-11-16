@@ -1,0 +1,42 @@
+{
+  "models": 3,
+  "checks": [
+    {
+      "id": "physo/17/0@native",
+      "partition": "train",
+      "n": 48,
+      "prediction_sha256": "e483d3e6409f1d52eccec95731ee596809f7249bc8063948be17d1b418c80922"
+    },
+    {
+      "id": "physo/17/0@native",
+      "partition": "independent",
+      "n": 3,
+      "prediction_sha256": "4ca44b84e90fb484e1b2a7e533f7796d286db38026e351e4554ec1e7c5fe23ae"
+    },
+    {
+      "id": "physo/17/1@native",
+      "partition": "train",
+      "n": 48,
+      "prediction_sha256": "902f580f89a01de33615d9d3c2fd157007c247924b656a7dc9e28f8ee5d2bc90"
+    },
+    {
+      "id": "physo/17/1@native",
+      "partition": "independent",
+      "n": 3,
+      "prediction_sha256": "30db809fa9c5dcf7b2ab79f75cbfcc2d32944cf5eaac64371c0d047802c5d78d"
+    },
+    {
+      "id": "physo/17/2@native",
+      "partition": "train",
+      "n": 48,
+      "prediction_sha256": "902f580f89a01de33615d9d3c2fd157007c247924b656a7dc9e28f8ee5d2bc90"
+    },
+    {
+      "id": "physo/17/2@native",
+      "partition": "independent",
+      "n": 3,
+      "prediction_sha256": "30db809fa9c5dcf7b2ab79f75cbfcc2d32944cf5eaac64371c0d047802c5d78d"
+    }
+  ],
+  "final_accessed": false
+}

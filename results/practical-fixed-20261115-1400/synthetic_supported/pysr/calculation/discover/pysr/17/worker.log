@@ -1,0 +1,2 @@
+/opt/venv/lib/python3.11/site-packages/pysr/sr.py:1972: UserWarning: Note: Using a large maxsize for the equation search will be exponentially slower and use significant memory.
+  warnings.warn(

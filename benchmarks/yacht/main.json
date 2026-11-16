@@ -1,0 +1,108 @@
+{
+  "task": "symbolic_pipeline",
+  "data": {
+    "local_path": "data/yacht/table.csv",
+    "target_column": "resistance",
+    "feature_columns": [
+      "buoyancy_position",
+      "prismatic_coefficient",
+      "length_displacement_ratio",
+      "beam_draught_ratio",
+      "length_beam_ratio",
+      "froude"
+    ],
+    "units": {
+      "buoyancy_position": "1",
+      "prismatic_coefficient": "1",
+      "length_displacement_ratio": "1",
+      "beam_draught_ratio": "1",
+      "length_beam_ratio": "1",
+      "froude": "1",
+      "resistance": "1"
+    }
+  },
+  "split": {
+    "file": "data/yacht/split.csv",
+    "group_column": "group_id"
+  },
+  "search": {
+    "engines": [
+      "pysr",
+      "physo",
+      "torchsisso",
+      "parfam",
+      "e2e"
+    ],
+    "seeds": [
+      42
+    ],
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "neg",
+      "abs",
+      "exp",
+      "log",
+      "sqrt",
+      "pow_int",
+      "sin",
+      "cos",
+      "tanh",
+      "sinh",
+      "cosh"
+    ],
+    "max_wall_seconds": 3600,
+    "max_export_candidates": 20,
+    "allow_partial_engines": true,
+    "runtimes": {
+      "e2e": {
+        "device": "cpu"
+      }
+    },
+    "engine_options": {
+      "pysr": {
+        "niterations": 100,
+        "populations": 6,
+        "ncycles_per_iteration": 100
+      },
+      "physo": {
+        "epochs": 100,
+        "batch_size": 128,
+        "max_n_evaluations": 12800
+      },
+      "torchsisso": {
+        "n_expansion": 2,
+        "n_term": 3,
+        "k": 10
+      },
+      "parfam": {
+        "degree": 2,
+        "maxiter": 100,
+        "repetitions": 2,
+        "max_active_parameters": 12
+      },
+      "e2e": {
+        "beam_size": 16,
+        "max_input_points": 200,
+        "n_trees_to_refine": 16,
+        "refinement_seconds": 5,
+        "max_generated_output_len": 128
+      }
+    },
+    "candidate_pool_policy": "all"
+  },
+  "model_assets": {
+    "e2e": {
+      "manifest_file": "pretrained/e2e/manifest.json"
+    }
+  },
+  "constraints": {
+    "max_nodes": 256
+  },
+  "evaluation": {
+    "selection_policy": "accuracy",
+    "absolute_tolerance": 1e-06
+  }
+}

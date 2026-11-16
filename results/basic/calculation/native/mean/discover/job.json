@@ -1,0 +1,138 @@
+{
+  "runtime_extensions": [],
+  "prepared_sha256": "6b82b356ebd7309374a5887462c7708a9054eb78b0f525a0cbdd5dd91de67766",
+  "split_seed": 42,
+  "public_units": {
+    "length_cm": "cm",
+    "response_mm": "mm"
+  },
+  "unit_coordinates": {
+    "policy": "canonical problem; explicit CSV conversion; all domains/constraints/tolerances in problem units",
+    "columns": {
+      "length_cm": {
+        "coordinate_role": null,
+        "source_unit": "cm",
+        "problem_unit": "m",
+        "scale": 0.01,
+        "offset": 0.0,
+        "dimension_status": "known"
+      },
+      "response_mm": {
+        "coordinate_role": null,
+        "source_unit": "mm",
+        "problem_unit": "m",
+        "scale": 0.001,
+        "offset": 0.0,
+        "dimension_status": "known"
+      }
+    }
+  },
+  "input_geometry": {
+    "schema_version": 1,
+    "source_variables": [
+      {
+        "id": "x0",
+        "column": "length_cm",
+        "unit": "m",
+        "domain": [
+          0.03,
+          0.3
+        ],
+        "coordinate_role": null
+      }
+    ],
+    "domain": {
+      "columns": [
+        "length_cm"
+      ],
+      "space_id": "source_inputs",
+      "kind": "box",
+      "units": {
+        "length_cm": "m"
+      },
+      "coordinate_roles": {
+        "length_cm": null
+      },
+      "bounds": [
+        [
+          0.03,
+          0.3
+        ]
+      ]
+    },
+    "map": null
+  },
+  "execution_domain": {
+    "columns": [
+      "length_cm"
+    ],
+    "space_id": "source_inputs",
+    "kind": "box",
+    "units": {
+      "length_cm": "m"
+    },
+    "coordinate_roles": {
+      "length_cm": null
+    },
+    "bounds": [
+      [
+        0.03,
+        0.3
+      ]
+    ]
+  },
+  "fixed_constants": {},
+  "requirements_ref": {
+    "requirements_sha256": "b9b418d33595faf49001dd5ffeb6ae300c658056abdfdee48ecdd8337601a202",
+    "scope": "canonical common request; native settings/checks are derived evidence"
+  },
+  "train": "/work/results/basic/calculation/prepare/prepare/train.npz",
+  "variables": [
+    {
+      "id": "x0",
+      "column": "length_cm",
+      "unit": "m",
+      "domain": [
+        0.03,
+        0.3
+      ],
+      "coordinate_role": null
+    }
+  ],
+  "target": {
+    "coordinate_role": null,
+    "column": "response_mm",
+    "unit": "m",
+    "domain": [
+      -1.0,
+      2.0
+    ]
+  },
+  "operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "limits": {
+    "max_nodes": 60,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "probes": [],
+    "response_bounds": [
+      null,
+      null
+    ],
+    "response_checks": [],
+    "max_wall_seconds": 30
+  },
+  "seed": 7,
+  "engine": "mean",
+  "options": {},
+  "max_export_candidates": 100,
+  "candidate_pool_policy": "all",
+  "device": "cpu",
+  "asset_manifest": null
+}

@@ -1,0 +1,64 @@
+{
+  "models": [
+    {
+      "indices": [
+        0
+      ],
+      "coefficients": [
+        1.0556197726450176
+      ],
+      "intercept": 0.6060914352361366,
+      "term_count": 1,
+      "descriptors": [
+        "x0"
+      ]
+    },
+    {
+      "indices": [
+        0.0,
+        0.0
+      ],
+      "coefficients": [
+        0.5278098863225087,
+        0.5278098863225087
+      ],
+      "intercept": 0.6060914352361366,
+      "term_count": 2,
+      "descriptors": [
+        "x0",
+        "x0"
+      ]
+    },
+    {
+      "indices": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "coefficients": [
+        0.3518732575483392,
+        0.35187325754833926,
+        0.35187325754833926
+      ],
+      "intercept": 0.6060914352361366,
+      "term_count": 3,
+      "descriptors": [
+        "x0",
+        "x0",
+        "x0"
+      ]
+    }
+  ],
+  "native_dtype": "torch.float64",
+  "validation_probe_count": 20,
+  "validation_probe_scope": "declared input geometry; observed geometry reuses Train rows, not independent data",
+  "oracle": "native dimensional constructor",
+  "rejected_exports": [],
+  "removed_degenerate_train_descriptors": [],
+  "dimensional": true,
+  "input_units": {
+    "x0": "1"
+  },
+  "target_dimension": "1",
+  "coefficient_units": "dimensionless native target-dimension descriptor weights; intercept has target unit"
+}

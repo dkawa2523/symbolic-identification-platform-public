@@ -1,0 +1,117 @@
+{
+  "native_candidates": 1,
+  "rejected_exports": [],
+  "dictionary_terms": 1,
+  "train_selection_loss": "stable RMSE; equivalent ordering to squared error",
+  "normalization": "L2 with no physical-unit floor; max magnitude if L2 is unrepresentable",
+  "constraint_support": {
+    "operators": "enforced during construction",
+    "units": "post-filtered",
+    "max_nodes": "post-filtered",
+    "variables": "enforced during construction",
+    "probes": "post-filtered"
+  },
+  "assets": null,
+  "python": "3.11.15",
+  "python_executable": "/opt/venv/bin/python",
+  "device": "cpu",
+  "allowed_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "native_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "unavailable_search_operators": [],
+  "operator_policy": "supported/requested export mask; generation enforcement or post-filtering is specified by constraint_support",
+  "status": "ok",
+  "native_execution_status": "completed",
+  "native_artifacts": {},
+  "native_artifact_sha256": {},
+  "portable_status": "candidates",
+  "fixed_constants_native_support": "unsupported",
+  "exported_candidates": 1,
+  "selection_candidates": 1,
+  "prelimit_constraint_eligible": null,
+  "portable_candidates": "/work/results/basic/calculation/native/mean/discover/candidates.jsonl",
+  "portable_candidates_sha256": "8652cd2deaea6ddf33b516bae52962e1c69af6ee714023a4de3bd57703da10d7",
+  "candidate_pool": {
+    "policy": "all",
+    "emitted": 1,
+    "retained": 1,
+    "limit": null,
+    "discarded_from_comparison_ids": [],
+    "archive_scope": "all faithfully exported native candidates, not all internal search states",
+    "quality_scope": "Train/shared probes only when explicit bounded allocation is requested; compare owns final eligibility"
+  },
+  "truncation": "none; all faithfully emitted candidates reach common evaluation",
+  "engine": "mean",
+  "seed": 7,
+  "wall_seconds": 2.1886961520067416,
+  "runtime_image_id": "sha256:bdc532d7fcb7021e1a57810de876bfa8b2ad5ef7cd29762334fda5d14689acd9",
+  "prepared_sha256": "6b82b356ebd7309374a5887462c7708a9054eb78b0f525a0cbdd5dd91de67766",
+  "job_sha256": "851e5b81ca42e036cc9269647259acc3ebe7afeb4e8d570740d49e659b75c2d0",
+  "requested_constraints": {
+    "max_nodes": 60,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "probes": [],
+    "response_bounds": [
+      null,
+      null
+    ],
+    "response_checks": [],
+    "max_wall_seconds": 30
+  },
+  "requirements_ref": {
+    "requirements_sha256": "b9b418d33595faf49001dd5ffeb6ae300c658056abdfdee48ecdd8337601a202",
+    "scope": "canonical common request; native settings/checks are derived evidence"
+  },
+  "resolved_native_profile": {
+    "options": {},
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "device": "cpu",
+    "candidate_pool_policy": "all"
+  },
+  "capability_declaration": {
+    "supported_options": [
+      "max_degree",
+      "max_terms",
+      "ridge"
+    ],
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "pow_int",
+      "log",
+      "exp",
+      "sqrt",
+      "abs",
+      "neg"
+    ],
+    "constraints": {
+      "operators": "enforced during construction",
+      "units": "post-filtered",
+      "max_nodes": "post-filtered",
+      "variables": "enforced during construction",
+      "probes": "post-filtered"
+    },
+    "requires_assets": false
+  },
+  "readiness_scope": "this profile/run only; execution, fidelity, common admissibility and scientific adequacy are distinct",
+  "candidates_sha256": "8652cd2deaea6ddf33b516bae52962e1c69af6ee714023a4de3bd57703da10d7"
+}

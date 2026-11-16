@@ -1,0 +1,113 @@
+{
+  "search": {
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "pow_int"
+    ],
+    "engine_options": {
+      "physo": {
+        "epochs": 20,
+        "batch_size": 256,
+        "max_n_evaluations": 5120
+      },
+      "known_form": {
+        "equation": {
+          "schema_version": 1,
+          "ast": {
+            "op": "add",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "param": "offset"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "velocity"
+                      },
+                      {
+                        "var": "x0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "param": "scale"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "param": "g"
+                      },
+                      {
+                        "op": "pow_int",
+                        "args": [
+                          {
+                            "var": "x0"
+                          },
+                          {
+                            "const": 2
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "parameters": {
+            "offset": {
+              "value": 0,
+              "unit": "m",
+              "trainable": true,
+              "bounds": [
+                null,
+                null
+              ]
+            },
+            "velocity": {
+              "value": 0,
+              "unit": "m/s",
+              "trainable": true,
+              "bounds": [
+                null,
+                null
+              ]
+            },
+            "scale": {
+              "value": 1,
+              "unit": "1",
+              "trainable": true,
+              "bounds": [
+                null,
+                null
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "constraints": {
+    "max_nodes": 30,
+    "require_units": true
+  },
+  "evaluation": {
+    "coefficient_fit": "none",
+    "selection_policy": "balanced",
+    "relative_tolerance": 0.01,
+    "absolute_tolerance": 1e-06
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "search": {
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "exp",
+      "log",
+      "pow_int"
+    ],
+    "engine_options": {
+      "torchsisso": {
+        "n_expansion": 2,
+        "n_term": 3,
+        "k": 10
+      }
+    }
+  },
+  "constraints": {
+    "max_nodes": 50
+  },
+  "evaluation": {
+    "coefficient_fit": "none",
+    "selection_policy": "balanced",
+    "relative_tolerance": 0.01,
+    "absolute_tolerance": 1e-06
+  }
+}

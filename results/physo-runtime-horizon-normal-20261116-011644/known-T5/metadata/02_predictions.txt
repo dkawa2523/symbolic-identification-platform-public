@@ -1,0 +1,15 @@
+Observed and predicted values
+X: Observed [m^2]
+Y: Predicted [m^2]
+
+2. physo
+Candidate: physo/17/1@native
+Variant: native; seed: 17
+Eligible: True; reason: None
+Equation (public): y [m^2] = (((x + x)) ** (2))
+x_work [m] = 1 * x [m] + (0)
+y_work [m^2] = 1 * y [m^2] + (0)
+
+Scope: Stored Selection rows, actual covariates. Invalid rows remain in the source table. No Final data or recalculated predictions.
+
+Exact rows and provenance: matching CSV and plot_data.json.

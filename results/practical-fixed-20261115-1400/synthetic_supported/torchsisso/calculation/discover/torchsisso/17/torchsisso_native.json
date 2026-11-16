@@ -1,0 +1,154 @@
+{
+  "models": [
+    {
+      "indices": [
+        0
+      ],
+      "coefficients": [
+        0.3056197726450177
+      ],
+      "intercept": 0.6060914352361365,
+      "term_count": 1,
+      "mse": 0.019974265024013796,
+      "optimizer_converged": false,
+      "solution_origin": "feasible_seed",
+      "solver": {
+        "indices": [
+          0
+        ],
+        "status": "feasible",
+        "feasibility_solver_status": 0,
+        "solver": [
+          {
+            "success": true,
+            "status": 0,
+            "iterations": 1,
+            "accepted_original_conditions": true
+          },
+          {
+            "success": true,
+            "status": 0,
+            "iterations": 5,
+            "accepted_original_conditions": true
+          }
+        ],
+        "feasible_seed_count": 1,
+        "optimized_candidate_accepted": true,
+        "mse": 0.019974265024013796,
+        "optimizer_converged": false,
+        "solution_origin": "feasible_seed"
+      },
+      "descriptors": [
+        "x0"
+      ]
+    },
+    {
+      "indices": [
+        0,
+        0
+      ],
+      "coefficients": [
+        0.1528098863225089,
+        0.1528098863225089
+      ],
+      "intercept": 0.6060914352361362,
+      "term_count": 2,
+      "mse": 0.019974265024013792,
+      "optimizer_converged": false,
+      "solution_origin": "feasible_seed",
+      "solver": {
+        "indices": [
+          0,
+          0
+        ],
+        "status": "feasible",
+        "feasibility_solver_status": 0,
+        "solver": [
+          {
+            "success": true,
+            "status": 0,
+            "iterations": 1,
+            "accepted_original_conditions": true
+          },
+          {
+            "success": true,
+            "status": 0,
+            "iterations": 6,
+            "accepted_original_conditions": true
+          }
+        ],
+        "feasible_seed_count": 2,
+        "optimized_candidate_accepted": true,
+        "mse": 0.019974265024013792,
+        "optimizer_converged": false,
+        "solution_origin": "feasible_seed"
+      },
+      "descriptors": [
+        "x0",
+        "x0"
+      ]
+    },
+    {
+      "indices": [
+        0,
+        0,
+        0
+      ],
+      "coefficients": [
+        -0.39813340911746103,
+        0.35187659088123946,
+        0.35187659088123935
+      ],
+      "intercept": 0.6060914352361364,
+      "term_count": 3,
+      "mse": 0.019974265024013792,
+      "optimizer_converged": true,
+      "solution_origin": "optimized",
+      "solver": {
+        "indices": [
+          0,
+          0,
+          0
+        ],
+        "status": "feasible",
+        "feasibility_solver_status": 0,
+        "solver": [
+          {
+            "success": true,
+            "status": 0,
+            "iterations": 1,
+            "accepted_original_conditions": true
+          },
+          {
+            "success": true,
+            "status": 0,
+            "iterations": 5,
+            "accepted_original_conditions": true
+          }
+        ],
+        "feasible_seed_count": 2,
+        "optimized_candidate_accepted": true,
+        "mse": 0.019974265024013792,
+        "optimizer_converged": true,
+        "solution_origin": "optimized"
+      },
+      "descriptors": [
+        "x0",
+        "x0",
+        "x0"
+      ]
+    }
+  ],
+  "native_dtype": "torch.float64",
+  "validation_probe_count": 37,
+  "validation_probe_scope": "declared input geometry; observed geometry reuses Train rows, not independent data",
+  "oracle": "native dimensional constructor",
+  "rejected_exports": [],
+  "removed_degenerate_train_descriptors": [],
+  "dimensional": true,
+  "input_units": {
+    "x0": "1"
+  },
+  "target_dimension": "1",
+  "coefficient_units": "dimensionless native target-dimension descriptor weights; intercept has target unit"
+}

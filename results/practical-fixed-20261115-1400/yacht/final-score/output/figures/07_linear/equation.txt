@@ -1,0 +1,18 @@
+7. linear | equation
+Candidate: linear/42/5@native
+Coordinates: public
+resistance [1] = ((((((coef['c0'] * froude) + coef['c1']) + (coef['c2'] * prismatic_coefficient)) + (coef['c3'] * buoyancy_position)) + (coef['c4'] * beam_draught_ratio)) + (coef['c5'] * length_beam_ratio))
+
+c0 = 122.57330659493762 [1]
+c1 = -15.071171542801931 [1]
+c2 = -11.968093959051668 [1]
+c3 = 0.15666876943573066 [1]
+c4 = -0.3195037910826854 [1]
+c5 = -0.39029415628836045 [1]
+buoyancy_position_work [1] = 1 * buoyancy_position [1] + (0)
+prismatic_coefficient_work [1] = 1 * prismatic_coefficient [1] + (0)
+length_displacement_ratio_work [1] = 1 * length_displacement_ratio [1] + (0)
+beam_draught_ratio_work [1] = 1 * beam_draught_ratio [1] + (0)
+length_beam_ratio_work [1] = 1 * length_beam_ratio [1] + (0)
+froude_work [1] = 1 * froude [1] + (0)
+resistance_work [1] = 1 * resistance [1] + (0)

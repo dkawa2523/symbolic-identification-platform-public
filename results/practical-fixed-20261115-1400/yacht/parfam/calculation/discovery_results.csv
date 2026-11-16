@@ -1,0 +1,2 @@
+engine,seed,status,native_execution_status,reason,wall_seconds,exported_candidates,summary_path
+parfam,42,ok,completed,,3040.191859793995,159,/work/results/practical-fixed-20261115-1400/yacht/parfam/calculation/discover/parfam/42/engine_summary.json

@@ -1,0 +1,32 @@
+{
+  "at": "2026-11-15T16:29:52.277818+00:00",
+  "session": 78772,
+  "session_running": true,
+  "status": {
+    "stage": "discovery",
+    "time": "2026-11-15T15:54:59.260534+00:00",
+    "arm": "synthetic_none",
+    "method": "pysr",
+    "final_accessed": false
+  },
+  "completed_native": 5,
+  "completed_arm": "Yacht all5 engine statuses ok, shared eligibility/precision not assessed",
+  "health_observed": {
+    "job": "synthetic_none/pysr/17",
+    "container": "252ed62cc747",
+    "cpu_percent": 99.52,
+    "memory": "1.069GiB/6GiB",
+    "OOMKilled": false,
+    "memory_events": {
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0
+    },
+    "hall_of_fame_modified_utc": "2026-11-15T16:29:13.643435+00:00",
+    "hall_of_fame_bytes": 24337,
+    "warning": "Large maxsize256 makes search slower/memory intensive; no fatal trace observed"
+  },
+  "global_choices_exists": false,
+  "Final_marker_exists": false,
+  "action": "Read-only health check; leave current search running with frozen native2880s and outer21600s safety settings, no retries/edits/Final score"
+}

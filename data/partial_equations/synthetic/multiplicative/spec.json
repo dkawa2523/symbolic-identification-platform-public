@@ -1,0 +1,18 @@
+{
+  "case": "multiplicative",
+  "data_seeds": [
+    1729,
+    2718,
+    3141
+  ],
+  "features": [
+    "x",
+    "z"
+  ],
+  "noise_sd": 0.01,
+  "oracle_scoring_only": "0.7+z*z",
+  "performance_evaluated": false,
+  "provenance": "Fresh stdlib random draws from disclosed formulas; not unseen formula discovery.",
+  "target": "y",
+  "template_not_runtime_syntax": "x*h(z)"
+}

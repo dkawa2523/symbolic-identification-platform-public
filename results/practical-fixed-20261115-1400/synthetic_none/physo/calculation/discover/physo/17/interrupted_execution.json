@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "reason": "Worker exited -9; see worker.log",
+  "engine": "physo",
+  "seed": 17
+}

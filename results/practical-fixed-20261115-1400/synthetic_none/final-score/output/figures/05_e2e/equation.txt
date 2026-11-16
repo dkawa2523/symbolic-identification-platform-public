@@ -1,0 +1,23 @@
+5. e2e | equation
+Candidate: e2e/17/46@native
+Coordinates: public
+y [1] = (coef['c1'] + (coef['c3'] * (1 / (coef['c6'] + (coef['c8'] * (1 / ((coef['c12'] + (coef['c14'] * (1 / ((coef['c18'] + (coef['c20'] * ((x - coef['x0_mean']) / coef['x0_scale']))) - (coef['c23'] + (coef['c25'] * (1 / (coef['c28'] + (coef['c30'] * ((x - coef['x0_mean']) / coef['x0_scale'])))))))))) * (coef['c33'] + (coef['c35'] * ((x - coef['x0_mean']) / coef['x0_scale']))))))))))
+
+c1 = -2.4280176468965298 [unit unknown]
+c3 = 4.293707903262057 [unit unknown]
+c6 = 0.41380759114440707 [unit unknown]
+c8 = 0.13661937611615957 [unit unknown]
+c12 = 0.03132134191208994 [unit unknown]
+c14 = -1.1008760245063571 [unit unknown]
+c18 = -0.8854183325965032 [unit unknown]
+c20 = 4.610025138879653 [unit unknown]
+x0_mean = 1.9634916034894223 [1]
+x0_scale = 1.0820323259523998 [1]
+c23 = -0.20344166185285018 [unit unknown]
+c25 = -4.2770720481479145 [unit unknown]
+c28 = 0.0999163742809262 [unit unknown]
+c30 = 0.010935096832285716 [unit unknown]
+c33 = 64.42540312365837 [unit unknown]
+c35 = 26.841401469537267 [unit unknown]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)

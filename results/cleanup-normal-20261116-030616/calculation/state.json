@@ -1,0 +1,37 @@
+{
+  "prepare": {
+    "run": "/work/results/cleanup-normal-20261116-030616/calculation/prepare/run.json",
+    "selection": "/work/results/cleanup-normal-20261116-030616/calculation/prepare/selection.npz",
+    "train": "/work/results/cleanup-normal-20261116-030616/calculation/prepare/train.npz"
+  },
+  "search": {
+    "engines": [
+      "physo"
+    ],
+    "operators": [
+      "mul",
+      "add",
+      "pow_int"
+    ],
+    "seeds": [
+      17
+    ],
+    "max_wall_seconds": 90,
+    "max_export_candidates": 100,
+    "candidate_pool_policy": "all",
+    "allow_partial_engines": false,
+    "response_mode": "search",
+    "engine_options": {
+      "physo": {
+        "epochs": 1,
+        "batch_size": 48,
+        "max_n_evaluations": 48,
+        "parameter_units": {
+          "a": "1"
+        },
+        "max_time_step": 5
+      }
+    },
+    "runtimes": {}
+  }
+}

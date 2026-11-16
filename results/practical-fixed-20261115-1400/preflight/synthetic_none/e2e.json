@@ -1,0 +1,217 @@
+{
+  "status": "inputs_valid",
+  "package_identity": {
+    "version": "0.90.4",
+    "mode": "source",
+    "installed_metadata_version": "0.1.0"
+  },
+  "path_base": "/work",
+  "data_file": "/work/results/practical-fixed-20261115-1400/inputs/synthetic/table.csv",
+  "identity_column": "sample_id",
+  "group_column": null,
+  "feature_columns": [
+    "x"
+  ],
+  "target_column": "y",
+  "unit_coordinates": {
+    "x": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "y": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    }
+  },
+  "working_domains": {
+    "x": [
+      0.1,
+      4.0
+    ]
+  },
+  "working_variables": [
+    {
+      "id": "x0",
+      "column": "x",
+      "unit": "1",
+      "domain": [
+        0.1,
+        4.0
+      ],
+      "coordinate_role": null
+    }
+  ],
+  "target": {
+    "coordinate_role": null,
+    "column": "y",
+    "unit": "1",
+    "domain": null
+  },
+  "split": {
+    "method": "fixed",
+    "file": "results/practical-fixed-20261115-1400/inputs/synthetic/split.csv",
+    "group_column": null,
+    "seed": 42,
+    "valid_size": 0.2,
+    "selection_size": 0.2
+  },
+  "partitions": {
+    "final": {
+      "n_rows": 256,
+      "n_groups": 256
+    },
+    "selection": {
+      "n_rows": 128,
+      "n_groups": 128
+    },
+    "train": {
+      "n_rows": 256,
+      "n_groups": 256
+    }
+  },
+  "search_budget": {
+    "seeds": [
+      17
+    ],
+    "max_wall_seconds": 21600,
+    "candidate_pool_policy": "all",
+    "max_export_candidates": 20,
+    "allow_partial_engines": true
+  },
+  "requirements": {
+    "allowed_operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "fixed_constants": {},
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "required_responses": {
+      "points": [],
+      "bounds": [
+        null,
+        null
+      ],
+      "checks": [],
+      "enforcement": null
+    }
+  },
+  "engines": {
+    "e2e": {
+      "declared_input_issues": [],
+      "adapter_input_issues": [],
+      "adapter_validation": "passed",
+      "asset_input_issues": [],
+      "asset_verification": {
+        "status": "passed",
+        "manifest_sha256": "533db589057a8bc94e3f8cbd3e721848d741d1b5519909a1ec108ffcad56f371",
+        "files_verified": 1
+      },
+      "options": {
+        "beam_size": 64,
+        "n_trees_to_refine": 64,
+        "max_input_points": 200,
+        "max_train_rows": null,
+        "generation_batch_size": 1,
+        "refinement_seconds": 5,
+        "max_generated_output_len": 128,
+        "operator_mask": true,
+        "response_max_nfev": 1000
+      },
+      "runtime": {
+        "device": "cpu"
+      },
+      "assets": {
+        "manifest_file": "pretrained/e2e/manifest.json"
+      },
+      "effective_operator_subset": [
+        "add",
+        "sub",
+        "mul",
+        "div"
+      ],
+      "capabilities": {
+        "supported_options": [
+          "beam_size",
+          "generation_batch_size",
+          "max_generated_output_len",
+          "max_input_points",
+          "max_train_rows",
+          "n_trees_to_refine",
+          "operator_mask",
+          "refinement_seconds",
+          "response_max_nfev",
+          "threads"
+        ],
+        "response_enforcement": {
+          "default": "hard",
+          "supported": [
+            "hard"
+          ],
+          "stage": "exported candidate coefficient optimization; decoder not conditioned"
+        },
+        "operators": [
+          "add",
+          "div",
+          "mul",
+          "sub",
+          "abs",
+          "sqrt",
+          "log",
+          "exp",
+          "sin",
+          "cos",
+          "tan",
+          "asin",
+          "acos",
+          "atan",
+          "pow_int"
+        ],
+        "requires_assets": true,
+        "equation_template": true,
+        "fixed_constants": "template_only",
+        "search_constraints": [
+          "probes",
+          "response_bounds",
+          "response_checks"
+        ],
+        "constraints": {
+          "operators": "operator_mask defaults true and restricts decoder operator tokens; explicit false is post-check-only compatibility; portable full expression including normalization still post-filtered",
+          "units": "native unit guidance unsupported; train normalization units preserved, coefficient units unknown",
+          "max_nodes": "native prefix completion budget includes frozen source coordinates and fixed E2E normalization; export verification retained",
+          "variables": "1..10 unchanged input columns; output variable-token masking",
+          "allowed_variables": "enforced in native decoder variable tokens; original columns/IDs retained; padded tokens forbidden",
+          "rows": "default resource guard 1024 rows; explicit max_train_rows=null uses all bags under outer wall/memory limits; no subsampling",
+          "probes": "explicit finite-point constraints during SLSQP coefficient search over every exported structure; decoder not response-conditioned",
+          "response_bounds": "finite-point hard bounds during coefficient optimization; no global guarantee",
+          "response_checks": "finite-step conditions during coefficient optimization; not decoder conditioning or analytic derivative proof",
+          "pretraining_overlap": "unknown; pretrained weights inference only, no fine-tuning",
+          "equation_template": "limited exact affine observed slot h(X); numeric target reduction before native generation, original outer-AST assembly and coefficient fit afterwards; no template-conditioned decoder"
+        }
+      },
+      "constraint_application": {
+        "operators": "operator_mask defaults true and restricts decoder operator tokens; explicit false is post-check-only compatibility; portable full expression including normalization still post-filtered; configured operator_mask=True; decoder masking requested; runtime evidence required to verify execution",
+        "max_nodes": "native prefix completion budget includes frozen source coordinates and fixed E2E normalization; export verification retained"
+      },
+      "response_mode": "search"
+    }
+  },
+  "not_checked": [
+    "Only adapter-provided static input checks ran. An extension without validate_request is explicitly not_available.",
+    "Native libraries, runtime startup, GPU availability and checkpoint deserialization were not tested; verified file hashes and input checks are not native readiness evidence.",
+    "No search, fitting, predictions, Selection metrics or Final metrics were performed. No input files were changed."
+  ]
+}

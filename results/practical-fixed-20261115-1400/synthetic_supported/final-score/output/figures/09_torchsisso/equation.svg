@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="545">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203342">
+<text x="40" y="40" font-size="24" font-weight="bold">9. torchsisso | equation</text>
+<text x="40" y="68" font-size="13">Candidate torchsisso/17/0@native | page 1/1</text>
+<text x="40" y="110" font-size="20">Coordinates: public</text>
+<text x="40" y="137" font-size="20"></text>
+<text x="40" y="164" font-size="20">y [1] = 0.75 * x + (θ[__slot_h_intercept] + θ[__slot_h_c0] * x)</text>
+<text x="40" y="191" font-size="20"></text>
+<text x="40" y="218" font-size="20">Coefficients (working coordinates; rounded on image)</text>
+<text x="40" y="245" font-size="20">__slot_h_c0 = 0.30561977 [1]; role=free</text>
+<text x="40" y="272" font-size="20">__slot_h_intercept = 0.60609144 [1]; role=free</text>
+<text x="40" y="299" font-size="20">Declared structure and fitted slots</text>
+<text x="40" y="326" font-size="20">Coordinates: canonical working; ranges on frozen Selection inputs only</text>
+<text x="40" y="353" font-size="20">declared outer: relation = ((0.75 * x) + h(x))</text>
+<text x="40" y="380" font-size="20">fitted slot: h(x0 [1]) = (intercept + (c0 * x0))</text>
+<text x="40" y="407" font-size="20">  Unit: 1</text>
+<text x="40" y="434" font-size="20">  intercept = 0.60609144; free; [1]</text>
+<text x="40" y="461" font-size="20">  c0 = 0.30561977; free; [1]</text>
+<text x="40" y="488" font-size="20">Shared slot name = shared function and coefficients</text>
+</g></svg>

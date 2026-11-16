@@ -1,0 +1,129 @@
+{
+  "native_candidates": 1,
+  "rejected_exports": [],
+  "dictionary_terms": 1,
+  "train_selection_loss": "stable RMSE; equivalent ordering to squared error",
+  "normalization": "L2 with no physical-unit floor; max magnitude if L2 is unrepresentable",
+  "constraint_support": {
+    "operators": "enforced during construction",
+    "units": "post-filtered",
+    "max_nodes": "post-filtered",
+    "variables": "enforced during construction",
+    "allowed_variables": "enforced during term construction before coefficient fitting",
+    "probes": "post-filtered"
+  },
+  "assets": null,
+  "python": "3.11.15",
+  "python_executable": "/opt/venv/bin/python",
+  "device": "cpu",
+  "allowed_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "native_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "unavailable_search_operators": [],
+  "operator_policy": "unavailable_search_operators is the requested/export-capability difference, not decoder reachability; generation enforcement and context-dependent routes are specified by constraint_support and native metadata",
+  "status": "ok",
+  "native_execution_status": "completed",
+  "native_artifacts": {},
+  "native_artifact_sha256": {},
+  "portable_status": "candidates",
+  "fixed_constants_native_support": "unsupported",
+  "exported_candidates": 1,
+  "selection_candidates": 1,
+  "prelimit_constraint_eligible": null,
+  "portable_candidates": "/work/results/practical-fixed-20261115-1400/synthetic_none/baselines/calculation/discover/mean/17/candidates.jsonl",
+  "portable_candidates_sha256": "eac9c26f2c9839e2bf296d3cfb5f6de04e72174d72ac23eeaba372000ee0f39b",
+  "candidate_pool": {
+    "policy": "all",
+    "emitted": 1,
+    "retained": 1,
+    "limit": null,
+    "discarded_from_comparison_ids": [],
+    "archive_scope": "all faithfully exported native candidates, not all internal search states",
+    "quality_scope": "Train/shared probes only when explicit bounded allocation is requested; compare owns final eligibility"
+  },
+  "truncation": "none; all faithfully emitted candidates reach common evaluation",
+  "engine": "mean",
+  "seed": 17,
+  "wall_seconds": 3.8406154529948253,
+  "runtime_image_id": "sha256:bdc532d7fcb7021e1a57810de876bfa8b2ad5ef7cd29762334fda5d14689acd9",
+  "prepared_sha256": "e263197ee15b33a7c4b1f02de16366bf8b0638524742b9a6157dad7e1bc0edf2",
+  "job_sha256": "9cba7bfcc0a8e000c2cfa3b2d6517b8691ee5cee179be961a5e35e5762010287",
+  "requested_constraints": {
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "probes": [],
+    "response_bounds": [
+      null,
+      null
+    ],
+    "response_checks": [],
+    "response_enforcement": null,
+    "max_wall_seconds": 21600,
+    "response_mode": "search"
+  },
+  "requirements_ref": {
+    "requirements_sha256": "35ba19472d59ab6158650d6aa5f176e2c90edd1643a654af61137001cdde3d48",
+    "scope": "canonical common request; native settings/checks are derived evidence"
+  },
+  "resolved_native_profile": {
+    "options": {},
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "device": "cpu",
+    "candidate_pool_policy": "all"
+  },
+  "response_mode": "search",
+  "capability_declaration": {
+    "supported_options": [
+      "max_degree",
+      "max_terms",
+      "ridge"
+    ],
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "pow_int",
+      "log",
+      "exp",
+      "sqrt",
+      "abs",
+      "neg"
+    ],
+    "constraints": {
+      "operators": "enforced during construction",
+      "units": "post-filtered",
+      "max_nodes": "post-filtered",
+      "variables": "enforced during construction",
+      "allowed_variables": "enforced during term construction before coefficient fitting",
+      "probes": "post-filtered"
+    },
+    "requires_assets": false
+  },
+  "constraint_application": {
+    "operators": "enforced during construction",
+    "max_nodes": "post-filtered"
+  },
+  "response_enforcement": {
+    "effective": "not_requested"
+  },
+  "readiness_scope": "this profile/run only; execution, fidelity, common admissibility and scientific adequacy are distinct",
+  "candidates_sha256": "eac9c26f2c9839e2bf296d3cfb5f6de04e72174d72ac23eeaba372000ee0f39b"
+}

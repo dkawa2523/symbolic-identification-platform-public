@@ -1,0 +1,37 @@
+{
+  "prepare": {
+    "run": "/work/results/practical-fixed-20261115-1400/synthetic_supported/torchsisso/calculation/prepare/run.json",
+    "final": "/work/results/practical-fixed-20261115-1400/synthetic_supported/torchsisso/calculation/prepare/final.npz",
+    "selection": "/work/results/practical-fixed-20261115-1400/synthetic_supported/torchsisso/calculation/prepare/selection.npz",
+    "train": "/work/results/practical-fixed-20261115-1400/synthetic_supported/torchsisso/calculation/prepare/train.npz"
+  },
+  "search": {
+    "engines": [
+      "torchsisso"
+    ],
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "seeds": [
+      17
+    ],
+    "max_wall_seconds": 21600,
+    "max_export_candidates": 20,
+    "candidate_pool_policy": "all",
+    "allow_partial_engines": true,
+    "response_mode": "search",
+    "engine_options": {
+      "torchsisso": {
+        "dimensional": true,
+        "n_expansion": 2,
+        "n_term": 3,
+        "k": 10,
+        "response_max_iterations": 200
+      }
+    },
+    "runtimes": {}
+  }
+}

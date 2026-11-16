@@ -1,0 +1,145 @@
+{
+  "release_tag": "models-v1",
+  "assets": [
+    {
+      "asset": "flash-model-only.zip",
+      "bytes": 13055027,
+      "sha256": "43d7950c715b612ad47ced811e2977554df19bcddaf773aaefdaaca26f56795b",
+      "files": [
+        {
+          "source": "pretrained/flash/model/catalog_train.yaml",
+          "member": "catalog_train.yaml",
+          "bytes": 2745,
+          "sha256": "c302ec56c62f99243e2ab997fc1231d345ccb2b4d7868fc21ece03b1c9caf9c9"
+        },
+        {
+          "source": "pretrained/flash/model/dataset_train.yaml",
+          "member": "dataset_train.yaml",
+          "bytes": 1026,
+          "sha256": "fc240f1348c2928b43b1046cd982cdf81dcb8bc11c2e0d4285e0d05f3215bdee"
+        },
+        {
+          "source": "pretrained/flash/model/dataset_val.yaml",
+          "member": "dataset_val.yaml",
+          "bytes": 1003,
+          "sha256": "943c31e01417876a53339165476b8b0deabd89df611e33d8ae3d9fb854ff8fb6"
+        },
+        {
+          "source": "pretrained/flash/model/model.safetensors",
+          "member": "model.safetensors",
+          "bytes": 14051872,
+          "sha256": "6e5a6c1c927f17bcd564701ad925e0568e9fbcdc30127fa8c8bd220f73185d2e"
+        },
+        {
+          "source": "pretrained/flash/model/model.yaml",
+          "member": "model.yaml",
+          "bytes": 943,
+          "sha256": "0ff5eb2b29bff5615f806c325fa1a418b11a10dbd332c0da52fa27ff84b240ad"
+        },
+        {
+          "source": "pretrained/flash/model/README.md",
+          "member": "README.md",
+          "bytes": 3731,
+          "sha256": "0bfe667110a7a3b7b40c5bfd6095ddf7a967e55f5fd77f9b6530be3279967012"
+        },
+        {
+          "source": "pretrained/flash/model/tokenizer.yaml",
+          "member": "tokenizer.yaml",
+          "bytes": 2900,
+          "sha256": "1696af4c85fab980fb3f910d746141fd2ee86dcc3f1817141650a39791c7ef65"
+        },
+        {
+          "source": "pretrained/flash/model/train.yaml",
+          "member": "train.yaml",
+          "bytes": 706,
+          "sha256": "b6832de673217293c5cd9ba020b6220bd8572963642e284f9d5c20f84703627a"
+        }
+      ],
+      "license_evidence": "MIT model card at exact upstream revision, local README bytes and official LFS weight SHA independently verified; original model README preserved.",
+      "excluded": "simplipy, cache, runtime; not a complete restore of original asset manifest",
+      "source": "https://huggingface.co/psaegert/flash-ansr-v25.0-T8-3M",
+      "source_revision": "d1324395d53191833e4b5927d3e5322aea902ade"
+    },
+    {
+      "asset": "rasr-model-only.zip",
+      "bytes": 147982443,
+      "sha256": "d7cee952d000f15e085443fc8950b541feb136659cd451fba053073e49c3531a",
+      "files": [
+        {
+          "source": "pretrained/rasr/model/config.toml",
+          "member": "config.toml",
+          "bytes": 5017,
+          "sha256": "1ef5731808f54036d946150ea01b7698175816b37c1e4bc8e4f2504a3e81f63d"
+        },
+        {
+          "source": "pretrained/rasr/model/model.safetensors",
+          "member": "model.safetensors",
+          "bytes": 188351066,
+          "sha256": "d23482ec743e8d61cc46de439d42b51494d9340a32f212a2d0d73b65d8555b4c"
+        },
+        {
+          "source": "pretrained/rasr/model/post_train.toml",
+          "member": "post_train.toml",
+          "bytes": 1079,
+          "sha256": "dd00fca88f4c74ad2e6cca140dcbaebca7fc236406d168f1794983f8f78d66f0"
+        },
+        {
+          "source": "pretrained/rasr/model/README.md",
+          "member": "README.md",
+          "bytes": 3236,
+          "sha256": "7e83f5d8e77320bd38078b6f0517dc67b9527281b34ac0fea1ac2051df96dd42"
+        }
+      ],
+      "license_evidence": "MIT model card at exact upstream revision, local README bytes and official LFS weight SHA independently verified; original model README preserved.",
+      "excluded": "simplipy, cache, runtime; not a complete restore of original asset manifest",
+      "source": "https://huggingface.co/davidotte/RASR-94M-L",
+      "source_revision": "13c53e64e0456d516f45212659f82c97f4bc8ec1"
+    }
+  ],
+  "e2e_weights": "NOT INCLUDED; official re-download only",
+  "release_url": "https://github.com/dkawa2523/symbolic-identification-platform/releases/tag/models-v1",
+  "repository": "https://github.com/dkawa2523/symbolic-identification-platform-public",
+  "upstream_model_card_evidence": [
+    {
+      "kind": "flash",
+      "url": "https://huggingface.co/psaegert/flash-ansr-v25.0-T8-3M/raw/d1324395d53191833e4b5927d3e5322aea902ade/README.md",
+      "bytes": 3731,
+      "sha256": "0bfe667110a7a3b7b40c5bfd6095ddf7a967e55f5fd77f9b6530be3279967012",
+      "local_bytes_exact": true,
+      "license_mit_frontmatter": true
+    },
+    {
+      "kind": "rasr",
+      "url": "https://huggingface.co/davidotte/RASR-94M-L/raw/13c53e64e0456d516f45212659f82c97f4bc8ec1/README.md",
+      "bytes": 3236,
+      "sha256": "7e83f5d8e77320bd38078b6f0517dc67b9527281b34ac0fea1ac2051df96dd42",
+      "local_bytes_exact": true,
+      "license_mit_frontmatter": true
+    }
+  ],
+  "upstream_weight_evidence": [
+    {
+      "kind": "flash",
+      "api": "https://huggingface.co/api/models/psaegert/flash-ansr-v25.0-T8-3M/revision/d1324395d53191833e4b5927d3e5322aea902ade?blobs=true",
+      "revision": "d1324395d53191833e4b5927d3e5322aea902ade",
+      "upstream_lfs_sha256": "6e5a6c1c927f17bcd564701ad925e0568e9fbcdc30127fa8c8bd220f73185d2e",
+      "local_sha256": "6e5a6c1c927f17bcd564701ad925e0568e9fbcdc30127fa8c8bd220f73185d2e",
+      "bytes": 14051872,
+      "exact": true,
+      "card_license": "mit"
+    },
+    {
+      "kind": "rasr",
+      "api": "https://huggingface.co/api/models/davidotte/RASR-94M-L/revision/13c53e64e0456d516f45212659f82c97f4bc8ec1?blobs=true",
+      "revision": "13c53e64e0456d516f45212659f82c97f4bc8ec1",
+      "upstream_lfs_sha256": "d23482ec743e8d61cc46de439d42b51494d9340a32f212a2d0d73b65d8555b4c",
+      "local_sha256": "d23482ec743e8d61cc46de439d42b51494d9340a32f212a2d0d73b65d8555b4c",
+      "bytes": 188351066,
+      "exact": true,
+      "card_license": "mit"
+    }
+  ],
+  "license": "MIT as declared by both exact-revision upstream model repositories",
+  "license_url": "https://opensource.org/license/mit",
+  "notices": "Original upstream model README files are included byte-for-byte in each model-only archive; retain them and the source/revision/hash attribution when copying."
+}

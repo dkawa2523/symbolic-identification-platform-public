@@ -1,0 +1,13 @@
+{
+  "prepared_run": "../../results/e2e-example/calculation/prepare/run.json",
+  "sources": [
+    {
+      "discovery": "../../results/e2e-example/calculation/discover/e2e/42/engine_summary.json"
+    }
+  ],
+  "question": "E2E候補は同じSelection行で、予測誤差・複雑度・必須制約の点からどう異なるか。",
+  "purpose": "local_prediction",
+  "engineering_tolerance": null,
+  "final_history": "known_exposed",
+  "data_kind": "Public Yacht workflow example; reused split and unknown pretraining overlap, not an unseen-law benchmark"
+}

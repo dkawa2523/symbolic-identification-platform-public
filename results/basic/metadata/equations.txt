@@ -1,0 +1,126 @@
+Can a simple local response be used within this observed length range?
+
+Stored equations and coefficients; presentation only.
+All candidates are retained. Eligibility, display order and scientific adoption are distinct.
+Missing values remain missing. No metrics, responses, uncertainty or predictions were recomputed.
+
+mean/7/0@native / prediction
+Method: mean; eligible: True; stored AST
+Public: response_mm [mm] = ((coef['c0']) - (0.0)) / (0.001)
+Working: coef['c0']
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "mean/7/0@native", "relation_state_sha256": "d185ef53e24eb3dc26714bef4329325d6ffc929f13881698e8b9f99c6ba66edb", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  c0 = 0.4271035919238572; unit=m; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+linear/7/0@native / prediction
+Method: linear; eligible: True; stored AST
+Public: response_mm [mm] = (((coef['c0'] * ((0.01) * (length_cm) + (0.0)))) - (0.0)) / (0.001)
+Working: (coef['c0'] * length_cm_work)
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "linear/7/0@native", "relation_state_sha256": "da0047211417d309f6b9121a406738a1285d01f0ba85784c79f1b3abc5959ceb", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  c0 = 2.4709998687414836; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+linear/7/1@native / prediction
+Method: linear; eligible: True; stored AST
+Public: response_mm [mm] = ((((coef['c0'] * ((0.01) * (length_cm) + (0.0))) + coef['c1'])) - (0.0)) / (0.001)
+Working: ((coef['c0'] * length_cm_work) + coef['c1'])
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "linear/7/1@native", "relation_state_sha256": "c0a8bccdeab1853df49afd4c3c482033d933f9ec7f7c1430b7c0c50f8d6961f7", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  c0 = 2.0006353662977636; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+  c1 = 0.09867022748465006; unit=m; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+dictionary/7/0@native / prediction
+Method: dictionary; eligible: True; stored AST
+Public: response_mm [mm] = (((coef['c0'] * ((0.01) * (length_cm) + (0.0)))) - (0.0)) / (0.001)
+Working: (coef['c0'] * length_cm_work)
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "dictionary/7/0@native", "relation_state_sha256": "da0047211417d309f6b9121a406738a1285d01f0ba85784c79f1b3abc5959ceb", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  c0 = 2.4709998687414836; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+dictionary/7/1@native / prediction
+Method: dictionary; eligible: True; stored AST
+Public: response_mm [mm] = ((((coef['c0'] * ((0.01) * (length_cm) + (0.0))) + coef['c1'])) - (0.0)) / (0.001)
+Working: ((coef['c0'] * length_cm_work) + coef['c1'])
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "dictionary/7/1@native", "relation_state_sha256": "c0a8bccdeab1853df49afd4c3c482033d933f9ec7f7c1430b7c0c50f8d6961f7", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  c0 = 2.0006353662977636; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+  c1 = 0.09867022748465006; unit=m; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+dictionary/7/2@native / prediction
+Method: dictionary; eligible: True; stored AST
+Public: response_mm [mm] = (((((coef['c0'] * ((0.01) * (length_cm) + (0.0))) + coef['c1']) + (coef['c2'] * (((0.01) * (length_cm) + (0.0)) * ((0.01) * (length_cm) + (0.0)))))) - (0.0)) / (0.001)
+Working: (((coef['c0'] * length_cm_work) + coef['c1']) + (coef['c2'] * (length_cm_work * length_cm_work)))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "dictionary/7/2@native", "relation_state_sha256": "2b3d14abe5c4ddc8d3580d973036a104b843cea3f257c1904fa8a6b0e0845231", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  c0 = 1.9800482518411497; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+  c1 = 0.09989602257387437; unit=m; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+  c2 = 0.06254467839173311; unit=m^(-1); role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+dictionary/7/3@native / prediction
+Method: dictionary; eligible: True; stored AST
+Public: response_mm [mm] = ((((((coef['c0'] * ((0.01) * (length_cm) + (0.0))) + coef['c1']) + (coef['c2'] * (((0.01) * (length_cm) + (0.0)) * ((0.01) * (length_cm) + (0.0))))) + (coef['c3'] * ((((0.01) * (length_cm) + (0.0)) * ((0.01) * (length_cm) + (0.0))) * ((0.01) * (length_cm) + (0.0)))))) - (0.0)) / (0.001)
+Working: ((((coef['c0'] * length_cm_work) + coef['c1']) + (coef['c2'] * (length_cm_work * length_cm_work))) + (coef['c3'] * ((length_cm_work * length_cm_work) * length_cm_work)))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "dictionary/7/3@native", "relation_state_sha256": "bea6408db421d7d15aa54d084a593f0084b630fa893d126a8b207dcbd551aba7", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  c0 = 1.8950087680139356; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+  c1 = 0.1029094766657416; unit=m; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+  c2 = 0.6743619275150817; unit=m^(-1); role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+  c3 = -1.2469145960083245; unit=m^(-2); role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+dictionary/7/4@native / prediction
+Method: dictionary; eligible: True; stored AST
+Public: response_mm [mm] = (((((((coef['c0'] * ((0.01) * (length_cm) + (0.0))) + coef['c1']) + (coef['c2'] * (((0.01) * (length_cm) + (0.0)) * ((0.01) * (length_cm) + (0.0))))) + (coef['c3'] * ((((0.01) * (length_cm) + (0.0)) * ((0.01) * (length_cm) + (0.0))) * ((0.01) * (length_cm) + (0.0))))) + (coef['c4'] * (1.0 / ((0.01) * (length_cm) + (0.0)))))) - (0.0)) / (0.001)
+Working: (((((coef['c0'] * length_cm_work) + coef['c1']) + (coef['c2'] * (length_cm_work * length_cm_work))) + (coef['c3'] * ((length_cm_work * length_cm_work) * length_cm_work))) + (coef['c4'] * (1.0 / length_cm_work)))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "dictionary/7/4@native", "relation_state_sha256": "c3b42bfc406e72d956aa7fa54a235b51c3463e24f42102eb0046f25b31e830e1", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  c0 = 1.418926204100946; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+  c1 = 0.13893347951272547; unit=m; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+  c2 = 3.03225141604955; unit=m^(-1); role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+  c3 = -5.104095989824242; unit=m^(-2); role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+  c4 = -0.0008249278703255765; unit=m^(2); role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+user_linear@manual/train_point_fit / prediction
+Method: Least-squares fit; eligible: True; stored AST
+Public: response_mm [mm] = ((((coef['a'] * ((0.01) * (length_cm) + (0.0))) + coef['b'])) - (0.0)) / (0.001)
+Working: ((coef['a'] * length_cm_work) + coef['b'])
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "user_linear@manual/train_point_fit", "relation_state_sha256": "f00c7d89248c1f415268c6e71128e38cbfaf83f3a2819da1ebdbd4f1a6a543ea", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  a = 2.000635436522328; unit=1; role=free; tied_to=None; bounds=[0, 4]; origin=user_declared
+  b = 0.09867021695224298; unit=m; role=free; tied_to=None; bounds=[-1, 1]; origin=user_declared
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+

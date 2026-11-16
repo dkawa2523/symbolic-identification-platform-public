@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "workbench-demo-extension"
+version = "1.0.0"
+description = "Explicit installed region, native adapter and evaluation extension example"
+requires-python = ">=3.11"
+dependencies = ["ml-platform-symbolic>=0.90.0,<0.91"]
+
+[tool.setuptools]
+py-modules = ["workbench_demo_extension"]

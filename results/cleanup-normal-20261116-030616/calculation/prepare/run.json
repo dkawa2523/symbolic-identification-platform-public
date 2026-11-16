@@ -1,0 +1,256 @@
+{
+  "config": {
+    "task": "symbolic_pipeline",
+    "_sampling_provenance": [],
+    "domain": null,
+    "input_map": null,
+    "observation_model": null,
+    "run": {
+      "stage": null,
+      "engine": null,
+      "seed": 42
+    },
+    "data": {
+      "local_path": "/work/build/cleanup-20261116/qualification/inputs/data.csv",
+      "target_column": "y",
+      "feature_columns": [
+        "x"
+      ],
+      "id_columns": [
+        "sample_id"
+      ],
+      "units": {
+        "x": "m",
+        "y": "m^2"
+      },
+      "source_units": {
+        "x": "m",
+        "y": "m^2"
+      },
+      "display_units": {},
+      "coordinate_roles": {
+        "x": null,
+        "y": null
+      },
+      "domain": {}
+    },
+    "split": {
+      "method": "fixed",
+      "file": "/work/build/cleanup-20261116/qualification/inputs/split.csv",
+      "group_column": null,
+      "seed": 42,
+      "valid_size": 0.2,
+      "selection_size": 0.2
+    },
+    "search": {
+      "engines": [
+        "physo"
+      ],
+      "seeds": [
+        17
+      ],
+      "max_wall_seconds": 90,
+      "max_export_candidates": 100,
+      "candidate_pool_policy": "all",
+      "allow_partial_engines": false,
+      "response_mode": "search",
+      "engine_options": {
+        "physo": {
+          "epochs": 1,
+          "batch_size": 48,
+          "max_n_evaluations": 48,
+          "parameter_units": {
+            "a": "1"
+          },
+          "max_time_step": 5
+        }
+      },
+      "runtimes": {}
+    },
+    "evaluation": {
+      "mode": "exploratory",
+      "coefficient_fit": "none",
+      "selection_policy": "balanced",
+      "relative_tolerance": 0.05,
+      "absolute_tolerance": 0.0,
+      "acceptable_rmse": null
+    },
+    "model": {
+      "local_model_path": null
+    },
+    "model_assets": {},
+    "stage_inputs": {},
+    "_prepared_requirements_ref": "96d7fb9bde11830e19b392ed01233ef8cb610c42674fab02196cf58f69c6da3f"
+  },
+  "observation_index": {
+    "file": "/work/results/cleanup-normal-20261116-030616/calculation/prepare/observation_index.npz",
+    "sha256": "a791e8dbf64b62541e4b43d9ce6cf66b1f477edbd71e00077524ab002490f653"
+  },
+  "unit_coordinates": {
+    "policy": "canonical problem; explicit CSV conversion; all domains/constraints/tolerances in problem units",
+    "columns": {
+      "x": {
+        "coordinate_role": null,
+        "source_unit": "m",
+        "problem_unit": "m",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      },
+      "y": {
+        "coordinate_role": null,
+        "source_unit": "m^2",
+        "problem_unit": "m^2",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      }
+    }
+  },
+  "variables": [
+    {
+      "id": "x0",
+      "column": "x",
+      "unit": "m",
+      "domain": null,
+      "coordinate_role": null
+    }
+  ],
+  "input_geometry": {
+    "schema_version": 1,
+    "source_variables": [
+      {
+        "id": "x0",
+        "column": "x",
+        "unit": "m",
+        "domain": null,
+        "coordinate_role": null
+      }
+    ],
+    "domain": {
+      "columns": [
+        "x"
+      ],
+      "space_id": "source_inputs",
+      "kind": "observed",
+      "units": {
+        "x": "m"
+      },
+      "coordinate_roles": {
+        "x": null
+      },
+      "bounds": [
+        null
+      ]
+    },
+    "map": null
+  },
+  "target": {
+    "coordinate_role": null,
+    "column": "y",
+    "unit": "m^2",
+    "domain": null
+  },
+  "partitions": {
+    "selection": {
+      "n_rows": 24,
+      "n_groups": 24
+    },
+    "train": {
+      "n_rows": 48,
+      "n_groups": 48
+    }
+  },
+  "partition_hashes": {
+    "selection": "6cdd0e5c6b3cb691d32e7bf2bdcff7b12cd7314cde475d0ff39531b57e38b701",
+    "train": "92e350cb220400f333cb4bed7f86d44170de5a780d171118a29baa2c3cc7c6d4"
+  },
+  "data_sha256": "368411943e690ebc3548fec2376751d8a58dd3cd920cc88c530b7c20260c238c",
+  "versions": {
+    "python": "3.11.15",
+    "ml-platform-symbolic": "0.90.4",
+    "ml-platform-core": "0.1.0",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1"
+  },
+  "package_identity": {
+    "version": "0.90.4",
+    "mode": "installed",
+    "installed_metadata_version": "0.90.4"
+  },
+  "code_revision": null,
+  "source_sha256": "c69ce084bb743c60671e2b4be9f7fcb4c6f7ea2426d62d6c5ff3663585af82f4",
+  "feature_ranges": [
+    [
+      0.2,
+      1.4816901408450704
+    ]
+  ],
+  "split_sha256": "257def2b9a4e3acefa382a0c6d7fe93e6123a0b7c6e329d2bf45facb702ef8ef",
+  "problem_schema_version": 2,
+  "requirements": {
+    "allowed_operators": [
+      "mul",
+      "add",
+      "pow_int"
+    ],
+    "fixed_constants": {},
+    "max_nodes": 12,
+    "max_free_parameters": null,
+    "require_units": true,
+    "allowed_variables": null,
+    "equation_template": {
+      "coordinate_space": "working",
+      "ast": {
+        "op": "pow_int",
+        "args": [
+          {
+            "slot": "h",
+            "args": [
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "const": 2
+          }
+        ]
+      },
+      "parameters": {},
+      "components": {},
+      "knowledge": {
+        "kind": "hypothesis",
+        "statement": "Exposed small wrapper/horizon mechanism only, not a quality benchmark"
+      },
+      "slots": {
+        "h": {
+          "arguments": [
+            {
+              "name": "x0",
+              "unit": "m"
+            }
+          ],
+          "unit": "m",
+          "max_nodes": 7,
+          "allowed_operators": [
+            "mul",
+            "add"
+          ]
+        }
+      }
+    },
+    "unit_search": true,
+    "required_responses": {
+      "points": [],
+      "bounds": [
+        null,
+        null
+      ],
+      "checks": [],
+      "enforcement": null
+    }
+  },
+  "requirements_sha256": "96d7fb9bde11830e19b392ed01233ef8cb610c42674fab02196cf58f69c6da3f"
+}

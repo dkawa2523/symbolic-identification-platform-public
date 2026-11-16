@@ -1,0 +1,754 @@
+{
+  "version": "0.0.2",
+  "source_revision": "e10379a0e19238b50178492c48da0d0444d4898f",
+  "license": "MIT",
+  "torch_version": "2.7.1+cpu",
+  "torch_threads": 1,
+  "native_parallel": false,
+  "native_dtype": "float64",
+  "native_candidates": 7,
+  "source_complexity_budget": {
+    "max_nodes": 256,
+    "variable_costs": {
+      "x0": 1
+    },
+    "output_cost": 0,
+    "families": [
+      {
+        "nodes": 15,
+        "included": true,
+        "origin": "native",
+        "degrees": {
+          "degree_input_polynomials": 0,
+          "degree_output_polynomials": 2,
+          "degree_input_denominator": 0,
+          "degree_output_denominator": 0
+        }
+      },
+      {
+        "nodes": 15,
+        "included": true,
+        "origin": "native",
+        "degrees": {
+          "degree_input_polynomials": 0,
+          "degree_output_polynomials": 1,
+          "degree_input_denominator": 0,
+          "degree_output_denominator": 1
+        }
+      },
+      {
+        "nodes": 21,
+        "included": true,
+        "origin": "native",
+        "degrees": {
+          "degree_input_polynomials": 0,
+          "degree_output_polynomials": 2,
+          "degree_input_denominator": 0,
+          "degree_output_denominator": 1
+        }
+      },
+      {
+        "nodes": 15,
+        "included": true,
+        "origin": "native",
+        "degrees": {
+          "degree_input_polynomials": 0,
+          "degree_output_polynomials": 2,
+          "degree_input_denominator": 0,
+          "degree_output_denominator": 0
+        }
+      },
+      {
+        "nodes": 15,
+        "included": true,
+        "origin": "native",
+        "degrees": {
+          "degree_input_polynomials": 0,
+          "degree_output_polynomials": 1,
+          "degree_input_denominator": 0,
+          "degree_output_denominator": 1
+        }
+      },
+      {
+        "nodes": 21,
+        "included": true,
+        "origin": "native",
+        "degrees": {
+          "degree_input_polynomials": 0,
+          "degree_output_polynomials": 2,
+          "degree_input_denominator": 0,
+          "degree_output_denominator": 1
+        }
+      },
+      {
+        "nodes": 9,
+        "included": true,
+        "origin": "lower_degree_extension",
+        "degrees": {
+          "degree_input_polynomials": 0,
+          "degree_output_polynomials": 1,
+          "degree_input_denominator": 0,
+          "degree_output_denominator": 0
+        }
+      },
+      {
+        "nodes": 9,
+        "included": true,
+        "origin": "lower_degree_extension",
+        "degrees": {
+          "degree_input_polynomials": 0,
+          "degree_output_polynomials": 1,
+          "degree_input_denominator": 0,
+          "degree_output_denominator": 0
+        }
+      }
+    ],
+    "family_search": "up_to",
+    "family_enumeration": "native families plus missing lower-degree topologies in Complete/Max; fixed No unchanged; original order and repetitions retained; not exhaustive formula enumeration"
+  },
+  "native_fit_completed": true,
+  "native_execution_status": "completed",
+  "reason": null,
+  "returned_scope": "completed_families",
+  "failed_family_fits": [],
+  "nonfinite_gradient_fits": 0,
+  "nonfinite_result_fits": 0,
+  "gradient_failure_policy": "nonfinite autodiff rejects that local fit; no numerical fallback",
+  "runtime_fit_failure_version": 1,
+  "native_completed_family_fits": 5,
+  "family_row_usage": [
+    {
+      "supplied_train_rows": 256,
+      "coefficient_fit_rows": 204,
+      "internal_validation_rows": 52,
+      "subsampled_out_rows": 0,
+      "max_dataset_length": 256,
+      "split_seed": 17,
+      "scope": "actual native family arrays after internal split and optional subsampling; not common Selection"
+    },
+    {
+      "supplied_train_rows": 256,
+      "coefficient_fit_rows": 204,
+      "internal_validation_rows": 52,
+      "subsampled_out_rows": 0,
+      "max_dataset_length": 256,
+      "split_seed": 17,
+      "scope": "actual native family arrays after internal split and optional subsampling; not common Selection"
+    },
+    {
+      "supplied_train_rows": 256,
+      "coefficient_fit_rows": 204,
+      "internal_validation_rows": 52,
+      "subsampled_out_rows": 0,
+      "max_dataset_length": 256,
+      "split_seed": 17,
+      "scope": "actual native family arrays after internal split and optional subsampling; not common Selection"
+    },
+    {
+      "supplied_train_rows": 256,
+      "coefficient_fit_rows": 204,
+      "internal_validation_rows": 52,
+      "subsampled_out_rows": 0,
+      "max_dataset_length": 256,
+      "split_seed": 17,
+      "scope": "actual native family arrays after internal split and optional subsampling; not common Selection"
+    },
+    {
+      "supplied_train_rows": 256,
+      "coefficient_fit_rows": 204,
+      "internal_validation_rows": 52,
+      "subsampled_out_rows": 0,
+      "max_dataset_length": 256,
+      "split_seed": 17,
+      "scope": "actual native family arrays after internal split and optional subsampling; not common Selection"
+    }
+  ],
+  "finetuning_row_usage": [
+    {
+      "supplied_rows": 204,
+      "max_dataset_length": 5000,
+      "coefficient_fit_rows": 0,
+      "optimizer_started": false
+    },
+    {
+      "supplied_rows": 204,
+      "max_dataset_length": 5000,
+      "coefficient_fit_rows": 0,
+      "optimizer_started": false
+    },
+    {
+      "supplied_rows": 204,
+      "max_dataset_length": 5000,
+      "coefficient_fit_rows": 0,
+      "optimizer_started": false
+    },
+    {
+      "supplied_rows": 204,
+      "max_dataset_length": 5000,
+      "coefficient_fit_rows": 0,
+      "optimizer_started": false
+    },
+    {
+      "supplied_rows": 204,
+      "max_dataset_length": 5000,
+      "coefficient_fit_rows": 0,
+      "optimizer_started": false
+    },
+    {
+      "supplied_rows": 204,
+      "max_dataset_length": 5000,
+      "coefficient_fit_rows": 0,
+      "optimizer_started": false
+    },
+    {
+      "supplied_rows": 204,
+      "max_dataset_length": 5000,
+      "coefficient_fit_rows": 0,
+      "optimizer_started": false
+    },
+    {
+      "supplied_rows": 204,
+      "max_dataset_length": 5000,
+      "coefficient_fit_rows": 0,
+      "optimizer_started": false
+    }
+  ],
+  "row_usage_scope": "wrapper sets family cap to supplied Train length; native internal 80/20 uses every fitting-partition row; winner finetuning is a separate stage with its own 5000-row cap",
+  "native_family_evaluations": 8862,
+  "max_active_functions": 0,
+  "function_power": 1,
+  "variants": {
+    "parfam/17/0": "winner_full",
+    "parfam/17/1": "winner_reduced",
+    "parfam/17/2": "completed_family_0",
+    "parfam/17/3": "completed_family_1",
+    "parfam/17/4": "completed_family_2",
+    "parfam/17/5": "completed_family_3",
+    "parfam/17/6": "completed_family_4"
+  },
+  "template_search": {
+    "slot": "h",
+    "loss_target": "original observed y",
+    "arithmetic": "strict_real",
+    "coefficient_sharing": "one native coefficient vector shared across all slot calls",
+    "scope": "one slot; fixed outer parameters; no nested slots or mapped coordinates"
+  },
+  "family": "rational",
+  "native_model_parameters": {
+    "degree_input_polynomials": 0,
+    "degree_output_polynomials": 1,
+    "degree_output_denominator": 1,
+    "degree_input_denominator": 0,
+    "functions": [],
+    "function_names": [],
+    "width": 1,
+    "degree_output_polynomials_specific": null,
+    "degree_output_polynomials_denominator_specific": null,
+    "enforce_function": false,
+    "maximal_potence": 2,
+    "stabilize_denominator": false
+  },
+  "native_train_source_sha256": "791ca284393fccdd0776239914661b810ffa91772820a64a57f9d26007306449",
+  "ordinary_division": true,
+  "normalization": false,
+  "function_semantics": {},
+  "native_search_seconds": 2880,
+  "input_rows": 256,
+  "native_input_variables": [
+    "x0"
+  ],
+  "native_input_columns": [
+    "x"
+  ],
+  "rejected_exports": [],
+  "constraint_support": {
+    "equation_template": "one shared slot, fixed outer parameters; native coefficient-family search in the full strict-real composition against original y; nested slots, outer free parameters and mapped coordinates rejected",
+    "operators": "native polynomial/rational family with explicitly configured ordinary torch functions; exports post-filtered",
+    "functions_and_denominators": "ordinary functions installed through public extend_function_dict during fit/reconstruction; upstream protected defaults are not relabelled ordinary",
+    "units": "unknown fitted coefficient units; portable post-filter",
+    "max_nodes": "source AST family-size filtering before coefficient fit; extends Complete/Max with missing lower-degree families, preserves original order/repetitions and fixed No mode, rejects an empty feasible set; active-parameter count remains a stopping preference",
+    "variables": "disallowed columns excluded before native search; full-schema export/prediction checked",
+    "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+    "probes": "declared-point finite predictions required during coefficient search and native family/reduction selection; post-filter only in explicit filter mode",
+    "response_bounds": "explicit SLSQP inequalities/equalities in native coefficient fitting and pruning refits; strict feasibility in native family/reduction selection; declared points only",
+    "response_checks": "finite-step response inequalities/equalities passed to SLSQP coefficient fitting and pruning refits; strict feasibility in native family/reduction selection; no global guarantee"
+  },
+  "response_search": {
+    "mode": "native family search with explicitly constrained SLSQP coefficients",
+    "objective_calls": 8876,
+    "response_objective_calls": 8876,
+    "objective": "Train scaled MSE without native coefficient regularization, subject to declared response bounds; native family enumeration and basin hopping retained",
+    "runtime_patch_version": 3,
+    "coefficient_solver": "SLSQP (replaces native BFGS/LBFGS); native refit reinitialization count and early-stop threshold retained",
+    "invalid_response_solves": 0,
+    "constrained_solves": 5,
+    "infeasible_solves": 0,
+    "feasible_returns": 5,
+    "solver_outcomes": {
+      "basinhopping_best_local": {
+        "returned": 5,
+        "success": 5,
+        "not_success": 0,
+        "success_not_reported": 0,
+        "stop_reasons": {
+          "success": 5
+        }
+      }
+    },
+    "optimizer_result_count": 5,
+    "no_free_parameter_solves": 0,
+    "solver_outcome_scope": "solver_outcomes denominator is optimizer_result_count, not constrained_solves. constrained_solves counts coefficient-solving requests; one request can yield a primary result plus retry. basinhopping counts its best-local result only, not every internal solve. feasible_returns uses constrained_solves denominator; none establishes per-output candidate convergence",
+    "scope": "declared finite probe/response points; independent final verification required"
+  },
+  "assets": null,
+  "python": "3.11.15",
+  "python_executable": "/opt/venv/bin/python",
+  "device": "cpu",
+  "allowed_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "native_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "unavailable_search_operators": [],
+  "operator_policy": "unavailable_search_operators is the requested/export-capability difference, not decoder reachability; generation enforcement and context-dependent routes are specified by constraint_support and native metadata",
+  "status": "ok",
+  "native_artifacts": {
+    "model": "/work/results/practical-fixed-20261115-1400/synthetic_supported/parfam/calculation/discover/parfam/17/parfam_native.json"
+  },
+  "native_artifact_sha256": {
+    "model": "013693ee24b7ed1205a657f64fe35fc90c7db9e4d8cfe03476730f3a91c130b2"
+  },
+  "portable_status": "candidates",
+  "fixed_constants_native_support": "unsupported",
+  "exported_candidates": 7,
+  "selection_candidates": 7,
+  "prelimit_constraint_eligible": null,
+  "portable_candidates": "/work/results/practical-fixed-20261115-1400/synthetic_supported/parfam/calculation/discover/parfam/17/candidates.jsonl",
+  "portable_candidates_sha256": "690f810dccf1609ada7f899ef239942ed162df78d371dc2eaa7d3b177d0aab92",
+  "candidate_pool": {
+    "policy": "all",
+    "emitted": 7,
+    "retained": 7,
+    "limit": null,
+    "discarded_from_comparison_ids": [],
+    "archive_scope": "all faithfully exported native candidates, not all internal search states",
+    "quality_scope": "Train/shared probes only when explicit bounded allocation is requested; compare owns final eligibility"
+  },
+  "truncation": "none; all faithfully emitted candidates reach common evaluation",
+  "engine": "parfam",
+  "seed": 17,
+  "wall_seconds": 20.700846168998396,
+  "runtime_image_id": "sha256:43d979e1acb694cb6e42a0d08c57f737a31844599665daef971bf632eb73a5c0",
+  "prepared_sha256": "9ce7019818b9e87a233a8c2cb142d736ac7cfcd12925f9fdf723bde817f243d8",
+  "job_sha256": "0e606a0ccc21cb815a9bf73ff29674babbf5c7fa1dfb2a5295d782484f4f41fd",
+  "requested_constraints": {
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": {
+      "coordinate_space": "working",
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "const": 0.75
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "slot": "h",
+            "args": [
+              {
+                "var": "x0"
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {},
+      "components": {},
+      "slots": {
+        "h": {
+          "arguments": [
+            {
+              "name": "x0",
+              "unit": "1"
+            }
+          ],
+          "unit": "1",
+          "allowed_operators": [
+            "add",
+            "sub",
+            "mul",
+            "div"
+          ],
+          "max_nodes": 252
+        }
+      },
+      "knowledge": {
+        "kind": "hypothesis",
+        "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+      }
+    },
+    "probes": [
+      {
+        "x": 0.10010000000000001
+      },
+      {
+        "x": 0.3438375
+      },
+      {
+        "x": 0.587575
+      },
+      {
+        "x": 0.8313125
+      },
+      {
+        "x": 1.07505
+      },
+      {
+        "x": 1.3187875
+      },
+      {
+        "x": 1.5625250000000002
+      },
+      {
+        "x": 1.8062625
+      },
+      {
+        "x": 2.05
+      },
+      {
+        "x": 2.2937374999999998
+      },
+      {
+        "x": 2.5374749999999997
+      },
+      {
+        "x": 2.7812124999999996
+      },
+      {
+        "x": 3.02495
+      },
+      {
+        "x": 3.2686875
+      },
+      {
+        "x": 3.512425
+      },
+      {
+        "x": 3.7561625
+      },
+      {
+        "x": 3.9999
+      }
+    ],
+    "response_bounds": [
+      0.0,
+      null
+    ],
+    "response_checks": [
+      {
+        "name": "increasing",
+        "feature": "x",
+        "order": 1,
+        "sign": 1,
+        "step": 0.0001,
+        "tolerance": 1e-05,
+        "points": [
+          {
+            "x": 0.10010000000000001
+          },
+          {
+            "x": 0.3438375
+          },
+          {
+            "x": 0.587575
+          },
+          {
+            "x": 0.8313125
+          },
+          {
+            "x": 1.07505
+          },
+          {
+            "x": 1.3187875
+          },
+          {
+            "x": 1.5625250000000002
+          },
+          {
+            "x": 1.8062625
+          },
+          {
+            "x": 2.05
+          },
+          {
+            "x": 2.2937374999999998
+          },
+          {
+            "x": 2.5374749999999997
+          },
+          {
+            "x": 2.7812124999999996
+          },
+          {
+            "x": 3.02495
+          },
+          {
+            "x": 3.2686875
+          },
+          {
+            "x": 3.512425
+          },
+          {
+            "x": 3.7561625
+          },
+          {
+            "x": 3.9999
+          }
+        ],
+        "knowledge": "Declared finite-point increasing response"
+      }
+    ],
+    "response_enforcement": "hard",
+    "max_wall_seconds": 21600,
+    "response_mode": "search",
+    "domain_probes": [
+      {
+        "x": 0.7074927323053738
+      },
+      {
+        "x": 0.7840913857374404
+      },
+      {
+        "x": 1.7784253015982936
+      },
+      {
+        "x": 0.8239618237100979
+      },
+      {
+        "x": 3.5814003493697837
+      },
+      {
+        "x": 0.2476520901940135
+      },
+      {
+        "x": 3.475483436476617
+      },
+      {
+        "x": 0.305248513826072
+      },
+      {
+        "x": 2.295276023224203
+      },
+      {
+        "x": 2.776180484941333
+      },
+      {
+        "x": 0.2994431105004205
+      },
+      {
+        "x": 0.36704735172851755
+      },
+      {
+        "x": 0.6299562312732385
+      },
+      {
+        "x": 3.436045155813486
+      },
+      {
+        "x": 2.9287872797571763
+      },
+      {
+        "x": 0.9395443891072537
+      },
+      {
+        "x": 2.05
+      },
+      {
+        "x": 0.1
+      },
+      {
+        "x": 4.0
+      },
+      {
+        "x": 1.0
+      },
+      {
+        "x": 0.10010000000000001
+      },
+      {
+        "x": 0.3438375
+      },
+      {
+        "x": 0.587575
+      },
+      {
+        "x": 0.8313125
+      },
+      {
+        "x": 1.07505
+      },
+      {
+        "x": 1.3187875
+      },
+      {
+        "x": 1.5625250000000002
+      },
+      {
+        "x": 1.8062625
+      },
+      {
+        "x": 2.05
+      },
+      {
+        "x": 2.2937374999999998
+      },
+      {
+        "x": 2.5374749999999997
+      },
+      {
+        "x": 2.7812124999999996
+      },
+      {
+        "x": 3.02495
+      },
+      {
+        "x": 3.2686875
+      },
+      {
+        "x": 3.512425
+      },
+      {
+        "x": 3.7561625
+      },
+      {
+        "x": 3.9999
+      }
+    ]
+  },
+  "requirements_ref": {
+    "requirements_sha256": "81b861c5d41eb8dfa97ec7343bcc193fcf2eed762452bd75a8a9cf71727f39d5",
+    "scope": "canonical common request; native settings/checks are derived evidence"
+  },
+  "resolved_native_profile": {
+    "options": {
+      "objective": "mse",
+      "family": "rational",
+      "family_search": "up_to",
+      "functions": [],
+      "degree": 2,
+      "input_degree": 2,
+      "denominator_degree": 1,
+      "maxiter": 100,
+      "repetitions": 2,
+      "max_active_parameters": 12,
+      "candidate_scope": "completed_families",
+      "seconds": 2880
+    },
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "device": "cpu",
+    "candidate_pool_policy": "all"
+  },
+  "response_mode": "search",
+  "capability_declaration": {
+    "supported_options": [
+      "candidate_scope",
+      "degree",
+      "denominator_degree",
+      "family",
+      "family_search",
+      "function_power",
+      "functions",
+      "input_degree",
+      "max_active_functions",
+      "max_active_parameters",
+      "maxiter",
+      "objective",
+      "repetitions",
+      "seconds",
+      "threads"
+    ],
+    "response_enforcement": {
+      "default": "hard",
+      "supported": [
+        "hard"
+      ],
+      "stage": "native family coefficient optimization and selection"
+    },
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "pow_int",
+      "sin",
+      "cos",
+      "exp",
+      "log",
+      "sqrt"
+    ],
+    "requires_assets": false,
+    "equation_template": true,
+    "family_search": "fixed keeps one configured family; up_to searches bounded degree families. Default polynomial=fixed, rational=up_to; Complete includes lower-degree extension",
+    "search_constraints": [
+      "response_bounds",
+      "response_checks",
+      "probes"
+    ],
+    "constraints": {
+      "equation_template": "one shared slot, fixed outer parameters; native coefficient-family search in the full strict-real composition against original y; nested slots, outer free parameters and mapped coordinates rejected",
+      "operators": "native polynomial/rational family with explicitly configured ordinary torch functions; exports post-filtered",
+      "functions_and_denominators": "ordinary functions installed through public extend_function_dict during fit/reconstruction; upstream protected defaults are not relabelled ordinary",
+      "units": "unknown fitted coefficient units; portable post-filter",
+      "max_nodes": "source AST family-size filtering before coefficient fit; extends Complete/Max with missing lower-degree families, preserves original order/repetitions and fixed No mode, rejects an empty feasible set; active-parameter count remains a stopping preference",
+      "variables": "disallowed columns excluded before native search; full-schema export/prediction checked",
+      "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+      "probes": "declared-point finite predictions required during coefficient search and native family/reduction selection; post-filter only in explicit filter mode",
+      "response_bounds": "explicit SLSQP inequalities/equalities in native coefficient fitting and pruning refits; strict feasibility in native family/reduction selection; declared points only",
+      "response_checks": "finite-step response inequalities/equalities passed to SLSQP coefficient fitting and pruning refits; strict feasibility in native family/reduction selection; no global guarantee"
+    }
+  },
+  "constraint_application": {
+    "operators": "native polynomial/rational family with explicitly configured ordinary torch functions; exports post-filtered",
+    "max_nodes": "source AST family-size filtering before coefficient fit; extends Complete/Max with missing lower-degree families, preserves original order/repetitions and fixed No mode, rejects an empty feasible set; active-parameter count remains a stopping preference",
+    "response_enforcement": {
+      "requested": "hard",
+      "effective": "hard",
+      "stage": "native family coefficient optimization and selection",
+      "scope": "declared finite points only; different defaults are not equivalent enforcement"
+    },
+    "equation_template": "one shared slot, fixed outer parameters; native coefficient-family search in the full strict-real composition against original y; nested slots, outer free parameters and mapped coordinates rejected",
+    "probes": "declared-point finite predictions required during coefficient search and native family/reduction selection; post-filter only in explicit filter mode; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee",
+    "response_bounds": "explicit SLSQP inequalities/equalities in native coefficient fitting and pruning refits; strict feasibility in native family/reduction selection; declared points only; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee",
+    "response_checks": "finite-step response inequalities/equalities passed to SLSQP coefficient fitting and pruning refits; strict feasibility in native family/reduction selection; no global guarantee; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee"
+  },
+  "response_enforcement": {
+    "requested": "hard",
+    "effective": "hard",
+    "stage": "native family coefficient optimization and selection",
+    "scope": "declared finite points only; different defaults are not equivalent enforcement"
+  },
+  "readiness_scope": "this profile/run only; execution, fidelity, common admissibility and scientific adequacy are distinct",
+  "candidates_sha256": "690f810dccf1609ada7f899ef239942ed162df78d371dc2eaa7d3b177d0aab92"
+}

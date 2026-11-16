@@ -1,0 +1,44 @@
+2. parfam | equation
+Candidate: parfam/42/0@native
+Coordinates: public
+resistance [1] = (((((((((coef['c14'] + (coef['c15'] * cos(((((((coef['c7'] + (coef['c8'] * froude)) + (coef['c9'] * length_beam_ratio)) + (coef['c10'] * beam_draught_ratio)) + (coef['c11'] * length_displacement_ratio)) + (coef['c12'] * prismatic_coefficient)) + (coef['c13'] * buoyancy_position))))) + (coef['c16'] * cos(((((((coef['c0'] + (coef['c1'] * froude)) + (coef['c2'] * length_beam_ratio)) + (coef['c3'] * beam_draught_ratio)) + (coef['c4'] * length_displacement_ratio)) + (coef['c5'] * prismatic_coefficient)) + (coef['c6'] * buoyancy_position))))) + (coef['c17'] * froude)) + (coef['c18'] * length_beam_ratio)) + (coef['c19'] * beam_draught_ratio)) + (coef['c20'] * length_displacement_ratio)) + (coef['c21'] * prismatic_coefficient)) + (coef['c22'] * buoyancy_position)) / ((((((((coef['c23'] + (coef['c24'] * cos(((((((coef['c7'] + (coef['c8'] * froude)) + (coef['c9'] * length_beam_ratio)) + (coef['c10'] * beam_draught_ratio)) + (coef['c11'] * length_displacement_ratio)) + (coef['c12'] * prismatic_coefficient)) + (coef['c13'] * buoyancy_position))))) + (coef['c25'] * cos(((((((coef['c0'] + (coef['c1'] * froude)) + (coef['c2'] * length_beam_ratio)) + (coef['c3'] * beam_draught_ratio)) + (coef['c4'] * length_displacement_ratio)) + (coef['c5'] * prismatic_coefficient)) + (coef['c6'] * buoyancy_position))))) + (coef['c26'] * froude)) + (coef['c27'] * length_beam_ratio)) + (coef['c28'] * beam_draught_ratio)) + (coef['c29'] * length_displacement_ratio)) + (coef['c30'] * prismatic_coefficient)) + (coef['c31'] * buoyancy_position)))
+
+c0 = 0.0029139494425493902 [unit unknown]
+c1 = -0.003620430690430107 [unit unknown]
+c2 = 0.12390678626501485 [unit unknown]
+c3 = -1.5878312717402867 [unit unknown]
+c4 = 0.12625506648878218 [unit unknown]
+c5 = -1.5569568327332948e-05 [unit unknown]
+c6 = -1.4079699638556205 [unit unknown]
+c7 = 6.566346006199999 [unit unknown]
+c8 = -2.9620746138112524 [unit unknown]
+c9 = 0.04732411407523346 [unit unknown]
+c10 = 0.04496516999601458 [unit unknown]
+c11 = -0.06550623314224711 [unit unknown]
+c12 = 0.3900065301292217 [unit unknown]
+c13 = -0.002849507135306504 [unit unknown]
+c14 = -0.37336967881979716 [unit unknown]
+c15 = -0.12790366366412362 [unit unknown]
+c16 = 0.016395540924370868 [unit unknown]
+c17 = 0.5798418059528039 [unit unknown]
+c18 = -0.09734253576121771 [unit unknown]
+c19 = 0.01151096841492081 [unit unknown]
+c20 = 0.0765639906884916 [unit unknown]
+c21 = 0.6393479161001345 [unit unknown]
+c22 = 0.00066990665328528 [unit unknown]
+c23 = 0.5160146876181716 [unit unknown]
+c24 = -0.3409363456508652 [unit unknown]
+c25 = -0.00020821126451951805 [unit unknown]
+c26 = -0.7768673595557385 [unit unknown]
+c27 = 0.0115329078043383 [unit unknown]
+c28 = 0.011649586802265131 [unit unknown]
+c29 = -0.015806608614931664 [unit unknown]
+c30 = 0.11597126441497202 [unit unknown]
+c31 = -0.0006393751004572983 [unit unknown]
+buoyancy_position_work [1] = 1 * buoyancy_position [1] + (0)
+prismatic_coefficient_work [1] = 1 * prismatic_coefficient [1] + (0)
+length_displacement_ratio_work [1] = 1 * length_displacement_ratio [1] + (0)
+beam_draught_ratio_work [1] = 1 * beam_draught_ratio [1] + (0)
+length_beam_ratio_work [1] = 1 * length_beam_ratio [1] + (0)
+froude_work [1] = 1 * froude [1] + (0)
+resistance_work [1] = 1 * resistance [1] + (0)

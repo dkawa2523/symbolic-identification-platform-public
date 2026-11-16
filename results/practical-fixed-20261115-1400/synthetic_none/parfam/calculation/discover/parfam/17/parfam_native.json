@@ -1,0 +1,177 @@
+{
+  "model_parameters": {
+    "degree_input_polynomials": 0,
+    "degree_output_polynomials": 2,
+    "degree_output_denominator": 1,
+    "degree_input_denominator": 0,
+    "functions": [],
+    "function_names": [],
+    "width": 1,
+    "degree_output_polynomials_specific": null,
+    "degree_output_polynomials_denominator_specific": null,
+    "enforce_function": false,
+    "maximal_potence": 2,
+    "stabilize_denominator": false
+  },
+  "coefficients": {
+    "winner_full": [
+      0.009347708239925461,
+      -1.8825575906968812,
+      -0.5990912976950008,
+      -0.642589919324488,
+      -0.7662102815693276
+    ],
+    "winner_reduced": [
+      0.009347708239925461,
+      -1.8825575906968812,
+      -0.5990912976950008,
+      -0.642589919324488,
+      -0.7662102815693276
+    ],
+    "completed_family_0": [
+      0.3007096589035823,
+      1.4924867453728858,
+      -0.11001736230381663
+    ],
+    "completed_family_1": [
+      0.2268319251152571,
+      1.6972544529664007,
+      2.3920013810293694,
+      0.33757819902857394
+    ],
+    "completed_family_2": [
+      0.009347708239925461,
+      -1.8825575906968812,
+      -0.5990912976950008,
+      -0.7475556255965069,
+      -0.8913691129471264
+    ]
+  },
+  "denominator_normalization": true,
+  "stabilize_denominator": false,
+  "function_order": [],
+  "completed_families": [
+    {
+      "index": 0,
+      "row_usage": {
+        "supplied_train_rows": 256,
+        "coefficient_fit_rows": 204,
+        "internal_validation_rows": 52,
+        "subsampled_out_rows": 0,
+        "max_dataset_length": 256,
+        "split_seed": 17,
+        "scope": "actual native family arrays after internal split and optional subsampling; not common Selection"
+      },
+      "model_parameters": {
+        "degree_input_polynomials": 0,
+        "degree_output_polynomials": 2,
+        "degree_output_denominator": 0,
+        "degree_input_denominator": 0,
+        "function_names": [],
+        "width": 1,
+        "functions": [],
+        "degree_output_polynomials_specific": null,
+        "degree_output_polynomials_denominator_specific": null,
+        "enforce_function": false,
+        "maximal_potence": 2,
+        "stabilize_denominator": false
+      },
+      "function_order": [],
+      "denominator_normalization": true,
+      "native_training_seconds": 0.055258989334106445,
+      "native_evaluations": 116,
+      "native_internal_validation_loss": 0.002487940815600188
+    },
+    {
+      "index": 1,
+      "row_usage": {
+        "supplied_train_rows": 256,
+        "coefficient_fit_rows": 204,
+        "internal_validation_rows": 52,
+        "subsampled_out_rows": 0,
+        "max_dataset_length": 256,
+        "split_seed": 17,
+        "scope": "actual native family arrays after internal split and optional subsampling; not common Selection"
+      },
+      "model_parameters": {
+        "degree_input_polynomials": 0,
+        "degree_output_polynomials": 1,
+        "degree_output_denominator": 1,
+        "degree_input_denominator": 0,
+        "functions": [],
+        "function_names": [],
+        "width": 1,
+        "degree_output_polynomials_specific": null,
+        "degree_output_polynomials_denominator_specific": null,
+        "enforce_function": false,
+        "maximal_potence": 2,
+        "stabilize_denominator": false
+      },
+      "function_order": [],
+      "denominator_normalization": true,
+      "native_training_seconds": 0.08498311042785645,
+      "native_evaluations": 210,
+      "native_internal_validation_loss": 0.0015263263408093132
+    },
+    {
+      "index": 2,
+      "row_usage": {
+        "supplied_train_rows": 256,
+        "coefficient_fit_rows": 204,
+        "internal_validation_rows": 52,
+        "subsampled_out_rows": 0,
+        "max_dataset_length": 256,
+        "split_seed": 17,
+        "scope": "actual native family arrays after internal split and optional subsampling; not common Selection"
+      },
+      "model_parameters": {
+        "degree_input_polynomials": 0,
+        "degree_output_polynomials": 2,
+        "degree_output_denominator": 1,
+        "degree_input_denominator": 0,
+        "functions": [],
+        "function_names": [],
+        "width": 1,
+        "degree_output_polynomials_specific": null,
+        "degree_output_polynomials_denominator_specific": null,
+        "enforce_function": false,
+        "maximal_potence": 2,
+        "stabilize_denominator": false
+      },
+      "function_order": [],
+      "denominator_normalization": true,
+      "native_training_seconds": 0.1485004425048828,
+      "native_evaluations": 355,
+      "native_internal_validation_loss": 0.000664234547738721
+    }
+  ],
+  "candidate_scope": "completed_families",
+  "family_scope": "completed native family fits before wrapper winner selection/reduction; includes last completed fit even if native search then stops on its internal budget; no new optimizer call",
+  "monomials": {
+    "monomial_list_input_numerator": [
+      [
+        0
+      ]
+    ],
+    "monomial_list_input_denominator": [],
+    "monomial_list_output_numerator": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "monomial_list_output_denominator": [
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ]
+  }
+}

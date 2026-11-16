@@ -1,0 +1,73 @@
+{
+  "data": {
+    "local_path": "examples/input/input_demo.csv",
+    "feature_columns": [
+      "length"
+    ],
+    "target_column": "response",
+    "units": {
+      "length": "cm",
+      "response": "mm"
+    },
+    "coordinate_roles": {
+      "length": "value",
+      "response": "value"
+    },
+    "domain": {
+      "length": [
+        1,
+        12
+      ],
+      "response": [
+        0,
+        30
+      ]
+    }
+  },
+  "split": {
+    "method": "fixed",
+    "file": "examples/input/input_demo_split.csv",
+    "group_column": "batch"
+  },
+  "search": {
+    "engines": [
+      "linear"
+    ],
+    "seeds": [
+      42
+    ],
+    "max_wall_seconds": 30,
+    "engine_options": {
+      "linear": {
+        "max_terms": 2,
+        "ridge": 0
+      }
+    },
+    "response_mode": "filter"
+  },
+  "requirements": {
+    "allowed_operators": [
+      "add",
+      "mul"
+    ],
+    "max_nodes": 12,
+    "require_units": true,
+    "required_responses": {
+      "points": [
+        {
+          "length": 1
+        },
+        {
+          "length": 6
+        },
+        {
+          "length": 12
+        }
+      ],
+      "bounds": [
+        0,
+        30
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "prepare": {
+    "run": "/work/results/practical-fixed-20261115-1400/synthetic_none/baselines/calculation/prepare/run.json",
+    "final": "/work/results/practical-fixed-20261115-1400/synthetic_none/baselines/calculation/prepare/final.npz",
+    "selection": "/work/results/practical-fixed-20261115-1400/synthetic_none/baselines/calculation/prepare/selection.npz",
+    "train": "/work/results/practical-fixed-20261115-1400/synthetic_none/baselines/calculation/prepare/train.npz"
+  },
+  "search": {
+    "engines": [
+      "mean",
+      "linear"
+    ],
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "seeds": [
+      17
+    ],
+    "max_wall_seconds": 21600,
+    "max_export_candidates": 20,
+    "candidate_pool_policy": "all",
+    "allow_partial_engines": true,
+    "response_mode": "search",
+    "engine_options": {
+      "mean": {},
+      "linear": {}
+    },
+    "runtimes": {}
+  }
+}

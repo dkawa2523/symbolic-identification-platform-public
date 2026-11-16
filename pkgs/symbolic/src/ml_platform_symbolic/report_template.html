@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>数式の比較と利用根拠</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#203342;background:#f4f6f8;font-size:15px}body{margin:0}main{box-sizing:border-box;width:100%;max-width:1450px;margin:auto;padding:28px}h1{font-size:1.7rem;margin:0 0 12px}h2{font-size:1.25rem}h3{font-size:1.05rem}p{line-height:1.65;overflow-wrap:anywhere}section,.panel{background:white;border:1px solid #cdd8df;border-radius:8px;padding:18px;margin:16px 0}header{border-top:5px solid #216278}.stages{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.stage{padding:14px;border:1px solid #bacbd5;border-radius:6px}.stage strong{display:block;margin:8px 0}.warn{border-left:5px solid #b85621;background:#fff5ec;padding:12px}.note{color:#455d6b}.small{font-size:.85rem}.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:12px 0}button,input,select{font:inherit;padding:8px;border:1px solid #97adbb;border-radius:4px;background:white}button{cursor:pointer}button:hover{background:#e4eef3}button.primary{background:#175b72;color:white}input[type=checkbox]{width:18px;height:18px}.tablewrap{overflow:auto;max-height:520px;border:1px solid #d6e0e6}table{border-collapse:collapse;width:100%;font-size:.88rem}th,td{overflow-wrap:anywhere;border-bottom:1px solid #dbe2e7;padding:9px;text-align:left;vertical-align:top}th{position:sticky;top:0;background:#eaf0f4;z-index:1}td.formula{min-width:240px;max-width:420px;overflow-wrap:anywhere}tr.selected{background:#fff3d9}code,pre{white-space:pre-wrap;overflow-wrap:anywhere;font-family:ui-monospace,monospace;font-size:.87rem}pre{background:#f3f6f8;padding:12px;border-radius:4px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:16px}.card{min-width:0;border-top:4px solid #39728b}.card h3{overflow-wrap:anywhere}.tag{display:inline-block;padding:3px 8px;background:#e8eff4;border-radius:4px;margin-right:5px}.dim{color:#566d7b}details{margin:12px 0;border:1px solid #d4dfe6;padding:10px;border-radius:4px}summary{overflow-wrap:anywhere;cursor:pointer;font-weight:600;overflow-wrap:anywhere}.plot svg{width:100%;height:auto;max-height:380px;background:white}.legend{display:flex;gap:12px;flex-wrap:wrap}.legend span{font-weight:600;overflow-wrap:anywhere}.membertable{max-height:350px;overflow:auto}a{color:#0d5c82}.error{color:#8b2717}label{line-height:1.7}#decision-id{overflow-wrap:anywhere}.claim{border-left:3px solid #758b96;padding-left:10px}.parameter-table{overflow-x:auto;max-width:100%}.parameter-table table{min-width:540px}.slot-parameters{min-width:0}.slot-parameters .parameter-table{width:100%;box-sizing:border-box}.card pre{max-height:300px;overflow:auto}footer{padding:20px;color:#526875}@media(max-width:600px){main{padding:12px}.cards{display:block}section{padding:12px}}
+</style>
+<main>
+<header class="panel"><h1>数式の比較と利用根拠</h1><p id="question">@@QUESTION@@</p><p id="context"></p><p><a href="#compare">保存された数式</a> · <a href="#prediction-check">実測・予測・残差のグラフ</a></p><p class="note">式の表示選択は科学的な採用ではありません。構文の違い・予測の違い・物理仮説の違いを分けて読みます。</p><details><summary>対象データ・指標の読み方</summary><div id="metric-guide"></div></details><div id="stages" class="stages"></div><p id="decision-id"></p><p id="exposure" class="small"></p></header>
+<section><h2>1　全候補から比較する式を選ぶ</h2><p>低精度・未対応・partialも含む保存済み一覧です。誤差順はSelectionの表示順で、Finalを使う再選択や再学習は行いません。構文群は機構群ではありません。</p><div id="method-summary" class="small"></div><div class="controls"><label>検索 <input id="search" placeholder="手法・ID・式・状態"></label><label>手法 <select id="method"><option value="">すべて</option></select></label><label>順序 <select id="sort"><option value="rmse">Selection RMSE</option><option value="nodes">複雑度</option><option value="method">手法・ID</option></select></label><label><input type="checkbox" id="eligible">要求検査で適格のみ</label><button id="show-decision">選択対象を表示</button><button id="clear">表示選択をクリア</button></div><p id="count" class="small"></p><div id="candidate-table" class="tablewrap"></div><div class="controls"><button id="previous">前の50件</button><button id="next">次の50件</button><span id="page" class="small"></span></div><p id="display-rule" class="small"></p></section>
+<section id="compare"><h2>2　表示中の式・前提・出自</h2><p id="compare-summary"></p><div id="cards" class="cards"></div></section>
+<section><h2>3　同じ条件で応答と差を読む</h2><div class="controls"><label>共通経路 <select id="path"></select></label></div><div id="path-context"></div><div id="response-plot" class="plot"></div><div id="difference-plot" class="plot"></div><div id="disagreement"></div><div id="pair-summary"></div><p class="note">候補差の大きい点は、追加測定を検討するための差の情報です。低精度候補を含む場合もあります。候補の妥当性、最適実験・因果・測定安全性は別の判断です。</p></section>
+<section id="prediction-check"><h2>4　実測と予測・残差</h2><h3>Selection 実測 vs 予測</h3><div id="prediction-plot" class="plot"></div><h3>実際の観測条件での残差</h3><div id="residual-plot" class="plot"></div><p class="note">Selectionの各行の実際の共変量での残差です。他変数を固定した応答や時系列とは解釈しません。無効行を除いて精度を改善しません。</p></section>
+<section><h2>5　不確かさ・成立領域・解析の範囲</h2><div id="uncertainty"></div><details><summary>公開単位と実行座標の対応（CSV/public unit）</summary><div id="coordinates"></div></details><details><summary>観測・domain・native/事後検査・解析の出所</summary><pre id="provenance"></pre></details></section>
+<section><h2>6　独立した解析とその範囲</h2><div id="axis-analyses"></div></section>
+<footer>数学的な構造、データ内の数値的振舞い、支持外のモデル含意、未確認の物理機構を区別します。係数の大きさは重要度、負の項は抑制機構、切片は測定offsetを意味するとは限りません。全域同値・因果・真式は、この表示で証明しません。</footer>
+</main>
+<script id="report-data" type="application/json">@@DATA@@</script>
+<script>
+const report=JSON.parse(document.getElementById('report-data').textContent);
+const byId=new Map(report.candidates.map(c=>[c.id,c]));
+const selected=new Set(report.display_ids);
+const $=id=>document.getElementById(id);
+const esc=v=>String(v??'未記録').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=v=>v===null||v===undefined?'未評価':typeof v==='number'?(Number.isFinite(v)?Number(v.toPrecision(7)).toString():'無効'):esc(v);
+const json=v=>esc(JSON.stringify(v,null,2));
+const table=(headers,rows)=>'<table><thead><tr>'+headers.map(h=>'<th>'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map(v=>'<td>'+v+'</td>').join('')+'</tr>').join('')+'</tbody></table>';
+const parameters=items=>'<div class="parameter-table">'+table(['係数','値','単位','固定/自由/共有','bounds','由来'],items.map(p=>[esc(p.name),esc(JSON.stringify(p.value)),esc(p.unit||'unknown'),esc(p.role)+(p.tied_to?' → '+esc(p.tied_to):''),esc(JSON.stringify(p.bounds)),esc(p.origin)+'; coordinate_role='+esc(p.coordinate_role||'unknown')]))+'</div>';
+let page=0;
+function promote(id){const rest=[...selected].filter(v=>v!==id);selected.clear();selected.add(id);rest.forEach(v=>selected.add(v));}
+function visibleCards(){
+ const items=[...selected].map(id=>byId.get(id)).filter(Boolean);
+ const chosen=report.decision?.selected_id;
+ if(chosen&&selected.has(chosen))items.sort((a,b)=>(a.id===chosen?-1:b.id===chosen?1:0));
+ return items.slice(0,6);
+}
+function stage(title,status,body){return '<div class="stage"><span>'+esc(title)+'</span><strong>'+esc(status)+'</strong>'+body+'</div>'}
+function metricValue(metrics,key){return metrics?.[key]===null||metrics?.[key]===undefined?esc(metrics?.reason?'算出不可':'未評価'):fmt(metrics[key])}
+function metricDetails(c){
+ const entries=[['Selection',c.selection],['Final',c.final?.target_metrics]];
+ let body='<details><summary>精度指標・未算出理由・要求検査</summary>'+table(['対象','RMSE ['+report.unit+']','MAE ['+report.unit+']','R²','保存された注記/理由'],entries.map(([name,m])=>[name,metricValue(m,'rmse'),metricValue(m,'mae'),metricValue(m,'r2'),esc(m?.reason|| (m?'なし':'このレポートに未提供'))]));
+ body+='<p>要求検査: '+esc(c.eligible===true?'適格（予測精度・科学的支持とは別）':c.eligible===false?'不適格':'未記録')+'。'+esc(c.reason||'')+'</p>';
+ if(c.checks?.length)body+=table(['検査','必須','結果','検査方法/範囲','理由'],c.checks.map(v=>[esc(v.name),esc(v.required),esc(v.status),esc(v.method),esc(v.reason||'なし')]));
+ else body+='<p>個別の要求検査は未記録です。省略を合格と読み替えません。</p>';
+ return body+'<p class="small">有限点での検査は全域保証ではありません。native/export一致は計算の忠実性であり、真式・物理機構の認定ではありません。</p></details>';
+}
+function header(){
+ $('context').textContent=`用途: ${report.purpose} · データ: ${report.data_kind} · Selection ${report.selection_rows}行 · 誤差表示 ${report.unit} · ${report.engineering_tolerance===null?'RMSE採用基準は設定なし':'事前RMSE許容 '+fmt(report.engineering_tolerance)+' '+report.unit}`;
+ const d=report.decision;
+ let finalStatus='未提供';let finalBody=esc(report.audit.label);
+ const row=d?report.audit.rows[d.selected_id]:null;
+ if(row){const support=row.prediction_support;finalStatus=support?.established===false?'支持不足':support?.established===true?'指定基準を満たす':'未判定';finalBody='Final RMSE '+metricValue(row.target_metrics,'rmse')+' '+esc(report.unit)+(row.coverage===null||row.coverage===undefined?'':' / 有効予測率 '+fmt(row.coverage))+'<br>'+esc(support?.reason||'適用可能な支持判定なし');}
+ if(report.purpose==='parameter_interpretation'){finalStatus='この係数目的ではFinalを使わない';finalBody='指定したestimand・数量定義・confidence・観測モデルの証拠を照合します。観測予測の精度保証ではありません。';}
+ if(report.purpose==='response_comparison'&&!row){finalStatus='この応答解析ではFinalを使わない';finalBody=esc(d?.use_scope||'指定したSelection観測ペアの差だけを検討します。絶対値予測・因果・未観測経路の支持ではありません。');}
+ const calibrated=report.purpose!=='local_prediction'?'対象外（観測予測区間）':d?.frozen_choice_sha256?d.status:report.interval?'校正済み・利用判断未提供':'未実施／要求なし';
+ $('stages').innerHTML=stage('Selectionで固定した選択',d?.frozen_choice_sha256?'同じpredictorを固定':d?.status||'未選択',esc(d?.reason||'採用判断を行っていません。'))+stage('校正後の利用判断',calibrated,esc(d?.missing_support||'未提供'))+stage('独立/事後Final監査',finalStatus,finalBody);
+ $('decision-id').innerHTML='<strong>選択対象ID:</strong> '+esc(d?.selected_id||'未選択')+'<br><strong>実行view:</strong> '+esc(d?.subject?.view||'未指定')+' <span class="small">'+esc(d?.subject?.settings_ref||'')+'</span><details><summary>事前に固定した用途基準</summary><p class="small">保存値のRMSE基準はworking座標 ['+esc(report.working_unit)+']。公開単位の換算値は上段に表示。数量CIは各要求のunitを参照します。</p><pre>'+json(d?.criteria||{})+'</pre></details>';
+ $('exposure').textContent='Final露出: '+(report.exposure.current_access_record?'元データへのアクセス記録あり':'現在アクセス記録を確認していない')+'。監査の役割: '+(report.audit.role||'このレポートへ未提供')+'。Selection時点の履歴: '+report.exposure.selection_snapshot.status+'。過去露出を未使用と読み替えません。';
+ $('display-rule').textContent=report.display_rule;
+ if(d?.interval_sha256)$('decision-id').innerHTML+='<p class="small"><strong>利用判断に固定した区間:</strong> '+esc(d.interval_sha256)+'<br><strong>表示中の区間:</strong> '+esc(report.interval?.artifact_sha256||'未提供')+'<br>判断時の全幅 '+fmt(d.calibrated_full_width)+' '+esc(d.calibration_plan?.unit)+'（保存値。再採点なし）</p>';
+ if(d?.use_scope)$('decision-id').innerHTML+='<p class="warn">利用範囲: '+esc(d.use_scope)+'</p>';
+ if(report.detached_result)$('exposure').textContent+=' 保存snapshot '+report.detached_result.created_at+'。元pathは出自であり、現在のアクセス状態を照会していません。';
+ const methods=[...new Set(report.candidates.map(c=>c.method))].sort();
+ $('method').innerHTML='<option value="">すべて</option>'+methods.map(m=>'<option>'+esc(m)+'</option>').join('');
+ $('method-summary').innerHTML=methods.map(m=>{const list=report.candidates.filter(c=>c.method===m);return esc(m)+': '+list.length+'件（要求検査適格 '+list.filter(c=>c.eligible).length+'、partial '+list.filter(c=>c.source.status==='partial').length+'）'}).join(' ／ ');
+}
+function candidateTable(){
+ const query=$('search').value.toLowerCase(),method=$('method').value;
+ const all=report.candidates.filter(c=>(!method||c.method===method)&&(!$('eligible').checked||c.eligible)&&[c.id,c.method,c.public_formula,c.formula,c.kind,c.source.status,c.reason].join(' ').toLowerCase().includes(query));
+ const order=$('sort').value;
+ all.sort((a,b)=>order==='method'?(a.method+a.id).localeCompare(b.method+b.id):((order==='nodes'?a.complexity.nodes:a.selection?.rmse)??Infinity)-((order==='nodes'?b.complexity.nodes:b.selection?.rmse)??Infinity)||a.id.localeCompare(b.id));
+ page=Math.max(0,Math.min(page,Math.max(0,Math.ceil(all.length/50)-1)));
+ $('count').textContent=`${all.length}/${report.candidates.length}件。表示選択${selected.size}件。選択対象は色付き。全候補は保持され、フィルタは採否を変更しません。`;
+ $('candidate-table').innerHTML=table(['比較','ID / 手法 / seed / view','式の短縮表示','構文群 / 複雑度','Selection RMSE ['+report.unit+']','Final RMSE ['+report.unit+']','要求検査・出自'],all.slice(page*50,page*50+50).map(c=>[
+  '<input aria-label="比較 '+esc(c.id)+'" type="checkbox" data-select="'+esc(c.id)+'" '+(selected.has(c.id)?'checked':'')+'>',
+  '<a href="#compare" data-open="'+esc(c.id)+'">'+esc(c.id)+'</a><br>'+esc(c.method)+' / '+esc(c.seed)+' / '+esc(c.subject?.view||c.kind)+(report.decision?.selected_id===c.id?'<br><strong>選択対象</strong>':''),
+  '<span class="small">'+esc((c.public_formula||c.residual?.public_formula||c.formula||c.residual?.formula||c.reason||'native-only').slice(0,180))+'</span>',
+  esc(c.syntax||'構文群未定義')+'<br>'+fmt(c.complexity.nodes)+' nodes / '+fmt(c.complexity.free)+' free',
+  metricValue(c.selection,'rmse'),metricValue(c.final?.target_metrics,'rmse'),
+  esc(c.reason||(c.eligible===true?'要求検査で適格（精度支持とは別）':c.eligible===false?'要求検査で不適格（理由未記録）':'要求検査状態は未記録'))+'<br>'+esc(c.source.status)+' / '+esc(c.source.native_execution_status)
+ ]));
+ document.querySelectorAll('[data-select]').forEach(e=>e.closest('tr').classList.toggle('selected',e.dataset.select===report.decision?.selected_id));
+ document.querySelectorAll('[data-select]').forEach(e=>e.onchange=()=>{if(e.checked)promote(e.dataset.select);else selected.delete(e.dataset.select);renderComparison();candidateTable()});
+ document.querySelectorAll('[data-open]').forEach(e=>e.onclick=()=>{promote(e.dataset.open);renderComparison();candidateTable()});
+ $('page').textContent=`${page+1}/${Math.max(1,Math.ceil(all.length/50))}ページ`;
+}
+function localParameterHtml(e){
+ let body='<div class="claim"><h4>係数の局所識別性（Selection）</h4>';
+ if(!e)return body+'<p>不明: 保存済みの局所係数診断がありません。表示時には再計算しません。</p></div>';
+ if(e.status!=='computed')return body+'<p>'+esc(e.status==='not_applicable'?'対象外':'不明 / 診断不可')+': '+esc(e.reason)+'</p>'+(e.numerical_resolution!==undefined?'<p>有限差分の丸め・刻み依存がランク判定の解像度を超えています。不感・ランク不足・列フルランクのいずれとも断定しません。</p><details><summary>保存した数値解像度と差分条件</summary><pre>'+json(e)+'</pre></details>':'')+'</div>';
+ body+='<p>保存係数での局所ランク '+esc(e.rank)+' / '+esc(e.n_parameters)+'、零空間次元 '+esc(e.nullity)+'。Selection全 '+esc(e.n_samples)+' 行（無加重）。'+(e.full_column_rank?'この点では列フルランクです。':'ランク不足: この設計・係数点では独立に区別できない方向があります。')+'</p>';
+ body+='<p>低感度係数: '+esc(e.insensitive_parameters?.length?e.insensitive_parameters.join(', '):'閾値以下の係数なし')+'。正規化特異値: '+esc((e.singular_values||[]).map(fmt).join(', '))+'。ランク閾値 '+fmt(e.rank_threshold)+'。</p>';
+ body+='<p class="warn">列フルランクでも、構造的・大域的識別性や各成分の一意性を証明しません。局所ランクは信頼区間でも因果・機構の証拠でもありません。境界では実行可能な方向が制限されます。</p>';
+ body+='<details><summary>係数尺度・有限差分幅・境界と計算条件</summary>'+table(['係数 / working単位','尺度','差分幅 − / +','境界 [下限, 上限] / 接触'],(e.parameters||[]).map(p=>[esc(p.name)+' ['+esc(p.unit||'unknown')+']',fmt(p.scale),fmt(p.step_minus)+' / '+fmt(p.step_plus)+' ('+esc(p.difference)+')',esc(JSON.stringify(p.bounds))+' / '+esc(p.active_bound||'なし')]))+'<pre>'+json(e)+'</pre></details></div>';
+ return body;
+}
+function interpretationsOf(c){return c.interpretations|| (c.interpretation?[c.interpretation]:[])}
+function pathsOf(c){return interpretationsOf(c).flatMap(a=>(a.paths||[]).map(p=>({path:p,analysis:a.analysis_sha256})))}
+function pathKey(p){return p.display_id||p.id}
+function comparisonPathKey(v){return Object.hasOwn(v,'path_display_id')?v.path_display_id:v.path_id}
+function equationCard(c){
+ let body='<p><span class="tag">'+esc(c.kind)+'</span><span class="tag">'+esc(c.subject?.view||'native view')+'</span>'+esc(c.syntax||'構文群なし')+'</p>';
+ if(c.hypothesis)body+='<p><strong>利用者が宣言した仮説（未認定）:</strong> '+esc(c.hypothesis.label)+'</p><details><summary>仮説の前提/出所</summary><pre>'+json(c.hypothesis)+'</pre></details>';
+ body+='<p><strong>Selection RMSE</strong> '+metricValue(c.selection,'rmse')+' '+esc(report.unit)+' · <strong>Final RMSE</strong> '+metricValue(c.final?.target_metrics,'rmse')+' '+esc(report.unit)+'</p>';
+ body+=metricDetails(c);
+ if(c.final?.prediction_support)body+='<p class="warn">Final支持: '+esc(c.final.prediction_support.established)+' · '+esc(c.final.prediction_support.reason)+'</p>';
+ if(c.formula||c.residual)body+='<p><strong>公開座標との対応:</strong></p><pre>'+esc(c.formula?c.public_rule:'R(input_work, target_work) = 0; target予測は利用不可')+'</pre><details><summary>元変数・単位と実行座標の対応</summary><pre>'+esc(c.mappings.join('\n'))+'</pre><p>native係数を無断で再パラメータ化していません。</p></details>';
+ if(c.public_formula)body+='<p><strong>元変数・公開単位での表示式:</strong></p><pre>'+esc(c.public_formula)+'</pre><p class="small">保存したaffine写像の表示置換のみです。係数は元のworking座標の値・単位を保ちます。代数簡約や物理係数の創作は行いません。</p>';
+ if(c.formula)body+='<details><summary>対応する実行式 F_work</summary><pre>'+esc(c.formula)+'</pre></details>';
+ if(c.parameters.length)body+='<details><summary>係数・固定/自由・単位・共有（'+c.parameters.length+'）</summary>'+parameters(c.parameters)+'<p>単位unknownの係数を物性と解釈できません。係数大＝重要度、負項＝抑制機構ではありません。</p></details>';
+ if(c.members.length){body+='<details><summary>元粒子・重み・厳密保存状態の重複群（'+c.members.length+'粒子）</summary><p>'+esc(c.uncertainty_scope)+'。重みは機構正確率ではありません。表示集約で再重み付けしません。重複群は同じ保存状態の一致で、代数的同値群ではありません。</p><div class="membertable">'+table(['粒子 / 参加','元weight','重複群 / 個数 / 群質量','元式・係数'],c.members.map(m=>[esc(m.id)+' / '+esc(m.participates),esc(JSON.stringify(m.weight)),esc(m.exact_state_group)+' / '+m.group_count+' / '+esc(JSON.stringify(m.group_mass)),'<details><summary>式と係数を開く</summary><pre>'+esc(m.public_formula||m.formula)+'</pre><p>元の実行式:</p><pre>'+esc(m.formula)+'</pre>'+parameters(m.parameters)+'</details>']))+'</div></details>';}
+ if(c.residual)body+='<div class="warn"><strong>Implicit relation R(X,y)=0</strong><pre>'+esc(c.residual.public_formula||c.residual.formula)+'</pre><p>残差RMSは任意scaleの関係内診断です。定数倍で値が変わり、target RMSEとして順位付けしません。</p><p>点予測: '+esc(c.formula?'明示したX-only枝':'利用不可: '+c.residual.prediction_unavailable_reason)+'</p><details><summary>枝・残差診断・元情報</summary><pre>'+json(c.residual)+'</pre></details></div>';
+ body+='<p><strong>結果状態:</strong> '+esc(c.source.status)+' / <strong>native完了状態:</strong> '+esc(c.source.native_execution_status)+'<br><strong>終了理由:</strong> '+esc(c.source.termination||c.source.reason)+'</p><details><summary>native出自・終了理由・実作業・検証状態</summary><pre>'+json(c.source)+'</pre><p>native忠実性:</p><pre>'+json(c.native_check)+'</pre><p>partialの終了と、この候補の検証状態は別です。optimizer/RNGの再開保証ではありません。</p></details>';
+ if(c.source.native_work)body+='<p><strong>実際に完了したnative作業（収束保証ではない）:</strong></p>'+table(['記録項目','保存値'],Object.entries(c.source.native_work).map(([k,v])=>[esc(k),esc(typeof v==='object'?JSON.stringify(v):v)]));
+ if(c.source.fit)body+='<details open><summary>推定対象と観測前提</summary><pre>'+json(c.source.fit)+'</pre></details>';
+ if(c.native_result)body+='<div class="warn"><strong>native-only成果を保持・点予測は利用不可</strong><p>native実行 '+esc(c.native_result.native_execution_status)+' / portable '+esc(c.native_result.portable_status)+'</p><p>'+esc(c.native_result.required_semantics)+'</p><details><summary>保持したnative結果と制限</summary><pre>'+json(c.native_result)+'</pre></details></div>';
+ if(c.response_validation){const r=c.response_validation;body+='<div class="claim"><h4>指定観測ペアの応答差（後−前）</h4><p>Selection '+r.n_valid_pairs+'/'+r.n_pairs+'組、元観測 '+r.n_observations+'行。差のRMSE '+fmt(r.metrics?.rmse)+' '+esc(r.unit)+' / 事前上限 '+fmt(r.max_rmse)+' '+esc(r.unit)+'</p><p>'+esc(r.scope)+'<br>'+esc(r.meaning)+'</p><details><summary>ペア・差・有効性</summary>'+table(['前 → 後','観測差','予測差','有効'],r.pairs.map((p,i)=>[esc(p.join(' → ')),fmt(r.observed_difference[i]),fmt(r.predicted_difference[i]),esc(r.valid[i])]))+'</details><p>絶対値の予測誤差は別に表示します。観測ペアに共有行があっても独立反復やCIを作りません。</p></div>';}
+ body+=localParameterHtml(c.local_parameter_identifiability);
+ if(c.template){const t=c.template;body+='<div class="claim"><h4>宣言した既知構造と未知関数</h4><p>'+esc(t.status==='computed'?t.knowledge.kind+': '+t.knowledge.statement:t.reason)+'</p>';
+  if(t.declared_formula)body+='<p><strong>宣言した組立て:</strong></p><pre>'+esc(t.declared_formula)+'</pre><p>'+esc(t.sharing)+'</p>';
+  if(t.knowledge?.source)body+='<p>ユーザー申告の出典: '+esc(t.knowledge.source)+'</p>';
+  if(t.components?.length)body+=table(['名前 / 責務','固定した構造（係数は別記）','Selectionでの値 / working単位'],t.components.map(v=>[esc(v.name)+' / '+esc(v.description),esc(v.declared_formula)+'<details><summary>展開した実行式</summary><pre>'+esc(v.formula)+'</pre></details>',fmt(v.min)+' … '+fmt(v.max)+' ['+esc(v.unit||'unknown')+']; valid '+v.n_valid+'/'+v.n_rows]));
+  if(t.slots?.length){
+   body+=table(['探索した関数 / 引数','復元した式','宣言出力単位 / 責務'],t.slots.map(v=>[esc(v.name)+'('+esc(v.arguments.map(a=>a.name).join(', '))+')',esc(v.formula),esc(v.unit||'unknown')+' / '+esc(v.description)]));
+   for(const v of t.slots)if(v.parameters?.length)body+='<details class="slot-parameters"><summary>'+esc(v.name)+': この関数内の係数</summary><p class="small">幅が足りない場合、係数表の中を左右にスクロールできます。</p>'+parameters(v.parameters)+'</details>';
+  }
+  if(t.dependent_parameters?.length)body+=table(['従属係数（独立にfitしない）','値 / working単位'],t.dependent_parameters.map(v=>[esc(v.name)+' = '+esc(v.formula),fmt(v.value)+' ['+esc(v.unit||'unknown')+']']));
+  body+='<p>'+esc(t.coordinates)+'</p><p class="warn">'+esc(t.interpretation_limit)+'</p><p>既知構造の成立、有限点検査、予測精度、項の一意性は別の主張です。補正関数は観測残差そのものではありません。</p></div>';}
+ const interpretationList=interpretationsOf(c);
+ for(const [index,analysis] of interpretationList.entries()){
+  body+='<details'+(index===0?' open':'')+'><summary>保存した解釈 '+(index+1)+' / '+esc(analysis.analysis_sha256?.slice(0,12)||'旧形式')+'</summary>';
+  body+='<p><strong>項評価の基準点:</strong> '+esc(JSON.stringify(analysis.reference))+'（公開入力単位）。'+esc(analysis.reference_scope)+'</p><div class="claim"><h4>数学的な構造（機構認定ではない）</h4><p>'+esc(analysis.mathematics?.join(' / ')||analysis.reason)+'</p><p>'+esc(analysis.decomposition_scope)+'</p>';
+  if(analysis.terms?.length)body+='<p class="small">部分式の変数は実行座標です: '+esc(report.context.variables.map(v=>v.column+'_work ['+(v.unit||'unknown')+']').join('; '))+'。値は表に記した公開出力のscaleで、元入力から保存写像を適用して計算しています。</p>'+table(['実行座標の項/部分式','基準点の値','Selection条件での値範囲','単位/意味'],analysis.terms.map(t=>[esc(t.formula),fmt(t.reference_value),fmt(t.min)+' … '+fmt(t.max),esc(t.unit)+'; '+esc(t.meaning)]));
+  if(analysis.term_sum_check)body+='<p>項和と総式の再構成: '+esc(JSON.stringify(analysis.term_sum_check))+'</p>';
+  body+='<p>項値は展開・因数分解・中心化・座標によって変わります。総予測一致と項寄与一致は別です。</p><p>'+esc(analysis.identifiability||'係数識別・機構は未解析')+'</p></div>';
+  body+='</details>';
+ }
+ if(!interpretationList.length)body+='<p class="note">項/部分式・数学的役割の追加解析は未実施。式の形だけから物理機構を推定していません。</p>';
+ const ci=c.questions.filter(q=>q.kind==='conditional_interval');
+ body+='<details><summary>係数/機能量CI・構造不確かさ</summary>'+(ci.length?table(['数量','定義/estimand','端点/単位','confidence・前提'],ci.map(q=>[esc(q.quantity),esc(typeof q.definition==='object'?JSON.stringify(q.definition):q.definition)+' / '+esc(q.estimand),esc(JSON.stringify(q.endpoints))+' '+esc(q.unit),fmt(q.confidence_level)+'; '+esc(JSON.stringify(q.request||{meaning:'凍結した数量定義/観測モデルが未確認'}))+'; '+esc(q.assumptions)])):'<p>該当する条件付きCIは未解析/未提供です。観測予測区間や粒子spreadと置き換えません。</p>')+'</details>';
+ return '<article class="panel card"><h3>'+esc(c.id)+(report.decision?.selected_id===c.id?' — 選択対象':'')+'</h3>'+body+'</article>';
+}
+function plot(series,xlabel,ylabel){
+ const colors=['#145e83','#b64c19','#673f91','#24744f','#966600','#a13a67'];let count=0;
+ let loX=Infinity,hiX=-Infinity,loY=Infinity,hiY=-Infinity;
+ series.forEach(s=>s.x.forEach((x,i)=>{const y=s.y[i];if(s.valid?.[i]!==false&&Number.isFinite(x)&&Number.isFinite(y)){count++;loX=Math.min(loX,x);hiX=Math.max(hiX,x);loY=Math.min(loY,y);hiY=Math.max(hiY,y)}}));
+ if(!count)return '<p>描ける有効値がありません。未計算/無効を0として描きません。</p>';
+ // Fold bounds without argument spreading; scale before subtraction so finite extremes stay finite.
+ const fraction=(value,lo,hi)=>{if(lo===hi)return 0.5;const scale=Math.max(Math.abs(lo),Math.abs(hi));return (value/scale-lo/scale)/(hi/scale-lo/scale)};
+ const px=x=>65+fraction(x,loX,hiX)*610,py=y=>245-fraction(y,loY,hiY)*200;
+ let svg='<svg viewBox="0 0 760 310" role="img" aria-label="'+esc(ylabel)+'"><path d="M65 35V245H690" fill="none" stroke="#718692"/>';
+ series.forEach((s,n)=>{let previous=null;s.x.forEach((x,i)=>{const y=s.y[i];if(s.valid?.[i]===false||!Number.isFinite(x)||!Number.isFinite(y)){previous=null;return}const at=[px(x),py(y)];if(s.line&&previous)svg+='<path d="M'+previous.join(' ')+'L'+at.join(' ')+'" stroke="'+colors[n%6]+'" fill="none"/>';svg+='<circle cx="'+at[0]+'" cy="'+at[1]+'" r="2" fill="'+colors[n%6]+'"/>';previous=at;})});
+ svg+='<text x="65" y="20">'+esc(ylabel)+'</text><text x="65" y="268">'+fmt(loX)+'</text><text x="620" y="268">'+fmt(hiX)+'</text><text x="4" y="45">'+fmt(hiY)+'</text><text x="4" y="245">'+fmt(loY)+'</text><text x="260" y="298">'+esc(xlabel)+'</text></svg>';
+ return svg+'<div class="legend">'+series.map((s,i)=>'<span style="color:'+colors[i%6]+'">'+esc(s.label)+'</span>').join('')+'</div>';
+}
+function curves(){
+ const cards=visibleCards(),path=$('path').value;
+ const ids=new Set(cards.map(c=>c.id));
+ const series=[];let definition=null;
+ cards.forEach(c=>{const value=pathsOf(c).map(v=>v.path).find(p=>pathKey(p)===path);if(value){definition=value;series.push({label:c.id+' (経路の数値有効率 '+fmt(value.coverage)+')',x:value.steps,y:value.prediction,valid:value.valid,line:true})}});
+ if(!definition){$('path-context').innerHTML=cards.length?'<p>表示中候補には保存された共通経路の評価がありません。描画で新たな予測点を作りません。</p>':'<p>比較対象が選択されていません。一覧のチェックから比較対象を選んでください。</p>';$('response-plot').innerHTML='';$('difference-plot').innerHTML='';$('disagreement').innerHTML='';return}
+ const widths=definition.step_widths||[];
+ $('path-context').innerHTML='<p><strong>基準条件:</strong> '+esc(JSON.stringify(definition.at))+'<br><strong>変更方向:</strong> '+esc(JSON.stringify(definition.direction))+'<br><strong>保存grid:</strong> '+definition.steps.length+'点、step '+fmt(definition.steps[0])+' … '+fmt(definition.steps.at(-1))+' ['+esc(definition.path_unit)+']<br><strong>隣接幅（先頭3個の表示値）:</strong> '+widths.slice(0,3).map(fmt).join(', ')+' ['+esc(definition.path_unit)+']<br><strong>入力単位:</strong> '+esc(JSON.stringify(definition.input_units))+'<br><strong>条件・支持:</strong> '+esc(definition.scope)+'</p><details><summary>全grid・全隣接幅の保存値</summary><pre>'+json({steps:definition.steps,step_widths:widths})+'</pre></details>';
+ const geometry=definition.reference_geometry;
+ $('path-context').innerHTML+=geometry?'<p><strong>Train入力からの距離:</strong> '+(geometry.status==='computed'?'列ごとの観測範囲外 '+fmt(geometry.n_outside_marginal_range)+'点 / 固定列の変更 '+fmt(geometry.n_constant_feature_changed)+'点。範囲正規化した最近傍距離の最大 '+fmt(geometry.max_nearest_distance)+'、Trainの異なる設計点間の最近傍間隔中央値 '+fmt(geometry.reference_neighbor_spacing?.median)+'（無次元）。':esc(geometry.reason))+'<br>列の範囲内でも、観測していない組合せがあります。距離は予測精度・法則・因果・安全性の保証ではありません。一定だった列は距離から除き、変更点を別記します。</p><details><summary>Train入力範囲・各点の保存距離</summary><pre>'+json(geometry)+'</pre></details>':'<p>Train入力範囲・距離の証拠は未記録です。表示時には再計算しません。</p>';
+ $('response-plot').innerHTML=plot(series,'経路step ['+definition.path_unit+']',report.unit);
+ const comparisons=report.analysis_comparisons.filter(v=>v.axis==='path_response_difference'&&comparisonPathKey(v)===path&&ids.has(v.left)&&ids.has(v.right));
+ $('difference-plot').innerHTML=comparisons.map(v=>plot([{label:v.left+' − '+v.right,x:v.steps,y:v.difference,valid:v.valid,line:true}],'経路step ['+v.path_unit+']','差 ['+v.unit+']')).join('')||'<p>この組合せの差分は未計算です。応答の重ね描きは保存済み値です。数値差が必要なら同じstudyと解析を指定してcompareを別artifactへ実行してください。表示側で再計算しません。</p>';
+ $('disagreement').innerHTML=comparisons.map(v=>'<p>候補差の大きい提示点: '+esc(JSON.stringify(v.maximum_point))+'、差 '+fmt(v.maximum_difference)+' '+esc(v.unit)+'、共通数値有効率 '+fmt(v.common_coverage)+'。'+esc(v.meaning)+'</p>').join('');
+}
+function axisAnalyses(){
+ const ids=new Set(visibleCards().map(c=>c.id));
+ const analyses=report.analyses.filter(a=>a.result_kind!=='interpretation.readout/v1');
+ $('axis-analyses').innerHTML=analyses.map(a=>{
+  let body='<h3>'+esc(a.method||a.result_kind)+' / '+esc(a.outcome)+'</h3><p>'+esc(a.reason||a.meaning||a.assumptions||'')+'</p><p class="small">保存設定 '+esc(JSON.stringify(a.options))+' / 実時間 '+fmt(a.wall_seconds)+'s。解析の成功と科学的支持は別です。</p>';
+  if(a.native_pattern_queries)body+='<p>'+esc(a.native_pattern_queries)+'。native graph所属をdomain付き同値証明としません。</p>';
+  if(!a.display_coordinate_verified)return body+'<p class="warn">歴史的な区間座標が未検証です。raw計算は保持し、現在の数量精度採用には使いません。</p>';
+  const items=(a.results||[]).filter(i=>ids.has(i.id));
+  if(!items.length)body+='<p>表示中候補にこの解析の保存結果はありません。未解析を補いません。</p>';
+  for(const item of items){
+   body+='<h4>'+esc(item.id)+' / '+esc(item.outcome)+'</h4><p>'+esc(item.reason||item.meaning||'')+'</p>';
+   if(item.native_eclass!==undefined)body+='<p>native graph ID '+esc(item.native_eclass)+'。構造の共有は全域同値や機構の同一性ではありません。</p><details><summary>backend表現</summary><pre>'+json(item.backend_representations)+'</pre></details>';
+   for(const c of item.curves||[]){
+    body+='<p><strong>保存座標の効果曲線:</strong> '+esc(c.feature)+' / region '+esc(c.region)+' / centering '+esc(JSON.stringify(c.centering))+' / 絶対予測水準 '+fmt(item.mean_prediction)+' ['+esc(report.working_unit)+']</p>';
+    body+=plot([{label:item.id,x:c.x,y:c.effect,line:true}],c.feature+' ['+c.input_unit+']','効果 ['+c.effect_unit+']');
+    body+='<p>bin支持件数 '+esc(JSON.stringify(c.points_per_bin))+'。異質性は傾き分散 ['+esc(c.heterogeneity_unit)+']で、CIや観測予測区間ではありません。</p>';
+   }
+   const native=item.native||{};
+   for(const profile of [...(native.profiles||[]),...(native.quantities||[])]){
+    body+='<p><strong>'+esc(profile.name)+'</strong> / '+esc(profile.kind)+' / 単位 '+esc(profile.unit)+' / role '+esc(profile.coordinate_role||'unknown')+'<br>検証済み端点 '+esc(JSON.stringify(profile.accepted_endpoints))+' / native終了 '+esc(JSON.stringify(profile.retcodes))+' / '+esc(profile.crossing_status||'交差未確認')+'</p>';
+    if(profile.delta_nll)body+=plot([{label:profile.name,x:profile.x,y:profile.delta_nll,valid:profile.delta_nll.map(v=>v!==null),line:!(profile.kind||'').includes('endpoints only')}],profile.name+' ['+profile.unit+']','Δ negative log likelihood');
+    body+='<p>保存閾値増分 '+fmt(native.threshold_increment)+'。指定noise・構造・bounds・Trainに条件付き。端点だけの解析から滑らかなprofileを作りません。</p>';
+   }
+   if(item.questions?.length)body+='<details><summary>保存された質問結果と前提</summary><pre>'+json(item.questions)+'</pre></details>';
+  }
+  return body;
+ }).join('')||'<p>構造/効果/profile等の追加解析は未実施です。曲線や機構を補いません。</p>';
+ const unbound=report.analysis_comparisons.filter(v=>v.axis==='path_response_difference'&&Object.hasOwn(v,'path_display_id')&&!v.path_display_id&&ids.has(v.left)&&ids.has(v.right));
+ if(unbound.length)$('axis-analyses').innerHTML+='<details><summary>経路の出所を一意に照合できない旧差分（'+unbound.length+'）</summary><p>保存値は保持しています。異なる基準条件の応答へ差分を重ねず、原解析の確認が必要です。</p><pre>'+json(unbound)+'</pre></details>';
+}
+function renderComparison(){
+ const cards=visibleCards(),ids=new Set(cards.map(c=>c.id));
+ $('compare-summary').textContent='表示選択 '+[...selected].filter(id=>byId.has(id)).length+'件。カード・グラフ・候補対表・経路選択は同じ先頭6件の範囲です。選択対象IDは先頭に明示します。表示の変更で採否は変わりません。';
+ $('cards').innerHTML=cards.map(equationCard).join('')||'<p>一覧のチェックから比較対象を選んでください。</p>';
+ const paths=new Map(cards.flatMap(c=>pathsOf(c).map(v=>[pathKey(v.path),v]))),old=$('path').value;
+ $('path').innerHTML=[...paths].map(([key,v])=>'<option value="'+esc(key)+'">'+esc(v.path.id)+(v.analysis?' · 解析 '+esc(v.analysis.slice(0,12)):'')+'</option>').join('');if(paths.has(old))$('path').value=old;
+ curves();
+ const pairs=report.pairs.filter(p=>ids.has(p.left)&&ids.has(p.right));
+ $('pair-summary').innerHTML=table(['候補対','同値の範囲','構文scaffold一致','Selection予測RMS差 ['+report.unit+']','工学許容値に対するRMS比','共通数値有効率'],pairs.map(p=>[esc(p.left)+' / '+esc(p.right),esc(p.equivalence)+'; '+esc(p.equivalence_scope),esc(p.same_scaffold),fmt(p.prediction_rms_difference)+(p.reason?'<br>'+esc(p.reason):''),fmt(p.engineering_scale_ratio)+(p.engineering_scale_ratio_reason?'<br>'+esc(p.engineering_scale_ratio_reason):''),fmt(p.common_coverage)]))+'<p>'+esc(report.pair_display_scope||'保存済みの比較だけを表示')+'</p><p>有限点の予測一致は全域同値の証明でも、優良な式の証拠でもありません。</p>';
+ const scatters=cards.filter(c=>c.residual_scatter).map(c=>({label:c.id,...report.residual_axis,...c.residual_scatter}));
+ const predictions=cards.filter(c=>c.prediction_scatter).map(c=>({x:c.prediction_scatter.observed,y:c.prediction_scatter.predicted,valid:c.prediction_scatter.valid,label:c.id}));
+ let predictionLow=Infinity,predictionHigh=-Infinity;
+ for(const series of predictions)for(let i=0;i<series.x.length;i++)if(series.valid?.[i]!==false&&Number.isFinite(series.x[i])&&Number.isFinite(series.y[i])){predictionLow=Math.min(predictionLow,series.x[i],series.y[i]);predictionHigh=Math.max(predictionHigh,series.x[i],series.y[i]);}
+ if(Number.isFinite(predictionLow))predictions.push({x:[predictionLow,predictionHigh],y:[predictionLow,predictionHigh],line:true,label:'一致線 (予測 = 実測)'});
+ $('prediction-plot').innerHTML=plot(predictions,'実測 ['+report.unit+']','予測 ['+report.unit+']')+'<p class="small">保存済みSelection予測のみ。無効行は未描画でも分母から除かず、Finalの図へ置き換えません。旧出力に配列がない場合は表示しません。</p>';
+ $('residual-plot').innerHTML=scatters.length?plot(scatters,scatters[0].x_label,scatters[0].y_label):cards.length?'<p>この出力viewにはtarget予測残差がありません。implicit残差とは別です。</p>':'<p>比較対象が選択されていません。一覧のチェックから比較対象を選んでください。</p>';
+ axisAnalyses();
+}
+function context(){
+ const target=report.context?.target;
+ $('metric-guide').innerHTML='<p><strong>入力:</strong> '+esc((report.columns||[]).map(c=>c.column+' ['+(c.public_unit||'unknown')+']').join(', ')||'未記録')+'<br><strong>予測対象:</strong> '+esc(target?.column||'未記録')+' ['+esc(report.unit)+']。式の主表示・予測誤差・応答は公開単位、係数表は保存したworking単位です。</p>'+
+ '<p>Trainは探索・係数推定、Selectionは候補比較と選択、Finalは選択を固定した後の監査です。Selectionの良さだけでは未知データでの精度を確定できません。Finalの独立性は上段の露出履歴と監査の役割を確認します。</p>'+
+ '<ul><li>RMSE = √(Σwᵢ(yᵢ−ŷᵢ)² / Σwᵢ)、MAE = Σwᵢ|yᵢ−ŷᵢ| / Σwᵢ。小さいほど観測値との誤差が小さい指標です。保存された行重みを使い、標準studyは等重みです。百分率ではありません。</li><li>R² = 1 − Σwᵢ(yᵢ−ŷᵢ)² / Σwᵢ(yᵢ−ȳw)²。負にもなり、観測値が一定などの場合は未定義です。正解確率・因果の強さではありません。</li><li>候補間の予測RMS差は同じ入力で2式が返す値の差です。観測誤差ではなく、2式とも同じように誤ることがあります。</li><li>数値有効率は予測を計算できた割合です。候補対のSelectionでは保存行重み、経路では等点重みを使います。無効行を除いてRMSEを改善しません。経路の点間を結ぶ線は保存gridの視覚補助で、点間の成立を検査した証拠ではありません。</li><li>観測予測区間の被覆率は監査で観測値が区間に入った割合です。数値有効率、係数CI、粒子の構造spreadとは別です。未提供と算出不可は区別し、理由は各カードを展開して確認できます。</li></ul>';
+ const q=report.interval;
+ $('uncertainty').innerHTML=q?'<p><strong>観測予測区間の対象:</strong> '+esc(q.candidate_id)+'。他の式・曲線の区間ではありません。</p>'+table(['意味','保存された値'],[['alpha',fmt(q.alpha)],['独立校正単位',esc(q.group_column||'independent rows')+' / '+fmt(q.n_calibration_units)],['区間の被覆対象',esc(q.coverage_scope)],['仮定',esc(q.observation_model)],['観測監査の行被覆率',fmt(q.heldout?.row_coverage)],['観測監査のgroup被覆率',fmt(q.heldout?.unit_coverage)],['幅',fmt(q.heldout?.mean_width)+' '+esc(q.heldout?.unit||q.unit)],['制限',esc(q.limits)]]):'<p>観測予測区間は未解析/要求なし。係数CI・構造不確かさ・将来shiftを保証しません。</p>';
+ $('uncertainty').innerHTML+=(report.evidence_notes||[]).map(n=>'<p class="warn">'+esc(n)+'</p>').join('');
+ $('coordinates').innerHTML=table(['列','CSV/public unit','Working unit','scale','offset','role'],report.columns.map(c=>[esc(c.column),esc(c.public_unit),esc(c.working_unit),fmt(c.scale),fmt(c.offset),esc(c.coordinate_role||'unknown')]))+'<pre>'+esc(report.mappings.join('\n'))+'</pre>';
+ $('provenance').textContent=JSON.stringify({study_sha256:report.study_sha256,comparison_sha256:report.comparison_sha256,data:report.context,exposure:report.exposure,geometry:report.geometry,observation_model:report.observation_model,analyses:report.analyses.map(a=>({analysis_sha256:a.analysis_sha256,method:a.method,outcome:a.outcome,options:a.options,reason:a.reason}))},null,2);
+}
+for(const id of ['search','method','sort','eligible'])$(id).addEventListener(id==='search'?'input':'change',()=>{page=0;candidateTable()});
+$('previous').onclick=()=>{page--;candidateTable()};$('next').onclick=()=>{page++;candidateTable()};
+$('clear').onclick=()=>{selected.clear();candidateTable();renderComparison()};
+$('show-decision').onclick=()=>{if(report.decision?.selected_id){selected.add(report.decision.selected_id);renderComparison();candidateTable();$('compare').scrollIntoView()}};
+$('path').onchange=curves;
+header();candidateTable();renderComparison();context();
+</script></html>

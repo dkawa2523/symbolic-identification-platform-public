@@ -1,0 +1,22 @@
+1. pysr | equation
+Candidate: pysr/17/5@native
+Coordinates: public
+y [1] = ((0.75 * x) + (((x / (x + coef['__slot_h_c0'])) + x) / ((x / coef['__slot_h_c1']) - coef['__slot_h_c2'])))
+
+__slot_h_c0 = 0.7725579678102222 [1]
+__slot_h_c1 = 2.07395343412467 [1]
+__slot_h_c2 = -1.0801275723145394 [1]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((0.75 * x) + h(x))
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Declared fixed contribution 0.75*x plus one shared unknown h(x)'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [1]) = (((x0 / (x0 + c0)) + x0) / ((x0 / c1) - c2))
+  Unit: 1
+  c0 = 0.7725579678102222; role=free; unit=1; tied_to=None
+  c1 = 2.07395343412467; role=free; unit=1; tied_to=None
+  c2 = -1.0801275723145394; role=free; unit=1; tied_to=None
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.

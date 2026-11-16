@@ -1,0 +1,191 @@
+{
+  "checked_at": "2026-11-15T19:00:16.750454+00:00",
+  "status": {
+    "stage": "all_representatives_frozen",
+    "time": "2026-11-15T18:59:38.345265+00:00",
+    "final_accessed": false
+  },
+  "global_choices_sha256": "6cc953d2d3c8973d0b94d05fe0e4fd3e64feee61f352d12e79926deb0ddb7aac",
+  "arms": {
+    "yacht": {
+      "ids": [
+        "e2e/42/7@native",
+        "linear/42/5@native",
+        "mean/42/0@native",
+        "parfam/42/0@native",
+        "physo/42/22@native",
+        "pysr/42/12@native",
+        "torchsisso/42/2@native"
+      ],
+      "study": "results/practical-fixed-20261115-1400/yacht/study",
+      "attempt_status": {
+        "pysr": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 389.5647166080016,
+          "exported_candidates": 14,
+          "reason": null
+        },
+        "parfam": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 3040.191859793995,
+          "exported_candidates": 159,
+          "reason": null
+        },
+        "torchsisso": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 16.727101085998584,
+          "exported_candidates": 3,
+          "reason": null
+        },
+        "physo": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 1852.9255048389896,
+          "exported_candidates": 20,
+          "reason": null
+        },
+        "e2e": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 198.73502130398992,
+          "exported_candidates": 31,
+          "reason": null
+        },
+        "mean": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 20.025232618994778,
+          "exported_candidates": 1,
+          "reason": null
+        },
+        "linear": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 30.287344310985645,
+          "exported_candidates": 6,
+          "reason": null
+        }
+      },
+      "bundles": 7
+    },
+    "synthetic_none": {
+      "ids": [
+        "e2e/17/46@native",
+        "linear/17/1@native",
+        "mean/17/0@native",
+        "parfam/17/0@native",
+        "physo/17/7@native",
+        "pysr/17/5@native",
+        "torchsisso/17/0@native"
+      ],
+      "study": "results/practical-fixed-20261115-1400/synthetic_none/study",
+      "attempt_status": {
+        "pysr": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 2965.480276643997,
+          "exported_candidates": 16,
+          "reason": null
+        },
+        "parfam": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 18.339761305018328,
+          "exported_candidates": 5,
+          "reason": null
+        },
+        "torchsisso": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 14.11293273299816,
+          "exported_candidates": 3,
+          "reason": null
+        },
+        "physo": {
+          "status": "partial",
+          "native_execution_status": "failed",
+          "wall_seconds": 200.8264462170191,
+          "exported_candidates": 12,
+          "reason": "Validated saved native hypotheses; search did not complete: Worker exited -9; see worker.log"
+        },
+        "e2e": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 310.0351577429974,
+          "exported_candidates": 194,
+          "reason": null
+        },
+        "mean": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 3.8406154529948253,
+          "exported_candidates": 1,
+          "reason": null
+        },
+        "linear": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 3.9137132269970607,
+          "exported_candidates": 2,
+          "reason": null
+        }
+      },
+      "bundles": 7
+    },
+    "synthetic_supported": {
+      "ids": [
+        "e2e/17/125/known-affine-fit@native",
+        "physo/17/8@native",
+        "pysr/17/5@native",
+        "torchsisso/17/0@native"
+      ],
+      "study": "results/practical-fixed-20261115-1400/synthetic_supported/study",
+      "attempt_status": {
+        "pysr": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 2937.725066401006,
+          "exported_candidates": 11,
+          "reason": null
+        },
+        "parfam": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 20.700846168998396,
+          "exported_candidates": 7,
+          "reason": null
+        },
+        "torchsisso": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 8.321705223002937,
+          "exported_candidates": 3,
+          "reason": null
+        },
+        "physo": {
+          "status": "partial",
+          "native_execution_status": "failed",
+          "wall_seconds": 340.27204115100903,
+          "exported_candidates": 12,
+          "reason": "Validated saved native hypotheses; search did not complete: Worker exited -9; see worker.log"
+        },
+        "e2e": {
+          "status": "ok",
+          "native_execution_status": "completed",
+          "wall_seconds": 2501.1375135399867,
+          "exported_candidates": 175,
+          "reason": null
+        }
+      },
+      "bundles": 4
+    }
+  },
+  "final_markers": {
+    "final_access_started.json": false,
+    "score_complete.json": false
+  },
+  "scope": "All discovery outcomes including partial retained. No settings/source/runtime/input edits. Follow-up PhySO derivative not used for this campaign."
+}

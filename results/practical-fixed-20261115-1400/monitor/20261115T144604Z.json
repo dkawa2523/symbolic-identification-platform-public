@@ -1,0 +1,36 @@
+{
+  "at": "2026-11-15T14:46:04.552528+00:00",
+  "session": 78772,
+  "session_running": true,
+  "completed_native": 1,
+  "completed": [
+    {
+      "arm": "yacht",
+      "method": "pysr",
+      "status": "ok",
+      "worker_wall_seconds": 389.5647166080016
+    }
+  ],
+  "coordinator_status": {
+    "stage": "discovery",
+    "time": "2026-11-15T14:19:27.881861+00:00",
+    "arm": "yacht",
+    "method": "parfam",
+    "final_accessed": false
+  },
+  "active_observation": {
+    "engine": "parfam",
+    "native_container": "1a03ad95ec2e",
+    "cpu_percent": 110.47,
+    "memory": "364MiB / 6GiB",
+    "OOMKilled": false,
+    "worker_log_modified_utc": "2026-11-15T14:46:01.465019+00:00",
+    "native_evaluations_observed": 305826,
+    "local_nonfinite_families": "NaN results retained; process continues to subsequent families, not all-run success/failure claim"
+  },
+  "Final_lock": {
+    "global_choices_exists": false,
+    "Final_access_marker_exists": false
+  },
+  "action": "Read-only status check; no interruption, settings changes, favorable retry, source/image/data edits or Final scoring"
+}

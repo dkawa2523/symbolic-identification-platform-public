@@ -1,0 +1,175 @@
+Fixed one-seed comparison; synthetic support combines known contribution and finite hard responses.
+
+Stored equations and coefficients; presentation only.
+All candidates are retained. Eligibility, display order and scientific adoption are distinct.
+Missing values remain missing. No metrics, responses, uncertainty or predictions were recomputed.
+
+pysr/42/12@native / prediction
+Method: pysr; eligible: True; stored AST
+Public: resistance [1] = ((((sin((((froude + (froude - coef['c0'])) + froude) * (coef['c1'] - froude))) + (((froude - sin((((froude + froude) - coef['c2']) * sinh(froude)))) * coef['c3']) + coef['c4']))) ** (2)) + coef['c5'])
+Working: ((((sin((((froude_work + (froude_work - coef['c0'])) + froude_work) * (coef['c1'] - froude_work))) + (((froude_work - sin((((froude_work + froude_work) - coef['c2']) * sinh(froude_work)))) * coef['c3']) + coef['c4']))) ** (2)) + coef['c5'])
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "pysr/42/12@native", "relation_state_sha256": "d26a484cc1d95ec310eb3b391b48d6b9165a7c03b851eabdfaeaa9a8aadf1ec6", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  c0 = -7.141716255083116; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=pysr_native_constant_node
+  c1 = -3.5871367488089185; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=pysr_native_constant_node
+  c2 = -7.5695955269207404; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=pysr_native_constant_node
+  c3 = 3.9126330441693407; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=pysr_native_constant_node
+  c4 = 2.9309080544240684; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=pysr_native_constant_node
+  c5 = 0.21394368458250937; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=pysr_native_constant_node
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes.
+
+parfam/42/0@native / prediction
+Method: parfam; eligible: True; stored AST
+Public: resistance [1] = (((((((((coef['c14'] + (coef['c15'] * cos(((((((coef['c7'] + (coef['c8'] * froude)) + (coef['c9'] * length_beam_ratio)) + (coef['c10'] * beam_draught_ratio)) + (coef['c11'] * length_displacement_ratio)) + (coef['c12'] * prismatic_coefficient)) + (coef['c13'] * buoyancy_position))))) + (coef['c16'] * cos(((((((coef['c0'] + (coef['c1'] * froude)) + (coef['c2'] * length_beam_ratio)) + (coef['c3'] * beam_draught_ratio)) + (coef['c4'] * length_displacement_ratio)) + (coef['c5'] * prismatic_coefficient)) + (coef['c6'] * buoyancy_position))))) + (coef['c17'] * froude)) + (coef['c18'] * length_beam_ratio)) + (coef['c19'] * beam_draught_ratio)) + (coef['c20'] * length_displacement_ratio)) + (coef['c21'] * prismatic_coefficient)) + (coef['c22'] * buoyancy_position)) / ((((((((coef['c23'] + (coef['c24'] * cos(((((((coef['c7'] + (coef['c8'] * froude)) + (coef['c9'] * length_beam_ratio)) + (coef['c10'] * beam_draught_ratio)) + (coef['c11'] * length_displacement_ratio)) + (coef['c12'] * prismatic_coefficient)) + (coef['c13'] * buoyancy_position))))) + (coef['c25'] * cos(((((((coef['c0'] + (coef['c1'] * froude)) + (coef['c2'] * length_beam_ratio)) + (coef['c3'] * beam_draught_ratio)) + (coef['c4'] * length_displacement_ratio)) + (coef['c5'] * prismatic_coefficient)) + (coef['c6'] * buoyancy_position))))) + (coef['c26'] * froude)) + (coef['c27'] * length_beam_ratio)) + (coef['c28'] * beam_draught_ratio)) + (coef['c29'] * length_displacement_ratio)) + (coef['c30'] * prismatic_coefficient)) + (coef['c31'] * buoyancy_position)))
+Working: (((((((((coef['c14'] + (coef['c15'] * cos(((((((coef['c7'] + (coef['c8'] * froude_work)) + (coef['c9'] * length_beam_ratio_work)) + (coef['c10'] * beam_draught_ratio_work)) + (coef['c11'] * length_displacement_ratio_work)) + (coef['c12'] * prismatic_coefficient_work)) + (coef['c13'] * buoyancy_position_work))))) + (coef['c16'] * cos(((((((coef['c0'] + (coef['c1'] * froude_work)) + (coef['c2'] * length_beam_ratio_work)) + (coef['c3'] * beam_draught_ratio_work)) + (coef['c4'] * length_displacement_ratio_work)) + (coef['c5'] * prismatic_coefficient_work)) + (coef['c6'] * buoyancy_position_work))))) + (coef['c17'] * froude_work)) + (coef['c18'] * length_beam_ratio_work)) + (coef['c19'] * beam_draught_ratio_work)) + (coef['c20'] * length_displacement_ratio_work)) + (coef['c21'] * prismatic_coefficient_work)) + (coef['c22'] * buoyancy_position_work)) / ((((((((coef['c23'] + (coef['c24'] * cos(((((((coef['c7'] + (coef['c8'] * froude_work)) + (coef['c9'] * length_beam_ratio_work)) + (coef['c10'] * beam_draught_ratio_work)) + (coef['c11'] * length_displacement_ratio_work)) + (coef['c12'] * prismatic_coefficient_work)) + (coef['c13'] * buoyancy_position_work))))) + (coef['c25'] * cos(((((((coef['c0'] + (coef['c1'] * froude_work)) + (coef['c2'] * length_beam_ratio_work)) + (coef['c3'] * beam_draught_ratio_work)) + (coef['c4'] * length_displacement_ratio_work)) + (coef['c5'] * prismatic_coefficient_work)) + (coef['c6'] * buoyancy_position_work))))) + (coef['c26'] * froude_work)) + (coef['c27'] * length_beam_ratio_work)) + (coef['c28'] * beam_draught_ratio_work)) + (coef['c29'] * length_displacement_ratio_work)) + (coef['c30'] * prismatic_coefficient_work)) + (coef['c31'] * buoyancy_position_work)))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "parfam/42/0@native", "relation_state_sha256": "9470e84553509a2f60f8596f17d89c667306a70672721008a4fb6821c202b0f1", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  c0 = 0.0029139494425493902; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c1 = -0.003620430690430107; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c2 = 0.12390678626501485; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c3 = -1.5878312717402867; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c4 = 0.12625506648878218; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c5 = -1.5569568327332948e-05; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c6 = -1.4079699638556205; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c7 = 6.566346006199999; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c8 = -2.9620746138112524; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c9 = 0.04732411407523346; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c10 = 0.04496516999601458; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c11 = -0.06550623314224711; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c12 = 0.3900065301292217; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c13 = -0.002849507135306504; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c14 = -0.37336967881979716; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c15 = -0.12790366366412362; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c16 = 0.016395540924370868; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c17 = 0.5798418059528039; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c18 = -0.09734253576121771; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c19 = 0.01151096841492081; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c20 = 0.0765639906884916; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c21 = 0.6393479161001345; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c22 = 0.00066990665328528; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_coefficient_block
+  c23 = 0.5160146876181716; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+  c24 = -0.3409363456508652; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+  c25 = -0.00020821126451951805; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+  c26 = -0.7768673595557385; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+  c27 = 0.0115329078043383; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+  c28 = 0.011649586802265131; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+  c29 = -0.015806608614931664; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+  c30 = 0.11597126441497202; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+  c31 = -0.0006393751004572983; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_normalized_denominator_coordinate
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+torchsisso/42/2@native / prediction
+Method: torchsisso; eligible: True; stored AST
+Public: resistance [1] = (((coef['intercept'] + (coef['c0'] * ((froude) ** (4)))) + (coef['c1'] * cosh(froude))) + (coef['c2'] * ((froude) ** (2))))
+Working: (((coef['intercept'] + (coef['c0'] * ((froude_work) ** (4)))) + (coef['c1'] * cosh(froude_work))) + (coef['c2'] * ((froude_work) ** (2))))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "torchsisso/42/2@native", "relation_state_sha256": "0b91ace0c99a17b86a40573e77fa42227a0e7fcf629159130ba2ddc1a029b81b", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  intercept = -9479842.032773923; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_regression_solve
+  c0 = -396983.28240661015; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_regression_solve
+  c1 = 9479840.231441721; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_regression_solve
+  c2 = -4739790.111331243; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_regression_solve
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes.
+
+physo/42/22@native / prediction
+Method: physo; eligible: True; stored AST
+Public: resistance [1] = (((((((((((froude + (cosh(coef['c0']) + coef['c0'])) + coef['c0']) * coef['c0']) * froude) + froude) + coef['c1']) * coef['c0']) / prismatic_coefficient)) ** (3)) * froude)
+Working: (((((((((((froude_work + (cosh(coef['c0']) + coef['c0'])) + coef['c0']) * coef['c0']) * froude_work) + froude_work) + coef['c1']) * coef['c0']) / prismatic_coefficient_work)) ** (3)) * froude_work)
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "physo/42/22@native", "relation_state_sha256": "52c14475d840c2c279b660c14a7ddea0d6c65fdf434a3bb4ed232e42de765799", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  c0 = 1.332418017036151; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_free_constant_slot
+  c1 = -1.4894109681669716; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_free_constant_slot
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes.
+
+e2e/42/7@native / prediction
+Method: e2e; eligible: True; stored AST
+Public: resistance [1] = ((((coef['c4'] + (coef['c6'] * ((((buoyancy_position - coef['x0_mean']) / coef['x0_scale'])) ** (2)))) + (coef['c10'] + (coef['c12'] * ((((coef['c16'] + (coef['c18'] * ((beam_draught_ratio - coef['x3_mean']) / coef['x3_scale']))) - ((coef['c22'] + (coef['c24'] * (((((coef['c29'] + (coef['c31'] * ((buoyancy_position - coef['x0_mean']) / coef['x0_scale']))) + (coef['c34'] + (coef['c36'] * ((froude - coef['x5_mean']) / coef['x5_scale'])))) - (coef['c39'] + (coef['c41'] * ((froude - coef['x5_mean']) / coef['x5_scale']))))) ** (3)))) + ((coef['c45'] + (coef['c47'] * ((length_displacement_ratio - coef['x2_mean']) / coef['x2_scale']))) + ((coef['c51'] + (coef['c53'] * ((beam_draught_ratio - coef['x3_mean']) / coef['x3_scale']))) * (coef['c56'] + (coef['c58'] * ((length_beam_ratio - coef['x4_mean']) / coef['x4_scale'])))))))) ** (2))))) - (coef['c61'] + (coef['c63'] * ((prismatic_coefficient - coef['x1_mean']) / coef['x1_scale'])))) * (coef['c66'] + (coef['c68'] * sin((coef['c71'] + (((froude - coef['x5_mean']) / coef['x5_scale']) * (1 / ((buoyancy_position - coef['x0_mean']) / coef['x0_scale']))))))))
+Working: ((((coef['c4'] + (coef['c6'] * ((((buoyancy_position_work - coef['x0_mean']) / coef['x0_scale'])) ** (2)))) + (coef['c10'] + (coef['c12'] * ((((coef['c16'] + (coef['c18'] * ((beam_draught_ratio_work - coef['x3_mean']) / coef['x3_scale']))) - ((coef['c22'] + (coef['c24'] * (((((coef['c29'] + (coef['c31'] * ((buoyancy_position_work - coef['x0_mean']) / coef['x0_scale']))) + (coef['c34'] + (coef['c36'] * ((froude_work - coef['x5_mean']) / coef['x5_scale'])))) - (coef['c39'] + (coef['c41'] * ((froude_work - coef['x5_mean']) / coef['x5_scale']))))) ** (3)))) + ((coef['c45'] + (coef['c47'] * ((length_displacement_ratio_work - coef['x2_mean']) / coef['x2_scale']))) + ((coef['c51'] + (coef['c53'] * ((beam_draught_ratio_work - coef['x3_mean']) / coef['x3_scale']))) * (coef['c56'] + (coef['c58'] * ((length_beam_ratio_work - coef['x4_mean']) / coef['x4_scale'])))))))) ** (2))))) - (coef['c61'] + (coef['c63'] * ((prismatic_coefficient_work - coef['x1_mean']) / coef['x1_scale'])))) * (coef['c66'] + (coef['c68'] * sin((coef['c71'] + (((froude_work - coef['x5_mean']) / coef['x5_scale']) * (1 / ((buoyancy_position_work - coef['x0_mean']) / coef['x0_scale']))))))))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "e2e/42/7@native", "relation_state_sha256": "1782989114c44f1e10005e2c70391ed6dd9bb252390c756ba553473f4e5b1efe", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  c4 = -33.617267561123846; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c6 = -29.301204821203438; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  x0_mean = -2.176923076923078; unit=1; role=fixed; tied_to=None; bounds=[None, None]; origin=train_normalization
+  x0_scale = 1.5257552208931948; unit=1; role=fixed; tied_to=None; bounds=[None, None]; origin=train_normalization
+  c10 = -42.97376756120749; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c12 = -0.03630471095527468; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c16 = -2.403978707878902; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c18 = 55.55152565469002; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  x3_mean = 4.0269230769230795; unit=1; role=fixed; tied_to=None; bounds=[None, None]; origin=train_normalization
+  x3_scale = 0.6445437815932537; unit=1; role=fixed; tied_to=None; bounds=[None, None]; origin=train_normalization
+  c22 = 2.0109787062559343; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c24 = 0.3306584552843378; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c29 = 0.8267177600485796; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c31 = 0.03521426091660975; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c34 = 4.436717759945225; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c36 = 9.72820783181574; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  x5_mean = 0.2874999999999999; unit=1; role=fixed; tied_to=None; bounds=[None, None]; origin=train_normalization
+  x5_scale = 0.1007782218537319; unit=1; role=fixed; tied_to=None; bounds=[None, None]; origin=train_normalization
+  c39 = -0.8770177598009782; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c41 = 6.201792168316634; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c45 = 42.85397870839583; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c47 = 44.02639607502421; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  x2_mean = 4.789230769230766; unit=1; role=fixed; tied_to=None; bounds=[None, None]; origin=train_normalization
+  x2_scale = 0.2364956183839202; unit=1; role=fixed; tied_to=None; bounds=[None, None]; origin=train_normalization
+  c51 = -6.542796822534318; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c53 = -0.713788928411555; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c56 = 1.5515686127929695; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c58 = 7.971044769297492; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  x4_mean = 3.1776923076922996; unit=1; role=fixed; tied_to=None; bounds=[None, None]; origin=train_normalization
+  x4_scale = 0.25192043451344653; unit=1; role=fixed; tied_to=None; bounds=[None, None]; origin=train_normalization
+  c61 = -5.082732440832853; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c63 = 92.67704617464597; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  x1_mean = 0.5638461538461524; unit=1; role=fixed; tied_to=None; bounds=[None, None]; origin=train_normalization
+  x1_scale = 0.024381096567268733; unit=1; role=fixed; tied_to=None; bounds=[None, None]; origin=train_normalization
+  c66 = -0.004144763552464888; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c68 = 9.228874694756727e-05; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+  c71 = 10.47439792787571; unit=unknown; role=free; tied_to=None; bounds=[None, None]; origin=native_decimal_coefficient
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes.
+
+mean/42/0@native / prediction
+Method: mean; eligible: True; stored AST
+Public: resistance [1] = coef['c0']
+Working: coef['c0']
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "mean/42/0@native", "relation_state_sha256": "5e54124cb868bbe77e076890027a6b58f0a611657fea2488665332cc0d491c17", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  c0 = 10.552582312056593; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+
+linear/42/5@native / prediction
+Method: linear; eligible: True; stored AST
+Public: resistance [1] = ((((((coef['c0'] * froude) + coef['c1']) + (coef['c2'] * prismatic_coefficient)) + (coef['c3'] * buoyancy_position)) + (coef['c4'] * beam_draught_ratio)) + (coef['c5'] * length_beam_ratio))
+Working: ((((((coef['c0'] * froude_work) + coef['c1']) + (coef['c2'] * prismatic_coefficient_work)) + (coef['c3'] * buoyancy_position_work)) + (coef['c4'] * beam_draught_ratio_work)) + (coef['c5'] * length_beam_ratio_work))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "linear/42/5@native", "relation_state_sha256": "4e2ed3b793e2508f17c6d348cbcacee412c3c18361177eb440d9d34b4b9a954b", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  c0 = 122.57330659493762; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+  c1 = -15.071171542801931; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+  c2 = -11.968093959051668; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+  c3 = 0.15666876943573066; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+  c4 = -0.3195037910826854; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+  c5 = -0.39029415628836045; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=baseline_regression_solve
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+

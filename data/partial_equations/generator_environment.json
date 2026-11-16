@@ -1,0 +1,5 @@
+{
+  "python": "3.12.8",
+  "reason": "Exact floating-point byte reproduction is pinned to the generation runtime; inference uses the frozen CSVs.",
+  "system": "Windows"
+}

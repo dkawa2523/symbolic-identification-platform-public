@@ -1,0 +1,8 @@
+method,candidate_id,figures,eligible,reason,selection_rmse,final_rmse
+pysr,pysr/42/12@native,01_pysr,True,,1.8868367966049633,1.5715078430868323
+parfam,parfam/42/0@native,02_parfam,True,,0.822885595855294,1.0568741874169376
+torchsisso,torchsisso/42/2@native,03_torchsisso,True,,1.910949177062947,1.601788220702433
+physo,physo/42/22@native,04_physo,True,,1.4841960005543546,1.5709867533491753
+e2e,e2e/42/7@native,05_e2e,True,,0.8258339717320254,1.2854696386277005
+mean,mean/42/0@native,06_mean,True,,15.94315122760901,14.197353077492217
+linear,linear/42/5@native,07_linear,True,,9.398275741164625,8.294607582810887

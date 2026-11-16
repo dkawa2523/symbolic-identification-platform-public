@@ -1,0 +1,400 @@
+{
+  "config": {
+    "task": "symbolic_pipeline",
+    "_sampling_provenance": [],
+    "domain": null,
+    "input_map": null,
+    "observation_model": null,
+    "run": {
+      "stage": null,
+      "engine": null,
+      "seed": 42
+    },
+    "data": {
+      "local_path": "results/practical-fixed-20261115-1400/inputs/synthetic/table.csv",
+      "target_column": "y",
+      "feature_columns": [
+        "x"
+      ],
+      "id_columns": [
+        "sample_id"
+      ],
+      "units": {
+        "x": "1",
+        "y": "1"
+      },
+      "source_units": {
+        "x": "1",
+        "y": "1"
+      },
+      "display_units": {},
+      "coordinate_roles": {
+        "x": null,
+        "y": null
+      },
+      "domain": {
+        "x": [
+          0.1,
+          4.0
+        ]
+      }
+    },
+    "split": {
+      "method": "fixed",
+      "file": "results/practical-fixed-20261115-1400/inputs/synthetic/split.csv",
+      "group_column": null,
+      "seed": 42,
+      "valid_size": 0.2,
+      "selection_size": 0.2
+    },
+    "search": {
+      "engines": [
+        "pysr"
+      ],
+      "seeds": [
+        17
+      ],
+      "max_wall_seconds": 21600,
+      "max_export_candidates": 20,
+      "candidate_pool_policy": "all",
+      "allow_partial_engines": true,
+      "response_mode": "search",
+      "engine_options": {
+        "pysr": {
+          "objective": "mse",
+          "niterations": 10000,
+          "populations": 8,
+          "population_size": 40,
+          "ncycles_per_iteration": 380,
+          "seconds": 2880,
+          "parallelism": "serial"
+        }
+      },
+      "runtimes": {}
+    },
+    "evaluation": {
+      "mode": "holdout",
+      "coefficient_fit": "none",
+      "selection_policy": "accuracy",
+      "relative_tolerance": 0.05,
+      "absolute_tolerance": 1e-06,
+      "acceptable_rmse": null
+    },
+    "model": {
+      "local_model_path": null
+    },
+    "model_assets": {},
+    "stage_inputs": {},
+    "_prepared_requirements_ref": "81b861c5d41eb8dfa97ec7343bcc193fcf2eed762452bd75a8a9cf71727f39d5"
+  },
+  "observation_index": {
+    "file": "/work/results/practical-fixed-20261115-1400/synthetic_supported/pysr/calculation/prepare/observation_index.npz",
+    "sha256": "376772b01c3b1da3aa959b833cc783964d090a6e783b73113a671ff61d381ea9"
+  },
+  "unit_coordinates": {
+    "policy": "canonical problem; explicit CSV conversion; all domains/constraints/tolerances in problem units",
+    "columns": {
+      "x": {
+        "coordinate_role": null,
+        "source_unit": "1",
+        "problem_unit": "1",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      },
+      "y": {
+        "coordinate_role": null,
+        "source_unit": "1",
+        "problem_unit": "1",
+        "scale": 1.0,
+        "offset": 0.0,
+        "dimension_status": "known"
+      }
+    }
+  },
+  "variables": [
+    {
+      "id": "x0",
+      "column": "x",
+      "unit": "1",
+      "domain": [
+        0.1,
+        4.0
+      ],
+      "coordinate_role": null
+    }
+  ],
+  "input_geometry": {
+    "schema_version": 1,
+    "source_variables": [
+      {
+        "id": "x0",
+        "column": "x",
+        "unit": "1",
+        "domain": [
+          0.1,
+          4.0
+        ],
+        "coordinate_role": null
+      }
+    ],
+    "domain": {
+      "columns": [
+        "x"
+      ],
+      "space_id": "source_inputs",
+      "kind": "box",
+      "units": {
+        "x": "1"
+      },
+      "coordinate_roles": {
+        "x": null
+      },
+      "bounds": [
+        [
+          0.1,
+          4.0
+        ]
+      ]
+    },
+    "map": null
+  },
+  "target": {
+    "coordinate_role": null,
+    "column": "y",
+    "unit": "1",
+    "domain": null
+  },
+  "partitions": {
+    "final": {
+      "n_rows": 256,
+      "n_groups": 256
+    },
+    "selection": {
+      "n_rows": 128,
+      "n_groups": 128
+    },
+    "train": {
+      "n_rows": 256,
+      "n_groups": 256
+    }
+  },
+  "partition_hashes": {
+    "final": "20e6a4794338b01be9068a498ba475a9ac045543559de3c2a33966793e5f2e25",
+    "selection": "65adb7da2db6aa2b501a1d0573fc4a4d00eb48e4857c50b442226a3400c93e2d",
+    "train": "9eedb605a61c7d0e1fb6b1a7e60079afbedefd90a77188fe79a2e6bd0ee00975"
+  },
+  "data_sha256": "067d442097db6fc87d75652fc8fa760b131f2cf787464048d3468eec9c65e479",
+  "versions": {
+    "python": "3.11.15",
+    "ml-platform-symbolic": "0.90.4",
+    "ml-platform-core": "0.1.0",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1"
+  },
+  "package_identity": {
+    "version": "0.90.4",
+    "mode": "source",
+    "installed_metadata_version": "0.1.0"
+  },
+  "code_revision": "7dd816ff6a47b121668d52b995b0104fc2dbdb7b",
+  "source_sha256": "feef09ea9a9b2546ed03a03b0e31d11d012cd94c1c069ac5d9c393ee02917892",
+  "feature_ranges": [
+    [
+      0.1098321204411013,
+      3.991278355599608
+    ]
+  ],
+  "split_sha256": "f0e075db8614219a6562caf73115bceaaff5c774b63677b21b006b0b9921b923",
+  "problem_schema_version": 2,
+  "requirements": {
+    "allowed_operators": [
+      "add",
+      "sub",
+      "mul",
+      "div"
+    ],
+    "fixed_constants": {},
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": {
+      "coordinate_space": "working",
+      "ast": {
+        "op": "add",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              {
+                "const": 0.75
+              },
+              {
+                "var": "x0"
+              }
+            ]
+          },
+          {
+            "slot": "h",
+            "args": [
+              {
+                "var": "x0"
+              }
+            ]
+          }
+        ]
+      },
+      "parameters": {},
+      "components": {},
+      "slots": {
+        "h": {
+          "arguments": [
+            {
+              "name": "x0",
+              "unit": "1"
+            }
+          ],
+          "unit": "1",
+          "allowed_operators": [
+            "add",
+            "sub",
+            "mul",
+            "div"
+          ],
+          "max_nodes": 252
+        }
+      },
+      "knowledge": {
+        "kind": "hypothesis",
+        "statement": "Declared fixed contribution 0.75*x plus one shared unknown h(x)"
+      }
+    },
+    "required_responses": {
+      "points": [
+        {
+          "x": 0.10010000000000001
+        },
+        {
+          "x": 0.3438375
+        },
+        {
+          "x": 0.587575
+        },
+        {
+          "x": 0.8313125
+        },
+        {
+          "x": 1.07505
+        },
+        {
+          "x": 1.3187875
+        },
+        {
+          "x": 1.5625250000000002
+        },
+        {
+          "x": 1.8062625
+        },
+        {
+          "x": 2.05
+        },
+        {
+          "x": 2.2937374999999998
+        },
+        {
+          "x": 2.5374749999999997
+        },
+        {
+          "x": 2.7812124999999996
+        },
+        {
+          "x": 3.02495
+        },
+        {
+          "x": 3.2686875
+        },
+        {
+          "x": 3.512425
+        },
+        {
+          "x": 3.7561625
+        },
+        {
+          "x": 3.9999
+        }
+      ],
+      "bounds": [
+        0.0,
+        null
+      ],
+      "checks": [
+        {
+          "name": "increasing",
+          "feature": "x",
+          "order": 1,
+          "sign": 1,
+          "step": 0.0001,
+          "tolerance": 1e-05,
+          "points": [
+            {
+              "x": 0.10010000000000001
+            },
+            {
+              "x": 0.3438375
+            },
+            {
+              "x": 0.587575
+            },
+            {
+              "x": 0.8313125
+            },
+            {
+              "x": 1.07505
+            },
+            {
+              "x": 1.3187875
+            },
+            {
+              "x": 1.5625250000000002
+            },
+            {
+              "x": 1.8062625
+            },
+            {
+              "x": 2.05
+            },
+            {
+              "x": 2.2937374999999998
+            },
+            {
+              "x": 2.5374749999999997
+            },
+            {
+              "x": 2.7812124999999996
+            },
+            {
+              "x": 3.02495
+            },
+            {
+              "x": 3.2686875
+            },
+            {
+              "x": 3.512425
+            },
+            {
+              "x": 3.7561625
+            },
+            {
+              "x": 3.9999
+            }
+          ],
+          "knowledge": "Declared finite-point increasing response"
+        }
+      ],
+      "enforcement": "hard"
+    }
+  },
+  "requirements_sha256": "81b861c5d41eb8dfa97ec7343bcc193fcf2eed762452bd75a8a9cf71727f39d5"
+}

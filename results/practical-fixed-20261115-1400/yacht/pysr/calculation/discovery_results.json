@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "engine": "pysr",
+      "seed": 42,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "reason": null,
+      "wall_seconds": 389.5647166080016,
+      "exported_candidates": 14,
+      "summary_path": "/work/results/practical-fixed-20261115-1400/yacht/pysr/calculation/discover/pysr/42/engine_summary.json"
+    }
+  ],
+  "selection_performed": false,
+  "final_accessed": false
+}

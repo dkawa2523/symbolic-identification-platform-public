@@ -1,0 +1,7 @@
+{
+  "run_id": "3b892e7b068d4c4bb85d111dd937621c",
+  "job_sha256": "ea22f1c19e043ddd89e44702d0b18f0fe982d7c20967357377a36f4cdd48ef7d",
+  "train_sha256": "9eedb605a61c7d0e1fb6b1a7e60079afbedefd90a77188fe79a2e6bd0ee00975",
+  "version": "2.7.2",
+  "adapter_sha256": "288969706814eae91a3436b05da45bd588756377e3b1791bee01b4d0ed55c7a3"
+}

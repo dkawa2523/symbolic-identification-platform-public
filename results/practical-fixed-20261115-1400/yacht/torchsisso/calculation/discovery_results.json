@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "engine": "torchsisso",
+      "seed": 42,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "reason": null,
+      "wall_seconds": 16.727101085998584,
+      "exported_candidates": 3,
+      "summary_path": "/work/results/practical-fixed-20261115-1400/yacht/torchsisso/calculation/discover/torchsisso/42/engine_summary.json"
+    }
+  ],
+  "selection_performed": false,
+  "final_accessed": false
+}

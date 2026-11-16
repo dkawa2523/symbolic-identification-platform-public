@@ -1,0 +1,671 @@
+{
+  "source_revision": "c4144c99d078dd611795338e24fb3da49a32b9d8",
+  "response_fit": null,
+  "native_best_tracking": {
+    "implementation": "pinned TimedFun finite-best correction; independent worker scope",
+    "optimizer_calls": 64,
+    "calls_with_finite_best": 64,
+    "scope": "best objective value actually observed, not solver convergence; NoRef retained"
+  },
+  "operator_mask": {
+    "enabled": true,
+    "forbidden_native_operator_tokens": [
+      "abs",
+      "arccos",
+      "arcsin",
+      "arctan",
+      "cos",
+      "exp",
+      "log",
+      "pow",
+      "pow2",
+      "pow3",
+      "sin",
+      "sqrt",
+      "tan"
+    ],
+    "processed_rows": 16312,
+    "scope": "native operator tokens only; not arity, numeric syntax, variable, EOS, node count or semantic constraints",
+    "distribution": "operator-restricted pretrained next-token distribution; weights unchanged",
+    "portable_scope": "fixed normalization retained; full output grammar/size checked separately without exemption",
+    "score_semantics": "beam scores retain raw pretrained log-probability; prefix grammar/variable/size masks restrict sampling; operator restriction follows enabled flag; adapter does not export sampling log-probabilities"
+  },
+  "runtime_patch": "PyTorch2 EOS boolean mask; corrected finite best-value tracking; bounded bag batches alter sampling RNG ordering; BFGS uses full Train instead of prefix1024; scalar grammar and source AST budget restrict generation; pretrained weights unchanged",
+  "code_license": "Apache-2.0",
+  "model_license": "no separate weights license confirmed; official download only",
+  "torch": "2.7.1+cpu",
+  "scikit_learn": "1.5.2",
+  "sympytorch": "0.1.4",
+  "numexpr": "2.10.2",
+  "model_sha256": "169569a0648ae1a4f1ac2bbb376fa5ebb70ebce4bfcf23d6666323596990ff91",
+  "torch_threads": 1,
+  "model_load_seconds": 5.6030318579869345,
+  "native_fit_seconds": 208.63716332198237,
+  "native_candidates": 191,
+  "native_refinement_counts": {
+    "NoRef": 127,
+    "BFGS": 64
+  },
+  "refinement_failures": "Upstream suppresses individual BFGS failure reasons; zero BFGS outputs is not refinement success. Native NoRef candidates are retained independently.",
+  "rejected_exports": [],
+  "input_rows": 256,
+  "native_effective_rows": 256,
+  "bags": 2,
+  "variable_mask": {
+    "allowed_variables": [
+      "x0"
+    ],
+    "token_to_original_id": {
+      "x_0": "x0"
+    },
+    "forbidden_variable_tokens": [
+      "x_1",
+      "x_2",
+      "x_3",
+      "x_4",
+      "x_5",
+      "x_6",
+      "x_7",
+      "x_8",
+      "x_9"
+    ],
+    "padding_tokens": [
+      "x_1",
+      "x_2",
+      "x_3",
+      "x_4",
+      "x_5",
+      "x_6",
+      "x_7",
+      "x_8",
+      "x_9"
+    ],
+    "processed_rows": 16312,
+    "scope": "decoder variable tokens only; full original input columns remain encoder context; no unit/response/template guarantee"
+  },
+  "complexity_budget": {
+    "max_nodes": 252,
+    "coordinate_scope": "source numerical expression AST",
+    "variable_token_costs": {
+      "x_0": 5
+    },
+    "output_cost": 0,
+    "processed_rows": 16312,
+    "masked_token_choices": 138544991,
+    "scope": "generation grammar and source AST size; not physical dimensions or response constraints"
+  },
+  "native_row_usage": {
+    "generation_calls": [
+      {
+        "bags": 2,
+        "rows": 256,
+        "minimum_bag_rows": 56,
+        "maximum_bag_rows": 200
+      }
+    ],
+    "generation_batches": [
+      {
+        "first_bag": 0,
+        "bags": 1,
+        "rows": 200,
+        "candidate_count": 65
+      },
+      {
+        "first_bag": 1,
+        "bags": 1,
+        "rows": 56,
+        "candidate_count": 65
+      }
+    ],
+    "refinement_calls": [
+      {
+        "input_rows": 256,
+        "target_rows": 256,
+        "proposed_trees": 130
+      }
+    ],
+    "optimizer_calls": [
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      },
+      {
+        "input_rows": 256,
+        "optimizer_rows": 256,
+        "optimizer_target_rows": 256,
+        "downsample": -1,
+        "row_status": "full_train",
+        "native_error_type": null
+      }
+    ]
+  },
+  "max_train_rows": null,
+  "effective_search_options": {
+    "generation_batch_size": 1,
+    "beam_size": 64,
+    "max_input_points": 200,
+    "n_trees_to_refine": 64,
+    "max_generated_output_len": 128,
+    "refinement_seconds": 5,
+    "beam_type": "sampling",
+    "max_number_bags": -1,
+    "supplied_features": 1
+  },
+  "budget_semantics": "beam_size is native samples per bag plus greedy, not beam search width; all bags generated and all Train rows used for refinement; refinement_seconds is native per-tree refinement limit",
+  "generation": "seeded native sampling plus greedy candidate; pretrained weights unchanged; batch-size changes can change RNG consumption and candidates",
+  "transforms": "train-only StandardScaler; fixed original-coordinate mean/scale; no target scaling",
+  "coefficient_policy": "native decimal slots free; integer/operator literals and normalization fixed",
+  "constraint_support": {
+    "operators": "operator_mask defaults true and restricts decoder operator tokens; explicit false is post-check-only compatibility; portable full expression including normalization still post-filtered",
+    "units": "native unit guidance unsupported; train normalization units preserved, coefficient units unknown",
+    "max_nodes": "native prefix completion budget includes frozen source coordinates and fixed E2E normalization; export verification retained",
+    "variables": "1..10 unchanged input columns; output variable-token masking",
+    "allowed_variables": "enforced in native decoder variable tokens; original columns/IDs retained; padded tokens forbidden",
+    "rows": "default resource guard 1024 rows; explicit max_train_rows=null uses all bags under outer wall/memory limits; no subsampling",
+    "probes": "explicit finite-point constraints during SLSQP coefficient search over every exported structure; decoder not response-conditioned",
+    "response_bounds": "finite-point hard bounds during coefficient optimization; no global guarantee",
+    "response_checks": "finite-step conditions during coefficient optimization; not decoder conditioning or analytic derivative proof",
+    "pretraining_overlap": "unknown; pretrained weights inference only, no fine-tuning",
+    "equation_template": "limited exact affine observed slot h(X); numeric target reduction before native generation, original outer-AST assembly and coefficient fit afterwards; no template-conditioned decoder"
+  }
+}

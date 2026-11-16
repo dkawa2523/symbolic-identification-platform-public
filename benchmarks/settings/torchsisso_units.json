@@ -1,0 +1,31 @@
+{
+  "search": {
+    "operators": ["add", "sub", "mul", "div"],
+    "engine_options": {
+      "torchsisso": {"dimensional": true, "n_expansion": 2, "n_term": 2, "k": 8},
+      "known_form": {
+        "equation": {
+          "schema_version": 1,
+          "ast": {"op": "add", "args": [
+            {"op": "add", "args": [
+              {"op": "add", "args": [
+                {"param": "offset"},
+                {"op": "mul", "args": [{"param": "a"}, {"op": "mul", "args": [{"var": "x0"}, {"var": "x1"}]}]}
+              ]},
+              {"op": "mul", "args": [{"param": "b"}, {"var": "x2"}]}
+            ]},
+            {"op": "mul", "args": [{"param": "c"}, {"var": "x5"}]}
+          ]},
+          "parameters": {
+            "offset": {"value": 0, "trainable": true, "bounds": [null, null], "unit": "m"},
+            "a": {"value": 1, "trainable": true, "bounds": [null, null], "unit": "1"},
+            "b": {"value": 1, "trainable": true, "bounds": [null, null], "unit": "1"},
+            "c": {"value": 1, "trainable": true, "bounds": [null, null], "unit": "1"}
+          }
+        }
+      }
+    }
+  },
+  "constraints": {"require_units": true, "max_nodes": 40},
+  "evaluation": {"coefficient_fit": "none"}
+}

@@ -1,0 +1,312 @@
+{
+  "status": "inputs_valid",
+  "package_identity": {
+    "version": "0.90.4",
+    "mode": "source",
+    "installed_metadata_version": "0.1.0"
+  },
+  "path_base": "/work",
+  "data_file": "/work/data/yacht/table.csv",
+  "identity_column": "sample_id",
+  "group_column": "group_id",
+  "feature_columns": [
+    "buoyancy_position",
+    "prismatic_coefficient",
+    "length_displacement_ratio",
+    "beam_draught_ratio",
+    "length_beam_ratio",
+    "froude"
+  ],
+  "target_column": "resistance",
+  "unit_coordinates": {
+    "buoyancy_position": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "prismatic_coefficient": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "length_displacement_ratio": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "beam_draught_ratio": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "length_beam_ratio": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "froude": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    },
+    "resistance": {
+      "coordinate_role": null,
+      "source_unit": "1",
+      "problem_unit": "1",
+      "scale": 1.0,
+      "offset": 0.0,
+      "dimension_status": "known"
+    }
+  },
+  "working_domains": {},
+  "working_variables": [
+    {
+      "id": "x0",
+      "column": "buoyancy_position",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x1",
+      "column": "prismatic_coefficient",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x2",
+      "column": "length_displacement_ratio",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x3",
+      "column": "beam_draught_ratio",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x4",
+      "column": "length_beam_ratio",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    },
+    {
+      "id": "x5",
+      "column": "froude",
+      "unit": "1",
+      "domain": null,
+      "coordinate_role": null
+    }
+  ],
+  "target": {
+    "coordinate_role": null,
+    "column": "resistance",
+    "unit": "1",
+    "domain": null
+  },
+  "split": {
+    "method": "fixed",
+    "file": "data/yacht/split.csv",
+    "group_column": "group_id",
+    "seed": 42,
+    "valid_size": 0.2,
+    "selection_size": 0.2
+  },
+  "partitions": {
+    "final": {
+      "n_rows": 70,
+      "n_groups": 5
+    },
+    "selection": {
+      "n_rows": 56,
+      "n_groups": 4
+    },
+    "train": {
+      "n_rows": 182,
+      "n_groups": 13
+    }
+  },
+  "search_budget": {
+    "seeds": [
+      42
+    ],
+    "max_wall_seconds": 3600,
+    "candidate_pool_policy": "all",
+    "max_export_candidates": 20,
+    "allow_partial_engines": true
+  },
+  "requirements": {
+    "allowed_operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "neg",
+      "abs",
+      "exp",
+      "log",
+      "sqrt",
+      "pow_int",
+      "sin",
+      "cos",
+      "tanh",
+      "sinh",
+      "cosh"
+    ],
+    "fixed_constants": {},
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "required_responses": {
+      "points": [],
+      "bounds": [
+        null,
+        null
+      ],
+      "checks": [],
+      "enforcement": null
+    }
+  },
+  "engines": {
+    "physo": {
+      "declared_input_issues": [],
+      "adapter_input_issues": [],
+      "adapter_validation": "passed",
+      "asset_input_issues": [],
+      "asset_verification": {
+        "status": "not_requested",
+        "manifest_sha256": null,
+        "files_verified": 0
+      },
+      "options": {
+        "epochs": 100,
+        "batch_size": 128,
+        "max_n_evaluations": 12800
+      },
+      "runtime": {},
+      "assets": {},
+      "effective_operator_subset": [
+        "add",
+        "sub",
+        "mul",
+        "div",
+        "neg",
+        "abs",
+        "exp",
+        "log",
+        "sqrt",
+        "pow_int",
+        "sin",
+        "cos",
+        "tanh",
+        "sinh",
+        "cosh"
+      ],
+      "capabilities": {
+        "unit_search": {
+          "defaults": {},
+          "choices": {},
+          "templates": true
+        },
+        "equation_template": true,
+        "template_scope": "one shared slot, fixed outer coefficients, variable-only calls, identity formal schema; no signed cbrt",
+        "supported_options": [
+          "batch_size",
+          "candidate_scope",
+          "constants_per_unit",
+          "entropy_weight",
+          "epochs",
+          "max_n_evaluations",
+          "parameter_units",
+          "profile",
+          "response_max_nfev",
+          "risk_factor",
+          "unit_basis_degree"
+        ],
+        "operators": [
+          "abs",
+          "acos",
+          "add",
+          "asin",
+          "atan",
+          "cos",
+          "cosh",
+          "div",
+          "exp",
+          "log",
+          "mul",
+          "neg",
+          "pow_int",
+          "rootn",
+          "sin",
+          "sinh",
+          "sqrt",
+          "sub",
+          "tan",
+          "tanh"
+        ],
+        "fixed_constants": true,
+        "constraints": {
+          "operators": "enforced during search",
+          "units": "native PhysicalUnitsPrior (nonzero epsilon); required portable structural post-filter",
+          "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included",
+          "variables": "disallowed columns excluded before native search; full-schema export/prediction checked",
+          "allowed_variables": "native input-column subset with original IDs; no constant-only or mapped-input/template subset fallback",
+          "probes": "finite-point hard constrained coefficient fit before native reward/RNN update",
+          "response_bounds": "hard finite-point coefficient constraints before reward",
+          "response_checks": "finite-step coefficient constraints before reward; not analytic proof",
+          "fixed_constants": "enforced during search, immutable values/units; native SR rounded-name collisions rejected",
+          "power_indices": "native n2/n3/n4; rootn uses native signed cbrt only"
+        },
+        "search_constraints": [
+          "probes",
+          "response_bounds",
+          "response_checks"
+        ],
+        "response_enforcement": {
+          "default": "hard",
+          "supported": [
+            "hard"
+          ],
+          "stage": "constrained coefficient fit before native reward and RNN update"
+        },
+        "requires_assets": false
+      },
+      "constraint_application": {
+        "operators": "enforced during search",
+        "max_nodes": "weighted source AST prefix-completion prior before sampling; exponent literals and frozen coordinate transforms included"
+      },
+      "response_mode": "search"
+    }
+  },
+  "not_checked": [
+    "Only adapter-provided static input checks ran. An extension without validate_request is explicitly not_available.",
+    "Native libraries, runtime startup, GPU availability and checkpoint deserialization were not tested; verified file hashes and input checks are not native readiness evidence.",
+    "No search, fitting, predictions, Selection metrics or Final metrics were performed. No input files were changed."
+  ]
+}

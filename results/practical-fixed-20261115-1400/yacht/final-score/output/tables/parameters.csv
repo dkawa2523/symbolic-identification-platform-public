@@ -1,0 +1,89 @@
+candidate_id,method,kind,component,member_index,member_id,weight,eligible,name,value,unit,unit_origin,coordinate_role,role,tied_to,bounds,origin
+pysr/42/12@native,pysr,explicit,prediction,,,,True,c0,-7.141716255083116,,unit provenance not separately recorded,,free,,"[null, null]",pysr_native_constant_node
+pysr/42/12@native,pysr,explicit,prediction,,,,True,c1,-3.5871367488089185,,unit provenance not separately recorded,,free,,"[null, null]",pysr_native_constant_node
+pysr/42/12@native,pysr,explicit,prediction,,,,True,c2,-7.5695955269207404,,unit provenance not separately recorded,,free,,"[null, null]",pysr_native_constant_node
+pysr/42/12@native,pysr,explicit,prediction,,,,True,c3,3.9126330441693407,,unit provenance not separately recorded,,free,,"[null, null]",pysr_native_constant_node
+pysr/42/12@native,pysr,explicit,prediction,,,,True,c4,2.9309080544240684,,unit provenance not separately recorded,,free,,"[null, null]",pysr_native_constant_node
+pysr/42/12@native,pysr,explicit,prediction,,,,True,c5,0.21394368458250937,,unit provenance not separately recorded,,free,,"[null, null]",pysr_native_constant_node
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c0,0.0029139494425493902,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c1,-0.003620430690430107,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c2,0.12390678626501485,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c3,-1.5878312717402867,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c4,0.12625506648878218,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c5,-1.5569568327332948e-05,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c6,-1.4079699638556205,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c7,6.566346006199999,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c8,-2.9620746138112524,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c9,0.04732411407523346,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c10,0.04496516999601458,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c11,-0.06550623314224711,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c12,0.3900065301292217,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c13,-0.002849507135306504,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c14,-0.37336967881979716,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c15,-0.12790366366412362,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c16,0.016395540924370868,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c17,0.5798418059528039,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c18,-0.09734253576121771,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c19,0.01151096841492081,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c20,0.0765639906884916,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c21,0.6393479161001345,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c22,0.00066990665328528,,unit provenance not separately recorded,,free,,"[null, null]",native_coefficient_block
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c23,0.5160146876181716,,unit provenance not separately recorded,,free,,"[null, null]",native_normalized_denominator_coordinate
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c24,-0.3409363456508652,,unit provenance not separately recorded,,free,,"[null, null]",native_normalized_denominator_coordinate
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c25,-0.00020821126451951805,,unit provenance not separately recorded,,free,,"[null, null]",native_normalized_denominator_coordinate
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c26,-0.7768673595557385,,unit provenance not separately recorded,,free,,"[null, null]",native_normalized_denominator_coordinate
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c27,0.0115329078043383,,unit provenance not separately recorded,,free,,"[null, null]",native_normalized_denominator_coordinate
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c28,0.011649586802265131,,unit provenance not separately recorded,,free,,"[null, null]",native_normalized_denominator_coordinate
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c29,-0.015806608614931664,,unit provenance not separately recorded,,free,,"[null, null]",native_normalized_denominator_coordinate
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c30,0.11597126441497202,,unit provenance not separately recorded,,free,,"[null, null]",native_normalized_denominator_coordinate
+parfam/42/0@native,parfam,explicit,prediction,,,,True,c31,-0.0006393751004572983,,unit provenance not separately recorded,,free,,"[null, null]",native_normalized_denominator_coordinate
+torchsisso/42/2@native,torchsisso,explicit,prediction,,,,True,intercept,-9479842.032773923,,unit provenance not separately recorded,,free,,"[null, null]",native_regression_solve
+torchsisso/42/2@native,torchsisso,explicit,prediction,,,,True,c0,-396983.28240661015,,unit provenance not separately recorded,,free,,"[null, null]",native_regression_solve
+torchsisso/42/2@native,torchsisso,explicit,prediction,,,,True,c1,9479840.231441721,,unit provenance not separately recorded,,free,,"[null, null]",native_regression_solve
+torchsisso/42/2@native,torchsisso,explicit,prediction,,,,True,c2,-4739790.111331243,,unit provenance not separately recorded,,free,,"[null, null]",native_regression_solve
+physo/42/22@native,physo,explicit,prediction,,,,True,c0,1.332418017036151,1,unit provenance not separately recorded,,free,,"[null, null]",native_free_constant_slot
+physo/42/22@native,physo,explicit,prediction,,,,True,c1,-1.4894109681669716,1,unit provenance not separately recorded,,free,,"[null, null]",native_free_constant_slot
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c4,-33.617267561123846,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c6,-29.301204821203438,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,x0_mean,-2.176923076923078,1,unit provenance not separately recorded,,fixed,,"[null, null]",train_normalization
+e2e/42/7@native,e2e,explicit,prediction,,,,True,x0_scale,1.5257552208931948,1,unit provenance not separately recorded,,fixed,,"[null, null]",train_normalization
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c10,-42.97376756120749,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c12,-0.03630471095527468,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c16,-2.403978707878902,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c18,55.55152565469002,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,x3_mean,4.0269230769230795,1,unit provenance not separately recorded,,fixed,,"[null, null]",train_normalization
+e2e/42/7@native,e2e,explicit,prediction,,,,True,x3_scale,0.6445437815932537,1,unit provenance not separately recorded,,fixed,,"[null, null]",train_normalization
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c22,2.0109787062559343,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c24,0.3306584552843378,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c29,0.8267177600485796,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c31,0.03521426091660975,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c34,4.436717759945225,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c36,9.72820783181574,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,x5_mean,0.2874999999999999,1,unit provenance not separately recorded,,fixed,,"[null, null]",train_normalization
+e2e/42/7@native,e2e,explicit,prediction,,,,True,x5_scale,0.1007782218537319,1,unit provenance not separately recorded,,fixed,,"[null, null]",train_normalization
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c39,-0.8770177598009782,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c41,6.201792168316634,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c45,42.85397870839583,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c47,44.02639607502421,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,x2_mean,4.789230769230766,1,unit provenance not separately recorded,,fixed,,"[null, null]",train_normalization
+e2e/42/7@native,e2e,explicit,prediction,,,,True,x2_scale,0.2364956183839202,1,unit provenance not separately recorded,,fixed,,"[null, null]",train_normalization
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c51,-6.542796822534318,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c53,-0.713788928411555,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c56,1.5515686127929695,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c58,7.971044769297492,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,x4_mean,3.1776923076922996,1,unit provenance not separately recorded,,fixed,,"[null, null]",train_normalization
+e2e/42/7@native,e2e,explicit,prediction,,,,True,x4_scale,0.25192043451344653,1,unit provenance not separately recorded,,fixed,,"[null, null]",train_normalization
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c61,-5.082732440832853,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c63,92.67704617464597,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,x1_mean,0.5638461538461524,1,unit provenance not separately recorded,,fixed,,"[null, null]",train_normalization
+e2e/42/7@native,e2e,explicit,prediction,,,,True,x1_scale,0.024381096567268733,1,unit provenance not separately recorded,,fixed,,"[null, null]",train_normalization
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c66,-0.004144763552464888,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c68,9.228874694756727e-05,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+e2e/42/7@native,e2e,explicit,prediction,,,,True,c71,10.47439792787571,,unit provenance not separately recorded,,free,,"[null, null]",native_decimal_coefficient
+mean/42/0@native,mean,explicit,prediction,,,,True,c0,10.552582312056593,1,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+linear/42/5@native,linear,explicit,prediction,,,,True,c0,122.57330659493762,1,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+linear/42/5@native,linear,explicit,prediction,,,,True,c1,-15.071171542801931,1,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+linear/42/5@native,linear,explicit,prediction,,,,True,c2,-11.968093959051668,1,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+linear/42/5@native,linear,explicit,prediction,,,,True,c3,0.15666876943573066,1,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+linear/42/5@native,linear,explicit,prediction,,,,True,c4,-0.3195037910826854,1,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve
+linear/42/5@native,linear,explicit,prediction,,,,True,c5,-0.39029415628836045,1,declared target and known additive basis; unknown basis stays unknown,,free,,"[null, null]",baseline_regression_solve

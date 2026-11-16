@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "engine": "physo",
+      "seed": 17,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "reason": null,
+      "wall_seconds": 7.204841611004667,
+      "exported_candidates": 3,
+      "summary_path": "/work/results/physo-runtime-horizon-normal-20261116-011644/known-T5/calculation/discover/physo/17/engine_summary.json"
+    }
+  ],
+  "selection_performed": false,
+  "final_accessed": false
+}

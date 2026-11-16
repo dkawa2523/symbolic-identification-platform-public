@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="410">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203342">
+<text x="40" y="40" font-size="24" font-weight="bold">2. parfam | equation</text>
+<text x="40" y="68" font-size="13">Candidate parfam/17/0@native | page 1/1</text>
+<text x="40" y="110" font-size="20">Coordinates: public</text>
+<text x="40" y="137" font-size="20"></text>
+<text x="40" y="164" font-size="20">y [1] = (θ[c0] + θ[c1] * x + θ[c2] * x * x) / (θ[c3] + θ[c4] * x)</text>
+<text x="40" y="191" font-size="20"></text>
+<text x="40" y="218" font-size="20">Coefficients (working coordinates; rounded on image)</text>
+<text x="40" y="245" font-size="20">c0 = 0.0093477082 [unit unknown]; role=free</text>
+<text x="40" y="272" font-size="20">c1 = -1.8825576 [unit unknown]; role=free</text>
+<text x="40" y="299" font-size="20">c2 = -0.5990913 [unit unknown]; role=free</text>
+<text x="40" y="326" font-size="20">c3 = -0.64258992 [unit unknown]; role=free</text>
+<text x="40" y="353" font-size="20">c4 = -0.76621028 [unit unknown]; role=free</text>
+</g></svg>

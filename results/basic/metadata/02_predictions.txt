@@ -1,0 +1,50 @@
+Observed and predicted values
+X: Observed [mm]
+Y: Predicted [mm]
+
+9. Least-squares fit
+Candidate: user_linear@manual/train_point_fit
+Variant: train_point_fit; seed: None
+Eligible: True; reason: None
+Equation (public): response_mm [mm] = ((((coef['a'] * ((0.01) * (length_cm) + (0.0))) + coef['b'])) - (0.0)) / (0.001)
+  coef['a'] = 2.000635436522328 [1]
+  coef['b'] = 0.09867021695224298 [m]
+length_cm_work [m] = 0.01 * length_cm [cm] + (0)
+response_mm_work [m] = 0.001 * response_mm [mm] + (0)
+
+5. dictionary
+Candidate: dictionary/7/1@native
+Variant: native; seed: 7
+Eligible: True; reason: None
+Equation (public): response_mm [mm] = ((((coef['c0'] * ((0.01) * (length_cm) + (0.0))) + coef['c1'])) - (0.0)) / (0.001)
+  coef['c0'] = 2.0006353662977636 [1]
+  coef['c1'] = 0.09867022748465006 [m]
+length_cm_work [m] = 0.01 * length_cm [cm] + (0)
+response_mm_work [m] = 0.001 * response_mm [mm] + (0)
+
+6. dictionary
+Candidate: dictionary/7/2@native
+Variant: native; seed: 7
+Eligible: True; reason: None
+Equation (public): response_mm [mm] = (((((coef['c0'] * ((0.01) * (length_cm) + (0.0))) + coef['c1']) + (coef['c2'] * (((0.01) * (length_cm) + (0.0)) * ((0.01) * (length_cm) + (0.0)))))) - (0.0)) / (0.001)
+  coef['c0'] = 1.9800482518411497 [1]
+  coef['c1'] = 0.09989602257387437 [m]
+  coef['c2'] = 0.06254467839173311 [m^(-1)]
+length_cm_work [m] = 0.01 * length_cm [cm] + (0)
+response_mm_work [m] = 0.001 * response_mm [mm] + (0)
+
+7. dictionary
+Candidate: dictionary/7/3@native
+Variant: native; seed: 7
+Eligible: True; reason: None
+Equation (public): response_mm [mm] = ((((((coef['c0'] * ((0.01) * (length_cm) + (0.0))) + coef['c1']) + (coef['c2'] * (((0.01) * (length_cm) + (0.0)) * ((0.01) * (length_cm) + (0.0))))) + (coef['c3'] * ((((0.01) * (length_cm) + (0.0)) * ((0.01) * (length_cm) + (0.0))) * ((0.01) * (length_cm) + (0.0)))))) - (0.0)) / (0.001)
+  coef['c0'] = 1.8950087680139356 [1]
+  coef['c1'] = 0.1029094766657416 [m]
+  coef['c2'] = 0.6743619275150817 [m^(-1)]
+  coef['c3'] = -1.2469145960083245 [m^(-2)]
+length_cm_work [m] = 0.01 * length_cm [cm] + (0)
+response_mm_work [m] = 0.001 * response_mm [mm] + (0)
+
+Scope: Stored Selection rows, actual covariates. Invalid rows remain in the source table. No Final data or recalculated predictions.
+
+Exact rows and provenance: matching CSV and plot_data.json.

@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "engine": "e2e",
+      "seed": 42,
+      "status": "ok",
+      "native_execution_status": "completed",
+      "reason": null,
+      "wall_seconds": 198.73502130398992,
+      "exported_candidates": 31,
+      "summary_path": "/work/results/practical-fixed-20261115-1400/yacht/e2e/calculation/discover/e2e/42/engine_summary.json"
+    }
+  ],
+  "selection_performed": false,
+  "final_accessed": false
+}

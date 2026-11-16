@@ -1,0 +1,41 @@
+{
+  "scope": "Synthetic technical onboarding; manual family is informed, not scientific mechanism acceptance",
+  "final_metrics_working_m": {
+    "final_rmse": 0.006079225147911387,
+    "final_mae": 0.004889416514180121,
+    "final_r2": 0.9981511158361461,
+    "final_coverage": 1.0
+  },
+  "independent_prediction_support": {
+    "established": true,
+    "reason": "Frozen prediction error criterion met on these rows",
+    "criteria": {
+      "rmse_max": 0.02,
+      "minimum_valid_coverage": 1.0
+    },
+    "observed_rmse": 0.006079225147911387,
+    "valid_coverage": 1.0,
+    "scope": "This frozen target predictor and audit rows only; not coefficient/structure identification, future shift or interval coverage. No reselection."
+  },
+  "interval_audit": {
+    "kind": "heldout_interval_coverage",
+    "interval_sha256": "69c3130a72a989c6a60063c00b7b249669a3a73c4b7dac9ff8afd7153fce35ca",
+    "evaluation_sha256": "d286a47fe5bfd56613cbefbbd5cdc2328893672aa0d824a21d3235a37eee1c45",
+    "n_rows": 120,
+    "n_independent_units": 40,
+    "row_coverage": 0.9416666666666667,
+    "unit_coverage": 0.825,
+    "mean_width": 0.018147579705655614,
+    "width_reason": null,
+    "rmse": 0.00510319564654518,
+    "unit": "m",
+    "coverage_scope": "simultaneous observations in one new exchangeable independent group",
+    "limits": "Requires exchangeability with calibration; coverage is marginal over calibration and future sampling. No nominal coverage guarantee conditional on acceptance by observed interval width. No OOD, conditional, coefficient/posterior, mechanism or full-search coverage guarantee",
+    "observation_model": "Independent exchangeable synthetic three-observation groups; iid Gaussian noise within this generator"
+  },
+  "public_prediction_unit": "mm",
+  "api_cli_and_reordered_columns_match": true,
+  "model": "/work/results/basic/calculation/final/equation_model.zip",
+  "interval": "/work/results/basic/calculation/interval",
+  "results": "results/basic"
+}

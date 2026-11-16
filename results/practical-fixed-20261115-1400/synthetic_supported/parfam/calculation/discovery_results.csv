@@ -1,0 +1,2 @@
+engine,seed,status,native_execution_status,reason,wall_seconds,exported_candidates,summary_path
+parfam,17,ok,completed,,20.700846168998396,7,/work/results/practical-fixed-20261115-1400/synthetic_supported/parfam/calculation/discover/parfam/17/engine_summary.json

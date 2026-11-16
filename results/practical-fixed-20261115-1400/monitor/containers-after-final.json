@@ -1,0 +1,2229 @@
+{
+  "checked_at": "2026-11-15T19:18:16.477081+00:00",
+  "baseline_containers": 108,
+  "current_containers": 110,
+  "identity_errors": [],
+  "state_changes": [
+    {
+      "id": "fa0946debb1e4b21f325b55b60f3f9e9e7cf46ccf630f233f5a8184187998cd6",
+      "name": "/ml-platform-f9cb5856fe06-controller-1",
+      "before_state": {
+        "Status": "restarting",
+        "Running": true,
+        "Paused": false,
+        "Restarting": true,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-11-15T14:09:25.084650632Z",
+        "FinishedAt": "2026-11-15T14:09:27.273029986Z"
+      },
+      "after_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-15T19:18:09.527434537Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": true,
+        "Running": true,
+        "StartedAt": "2026-11-15T19:18:08.815967619Z",
+        "Status": "restarting"
+      },
+      "before_restart": 3600,
+      "after_restart": 3896
+    },
+    {
+      "id": "daeab967ab72701d00782adb25f5a4dda270ecfa44b089ee3a1e4926a4a5b481",
+      "name": "/ml-platform-f9cb5856fe06-worker-2",
+      "before_state": {
+        "Status": "restarting",
+        "Running": true,
+        "Paused": false,
+        "Restarting": true,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-11-15T14:09:29.749718239Z",
+        "FinishedAt": "2026-11-15T14:09:31.82906381Z"
+      },
+      "after_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-15T19:17:18.338189687Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": true,
+        "Running": true,
+        "StartedAt": "2026-11-15T19:17:17.655550765Z",
+        "Status": "restarting"
+      },
+      "before_restart": 3584,
+      "after_restart": 3879
+    },
+    {
+      "id": "e40381698b5164470ad140eb8fded25ff594570e1f56823239fabe731c2d7ff4",
+      "name": "/ml-platform-f9cb5856fe06-worker-1",
+      "before_state": {
+        "Status": "restarting",
+        "Running": true,
+        "Paused": false,
+        "Restarting": true,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-11-15T14:10:12.347454436Z",
+        "FinishedAt": "2026-11-15T14:10:14.608163871Z"
+      },
+      "after_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-15T19:18:08.714752404Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": true,
+        "Running": true,
+        "StartedAt": "2026-11-15T19:18:08.034232702Z",
+        "Status": "restarting"
+      },
+      "before_restart": 3601,
+      "after_restart": 3896
+    },
+    {
+      "id": "df49a0baf4b22941c14bb7d29d2544ca5ddbb51ff4b3bdd9a127ac8f02fd444e",
+      "name": "/ml-platform-clearml-agents-controller-1",
+      "before_state": {
+        "Status": "restarting",
+        "Running": true,
+        "Paused": false,
+        "Restarting": true,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-11-15T14:10:01.917707315Z",
+        "FinishedAt": "2026-11-15T14:10:04.158282364Z"
+      },
+      "after_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-15T19:17:44.784341471Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": true,
+        "Running": true,
+        "StartedAt": "2026-11-15T19:17:44.18437123Z",
+        "Status": "restarting"
+      },
+      "before_restart": 3600,
+      "after_restart": 3895
+    }
+  ],
+  "current": [
+    {
+      "Id": "155563d49e05a6579a5f91be3b5a3a01986d7e4389a65f1fce5bcb543dfc13db",
+      "Name": "/symbolic-physo-memory-b0-discover-20261115-1900",
+      "Image": "sha256:c53c8ab40e67aaad8c0bffb058317aee80d1a586e59c4795fa614d5cbd7daabc",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 143,
+        "FinishedAt": "2026-11-15T19:10:20.477524832Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-15T19:09:21.44318898Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "519881c1294b8bfd1c42c26448ae20f1f3825a5858ece3796eb18babbd844d12",
+      "Name": "/symbolic-physo-memory-b0-prepare-20261115-1900",
+      "Image": "sha256:bdc532d7fcb7021e1a57810de876bfa8b2ad5ef7cd29762334fda5d14689acd9",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-15T19:09:20.929004261Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-15T19:09:17.123776753Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "11ab7d7df8173134a3cd72ee93f2ef040c68bed29ea6d346a774e895ab97b6ad",
+      "Name": "/symbolic-practical-validation-20261115",
+      "Image": "sha256:43d979e1acb694cb6e42a0d08c57f737a31844599665daef971bf632eb73a5c0",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 137,
+        "FinishedAt": "2026-11-15T14:10:01.897049637Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-15T13:37:13.910530077Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "4f9fe9d5d4de9496f9ee41f37092e604c1b82ac707a1e66a370cf09ef82c8cfd",
+      "Name": "/e2e-integrated-pc-installed-v1-20261115-1253",
+      "Image": "sha256:5a45e360005eb029222c86004168123b4fc6c5f821a931ffa4c14b8e511d7d30",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 137,
+        "FinishedAt": "2026-11-15T13:00:59.89810425Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-15T12:50:16.149371107Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "99cdda62df882f7dcad0d3ab048a972ece10d52c2b5cc2d659cd338543d738a1",
+      "Name": "/e2e-integrated-pc-installed-20261115-1239",
+      "Image": "sha256:c870006bf4c9a801cc47fbf41df076de8e78d30ce1416244a35cdbe03669c6ae",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 137,
+        "FinishedAt": "2026-11-15T12:48:37.608015294Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-15T12:39:47.540211612Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "8642272f7d72c49f085ceb1d3fc077e33f90441a4e317a514f9c804d7f4bf76f",
+      "Name": "/e2e-integrated-pc-source-20261115-1228",
+      "Image": "sha256:a08007cf15e03f95c037fa2a0f70b54528cd7c0709871be9cdf53c86a05daddb",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 137,
+        "FinishedAt": "2026-11-15T13:00:55.309118402Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-15T12:28:33.213086958Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "fcf1dfee3bcb8030386981a4ac3d8eb54d8f88c447a0596be5c998e7dffe8d51",
+      "Name": "/torchsisso-pc-installed-20261115-1135",
+      "Image": "sha256:43d979e1acb694cb6e42a0d08c57f737a31844599665daef971bf632eb73a5c0",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 137,
+        "FinishedAt": "2026-11-15T12:25:36.905446865Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-15T11:59:48.127801023Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "931354fccb453119c2bed686cf31e1948e050ca92cdbbd5d45540d10b56c9593",
+      "Name": "/torchsisso-pc-acceptance-20261115-1120",
+      "Image": "sha256:196cb103fe2ee4c091f3a32be44a34ea8d3d46bd06e594608e9d9588f56b9a0c",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 137,
+        "FinishedAt": "2026-11-15T12:25:35.187182661Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-15T11:28:45.067064678Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "ffc126da99a794e5c0bc097b3e6fa1a1a12e74271a6adf25b3ccde56c783073c",
+      "Name": "/e2e-affine-pc-probe-20261115-1100",
+      "Image": "sha256:a08007cf15e03f95c037fa2a0f70b54528cd7c0709871be9cdf53c86a05daddb",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 137,
+        "FinishedAt": "2026-11-15T11:25:13.806543014Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-15T11:11:50.83021815Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "4b3f30cfd5ca42d01c07ee9489a72ffae1b8888a7b8825c2a5627d0e23f665f6",
+      "Name": "/physo-pc-installed-20261115-2010",
+      "Image": "sha256:196cb103fe2ee4c091f3a32be44a34ea8d3d46bd06e594608e9d9588f56b9a0c",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 137,
+        "FinishedAt": "2026-11-15T10:53:32.635653943Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-15T10:39:12.54785109Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "cbe5ab1cec5982998656bba7bea429ea410a34ae7e7d7fc203b8fc384167ec42",
+      "Name": "/physo-pc-acceptance-20261115-1950",
+      "Image": "sha256:905acd09cdbf176997f106603ba55bd160b95cb7bddc39a2b7b7fd6798f03aaf",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 137,
+        "FinishedAt": "2026-11-15T10:53:32.426483203Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-15T10:27:08.59014625Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "8bd48d86b009e6988978811806ca90d25c44c6469708c8fe743f18f1a0113743",
+      "Name": "/parfam-pc-installed-20261115-1923",
+      "Image": "sha256:04b797f1c5895a328f7cb251d378e84c6ba86a918332ddebebe094646547ee7e",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 137,
+        "FinishedAt": "2026-11-15T10:21:33.083477329Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-15T10:11:59.412954949Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "78317f11b396f71f4aed281e192e8807f756354b8a3614c73a70b7473dbbae55",
+      "Name": "/symbolic-e2e0904-verify",
+      "Image": "sha256:a08007cf15e03f95c037fa2a0f70b54528cd7c0709871be9cdf53c86a05daddb",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T14:35:44.555057561Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T14:35:29.099156785Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "fc6c441ad729574be0e4cf9c7c3ae56081f269c861a79c631d66b155bac1766c",
+      "Name": "/symbolic-classic0904-verify-v2",
+      "Image": "sha256:04b797f1c5895a328f7cb251d378e84c6ba86a918332ddebebe094646547ee7e",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T14:35:18.241402964Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T14:35:02.377324314Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "10617fc97f931c5ece0400d2cafd84be897054b700559c4604538e6f75ccc257",
+      "Name": "/symbolic-wheel0904-verify-v2",
+      "Image": "sha256:ece3ffa000bfd8a4af56cef5387ed361fc668221379b7e78190c8850662ac0fb",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T14:32:42.963627485Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T14:32:39.426796612Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "c900b78245b537a3d88e603996693677779113063db334353e038465dd174903",
+      "Name": "/symbolic-wheel0904-verify",
+      "Image": "sha256:ece3ffa000bfd8a4af56cef5387ed361fc668221379b7e78190c8850662ac0fb",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-14T14:31:56.639339477Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T14:31:54.27633094Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "33b9df0824172a06ef13121af0a1a2a58a285ed4c018cb93407ba4f76a0e9685",
+      "Name": "/symbolic-physo-profile-normal-v2",
+      "Image": "sha256:ece3ffa000bfd8a4af56cef5387ed361fc668221379b7e78190c8850662ac0fb",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T14:28:19.567432433Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T14:28:05.347232947Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "83a862232c25a84a24dda60e41d40c4f4d7a292e304f6196e9ec7c978667430b",
+      "Name": "/symbolic-physo-profile-normal",
+      "Image": "sha256:f24536c8db7872d8b4e51e94d179212db218c106ed1d6cdf508ca3976102d056",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-14T14:27:14.363039611Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T14:27:06.799894111Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "61dab3635789674627c4b28d15cafb8906a4f59b237f59d229380bd8efdebd22",
+      "Name": "/symbolic-response-origin-normal",
+      "Image": "sha256:ee02ed8085c78fe14e44e7cc5ca32eab51aab45318adc1565b125e4cdfcb8b75",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T14:18:36.284987156Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T14:18:34.136369967Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "e4cb09ce30d6599ab87735d71c1f86bae58ec0604b05d85fc3d300bfb7ce46a1",
+      "Name": "/symbolic-input-columns-normal",
+      "Image": "sha256:e6f1513c4ddddc2d012a0a65eaa8d86e5b9d82b40be3d0c93da684578124c9d7",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T14:01:01.540109949Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T14:00:44.163640623Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "cd41bb91d831a0649d85f82df45c6baf28b217e5c6ebdce4f9d3e837ccf7b1e3",
+      "Name": "/symbolic-native-columns-fullsuite",
+      "Image": "sha256:6d502980444ec24b4e1adc071ebaa91c7bfb73d37f18f270678e1f92fae21763",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:59:59.63244252Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:56:40.264664119Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "5692680c8b7c90a27e832e18bff3513b0f79f81924c1ee0ee8890116d3b2cff3",
+      "Name": "/symbolic-columns-direction-physo",
+      "Image": "sha256:6d502980444ec24b4e1adc071ebaa91c7bfb73d37f18f270678e1f92fae21763",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:55:55.195795237Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:55:46.844476069Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "c0a41cd3151f122c053b66befb5c7ed354145f9c2909e3f253af5a57636f4c31",
+      "Name": "/symbolic-columns-direction-torchsisso",
+      "Image": "sha256:6d502980444ec24b4e1adc071ebaa91c7bfb73d37f18f270678e1f92fae21763",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:55:46.609625389Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:55:41.906818875Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "25d8cc631902f46dc0219a333e10caf55e9c5462e97f05fec3f6304b34f5c7de",
+      "Name": "/symbolic-columns-direction-parfam",
+      "Image": "sha256:6d502980444ec24b4e1adc071ebaa91c7bfb73d37f18f270678e1f92fae21763",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:55:41.668134534Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:55:36.138060131Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "db751226b6e96a41358fbe9225a239313751b1b72fcbe6a289a700789add0829",
+      "Name": "/symbolic-native-columns-tests-v3",
+      "Image": "sha256:6d502980444ec24b4e1adc071ebaa91c7bfb73d37f18f270678e1f92fae21763",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:54:32.696399358Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:54:27.320751673Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "16161bb2fdb41bf554aa0b12840b8329405db4e255c82ce00ef327eadd192165",
+      "Name": "/symbolic-native-columns-physo",
+      "Image": "sha256:6d502980444ec24b4e1adc071ebaa91c7bfb73d37f18f270678e1f92fae21763",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:53:51.34096851Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:53:43.232517825Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "645c83f650ddb6a6e646d81e87eca0cd4748954d7a8c11c3b49fcfecff3d8e89",
+      "Name": "/symbolic-native-columns-torchsisso",
+      "Image": "sha256:6d502980444ec24b4e1adc071ebaa91c7bfb73d37f18f270678e1f92fae21763",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:53:42.966614522Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:53:38.194575722Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "26561e3ca7fcf9184d1930e30cfe487da04e4d8a2206f710dd05d60ecb968b4c",
+      "Name": "/symbolic-native-columns-parfam",
+      "Image": "sha256:6d502980444ec24b4e1adc071ebaa91c7bfb73d37f18f270678e1f92fae21763",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:53:37.875180782Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:53:32.397196928Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "f779cb3b24eb1cac43d6d00e53f5a9a934a133832dc7d55674ab87e076e5a27e",
+      "Name": "/symbolic-native-columns-tests-v2",
+      "Image": "sha256:6d502980444ec24b4e1adc071ebaa91c7bfb73d37f18f270678e1f92fae21763",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-14T13:53:24.028540634Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:53:18.841791671Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "5952598dbbedfb8fa844aedb3e27d0f31a4db12a85a192fb1609563bd22dff67",
+      "Name": "/symbolic-native-input-columns",
+      "Image": "sha256:6d502980444ec24b4e1adc071ebaa91c7bfb73d37f18f270678e1f92fae21763",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-14T13:53:10.716952746Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:53:03.530244866Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "a4ce7f88dc3422f76af80534ad5fed6d696a8755a3ee04b0fcdabdbb5185c17e",
+      "Name": "/symbolic-native-columns-tests",
+      "Image": "sha256:6d502980444ec24b4e1adc071ebaa91c7bfb73d37f18f270678e1f92fae21763",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 4,
+        "FinishedAt": "2026-11-14T13:52:17.691811009Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:52:16.221830991Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "2f05699e6739d174d4783a5a7a3a02da88896a36425ff71c1695c6023de71913",
+      "Name": "/symbolic-pysr-recovery-normal",
+      "Image": "sha256:6d502980444ec24b4e1adc071ebaa91c7bfb73d37f18f270678e1f92fae21763",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:43:09.122334376Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:42:45.308730668Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "4b1f24be89f57b41164cc8278beb17aa9e3d88682156f3832d0ee408143e77c0",
+      "Name": "/symbolic-pysr-recovery-header-tests",
+      "Image": "sha256:4588cdf32a43c5bf49988a7c75de1f1ee7dd168648ca8b6f74c0590c66ab5141",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:40:52.183546092Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:40:39.087420694Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "890435f8d0c5e679292c692e8bb7ed9666413591d5215a3291c6fbeac69bf83a",
+      "Name": "/symbolic-pysr-recovery-fullsuite",
+      "Image": "sha256:4588cdf32a43c5bf49988a7c75de1f1ee7dd168648ca8b6f74c0590c66ab5141",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:40:21.956105709Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:37:10.296317672Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "a674745f2d4f9933167d53a58c215a2114a53ceaadeccee13dce5eb1533b1e9d",
+      "Name": "/symbolic-pysr-recovery-public-v2",
+      "Image": "sha256:4588cdf32a43c5bf49988a7c75de1f1ee7dd168648ca8b6f74c0590c66ab5141",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:37:17.019905877Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:36:51.263153963Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "ed101205ac389616c4978995e929d2225bbd2ee7c9262badd5afcec89135a927",
+      "Name": "/symbolic-pysr-recovery-public",
+      "Image": "sha256:4588cdf32a43c5bf49988a7c75de1f1ee7dd168648ca8b6f74c0590c66ab5141",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-14T13:36:33.402835503Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:36:07.716227199Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "0167c3f434eb845d18f93bc22b46c98548cdb92853faba42f1d4ff7b9b7fe66e",
+      "Name": "/symbolic-pysr-recovery-native-v2",
+      "Image": "sha256:4588cdf32a43c5bf49988a7c75de1f1ee7dd168648ca8b6f74c0590c66ab5141",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:35:34.262008907Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:35:09.314526032Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "7d74cbad3ef1b8dfd812706eb780c96c52115140cab3ca7fb0c489b294775b4d",
+      "Name": "/symbolic-pysr-writer-source",
+      "Image": "sha256:4588cdf32a43c5bf49988a7c75de1f1ee7dd168648ca8b6f74c0590c66ab5141",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:34:40.229620424Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:34:34.690630428Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "1503bd76d10e3f3826a6e5569573a2870af4756e95b6e6567b4f39129f152df2",
+      "Name": "/symbolic-pysr-recovery-runner-tests",
+      "Image": "sha256:4588cdf32a43c5bf49988a7c75de1f1ee7dd168648ca8b6f74c0590c66ab5141",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:34:04.15239025Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:34:00.460054438Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "938a34811702b675b28d86b0dff1edeff03481d71f1b929db65ecb67254202ca",
+      "Name": "/symbolic-pysr-recovery-native",
+      "Image": "sha256:4588cdf32a43c5bf49988a7c75de1f1ee7dd168648ca8b6f74c0590c66ab5141",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-14T13:34:11.807718312Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:33:46.178523664Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "7e01efb5e390d556b03a760fc2c316584c85fc260de24598a2f954a73e419b18",
+      "Name": "/symbolic-pysr-recovery-tests",
+      "Image": "sha256:4588cdf32a43c5bf49988a7c75de1f1ee7dd168648ca8b6f74c0590c66ab5141",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:33:33.521663005Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:33:22.447132009Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "5f8b2f8fcdbfa91dc7f1c03e9ef93eb6984149fc43a377d70268071b6772907f",
+      "Name": "/symbolic-pysr-recovery-source",
+      "Image": "sha256:4588cdf32a43c5bf49988a7c75de1f1ee7dd168648ca8b6f74c0590c66ab5141",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:31:15.299000277Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:31:10.655416923Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "92ab609b0d3fc279e9b9a34c5c3d1a70da1b80a323300526a17f27b5d1365c88",
+      "Name": "/symbolic-classic-age-normal",
+      "Image": "sha256:4588cdf32a43c5bf49988a7c75de1f1ee7dd168648ca8b6f74c0590c66ab5141",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:29:20.941276025Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:29:19.708053582Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "343ff69e7fad7017d2d3013e3f1c0f545e52f6dc4c2722bdb6c563129513a2bf",
+      "Name": "/symbolic-e2e-best-normal",
+      "Image": "sha256:3483b95556b43ea0977e7e33e4671e598b94dc4c73e1ab5231e6bb3f410e6a8b",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:29:17.872240043Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:29:05.416523625Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "d77700732fa626613725654ac4f7060f9c15cfd234ab3b787fc36c42241207a0",
+      "Name": "/symbolic-e2e-final-regression",
+      "Image": "sha256:39fb2c87257e902eb1cc9f5eb23bed0e5ea2a44742b4c623dedb664b2a00d48c",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:28:37.711015733Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:28:23.055506627Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "b77ecd452b06eec257d29f247d87863a4cad3bffc1a68f6bf4c02cb9a726aaa7",
+      "Name": "/symbolic-e2e-best-installed",
+      "Image": "sha256:914b10c1f58d0e7f7c56db54ade6a563fe6eb95f9c3740a9267d748c6294e186",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:24:30.759231142Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:24:18.272937126Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "8f8eb5d6f9cc29ac2840d58edeaf27ec09ef2fd47d6c941ec97467616bafd6ea",
+      "Name": "/symbolic-e2e-best-fullsuite-v2",
+      "Image": "sha256:39fb2c87257e902eb1cc9f5eb23bed0e5ea2a44742b4c623dedb664b2a00d48c",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:24:03.663045537Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:20:55.08656198Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "955192109ee4d5a27e6c29f2dbb6a0570d0326e9b63f8444c1205e91150c5820",
+      "Name": "/symbolic-e2e-best-fullsuite",
+      "Image": "sha256:39fb2c87257e902eb1cc9f5eb23bed0e5ea2a44742b4c623dedb664b2a00d48c",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-14T13:19:09.289759869Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:16:03.663316753Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "7cb3db5639d533895a25c5d9199efa7fb623a1dec351012d885ed873995debca",
+      "Name": "/symbolic-e2e-best-operator-native-v2",
+      "Image": "sha256:065b083b0d4e022532472249350165171044869da4ba9a57781fe48cb2b41a09",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:15:14.74340108Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:14:42.668306745Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "507ba3a64716261e043b3af87f43eee0a225c2b2b9ecf04f77237764700cee55",
+      "Name": "/symbolic-e2e-best-operator-native",
+      "Image": "sha256:065b083b0d4e022532472249350165171044869da4ba9a57781fe48cb2b41a09",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-14T13:14:35.454564805Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:14:35.247472637Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "cafde71ef4db0c4f621c353775ff8e4b1c2f8fa34b7e234d642cb81e4e4dfde3",
+      "Name": "/symbolic-e2e-best-native-test",
+      "Image": "sha256:065b083b0d4e022532472249350165171044869da4ba9a57781fe48cb2b41a09",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:13:50.433476356Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:13:46.066404307Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "c52e863ab64d35560cd27ec4a4bbf194d64cce33fd068ce956213de10f58bde7",
+      "Name": "/symbolic-e2e-timedfun-probe",
+      "Image": "sha256:065b083b0d4e022532472249350165171044869da4ba9a57781fe48cb2b41a09",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:08:45.756750369Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:08:42.898725654Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "1ef794221f292595f787d14aef75606aac297957cc5b4dfdad2a1ac7a8652f65",
+      "Name": "/symbolic-concrete-actual-age-v4",
+      "Image": "sha256:39fb2c87257e902eb1cc9f5eb23bed0e5ea2a44742b4c623dedb664b2a00d48c",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:06:45.067642923Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:06:17.391708134Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "f1d72f0a119ee07d70921ae4cc9c8c024a955226ba8f98ba211c5e5d46626179",
+      "Name": "/symbolic-concrete-actual-age-v3",
+      "Image": "sha256:39fb2c87257e902eb1cc9f5eb23bed0e5ea2a44742b4c623dedb664b2a00d48c",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-14T13:06:05.849207847Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:05:57.092485036Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "9f3e39b81f2e9fe672e8e79771c1c0d438fd5eb8387f89735b60e36633dee973",
+      "Name": "/symbolic-concrete-actual-age-v2",
+      "Image": "sha256:39fb2c87257e902eb1cc9f5eb23bed0e5ea2a44742b4c623dedb664b2a00d48c",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:04:49.878405958Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:04:19.322156093Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "d15bb40fb56a453b6a5f6076bad6139dca690028782102190849900b3c0adad8",
+      "Name": "/symbolic-concrete-actual-age",
+      "Image": "sha256:39fb2c87257e902eb1cc9f5eb23bed0e5ea2a44742b4c623dedb664b2a00d48c",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-14T13:03:47.850613782Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:03:46.051602514Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "fc3cc02219e1c46a89eb9b15398c7a0cbb27b50afeca6e74d642b2a65d415e5c",
+      "Name": "/symbolic-pysr-units-normal",
+      "Image": "sha256:39fb2c87257e902eb1cc9f5eb23bed0e5ea2a44742b4c623dedb664b2a00d48c",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:01:04.685934545Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T13:00:27.220937282Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "d04c57bc28a8267c328fe127e7e6b1e114cd7342534abdb1dd5980c939bde3e3",
+      "Name": "/symbolic-pysr-units-installed-v2",
+      "Image": "sha256:39fb2c87257e902eb1cc9f5eb23bed0e5ea2a44742b4c623dedb664b2a00d48c",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T13:00:16.259361665Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:59:38.000328438Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "e9862f0827348bcdbada06d537dfd9f143c26a681e91945b4ddc497a7d0b1e0c",
+      "Name": "/symbolic-pysr-units-installed",
+      "Image": "sha256:39fb2c87257e902eb1cc9f5eb23bed0e5ea2a44742b4c623dedb664b2a00d48c",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-14T12:59:16.336764366Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:58:53.807490284Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "1959da11f0b0ed00b6db73c79fb11e4155d590a1b3867e82bbd54db094886b09",
+      "Name": "/symbolic-unit-fullsuite",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T12:58:33.740655244Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:50:12.702809561Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "9b12db2ea7ed72b6c0a8d373e3fdc2e23bfa3aa730d2ec7f1b349319dc865beb",
+      "Name": "/symbolic-pysr-unit-native-loss",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T12:50:04.304883994Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:49:42.870875539Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "54559a9766cfe4f95a49c0cd800088239676d3e3ce285596ee9f91b7233da9b6",
+      "Name": "/symbolic-pysr-unit-native-tests",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T12:49:40.877024958Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:49:31.326311269Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "ac8182245319fdd59c3c6b11d9b4cc28701e37d349a28a07f9c93256f4b16456",
+      "Name": "/symbolic-pysr-unit-integration",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T12:48:14.010021598Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:47:52.948168078Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "97dc58f27ad2039978ced80f8f92690cf4a32985cdc2773d1e079316d510a1ef",
+      "Name": "/symbolic-pysr-unit-mechanism",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T12:42:20.314202499Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:42:13.076642298Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "305f06e93f44e7807fb11b473c6e9753c4342d8080798baa7e8d1166b951c39e",
+      "Name": "/symbolic-torch-dimensional-response-mechanism",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T12:41:19.958367893Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:41:15.20330996Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "b38926cd57fbe6646f97778eaf5ff19f2e7184326c9e270e6bf7e8fe2cc00a4c",
+      "Name": "/symbolic-main-response-source-verify-v2-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T12:34:04.663345584Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:34:00.092334642Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "8c918158ae90fff78cbc86aff2ddaf3b8f0158eaf78a211d9b1c1079bd1fc431",
+      "Name": "/symbolic-main-response-source-verify-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-14T12:33:18.034128291Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:33:14.741377066Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "b4f028bae1ff1ed26fb7031cea9e5dbfc47a9cc0dd498d0c11b67e4f7bb2f324",
+      "Name": "/symbolic-main-response-output-concrete-public-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T12:33:11.137956858Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:32:11.590073576Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "05e178991341b416f3aed39d5a2e35d12413f4acd0ec098a26a2ee747cb2b5eb",
+      "Name": "/symbolic-main-response-output-concrete-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T12:31:14.20922055Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:30:24.451561734Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "7e53936c85653813207804c39d1ffa5ea03b960af872520d163d17d4e068089d",
+      "Name": "/symbolic-main-response-test-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T12:29:22.373014294Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:28:34.757345Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "270cda555e3e67a7b483fe40b66ffbb854bbc7d6c8e319dd50b45113b3cf6228",
+      "Name": "/symbolic-main-response-select-concrete-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T12:26:34.954374469Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:20:15.549826427Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "0f35a727b353b099439d7ec3704937de4ff53b39b9c06e4c609c608c20b74785",
+      "Name": "/symbolic-main-response-concrete-e2e-20261114",
+      "Image": "sha256:065b083b0d4e022532472249350165171044869da4ba9a57781fe48cb2b41a09",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T12:20:01.543769624Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:09:07.394063377Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "ad73d8f77c215948376eb882dbe7a7329387e8eb138270ffa5d41ae78328f262",
+      "Name": "/symbolic-main-response-concrete-physo-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T12:09:06.67420733Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:02:03.754630327Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "310037d035f959cd6c7d3ae088487c0857d0f9f46f30d737fcee9e45188e9735",
+      "Name": "/symbolic-main-response-concrete-torchsisso-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T12:02:03.395732717Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T12:01:48.546745982Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "0c83fc28179c2d785995f975b3d37961950effe7d3aea4d2bdbbfd2e3bab20d8",
+      "Name": "/symbolic-main-response-baseline-selection-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T11:51:09.413233747Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:51:06.303941312Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "c5e2140ee81f2e90e4531c2832dc99c494534d0808de51240db3aa2dabf2150e",
+      "Name": "/symbolic-main-response-concrete-parfam-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T12:01:48.193817151Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:50:58.238822664Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "d994942a8f2d743392600e582b9038b781982f35aa371e927216c28732931574",
+      "Name": "/symbolic-main-response-between-points-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T11:50:44.408210122Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:50:39.377248475Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "6ef1806fe390adffb93ea4b1695a82c9745a8198165c19dab258f24a70600e06",
+      "Name": "/symbolic-main-response-output-synthetic-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T11:49:34.079557093Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:48:58.82709549Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "42ca5395e4d8d34cb19de432acd955816d4457de5ef929b6cfc8e6762b6574e5",
+      "Name": "/symbolic-main-response-baselines-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T11:48:37.492607846Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:48:24.406006609Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "42d1cbf60e92650ba57c147c71fac86502be8f22fd5f5367429cc81fd74044bc",
+      "Name": "/symbolic-main-response-concrete-pysr-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T11:50:57.849979222Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:45:33.704061768Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "9b61cfa85090a0db68edc51bc2eb2035f9dca51131473a69cd4088a5f0944400",
+      "Name": "/symbolic-main-response-select-synthetic-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T11:48:24.253897144Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:45:33.533357001Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "cdd2243258a697c320185b404bf57401b45a6bc2c3aa437540f3e9e3d9368f96",
+      "Name": "/symbolic-main-response-e2e-retry-20261114",
+      "Image": "sha256:065b083b0d4e022532472249350165171044869da4ba9a57781fe48cb2b41a09",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T11:45:33.320350663Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:43:34.316777928Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "03989f2a3854d87a2c3a69f469c061ab9ce5aea0a1b2e6235067602c0ebe3cbb",
+      "Name": "/symbolic-main-response-e2e-20261114",
+      "Image": "sha256:065b083b0d4e022532472249350165171044869da4ba9a57781fe48cb2b41a09",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T11:42:12.223893693Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:41:59.898094102Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "624f4225c417e646bb89f404a4d45bdcd15d2544789bd5fbb4a5fc43301ffeac",
+      "Name": "/symbolic-main-response-physo-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T11:41:59.200584094Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:36:20.450713542Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "a21e162319614d6894f143d58f8c821f9ef6bda16907942d27836087f5690ee3",
+      "Name": "/symbolic-main-response-torchsisso-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T11:36:20.053501034Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:36:04.989736099Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "4e542449e54508ae48ab279d7706eaa590af6c2d18133d8b478cf334aa8c3b73",
+      "Name": "/symbolic-main-response-parfam-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T11:36:04.631147961Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:29:22.631790739Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "8a8a21586abb3011918fabbdd9d0ef7f058ff86f6796ce2cd2259f1ba05a93fe",
+      "Name": "/symbolic-main-response-pysr-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T11:29:13.433209293Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:28:16.271156358Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "59c1b51968946bfe461a38c3ac98e3bd2804d620049c4712a23324b5e9bde548",
+      "Name": "/symbolic-physo-response-normal-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T11:20:27.902700919Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:20:20.705124719Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "b0af493f198d8e8b5e6dd3448a3a1330bb455f2bf2f7173c152ca765901fa635",
+      "Name": "/symbolic-physo-response-installed-20261114",
+      "Image": "sha256:c96dd41a2e50c599456e02f59614605cc9237a486aa2c09be673ea82f05054be",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T11:19:43.000394197Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:19:35.699492737Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "5f89e926237d63bcdc3adc1d294ee0cc47dceb48f868053dd7a6f87fbfc8eff6",
+      "Name": "/symbolic-torch-response-normal-20261114",
+      "Image": "sha256:5c7df01c170cafad5c92ccd5075d101f3c4dc063b2e04b6f4047f612f6c072a5",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T11:03:05.522291028Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:02:59.322397698Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "f325d1bf4baadcfaaa7308c5fbced9e32712dd96e523329f0d16436dd3ed5f8b",
+      "Name": "/symbolic-torch-response-installed-20261114",
+      "Image": "sha256:5c7df01c170cafad5c92ccd5075d101f3c4dc063b2e04b6f4047f612f6c072a5",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T11:01:17.608505038Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T11:01:11.35188424Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "dcc7dde0005391a2ef62cc1440a010383fc675f04fb421877f43a51aa9d012a4",
+      "Name": "/symbolic-ccpp-e2e-full-score",
+      "Image": "sha256:bdc532d7fcb7021e1a57810de876bfa8b2ad5ef7cd29762334fda5d14689acd9",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T07:31:56.387843537Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T07:31:22.960308391Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "fe4c5d6517308d9dfbf836449cbe94f523c9f4ee5884d35f4661926d6ddf56b5",
+      "Name": "/symbolic-ccpp-e2e-full",
+      "Image": "sha256:95443a6a5f3745cf3879cc48fb0b976842f1b951f707c2bb744eb541c10d93da",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T07:30:23.591593611Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T07:21:54.663739448Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "4437a845431042845f391104ad8afd3a5fa88833dff3ed1a90478976b45ad5aa",
+      "Name": "/symbolic-e2e-full-native",
+      "Image": "sha256:95443a6a5f3745cf3879cc48fb0b976842f1b951f707c2bb744eb541c10d93da",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T07:20:09.676069877Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T07:19:30.172826393Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "7cbc614fecd5c0254af23aef7ce20c2e9caf2451d66a7973f29a72bab044924e",
+      "Name": "/symbolic-ccpp-physo-quality",
+      "Image": "sha256:f06573dc5a7810a0592637c2a0297fc4281f72e22c8459f607c99fb3718b102e",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T07:15:35.764029779Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T07:11:23.532195286Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "7b54dc2964c47e8f90be1d1a6f2c5f1dc2a9f70111cc49d0f86beb8ad49b80be",
+      "Name": "/symbolic-ccpp-e2e-6g",
+      "Image": "sha256:95443a6a5f3745cf3879cc48fb0b976842f1b951f707c2bb744eb541c10d93da",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T07:10:34.760843812Z",
+        "OOMKilled": true,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T07:09:52.591212272Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "71778e9a0c15f7853ad04f68bafb285354ff0db70bd950449268ecb042f196e6",
+      "Name": "/symbolic-ccpp-physo",
+      "Image": "sha256:f06573dc5a7810a0592637c2a0297fc4281f72e22c8459f607c99fb3718b102e",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-14T07:09:24.946040316Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-11-14T07:08:46.360621497Z",
+        "Status": "exited"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "fa0946debb1e4b21f325b55b60f3f9e9e7cf46ccf630f233f5a8184187998cd6",
+      "Name": "/ml-platform-f9cb5856fe06-controller-1",
+      "Image": "sha256:714c557c9046bb9e70a75e17e7bf0baaea3a93ac5fe1889948088cd948f1295e",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-15T19:18:09.527434537Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": true,
+        "Running": true,
+        "StartedAt": "2026-11-15T19:18:08.815967619Z",
+        "Status": "restarting"
+      },
+      "RestartCount": 3896
+    },
+    {
+      "Id": "daeab967ab72701d00782adb25f5a4dda270ecfa44b089ee3a1e4926a4a5b481",
+      "Name": "/ml-platform-f9cb5856fe06-worker-2",
+      "Image": "sha256:714c557c9046bb9e70a75e17e7bf0baaea3a93ac5fe1889948088cd948f1295e",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-15T19:17:18.338189687Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": true,
+        "Running": true,
+        "StartedAt": "2026-11-15T19:17:17.655550765Z",
+        "Status": "restarting"
+      },
+      "RestartCount": 3879
+    },
+    {
+      "Id": "e40381698b5164470ad140eb8fded25ff594570e1f56823239fabe731c2d7ff4",
+      "Name": "/ml-platform-f9cb5856fe06-worker-1",
+      "Image": "sha256:714c557c9046bb9e70a75e17e7bf0baaea3a93ac5fe1889948088cd948f1295e",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-15T19:18:08.714752404Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": true,
+        "Running": true,
+        "StartedAt": "2026-11-15T19:18:08.034232702Z",
+        "Status": "restarting"
+      },
+      "RestartCount": 3896
+    },
+    {
+      "Id": "0ed9d0603ddfc262b1e17a5fadf50fbc41ae5e372643e667e2ed1d109b62fb68",
+      "Name": "/ml-platform-clearml-agents-worker-1",
+      "Image": "sha256:7e781bbe59d68086ba68b5a52c155dcd9e172204c0224170f5b9a477cd6f9372",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-13T01:48:39.623269959Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 2392,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-11-13T01:48:39.859722501Z",
+        "Status": "running"
+      },
+      "RestartCount": 2
+    },
+    {
+      "Id": "df49a0baf4b22941c14bb7d29d2544ca5ddbb51ff4b3bdd9a127ac8f02fd444e",
+      "Name": "/ml-platform-clearml-agents-controller-1",
+      "Image": "sha256:7e781bbe59d68086ba68b5a52c155dcd9e172204c0224170f5b9a477cd6f9372",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 1,
+        "FinishedAt": "2026-11-15T19:17:44.784341471Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": true,
+        "Running": true,
+        "StartedAt": "2026-11-15T19:17:44.18437123Z",
+        "Status": "restarting"
+      },
+      "RestartCount": 3895
+    },
+    {
+      "Id": "d580dc1baee03c7dff16b3f86f50bb703b6be2107c038393eed97e2e4c7efab6",
+      "Name": "/ml-platform-clearml-agents-worker-2",
+      "Image": "sha256:7e781bbe59d68086ba68b5a52c155dcd9e172204c0224170f5b9a477cd6f9372",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-13T01:48:39.642346184Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 2434,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-11-13T01:48:39.913397445Z",
+        "Status": "running"
+      },
+      "RestartCount": 2
+    },
+    {
+      "Id": "26431ac5b17d95768cd38a49db4eca15ef3b034b89a63ec1fc4036cde98b4d97",
+      "Name": "/clearml-webserver",
+      "Image": "sha256:5ec4aed2e40c619da63198c22e765a00b4e3e5c06081a9c0a4ae237df66fb7bb",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-13T01:48:07.131011478Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 869,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-11-13T01:48:07.914942816Z",
+        "Status": "running"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "0a7f546504017f9108492b1f3fa05d86742a02611f008de1d5060f943450f423",
+      "Name": "/async_delete",
+      "Image": "sha256:5ec4aed2e40c619da63198c22e765a00b4e3e5c06081a9c0a4ae237df66fb7bb",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-13T01:48:07.131049734Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 804,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-11-13T01:48:07.911750189Z",
+        "Status": "running"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "b8f1d03d9531b06e02efe40eb9d90bf48c4e5344ae9fb320f9814d2864fcc789",
+      "Name": "/clearml-apiserver",
+      "Image": "sha256:5ec4aed2e40c619da63198c22e765a00b4e3e5c06081a9c0a4ae237df66fb7bb",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-13T01:48:07.125901332Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 857,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-11-13T01:48:07.905530505Z",
+        "Status": "running"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "167ed835ffbdcfa4093cac1acebd7a6feb9874df4577c37c49d2b91eb8959f79",
+      "Name": "/clearml-redis",
+      "Image": "sha256:bb142a9c18ac18a16713c1491d779697b4e107c22a97266616099d288237ef47",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-13T01:48:07.129688695Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 811,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-11-13T01:48:07.88793748Z",
+        "Status": "running"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "bc8dd3c601db672ca4119ac4c6d800aab5afdb4e0669ef922e203ae1ec046805",
+      "Name": "/clearml-fileserver",
+      "Image": "sha256:5ec4aed2e40c619da63198c22e765a00b4e3e5c06081a9c0a4ae237df66fb7bb",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-13T01:48:40.14829846Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 2620,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-11-13T01:48:40.486309542Z",
+        "Status": "running"
+      },
+      "RestartCount": 2
+    },
+    {
+      "Id": "3d3b59ddedb6e397f0dec23adc1c5e0b5e1efe492821517a4873a85296bb8a81",
+      "Name": "/clearml-elastic",
+      "Image": "sha256:0681af5779b516b0652df86aa1db52e225f2d4e68bb3a3099534377b7f788739",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-13T01:48:07.126610701Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 965,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-11-13T01:48:07.932810662Z",
+        "Status": "running"
+      },
+      "RestartCount": 0
+    },
+    {
+      "Id": "bf07b7380be196fbe21b2884396d27b437a6753f907aedbadf7fce2f7d7458d0",
+      "Name": "/clearml-mongo",
+      "Image": "sha256:93a90c2ee50cc151797f668908835896bd2fa0703a69a4716f90453ea0fd355c",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-11-11T15:29:15.575268536Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 855,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-11-13T01:48:07.923515613Z",
+        "Status": "running"
+      },
+      "RestartCount": 0
+    }
+  ],
+  "scope": "ID/name/image preservation only; natural process state/restarts are not claimed invariant. New owned follow-up containers retained."
+}

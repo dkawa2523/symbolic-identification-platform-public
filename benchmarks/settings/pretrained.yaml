@@ -1,0 +1,28 @@
+# Overlay for a complete problem configuration; not a standalone run.
+search:
+  engines: [rasr, flash_ansr, e2e]
+  seeds: [42, 43, 44]
+  max_wall_seconds: 1200
+  max_export_candidates: 200
+  engine_options:
+    rasr:
+      candidates: 1024
+      decode_batch_size: 16
+      restarts: 4
+    flash_ansr:
+      draws: 1024
+    e2e:
+      beam_size: 8
+      max_input_points: 200
+      n_trees_to_refine: 8
+      refinement_seconds: 2
+      max_generated_output_len: 128
+model_assets:
+  rasr:
+    manifest_file: pretrained/rasr/manifest.json
+  flash_ansr:
+    manifest_file: pretrained/flash/manifest.json
+  e2e:
+    manifest_file: pretrained/e2e/manifest.json
+evaluation:
+  coefficient_fit: none

@@ -1,0 +1,94 @@
+Final: observed and predicted values
+X: Observed [1]
+Y: Predicted [1]
+
+1. pysr
+Candidate: pysr/17/5@native
+Variant: native; seed: 17
+Eligible: True; reason: None
+Equation (public): y [1] = ((x * coef['c0']) + ((coef['c1'] / (x + coef['c2'])) * x))
+  coef['c0'] = 0.7703912336607768 [unit unknown]
+  coef['c1'] = 1.877267579757631 [unit unknown]
+  coef['c2'] = 0.9109618476254446 [unit unknown]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)
+
+2. parfam
+Candidate: parfam/17/0@native
+Variant: native; seed: 17
+Eligible: True; reason: None
+Equation (public): y [1] = (((coef['c0'] + (coef['c1'] * x)) + ((coef['c2'] * x) * x)) / (coef['c3'] + (coef['c4'] * x)))
+  coef['c0'] = 0.009347708239925461 [unit unknown]
+  coef['c1'] = -1.8825575906968812 [unit unknown]
+  coef['c2'] = -0.5990912976950008 [unit unknown]
+  coef['c3'] = -0.642589919324488 [unit unknown]
+  coef['c4'] = -0.7662102815693276 [unit unknown]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)
+
+3. torchsisso
+Candidate: torchsisso/17/0@native
+Variant: native; seed: 17
+Eligible: True; reason: None
+Equation (public): y [1] = (coef['intercept'] + (coef['c0'] * x))
+  coef['intercept'] = 0.6060914352361366 [1]
+  coef['c0'] = 1.0556197726450176 [1]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)
+
+4. physo
+Candidate: physo/17/7@native
+Variant: native; seed: 17
+Eligible: True; reason: None
+Equation (public): y [1] = (1.0 / ((((((coef['c0'] + x) - 1.0) / coef['c0']) * coef['c1']) / coef['c0']) / x))
+  coef['c0'] = 5.807498019534802 [1]
+  coef['c1'] = 3.4298887564116494 [1]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)
+
+5. e2e
+Candidate: e2e/17/46@native
+Variant: native; seed: 17
+Eligible: True; reason: None
+Equation (public): y [1] = (coef['c1'] + (coef['c3'] * (1 / (coef['c6'] + (coef['c8'] * (1 / ((coef['c12'] + (coef['c14'] * (1 / ((coef['c18'] + (coef['c20'] * ((x - coef['x0_mean']) / coef['x0_scale']))) - (coef['c23'] + (coef['c25'] * (1 / (coef['c28'] + (coef['c30'] * ((x - coef['x0_mean']) / coef['x0_scale'])))))))))) * (coef['c33'] + (coef['c35'] * ((x - coef['x0_mean']) / coef['x0_scale']))))))))))
+  coef['c1'] = -2.4280176468965298 [unit unknown]
+  coef['c3'] = 4.293707903262057 [unit unknown]
+  coef['c6'] = 0.41380759114440707 [unit unknown]
+  coef['c8'] = 0.13661937611615957 [unit unknown]
+  coef['c12'] = 0.03132134191208994 [unit unknown]
+  coef['c14'] = -1.1008760245063571 [unit unknown]
+  coef['c18'] = -0.8854183325965032 [unit unknown]
+  coef['c20'] = 4.610025138879653 [unit unknown]
+  coef['x0_mean'] = 1.9634916034894223 [1]
+  coef['x0_scale'] = 1.0820323259523998 [1]
+  coef['c23'] = -0.20344166185285018 [unit unknown]
+  coef['c25'] = -4.2770720481479145 [unit unknown]
+  coef['c28'] = 0.0999163742809262 [unit unknown]
+  coef['c30'] = 0.010935096832285716 [unit unknown]
+  coef['c33'] = 64.42540312365837 [unit unknown]
+  coef['c35'] = 26.841401469537267 [unit unknown]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)
+
+6. mean
+Candidate: mean/17/0@native
+Variant: native; seed: 17
+Eligible: True; reason: None
+Equation (public): y [1] = coef['c0']
+  coef['c0'] = 2.6787919685141217 [1]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)
+
+7. linear
+Candidate: linear/17/1@native
+Variant: native; seed: 17
+Eligible: True; reason: None
+Equation (public): y [1] = ((coef['c0'] * x) + coef['c1'])
+  coef['c0'] = 1.0556197374929093 [1]
+  coef['c1'] = 0.6060914981960914 [1]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)
+
+Scope: holdout under explicit user declaration
+
+Exact rows and provenance: matching CSV and plot_data.json.

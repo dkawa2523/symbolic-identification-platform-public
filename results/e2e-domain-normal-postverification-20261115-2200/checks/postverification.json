@@ -1,0 +1,4898 @@
+{
+  "scope": "post-hoc raw-AST and saved-model verification; no native search/refit",
+  "final_accessed": false,
+  "arms": {
+    "known_on": {
+      "inputs_sha256": {
+        "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/known_on/calculation/prepare/run.json": "3763b8ffa7815070750f581fecba9bb13bdf9bb0e67ab92138f2f21a39536542",
+        "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/known_on/calculation/discover/e2e/731/engine_summary.json": "aef09e0306c41a2ae8ee3099c9c1b251c9ef96f3d5ae6e35bd0d9f3f4b57e14a",
+        "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/known_on/calculation/discover/e2e/731/candidates.jsonl": "ccd0ed2a7df6a31314e8c8e7cd7cf4489e0cd395b4b2d7efdfa90079c903ea87"
+      },
+      "bundles": [
+        {
+          "candidate_id": "e2e/731/0/known-affine-fit",
+          "bundle_sha256": "51ba33285e017f000cce10311bbfe6997c8fb0dddecb2324ec47de13d0fe040e",
+          "working_equation_sha256": "7cf3ee19885b46a99d3785bfbe34cf946242c0a4788da11de0af08126d628b8f",
+          "source_equation": {
+            "schema_version": 2,
+            "ast": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "const": 0.5
+                    },
+                    {
+                      "var": "source_0"
+                    }
+                  ]
+                },
+                {
+                  "op": "sub",
+                  "args": [
+                    {
+                      "op": "sub",
+                      "args": [
+                        {
+                          "op": "add",
+                          "args": [
+                            {
+                              "param": "__slot_h_c3"
+                            },
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "param": "__slot_h_c5"
+                                },
+                                {
+                                  "op": "div",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "var": "source_0"
+                                        },
+                                        {
+                                          "param": "__slot_h_x0_mean"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_scale"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "add",
+                          "args": [
+                            {
+                              "param": "__slot_h_c8"
+                            },
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "param": "__slot_h_c10"
+                                },
+                                {
+                                  "op": "div",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "var": "source_0"
+                                        },
+                                        {
+                                          "param": "__slot_h_x0_mean"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_scale"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "param": "__slot_h_c13"
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "__slot_h_c15"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "var": "source_0"
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_mean"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "param": "__slot_h_x0_scale"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "__slot_h_c10": {
+                "value": -0.5989817468130658,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c13": {
+                "value": -0.06744333333333331,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c15": {
+                "value": 0.007578253186934212,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c3": {
+                "value": 0.010213333333333307,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c5": {
+                "value": -0.028418253186934216,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c8": {
+                "value": -0.12234333333333332,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_x0_mean": {
+                "value": -4.5102810375396984e-17,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "__slot_h_x0_scale": {
+                "value": 0.4691543670326645,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              }
+            },
+            "arithmetic": "strict_real"
+          },
+          "source_variables_with_explicit_policy_domain": [
+            {
+              "id": "source_0",
+              "column": "x",
+              "unit": "1",
+              "domain": [
+                -1.0,
+                1.0
+              ],
+              "coordinate_role": null
+            }
+          ],
+          "posthoc_default_budget_proof": {
+            "scope": "all intermediate rational divisors on one declared closed interval",
+            "method": "exact_Fraction_interval_exclusion_and_Sturm",
+            "budgets": {
+              "max_nodes": 256,
+              "max_degree": 32,
+              "max_integer_bits": 4096,
+              "max_operations": 20000
+            },
+            "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+            "not_certified": [
+              "IEEE_finiteness",
+              "conditioning",
+              "monotonicity",
+              "physical_validity"
+            ],
+            "checked_divisors": [
+              {
+                "path": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  1,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              }
+            ],
+            "interval": [
+              -1.0,
+              1.0
+            ],
+            "status": "safe",
+            "reason": "every_intermediate_divisor_proved_nonzero",
+            "arithmetic_operations": 150
+          },
+          "checks": [
+            {
+              "set": "train",
+              "rows": 64,
+              "exact": true,
+              "all_finite": true
+            },
+            {
+              "set": "independent_and_endpoints",
+              "rows": 6,
+              "exact": true,
+              "all_finite": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "e2e/731/1/known-affine-fit",
+          "bundle_sha256": "8283b931125d8347ff737fb1f8618656642a351fb4649c3d5e9bb6e2625eb07d",
+          "working_equation_sha256": "1bbbe5ffd79b9fab9b1284a2ae0075cab942c9faa802b48d4acfefa51731c64f",
+          "source_equation": {
+            "schema_version": 2,
+            "ast": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "const": 0.5
+                    },
+                    {
+                      "var": "source_0"
+                    }
+                  ]
+                },
+                {
+                  "op": "sub",
+                  "args": [
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "param": "__slot_h_c2"
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "__slot_h_c4"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "var": "source_0"
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_mean"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "param": "__slot_h_x0_scale"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "param": "__slot_h_c7"
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "__slot_h_c9"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "var": "source_0"
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_mean"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "param": "__slot_h_x0_scale"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "__slot_h_c2": {
+                "value": 0.12779997698683343,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c4": {
+                "value": 0.6298425378804642,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c7": {
+                "value": -0.07219999887689287,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c9": {
+                "value": 0.06685736809463069,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_x0_mean": {
+                "value": -4.5102810375396984e-17,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "__slot_h_x0_scale": {
+                "value": 0.4691543670326645,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              }
+            },
+            "arithmetic": "strict_real"
+          },
+          "source_variables_with_explicit_policy_domain": [
+            {
+              "id": "source_0",
+              "column": "x",
+              "unit": "1",
+              "domain": [
+                -1.0,
+                1.0
+              ],
+              "coordinate_role": null
+            }
+          ],
+          "posthoc_default_budget_proof": {
+            "scope": "all intermediate rational divisors on one declared closed interval",
+            "method": "exact_Fraction_interval_exclusion_and_Sturm",
+            "budgets": {
+              "max_nodes": 256,
+              "max_degree": 32,
+              "max_integer_bits": 4096,
+              "max_operations": 20000
+            },
+            "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+            "not_certified": [
+              "IEEE_finiteness",
+              "conditioning",
+              "monotonicity",
+              "physical_validity"
+            ],
+            "checked_divisors": [
+              {
+                "path": [
+                  1,
+                  0,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              }
+            ],
+            "interval": [
+              -1.0,
+              1.0
+            ],
+            "status": "safe",
+            "reason": "every_intermediate_divisor_proved_nonzero",
+            "arithmetic_operations": 102
+          },
+          "checks": [
+            {
+              "set": "train",
+              "rows": 64,
+              "exact": true,
+              "all_finite": true
+            },
+            {
+              "set": "independent_and_endpoints",
+              "rows": 6,
+              "exact": true,
+              "all_finite": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "e2e/731/2/known-affine-fit",
+          "bundle_sha256": "78d8e68eb521fdf9db09e3dd60bc92470bff2b1f1a344028cf95d61a6387eb26",
+          "working_equation_sha256": "1da0719a7c3180f18afd26e093bf073626e05fba2cd5a1cfd3ea05da30932597",
+          "source_equation": {
+            "schema_version": 2,
+            "ast": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "const": 0.5
+                    },
+                    {
+                      "var": "source_0"
+                    }
+                  ]
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "param": "__slot_h_c2"
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "__slot_h_c4"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "var": "source_0"
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_mean"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "param": "__slot_h_x0_scale"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "param": "__slot_h_c7"
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "__slot_h_c9"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "var": "source_0"
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_mean"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "param": "__slot_h_x0_scale"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "__slot_h_c2": {
+                "value": 0.005235589653595555,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c4": {
+                "value": 0.01473779911860164,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c7": {
+                "value": 38.200089419511684,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c9": {
+                "value": 2.767707861995718e-07,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_x0_mean": {
+                "value": -4.5102810375396984e-17,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "__slot_h_x0_scale": {
+                "value": 0.4691543670326645,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              }
+            },
+            "arithmetic": "strict_real"
+          },
+          "source_variables_with_explicit_policy_domain": [
+            {
+              "id": "source_0",
+              "column": "x",
+              "unit": "1",
+              "domain": [
+                -1.0,
+                1.0
+              ],
+              "coordinate_role": null
+            }
+          ],
+          "posthoc_default_budget_proof": {
+            "scope": "all intermediate rational divisors on one declared closed interval",
+            "method": "exact_Fraction_interval_exclusion_and_Sturm",
+            "budgets": {
+              "max_nodes": 256,
+              "max_degree": 32,
+              "max_integer_bits": 4096,
+              "max_operations": 20000
+            },
+            "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+            "not_certified": [
+              "IEEE_finiteness",
+              "conditioning",
+              "monotonicity",
+              "physical_validity"
+            ],
+            "checked_divisors": [
+              {
+                "path": [
+                  1,
+                  0,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              }
+            ],
+            "interval": [
+              -1.0,
+              1.0
+            ],
+            "status": "safe",
+            "reason": "every_intermediate_divisor_proved_nonzero",
+            "arithmetic_operations": 103
+          },
+          "checks": [
+            {
+              "set": "train",
+              "rows": 64,
+              "exact": true,
+              "all_finite": true
+            },
+            {
+              "set": "independent_and_endpoints",
+              "rows": 6,
+              "exact": true,
+              "all_finite": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "e2e/731/3/known-affine-fit",
+          "bundle_sha256": "866dfbafb96c062ea6187e077f04967c67d3fa50490e2a7543c543765a2ef83d",
+          "working_equation_sha256": "7aa940b8da6e8c9aa0b9c9eb23ff9bb6c0ada5308ed25ca16287bf6715017615",
+          "source_equation": {
+            "schema_version": 2,
+            "ast": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "const": 0.5
+                    },
+                    {
+                      "var": "source_0"
+                    }
+                  ]
+                },
+                {
+                  "op": "add",
+                  "args": [
+                    {
+                      "param": "__slot_h_c1"
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "param": "__slot_h_c3"
+                        },
+                        {
+                          "op": "div",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "var": "source_0"
+                                },
+                                {
+                                  "param": "__slot_h_x0_mean"
+                                }
+                              ]
+                            },
+                            {
+                              "param": "__slot_h_x0_scale"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "__slot_h_c1": {
+                "value": 0.1999999999994495,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c3": {
+                "value": 0.5629852375445005,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_x0_mean": {
+                "value": -4.5102810375396984e-17,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "__slot_h_x0_scale": {
+                "value": 0.4691543670326645,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              }
+            },
+            "arithmetic": "strict_real"
+          },
+          "source_variables_with_explicit_policy_domain": [
+            {
+              "id": "source_0",
+              "column": "x",
+              "unit": "1",
+              "domain": [
+                -1.0,
+                1.0
+              ],
+              "coordinate_role": null
+            }
+          ],
+          "posthoc_default_budget_proof": {
+            "scope": "all intermediate rational divisors on one declared closed interval",
+            "method": "exact_Fraction_interval_exclusion_and_Sturm",
+            "budgets": {
+              "max_nodes": 256,
+              "max_degree": 32,
+              "max_integer_bits": 4096,
+              "max_operations": 20000
+            },
+            "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+            "not_certified": [
+              "IEEE_finiteness",
+              "conditioning",
+              "monotonicity",
+              "physical_validity"
+            ],
+            "checked_divisors": [
+              {
+                "path": [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              }
+            ],
+            "interval": [
+              -1.0,
+              1.0
+            ],
+            "status": "safe",
+            "reason": "every_intermediate_divisor_proved_nonzero",
+            "arithmetic_operations": 54
+          },
+          "checks": [
+            {
+              "set": "train",
+              "rows": 64,
+              "exact": true,
+              "all_finite": true
+            },
+            {
+              "set": "independent_and_endpoints",
+              "rows": 6,
+              "exact": true,
+              "all_finite": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "e2e/731/4/known-affine-fit",
+          "bundle_sha256": "750d02eb8817954d7216a06b74128a34536c95d9c4eed3e9a92564fa0b756339",
+          "working_equation_sha256": "7aa940b8da6e8c9aa0b9c9eb23ff9bb6c0ada5308ed25ca16287bf6715017615",
+          "source_equation": {
+            "schema_version": 2,
+            "ast": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "const": 0.5
+                    },
+                    {
+                      "var": "source_0"
+                    }
+                  ]
+                },
+                {
+                  "op": "add",
+                  "args": [
+                    {
+                      "param": "__slot_h_c1"
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "param": "__slot_h_c3"
+                        },
+                        {
+                          "op": "div",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "var": "source_0"
+                                },
+                                {
+                                  "param": "__slot_h_x0_mean"
+                                }
+                              ]
+                            },
+                            {
+                              "param": "__slot_h_x0_scale"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "__slot_h_c1": {
+                "value": 0.1999999999994495,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c3": {
+                "value": 0.5629852375445005,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_x0_mean": {
+                "value": -4.5102810375396984e-17,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "__slot_h_x0_scale": {
+                "value": 0.4691543670326645,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              }
+            },
+            "arithmetic": "strict_real"
+          },
+          "source_variables_with_explicit_policy_domain": [
+            {
+              "id": "source_0",
+              "column": "x",
+              "unit": "1",
+              "domain": [
+                -1.0,
+                1.0
+              ],
+              "coordinate_role": null
+            }
+          ],
+          "posthoc_default_budget_proof": {
+            "scope": "all intermediate rational divisors on one declared closed interval",
+            "method": "exact_Fraction_interval_exclusion_and_Sturm",
+            "budgets": {
+              "max_nodes": 256,
+              "max_degree": 32,
+              "max_integer_bits": 4096,
+              "max_operations": 20000
+            },
+            "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+            "not_certified": [
+              "IEEE_finiteness",
+              "conditioning",
+              "monotonicity",
+              "physical_validity"
+            ],
+            "checked_divisors": [
+              {
+                "path": [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              }
+            ],
+            "interval": [
+              -1.0,
+              1.0
+            ],
+            "status": "safe",
+            "reason": "every_intermediate_divisor_proved_nonzero",
+            "arithmetic_operations": 54
+          },
+          "checks": [
+            {
+              "set": "train",
+              "rows": 64,
+              "exact": true,
+              "all_finite": true
+            },
+            {
+              "set": "independent_and_endpoints",
+              "rows": 6,
+              "exact": true,
+              "all_finite": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "e2e/731/5/known-affine-fit",
+          "bundle_sha256": "b22ca0aa24015f2989f356f0b60f2e334ae87133f82080b337dab0f5782312f4",
+          "working_equation_sha256": "96dc9d1913eec8ad28eceecaa4b5f5d553593447b0f9bd04fe8e86c6e401c3b4",
+          "source_equation": {
+            "schema_version": 2,
+            "ast": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "const": 0.5
+                    },
+                    {
+                      "var": "source_0"
+                    }
+                  ]
+                },
+                {
+                  "op": "sub",
+                  "args": [
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "param": "__slot_h_c2"
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "__slot_h_c4"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "var": "source_0"
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_mean"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "param": "__slot_h_x0_scale"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "param": "__slot_h_c7"
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "__slot_h_c9"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "var": "source_0"
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_mean"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "param": "__slot_h_x0_scale"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "__slot_h_c2": {
+                "value": 0.1277984698371894,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c4": {
+                "value": 0.6295056003745846,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c7": {
+                "value": -0.07220153016780989,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c9": {
+                "value": 0.06652036171982165,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_x0_mean": {
+                "value": -4.5102810375396984e-17,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "__slot_h_x0_scale": {
+                "value": 0.4691543670326645,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              }
+            },
+            "arithmetic": "strict_real"
+          },
+          "source_variables_with_explicit_policy_domain": [
+            {
+              "id": "source_0",
+              "column": "x",
+              "unit": "1",
+              "domain": [
+                -1.0,
+                1.0
+              ],
+              "coordinate_role": null
+            }
+          ],
+          "posthoc_default_budget_proof": {
+            "scope": "all intermediate rational divisors on one declared closed interval",
+            "method": "exact_Fraction_interval_exclusion_and_Sturm",
+            "budgets": {
+              "max_nodes": 256,
+              "max_degree": 32,
+              "max_integer_bits": 4096,
+              "max_operations": 20000
+            },
+            "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+            "not_certified": [
+              "IEEE_finiteness",
+              "conditioning",
+              "monotonicity",
+              "physical_validity"
+            ],
+            "checked_divisors": [
+              {
+                "path": [
+                  1,
+                  0,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              }
+            ],
+            "interval": [
+              -1.0,
+              1.0
+            ],
+            "status": "safe",
+            "reason": "every_intermediate_divisor_proved_nonzero",
+            "arithmetic_operations": 102
+          },
+          "checks": [
+            {
+              "set": "train",
+              "rows": 64,
+              "exact": true,
+              "all_finite": true
+            },
+            {
+              "set": "independent_and_endpoints",
+              "rows": 6,
+              "exact": true,
+              "all_finite": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "e2e/731/6/known-affine-fit",
+          "bundle_sha256": "211e46b647c814571ea90320d8276056aaa20e02b0cbf29c02cea28e5fd0d73a",
+          "working_equation_sha256": "e8245878b97422818181064bbe48bb469c28c59d1a1b8dde60bb9427a0b63d1a",
+          "source_equation": {
+            "schema_version": 2,
+            "ast": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "const": 0.5
+                    },
+                    {
+                      "var": "source_0"
+                    }
+                  ]
+                },
+                {
+                  "op": "sub",
+                  "args": [
+                    {
+                      "op": "sub",
+                      "args": [
+                        {
+                          "op": "add",
+                          "args": [
+                            {
+                              "param": "__slot_h_c3"
+                            },
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "param": "__slot_h_c5"
+                                },
+                                {
+                                  "op": "div",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "var": "source_0"
+                                        },
+                                        {
+                                          "param": "__slot_h_x0_mean"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_scale"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "add",
+                          "args": [
+                            {
+                              "param": "__slot_h_c8"
+                            },
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "param": "__slot_h_c10"
+                                },
+                                {
+                                  "op": "div",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "var": "source_0"
+                                        },
+                                        {
+                                          "param": "__slot_h_x0_mean"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_scale"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "param": "__slot_h_c13"
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "__slot_h_c15"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "var": "source_0"
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_mean"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "param": "__slot_h_x0_scale"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "__slot_h_c10": {
+                "value": -0.5993245904704742,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c13": {
+                "value": -0.06744333787506354,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c15": {
+                "value": 0.0077496736339984105,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c3": {
+                "value": 0.010213324400981555,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c5": {
+                "value": -0.02858967632548116,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c8": {
+                "value": -0.122343337878823,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_x0_mean": {
+                "value": -4.5102810375396984e-17,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "__slot_h_x0_scale": {
+                "value": 0.4691543670326645,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              }
+            },
+            "arithmetic": "strict_real"
+          },
+          "source_variables_with_explicit_policy_domain": [
+            {
+              "id": "source_0",
+              "column": "x",
+              "unit": "1",
+              "domain": [
+                -1.0,
+                1.0
+              ],
+              "coordinate_role": null
+            }
+          ],
+          "posthoc_default_budget_proof": {
+            "scope": "all intermediate rational divisors on one declared closed interval",
+            "method": "exact_Fraction_interval_exclusion_and_Sturm",
+            "budgets": {
+              "max_nodes": 256,
+              "max_degree": 32,
+              "max_integer_bits": 4096,
+              "max_operations": 20000
+            },
+            "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+            "not_certified": [
+              "IEEE_finiteness",
+              "conditioning",
+              "monotonicity",
+              "physical_validity"
+            ],
+            "checked_divisors": [
+              {
+                "path": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  1,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              }
+            ],
+            "interval": [
+              -1.0,
+              1.0
+            ],
+            "status": "safe",
+            "reason": "every_intermediate_divisor_proved_nonzero",
+            "arithmetic_operations": 150
+          },
+          "checks": [
+            {
+              "set": "train",
+              "rows": 64,
+              "exact": true,
+              "all_finite": true
+            },
+            {
+              "set": "independent_and_endpoints",
+              "rows": 6,
+              "exact": true,
+              "all_finite": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "e2e/731/7/known-affine-fit",
+          "bundle_sha256": "e021229824967dbfaee581d27a6733939e6c1927cf66457443a6ffd9d725fadb",
+          "working_equation_sha256": "ba107fd8342b63f464699a27025f147fc001f9275566d04f53adcb53eea4924b",
+          "source_equation": {
+            "schema_version": 2,
+            "ast": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "const": 0.5
+                    },
+                    {
+                      "var": "source_0"
+                    }
+                  ]
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "param": "__slot_h_c2"
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "__slot_h_c4"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "var": "source_0"
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_mean"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "param": "__slot_h_x0_scale"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "param": "__slot_h_c7"
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "__slot_h_c9"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "var": "source_0"
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_mean"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "param": "__slot_h_x0_scale"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "__slot_h_c2": {
+                "value": 0.005209978737085377,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c4": {
+                "value": 0.014665701328803635,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c7": {
+                "value": 38.3878851901197,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c9": {
+                "value": -3.4117019927425746e-06,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_x0_mean": {
+                "value": -4.5102810375396984e-17,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "__slot_h_x0_scale": {
+                "value": 0.4691543670326645,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              }
+            },
+            "arithmetic": "strict_real"
+          },
+          "source_variables_with_explicit_policy_domain": [
+            {
+              "id": "source_0",
+              "column": "x",
+              "unit": "1",
+              "domain": [
+                -1.0,
+                1.0
+              ],
+              "coordinate_role": null
+            }
+          ],
+          "posthoc_default_budget_proof": {
+            "scope": "all intermediate rational divisors on one declared closed interval",
+            "method": "exact_Fraction_interval_exclusion_and_Sturm",
+            "budgets": {
+              "max_nodes": 256,
+              "max_degree": 32,
+              "max_integer_bits": 4096,
+              "max_operations": 20000
+            },
+            "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+            "not_certified": [
+              "IEEE_finiteness",
+              "conditioning",
+              "monotonicity",
+              "physical_validity"
+            ],
+            "checked_divisors": [
+              {
+                "path": [
+                  1,
+                  0,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              }
+            ],
+            "interval": [
+              -1.0,
+              1.0
+            ],
+            "status": "safe",
+            "reason": "every_intermediate_divisor_proved_nonzero",
+            "arithmetic_operations": 103
+          },
+          "checks": [
+            {
+              "set": "train",
+              "rows": 64,
+              "exact": true,
+              "all_finite": true
+            },
+            {
+              "set": "independent_and_endpoints",
+              "rows": 6,
+              "exact": true,
+              "all_finite": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "e2e/731/8/known-affine-fit",
+          "bundle_sha256": "77d7c8d80606ad5bd08354a190c5129083eed67df40999df6eb7cb4fbd8704ae",
+          "working_equation_sha256": "a02e55b923426f0234cb68ef19ebb14b9067d652cf38e3ac885014d273b7ee83",
+          "source_equation": {
+            "schema_version": 2,
+            "ast": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "const": 0.5
+                    },
+                    {
+                      "var": "source_0"
+                    }
+                  ]
+                },
+                {
+                  "op": "sub",
+                  "args": [
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "op": "add",
+                          "args": [
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "param": "__slot_h_c4"
+                                },
+                                {
+                                  "op": "div",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "var": "source_0"
+                                        },
+                                        {
+                                          "param": "__slot_h_x0_mean"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_scale"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "op": "add",
+                                  "args": [
+                                    {
+                                      "param": "__slot_h_c8"
+                                    },
+                                    {
+                                      "op": "mul",
+                                      "args": [
+                                        {
+                                          "param": "__slot_h_c10"
+                                        },
+                                        {
+                                          "op": "div",
+                                          "args": [
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                {
+                                                  "var": "source_0"
+                                                },
+                                                {
+                                                  "param": "__slot_h_x0_mean"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "param": "__slot_h_x0_scale"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "op": "add",
+                                  "args": [
+                                    {
+                                      "param": "__slot_h_c13"
+                                    },
+                                    {
+                                      "op": "mul",
+                                      "args": [
+                                        {
+                                          "param": "__slot_h_c15"
+                                        },
+                                        {
+                                          "op": "div",
+                                          "args": [
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                {
+                                                  "var": "source_0"
+                                                },
+                                                {
+                                                  "param": "__slot_h_x0_mean"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "param": "__slot_h_x0_scale"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "add",
+                          "args": [
+                            {
+                              "param": "__slot_h_c18"
+                            },
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "param": "__slot_h_c20"
+                                },
+                                {
+                                  "op": "div",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "var": "source_0"
+                                        },
+                                        {
+                                          "param": "__slot_h_x0_mean"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_scale"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "param": "__slot_h_c23"
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "__slot_h_c25"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "var": "source_0"
+                                    },
+                                    {
+                                      "param": "__slot_h_x0_mean"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "param": "__slot_h_x0_scale"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "__slot_h_c10": {
+                "value": 0.3854621538740288,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c13": {
+                "value": -0.0017375043643764407,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c15": {
+                "value": 0.5979212450515841,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c18": {
+                "value": -0.007752504370959342,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c20": {
+                "value": 0.9193200214545008,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c23": {
+                "value": -0.0071275043521522394,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c25": {
+                "value": -0.01566215566257019,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c4": {
+                "value": -0.15953784613414373,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_c8": {
+                "value": 0.19888749562055263,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "native_decimal_coefficient"
+              },
+              "__slot_h_x0_mean": {
+                "value": -4.5102810375396984e-17,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "__slot_h_x0_scale": {
+                "value": 0.4691543670326645,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              }
+            },
+            "arithmetic": "strict_real"
+          },
+          "source_variables_with_explicit_policy_domain": [
+            {
+              "id": "source_0",
+              "column": "x",
+              "unit": "1",
+              "domain": [
+                -1.0,
+                1.0
+              ],
+              "coordinate_role": null
+            }
+          ],
+          "posthoc_default_budget_proof": {
+            "scope": "all intermediate rational divisors on one declared closed interval",
+            "method": "exact_Fraction_interval_exclusion_and_Sturm",
+            "budgets": {
+              "max_nodes": 256,
+              "max_degree": 32,
+              "max_integer_bits": 4096,
+              "max_operations": 20000
+            },
+            "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+            "not_certified": [
+              "IEEE_finiteness",
+              "conditioning",
+              "monotonicity",
+              "physical_validity"
+            ],
+            "checked_divisors": [
+              {
+                "path": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  1,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              }
+            ],
+            "interval": [
+              -1.0,
+              1.0
+            ],
+            "status": "safe",
+            "reason": "every_intermediate_divisor_proved_nonzero",
+            "arithmetic_operations": 236
+          },
+          "checks": [
+            {
+              "set": "train",
+              "rows": 64,
+              "exact": true,
+              "all_finite": true
+            },
+            {
+              "set": "independent_and_endpoints",
+              "rows": 6,
+              "exact": true,
+              "all_finite": true
+            }
+          ]
+        }
+      ],
+      "array_keys": [
+        "c0_domain_prediction",
+        "c0_domain_valid",
+        "c0_selection_prediction",
+        "c0_selection_residual",
+        "c0_selection_valid",
+        "c0_train_prediction",
+        "c0_train_residual",
+        "c0_train_valid",
+        "c1_domain_prediction",
+        "c1_domain_valid",
+        "c1_selection_prediction",
+        "c1_selection_residual",
+        "c1_selection_valid",
+        "c1_train_prediction",
+        "c1_train_residual",
+        "c1_train_valid",
+        "c2_domain_prediction",
+        "c2_domain_valid",
+        "c2_selection_prediction",
+        "c2_selection_residual",
+        "c2_selection_valid",
+        "c2_train_prediction",
+        "c2_train_residual",
+        "c2_train_valid",
+        "c3_domain_prediction",
+        "c3_domain_valid",
+        "c3_selection_prediction",
+        "c3_selection_residual",
+        "c3_selection_valid",
+        "c3_train_prediction",
+        "c3_train_residual",
+        "c3_train_valid",
+        "c4_domain_prediction",
+        "c4_domain_valid",
+        "c4_selection_prediction",
+        "c4_selection_residual",
+        "c4_selection_valid",
+        "c4_train_prediction",
+        "c4_train_residual",
+        "c4_train_valid",
+        "c5_domain_prediction",
+        "c5_domain_valid",
+        "c5_selection_prediction",
+        "c5_selection_residual",
+        "c5_selection_valid",
+        "c5_train_prediction",
+        "c5_train_residual",
+        "c5_train_valid",
+        "c6_domain_prediction",
+        "c6_domain_valid",
+        "c6_selection_prediction",
+        "c6_selection_residual",
+        "c6_selection_valid",
+        "c6_train_prediction",
+        "c6_train_residual",
+        "c6_train_valid",
+        "c7_domain_prediction",
+        "c7_domain_valid",
+        "c7_selection_prediction",
+        "c7_selection_residual",
+        "c7_selection_valid",
+        "c7_train_prediction",
+        "c7_train_residual",
+        "c7_train_valid",
+        "c8_domain_prediction",
+        "c8_domain_valid",
+        "c8_selection_prediction",
+        "c8_selection_residual",
+        "c8_selection_valid",
+        "c8_train_prediction",
+        "c8_train_residual",
+        "c8_train_valid",
+        "domain_X",
+        "selection_X",
+        "selection_ids",
+        "selection_weights",
+        "selection_y",
+        "train_X",
+        "train_ids",
+        "train_weights",
+        "train_y"
+      ],
+      "final_absent": true
+    },
+    "ordinary_on": {
+      "inputs_sha256": {
+        "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/ordinary_on/calculation/prepare/run.json": "32ff23c99f6f062f4714684f6bfcf4ae12d94d7fd704e5d29c54b177af984633",
+        "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/ordinary_on/calculation/discover/e2e/731/engine_summary.json": "9837ff3aaa2347970da1b2920801fc104b5ed6a1fea1dc6bb157afd706cb6154",
+        "/work/results/e2e-domain-normal-accepted-20261115-2140-v1/ordinary_on/calculation/discover/e2e/731/candidates.jsonl": "94ceba8f7b2caa2d846626bd161cd76d667cd699c50c89ee3e3b1bd5db6e84d6"
+      },
+      "bundles": [
+        {
+          "candidate_id": "e2e/731/0/response-fit",
+          "bundle_sha256": "a594c83d717b860adc147316de0816ef7cacb5e86a16d3fef5ca8313050f4da9",
+          "working_equation_sha256": "fde80bbdfb7632f60642546b5b9fe4684fe2bdc7a03b09fbaa46bb1cfa1f92cb",
+          "source_equation": {
+            "schema_version": 2,
+            "ast": {
+              "op": "sub",
+              "args": [
+                {
+                  "op": "add",
+                  "args": [
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "c4"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "var": "source_0"
+                                    },
+                                    {
+                                      "param": "x0_mean"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "param": "x0_scale"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "sub",
+                          "args": [
+                            {
+                              "op": "add",
+                              "args": [
+                                {
+                                  "param": "c8"
+                                },
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    {
+                                      "param": "c10"
+                                    },
+                                    {
+                                      "op": "div",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "var": "source_0"
+                                            },
+                                            {
+                                              "param": "x0_mean"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "param": "x0_scale"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "add",
+                              "args": [
+                                {
+                                  "param": "c13"
+                                },
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    {
+                                      "param": "c15"
+                                    },
+                                    {
+                                      "op": "div",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "var": "source_0"
+                                            },
+                                            {
+                                              "param": "x0_mean"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "param": "x0_scale"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "param": "c18"
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "c20"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "var": "source_0"
+                                    },
+                                    {
+                                      "param": "x0_mean"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "param": "x0_scale"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "add",
+                  "args": [
+                    {
+                      "param": "c23"
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "param": "c25"
+                        },
+                        {
+                          "op": "div",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "var": "source_0"
+                                },
+                                {
+                                  "param": "x0_mean"
+                                }
+                              ]
+                            },
+                            {
+                              "param": "x0_scale"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "c4": {
+                "value": -0.16348751520889407,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "x0_mean": {
+                "value": -4.5102810375396984e-17,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "x0_scale": {
+                "value": 0.4691543670326645,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "c8": {
+                "value": 0.1988875,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c10": {
+                "value": 0.3815124847911059,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c13": {
+                "value": -0.0017374999999999914,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c15": {
+                "value": 0.10148751520889408,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c18": {
+                "value": -0.007752500000000008,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c20": {
+                "value": 0.4415124847911059,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c23": {
+                "value": -0.007127499999999991,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c25": {
+                "value": -0.23951248479110596,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              }
+            },
+            "arithmetic": "strict_real"
+          },
+          "source_variables_with_explicit_policy_domain": [
+            {
+              "id": "source_0",
+              "column": "x",
+              "unit": "1",
+              "domain": [
+                -1.0,
+                1.0
+              ],
+              "coordinate_role": null
+            }
+          ],
+          "posthoc_default_budget_proof": {
+            "scope": "all intermediate rational divisors on one declared closed interval",
+            "method": "exact_Fraction_interval_exclusion_and_Sturm",
+            "budgets": {
+              "max_nodes": 256,
+              "max_degree": 32,
+              "max_integer_bits": 4096,
+              "max_operations": 20000
+            },
+            "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+            "not_certified": [
+              "IEEE_finiteness",
+              "conditioning",
+              "monotonicity",
+              "physical_validity"
+            ],
+            "checked_divisors": [
+              {
+                "path": [
+                  0,
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  0,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              }
+            ],
+            "interval": [
+              -1.0,
+              1.0
+            ],
+            "status": "safe",
+            "reason": "every_intermediate_divisor_proved_nonzero",
+            "arithmetic_operations": 218
+          },
+          "checks": [
+            {
+              "set": "train",
+              "rows": 64,
+              "exact": true,
+              "all_finite": true
+            },
+            {
+              "set": "independent_and_endpoints",
+              "rows": 6,
+              "exact": true,
+              "all_finite": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "e2e/731/2/response-fit",
+          "bundle_sha256": "796bd60f27c9e823a513e53122567556fc00148687d73db4ddd2d1296fc59ca7",
+          "working_equation_sha256": "49f37618ac90934e26c0526d0a747d3eec11bf50b04e16da3a57c99021c65a28",
+          "source_equation": {
+            "schema_version": 2,
+            "ast": {
+              "op": "sub",
+              "args": [
+                {
+                  "op": "sub",
+                  "args": [
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "param": "c3"
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "c5"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "const": 1
+                                },
+                                {
+                                  "op": "add",
+                                  "args": [
+                                    {
+                                      "param": "c8"
+                                    },
+                                    {
+                                      "op": "mul",
+                                      "args": [
+                                        {
+                                          "param": "c10"
+                                        },
+                                        {
+                                          "op": "div",
+                                          "args": [
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                {
+                                                  "var": "source_0"
+                                                },
+                                                {
+                                                  "param": "x0_mean"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "param": "x0_scale"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "param": "c15"
+                                },
+                                {
+                                  "op": "div",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "var": "source_0"
+                                        },
+                                        {
+                                          "param": "x0_mean"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "param": "x0_scale"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "add",
+                              "args": [
+                                {
+                                  "param": "c18"
+                                },
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    {
+                                      "param": "c20"
+                                    },
+                                    {
+                                      "op": "div",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "var": "source_0"
+                                            },
+                                            {
+                                              "param": "x0_mean"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "param": "x0_scale"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "add",
+                          "args": [
+                            {
+                              "param": "c23"
+                            },
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "param": "c25"
+                                },
+                                {
+                                  "op": "div",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "var": "source_0"
+                                        },
+                                        {
+                                          "param": "x0_mean"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "param": "x0_scale"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "add",
+                  "args": [
+                    {
+                      "param": "c28"
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "param": "c30"
+                        },
+                        {
+                          "op": "div",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "var": "source_0"
+                                },
+                                {
+                                  "param": "x0_mean"
+                                }
+                              ]
+                            },
+                            {
+                              "param": "x0_scale"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "c3": {
+                "value": -1.2614869751327376,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c5": {
+                "value": -27.67606249101203,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c8": {
+                "value": -0.6217401878924038,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c10": {
+                "value": 0.002967759312456954,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "x0_mean": {
+                "value": -4.5102810375396984e-17,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "x0_scale": {
+                "value": 0.4691543670326645,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "c15": {
+                "value": -0.07361398969368059,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c18": {
+                "value": -93.88385998058796,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c20": {
+                "value": -0.013778513259084385,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c23": {
+                "value": 1.2810269756823414,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c25": {
+                "value": -8.750520341503966,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c28": {
+                "value": 41.77135697537144,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c30": {
+                "value": 1.2542796592127758,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              }
+            },
+            "arithmetic": "strict_real"
+          },
+          "source_variables_with_explicit_policy_domain": [
+            {
+              "id": "source_0",
+              "column": "x",
+              "unit": "1",
+              "domain": [
+                -1.0,
+                1.0
+              ],
+              "coordinate_role": null
+            }
+          ],
+          "posthoc_default_budget_proof": {
+            "scope": "all intermediate rational divisors on one declared closed interval",
+            "method": "exact_Fraction_interval_exclusion_and_Sturm",
+            "budgets": {
+              "max_nodes": 256,
+              "max_degree": 32,
+              "max_integer_bits": 4096,
+              "max_operations": 20000
+            },
+            "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+            "not_certified": [
+              "IEEE_finiteness",
+              "conditioning",
+              "monotonicity",
+              "physical_validity"
+            ],
+            "checked_divisors": [
+              {
+                "path": [
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  0,
+                  0,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 1,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              }
+            ],
+            "interval": [
+              -1.0,
+              1.0
+            ],
+            "status": "safe",
+            "reason": "every_intermediate_divisor_proved_nonzero",
+            "arithmetic_operations": 299
+          },
+          "checks": [
+            {
+              "set": "train",
+              "rows": 64,
+              "exact": true,
+              "all_finite": true
+            },
+            {
+              "set": "independent_and_endpoints",
+              "rows": 6,
+              "exact": true,
+              "all_finite": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "e2e/731/3/response-fit",
+          "bundle_sha256": "5e24c7dfa1d26b02072d47bdd1cf305543137748f16918e4af054c2fe1fa5cee",
+          "working_equation_sha256": "6e6042a18adbbb40e6941db927f2feeaa0dfb06305c8cfe78da0c15a0e9ede0d",
+          "source_equation": {
+            "schema_version": 2,
+            "ast": {
+              "op": "add",
+              "args": [
+                {
+                  "param": "c1"
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "param": "c3"
+                    },
+                    {
+                      "op": "div",
+                      "args": [
+                        {
+                          "op": "sub",
+                          "args": [
+                            {
+                              "var": "source_0"
+                            },
+                            {
+                              "param": "x0_mean"
+                            }
+                          ]
+                        },
+                        {
+                          "param": "x0_scale"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "c1": {
+                "value": 0.19999997785519197,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c3": {
+                "value": 0.7975624086142888,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "x0_mean": {
+                "value": -4.5102810375396984e-17,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "x0_scale": {
+                "value": 0.4691543670326645,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              }
+            },
+            "arithmetic": "strict_real"
+          },
+          "source_variables_with_explicit_policy_domain": [
+            {
+              "id": "source_0",
+              "column": "x",
+              "unit": "1",
+              "domain": [
+                -1.0,
+                1.0
+              ],
+              "coordinate_role": null
+            }
+          ],
+          "posthoc_default_budget_proof": {
+            "scope": "all intermediate rational divisors on one declared closed interval",
+            "method": "exact_Fraction_interval_exclusion_and_Sturm",
+            "budgets": {
+              "max_nodes": 256,
+              "max_degree": 32,
+              "max_integer_bits": 4096,
+              "max_operations": 20000
+            },
+            "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+            "not_certified": [
+              "IEEE_finiteness",
+              "conditioning",
+              "monotonicity",
+              "physical_validity"
+            ],
+            "checked_divisors": [
+              {
+                "path": [
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              }
+            ],
+            "interval": [
+              -1.0,
+              1.0
+            ],
+            "status": "safe",
+            "reason": "every_intermediate_divisor_proved_nonzero",
+            "arithmetic_operations": 36
+          },
+          "checks": [
+            {
+              "set": "train",
+              "rows": 64,
+              "exact": true,
+              "all_finite": true
+            },
+            {
+              "set": "independent_and_endpoints",
+              "rows": 6,
+              "exact": true,
+              "all_finite": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "e2e/731/4/response-fit",
+          "bundle_sha256": "8bfe8d2206921ad3f5a2bc22bc83bd5fabe94c198119ff7183bb2de84f0b2c5a",
+          "working_equation_sha256": "6e6042a18adbbb40e6941db927f2feeaa0dfb06305c8cfe78da0c15a0e9ede0d",
+          "source_equation": {
+            "schema_version": 2,
+            "ast": {
+              "op": "add",
+              "args": [
+                {
+                  "param": "c1"
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "param": "c3"
+                    },
+                    {
+                      "op": "div",
+                      "args": [
+                        {
+                          "op": "sub",
+                          "args": [
+                            {
+                              "var": "source_0"
+                            },
+                            {
+                              "param": "x0_mean"
+                            }
+                          ]
+                        },
+                        {
+                          "param": "x0_scale"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "c1": {
+                "value": 0.19999997785519197,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c3": {
+                "value": 0.7975624086142888,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "x0_mean": {
+                "value": -4.5102810375396984e-17,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "x0_scale": {
+                "value": 0.4691543670326645,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              }
+            },
+            "arithmetic": "strict_real"
+          },
+          "source_variables_with_explicit_policy_domain": [
+            {
+              "id": "source_0",
+              "column": "x",
+              "unit": "1",
+              "domain": [
+                -1.0,
+                1.0
+              ],
+              "coordinate_role": null
+            }
+          ],
+          "posthoc_default_budget_proof": {
+            "scope": "all intermediate rational divisors on one declared closed interval",
+            "method": "exact_Fraction_interval_exclusion_and_Sturm",
+            "budgets": {
+              "max_nodes": 256,
+              "max_degree": 32,
+              "max_integer_bits": 4096,
+              "max_operations": 20000
+            },
+            "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+            "not_certified": [
+              "IEEE_finiteness",
+              "conditioning",
+              "monotonicity",
+              "physical_validity"
+            ],
+            "checked_divisors": [
+              {
+                "path": [
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              }
+            ],
+            "interval": [
+              -1.0,
+              1.0
+            ],
+            "status": "safe",
+            "reason": "every_intermediate_divisor_proved_nonzero",
+            "arithmetic_operations": 36
+          },
+          "checks": [
+            {
+              "set": "train",
+              "rows": 64,
+              "exact": true,
+              "all_finite": true
+            },
+            {
+              "set": "independent_and_endpoints",
+              "rows": 6,
+              "exact": true,
+              "all_finite": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "e2e/731/6/response-fit",
+          "bundle_sha256": "c1ca6bcfad7ded3767ba0258bc1c2be4037c5a294476de70cc09baf55ed79a66",
+          "working_equation_sha256": "7675368d6d00c1c195b9002628b63bbc1d0525b94770b16b4076408891147fd2",
+          "source_equation": {
+            "schema_version": 2,
+            "ast": {
+              "op": "sub",
+              "args": [
+                {
+                  "op": "add",
+                  "args": [
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "c4"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "var": "source_0"
+                                    },
+                                    {
+                                      "param": "x0_mean"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "param": "x0_scale"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "sub",
+                          "args": [
+                            {
+                              "op": "add",
+                              "args": [
+                                {
+                                  "param": "c8"
+                                },
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    {
+                                      "param": "c10"
+                                    },
+                                    {
+                                      "op": "div",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "var": "source_0"
+                                            },
+                                            {
+                                              "param": "x0_mean"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "param": "x0_scale"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "add",
+                              "args": [
+                                {
+                                  "param": "c13"
+                                },
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    {
+                                      "param": "c15"
+                                    },
+                                    {
+                                      "op": "div",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "var": "source_0"
+                                            },
+                                            {
+                                              "param": "x0_mean"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "param": "x0_scale"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "param": "c18"
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "c20"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "var": "source_0"
+                                    },
+                                    {
+                                      "param": "x0_mean"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "param": "x0_scale"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "add",
+                  "args": [
+                    {
+                      "param": "c23"
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "param": "c25"
+                        },
+                        {
+                          "op": "div",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "var": "source_0"
+                                },
+                                {
+                                  "param": "x0_mean"
+                                }
+                              ]
+                            },
+                            {
+                              "param": "x0_scale"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "c4": {
+                "value": -0.16348752171243047,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "x0_mean": {
+                "value": -4.5102810375396984e-17,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "x0_scale": {
+                "value": 0.4691543670326645,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "c8": {
+                "value": 0.19888746056764764,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c10": {
+                "value": 0.38151247828765883,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c13": {
+                "value": -0.0017375396268832601,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c15": {
+                "value": 0.10148750576797183,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c18": {
+                "value": -0.007752539432734105,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c20": {
+                "value": 0.4415124782857638,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c23": {
+                "value": -0.007127539626977646,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c25": {
+                "value": -0.2395124942323144,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              }
+            },
+            "arithmetic": "strict_real"
+          },
+          "source_variables_with_explicit_policy_domain": [
+            {
+              "id": "source_0",
+              "column": "x",
+              "unit": "1",
+              "domain": [
+                -1.0,
+                1.0
+              ],
+              "coordinate_role": null
+            }
+          ],
+          "posthoc_default_budget_proof": {
+            "scope": "all intermediate rational divisors on one declared closed interval",
+            "method": "exact_Fraction_interval_exclusion_and_Sturm",
+            "budgets": {
+              "max_nodes": 256,
+              "max_degree": 32,
+              "max_integer_bits": 4096,
+              "max_operations": 20000
+            },
+            "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+            "not_certified": [
+              "IEEE_finiteness",
+              "conditioning",
+              "monotonicity",
+              "physical_validity"
+            ],
+            "checked_divisors": [
+              {
+                "path": [
+                  0,
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  0,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              }
+            ],
+            "interval": [
+              -1.0,
+              1.0
+            ],
+            "status": "safe",
+            "reason": "every_intermediate_divisor_proved_nonzero",
+            "arithmetic_operations": 218
+          },
+          "checks": [
+            {
+              "set": "train",
+              "rows": 64,
+              "exact": true,
+              "all_finite": true
+            },
+            {
+              "set": "independent_and_endpoints",
+              "rows": 6,
+              "exact": true,
+              "all_finite": true
+            }
+          ]
+        },
+        {
+          "candidate_id": "e2e/731/7/response-fit",
+          "bundle_sha256": "d07ac505dafb732376416167d50cd1a15f4a45a19078f9fa65a58fd4e1471c94",
+          "working_equation_sha256": "470a7f5dc35739972232ceb638fe4b0c1ca40b211fdeff9c5dd026aa8cdad18a",
+          "source_equation": {
+            "schema_version": 2,
+            "ast": {
+              "op": "sub",
+              "args": [
+                {
+                  "op": "sub",
+                  "args": [
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "param": "c3"
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "param": "c5"
+                            },
+                            {
+                              "op": "div",
+                              "args": [
+                                {
+                                  "const": 1
+                                },
+                                {
+                                  "op": "add",
+                                  "args": [
+                                    {
+                                      "param": "c8"
+                                    },
+                                    {
+                                      "op": "mul",
+                                      "args": [
+                                        {
+                                          "param": "c10"
+                                        },
+                                        {
+                                          "op": "div",
+                                          "args": [
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                {
+                                                  "var": "source_0"
+                                                },
+                                                {
+                                                  "param": "x0_mean"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "param": "x0_scale"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "param": "c15"
+                                },
+                                {
+                                  "op": "div",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "var": "source_0"
+                                        },
+                                        {
+                                          "param": "x0_mean"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "param": "x0_scale"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "add",
+                              "args": [
+                                {
+                                  "param": "c18"
+                                },
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    {
+                                      "param": "c20"
+                                    },
+                                    {
+                                      "op": "div",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "var": "source_0"
+                                            },
+                                            {
+                                              "param": "x0_mean"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "param": "x0_scale"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "add",
+                          "args": [
+                            {
+                              "param": "c23"
+                            },
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "param": "c25"
+                                },
+                                {
+                                  "op": "div",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "var": "source_0"
+                                        },
+                                        {
+                                          "param": "x0_mean"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "param": "x0_scale"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "add",
+                  "args": [
+                    {
+                      "param": "c28"
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "param": "c30"
+                        },
+                        {
+                          "op": "div",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "var": "source_0"
+                                },
+                                {
+                                  "param": "x0_mean"
+                                }
+                              ]
+                            },
+                            {
+                              "param": "x0_scale"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "parameters": {
+              "c3": {
+                "value": 0.29521337373025147,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c5": {
+                "value": -32.92385269445673,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c8": {
+                "value": -1.1505123266861703,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c10": {
+                "value": -0.01359051007163052,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "x0_mean": {
+                "value": -4.5102810375396984e-17,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "x0_scale": {
+                "value": 0.4691543670326645,
+                "trainable": false,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": "1",
+                "origin": "train_normalization"
+              },
+              "c15": {
+                "value": -0.07906678519949281,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c18": {
+                "value": -90.95723219741515,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c20": {
+                "value": -0.05052957949496527,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c23": {
+                "value": -0.27575624719998065,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c25": {
+                "value": -8.576443392187603,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c28": {
+                "value": 28.987654884340287,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              },
+              "c30": {
+                "value": 0.2490648918988655,
+                "trainable": true,
+                "bounds": [
+                  null,
+                  null
+                ],
+                "unit": null,
+                "origin": "native_decimal_coefficient"
+              }
+            },
+            "arithmetic": "strict_real"
+          },
+          "source_variables_with_explicit_policy_domain": [
+            {
+              "id": "source_0",
+              "column": "x",
+              "unit": "1",
+              "domain": [
+                -1.0,
+                1.0
+              ],
+              "coordinate_role": null
+            }
+          ],
+          "posthoc_default_budget_proof": {
+            "scope": "all intermediate rational divisors on one declared closed interval",
+            "method": "exact_Fraction_interval_exclusion_and_Sturm",
+            "budgets": {
+              "max_nodes": 256,
+              "max_degree": 32,
+              "max_integer_bits": 4096,
+              "max_operations": 20000
+            },
+            "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+            "not_certified": [
+              "IEEE_finiteness",
+              "conditioning",
+              "monotonicity",
+              "physical_validity"
+            ],
+            "checked_divisors": [
+              {
+                "path": [
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  0,
+                  0,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 1,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              },
+              {
+                "path": [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "operation": "div",
+                "degree": 0,
+                "zero_set": "empty_on_closed_interval"
+              }
+            ],
+            "interval": [
+              -1.0,
+              1.0
+            ],
+            "status": "safe",
+            "reason": "every_intermediate_divisor_proved_nonzero",
+            "arithmetic_operations": 299
+          },
+          "checks": [
+            {
+              "set": "train",
+              "rows": 64,
+              "exact": true,
+              "all_finite": true
+            },
+            {
+              "set": "independent_and_endpoints",
+              "rows": 6,
+              "exact": true,
+              "all_finite": true
+            }
+          ]
+        }
+      ],
+      "array_keys": [
+        "c0_domain_prediction",
+        "c0_domain_valid",
+        "c0_selection_prediction",
+        "c0_selection_residual",
+        "c0_selection_valid",
+        "c0_train_prediction",
+        "c0_train_residual",
+        "c0_train_valid",
+        "c1_domain_prediction",
+        "c1_domain_valid",
+        "c1_selection_prediction",
+        "c1_selection_residual",
+        "c1_selection_valid",
+        "c1_train_prediction",
+        "c1_train_residual",
+        "c1_train_valid",
+        "c2_domain_prediction",
+        "c2_domain_valid",
+        "c2_selection_prediction",
+        "c2_selection_residual",
+        "c2_selection_valid",
+        "c2_train_prediction",
+        "c2_train_residual",
+        "c2_train_valid",
+        "c3_domain_prediction",
+        "c3_domain_valid",
+        "c3_selection_prediction",
+        "c3_selection_residual",
+        "c3_selection_valid",
+        "c3_train_prediction",
+        "c3_train_residual",
+        "c3_train_valid",
+        "c4_domain_prediction",
+        "c4_domain_valid",
+        "c4_selection_prediction",
+        "c4_selection_residual",
+        "c4_selection_valid",
+        "c4_train_prediction",
+        "c4_train_residual",
+        "c4_train_valid",
+        "c5_domain_prediction",
+        "c5_domain_valid",
+        "c5_selection_prediction",
+        "c5_selection_residual",
+        "c5_selection_valid",
+        "c5_train_prediction",
+        "c5_train_residual",
+        "c5_train_valid",
+        "domain_X",
+        "selection_X",
+        "selection_ids",
+        "selection_weights",
+        "selection_y",
+        "train_X",
+        "train_ids",
+        "train_weights",
+        "train_y"
+      ],
+      "final_absent": true
+    }
+  },
+  "controlled": [
+    {
+      "fixture": 0,
+      "raw_equation": {
+        "schema_version": 2,
+        "ast": {
+          "op": "div",
+          "args": [
+            {
+              "op": "sub",
+              "args": [
+                {
+                  "var": "x"
+                },
+                {
+                  "const": 0.25
+                }
+              ]
+            },
+            {
+              "op": "sub",
+              "args": [
+                {
+                  "var": "x"
+                },
+                {
+                  "const": 0.25
+                }
+              ]
+            }
+          ]
+        },
+        "parameters": {},
+        "arithmetic": "strict_real"
+      },
+      "singular": {
+        "status": "explicit_rejection",
+        "message": "Equation undefined at row 0; no rows were dropped"
+      },
+      "offpoint_exact": true,
+      "proof": {
+        "scope": "all intermediate rational divisors on one declared closed interval",
+        "method": "exact_Fraction_interval_exclusion_and_Sturm",
+        "budgets": {
+          "max_nodes": 256,
+          "max_degree": 32,
+          "max_integer_bits": 4096,
+          "max_operations": 20000
+        },
+        "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+        "not_certified": [
+          "IEEE_finiteness",
+          "conditioning",
+          "monotonicity",
+          "physical_validity"
+        ],
+        "checked_divisors": [
+          {
+            "path": [
+              1
+            ],
+            "operation": "div",
+            "degree": 1,
+            "zero_set": {
+              "kind": "interior",
+              "roots": 1
+            }
+          }
+        ],
+        "interval": [
+          -1,
+          1
+        ],
+        "status": "unsafe",
+        "reason": "proved_intermediate_divisor_zero",
+        "witness": {
+          "path": [
+            1
+          ],
+          "operation": "div",
+          "degree": 1,
+          "zero_set": {
+            "kind": "interior",
+            "roots": 1
+          }
+        },
+        "arithmetic_operations": 71
+      },
+      "bundle_sha256": "0ac38933e8041ee7d0ef9e0041fdb940a8c8bc99818bdc212b76d65450ac3447"
+    },
+    {
+      "fixture": 1,
+      "raw_equation": {
+        "schema_version": 2,
+        "ast": {
+          "op": "mul",
+          "args": [
+            {
+              "const": 0
+            },
+            {
+              "op": "div",
+              "args": [
+                {
+                  "const": 1
+                },
+                {
+                  "op": "sub",
+                  "args": [
+                    {
+                      "var": "x"
+                    },
+                    {
+                      "const": 0.25
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "parameters": {},
+        "arithmetic": "strict_real"
+      },
+      "singular": {
+        "status": "explicit_rejection",
+        "message": "Equation undefined at row 0; no rows were dropped"
+      },
+      "offpoint_exact": true,
+      "proof": {
+        "scope": "all intermediate rational divisors on one declared closed interval",
+        "method": "exact_Fraction_interval_exclusion_and_Sturm",
+        "budgets": {
+          "max_nodes": 256,
+          "max_degree": 32,
+          "max_integer_bits": 4096,
+          "max_operations": 20000
+        },
+        "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+        "not_certified": [
+          "IEEE_finiteness",
+          "conditioning",
+          "monotonicity",
+          "physical_validity"
+        ],
+        "checked_divisors": [
+          {
+            "path": [
+              1,
+              1
+            ],
+            "operation": "div",
+            "degree": 1,
+            "zero_set": {
+              "kind": "interior",
+              "roots": 1
+            }
+          }
+        ],
+        "interval": [
+          -1,
+          1
+        ],
+        "status": "unsafe",
+        "reason": "proved_intermediate_divisor_zero",
+        "witness": {
+          "path": [
+            1,
+            1
+          ],
+          "operation": "div",
+          "degree": 1,
+          "zero_set": {
+            "kind": "interior",
+            "roots": 1
+          }
+        },
+        "arithmetic_operations": 61
+      },
+      "bundle_sha256": "6f0e57d974cca43ee70e5114b04095a5573c933018b761b37b395d88a75c181c"
+    },
+    {
+      "fixture": 2,
+      "raw_equation": {
+        "schema_version": 2,
+        "ast": {
+          "op": "div",
+          "args": [
+            {
+              "const": 1
+            },
+            {
+              "op": "div",
+              "args": [
+                {
+                  "const": 1
+                },
+                {
+                  "op": "sub",
+                  "args": [
+                    {
+                      "var": "x"
+                    },
+                    {
+                      "const": 0.25
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "parameters": {},
+        "arithmetic": "strict_real"
+      },
+      "singular": {
+        "status": "explicit_rejection",
+        "message": "Equation undefined at row 0; no rows were dropped"
+      },
+      "offpoint_exact": true,
+      "proof": {
+        "scope": "all intermediate rational divisors on one declared closed interval",
+        "method": "exact_Fraction_interval_exclusion_and_Sturm",
+        "budgets": {
+          "max_nodes": 256,
+          "max_degree": 32,
+          "max_integer_bits": 4096,
+          "max_operations": 20000
+        },
+        "coefficient_semantics": "exact stored integers and exact binary values of stored floats; fixed candidate",
+        "not_certified": [
+          "IEEE_finiteness",
+          "conditioning",
+          "monotonicity",
+          "physical_validity"
+        ],
+        "checked_divisors": [
+          {
+            "path": [
+              1,
+              1
+            ],
+            "operation": "div",
+            "degree": 1,
+            "zero_set": {
+              "kind": "interior",
+              "roots": 1
+            }
+          }
+        ],
+        "interval": [
+          -1,
+          1
+        ],
+        "status": "unsafe",
+        "reason": "proved_intermediate_divisor_zero",
+        "witness": {
+          "path": [
+            1,
+            1
+          ],
+          "operation": "div",
+          "degree": 1,
+          "zero_set": {
+            "kind": "interior",
+            "roots": 1
+          }
+        },
+        "arithmetic_operations": 61
+      },
+      "bundle_sha256": "a91b532614cd7f3f3f6509f9045cdb463008da078635e25a1b3dfbe74eb96a0a"
+    }
+  ],
+  "status": "verified"
+}

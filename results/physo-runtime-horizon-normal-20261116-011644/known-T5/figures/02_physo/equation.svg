@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="410">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203342">
+<text x="40" y="40" font-size="24" font-weight="bold">2. physo | equation</text>
+<text x="40" y="68" font-size="13">Candidate physo/17/1@native | page 1/1</text>
+<text x="40" y="110" font-size="20">Coordinates: public</text>
+<text x="40" y="137" font-size="20"></text>
+<text x="40" y="164" font-size="20">y [m^2] = (x + x) ^ 2</text>
+<text x="40" y="191" font-size="20"></text>
+<text x="40" y="218" font-size="20">Declared structure and fitted slots</text>
+<text x="40" y="245" font-size="20">Coordinates: canonical working; ranges on frozen Selection inputs only</text>
+<text x="40" y="272" font-size="20">declared outer: relation = ((h(x)) ** 2)</text>
+<text x="40" y="299" font-size="20">fitted slot: h(x0 [m]) = (x0 + x0)</text>
+<text x="40" y="326" font-size="20">  Unit: m</text>
+<text x="40" y="353" font-size="20">Shared slot name = shared function and coefficients</text>
+</g></svg>

@@ -1,0 +1,66 @@
+{
+  "at": "2026-11-15T15:58:52.885482+00:00",
+  "session": 78772,
+  "session_running": true,
+  "status": {
+    "stage": "discovery",
+    "time": "2026-11-15T15:54:59.260534+00:00",
+    "arm": "synthetic_none",
+    "method": "pysr",
+    "final_accessed": false
+  },
+  "completed_native": 5,
+  "completed": [
+    {
+      "arm": "yacht",
+      "method": "pysr",
+      "status": "ok",
+      "worker_seconds": 389.5647166080016,
+      "portable_rows": 14,
+      "native_passed_saved_rows": 14
+    },
+    {
+      "arm": "yacht",
+      "method": "parfam",
+      "status": "ok",
+      "worker_seconds": 3040.191859793995,
+      "portable_rows": 159,
+      "native_passed_saved_rows": 159
+    },
+    {
+      "arm": "yacht",
+      "method": "torchsisso",
+      "status": "ok",
+      "worker_seconds": 16.727101085998584,
+      "portable_rows": 3,
+      "native_passed_saved_rows": 3
+    },
+    {
+      "arm": "yacht",
+      "method": "physo",
+      "status": "ok",
+      "worker_seconds": 1852.9255048389896,
+      "portable_rows": 20,
+      "native_passed_saved_rows": 20
+    },
+    {
+      "arm": "yacht",
+      "method": "e2e",
+      "status": "ok",
+      "worker_seconds": 198.73502130398992,
+      "portable_rows": 31,
+      "native_passed_saved_rows": 31
+    }
+  ],
+  "last_health_observed": {
+    "job": "synthetic_none/pysr/17",
+    "container": "252ed62cc747",
+    "cpu_percent": 79.78,
+    "memory": "718.8MiB /6GiB",
+    "OOMKilled": false
+  },
+  "Yacht_functional_evidence": "All5 saved portable pools carry passed native consistency checks; E2E generation/refinement retained182Train rows; mean+linear references ok. This is not common eligibility or quality ranking.",
+  "global_choices_exists": false,
+  "Final_marker_exists": false,
+  "action": "Read-only check, no settings/source/images/data change, interruption or retry; Final not scored"
+}

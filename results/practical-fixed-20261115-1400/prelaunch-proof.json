@@ -1,0 +1,182 @@
+{
+  "at": "2026-11-15T14:07:28.074346+00:00",
+  "settings_sha256": "ad220f2c4c6c06f79b04af4cd3f64b6c1aef6d4a8f4b4d1fc021e28e0237c69d",
+  "freeze_sha256": "fc7d8d0e784fd6154ea9f4843b90f5fe6c9db9122c3a03b6a2bbdd510c53d1db",
+  "frozen_files": 427,
+  "source_count": 392,
+  "all_real_input_reviews": [
+    {
+      "arm": "yacht",
+      "method": "pysr",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "yacht",
+      "method": "parfam",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "yacht",
+      "method": "torchsisso",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "yacht",
+      "method": "physo",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "yacht",
+      "method": "e2e",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "yacht",
+      "method": "baselines",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "pysr",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "parfam",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "torchsisso",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "physo",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "e2e",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_none",
+      "method": "baselines",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "pysr",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "parfam",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "torchsisso",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "physo",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    },
+    {
+      "arm": "synthetic_supported",
+      "method": "e2e",
+      "status": "inputs_valid",
+      "native_readiness_verified": false
+    }
+  ],
+  "synthetic": {
+    "rows": 640,
+    "partitions": {
+      "train": 256,
+      "selection": 128,
+      "final": 256
+    },
+    "unique_nonoverlap_ids": true,
+    "data_sha256": "067d442097db6fc87d75652fc8fa760b131f2cf787464048d3468eec9c65e479",
+    "split_sha256": "f0e075db8614219a6562caf73115bceaaff5c774b63677b21b006b0b9921b923",
+    "no_Final_target_analysis": true,
+    "data_generator": "numpy default_rng17; one640 uniformx then640normal noise; disclosed designed rational truth is generation-only",
+    "arm_pairing": {
+      "pysr": {
+        "same_data_split_native_options_seed_grammar": true,
+        "only_B1_known_outer_and_response_added": true,
+        "outer_safety_seconds": 21600
+      },
+      "parfam": {
+        "same_data_split_native_options_seed_grammar": true,
+        "only_B1_known_outer_and_response_added": true,
+        "outer_safety_seconds": 21600
+      },
+      "torchsisso": {
+        "same_data_split_native_options_seed_grammar": true,
+        "only_B1_known_outer_and_response_added": true,
+        "outer_safety_seconds": 21600
+      },
+      "physo": {
+        "same_data_split_native_options_seed_grammar": true,
+        "only_B1_known_outer_and_response_added": true,
+        "outer_safety_seconds": 21600
+      },
+      "e2e": {
+        "same_data_split_native_options_seed_grammar": true,
+        "only_B1_known_outer_and_response_added": true,
+        "outer_safety_seconds": 21600
+      }
+    },
+    "lower_center_repr": "0.10010000000000001",
+    "lower_stencil_repr": "0.1"
+  },
+  "Yacht": {
+    "at": "2026-11-15T13:54:01.121045+00:00",
+    "source_table_sha256": "c9673f671e64621b897e729ed320ab83dbbe527b6d7192776047d7316da65cc6",
+    "source_split_sha256": "fe3a89124ec989e25d2e24e857e72c1a5a08d27f36de99ef5f78086cfc729de2",
+    "rows": 308,
+    "derived_exact_geometry_tuples": 22,
+    "rows_per_tuple": 14,
+    "partition_rows": {
+      "train": 182,
+      "final": 70,
+      "selection": 56
+    },
+    "partition_geometry_groups": {
+      "train": 13,
+      "selection": 4,
+      "final": 5
+    },
+    "identical_geometry_tuple_cross_partition": 0,
+    "target_values_or_performance_not_evaluated": true,
+    "final_history": "known_exposed",
+    "limitations": "Derived exact five-geometry-feature groups, not official hull IDs. Related-shape independence, causal/physical law, untouched external test and pretrained nonoverlap are not established."
+  },
+  "discovery_started": false,
+  "Final_scored": false,
+  "total_requested_native_fits": 15,
+  "unconstrained_reference_fits": 4,
+  "baseline_scope": "A/B0 mean+linear; B0 references not constrained B1 candidates",
+  "final_gate": "all15native+actual4reference attempts complete -> all3studies +globalrepresentative ID/ASTbundlehash -> verifyallchoices before existing common score; failed/noeligible retained",
+  "limits": "1001 finite audit score-only includes some17search centers; not wholly independent unseen grid or domain guarantee; E2E64 dummy1tree not full64 worstcase proof"
+}

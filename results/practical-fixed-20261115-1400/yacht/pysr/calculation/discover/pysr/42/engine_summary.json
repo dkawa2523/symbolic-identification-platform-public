@@ -1,0 +1,444 @@
+{
+  "native_recovery": null,
+  "version": "2.7.2",
+  "juliacall": "0.9.36",
+  "native_search_operators": {
+    "binary": [
+      "+",
+      "-",
+      "*",
+      "/"
+    ],
+    "unary": [
+      "neg",
+      "abs",
+      "exp",
+      "log",
+      "sqrt",
+      "square",
+      "cube",
+      "sin",
+      "cos",
+      "tanh",
+      "sinh",
+      "cosh"
+    ]
+  },
+  "native_operator_constraints": {},
+  "native_nested_constraints": {},
+  "native_search_seconds_limit": 2880.0,
+  "native_search_limits": {
+    "niterations": 100,
+    "populations": 6,
+    "population_size": 40,
+    "ncycles_per_iteration": 100,
+    "max_evals": null,
+    "timeout_in_seconds": 2880.0
+  },
+  "source_complexity_budget": {
+    "max_nodes": 256,
+    "native_maxsize": 256,
+    "variable_costs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "output_cost": 0,
+    "square_cube_cost": 2
+  },
+  "native_execution_options": {
+    "parallelism": "serial",
+    "deterministic": true
+  },
+  "unit_search": {
+    "mode": "post_check_only",
+    "native_units": false
+  },
+  "coefficient_unit_inference": {},
+  "native_input_variables": [
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x4",
+    "x5"
+  ],
+  "native_input_columns": [
+    "buoyancy_position",
+    "prismatic_coefficient",
+    "length_displacement_ratio",
+    "beam_draught_ratio",
+    "length_beam_ratio",
+    "froude"
+  ],
+  "native_work_observation": "Configured ceilings and measured fit time only; actual mutation/evaluation counts and stop criterion are not reported by this adapter. A returned fit is not proof of convergence.",
+  "fit_elapsed_seconds": 385.4762246439932,
+  "recovery_elapsed_seconds": null,
+  "native_import_seconds": 24.596434424020117,
+  "native_search_fit_seconds": 359.61147321699536,
+  "native_export_seconds": 0.8302092940139119,
+  "native_candidates": 47,
+  "rejected_exports": [
+    {
+      "index": 14,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 15,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 16,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 17,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 18,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 19,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 20,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 21,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 22,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 23,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 24,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 25,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 26,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 27,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 28,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 29,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 30,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 31,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 32,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 33,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 34,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 35,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 36,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 37,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 38,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 39,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 40,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 41,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 42,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 43,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 44,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 45,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    },
+    {
+      "index": 46,
+      "reason": "Unsupported IEEE-to-finite composition: domain bounds do not exclude an inner singularity"
+    }
+  ],
+  "template_evidence": {},
+  "template_native_support": null,
+  "constraint_support": {
+    "operators": "enforced during search",
+    "max_nodes": "weighted native source-coordinate size for ordinary expressions; template full-size fitness gate includes fixed skeleton and repeated calls",
+    "native_operator_profile": "optional per-argument/nesting restrictions enforced by PySR; not additional common output requirements",
+    "units": "default post-check only; explicit unit_mode soft/hard applies native dimensional fitness to ordinary expressions, including custom response loss; template native-unit search unsupported",
+    "variables": "disallowed input columns excluded before native search; response points projected after full-schema validation; subset with templates unsupported; full-schema export rechecked",
+    "allowed_variables": "disallowed input columns excluded before native search; response points projected after full-schema validation; subset with templates unsupported; full-schema export rechecked",
+    "probes": "native finite-point objective in search mode; explicit filter mode is post-check only",
+    "response_checks": "native finite-step objective in search mode; no global guarantee",
+    "equation_template": "native fixed structure/shared slots; full source AST and local slot size hard-gated in search fitness before prediction; units and exported expression rechecked after search"
+  },
+  "response_search": {
+    "mode": "search",
+    "search_response_constraints": false,
+    "objective": "native"
+  },
+  "native_check_source": "PySRRegressor.predict(index=...) versus unsimplified equation AST",
+  "assets": null,
+  "python": "3.11.15",
+  "python_executable": "/opt/venv/bin/python",
+  "device": "cpu",
+  "allowed_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div",
+    "neg",
+    "abs",
+    "exp",
+    "log",
+    "sqrt",
+    "pow_int",
+    "sin",
+    "cos",
+    "tanh",
+    "sinh",
+    "cosh"
+  ],
+  "native_operators": [
+    "add",
+    "sub",
+    "mul",
+    "div",
+    "neg",
+    "abs",
+    "exp",
+    "log",
+    "sqrt",
+    "pow_int",
+    "sin",
+    "cos",
+    "tanh",
+    "sinh",
+    "cosh"
+  ],
+  "unavailable_search_operators": [],
+  "operator_policy": "unavailable_search_operators is the requested/export-capability difference, not decoder reachability; generation enforcement and context-dependent routes are specified by constraint_support and native metadata",
+  "status": "ok",
+  "native_execution_status": "completed",
+  "native_artifacts": {
+    "native_models": "/work/results/practical-fixed-20261115-1400/yacht/pysr/calculation/discover/pysr/42/pysr_native.json"
+  },
+  "native_artifact_sha256": {
+    "native_models": "cfda02380d590e81b281ba97795700afa09217355c2ce378456ab73f07ce49ad"
+  },
+  "portable_status": "candidates",
+  "fixed_constants_native_support": "template_only",
+  "exported_candidates": 14,
+  "selection_candidates": 14,
+  "prelimit_constraint_eligible": null,
+  "portable_candidates": "/work/results/practical-fixed-20261115-1400/yacht/pysr/calculation/discover/pysr/42/candidates.jsonl",
+  "portable_candidates_sha256": "87da2809a1dd11da5365eadf1f0133cb6121a7db9180bbc265cd8a0104e4fc9f",
+  "candidate_pool": {
+    "policy": "all",
+    "emitted": 14,
+    "retained": 14,
+    "limit": null,
+    "discarded_from_comparison_ids": [],
+    "archive_scope": "all faithfully exported native candidates, not all internal search states",
+    "quality_scope": "Train/shared probes only when explicit bounded allocation is requested; compare owns final eligibility"
+  },
+  "truncation": "none; all faithfully emitted candidates reach common evaluation",
+  "engine": "pysr",
+  "seed": 42,
+  "wall_seconds": 389.5647166080016,
+  "runtime_image_id": "sha256:43d979e1acb694cb6e42a0d08c57f737a31844599665daef971bf632eb73a5c0",
+  "prepared_sha256": "dfe89fb34b0d3291964c5d0dfd6e9eab1c555574ef5a167c21197b11ce68a0d8",
+  "job_sha256": "13916f14ca2e7ba9fc7e205a808f5f32384186ffa65cc3c0349ed5c1f44aec75",
+  "requested_constraints": {
+    "max_nodes": 256,
+    "max_free_parameters": null,
+    "require_units": false,
+    "allowed_variables": null,
+    "equation_template": null,
+    "probes": [],
+    "response_bounds": [
+      null,
+      null
+    ],
+    "response_checks": [],
+    "response_enforcement": null,
+    "max_wall_seconds": 3600,
+    "response_mode": "search"
+  },
+  "requirements_ref": {
+    "requirements_sha256": "95ad988b81c9bdb013dbaae8f36fbd452fb5a331452d7a3065c431eec8d1707b",
+    "scope": "canonical common request; native settings/checks are derived evidence"
+  },
+  "resolved_native_profile": {
+    "options": {
+      "niterations": 100,
+      "populations": 6,
+      "ncycles_per_iteration": 100
+    },
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "neg",
+      "abs",
+      "exp",
+      "log",
+      "sqrt",
+      "pow_int",
+      "sin",
+      "cos",
+      "tanh",
+      "sinh",
+      "cosh"
+    ],
+    "device": "cpu",
+    "candidate_pool_policy": "all"
+  },
+  "response_mode": "search",
+  "capability_declaration": {
+    "unit_search": {
+      "defaults": {
+        "unit_mode": "hard"
+      },
+      "choices": {
+        "unit_mode": [
+          "soft",
+          "hard"
+        ]
+      },
+      "templates": false
+    },
+    "response_enforcement": {
+      "default": "soft",
+      "supported": [
+        "soft",
+        "hard"
+      ],
+      "stage": "native structure fitness and constant optimization"
+    },
+    "supported_options": [
+      "constraint_weight",
+      "deterministic",
+      "dimensional_constraint_penalty",
+      "dimensionless_constants_only",
+      "max_evals",
+      "maxdepth",
+      "ncycles_per_iteration",
+      "nested_constraints",
+      "niterations",
+      "objective",
+      "operator_constraints",
+      "parallelism",
+      "population_size",
+      "populations",
+      "procs",
+      "seconds",
+      "template_parameter_initialization",
+      "unit_mode"
+    ],
+    "operators": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "neg",
+      "sqrt",
+      "log",
+      "exp",
+      "abs",
+      "sin",
+      "cos",
+      "tanh",
+      "sinh",
+      "cosh",
+      "pow",
+      "pow_int"
+    ],
+    "equation_template": true,
+    "fixed_constants": "template_only",
+    "constraints": {
+      "operators": "enforced during search",
+      "max_nodes": "weighted native source-coordinate size for ordinary expressions; template full-size fitness gate includes fixed skeleton and repeated calls",
+      "native_operator_profile": "optional per-argument/nesting restrictions enforced by PySR; not additional common output requirements",
+      "units": "default post-check only; explicit unit_mode soft/hard applies native dimensional fitness to ordinary expressions, including custom response loss; template native-unit search unsupported",
+      "variables": "disallowed input columns excluded before native search; response points projected after full-schema validation; subset with templates unsupported; full-schema export rechecked",
+      "allowed_variables": "disallowed input columns excluded before native search; response points projected after full-schema validation; subset with templates unsupported; full-schema export rechecked",
+      "probes": "native finite-point objective in search mode; explicit filter mode is post-check only",
+      "response_checks": "native finite-step objective in search mode; no global guarantee",
+      "equation_template": "native fixed structure/shared slots; full source AST and local slot size hard-gated in search fitness before prediction; units and exported expression rechecked after search"
+    },
+    "search_constraints": [
+      "response_bounds",
+      "response_checks",
+      "probes"
+    ],
+    "requires_assets": false
+  },
+  "constraint_application": {
+    "operators": "enforced during search",
+    "max_nodes": "weighted native source-coordinate size for ordinary expressions; template full-size fitness gate includes fixed skeleton and repeated calls",
+    "units": "post-check only; native unit fitness disabled"
+  },
+  "response_enforcement": {
+    "effective": "not_requested"
+  },
+  "readiness_scope": "this profile/run only; execution, fidelity, common admissibility and scientific adequacy are distinct",
+  "candidates_sha256": "87da2809a1dd11da5365eadf1f0133cb6121a7db9180bbc265cd8a0104e4fc9f"
+}

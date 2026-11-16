@@ -1,0 +1,13 @@
+sample_id,partition
+r01,train
+r02,train
+r03,train
+r04,train
+r05,train
+r06,train
+r07,selection
+r08,selection
+r09,selection
+r10,selection
+r11,final
+r12,final

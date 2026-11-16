@@ -1,0 +1,3 @@
+engine,seed,status,native_execution_status,reason,wall_seconds,exported_candidates,summary_path
+mean,42,ok,completed,,20.025232618994778,1,/work/results/practical-fixed-20261115-1400/yacht/baselines/calculation/discover/mean/42/engine_summary.json
+linear,42,ok,completed,,30.287344310985645,6,/work/results/practical-fixed-20261115-1400/yacht/baselines/calculation/discover/linear/42/engine_summary.json

@@ -1,0 +1,2 @@
+# Compatible with Bingo's declared cmake>=3.12; avoid unrelated CMake 4 policy removals.
+cmake==3.31.6

@@ -1,0 +1,10 @@
+{
+  "search": {
+    "operators": ["add", "mul", "pow_int"],
+    "engine_options": {
+      "pysips": {"particles": 100, "mcmc_samples": 10, "max_complexity": 12, "seconds": 90, "opt_restarts": 1, "param_init_bounds": [-5, 5]}
+    }
+  },
+  "constraints": {"max_nodes": 100, "require_units": false},
+  "evaluation": {"coefficient_fit": "none"}
+}

@@ -1,0 +1,71 @@
+Compare equations on fixed Selection rows, not independent Final evidence.
+
+Stored equations and coefficients; presentation only.
+All candidates are retained. Eligibility, display order and scientific adoption are distinct.
+Missing values remain missing. No metrics, responses, uncertainty or predictions were recomputed.
+
+physo/17/0@native / prediction
+Method: physo; eligible: True; stored AST
+Public: y [m^2] = ((x) ** (2))
+Working: ((x_work) ** (2))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "physo/17/0@native", "relation_state_sha256": "19343605f2fcb6966c113d12138172cd37590ac15044d8eb6d21eed4b279659b", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((h(x)) ** 2)
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Exposed small wrapper/horizon mechanism only, not a quality benchmark'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [m]) = x0
+  Unit: m
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes.
+
+physo/17/1@native / prediction
+Method: physo; eligible: True; stored AST
+Public: y [m^2] = (((x + x)) ** (2))
+Working: (((x_work + x_work)) ** (2))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "physo/17/1@native", "relation_state_sha256": "15ae3ee97f48d331b4e9d0f849f4317b99c02738a97760dc65a890ed73dacd28", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((h(x)) ** 2)
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Exposed small wrapper/horizon mechanism only, not a quality benchmark'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [m]) = (x0 + x0)
+  Unit: m
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes.
+
+physo/17/2@native / prediction
+Method: physo; eligible: True; stored AST
+Public: y [m^2] = (((x * (1.0 * coef['__slot_h_a']))) ** (2))
+Working: (((x_work * (1.0 * coef['__slot_h_a']))) ** (2))
+execution_view: {"name": "value", "settings": {}}
+subject: {"relation_ref": "physo/17/2@native", "relation_state_sha256": "a6bbcb39e01eaef4ab215430927ef5459d68ca1db5e32ee77632f8ffcc568e6e", "view": "value", "settings_ref": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+  __slot_h_a = 2.0; unit=1; role=free; tied_to=None; bounds=[None, None]; origin=native_free_constant_slot
+Declared structure and fitted slots
+Coordinates: canonical working; ranges on frozen Selection inputs only
+declared outer: relation = ((h(x)) ** 2)
+  Declared knowledge: {'kind': 'hypothesis', 'statement': 'Exposed small wrapper/horizon mechanism only, not a quality benchmark'}
+  Named components describe this declared representation, not unique identification or causal effects.
+fitted slot: h(x0 [m]) = (x0 * (1.0 * a))
+  Unit: m
+  a = 2.0; role=free; unit=1; tied_to=None
+sharing: slot_calls
+  Every call with the same slot name shares one function and its coefficients. Different names denote separate functions, not proven identifiable components.
+Display only; no simplification, fitting, coefficient conversion or model selection.
+Common real-domain validity requires every intermediate and result to be finite; domain holes remain.
+Coefficient values/units refer to the stored working equation; unknown units are not dimensionless.
+coef['name'] / theta_name denote coefficients, distinct from input and target column names.
+pow uses real numpy.power; pow_int retains its fixed integer exponent. No cancellation of domain holes.
+

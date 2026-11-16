@@ -1,0 +1,102 @@
+{
+  "partition": "Final",
+  "role": "post-selection audit; prior exposure not excluded",
+  "history": "known_exposed",
+  "history_scope": "Local recorded history and declarations only; external prior exposure cannot be verified",
+  "final_accessed": true,
+  "selection_changed": false,
+  "refit": false,
+  "attempts": [
+    {
+      "method": "pysr",
+      "seed": 42,
+      "status": "scored",
+      "run_status": "ok",
+      "wall_seconds": 389.5647166080016,
+      "reason": null,
+      "candidate_id": "pysr/42/12@native",
+      "coverage": 1.0,
+      "rmse": 1.5715078430868323,
+      "mae": 0.7895431971522548,
+      "r2": 0.9877307829060742
+    },
+    {
+      "method": "parfam",
+      "seed": 42,
+      "status": "scored",
+      "run_status": "ok",
+      "wall_seconds": 3040.191859793995,
+      "reason": null,
+      "candidate_id": "parfam/42/0@native",
+      "coverage": 1.0,
+      "rmse": 1.0568741874169376,
+      "mae": 0.6562452707843899,
+      "r2": 0.994450800641345
+    },
+    {
+      "method": "torchsisso",
+      "seed": 42,
+      "status": "scored",
+      "run_status": "ok",
+      "wall_seconds": 16.727101085998584,
+      "reason": null,
+      "candidate_id": "torchsisso/42/2@native",
+      "coverage": 1.0,
+      "rmse": 1.601788220702433,
+      "mae": 0.8609632967238429,
+      "r2": 0.9872534123536519
+    },
+    {
+      "method": "physo",
+      "seed": 42,
+      "status": "scored",
+      "run_status": "ok",
+      "wall_seconds": 1852.9255048389896,
+      "reason": null,
+      "candidate_id": "physo/42/22@native",
+      "coverage": 1.0,
+      "rmse": 1.5709867533491753,
+      "mae": 1.2516131955416394,
+      "r2": 0.9877389181542316
+    },
+    {
+      "method": "e2e",
+      "seed": 42,
+      "status": "scored",
+      "run_status": "ok",
+      "wall_seconds": 198.73502130398992,
+      "reason": null,
+      "candidate_id": "e2e/42/7@native",
+      "coverage": 1.0,
+      "rmse": 1.2854696386277005,
+      "mae": 0.8792311079605257,
+      "r2": 0.991790676075764
+    },
+    {
+      "method": "mean",
+      "seed": 42,
+      "status": "scored",
+      "run_status": "ok",
+      "wall_seconds": 20.025232618994778,
+      "reason": null,
+      "candidate_id": "mean/42/0@native",
+      "coverage": 1.0,
+      "rmse": 14.197353077492217,
+      "mae": 10.941106705167112,
+      "r2": -0.0013790735616925343
+    },
+    {
+      "method": "linear",
+      "seed": 42,
+      "status": "scored",
+      "run_status": "ok",
+      "wall_seconds": 30.287344310985645,
+      "reason": null,
+      "candidate_id": "linear/42/5@native",
+      "coverage": 1.0,
+      "rmse": 8.294607582810887,
+      "mae": 6.962269097769039,
+      "r2": 0.6581973431688979
+    }
+  ]
+}

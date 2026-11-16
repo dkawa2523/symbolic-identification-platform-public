@@ -1,0 +1,130 @@
+{
+  "status": "planned_not_executed",
+  "purpose": "Paired usefulness check of the five central methods; not a general method ranking",
+  "datasets": {
+    "synthetic": {
+      "kind": "existing bounded increasing response development problem",
+      "train_rows": 16,
+      "selection_rows": 24,
+      "max_nodes": 64,
+      "final_history": "known_development_formula; fresh points do not prove unknown-law generalization",
+      "response": "same 17 declared centers, bounds[1,3], finite first differences nonnegative"
+    },
+    "concrete": {
+      "source": "data/concrete/table.csv",
+      "split": "data/concrete/split.csv",
+      "split_seed": 42,
+      "train_rows": 652,
+      "selection_rows": 149,
+      "final_rows": 229,
+      "max_nodes": 320,
+      "final_history": "known_exposed",
+      "pretraining_overlap": "unknown",
+      "units": "metadata source units: kg/m^3,day,MPa; common canonical transformation before all methods",
+      "response": "strength>=0 at 17 deterministic Train input rows; no causal monotonicity assumed",
+      "require_units": false,
+      "budget_reason": "Before fitting: quadratic ParFam polynomial source cost271, quadratic numerator/linear denominator307 including age and target unit conversion; 320 avoids accidentally excluding all configured quadratic families"
+    }
+  },
+  "arms": [
+    "none",
+    "search"
+  ],
+  "response_enforcement": "hard",
+  "search_seed": 17,
+  "split_policy": "same fixed split for every method and arm; no cross-validation/multiple seeds",
+  "worker_seconds": 600,
+  "resources": {
+    "cpus": 2,
+    "classic_memory_gib": 4,
+    "e2e_memory_gib": 6,
+    "e2e_min_free_memory_gib": 8,
+    "parallel_jobs": 1
+  },
+  "operators": [
+    "add",
+    "sub",
+    "mul",
+    "div",
+    "pow_int",
+    "exp",
+    "log",
+    "sin",
+    "cos"
+  ],
+  "methods": {
+    "pysr": {
+      "objective": "mse",
+      "niterations": 100,
+      "populations": 5,
+      "population_size": 40,
+      "ncycles_per_iteration": 100,
+      "seconds": 480,
+      "parallelism": "serial"
+    },
+    "parfam": {
+      "objective": "mse",
+      "family": "rational",
+      "family_search": "up_to",
+      "functions": [
+        "sin",
+        "cos",
+        "exp",
+        "log"
+      ],
+      "degree": 2,
+      "input_degree": 2,
+      "denominator_degree": 1,
+      "maxiter": 100,
+      "repetitions": 1,
+      "seconds": 480,
+      "candidate_scope": "completed_families"
+    },
+    "torchsisso": {
+      "n_expansion": 2,
+      "n_term": 3,
+      "k": 10,
+      "response_max_iterations": 200
+    },
+    "e2e": {
+      "beam_size": 16,
+      "max_input_points": 200,
+      "max_train_rows": null,
+      "generation_batch_size": 1,
+      "n_trees_to_refine": 16,
+      "refinement_seconds": 5,
+      "max_generated_output_len": 128,
+      "operator_mask": true,
+      "response_max_nfev": 1000
+    },
+    "physo": {
+      "batch_size": 128,
+      "epochs": 50,
+      "max_n_evaluations": 6400,
+      "response_max_nfev": 200
+    }
+  },
+  "profile_notes": {
+    "pysr": "native evolution and coefficient optimization, finite iterations + safety wall; hard infeasible fitness, no assertion of efficient feasible discovery",
+    "parfam": "finite native family enumeration plus explicit lower-degree extension; source cost audit before fitting; discarded families and early stop retained",
+    "torchsisso": "same feature depth/SIS width/term count in both arms; hard subset solve alters residual-driven subsequent SIS; not exhaustive subset search",
+    "e2e": "same pretrained sampling/all bags/full Train BFGS; hard coefficient variants only after generated exportable structures, not response-conditioned decoder",
+    "physo": "modified config0, not official recommended-quality preset; hard coefficient fits change reward/RNN; length and source upper-bound runtime cost recorded"
+  },
+  "selection": "existing common accuracy rule on Selection among eligible finite candidates; freeze each method/arm before Test; include no-result rows",
+  "references": [
+    "mean",
+    "linear"
+  ],
+  "report": [
+    "execution/status/reason",
+    "selected formula in source coordinates",
+    "Selection and fixed-Test precision vs linear",
+    "declared and separate verification-point constraint satisfaction",
+    "source complexity/free coefficients",
+    "elapsed/partial/termination/progress",
+    "native profile and supported stage"
+  ],
+  "test_policy": "Never choose options or retry based on Test; previously exposed real Test is post-hoc comparison only. No automatic retries or substitution.",
+  "implementation_note": "Plan only. Validate supported options, exact prepared hashes/assets/images and method capacity before starting. Reuse existing prepare/run_discovery/create_study/selection/scoring/output functions."
+}

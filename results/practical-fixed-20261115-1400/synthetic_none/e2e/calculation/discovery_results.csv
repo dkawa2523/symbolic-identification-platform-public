@@ -1,0 +1,2 @@
+engine,seed,status,native_execution_status,reason,wall_seconds,exported_candidates,summary_path
+e2e,17,ok,completed,,310.0351577429974,194,/work/results/practical-fixed-20261115-1400/synthetic_none/e2e/calculation/discover/e2e/17/engine_summary.json

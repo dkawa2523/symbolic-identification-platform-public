@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="788">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203342">
+<text x="40" y="40" font-size="24" font-weight="bold">11. e2e | equation</text>
+<text x="40" y="68" font-size="13">Candidate e2e/17/125/known-affine-fit@native | page 2/3</text>
+<text x="40" y="110" font-size="20">__slot_h_c35 = 0.00096256745 [1]; role=free</text>
+<text x="40" y="137" font-size="20">__slot_h_c38 = -0.55511269 [1]; role=free</text>
+<text x="40" y="164" font-size="20">__slot_h_c4 = -0.044034009 [1]; role=free</text>
+<text x="40" y="191" font-size="20">__slot_h_c40 = -14.16704 [1]; role=free</text>
+<text x="40" y="218" font-size="20">__slot_h_c43 = -1.5489822 [1]; role=free</text>
+<text x="40" y="245" font-size="20">__slot_h_c45 = 31.332791 [1]; role=free</text>
+<text x="40" y="272" font-size="20">__slot_h_c48 = -0.037659525 [1]; role=free</text>
+<text x="40" y="299" font-size="20">__slot_h_c50 = 14.736169 [1]; role=free</text>
+<text x="40" y="326" font-size="20">__slot_h_c53 = 2.5914042 [1]; role=free</text>
+<text x="40" y="353" font-size="20">__slot_h_c55 = -51.233305 [1]; role=free</text>
+<text x="40" y="380" font-size="20">__slot_h_c8 = 0.028737139 [1]; role=free</text>
+<text x="40" y="407" font-size="20">__slot_h_x0_mean = 1.9634916 [1]; role=fixed</text>
+<text x="40" y="434" font-size="20">__slot_h_x0_scale = 1.0820323 [1]; role=fixed</text>
+<text x="40" y="461" font-size="20">Declared structure and fitted slots</text>
+<text x="40" y="488" font-size="20">Coordinates: canonical working; ranges on frozen Selection inputs only</text>
+<text x="40" y="515" font-size="20">declared outer: relation = ((0.75 * x) + h(x))</text>
+<text x="40" y="542" font-size="20">fitted slot: h(x0 [1]) = ((c2 + (c4 * (1 / ((c8 + (c10 * (1 / (c13 + (c15 *</text>
+<text x="40" y="569" font-size="20">((x0 - x0_mean) / x0_scale)))))) - (c18 + (c20 * ((x0 - x0_mean) /</text>
+<text x="40" y="596" font-size="20">x0_scale))))))) + (c23 + (c25 * (1 / (c28 + (c30 * (1 / (c33 + (c35 * (1 /</text>
+<text x="40" y="623" font-size="20">(c38 + (c40 * (1 / (c43 + (c45 * (1 / (c48 + (c50 * (1 / (c53 + (c55 * ((x0</text>
+<text x="40" y="650" font-size="20">- x0_mean) / x0_scale))))))))))))))))))))))</text>
+<text x="40" y="677" font-size="20">  Unit: 1</text>
+<text x="40" y="704" font-size="20">  c2 = -0.28608761; free; [1]</text>
+<text x="40" y="731" font-size="20">  c4 = -0.044034009; free; [1]</text>
+</g></svg>

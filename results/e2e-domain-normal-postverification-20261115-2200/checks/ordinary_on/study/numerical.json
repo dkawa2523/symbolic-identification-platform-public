@@ -1,0 +1,2126 @@
+[
+  {
+    "id": "e2e/731/0/response-fit@native",
+    "kind": "explicit",
+    "eligible": true,
+    "reason": null,
+    "local_parameter_identifiability": {
+      "status": "not_computed",
+      "reason": "Not requested for this record via parameter_evidence_ids; prediction metrics and eligibility are independent.",
+      "data_role": "selection"
+    },
+    "prediction_available": true,
+    "hypothesis": null,
+    "execution": {
+      "native_arithmetic": [
+        "strict_real"
+      ],
+      "prediction": "finite real-domain projection; invalid intermediate rows retained",
+      "stored_nodes": 47,
+      "expanded_nodes": 47,
+      "node_coordinate_system": "working"
+    },
+    "response_evaluation": [
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null,
+        "n_points": 3,
+        "n_valid": 3,
+        "n_violating": 0,
+        "n_invalid": 0,
+        "violation_rate": 0.0,
+        "failure_rate": 0.0,
+        "rate_denominator": "all declared points; invalid points separate from finite violations",
+        "max_violation": 0.0,
+        "max_finite_violation": 0.0,
+        "response_unit": "1",
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "worst_point": {
+          "x": -0.75
+        },
+        "worst_prediction": -1.0749999999999997,
+        "point_origin": "prepared_problem",
+        "data_role": "Selection eligibility; not independent Test",
+        "independence": "not_asserted; external reuse history unknown",
+        "coordinates": "working; canonical units and frozen input geometry",
+        "point_units": {
+          "x": "1"
+        },
+        "bounds_scope": "current study conditions, including additional restrictions",
+        "overlap_with_prepared_points": null,
+        "points": [
+          {
+            "x": -0.75
+          },
+          {
+            "x": 0.0
+          },
+          {
+            "x": 0.75
+          }
+        ]
+      },
+      {
+        "status": "not_evaluated",
+        "reason": "No response evaluation points specified",
+        "point_origin": "additional_study",
+        "data_role": "Selection eligibility; not independent Test",
+        "independence": "not_asserted; external reuse history unknown",
+        "coordinates": "working; canonical units and frozen input geometry",
+        "point_units": {
+          "x": "1"
+        },
+        "bounds_scope": "current study conditions, including additional restrictions",
+        "overlap_with_prepared_points": 0,
+        "points": []
+      }
+    ],
+    "constraint_application": {
+      "requirements_ref": {
+        "requirements_sha256": "af49881255838008a51597c7dcfbd22810f6d62573ad708a26f1ba6b548eceab",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "requested": {
+        "max_nodes": 64,
+        "max_free_parameters": null,
+        "require_units": false,
+        "allowed_variables": null,
+        "equation_template": null,
+        "probes": [
+          {
+            "x": -0.75
+          },
+          {
+            "x": 0.0
+          },
+          {
+            "x": 0.75
+          }
+        ],
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "response_checks": [],
+        "response_enforcement": "hard"
+      },
+      "search_application": {
+        "operators": "operator_mask defaults true and restricts decoder operator tokens; explicit false is post-check-only compatibility; portable full expression including normalization still post-filtered; configured operator_mask=True; decoder masking requested; runtime evidence required to verify execution",
+        "max_nodes": "native prefix completion budget includes frozen source coordinates and fixed E2E normalization; export verification retained",
+        "response_enforcement": {
+          "requested": "hard",
+          "effective": "hard",
+          "stage": "exported candidate coefficient optimization; decoder not conditioned",
+          "scope": "declared finite points only; different defaults are not equivalent enforcement"
+        },
+        "probes": "explicit finite-point constraints during SLSQP coefficient search over every exported structure; decoder not response-conditioned; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee",
+        "response_bounds": "finite-point hard bounds during coefficient optimization; no global guarantee; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee"
+      },
+      "additional_evaluation_conditions": {},
+      "evaluation_scope": "Selection-stage checks; additions do not establish independent final validation if used to choose candidates",
+      "native_declaration": {
+        "operators": "operator_mask defaults true and restricts decoder operator tokens; explicit false is post-check-only compatibility; portable full expression including normalization still post-filtered",
+        "units": "native unit guidance unsupported; train normalization units preserved, coefficient units unknown",
+        "max_nodes": "native prefix completion budget includes frozen source coordinates and fixed E2E normalization; export verification retained",
+        "variables": "1..10 unchanged input columns; output variable-token masking",
+        "allowed_variables": "enforced in native decoder variable tokens; original columns/IDs retained; padded tokens forbidden",
+        "rows": "default resource guard 1024 rows; explicit max_train_rows=null uses all bags under outer wall/memory limits; no subsampling",
+        "probes": "explicit finite-point constraints during SLSQP coefficient search over every exported structure; decoder not response-conditioned",
+        "response_bounds": "finite-point hard bounds during coefficient optimization; no global guarantee",
+        "response_checks": "finite-step conditions during coefficient optimization; not decoder conditioning or analytic derivative proof",
+        "pretraining_overlap": "unknown; pretrained weights inference only, no fine-tuning",
+        "equation_template": "limited exact affine observed slot h(X); numeric target reduction before native generation, original outer-AST assembly and coefficient fit afterwards; no template-conditioned decoder"
+      },
+      "evaluation": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "expanded source-coordinate AST",
+          "reason": null,
+          "count": 47,
+          "limit": 64,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "unknown",
+          "required": false,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "domain_prediction_validity",
+          "status": "pass",
+          "required": true,
+          "method": "automatic domain points; finite prediction only, no response-bound expansion",
+          "reason": null,
+          "n_points": 26,
+          "n_valid": 26
+        },
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null,
+          "n_points": 3,
+          "n_valid": 3,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "violation_rate": 0.0,
+          "failure_rate": 0.0,
+          "rate_denominator": "all declared points; invalid points separate from finite violations",
+          "max_violation": 0.0,
+          "max_finite_violation": 0.0,
+          "response_unit": "1",
+          "response_bounds": [
+            -10.0,
+            10.0
+          ],
+          "worst_point": {
+            "x": -0.75
+          },
+          "worst_prediction": -1.0749999999999997
+        }
+      ],
+      "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+    },
+    "complexity_scope": "expanded source-coordinate prediction AST",
+    "prediction_view": "explicit equation",
+    "requirements_eligible": true,
+    "requirement_failures": [],
+    "checks": [
+      {
+        "name": "operators",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "max_nodes",
+        "status": "pass",
+        "required": true,
+        "method": "expanded source-coordinate AST",
+        "reason": null,
+        "count": 47,
+        "limit": 64,
+        "member": 0
+      },
+      {
+        "name": "units",
+        "status": "unknown",
+        "required": false,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "domain_prediction_validity",
+        "status": "pass",
+        "required": true,
+        "method": "automatic domain points; finite prediction only, no response-bound expansion",
+        "reason": null,
+        "n_points": 26,
+        "n_valid": 26
+      },
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null,
+        "n_points": 3,
+        "n_valid": 3,
+        "n_violating": 0,
+        "n_invalid": 0,
+        "violation_rate": 0.0,
+        "failure_rate": 0.0,
+        "rate_denominator": "all declared points; invalid points separate from finite violations",
+        "max_violation": 0.0,
+        "max_finite_violation": 0.0,
+        "response_unit": "1",
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "worst_point": {
+          "x": -0.75
+        },
+        "worst_prediction": -1.0749999999999997
+      }
+    ],
+    "metrics": {
+      "train": {
+        "rmse": 1.4704759515017349e-16,
+        "mae": 1.0238934266409982e-16,
+        "r2": 1.0,
+        "reason": null
+      },
+      "selection": {
+        "rmse": 1.570523638251844e-16,
+        "mae": 1.207801220148852e-16,
+        "r2": 1.0,
+        "reason": null
+      }
+    },
+    "regions": {
+      "all": {
+        "n_rows": 32,
+        "rmse": 1.570523638251844e-16,
+        "mae": 1.207801220148852e-16,
+        "r2": 1.0,
+        "reason": null
+      }
+    },
+    "n_nodes": 47,
+    "working_n_nodes": 47,
+    "n_parameters": 9,
+    "formula": "((((-0.16348751520889407 * ((x - -4.5102810375396984e-17) / 0.4691543670326645)) + ((0.1988875 + (0.3815124847911059 * ((x - -4.5102810375396984e-17) / 0.4691543670326645))) - (-0.0017374999999999914 + (0.10148751520889408 * ((x - -4.5102810375396984e-17) / 0.4691543670326645))))) + (-0.007752500000000008 + (0.4415124847911059 * ((x - -4.5102810375396984e-17) / 0.4691543670326645)))) - (-0.007127499999999991 + (-0.23951248479110596 * ((x - -4.5102810375396984e-17) / 0.4691543670326645))))",
+    "applicable_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "x",
+          "unit": "1",
+          "domain": [
+            -1.0,
+            1.0
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "y",
+        "unit": "1",
+        "domain": null
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "x",
+            "unit": "1",
+            "domain": [
+              -1.0,
+              1.0
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "x"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "x": "1"
+          },
+          "coordinate_roles": {
+            "x": null
+          },
+          "bounds": [
+            [
+              -1.0,
+              1.0
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "strata": {},
+    "groups": {},
+    "native_fidelity": "verified within recorded native checks"
+  },
+  {
+    "id": "e2e/731/2/response-fit@native",
+    "kind": "explicit",
+    "eligible": true,
+    "reason": null,
+    "local_parameter_identifiability": {
+      "status": "not_computed",
+      "reason": "Not requested for this record via parameter_evidence_ids; prediction metrics and eligibility are independent.",
+      "data_role": "selection"
+    },
+    "prediction_available": true,
+    "hypothesis": null,
+    "execution": {
+      "native_arithmetic": [
+        "strict_real"
+      ],
+      "prediction": "finite real-domain projection; invalid intermediate rows retained",
+      "stored_nodes": 53,
+      "expanded_nodes": 53,
+      "node_coordinate_system": "working"
+    },
+    "response_evaluation": [
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null,
+        "n_points": 3,
+        "n_valid": 3,
+        "n_violating": 0,
+        "n_invalid": 0,
+        "violation_rate": 0.0,
+        "failure_rate": 0.0,
+        "rate_denominator": "all declared points; invalid points separate from finite violations",
+        "max_violation": 0.0,
+        "max_finite_violation": 0.0,
+        "response_unit": "1",
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "worst_point": {
+          "x": -0.75
+        },
+        "worst_prediction": -1.0750058742407589,
+        "point_origin": "prepared_problem",
+        "data_role": "Selection eligibility; not independent Test",
+        "independence": "not_asserted; external reuse history unknown",
+        "coordinates": "working; canonical units and frozen input geometry",
+        "point_units": {
+          "x": "1"
+        },
+        "bounds_scope": "current study conditions, including additional restrictions",
+        "overlap_with_prepared_points": null,
+        "points": [
+          {
+            "x": -0.75
+          },
+          {
+            "x": 0.0
+          },
+          {
+            "x": 0.75
+          }
+        ]
+      },
+      {
+        "status": "not_evaluated",
+        "reason": "No response evaluation points specified",
+        "point_origin": "additional_study",
+        "data_role": "Selection eligibility; not independent Test",
+        "independence": "not_asserted; external reuse history unknown",
+        "coordinates": "working; canonical units and frozen input geometry",
+        "point_units": {
+          "x": "1"
+        },
+        "bounds_scope": "current study conditions, including additional restrictions",
+        "overlap_with_prepared_points": 0,
+        "points": []
+      }
+    ],
+    "constraint_application": {
+      "requirements_ref": {
+        "requirements_sha256": "af49881255838008a51597c7dcfbd22810f6d62573ad708a26f1ba6b548eceab",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "requested": {
+        "max_nodes": 64,
+        "max_free_parameters": null,
+        "require_units": false,
+        "allowed_variables": null,
+        "equation_template": null,
+        "probes": [
+          {
+            "x": -0.75
+          },
+          {
+            "x": 0.0
+          },
+          {
+            "x": 0.75
+          }
+        ],
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "response_checks": [],
+        "response_enforcement": "hard"
+      },
+      "search_application": {
+        "operators": "operator_mask defaults true and restricts decoder operator tokens; explicit false is post-check-only compatibility; portable full expression including normalization still post-filtered; configured operator_mask=True; decoder masking requested; runtime evidence required to verify execution",
+        "max_nodes": "native prefix completion budget includes frozen source coordinates and fixed E2E normalization; export verification retained",
+        "response_enforcement": {
+          "requested": "hard",
+          "effective": "hard",
+          "stage": "exported candidate coefficient optimization; decoder not conditioned",
+          "scope": "declared finite points only; different defaults are not equivalent enforcement"
+        },
+        "probes": "explicit finite-point constraints during SLSQP coefficient search over every exported structure; decoder not response-conditioned; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee",
+        "response_bounds": "finite-point hard bounds during coefficient optimization; no global guarantee; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee"
+      },
+      "additional_evaluation_conditions": {},
+      "evaluation_scope": "Selection-stage checks; additions do not establish independent final validation if used to choose candidates",
+      "native_declaration": {
+        "operators": "operator_mask defaults true and restricts decoder operator tokens; explicit false is post-check-only compatibility; portable full expression including normalization still post-filtered",
+        "units": "native unit guidance unsupported; train normalization units preserved, coefficient units unknown",
+        "max_nodes": "native prefix completion budget includes frozen source coordinates and fixed E2E normalization; export verification retained",
+        "variables": "1..10 unchanged input columns; output variable-token masking",
+        "allowed_variables": "enforced in native decoder variable tokens; original columns/IDs retained; padded tokens forbidden",
+        "rows": "default resource guard 1024 rows; explicit max_train_rows=null uses all bags under outer wall/memory limits; no subsampling",
+        "probes": "explicit finite-point constraints during SLSQP coefficient search over every exported structure; decoder not response-conditioned",
+        "response_bounds": "finite-point hard bounds during coefficient optimization; no global guarantee",
+        "response_checks": "finite-step conditions during coefficient optimization; not decoder conditioning or analytic derivative proof",
+        "pretraining_overlap": "unknown; pretrained weights inference only, no fine-tuning",
+        "equation_template": "limited exact affine observed slot h(X); numeric target reduction before native generation, original outer-AST assembly and coefficient fit afterwards; no template-conditioned decoder"
+      },
+      "evaluation": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "expanded source-coordinate AST",
+          "reason": null,
+          "count": 53,
+          "limit": 64,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "unknown",
+          "required": false,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "domain_prediction_validity",
+          "status": "pass",
+          "required": true,
+          "method": "automatic domain points; finite prediction only, no response-bound expansion",
+          "reason": null,
+          "n_points": 26,
+          "n_valid": 26
+        },
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null,
+          "n_points": 3,
+          "n_valid": 3,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "violation_rate": 0.0,
+          "failure_rate": 0.0,
+          "rate_denominator": "all declared points; invalid points separate from finite violations",
+          "max_violation": 0.0,
+          "max_finite_violation": 0.0,
+          "response_unit": "1",
+          "response_bounds": [
+            -10.0,
+            10.0
+          ],
+          "worst_point": {
+            "x": -0.75
+          },
+          "worst_prediction": -1.0750058742407589
+        }
+      ],
+      "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+    },
+    "complexity_scope": "expanded source-coordinate prediction AST",
+    "prediction_view": "explicit equation",
+    "requirements_eligible": true,
+    "requirement_failures": [],
+    "checks": [
+      {
+        "name": "operators",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "max_nodes",
+        "status": "pass",
+        "required": true,
+        "method": "expanded source-coordinate AST",
+        "reason": null,
+        "count": 53,
+        "limit": 64,
+        "member": 0
+      },
+      {
+        "name": "units",
+        "status": "unknown",
+        "required": false,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "domain_prediction_validity",
+        "status": "pass",
+        "required": true,
+        "method": "automatic domain points; finite prediction only, no response-bound expansion",
+        "reason": null,
+        "n_points": 26,
+        "n_valid": 26
+      },
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null,
+        "n_points": 3,
+        "n_valid": 3,
+        "n_violating": 0,
+        "n_invalid": 0,
+        "violation_rate": 0.0,
+        "failure_rate": 0.0,
+        "rate_denominator": "all declared points; invalid points separate from finite violations",
+        "max_violation": 0.0,
+        "max_finite_violation": 0.0,
+        "response_unit": "1",
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "worst_point": {
+          "x": -0.75
+        },
+        "worst_prediction": -1.0750058742407589
+      }
+    ],
+    "metrics": {
+      "train": {
+        "rmse": 3.7984638008612615e-06,
+        "mae": 3.2659578012570926e-06,
+        "r2": 0.9999999999773177,
+        "reason": null
+      },
+      "selection": {
+        "rmse": 3.6137915565936565e-06,
+        "mae": 3.147618665320581e-06,
+        "r2": 0.9999999999787972,
+        "reason": null
+      }
+    },
+    "regions": {
+      "all": {
+        "n_rows": 32,
+        "rmse": 3.6137915565936565e-06,
+        "mae": 3.147618665320581e-06,
+        "r2": 0.9999999999787972,
+        "reason": null
+      }
+    },
+    "n_nodes": 53,
+    "working_n_nodes": 53,
+    "n_parameters": 11,
+    "formula": "(((-1.2614869751327376 + (-27.67606249101203 * (1 / (-0.6217401878924038 + (0.002967759312456954 * ((x - -4.5102810375396984e-17) / 0.4691543670326645)))))) - (((-0.07361398969368059 * ((x - -4.5102810375396984e-17) / 0.4691543670326645)) * (-93.88385998058796 + (-0.013778513259084385 * ((x - -4.5102810375396984e-17) / 0.4691543670326645)))) + (1.2810269756823414 + (-8.750520341503966 * ((x - -4.5102810375396984e-17) / 0.4691543670326645))))) - (41.77135697537144 + (1.2542796592127758 * ((x - -4.5102810375396984e-17) / 0.4691543670326645))))",
+    "applicable_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "x",
+          "unit": "1",
+          "domain": [
+            -1.0,
+            1.0
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "y",
+        "unit": "1",
+        "domain": null
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "x",
+            "unit": "1",
+            "domain": [
+              -1.0,
+              1.0
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "x"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "x": "1"
+          },
+          "coordinate_roles": {
+            "x": null
+          },
+          "bounds": [
+            [
+              -1.0,
+              1.0
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "strata": {},
+    "groups": {},
+    "native_fidelity": "verified within recorded native checks"
+  },
+  {
+    "id": "e2e/731/3/response-fit@native",
+    "kind": "explicit",
+    "eligible": true,
+    "reason": null,
+    "local_parameter_identifiability": {
+      "status": "not_computed",
+      "reason": "Not requested for this record via parameter_evidence_ids; prediction metrics and eligibility are independent.",
+      "data_role": "selection"
+    },
+    "prediction_available": true,
+    "hypothesis": null,
+    "execution": {
+      "native_arithmetic": [
+        "strict_real"
+      ],
+      "prediction": "finite real-domain projection; invalid intermediate rows retained",
+      "stored_nodes": 9,
+      "expanded_nodes": 9,
+      "node_coordinate_system": "working"
+    },
+    "response_evaluation": [
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null,
+        "n_points": 3,
+        "n_valid": 3,
+        "n_violating": 0,
+        "n_invalid": 0,
+        "violation_rate": 0.0,
+        "failure_rate": 0.0,
+        "rate_denominator": "all declared points; invalid points separate from finite violations",
+        "max_violation": 0.0,
+        "max_finite_violation": 0.0,
+        "response_unit": "1",
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "worst_point": {
+          "x": -0.75
+        },
+        "worst_prediction": -1.074999997619979,
+        "point_origin": "prepared_problem",
+        "data_role": "Selection eligibility; not independent Test",
+        "independence": "not_asserted; external reuse history unknown",
+        "coordinates": "working; canonical units and frozen input geometry",
+        "point_units": {
+          "x": "1"
+        },
+        "bounds_scope": "current study conditions, including additional restrictions",
+        "overlap_with_prepared_points": null,
+        "points": [
+          {
+            "x": -0.75
+          },
+          {
+            "x": 0.0
+          },
+          {
+            "x": 0.75
+          }
+        ]
+      },
+      {
+        "status": "not_evaluated",
+        "reason": "No response evaluation points specified",
+        "point_origin": "additional_study",
+        "data_role": "Selection eligibility; not independent Test",
+        "independence": "not_asserted; external reuse history unknown",
+        "coordinates": "working; canonical units and frozen input geometry",
+        "point_units": {
+          "x": "1"
+        },
+        "bounds_scope": "current study conditions, including additional restrictions",
+        "overlap_with_prepared_points": 0,
+        "points": []
+      }
+    ],
+    "constraint_application": {
+      "requirements_ref": {
+        "requirements_sha256": "af49881255838008a51597c7dcfbd22810f6d62573ad708a26f1ba6b548eceab",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "requested": {
+        "max_nodes": 64,
+        "max_free_parameters": null,
+        "require_units": false,
+        "allowed_variables": null,
+        "equation_template": null,
+        "probes": [
+          {
+            "x": -0.75
+          },
+          {
+            "x": 0.0
+          },
+          {
+            "x": 0.75
+          }
+        ],
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "response_checks": [],
+        "response_enforcement": "hard"
+      },
+      "search_application": {
+        "operators": "operator_mask defaults true and restricts decoder operator tokens; explicit false is post-check-only compatibility; portable full expression including normalization still post-filtered; configured operator_mask=True; decoder masking requested; runtime evidence required to verify execution",
+        "max_nodes": "native prefix completion budget includes frozen source coordinates and fixed E2E normalization; export verification retained",
+        "response_enforcement": {
+          "requested": "hard",
+          "effective": "hard",
+          "stage": "exported candidate coefficient optimization; decoder not conditioned",
+          "scope": "declared finite points only; different defaults are not equivalent enforcement"
+        },
+        "probes": "explicit finite-point constraints during SLSQP coefficient search over every exported structure; decoder not response-conditioned; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee",
+        "response_bounds": "finite-point hard bounds during coefficient optimization; no global guarantee; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee"
+      },
+      "additional_evaluation_conditions": {},
+      "evaluation_scope": "Selection-stage checks; additions do not establish independent final validation if used to choose candidates",
+      "native_declaration": {
+        "operators": "operator_mask defaults true and restricts decoder operator tokens; explicit false is post-check-only compatibility; portable full expression including normalization still post-filtered",
+        "units": "native unit guidance unsupported; train normalization units preserved, coefficient units unknown",
+        "max_nodes": "native prefix completion budget includes frozen source coordinates and fixed E2E normalization; export verification retained",
+        "variables": "1..10 unchanged input columns; output variable-token masking",
+        "allowed_variables": "enforced in native decoder variable tokens; original columns/IDs retained; padded tokens forbidden",
+        "rows": "default resource guard 1024 rows; explicit max_train_rows=null uses all bags under outer wall/memory limits; no subsampling",
+        "probes": "explicit finite-point constraints during SLSQP coefficient search over every exported structure; decoder not response-conditioned",
+        "response_bounds": "finite-point hard bounds during coefficient optimization; no global guarantee",
+        "response_checks": "finite-step conditions during coefficient optimization; not decoder conditioning or analytic derivative proof",
+        "pretraining_overlap": "unknown; pretrained weights inference only, no fine-tuning",
+        "equation_template": "limited exact affine observed slot h(X); numeric target reduction before native generation, original outer-AST assembly and coefficient fit afterwards; no template-conditioned decoder"
+      },
+      "evaluation": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "expanded source-coordinate AST",
+          "reason": null,
+          "count": 9,
+          "limit": 64,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "unknown",
+          "required": false,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "domain_prediction_validity",
+          "status": "pass",
+          "required": true,
+          "method": "automatic domain points; finite prediction only, no response-bound expansion",
+          "reason": null,
+          "n_points": 26,
+          "n_valid": 26
+        },
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null,
+          "n_points": 3,
+          "n_valid": 3,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "violation_rate": 0.0,
+          "failure_rate": 0.0,
+          "rate_denominator": "all declared points; invalid points separate from finite violations",
+          "max_violation": 0.0,
+          "max_finite_violation": 0.0,
+          "response_unit": "1",
+          "response_bounds": [
+            -10.0,
+            10.0
+          ],
+          "worst_point": {
+            "x": -0.75
+          },
+          "worst_prediction": -1.074999997619979
+        }
+      ],
+      "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+    },
+    "complexity_scope": "expanded source-coordinate prediction AST",
+    "prediction_view": "explicit equation",
+    "requirements_eligible": true,
+    "requirement_failures": [],
+    "checks": [
+      {
+        "name": "operators",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "max_nodes",
+        "status": "pass",
+        "required": true,
+        "method": "expanded source-coordinate AST",
+        "reason": null,
+        "count": 9,
+        "limit": 64,
+        "member": 0
+      },
+      {
+        "name": "units",
+        "status": "unknown",
+        "required": false,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "domain_prediction_validity",
+        "status": "pass",
+        "required": true,
+        "method": "automatic domain points; finite prediction only, no response-bound expansion",
+        "reason": null,
+        "n_points": 26,
+        "n_valid": 26
+      },
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null,
+        "n_points": 3,
+        "n_valid": 3,
+        "n_violating": 0,
+        "n_invalid": 0,
+        "violation_rate": 0.0,
+        "failure_rate": 0.0,
+        "rate_denominator": "all declared points; invalid points separate from finite violations",
+        "max_violation": 0.0,
+        "max_finite_violation": 0.0,
+        "response_unit": "1",
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "worst_point": {
+          "x": -0.75
+        },
+        "worst_prediction": -1.074999997619979
+      }
+    ],
+    "metrics": {
+      "train": {
+        "rmse": 2.6939676839012112e-08,
+        "mae": 2.251263119279229e-08,
+        "r2": 0.9999999999999989,
+        "reason": null
+      },
+      "selection": {
+        "rmse": 2.6800779336915764e-08,
+        "mae": 2.244231061925006e-08,
+        "r2": 0.9999999999999988,
+        "reason": null
+      }
+    },
+    "regions": {
+      "all": {
+        "n_rows": 32,
+        "rmse": 2.6800779336915764e-08,
+        "mae": 2.244231061925006e-08,
+        "r2": 0.9999999999999988,
+        "reason": null
+      }
+    },
+    "n_nodes": 9,
+    "working_n_nodes": 9,
+    "n_parameters": 2,
+    "formula": "(0.19999997785519197 + (0.7975624086142888 * ((x - -4.5102810375396984e-17) / 0.4691543670326645)))",
+    "applicable_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "x",
+          "unit": "1",
+          "domain": [
+            -1.0,
+            1.0
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "y",
+        "unit": "1",
+        "domain": null
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "x",
+            "unit": "1",
+            "domain": [
+              -1.0,
+              1.0
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "x"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "x": "1"
+          },
+          "coordinate_roles": {
+            "x": null
+          },
+          "bounds": [
+            [
+              -1.0,
+              1.0
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "strata": {},
+    "groups": {},
+    "native_fidelity": "verified within recorded native checks"
+  },
+  {
+    "id": "e2e/731/4/response-fit@native",
+    "kind": "explicit",
+    "eligible": true,
+    "reason": null,
+    "local_parameter_identifiability": {
+      "status": "not_computed",
+      "reason": "Not requested for this record via parameter_evidence_ids; prediction metrics and eligibility are independent.",
+      "data_role": "selection"
+    },
+    "prediction_available": true,
+    "hypothesis": null,
+    "execution": {
+      "native_arithmetic": [
+        "strict_real"
+      ],
+      "prediction": "finite real-domain projection; invalid intermediate rows retained",
+      "stored_nodes": 9,
+      "expanded_nodes": 9,
+      "node_coordinate_system": "working"
+    },
+    "response_evaluation": [
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null,
+        "n_points": 3,
+        "n_valid": 3,
+        "n_violating": 0,
+        "n_invalid": 0,
+        "violation_rate": 0.0,
+        "failure_rate": 0.0,
+        "rate_denominator": "all declared points; invalid points separate from finite violations",
+        "max_violation": 0.0,
+        "max_finite_violation": 0.0,
+        "response_unit": "1",
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "worst_point": {
+          "x": -0.75
+        },
+        "worst_prediction": -1.074999997619979,
+        "point_origin": "prepared_problem",
+        "data_role": "Selection eligibility; not independent Test",
+        "independence": "not_asserted; external reuse history unknown",
+        "coordinates": "working; canonical units and frozen input geometry",
+        "point_units": {
+          "x": "1"
+        },
+        "bounds_scope": "current study conditions, including additional restrictions",
+        "overlap_with_prepared_points": null,
+        "points": [
+          {
+            "x": -0.75
+          },
+          {
+            "x": 0.0
+          },
+          {
+            "x": 0.75
+          }
+        ]
+      },
+      {
+        "status": "not_evaluated",
+        "reason": "No response evaluation points specified",
+        "point_origin": "additional_study",
+        "data_role": "Selection eligibility; not independent Test",
+        "independence": "not_asserted; external reuse history unknown",
+        "coordinates": "working; canonical units and frozen input geometry",
+        "point_units": {
+          "x": "1"
+        },
+        "bounds_scope": "current study conditions, including additional restrictions",
+        "overlap_with_prepared_points": 0,
+        "points": []
+      }
+    ],
+    "constraint_application": {
+      "requirements_ref": {
+        "requirements_sha256": "af49881255838008a51597c7dcfbd22810f6d62573ad708a26f1ba6b548eceab",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "requested": {
+        "max_nodes": 64,
+        "max_free_parameters": null,
+        "require_units": false,
+        "allowed_variables": null,
+        "equation_template": null,
+        "probes": [
+          {
+            "x": -0.75
+          },
+          {
+            "x": 0.0
+          },
+          {
+            "x": 0.75
+          }
+        ],
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "response_checks": [],
+        "response_enforcement": "hard"
+      },
+      "search_application": {
+        "operators": "operator_mask defaults true and restricts decoder operator tokens; explicit false is post-check-only compatibility; portable full expression including normalization still post-filtered; configured operator_mask=True; decoder masking requested; runtime evidence required to verify execution",
+        "max_nodes": "native prefix completion budget includes frozen source coordinates and fixed E2E normalization; export verification retained",
+        "response_enforcement": {
+          "requested": "hard",
+          "effective": "hard",
+          "stage": "exported candidate coefficient optimization; decoder not conditioned",
+          "scope": "declared finite points only; different defaults are not equivalent enforcement"
+        },
+        "probes": "explicit finite-point constraints during SLSQP coefficient search over every exported structure; decoder not response-conditioned; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee",
+        "response_bounds": "finite-point hard bounds during coefficient optimization; no global guarantee; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee"
+      },
+      "additional_evaluation_conditions": {},
+      "evaluation_scope": "Selection-stage checks; additions do not establish independent final validation if used to choose candidates",
+      "native_declaration": {
+        "operators": "operator_mask defaults true and restricts decoder operator tokens; explicit false is post-check-only compatibility; portable full expression including normalization still post-filtered",
+        "units": "native unit guidance unsupported; train normalization units preserved, coefficient units unknown",
+        "max_nodes": "native prefix completion budget includes frozen source coordinates and fixed E2E normalization; export verification retained",
+        "variables": "1..10 unchanged input columns; output variable-token masking",
+        "allowed_variables": "enforced in native decoder variable tokens; original columns/IDs retained; padded tokens forbidden",
+        "rows": "default resource guard 1024 rows; explicit max_train_rows=null uses all bags under outer wall/memory limits; no subsampling",
+        "probes": "explicit finite-point constraints during SLSQP coefficient search over every exported structure; decoder not response-conditioned",
+        "response_bounds": "finite-point hard bounds during coefficient optimization; no global guarantee",
+        "response_checks": "finite-step conditions during coefficient optimization; not decoder conditioning or analytic derivative proof",
+        "pretraining_overlap": "unknown; pretrained weights inference only, no fine-tuning",
+        "equation_template": "limited exact affine observed slot h(X); numeric target reduction before native generation, original outer-AST assembly and coefficient fit afterwards; no template-conditioned decoder"
+      },
+      "evaluation": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "expanded source-coordinate AST",
+          "reason": null,
+          "count": 9,
+          "limit": 64,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "unknown",
+          "required": false,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "domain_prediction_validity",
+          "status": "pass",
+          "required": true,
+          "method": "automatic domain points; finite prediction only, no response-bound expansion",
+          "reason": null,
+          "n_points": 26,
+          "n_valid": 26
+        },
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null,
+          "n_points": 3,
+          "n_valid": 3,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "violation_rate": 0.0,
+          "failure_rate": 0.0,
+          "rate_denominator": "all declared points; invalid points separate from finite violations",
+          "max_violation": 0.0,
+          "max_finite_violation": 0.0,
+          "response_unit": "1",
+          "response_bounds": [
+            -10.0,
+            10.0
+          ],
+          "worst_point": {
+            "x": -0.75
+          },
+          "worst_prediction": -1.074999997619979
+        }
+      ],
+      "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+    },
+    "complexity_scope": "expanded source-coordinate prediction AST",
+    "prediction_view": "explicit equation",
+    "requirements_eligible": true,
+    "requirement_failures": [],
+    "checks": [
+      {
+        "name": "operators",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "max_nodes",
+        "status": "pass",
+        "required": true,
+        "method": "expanded source-coordinate AST",
+        "reason": null,
+        "count": 9,
+        "limit": 64,
+        "member": 0
+      },
+      {
+        "name": "units",
+        "status": "unknown",
+        "required": false,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "domain_prediction_validity",
+        "status": "pass",
+        "required": true,
+        "method": "automatic domain points; finite prediction only, no response-bound expansion",
+        "reason": null,
+        "n_points": 26,
+        "n_valid": 26
+      },
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null,
+        "n_points": 3,
+        "n_valid": 3,
+        "n_violating": 0,
+        "n_invalid": 0,
+        "violation_rate": 0.0,
+        "failure_rate": 0.0,
+        "rate_denominator": "all declared points; invalid points separate from finite violations",
+        "max_violation": 0.0,
+        "max_finite_violation": 0.0,
+        "response_unit": "1",
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "worst_point": {
+          "x": -0.75
+        },
+        "worst_prediction": -1.074999997619979
+      }
+    ],
+    "metrics": {
+      "train": {
+        "rmse": 2.6939676839012112e-08,
+        "mae": 2.251263119279229e-08,
+        "r2": 0.9999999999999989,
+        "reason": null
+      },
+      "selection": {
+        "rmse": 2.6800779336915764e-08,
+        "mae": 2.244231061925006e-08,
+        "r2": 0.9999999999999988,
+        "reason": null
+      }
+    },
+    "regions": {
+      "all": {
+        "n_rows": 32,
+        "rmse": 2.6800779336915764e-08,
+        "mae": 2.244231061925006e-08,
+        "r2": 0.9999999999999988,
+        "reason": null
+      }
+    },
+    "n_nodes": 9,
+    "working_n_nodes": 9,
+    "n_parameters": 2,
+    "formula": "(0.19999997785519197 + (0.7975624086142888 * ((x - -4.5102810375396984e-17) / 0.4691543670326645)))",
+    "applicable_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "x",
+          "unit": "1",
+          "domain": [
+            -1.0,
+            1.0
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "y",
+        "unit": "1",
+        "domain": null
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "x",
+            "unit": "1",
+            "domain": [
+              -1.0,
+              1.0
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "x"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "x": "1"
+          },
+          "coordinate_roles": {
+            "x": null
+          },
+          "bounds": [
+            [
+              -1.0,
+              1.0
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "strata": {},
+    "groups": {},
+    "native_fidelity": "verified within recorded native checks"
+  },
+  {
+    "id": "e2e/731/6/response-fit@native",
+    "kind": "explicit",
+    "eligible": true,
+    "reason": null,
+    "local_parameter_identifiability": {
+      "status": "not_computed",
+      "reason": "Not requested for this record via parameter_evidence_ids; prediction metrics and eligibility are independent.",
+      "data_role": "selection"
+    },
+    "prediction_available": true,
+    "hypothesis": null,
+    "execution": {
+      "native_arithmetic": [
+        "strict_real"
+      ],
+      "prediction": "finite real-domain projection; invalid intermediate rows retained",
+      "stored_nodes": 47,
+      "expanded_nodes": 47,
+      "node_coordinate_system": "working"
+    },
+    "response_evaluation": [
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null,
+        "n_points": 3,
+        "n_valid": 3,
+        "n_violating": 0,
+        "n_invalid": 0,
+        "violation_rate": 0.0,
+        "failure_rate": 0.0,
+        "rate_denominator": "all declared points; invalid points separate from finite violations",
+        "max_violation": 0.0,
+        "max_finite_violation": 0.0,
+        "response_unit": "1",
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "worst_point": {
+          "x": -0.75
+        },
+        "worst_prediction": -1.0749999986037828,
+        "point_origin": "prepared_problem",
+        "data_role": "Selection eligibility; not independent Test",
+        "independence": "not_asserted; external reuse history unknown",
+        "coordinates": "working; canonical units and frozen input geometry",
+        "point_units": {
+          "x": "1"
+        },
+        "bounds_scope": "current study conditions, including additional restrictions",
+        "overlap_with_prepared_points": null,
+        "points": [
+          {
+            "x": -0.75
+          },
+          {
+            "x": 0.0
+          },
+          {
+            "x": 0.75
+          }
+        ]
+      },
+      {
+        "status": "not_evaluated",
+        "reason": "No response evaluation points specified",
+        "point_origin": "additional_study",
+        "data_role": "Selection eligibility; not independent Test",
+        "independence": "not_asserted; external reuse history unknown",
+        "coordinates": "working; canonical units and frozen input geometry",
+        "point_units": {
+          "x": "1"
+        },
+        "bounds_scope": "current study conditions, including additional restrictions",
+        "overlap_with_prepared_points": 0,
+        "points": []
+      }
+    ],
+    "constraint_application": {
+      "requirements_ref": {
+        "requirements_sha256": "af49881255838008a51597c7dcfbd22810f6d62573ad708a26f1ba6b548eceab",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "requested": {
+        "max_nodes": 64,
+        "max_free_parameters": null,
+        "require_units": false,
+        "allowed_variables": null,
+        "equation_template": null,
+        "probes": [
+          {
+            "x": -0.75
+          },
+          {
+            "x": 0.0
+          },
+          {
+            "x": 0.75
+          }
+        ],
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "response_checks": [],
+        "response_enforcement": "hard"
+      },
+      "search_application": {
+        "operators": "operator_mask defaults true and restricts decoder operator tokens; explicit false is post-check-only compatibility; portable full expression including normalization still post-filtered; configured operator_mask=True; decoder masking requested; runtime evidence required to verify execution",
+        "max_nodes": "native prefix completion budget includes frozen source coordinates and fixed E2E normalization; export verification retained",
+        "response_enforcement": {
+          "requested": "hard",
+          "effective": "hard",
+          "stage": "exported candidate coefficient optimization; decoder not conditioned",
+          "scope": "declared finite points only; different defaults are not equivalent enforcement"
+        },
+        "probes": "explicit finite-point constraints during SLSQP coefficient search over every exported structure; decoder not response-conditioned; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee",
+        "response_bounds": "finite-point hard bounds during coefficient optimization; no global guarantee; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee"
+      },
+      "additional_evaluation_conditions": {},
+      "evaluation_scope": "Selection-stage checks; additions do not establish independent final validation if used to choose candidates",
+      "native_declaration": {
+        "operators": "operator_mask defaults true and restricts decoder operator tokens; explicit false is post-check-only compatibility; portable full expression including normalization still post-filtered",
+        "units": "native unit guidance unsupported; train normalization units preserved, coefficient units unknown",
+        "max_nodes": "native prefix completion budget includes frozen source coordinates and fixed E2E normalization; export verification retained",
+        "variables": "1..10 unchanged input columns; output variable-token masking",
+        "allowed_variables": "enforced in native decoder variable tokens; original columns/IDs retained; padded tokens forbidden",
+        "rows": "default resource guard 1024 rows; explicit max_train_rows=null uses all bags under outer wall/memory limits; no subsampling",
+        "probes": "explicit finite-point constraints during SLSQP coefficient search over every exported structure; decoder not response-conditioned",
+        "response_bounds": "finite-point hard bounds during coefficient optimization; no global guarantee",
+        "response_checks": "finite-step conditions during coefficient optimization; not decoder conditioning or analytic derivative proof",
+        "pretraining_overlap": "unknown; pretrained weights inference only, no fine-tuning",
+        "equation_template": "limited exact affine observed slot h(X); numeric target reduction before native generation, original outer-AST assembly and coefficient fit afterwards; no template-conditioned decoder"
+      },
+      "evaluation": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "expanded source-coordinate AST",
+          "reason": null,
+          "count": 47,
+          "limit": 64,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "unknown",
+          "required": false,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "domain_prediction_validity",
+          "status": "pass",
+          "required": true,
+          "method": "automatic domain points; finite prediction only, no response-bound expansion",
+          "reason": null,
+          "n_points": 26,
+          "n_valid": 26
+        },
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null,
+          "n_points": 3,
+          "n_valid": 3,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "violation_rate": 0.0,
+          "failure_rate": 0.0,
+          "rate_denominator": "all declared points; invalid points separate from finite violations",
+          "max_violation": 0.0,
+          "max_finite_violation": 0.0,
+          "response_unit": "1",
+          "response_bounds": [
+            -10.0,
+            10.0
+          ],
+          "worst_point": {
+            "x": -0.75
+          },
+          "worst_prediction": -1.0749999986037828
+        }
+      ],
+      "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+    },
+    "complexity_scope": "expanded source-coordinate prediction AST",
+    "prediction_view": "explicit equation",
+    "requirements_eligible": true,
+    "requirement_failures": [],
+    "checks": [
+      {
+        "name": "operators",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "max_nodes",
+        "status": "pass",
+        "required": true,
+        "method": "expanded source-coordinate AST",
+        "reason": null,
+        "count": 47,
+        "limit": 64,
+        "member": 0
+      },
+      {
+        "name": "units",
+        "status": "unknown",
+        "required": false,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "domain_prediction_validity",
+        "status": "pass",
+        "required": true,
+        "method": "automatic domain points; finite prediction only, no response-bound expansion",
+        "reason": null,
+        "n_points": 26,
+        "n_valid": 26
+      },
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null,
+        "n_points": 3,
+        "n_valid": 3,
+        "n_violating": 0,
+        "n_invalid": 0,
+        "violation_rate": 0.0,
+        "failure_rate": 0.0,
+        "rate_denominator": "all declared points; invalid points separate from finite violations",
+        "max_violation": 0.0,
+        "max_finite_violation": 0.0,
+        "response_unit": "1",
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "worst_point": {
+          "x": -0.75
+        },
+        "worst_prediction": -1.0749999986037828
+      }
+    ],
+    "metrics": {
+      "train": {
+        "rmse": 7.404668691968488e-10,
+        "mae": 6.149750018442533e-10,
+        "r2": 1.0,
+        "reason": null
+      },
+      "selection": {
+        "rmse": 7.319121539789518e-10,
+        "mae": 6.075350316141898e-10,
+        "r2": 1.0,
+        "reason": null
+      }
+    },
+    "regions": {
+      "all": {
+        "n_rows": 32,
+        "rmse": 7.319121539789518e-10,
+        "mae": 6.075350316141898e-10,
+        "r2": 1.0,
+        "reason": null
+      }
+    },
+    "n_nodes": 47,
+    "working_n_nodes": 47,
+    "n_parameters": 9,
+    "formula": "((((-0.16348752171243047 * ((x - -4.5102810375396984e-17) / 0.4691543670326645)) + ((0.19888746056764764 + (0.38151247828765883 * ((x - -4.5102810375396984e-17) / 0.4691543670326645))) - (-0.0017375396268832601 + (0.10148750576797183 * ((x - -4.5102810375396984e-17) / 0.4691543670326645))))) + (-0.007752539432734105 + (0.4415124782857638 * ((x - -4.5102810375396984e-17) / 0.4691543670326645)))) - (-0.007127539626977646 + (-0.2395124942323144 * ((x - -4.5102810375396984e-17) / 0.4691543670326645))))",
+    "applicable_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "x",
+          "unit": "1",
+          "domain": [
+            -1.0,
+            1.0
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "y",
+        "unit": "1",
+        "domain": null
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "x",
+            "unit": "1",
+            "domain": [
+              -1.0,
+              1.0
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "x"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "x": "1"
+          },
+          "coordinate_roles": {
+            "x": null
+          },
+          "bounds": [
+            [
+              -1.0,
+              1.0
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "strata": {},
+    "groups": {},
+    "native_fidelity": "verified within recorded native checks"
+  },
+  {
+    "id": "e2e/731/7/response-fit@native",
+    "kind": "explicit",
+    "eligible": true,
+    "reason": null,
+    "local_parameter_identifiability": {
+      "status": "not_computed",
+      "reason": "Not requested for this record via parameter_evidence_ids; prediction metrics and eligibility are independent.",
+      "data_role": "selection"
+    },
+    "prediction_available": true,
+    "hypothesis": null,
+    "execution": {
+      "native_arithmetic": [
+        "strict_real"
+      ],
+      "prediction": "finite real-domain projection; invalid intermediate rows retained",
+      "stored_nodes": 53,
+      "expanded_nodes": 53,
+      "node_coordinate_system": "working"
+    },
+    "response_evaluation": [
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null,
+        "n_points": 3,
+        "n_valid": 3,
+        "n_violating": 0,
+        "n_invalid": 0,
+        "violation_rate": 0.0,
+        "failure_rate": 0.0,
+        "rate_denominator": "all declared points; invalid points separate from finite violations",
+        "max_violation": 0.0,
+        "max_finite_violation": 0.0,
+        "response_unit": "1",
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "worst_point": {
+          "x": -0.75
+        },
+        "worst_prediction": -1.074939322305891,
+        "point_origin": "prepared_problem",
+        "data_role": "Selection eligibility; not independent Test",
+        "independence": "not_asserted; external reuse history unknown",
+        "coordinates": "working; canonical units and frozen input geometry",
+        "point_units": {
+          "x": "1"
+        },
+        "bounds_scope": "current study conditions, including additional restrictions",
+        "overlap_with_prepared_points": null,
+        "points": [
+          {
+            "x": -0.75
+          },
+          {
+            "x": 0.0
+          },
+          {
+            "x": 0.75
+          }
+        ]
+      },
+      {
+        "status": "not_evaluated",
+        "reason": "No response evaluation points specified",
+        "point_origin": "additional_study",
+        "data_role": "Selection eligibility; not independent Test",
+        "independence": "not_asserted; external reuse history unknown",
+        "coordinates": "working; canonical units and frozen input geometry",
+        "point_units": {
+          "x": "1"
+        },
+        "bounds_scope": "current study conditions, including additional restrictions",
+        "overlap_with_prepared_points": 0,
+        "points": []
+      }
+    ],
+    "constraint_application": {
+      "requirements_ref": {
+        "requirements_sha256": "af49881255838008a51597c7dcfbd22810f6d62573ad708a26f1ba6b548eceab",
+        "scope": "canonical common request; native settings/checks are derived evidence"
+      },
+      "requested": {
+        "max_nodes": 64,
+        "max_free_parameters": null,
+        "require_units": false,
+        "allowed_variables": null,
+        "equation_template": null,
+        "probes": [
+          {
+            "x": -0.75
+          },
+          {
+            "x": 0.0
+          },
+          {
+            "x": 0.75
+          }
+        ],
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "response_checks": [],
+        "response_enforcement": "hard"
+      },
+      "search_application": {
+        "operators": "operator_mask defaults true and restricts decoder operator tokens; explicit false is post-check-only compatibility; portable full expression including normalization still post-filtered; configured operator_mask=True; decoder masking requested; runtime evidence required to verify execution",
+        "max_nodes": "native prefix completion budget includes frozen source coordinates and fixed E2E normalization; export verification retained",
+        "response_enforcement": {
+          "requested": "hard",
+          "effective": "hard",
+          "stage": "exported candidate coefficient optimization; decoder not conditioned",
+          "scope": "declared finite points only; different defaults are not equivalent enforcement"
+        },
+        "probes": "explicit finite-point constraints during SLSQP coefficient search over every exported structure; decoder not response-conditioned; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee",
+        "response_bounds": "finite-point hard bounds during coefficient optimization; no global guarantee; declared response points reused unchanged in post-check; automatic domain points check validity only; separate evaluation points required for independent verification; no global guarantee"
+      },
+      "additional_evaluation_conditions": {},
+      "evaluation_scope": "Selection-stage checks; additions do not establish independent final validation if used to choose candidates",
+      "native_declaration": {
+        "operators": "operator_mask defaults true and restricts decoder operator tokens; explicit false is post-check-only compatibility; portable full expression including normalization still post-filtered",
+        "units": "native unit guidance unsupported; train normalization units preserved, coefficient units unknown",
+        "max_nodes": "native prefix completion budget includes frozen source coordinates and fixed E2E normalization; export verification retained",
+        "variables": "1..10 unchanged input columns; output variable-token masking",
+        "allowed_variables": "enforced in native decoder variable tokens; original columns/IDs retained; padded tokens forbidden",
+        "rows": "default resource guard 1024 rows; explicit max_train_rows=null uses all bags under outer wall/memory limits; no subsampling",
+        "probes": "explicit finite-point constraints during SLSQP coefficient search over every exported structure; decoder not response-conditioned",
+        "response_bounds": "finite-point hard bounds during coefficient optimization; no global guarantee",
+        "response_checks": "finite-step conditions during coefficient optimization; not decoder conditioning or analytic derivative proof",
+        "pretraining_overlap": "unknown; pretrained weights inference only, no fine-tuning",
+        "equation_template": "limited exact affine observed slot h(X); numeric target reduction before native generation, original outer-AST assembly and coefficient fit afterwards; no template-conditioned decoder"
+      },
+      "evaluation": [
+        {
+          "name": "operators",
+          "status": "pass",
+          "required": true,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "max_nodes",
+          "status": "pass",
+          "required": true,
+          "method": "expanded source-coordinate AST",
+          "reason": null,
+          "count": 53,
+          "limit": 64,
+          "member": 0
+        },
+        {
+          "name": "units",
+          "status": "unknown",
+          "required": false,
+          "method": "structural",
+          "reason": null,
+          "member": 0
+        },
+        {
+          "name": "domain_prediction_validity",
+          "status": "pass",
+          "required": true,
+          "method": "automatic domain points; finite prediction only, no response-bound expansion",
+          "reason": null,
+          "n_points": 26,
+          "n_valid": 26
+        },
+        {
+          "name": "probe_response",
+          "status": "pass",
+          "required": true,
+          "method": "explicit sampled probes; no global guarantee",
+          "reason": null,
+          "n_points": 3,
+          "n_valid": 3,
+          "n_violating": 0,
+          "n_invalid": 0,
+          "violation_rate": 0.0,
+          "failure_rate": 0.0,
+          "rate_denominator": "all declared points; invalid points separate from finite violations",
+          "max_violation": 0.0,
+          "max_finite_violation": 0.0,
+          "response_unit": "1",
+          "response_bounds": [
+            -10.0,
+            10.0
+          ],
+          "worst_point": {
+            "x": -0.75
+          },
+          "worst_prediction": -1.074939322305891
+        }
+      ],
+      "meaning": "common checks are postchecks on the retained output; sampled passes are not global enforcement"
+    },
+    "complexity_scope": "expanded source-coordinate prediction AST",
+    "prediction_view": "explicit equation",
+    "requirements_eligible": true,
+    "requirement_failures": [],
+    "checks": [
+      {
+        "name": "operators",
+        "status": "pass",
+        "required": true,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "max_nodes",
+        "status": "pass",
+        "required": true,
+        "method": "expanded source-coordinate AST",
+        "reason": null,
+        "count": 53,
+        "limit": 64,
+        "member": 0
+      },
+      {
+        "name": "units",
+        "status": "unknown",
+        "required": false,
+        "method": "structural",
+        "reason": null,
+        "member": 0
+      },
+      {
+        "name": "domain_prediction_validity",
+        "status": "pass",
+        "required": true,
+        "method": "automatic domain points; finite prediction only, no response-bound expansion",
+        "reason": null,
+        "n_points": 26,
+        "n_valid": 26
+      },
+      {
+        "name": "probe_response",
+        "status": "pass",
+        "required": true,
+        "method": "explicit sampled probes; no global guarantee",
+        "reason": null,
+        "n_points": 3,
+        "n_valid": 3,
+        "n_violating": 0,
+        "n_invalid": 0,
+        "violation_rate": 0.0,
+        "failure_rate": 0.0,
+        "rate_denominator": "all declared points; invalid points separate from finite violations",
+        "max_violation": 0.0,
+        "max_finite_violation": 0.0,
+        "response_unit": "1",
+        "response_bounds": [
+          -10.0,
+          10.0
+        ],
+        "worst_point": {
+          "x": -0.75
+        },
+        "worst_prediction": -1.074939322305891
+      }
+    ],
+    "metrics": {
+      "train": {
+        "rmse": 3.711033049422063e-05,
+        "mae": 3.163281463194386e-05,
+        "r2": 0.9999999978349882,
+        "reason": null
+      },
+      "selection": {
+        "rmse": 3.521797632246529e-05,
+        "mae": 3.0426861152859155e-05,
+        "r2": 0.9999999979862917,
+        "reason": null
+      }
+    },
+    "regions": {
+      "all": {
+        "n_rows": 32,
+        "rmse": 3.521797632246529e-05,
+        "mae": 3.0426861152859155e-05,
+        "r2": 0.9999999979862917,
+        "reason": null
+      }
+    },
+    "n_nodes": 53,
+    "working_n_nodes": 53,
+    "n_parameters": 11,
+    "formula": "(((0.29521337373025147 + (-32.92385269445673 * (1 / (-1.1505123266861703 + (-0.01359051007163052 * ((x - -4.5102810375396984e-17) / 0.4691543670326645)))))) - (((-0.07906678519949281 * ((x - -4.5102810375396984e-17) / 0.4691543670326645)) * (-90.95723219741515 + (-0.05052957949496527 * ((x - -4.5102810375396984e-17) / 0.4691543670326645)))) + (-0.27575624719998065 + (-8.576443392187603 * ((x - -4.5102810375396984e-17) / 0.4691543670326645))))) - (28.987654884340287 + (0.2490648918988655 * ((x - -4.5102810375396984e-17) / 0.4691543670326645))))",
+    "applicable_schema": {
+      "variables": [
+        {
+          "id": "x0",
+          "column": "x",
+          "unit": "1",
+          "domain": [
+            -1.0,
+            1.0
+          ],
+          "coordinate_role": null
+        }
+      ],
+      "target": {
+        "coordinate_role": null,
+        "column": "y",
+        "unit": "1",
+        "domain": null
+      },
+      "input_geometry": {
+        "schema_version": 1,
+        "source_variables": [
+          {
+            "id": "x0",
+            "column": "x",
+            "unit": "1",
+            "domain": [
+              -1.0,
+              1.0
+            ],
+            "coordinate_role": null
+          }
+        ],
+        "domain": {
+          "columns": [
+            "x"
+          ],
+          "space_id": "source_inputs",
+          "kind": "box",
+          "units": {
+            "x": "1"
+          },
+          "coordinate_roles": {
+            "x": null
+          },
+          "bounds": [
+            [
+              -1.0,
+              1.0
+            ]
+          ]
+        },
+        "map": null
+      }
+    },
+    "strata": {},
+    "groups": {},
+    "native_fidelity": "verified within recorded native checks"
+  }
+]

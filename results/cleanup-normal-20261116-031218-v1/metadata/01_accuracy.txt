@@ -1,0 +1,32 @@
+Prediction error and equation size
+X: Expression nodes [count]
+Y: Selection RMSE [m^2]
+
+1. physo
+Candidate: physo/17/0@native
+Variant: native; seed: 17
+Eligible: True; reason: None
+Equation (public): y [m^2] = ((x) ** (2))
+x_work [m] = 1 * x [m] + (0)
+y_work [m^2] = 1 * y [m^2] + (0)
+
+2. physo
+Candidate: physo/17/1@native
+Variant: native; seed: 17
+Eligible: True; reason: None
+Equation (public): y [m^2] = (((x + x)) ** (2))
+x_work [m] = 1 * x [m] + (0)
+y_work [m^2] = 1 * y [m^2] + (0)
+
+3. physo
+Candidate: physo/17/2@native
+Variant: native; seed: 17
+Eligible: True; reason: None
+Equation (public): y [m^2] = (((x * (1.0 * coef['__slot_h_a']))) ** (2))
+  coef['__slot_h_a'] = 2.0 [1]
+x_work [m] = 1 * x [m] + (0)
+y_work [m^2] = 1 * y [m^2] + (0)
+
+Scope: All frozen candidates; no ranking or new score. Ineligible candidates are marked with crosses. Missing scores remain in CSV, not zero.
+
+Exact rows and provenance: matching CSV and plot_data.json.

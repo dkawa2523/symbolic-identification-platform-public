@@ -1,0 +1,156 @@
+[
+  {
+    "id": "pysr/42/12@native",
+    "partition": "train",
+    "rows": 182,
+    "valid_rows": 182,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "00.zip",
+    "sha256": "7a4e595fca2e52d9a2329667a987fc4a527cd6c633d6b9354fa7ae7e751f5c22"
+  },
+  {
+    "id": "pysr/42/12@native",
+    "partition": "independent_points",
+    "rows": 3,
+    "valid_rows": 3,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "00.zip",
+    "sha256": "7a4e595fca2e52d9a2329667a987fc4a527cd6c633d6b9354fa7ae7e751f5c22"
+  },
+  {
+    "id": "parfam/42/0@native",
+    "partition": "train",
+    "rows": 182,
+    "valid_rows": 182,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "01.zip",
+    "sha256": "61dbef6fefdf7504d461e7d280f13a930004250ae90e03c2b87b8d3df6c9553c"
+  },
+  {
+    "id": "parfam/42/0@native",
+    "partition": "independent_points",
+    "rows": 3,
+    "valid_rows": 3,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "01.zip",
+    "sha256": "61dbef6fefdf7504d461e7d280f13a930004250ae90e03c2b87b8d3df6c9553c"
+  },
+  {
+    "id": "torchsisso/42/2@native",
+    "partition": "train",
+    "rows": 182,
+    "valid_rows": 182,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "02.zip",
+    "sha256": "e5813091598ee1eea12daa085e4d6c08b4f9249187937ac07331d557384e5774"
+  },
+  {
+    "id": "torchsisso/42/2@native",
+    "partition": "independent_points",
+    "rows": 3,
+    "valid_rows": 3,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "02.zip",
+    "sha256": "e5813091598ee1eea12daa085e4d6c08b4f9249187937ac07331d557384e5774"
+  },
+  {
+    "id": "physo/42/22@native",
+    "partition": "train",
+    "rows": 182,
+    "valid_rows": 182,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "03.zip",
+    "sha256": "ae911206a103c37a3df665a98011f49a93b99a13eaf1d642e65fb4cf3b29ca35"
+  },
+  {
+    "id": "physo/42/22@native",
+    "partition": "independent_points",
+    "rows": 3,
+    "valid_rows": 3,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "03.zip",
+    "sha256": "ae911206a103c37a3df665a98011f49a93b99a13eaf1d642e65fb4cf3b29ca35"
+  },
+  {
+    "id": "e2e/42/7@native",
+    "partition": "train",
+    "rows": 182,
+    "valid_rows": 182,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "04.zip",
+    "sha256": "29f68a51dfd1615fa02b9ff600d7ac07e930e5f4ec3fc1d9d1d4a451f8d5ecef"
+  },
+  {
+    "id": "e2e/42/7@native",
+    "partition": "independent_points",
+    "rows": 3,
+    "valid_rows": 3,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "04.zip",
+    "sha256": "29f68a51dfd1615fa02b9ff600d7ac07e930e5f4ec3fc1d9d1d4a451f8d5ecef"
+  },
+  {
+    "id": "mean/42/0@native",
+    "partition": "train",
+    "rows": 182,
+    "valid_rows": 182,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "05.zip",
+    "sha256": "8f9cbaafd484ad1303aa0f781a091a915b7176833c18c32a862a0d457c959cb2"
+  },
+  {
+    "id": "mean/42/0@native",
+    "partition": "independent_points",
+    "rows": 3,
+    "valid_rows": 3,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "05.zip",
+    "sha256": "8f9cbaafd484ad1303aa0f781a091a915b7176833c18c32a862a0d457c959cb2"
+  },
+  {
+    "id": "linear/42/5@native",
+    "partition": "train",
+    "rows": 182,
+    "valid_rows": 182,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "06.zip",
+    "sha256": "3d2ef750991c474daafe870c78850980b69dffdb06ddfa916312a976308dcc4c"
+  },
+  {
+    "id": "linear/42/5@native",
+    "partition": "independent_points",
+    "rows": 3,
+    "valid_rows": 3,
+    "saved_ast_exact": true,
+    "public_predict": "exact",
+    "refit": false,
+    "bundle": "06.zip",
+    "sha256": "3d2ef750991c474daafe870c78850980b69dffdb06ddfa916312a976308dcc4c"
+  }
+]

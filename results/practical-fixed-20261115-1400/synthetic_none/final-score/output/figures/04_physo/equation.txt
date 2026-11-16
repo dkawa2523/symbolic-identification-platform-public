@@ -1,0 +1,9 @@
+4. physo | equation
+Candidate: physo/17/7@native
+Coordinates: public
+y [1] = (1.0 / ((((((coef['c0'] + x) - 1.0) / coef['c0']) * coef['c1']) / coef['c0']) / x))
+
+c0 = 5.807498019534802 [1]
+c1 = 3.4298887564116494 [1]
+x_work [1] = 1 * x [1] + (0)
+y_work [1] = 1 * y [1] + (0)

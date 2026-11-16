@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "engine": "physo",
+      "seed": 17,
+      "status": "partial",
+      "native_execution_status": "failed",
+      "reason": "Validated saved native hypotheses; search did not complete: Worker exited -9; see worker.log",
+      "wall_seconds": 200.8264462170191,
+      "exported_candidates": 12,
+      "summary_path": "/work/results/practical-fixed-20261115-1400/synthetic_none/physo/calculation/discover/physo/17/engine_summary.json"
+    }
+  ],
+  "selection_performed": false,
+  "final_accessed": false
+}

@@ -1,0 +1,5 @@
+method,candidate_id,figures,eligible,reason,selection_rmse,selection_coverage,final_rmse
+Least-squares fit,user_linear@manual/train_point_fit,01_least-squares-fit,True,,4.507713759029069,,6.079225147911386
+dictionary,dictionary/7/1@native,02_dictionary,True,,4.507712692964817,,
+dictionary,dictionary/7/2@native,03_dictionary,True,,4.61798977350317,,
+dictionary,dictionary/7/3@native,04_dictionary,True,,4.640557484075585,,

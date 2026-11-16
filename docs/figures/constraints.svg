@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="420" viewBox="0 0 1120 420" role="img" aria-labelledby="title desc">
+<title id="title">制約は「どこに作用するか」を区別</title><desc id="desc">同じ要求でも、生成・最適化・事後確認の接続点は手法ごとに異なります。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#64748b" stroke-width="1.5"/></marker></defs>
+<rect width="1120" height="420" fill="#ffffff"/>
+<g font-family="Noto Sans CJK JP, sans-serif" fill="#172a3a">
+<text x="40" y="52" font-size="27" font-weight="700">制約は「どこに作用するか」を区別</text>
+<text x="40" y="88" font-size="16" fill="#526471">同じ要求でも、生成・最適化・事後確認の接続点は手法ごとに異なります。</text>
+<rect x="40.0" y="132" width="240.5" height="164" rx="9" fill="#f3f7fa" stroke="#a6bac9"/>
+<text x="57.0" y="167" font-size="20" font-weight="700">生成</text>
+<text x="57.0" y="204" font-size="16">operator・変数</text>
+<text x="57.0" y="233" font-size="16">単位prior</text>
+<text x="57.0" y="262" font-size="16">source式サイズ</text>
+<path d="M283.5,214 H302.5" stroke="#64748b" fill="none" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="306.5" y="132" width="240.5" height="164" rx="9" fill="#f3f7fa" stroke="#a6bac9"/>
+<text x="323.5" y="167" font-size="20" font-weight="700">fit / fitness</text>
+<text x="323.5" y="204" font-size="16">有限点の応答条件</text>
+<text x="323.5" y="233" font-size="16">hard / softを区別</text>
+<text x="323.5" y="262" font-size="16">全体yに対して評価</text>
+<path d="M550.0,214 H569.0" stroke="#64748b" fill="none" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="573.0" y="132" width="240.5" height="164" rx="9" fill="#f3f7fa" stroke="#a6bac9"/>
+<text x="590.0" y="167" font-size="20" font-weight="700">共通検査</text>
+<text x="590.0" y="204" font-size="16">単位・domain</text>
+<text x="590.0" y="233" font-size="16">nativeと保存式の一致</text>
+<text x="590.0" y="262" font-size="16">条件適合と無効点</text>
+<path d="M816.5,214 H835.5" stroke="#64748b" fill="none" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="839.5" y="132" width="240.5" height="164" rx="9" fill="#f3f7fa" stroke="#a6bac9"/>
+<text x="856.5" y="167" font-size="20" font-weight="700">保存・説明</text>
+<text x="856.5" y="204" font-size="16">適用段階と状態</text>
+<text x="856.5" y="233" font-size="16">候補なし / partial</text>
+<text x="856.5" y="262" font-size="16">保証しない範囲</text>
+<rect x="40" y="329" width="1040" height="54" rx="6" fill="#eef5f3"/>
+<text x="58" y="363" font-size="17">有限点pass ≠ 全域保証。E2Eの任意有理式証明も、固定式・宣言区間の零分母不在だけ。</text>
+</g></svg>
